@@ -1,0 +1,14 @@
+before_install:
+- sudo apt update && sudo apt install texlive texlive-latex-extra texlive-lang-czechslovak
+  biber texlive-bibtex-extra pandoc
+script:
+- make web
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: "$GITHUB_TOKEN"
+  keep-history: true
+  local-dir: build-web
+  on:
+    branch: master
+  verbose: true

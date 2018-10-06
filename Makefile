@@ -1,6 +1,7 @@
 BIBFILE=bibliografia
 SEMINARS_TEX := $(wildcard ./seminars/*.tex)
 SEMINARS_HTML := $(patsubst ./seminars/%.tex,./build-web/seminars/%.html,$(SEMINARS_TEX))
+MATHJAX_URL = https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 all: diplomka web
 
@@ -19,10 +20,11 @@ web: web-init $(SEMINARS_HTML)
 web-init:
 	mkdir -p build-web/seminars
 	echo "" >build-web/index.html
+	pandoc -v
 
 build-web/seminars/%.html: seminars/%.tex force
-	pandoc -s --mathjax -f latex -t html -o $@ $<
-	echo "<a href=\"../$@\">$<</a><br/>" >>build-web/index.html
+	pandoc -s --mathjax=$(MATHJAX_URL) -f latex -t html -o $@ $<
+	echo "<a href=\"${<:.tex=.html}\">$<</a><br/>" >>build-web/index.html
 
 force: ;
 
