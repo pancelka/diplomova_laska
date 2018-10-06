@@ -1,3 +1,8 @@
+# Ignore build directories
+build-pdf
+build-web
+
+# Ignore common TeX extensions
 *.aux
 *.glo
 *.idx

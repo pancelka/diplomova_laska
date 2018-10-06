@@ -3,22 +3,16 @@ BIBFILE=bibliografia
 IMAGES=$(wildcard obrazky/*)
 LOGOS=$(wildcard loga/*)
 
-all: $(TITLE).pdf
+all: diplomka
 
 clean:
-	rm -f *.aux *.dvi *.log *.synctex.gz *.out *.nav *.toc *.snm *.run.xml *-blx.bib *.bbl *.blg *.bcf
+	latexmk -c -outdir=build-pdf
 
 cleanbib:
 	bibtool -r bibstyle.rsc -r biblatex -i $(BIBFILE).bib >tmp.bib
 	mv tmp.bib $(BIBFILE).bib
 
-$(TITLE).pdf: $(TITLE).tex $(IMAGES)
-	pdflatex $(TITLE)
+diplomka:
+	latexmk -pdf -outdir=build-pdf main.tex
 
-remake: $(BIBFILE).bib $(TITLE).tex $(IMAGES)
-	pdflatex $(TITLE)
-	bibtex $(TITLE)
-	pdflatex $(TITLE)
-	pdflatex $(TITLE)
-
-.PHONY: all clean cleanbib remake
+.PHONY: all clean cleanbib diplomka
