@@ -1,0 +1,30 @@
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{3.3} [63-I-1] Určte, akú najmenšiu hodnotu môže nadobúdať výraz $V = (a-b)^2 +(b-c)^2 +(c-a)^2$, ak reálne čísla $a, b, c$ spĺňajú dvojicu podmienok
+\begin{align*}
+a + 3b + c &= 6,\\
+-a + b - c &= 2.
+\end{align*}
+
+\end{tcolorbox}
+
+\rieh Sčítaním oboch rovníc z~podmienky zistíme, že $b = 2$. Dosadením za $b$ do niektorej z~nich vyjde $c = -a$. Platí teda $V = (a - 2)^2 + (2 + a)^2 + (-2a)^2$. Po umocnení a sčítaní zistíme, že $V = 6a^2 + 8 \geq 8$. Rovnosť nastane práve vtedy, keď $a = 0$, $b = 2$ a $c = 0$.
+
+Hľadaná najmenšia hodnota výrazu $V$ je teda rovná 8.\\
+
+\kom Riešenie úlohy vyžaduje prácu so sústavou dvoch rovníc, avšak manipulácia tejto sústavy nie je až taká zložitá, takže zaradenie úlohy bez toho, aby sme sa systematicky venovali riešeniu sústav rovníc, nepokladáme za problematické.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{3.4} [63-S-1] Určte, aké hodnoty môže nadobúdať výraz $V = ab + bc + cd + da$, ak reálne čísla $a,b, c, d$ spĺňajú dvojicu podmienok
+\begin{align*}
+2a - 5b + 2c - 5d &= 4,\\
+3a + 4b + 3c + 4d &= 6.
+\end{align*}
+\end{tcolorbox}
+
+\rieh Pre daný výraz $V$ platí $$V = a(b + d) + c(b + d) = (a + c)(b + d).$$
+Podobne môžeme upraviť aj obe dané podmienky: $$2(a + c) - 5(b + d) = 4 \ \ \mathrm{a} \ \  3(a + c) + 4(b + d) = 6.\ \ \  \ \ \ \ \ \ \ (1)$$
+Ak teda zvolíme substitúciu $m = a + c$ a $n = b + d$, dostaneme riešením sústavy (1) $m = 2$ a $n = 0$. Pre daný výraz potom platí $V = mn = 0$.
+
+\textit{Záver.} Za daných podmienok nadobúda výraz $V$ iba hodnotu 0.\\
+
+\textbf{Iné riešenie.} Podmienky úlohy si predstavíme ako sústavu rovníc s~neznámymi $a, b$ a parametrami $c, d$. Vyriešením tejto sústavy (sčítacou alebo dosadzovacou metódou) vyjadríme $a = 2 - c, b = -d \ (c, d \in \RR )$ a po dosadení do výrazu $V$ dostávame $$V = (2 - c)(-d) - dc + cd + d(2 - c) = 0.$$
+\\
+\kom Zadanie úlohy opäť obsahuje sústavu dvoch rovníc. Jej riešenie sa však po substitúcii zredukuje na veľmi jednoduchú sústavu, s~ktorou sa študenti stretli už na základnej škole, takže by nemala spôsobiť výrazné problémy. \\
