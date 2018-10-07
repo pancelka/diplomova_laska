@@ -8,7 +8,7 @@ before_install:
   - docker ps
 
 script:
-  - $SH make web
+  - $SH "make web"
 
 deploy:
   provider: pages
