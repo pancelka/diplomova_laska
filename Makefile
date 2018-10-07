@@ -13,7 +13,7 @@ cleanbib:
 	mv tmp.bib $(BIBFILE).bib
 
 diplomka:
-	latexmk -pdf -outdir=build-pdf main.tex
+	latexmk -halt-on-error -pdf -outdir=build-pdf main.tex
 
 web: web-init $(SEMINARS_HTML)
 
