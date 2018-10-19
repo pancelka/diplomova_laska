@@ -1,0 +1,180 @@
+\section*{Seminár 30}
+\subsection*{Téma}
+Kvadratické rovnice
+
+\subsection*{Ciele}
+Precvičiť metódy používané pri práci s~kvadratickými rovnicami
+
+\subsection*{Úlohy a riešenia}
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{30.1} [57-I-5] Určte všetky dvojice $a, b$ reálnych čísel, pre ktoré má každá z~kvadratických rovníc
+$$ax^2 + 2bx + 1 = 0, \ \ \ \ bx^2 + 2ax + 1 = 0$$
+dva rôzne reálne korene, pričom práve jeden z~nich je spoločný obom rovniciam.
+
+\end{tcolorbox}
+
+\rieh Zo zadania vyplýva, že a $6\neq 0$, $b \neq 0$ (inak by rovnice neboli kvadratické)
+a $a \neq b$ (inak by rovnice boli totožné, a ak by mali dva reálne korene, boli by oba
+spoločné).
+
+Označme $x_0$ spoločný koreň oboch rovníc, takže
+$$ax_0^2+ 2bx_0 + 1 = 0,\ \ \ bx_0^2+ 2ax_0 + 1 = 0.$$
+Odčítaním oboch rovníc dostaneme $(a - b)(x_0^2- 2x_0 ) = x_0 (a - b)(x_0 - 2) = 0$. Keďže $a \neq b$ a 0 zrejme koreňom daných rovníc nie je, musí byť spoločným koreňom číslo $x_0 = 2$. Dosadením do daných rovníc tak dostaneme jedinú podmienku $4a + 4b + 1 = 0$, čiže
+$$b = -a -\frac{1}{4}.$$
+
+
+Diskriminant druhej z~daných rovníc je potom $4a^2 - 4b = 4a^2 + 4a + 1 = (2a + 1)^2$, takže rovnica má dva rôzne reálne korene pre ľubovoľné $a \neq -\frac{1}{2}$. Podobne diskriminant prvej z~daných rovníc je $4b^2- 4a = 4b^2 + 4b +1 = (2b +1)^2$. Rovnica má teda dva rôzne reálne korene pre ľubovoľné $b \neq -\frac{1}{2}$, čiže $a\neq  \frac{1}{4}$
+
+Z~uvedených predpokladov však zároveň vyplýva $a \neq -\frac{1}{4}$ $(b \neq 0)$ a $a \neq - \frac{1}{8}$ $(a \neq b)$.
+
+\textit{Záver.} Vyhovujú všetky dvojice $(a, -a - \frac{1}{4})$, kde $a \in \RR \ \{-\frac{1}{2}, -\frac{1}{4}, -\frac{1}{8}, 0, \frac{1}{4}\}$.\\
+
+
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{30.2} [57-S-5]
+Určte všetky dvojice $(a, b)$ reálnych čísel, pre ktoré majú rovnice
+$$x^2 + (3a + b)x + 4a = 0, \ \ \ \  x^2 + (3b + a)x + 4b = 0$$
+spoločný reálny koreň.
+
+\end{tcolorbox}
+
+\rieh Nech $x_0$ je spoločný koreň oboch rovníc. Potom platí
+$$x_0^2+ (3a + b)x_0 + 4a = 0, \ \ \ \  x_0^2+ (3b + a)x_0 + 4b = 0.$$
+Odčítaním týchto rovníc dostaneme $(2a-2b)x_0 +4(a-b) = 0$, odkiaľ po úprave získame $(a - b)(x_0 + 2) = 0$.
+
+Rozoberieme dve možnosti:
+
+Ak $a = b$, majú obidve dané rovnice rovnaký tvar $x^2 + 4ax + 4a = 0$. Aspoň jeden koreň (samozrejme spoločný) existuje práve vtedy, keď je diskriminant $16a^2-16a$ nezáporný, teda $a \in (-\infty, 0\rangle \cup \langle 1, \infty)$.
+
+Ak $x_0 = -2$, dostaneme z~prvej aj z~druhej rovnice $4-2a-2b = 0$, teda $b = 2-a$. Dosadením do zadania dostaneme rovnice
+$$x^2 + (2a + 2)x + 4a = 0, \ \ \ \ x^2 + (6-2a)x + 8-4a = 0,$$
+ktoré majú pri ľubovoľnej hodnote parametra a spoločný koreň $-2$.
+
+\textit{Záver.} Dané rovnice majú aspoň jeden spoločný koreň pre všetky dvojice $(a, a)$, kde $a \in (-\infty, 0\rangle \cup \langle 1, \infty)$, a pre všetky dvojice tvaru $(a, 2-a)$, kde $a$ je ľubovoľné.\\
+\\
+\ul{30.3} [57-II-1]  Uvažujme dve kvadratické rovnice
+$$x^2-ax-b = 0,\ \ \ \  x^2-bx-a = 0$$
+s~reálnymi parametrami $a$, $b$. Zistite, akú najmenšiu a akú najväčšiu hodnotu môže nadobudnúť súčet $a + b$, ak existuje práve jedno reálne číslo $x$, ktoré súčasne vyhovuje obom rovniciam. Určte ďalej všetky dvojice $(a, b)$ reálnych parametrov, pre ktoré tento súčet tieto hodnoty nadobúda.
+
+\rieh Odčítaním oboch daných rovníc dostaneme rovnosť $(b-a)x+a-b = 0$, čiže $(b-a)(x-1) = 0$. Odtiaľ vyplýva, že $b = a$ alebo $x = 1$.
+
+Ak $b = a$, majú obidve rovnice tvar $x^2-ax-a = 0$. Práve jedno riešenie existuje práve vtedy, keď diskriminant $a^2 + 4a$ je nulový. To platí pre $a = 0$ a pre $a = -4$. Pretože $b = a$, má súčet $a + b$ v~prvom prípade hodnotu $0$ a v~druhom prípade hodnotu $-8$.
+
+Ak $x = 1$, dostaneme z~daných rovníc $a + b = 1$, teda $b = 1-a$. Rovnice potom majú tvar
+$$x^2-ax + a-1 = 0 \ \ \ \ \text{a} \ \ \ \ x^2 + (a-1)x-a = 0.$$
+Prvá má korene $1$ a $a-1$, druhá má korene $1$ a $-a$. Práve jedno spoločné riešenie tak dostaneme vždy s~výnimkou prípadu, keď $a-1 = -a$, čiže $a = \frac{1}{2}$ -- vtedy sú spoločné riešenia dve.
+
+\textit{Záver.} Najmenšia hodnota súčtu $a + b$ je $-8$ a je dosiahnutá pre $a = b = -4$. Najväčšia hodnota súčtu $a + b$ je $1$; túto hodnotu má súčet $a + b$ pre všetky dvojice $(a, 1-a)$, kde $a\neq \frac{1}{2}$ je ľubovoľné reálne číslo.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{30.4}[59-I-6] Reálne čísla $a$, $b$ majú túto vlastnosť: rovnica $x^2 -ax+b-1 = 0$ má v~množine reálnych čísel dva rôzne korene, ktorých rozdiel je kladným koreňom rovnice $x^2 - ax + b + 1 = 0$.
+
+a) Dokážte nerovnosť $b > 3$.
+
+b) Pomocou $b$ vyjadrite korene oboch rovníc.
+
+\end{tcolorbox}
+
+\rieh  Označme $x_1$ menší a $x_2$ väčší koreň prvej rovnice. Potom platí $x_1 + x_2 = a$, $x_1 x_2 = b - 1$. Druhá rovnica má koreň $x_2 - x_1$, a keďže súčet oboch koreňov je $a$, musí byť druhý koreň $a - (x_2 - x_1 ) = x_1 + x_2 - x_2 + x_1 = 2x_1$. Súčin koreňov druhej rovnice je $(x_2 -x_1 )\cdot2x_1 = b+1$. Odtiaľ dostávame $b = -1+2x_1 x_2 -2x_1^2= -1+2(b-1)-2x_1^2$, a teda
+$$b = 3 + 2x_1^3> 3, \ \ \ \  (1)$$
+lebo z~rovnosti $x_1 = 0$ by vyplývalo $b + 1 = b - 1 = 0$.
+
+Keďže $x_2 - x_1 > 0$ a $b + 1 > 0$, musí byť aj $x_1 > 0$; z~(1) máme $x_1 =\sqrt{(b - 3)/2}$ a ďalej
+$$x_2 =\frac{b-1}{x_1}=\frac{(b - 1)\sqrt{2}}{\sqrt{b-3}}.$$
+Korene druhej rovnice sú potom
+$$x_2 - x_1 = \frac{b+1}{} \ \ \ \ \text{a} \ \ \ \  2x_1=\sqrt{2(b - 3)}.$$
+\\
+\textbf{Iné riešenie}. Korene prvej rovnice sú
+$$x_1 = \frac{a -\sqrt{a^2 - 4b + 4}}{2}, \ \ \ \  x_2 =\frac{a +\sqrt{a^2 - 4b + 4}}{2},$$
+pričom pre diskriminant máme
+$$D = a^2 - 4(b - 1) > 0. \ \ \ \  (2)$$
+Rozdiel koreňov $x_2 - x_1 =\sqrt{a^2 - 4b + 4}$ je koreňom druhej rovnice, a preto
+\begin{align*}
+a^2 - 4b + 4 - a \sqrt{a^2 - 4b + 4} + b + 1 &= 0,\\
+a^2 - 3b + 5 &= a\sqrt{a 2 - 4b + 4}, \ \ \ \  (3)\\
+a^4 + 2a^2 (5 - 3b) + (3b - 5)^2 &= a^4 - 4a^2 b + 4a^2,\\
+(3b - 5)^2 &= a^2 (2b - 6).
+\end{align*}
+Rovnosť  $a = 0$ nastáva práve vtedy, keď $3b - 5 = 0$; potom by ale neplatilo (2). Preto $a^2 > 0$, $(3b - 5)^2 > 0$, a teda aj $2b - 6 > 0$, čiže $b > 3$. Z~(2) a (3) potom vyplýva $a > 0$, a teda $a = (3b - 5)/\sqrt{2(b - 3)}$; ďalej potom
+\begin{align*}
+x_1 &=\frac{1}{2}\bigg( \frac{3a-5}{\sqrt{2(b-3)}}-\sqrt{\frac{(3b-5)^2}{2(b-3)}}-4b+4\bigg)=\sqrt{\frac{b-3}{2}},\\
+x_2 &=\frac{1}{2} \bigg( \frac{3a-5}{\sqrt{2(b-3)}}+\sqrt{\frac{(3b-5)^2}{2(b-3)}}-4b+4\bigg)=\frac{(b-1)\sqrt{2}}{\sqrt{b-3}}.
+\end{align*}
+Druhá rovnica má korene
+\begin{align*}
+x_3 &=\frac{a-\sqrt{a^2-4b-4}}{2}=\frac{b+1}{\sqrt{2(b-3)}}=x_2-x_1\\
+x_4 &=\frac{a+\sqrt{a^2-4b-4}}{2}=\sqrt{2(b-3)}.
+\end{align*}
+
+
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{30.5}[59-S-1] Určte všetky hodnoty reálnych parametrov $p, q$, pre ktoré má každá z~rovníc
+$$x(x - p) = 3 + q, \ \ \ \ x(x + p) = 3 - q$$
+v~obore reálnych čísel dva rôzne korene, ktorých aritmetický priemer je jedným z~koreňov
+zvyšnej rovnice.
+
+\end{tcolorbox}
+
+\rieh Z~Viètových vzťahov pre korene kvadratickej rovnice (ktoré vyplývajú z~rozkladu daného kvadratického trojčlena na súčin koreňových činiteľov) ľahko zistíme, že súčet koreňov prvej rovnice je $p$, takže ich aritmetický priemer je $\frac{1}{2}p$. Toto číslo má byť
+koreňom druhej rovnice, preto
+$$\frac{p}{2}\cdot \frac{3p}{2}= 3 - q. \ \ \ \ (1)$$
+Podobne súčet koreňov druhej rovnice je $-p$, ich aritmetický priemer je $-\frac{1}{2}p$, a preto
+$$-\frac{p}{2}\cdot \bigg(- \frac{3p}{2}\bigg)= 3 + q. \ \ \ \ (2)$$
+Porovnaním oboch vzťahov (1) a (2) máme $3 - q = 3 + q$, čiže $q = 0$ a z~(1) potom vyjde $p = 2$ alebo $p = -2$.
+
+Z~oboch nájdených riešení dostaneme tú istú dvojicu rovníc $x(x - 2) = 3$, $x(x + 2) = 3$. Korene prvej z~nich sú čísla $-1$ a $3$, ich aritmetický priemer je $1$. Korene druhej rovnice sú čísla $1$ a $-3$, ich aritmetický priemer je $-1$.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{30.6} [62-II-1] Pre ľubovoľné reálne čísla $k\neq \pm 1$, $p \neq 0$ a $q$ dokážte tvrdenie: Rovnica
+$$x^2+ px + q = 0$$
+má v~obore reálnych čísel dva korene, z~ktorých jeden je $k$-násobkom druhého, práve vtedy, keď platí $kp^2 = (k~+ 1)^2 q$.
+
+\end{tcolorbox}
+
+\rieh Čísla $x_1$, $x_2$ sú koreňmi danej kvadratickej rovnice práve vtedy, keď platí
+$$x_1 + x_2 = -p \ \ \ \ \text{a} \ \ \ \  x_1 x_2 = q. \ \ \ \  (1)$$
+
+Predpokladajme, že daná kvadratická rovnica má reálne korene $x_1 = \alpha$, $x_2 = k\alpha$.
+Dosadením do (1) dostaneme $(k + 1)\alpha = -p$ a $k\alpha^2 = q$. Pre obe strany dokazovanej
+rovnosti $kp^2 = (k~+ 1)^2 q$ odtiaľ vyplýva
+$$kp^2= k(-(k + 1)\alpha)^2= k(k + 1)^2\alpha^2,$$
+$$(k + 1)^2q = (k~+ 1)^2 \cdot k\alpha^2= k(k + 1)^2\alpha^2,$$
+teda daná rovnosť skutočne platí.
+
+Nech naopak pre reálne čísla $p$, $q$ a $k \neq -1$ platí $kp^2 = (k+1)^2q$. Uvažujme dvojicu
+reálnych čísel
+$$x_1 =\frac{-kp}{k + 1} \ \ \ \ \text{a} \ \ \ \  x 2 =\frac{-p}{k + 1}.$$
+Také čísla (pre ktoré platí $x_1 = kx_2$) sú koreňmi danej kvadratickej rovnice, ak spĺňajú obe rovnosti (1). Overenie urobíme dosadením:
+\begin{align*}
+x_1 + x_2 &= \frac{-kp}{k + 1}+\frac{-p}{k + 1}=\frac{-(k + 1)p}{k + 1}= -p,\\
+x_1 x_2 &=\frac{-kp}{k + 1}\cdot\frac{-p}{k + 1}=\frac{kp^2}{(k + 1)^2}=\frac{(k + 1)^2q}{(k + 1)^2}= q.
+\end{align*}
+Tým je celý dôkaz hotový.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{30.7} [64-II-4]  Na tabuli je zoznam čísel $1, 2, 3, 4, 5, 6$ a \uv{rovnica}
+$$\frac{\fbox{$\phantom{7}$}}{\fbox{$\phantom{7}$}}x^2+\frac{\fbox{$\phantom{7}$}}{\fbox{$\phantom{7}$}}x + \frac{\fbox{$\phantom{7}$}}{\fbox{$\phantom{7}$}}= 0.$$
+Marek s~Tomášom hrajú nasledujúcu hru. Najskôr Marek vyberie ľubovoľné číslo zo zoznamu, napíše ho do jedného z~prázdnych políčok v~\uv{rovnici} a číslo zo zoznamu zotrie. Potom Tomáš vyberie niektoré zo zvyšných čísel, napíše ho do iného prázdneho políčka a v~zozname ho zotrie. Nato Marek urobí to isté a nakoniec Tomáš doplní tri zvyšné čísla na tri zvyšné voľné políčka v~\uv{rovnici}. Marek vyhrá, ak vzniknutá kvadratická rovnica s~racionálnymi koeficientmi bude mať dva rôzne reálne korene, inak vyhrá Tomáš. Rozhodnite, ktorý z~hráčov môže vyhrať nezávisle na postupe druhého
+hráča.
+
+\end{tcolorbox}
+
+\rieh Označme $a$, $b$, $c$ koeficienty výslednej rovnice $ax^2 + bx + c = 0$. Tá má dva rôzne reálne korene práve vtedy, keď je jej diskriminant (v~symbolickej podobe)
+$$b^2 - 4ac =\bigg( \frac{{\fbox{$\phantom{7}$}}}{{\fbox{$\phantom{7}$}}} \bigg)^2-4\bigg( \frac{{\fbox{$\phantom{7}$}}}{{\fbox{$\phantom{7}$}}}\bigg) \bigg(\frac{{\fbox{$\phantom{7}$}}}{{\fbox{$\phantom{7}$}}}\bigg)$$
+kladný.
+
+Ukážeme, že vyhrávajúcu stratégiu má Marek. Najskôr do menovateľa zlomku pre koeficient $b$ napíše $1$.
+\begin{enumerate}[a)]
+\item Ak Tomáš obsadí vo svojom prvom ťahu iné miesto ako v~čitateli $b$, napíše do neho Marek v~nasledujúcom ťahu najväčšie zostávajúce číslo zo zoznamu (teda 5 alebo 6). Hodnota $b^2$ potom bude aspoň 25 a zo zvyšných čísel možno zostaviť výraz $4ac$ s~hodnotou nanajvýš $4\cdot  \frac{6\cdot4}{3\cdot2}= 16$. Diskriminant vzniknutej kvadratickej rovnice tak bude určite kladný.
+\item Predpokladajme, že Tomáš vo svojom ťahu doplní čitateľa $b$. Marek potom v~druhom ťahu napíše najmenšie zostávajúce číslo zo zoznamu (2 alebo 3) do čitateľa $a$ (alebo $c$).
+\begin{enumerate}[(i)]
+\item V~prípade, že Tomáš v~prvom ťahu napísal do čitateľa $b$ číslo 2, je hodnota $b^2$ rovná 4 a najväčšia možná hodnota $4ac$ (s~prihliadnutím na druhý Marekov ťah) je $4 \cdot \frac{3\cdot 6}{4\cdot 5}=\frac{18}{5}\leq  4$, teda diskriminant vzniknutej kvadratickej rovnice bude opäť kladný.
+\item  V~prípade, že Tomáš v~prvom ťahu napísal do čitateľa $b$ iné číslo ako 2, je hodnota $b^2$ aspoň 9 a hodnota $4ac$ je nanajvýš $4 \cdot \frac{2\cdot 6}{3\cdot4} = 4$, takže diskriminant
+vzniknutej kvadratickej rovnice bude aj v~tomto prípade kladný.
+
+\end{enumerate}
+\end{enumerate}
+\textit{Záver.} V~danej hre môže vyhrať Marek nezávisle na ťahoch Tomáša. Jeho víťazná stratégia je opísaná vyššie.
+
+
+\subsection*{Domáca práca}
+Úlohou študentov bude vyhľadať, skonzultovať a zaslať vedúcemu seminára jeden príklad, problém alebo úlohu, ktorá sa viaže k témam algebry a teórie čísel, ktorými sme sa v seminári zaberali. Tieto úlohy budú použité ako zadania, ktoré využijeme v nasledujúcom seminári. Študenti môžu hľadať inšpiráciu v starších kolách MO, rôznych knižných publikáciách, zbierkach korešpondenčných seminárov alebo môžu úlohu dokonca sami vymyslieť.
+
+\subsection*{Doplňujúce zdroje a materiály}
+
+
+

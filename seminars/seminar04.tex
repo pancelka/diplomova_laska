@@ -1,0 +1,189 @@
+\section*{Seminár 4}
+\subsection*{Téma}
+Algebraické výrazy, rovnice a nerovnosti II -- nerovnosti
+
+\subsection*{Ciele}
+Zoznámiť študentov so základnými metódami pri dokazovaní nerovností a nerovnosťou $a+\frac{1}{a}\geq 2$, ktorá platí pre každé kladné reálne číslo $a$.
+
+\subsubsection*{Úvodný komentár}
+Dokazovanie nerovností nie je bežným obsahom základoškolskej, príp. gymnaziálnej výuky, keďže študenti sa stretávajú prevažne s~cvičeniami a problémami, kde je ich úlohou riešiť (lineárne) nerovnice. Dokazovanie nerovností je však častou súčasťou všetkých kôl MO, preto považujeme za vhodné tieto typy úloh so študentami precvičovať. Keďže je tento seminár jedným z~dvoch, ktoré sú na nerovnosti zamerané, budeme sa v~ňom zaoberať jednoduchšími úlohami. Študenti si tak osvoja základné postupy, ktoré im neskôr (snáď) poslúžia pri úlohách zložitejších, zaradených do seminára v~budúcnosti.
+
+\subsection*{Úlohy a riešenia}
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{4.1} [58-S-1]
+Dokážte, že pre ľubovoľné nezáporné čísla $a, b, c$ platí $$(a + bc)(b + ac) \geq ab(c + 1)^2.$$
+Zistite, kedy nastane rovnosť.
+
+\end{tcolorbox}
+
+\rieh Roznásobením a ďalšími ekvivalentnými úpravami dostaneme
+\begin{align*}
+ab + b^2 c + a^2 c + abc^2 &\geq abc^2 + 2abc + ab,\\
+b^2 c + a^2 c &\geq 2abc,\\
+(a - b)^2 c &\geq 0.
+\end{align*}
+Podľa zadania platí $c \geq 0$ a druhá mocnina reálneho čísla $a-b$ je tiež nezáporná, takže je nezáporná aj ľavá strana upravenej nerovnosti. Rovnosť v~tejto (a rovnako aj v~pôvodnej nerovnosti) nastane práve vtedy, keď $a - b = 0$ alebo $c = 0$, teda práve vtedy, keď je splnená aspoň jedna z~podmienok $a = b$, $c = 0$.\\
+\\
+\kom Úloha demonštruje jeden zo základných spôsobov dokazovania nerovností: úpravu výrazu na jednej strane nerovnosti na tvar, o~ktorom s~určitosťou vieme, že je nezáporný/nekladný a jeho porovnanie s~nulou. Taktiež si študenti precvičia ekvivalentné úpravy nerovností a úpravy výrazov do tvaru súčinu.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{4.2} [66-I-1-N1] Dokážte, že pre ľubovoľné reálne čísla $x$, $y$ a $z$ platia nerovnosti
+\begin{enumerate}[a)]
+\item $2xyz \leq x^2+ y^2z^2$,
+\item $(x^2-y^2)^2\geq 4xy(x - y)^2$.
+\end{enumerate}
+
+
+\end{tcolorbox}
+
+\rie a) Prevedieme výraz $2xyz$ na pravú stranu nerovnosti a upravíme pomocou vzorca $A^2-2AB-B^2=(A-B)^2$ na tvar $0 \leq (x - yz)^2$, ktorý je pravdivým výrokom, keďže druhá mocnina ľubovoľného výrazu je vždy nezáporná.\\
+
+b) Výraz z~pravej strany nerovnosti prevedieme na opačnú stranu a upravíme nasledujúcim spôsobom:
+\begin{align*}
+((x-y)(x+y))^2-4xy(x-y)^2 &\geq 0,\\
+(x-y)^2(x+y)^2-4xy(x-y)^2 &\geq 0,\\
+(x-y)^2((x+y)^2-4xy) &\geq 0,\\
+(x-y)^2(x+2xy+y^2-4xy) &\geq 0,\\
+(x-y)^4 &\geq 0.
+\end{align*}
+Posledná nerovnosť je zrejme pravdivým tvrdením a pôvodná nerovnosť je tak dokázaná.\\
+\\
+\kom Úloha neprináša žiadny nový princíp, je však dobrým tréningom práce s~upravovaním výrazov, podobne ako úloha nasledujúca.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{4.3} [66-I-1-N2] Dokážte, že pre ľubovoľné kladné čísla $a$, $b$ platí nerovnosť $$\frac{a}{b^2}+ \frac{b}{a^2}\geq \frac{1}{a} + \frac{1}{b}.$$
+
+\end{tcolorbox}
+
+\rie Vynásobíme celú nerovnosť kladným výrazom $a^2b^2$. Ľavú stranu $a^3+b^3$ upravíme na súčin pomocou vzorca $a^3+b^3=(a+b)(a^2-ab+b^2)$, pravú stranu $ab^2+a^2b$ upravíme na súčin vyňatím výrazu $ab$ na tvar $ab(a+b)$. Dostaneme tak nerovnosť $(a+b)(a^2-ab+b^2)\geq ab(a+b)$. Tá po vydelení kladným výrazom  $a + b$ a úprave na súčin dostane tvar $(a - b)^2\geq 0$, ktorý je zrejme pravdivým tvrdením. \\
+\\
+\kom Úloha využíva rovnaký princíp ako prechádzajúce dve. Prvýkrát však pri úprave využívame násobenie a delenie výrazmi. Tým sa z~úlohy stáva dobrá príležitosť na pripomenutie faktu, že pri úprave nerovností musíme brať do úvahy (ne)zápornosť výrazov, ktoré pri takýchto úkonoch využívame.\\
+\\
+\kom Ďalším z~užitočných nástrojov pri dokazovaní nerovností je znalosť nerovnosti $u+\frac{1}{u}\geq 2$ pre každé kladné reálne číslo $u$, pričom táto nerovnosť prechádza v~rovnosť len pre $u=1$. Dokázanie tohto faktu nie je zložité: vynásobením celej nerovnosti $u$, prevedením všetkých členov na jednu stranu dostávame $(u-1)^2\geq 0$, čo je pravdivé tvrdenie. Nasledujúce úlohy sú zaradené ako tréning uplatnenia tejto nerovnosti.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{4.4} [62-I-2-N1] Dokážte nerovnosť $$\frac{1}{ab}+\frac{1}{cd}\geq \frac{8}{(a+b)(c+d)},$$ pre ľubovoľné kladné čísla $a, b, c, d$.
+
+\end{tcolorbox}
+
+\rie Celú nerovnosť vynásobíme kladným výrazom $(a+b)(c+d)$ a upravíme:
+\begin{align*}
+\frac{(a+b)(c+d)}{ab} + \frac{(a+b)(c+d)}{cd} &\geq 8, \\
+\frac{ac+ad+bc+bd}{ab}+\frac{ac+ad+bc+bd}{cd} & \geq 8,\\
+\frac{c}{b}+\frac{d}{b}+\frac{c}{a}+\frac{d}{a}+\frac{a}{d}+\frac{a}{c}+\frac{b}{d}+\frac{b}{c} &\geq 8.\\
+\end{align*}
+Všimneme si, že ľavá strana nerovnosti obsahuje štyri páry súčtov navzájom prevrátených zlomkov:
+$$\bigg( \frac{a}{c}+ \frac{c}{a} \bigg)+\bigg( \frac{a}{d}+ \frac{d}{a} \bigg)+\bigg( \frac{b}{c}+ \frac{c}{b} \bigg)+\bigg( \frac{b}{d}+ \frac{d}{b} \bigg) \geq 8.$$
+Sčítaním štyroch nerovností $u+\frac{1}{u} \geq 2$ pre každé kladné reálne $u$, kde v~našom prípade $u$ je postupne $\frac{a}{c}, \frac{a}{d}, \frac{b}{c}, \frac{b}{d}$ tak dostaneme tvrdenie, ktoré sme chceli dokázať.\\
+\\
+\kom Úloha študentom ukazuje jedno z~mnohých využití nerovnosti $u+\frac{1}{u} \geq 2$ pre každé kladné $u$. Taktiež sme využili metódu sčítania niekoľkých platných nerovností na dôkaz požadovaného tvrdenia, ktorá je ďalším užitočným nástrojom pri pasovaní sa s~dokazovaním nerovností. Zopár podobných úloh je možné nájsť v~časti Doplňujúce zdroje a materiály. \\
+\\
+\kom Záverečné dve úlohy sú zámerne komplexnejšie ako predchádzajúce prípravné cvičenia a ich vyriešenie vyžaduje uplatnenie princípov z~predošlej časti seminára. \\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{4.5} [66-I-1] Dokážte, že pre ľubovoľné reálne číslo a platí nerovnosť $$a^2+\frac{1}{a^2-a+1}\geq a+1.$$ Určte, kedy nastáva rovnosť.
+
+\end{tcolorbox}
+
+\rieh Úpravou dvojčlena $a^2 - a$ doplnením na štvorec a využitím faktu že druhá mocnina reálneho čísla je nezáporná ukážeme, že menovateľ zlomku v~nerovnosti je kladný:
+$$a^2-a+1=\bigg(a^2-a+\frac{1}{4}\bigg) +\frac{3}{4}=\bigg(a-\frac{1}{2}\bigg)^2+\frac{3}{4}\geq \frac{3}{4}>0.$$
+Ak ním teda obe strany dokazovanej nerovnosti vynásobíme, dostaneme ekvivalentnú nerovnosť
+$$a^2(a^2-a+1)+1\geq (a+1)(a^2-a+1).$$
+Po roznásobení a zlúčení rovnakých mocnín a dôjdeme k~nerovnosti
+$$ a^4-2a^3+a^2\geq 0,$$
+ktorá však platí, pretože jej ľavá strana má rozklad $a^2 (a - 1)^2$ s~nezápornými činiteľmi $a^2$ a $(a - 1)^2$. Tým je pôvodná nerovnosť pre každé reálne číslo a dokázaná. Zároveň sme zistili, že rovnosť vo výslednej, a teda aj v~pôvodnej nerovnosti nastane práve vtedy, keď platí $a^2 (a - 1)^2 = 0$, teda jedine vtedy, keď $a = 0$ alebo $a = 1$.\\
+\\
+\textbf{Iné riešenie.} Danú nerovnosť môžeme prepísať na tvar $$ (a^2 - a + 1) + \frac{1}{a^2-a+1}\geq 2 \ \ \ \ \text{čiže} \ \ \ \  u~+\frac{1}{u}\geq 2,$$ pričom $u = a^2 -a + 1$. Využitím faktu, že posledná nerovnosť platí pre každé kladné
+reálne číslo $u$ a že prechádza v~rovnosť jedine pre $u = 1$.
+
+Na dôkaz pôvodnej nerovnosti ostáva už len overiť, že výraz $u = a^2 - a + 1$ je kladný pre každé reálne číslo $a$. To možno spraviť rovnako ako v~prvom riešení, alebo prepísať nerovnosť $a^2 - a + 1 > 0$ na tvar $$a(a -1) > -1$$ a uskutočniť krátku diskusiu: Posledná nerovnosť platí ako pre každé $a \geq 1$, tak pre každé $a\leq 0$, lebo v~oboch prípadoch máme dokonca $a(a - 1) \geq 0$; pre zvyšné hodnoty $a$, teda pre $a \in (0, 1)$, je súčin $a(a - 1)$ síce záporný, avšak určite väčší ako $-1$, pretože oba činitele $a$, $a - 1$ majú absolútnu hodnotu menšiu ako 1. Prepísaná nerovnosť je
+tak dokázaná pre každé reálne číslo $a$, a tým je podmienka pre použitie nerovnosti $u + \frac{1}{u} \geq 2$ pre $u = a^2 + a + 1$ overená.
+
+Ako sme už uviedli, rovnosť $u + \frac{1}{u} = 2$ nastane jedine pre $u = 1$. Pre rovnosť v~nerovnosti zo zadania úlohy tak dostávame podmienku $a^2 -a+1 = 1$, čiže $a(a-1)= 0$, čo je splnené iba pre $a = 0$ a pre $a = 1$.\\
+\\
+\kom Úloha využíva spojenie viacerých poznatkov -- faktu, že druhá mocnina akéhokoľvek reálneho čísla je nezáporná, úpravu na štvorec, ekvivalentné úpravy nerovností a tiež známu nerovnosť $u+\frac{1}{u} \geq 2$ pre každé kladné reálne $u$. Je síce náročnejšia ako úlohy, ktorými sme sa doteraz zaoberali, ale považujeme ju za vhodnú ilustráciu toho, ako nám rozšírený arzenál metód pomôže v~úspešnom zvládnutí zložitejších problémov. Úloha tiež demonštruje, že k~správnemu riešeniu častokrát vedú viaceré cesty.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{4.6} [59-I-5] Dokážte, že pre ľubovoľné kladné reálne čísla $a, b$ platí
+$$ \sqrt{ab}\leq \frac{2(a^2+3ab+b^2)}{5(a+b)}\leq \frac{a+b}{2},$$
+a pre každú z~oboch nerovností zistite, kedy prechádza na rovnosť.
+
+\end{tcolorbox}
+
+\rieh Pravá nerovnosť je ekvivalentná s~nerovnosťou
+$$ 4(a^2 + 3ab + b^2 ) \leq 5(a + b)^2,$$
+ktorú možno ekvivalentne upraviť na nerovnosť $a^2 + b^2 - 2ab = (a - b)^2 \geq 0$. Tá je splnená vždy a rovnosť v~nej nastane práve vtedy, keď $a = b$.
+
+Z~ľavej nerovnosti odstránime zlomky a umocníme ju na druhú,
+\begin{align*}
+25ab(a^2 + 2ab + b^2) &\leq 4(a^4 + 9a^2 b^2 + b^4 + 6a^3 b + 6ab^3 + 2a^2 b^2),\\
+25ab(a^2 + b^2 ) + 50a^2 b^2 &\leq 4a^4 + 4b^4 + 44a^2 b^2 + 24ab(a^2 + b^2 ),
+\end{align*}
+takže po úprave dostaneme ekvivalentnú nerovnosť
+$$4a^4 + 4b^4 - 6a^2 b^2 \geq ab(a^2 + b^2 ).$$
+Po odčítaní výrazu $2a^2 b^2$ od oboch strán nerovnosti sa nám podarí na oboch stranách použiť úpravu na štvorec. Dostaneme tak (opäť ekvivalentnú) nerovnosť $$ 4(a^2 - b^2 )^2 \geq ab(a - b)^2.$$
+Rozdiel štvorcov v~zátvorke na ľavej strane ešte rozložíme na súčin a vzťah upravíme
+na tvar $4(a - b)^2 (a + b)^2 \geq ab(a - b)^2$.
+
+Ak $a = b$, platí rovnosť. Ak $a \neq b$, môžeme poslednú nerovnosť vydeliť kladným výrazom $(a - b)^2$ a dostaneme tak nerovnosť $4(a + b)^2 \geq ab$, čiže $4a^2 + 4b^2 + 7ab \geq 0$. Ľavá strana tejto nerovnosti je vždy kladná, preto vyšetrovaná nerovnosť platí pre všetky kladné čísla $a, b$, pričom rovnosť v~nej nastane práve vtedy, keď $a = b$.\\
+\\
+\kom Táto úloha prvýkrát prináša sústavu nerovností a je vhodné so študentmi zopakovať, ako k~riešeniu sústav nerovností pristupujeme: musíme dokázať riešenie každej nerovnosti zvlášť. V~priebehu riešenia opäť využijeme úpravu na štvorec a nezápornosť druhej mocniny reálneho čísla. Úloha sa dá riešiť ešte iným spôsobom, ten si však ukážeme v~ďalšom seminári zameranom na nerovnosti.
+
+
+\subsection*{Domáca práca}
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{4.7} [62-I-2-N1]
+Dokážte, že pre ľubovoľné kladné čísla $a, b, c$ platí nerovnosť
+$$\bigg(a +\frac{1}{b}\bigg)\bigg(b+\frac{1}{c}\bigg)\bigg(c+\frac{1}{a}\bigg)\geq 8$$
+a zistite, kedy prechádza v~rovnosť.
+
+\end{tcolorbox}
+
+\rieh Ľavú stranu $L$ dokazovanej nerovnosti najskôr upravíme roznásobením a vzniknuté členy zoskupíme do súčtov dvojíc navzájom prevrátených výrazov:
+\begin{multline*} L = \bigg(a +\frac{1}{b}\bigg)\bigg(b+\frac{1}{c}\bigg)\bigg(c+\frac{1}{a}\bigg) = \bigg(ab+ \frac{a}{c} + 1 +\frac{1}{bc}\bigg) \bigg(c +\frac{1}{a}\bigg)=\\ =\bigg( abc + \frac{1}{abc}\bigg)+\bigg( a+\frac{1}{a}\bigg)+ \bigg(b+\frac{1}{b}\bigg)+\bigg(c+\frac{1}{c}\bigg).\end{multline*}
+Pretože pre $u > 0$ je $u+\frac{1}{u}\geq 2$, pričom rovnosť nastane práve vtedy, keď $u = 1$, pre výraz~$L$ platí $L \geq 2 + 2 + 2 + 2 = 8$, čo sme mali dokázať. Rovnosť $L = 8$ nastane práve vtedy, keď platí
+$$ abc+\frac{1}{abc}=a+\frac{1}{a}=b+\frac{1}{b}=c+\frac{1}{c}=2$$
+teda, ako sme už spomenuli, práve vtedy, keď $abc = a = b = c = 1$,  t.\,j. práve vtedy, keď $a = b = c = 1$.\\
+\\
+\kom Úloha sa dá riešiť využitím AG nerovnosti, tá však bude obsahom jedného z~ďalších seminárov, v~ktorom sa (okrem iného) k~tejto úlohe vrátime.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{4.8} [62-I-2-D2, resp. 59-II-2]
+Dokážte, že pre ľubovoľné čísla $a, b$ z~intervalu $\langle 1, \infty)$ platí nerovnosť
+$$ (a^2 + 1)(b^2 + 1) - (a - 1)^2 (b - 1)^2 \geq 4$$
+a zistite, kedy nastane rovnosť.
+
+\end{tcolorbox}
+
+\rieh Danú nerovnosť ekvivalentne upravujme:
+\begin{align*}
+(a^2 b^2 + a^2 + b^2 + 1) - (a^2 - 2a + 1)(b^2 - 2b + 1) &\geq 4,\\
+\begin{split}(a^2 b^2 + a^2 + b^2 + 1) - (a^2 b^2 - 2ab^2 + b^2 )+ \\+ (2a^2b - 4ab + 2b) - (a^2 - 2a + 1) &\geq 4,\end{split}\\
+2ab(a + b) - 4ab + 2(a + b) &\geq 4,\\
+2(a + b)(ab + 1) &\geq 4(ab + 1),\\
+2(ab + 1)(a + b - 2) &\geq0.
+\end{align*}
+Vzhľadom na predpoklad $a\geq 1$, $b \geq 1$ je $a + b \geq 2$, takže upravená nerovnosť zrejme platí. Rovnosť v~nej (a teda aj v~zadanej) nerovnosti pritom nastane práve vtedy, keď $a + b = 2$, čiže $a = b = 1$.\\
+\\
+\textbf{Iné riešenie.} Pri označení $m = a^2 +1$ a $n = b^2 +1$ možno ľavú stranu dokazovanej nerovnosti prepísať na tvar $L = mn-(m-2a)(n-2b) = 2an+2bm-2ab-2ab,$ z~ktorého vynímaním dostaneme $L = 2a(n - b) + 2b(m - a)$.
+
+Čísla $a, b$ sú z~intervalu $\langle 1, \infty)$, preto $1 = m - a^2 \leq m - a$. Odtiaľ $2b(m - a) \geq 2$. Analogicky dostaneme $2a(n - b) \geq 2$. Teda $L \geq 4$ a rovnosť nastáva práve vtedy, keď $a = b = 1$.\\
+\\
+\textbf{Iné riešenie.} Po substitúcii $a = 1 + m$ a $b = 1 + n$, pričom $m, n \geq 0$, získa ľavá strana nerovnosti tvar $$L = (m^2 + 2m + 2)(n^2 + 2n + 2) - m^2 n^2.$$
+Po roznásobení, ktoré si stačí iba predstaviť, sa zruší člen $m^2 n^2$, takže $L$ bude súčtom nezáporných členov, medzi ktorými bude aj člen $2 \cdot 2 = 4$. Tým je nerovnosť $L \geq 4$ dokázaná. A~keďže medzi spomenutými členmi budú aj $4m$ a $4n$, z~rovnosti $L = 4$ vyplýva $m = n = 0$, čo naopak rovnosť $L = 4$ tiež zrejme zaručuje. To znamená, že rovnosť nastáva práve vtedy, keď $a = b = 1$.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{4.9} [58-I-6]
+Dokážte, že pre ľubovoľné rôzne kladné čísla $a, b$ platí
+$$\frac{a+b}{2}<\frac{2(a^2 + ab + b^2 )}{3(a+b)}<\sqrt{\frac{a^2+b^2}{2}}.$$
+
+\end{tcolorbox}
+
+\rieh Ľavú nerovnosť dokážeme ekvivalentnými úpravami:
+\begin{align*}
+\frac{a+b}{2}&<\frac{2(a^2 + ab + b^2 )}{3(a+b)}, \ \ | \cdot 6(a+b)\\
+3(a+b)^2&<4(a^2+ab+b^2),\\
+0&<(a-b)^2.
+\end{align*}
+Posledná nerovnosť vzhľadom na predpoklad $a\neq b$ platí. Aj pravú nerovnosť zo zadania budeme ekvivalentne upravovať, začneme umocnením každej strany na druhú:
+\begin{align*}
+\frac{4(a^2 + ab + b^2 )^2}{9(a + b)^2}&<\frac{a^2 + b^2}{2}, \ \ | \cdot 18(a + b)^2\\
+8(a^2 + ab + b^2 )^2 &< 9(a^2 + b^2 )(a + b)^2,\\
+8(a^4 + b^4 + 2a^3 b + 2ab^3 + 3a^2 b^2 ) &< 9(a^4 + b^4 + 2a^3 b + 2ab^3 + 2a^2 b^2 ),\\
+6a^2 b^2 &< a^4 + b^4 + 2a^3 b + 2ab^3.
+\end{align*}
+Posledná nerovnosť je súčtom nerovností $2a^2 b^2 < a^4 + b^4$ a $4a^2 b^2 < 2a^3 b + 2ab^3$, ktoré obe platia, lebo po presune členov z~ľavých strán na pravé dostaneme po rozklade už zrejmé nerovnosti $0 < (a^2- b^2)^2$, resp. $0 < 2ab(a - b)^2$.
+
+\subsection*{Doplňujúce zdroje a materiály}
+Publikácií a článkov zaoberajúcich sa dokazovaním nerovností existuje veľké množstvo. Ak by študenti mali záujem o~širšie štúdium tejto problematiky, na úvod je vhodné odporučiť im napr. publikácie~\cite{bocek1994} alebo [YY]TODO.

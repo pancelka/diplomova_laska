@@ -1,0 +1,213 @@
+\section*{Seminár 6}
+\subsection*{Téma}
+Teória čísel I~-- úlohy o~deliteľnosti
+\subsection*{Ciele}
+
+
+\subsection*{Úlohy a riešenia}
+\textbf{Úvodný komentár.} Keďže ide o~prvé stretnutie zo série seminárov zameraných na elementárnu teóriu čísel, je potrebné so študentmi zopakovať základné znalosti, ktoré by mali mať zo základnej školy:
+\begin{itemize}
+\item chápať rozdiel medzi číslom a cifrou,
+\item používať rozvinutý a skrátený zápis čísla v~desiatkovej sústave,
+\item rozumieť pojmom prvočíslo a zložené číslo,
+\item vedieť určiť najmenší spoločný násobok a najväčší spoločný deliteľ daných dvoch celých čísel,
+\item poznať pravidlá deliteľnosti číslami 2, 3, 4, 5, 6, 8, 9, 10.
+\end{itemize}
+Študenti by mali byť schopní zdôvodniť všetky pravidlá deliteľnosti. Ak si ich nepamätajú, môže byť táto úloha vhodnou rozcvičkou pred riešením pripravených problémov.
+
+Takisto je vhodné zjednotiť značenie, ktoré budeme používať.  Fakt, že celé číslo $a$ delí celé číslo $b$ budeme zapisovať v tvare $a \mid b$ . V~tomto texte tiež označujeme $(a,b)$ najväčší spoločný deliteľ čísel $a$ a $b$ a $[a,b]$ ich najmenší spoločný násobok.
+
+Pripomenieme tiež, že ak pre prirodzené čísla $a, b, c$ platí $a \mid (b\cdot c)$ a zároveň $(a,b)=1$, musí nutne $a\mid c$. Toto tvrdenie budeme v~priebehu seminárov využívať často, je preto dôležité, aby ho študenti vzali za svoje. Vyzbrojení všetkými spomenutými znalosťami sa môžeme pustiť do riešenia úloh.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{6.1} [~\cite{holton2010}, 4.2, problem 38, str. 115] Nech $N$ je päťciferné kladné číslo také, že $N=\overline{a679b}$. Ak je $N$ deliteľné 72, určte prvú cifru $a$ a poslednú cifru $b$.
+
+\end{tcolorbox}
+
+\rie Keďže je číslo $N$ deliteľné $72=8\cdot 9$, musí byť súčasne deliteľné ôsmimi aj deviatimi. Z~pravidla pre deliteľnosť ôsmimi vyplýva, že číslo $\overline{79b}$ musí byť násobkom ôsmich a teda $b=2$. Pravidlo pre deliteľnosť deviatimi diktuje, že ciferný súčet hľadaného čísla $a+6+7+9+2=a+24$ je násobkom deviatich, dostávame tak $a=3$. Hľadaným číslom je $N=36792$.\\
+\\
+\kom Úloha nie je náročná a je zaradená ako zahrievacie cvičenie a ukážka práce s~deliteľnosťou zloženým číslom.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{6.2} [66-I-2-N1] Dokážte, že v~nekonečnom rade čísel
+$$ 1 \cdot 2 \cdot 3, 2 \cdot 3 \cdot 4, 3 \cdot 4 \cdot 5, 4 \cdot 5 \cdot 6, \ldots ,$$
+je číslo prvé deliteľom všetkých čísel ďalších.
+
+\end{tcolorbox}
+
+\rie Prvé číslo v~nekonečnom rade je číslo 6. Dokazujeme tak, že všetky výrazy tvaru $n(n+1)(n+2)$, kde $n\geq 2$ je prirodzené číslo, sú deliteľné šiestimi. To ale zjavne platí, keďže z~troch po sebe idúcich čísel je vždy práve jedno deliteľné tromi a minimálne jedno z~nich je tiež párne. Deliteľnosť dvomi a tromi zároveň nám tak zaručí deliteľnosť šiestimi a požadované tvrdenie je dokázané.\\
+\\
+\kom Táto jednoduchá úloha zoznámi žiakov s~poznatkom často využívaným v~úlohách zameraných na dokazovanie deliteľnosti číslom, ktoré je násobkom troch: z~troch po sebe idúcich prirodzených čísel je vždy práve jedno deliteľné tromi.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{6.3} [63-I-5-N1] Dokážte, že pre každé prirodzené $n$ je číslo $n^3+ 2n$ deliteľné tromi.
+
+\end{tcolorbox}
+
+\rie Každé prirodzené číslo $n$ je tvaru $n=3k$, $n=3k+1$ alebo $n=3k+2$, kde $k$ je prirodzené číslo alebo 0. Dokazované tvrdenie overíme pre každú z~týchto možností zvlášť.
+
+a) $n=3k$: $n^3+2n=(3k)^3+2\cdot 3k=27k^3+6k=3k(9k^2+2)$, tvrdenie platí.
+
+b) $n=3k+1$: $n^3+2n=(3k+1)^3+2(3k+1)=(27k^3+27k^2+9k+1)+(6k+2)=27k^3+27k^2+15k+3=3(9k^3+9k^2+5k+1)$, tvrdenie platí.
+
+c) $n=3k+2$: $n^3+2n=(3k+2)^3+2(3k+2)=(27k^3+54k^2+36k+8)+(6k+4)=27k^3+54k^2+42k+12=3(9k^3+18k^2+14k+4)$, a preto $3\mid n^3+2n$ aj v~tomto prípade.\\
+\\
+\kom Úloha zoznamuje študentov s~ďalším možným postupom pri dokazovaní deliteľnosti výrazu daným prirodzeným číslom $m$: rozdelenie na $m$ možností podľa zvyšku po delení číslom $m$ a dokázanie tvrdenia pre každú z~týchto možností zvlášť. Je vhodné diskutovať so študentmi o~výhodnosti tejto metódy pre (ne)veľké $m$.
+
+Zaujímavé je tiež porovnať riešenie tejto úlohy s~úlohou predchádzajúcou, keďže v~tomto prípade sa nám daný výraz nepodarilo rozložiť na súčin troch po sebe idúcich čísel, preto sme museli pristúpiť k~inému riešeniu.
+
+Úlohu je možné dokázať použitím matematickej indukcie, avšak tá nie je štandardnou náplňou osnov nematematických gymnázií, preto sme toto riešenie nezvolili ako vzorové. Ak sa však študenti s~dôkazom použitím indukcie stretli, je vhodné s~nimi rozobrať aj tento spôsob riešenia.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{6.4} [63-I-5-N2] Dokážte, že pre každé nepárne číslo $n$ je číslo $n^2 - 1$ deliteľné ôsmimi.
+
+\end{tcolorbox}
+
+\rie Výraz $n^2-1$ upravíme na súčin $(n-1)(n+1)$. To je súčin dvoch po sebe idúcich párnych čísel, keďže $n$ je nepárne. Preto práve jedno z~čísel $n-1$ a $n+1$ je deliteľné 4 a druhé z~nich je nepárnym násobkom čísla 2. Celkovo je teda súčin $(n-1)(n+1)$ deliteľný ôsmimi.\\
+\\
+\kom Posledná úloha zo série jednoduchých dôkazov deliteľnosti využíva podobnú myšlienku ako úloha [66-I-2-N1], navyše však vyžaduje upravenie výrazu $n^2-1$ do vhodného tvaru. Následná diskusia o~riešení je už jednoduchá.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{6.5} [63-I-5-N3+63-I-5-N4, resp. C-55-I-1] \begin{enumerate}[a)]
+\item Dokážte, že pre všetky celé kladné čísla $m$ je rozdiel $m^6 - m^2$ deliteľný šesťdesiatimi.
+\item Určte všetky kladné celé čísla $m$, pre ktoré je rozdiel $m^6 - m^2$ deliteľný číslom 120.
+\end{enumerate}
+\end{tcolorbox}
+
+\rieh a) Číslo $n = m^6 -m^2 = m^2 (m^2-1)(m^2 +1)$ je vždy deliteľné štyrmi, pretože pri párnom $m$ je $m^2$ deliteľné štyrmi a pri nepárnom $m$ sú čísla $m^2-1$, $m^2 +1$ obe párne, jedno z~nich je dokonca deliteľné štyrmi a ich súčin je teda deliteľný ôsmimi. Z~troch po sebe idúcich prirodzených čísel $m^2-1$, $m^2$, $m^2 + 1$ je práve jedno deliteľné tromi, a preto je aj číslo $n$ deliteľné tromi. Ak je $m$ deliteľné piatimi, je $m^2$ deliteľné piatimi, dokonca dvadsiatimi piatimi. V~opačnom prípade je $m$ tvaru $5k + r$, kde $r$ je rovné niektorému z~čísel 1, 2, 3, 4 a $k$ je prirodzené alebo 0. Potom $m^2 = 25k^2 + 10kr + r^2$ a $r^2$ sa rovná niektorému z~čísel 1, 4, 9, 16. V~prvom a v~poslednom prípade je číslo $m^2-1$ deliteľné piatimi, v~ostatných dvoch prípadoch je číslo $m^2 + 1$ deliteľné piatimi. Teda číslo $n$ je vždy deliteľné nesúdeliteľnými číslami 4, 3 a 5, a teda aj ich súčinom 60.\\
+
+b) Už sme ukázali, že v~prípade nepárneho $m$ je súčin $(m^2-1)(m^2 + 1)$ deliteľný ôsmimi a číslo $n = m^6- m^2$ je teda deliteľné číslom $120 = 8 \cdot 3 \cdot 5$. Ak je však číslo $m$ párne, sú čísla $m^2 -1$, $m^2 + 1$ nepárne, žiadne nie je deliteľné dvoma. Číslo $n$ je potom deliteľné ôsmimi iba v~prípade, že $m^2$ je deliteľné ôsmimi, teda $m$ je deliteľné štyrmi. Číslo $n$ je potom deliteľné šestnástimi, tromi a piatimi, a preto dokonca číslom 240.
+
+\textit{Záver.} Naše výsledky môžeme zhrnúť. Číslo $n = m^6 - m^2$ je deliteľné číslom 120 práve vtedy, keď $m$ je nepárne alebo deliteľné štyrmi.\\
+\\
+\kom Sada dvoch na seba nadväzujúcich úloh využíva poznatky získané pri riešení jednoduchších prípravných úloh zo začiatku seminára a vyžaduje sústredené a starostlivé aplikovanie všetkých z~nich.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{6.6} [59-II-1]
+Dokážte, že pre ľubovoľné celé čísla $n$ a $k$ väčšie ako 1 je číslo $n^{k+2} - n^k$ deliteľné dvanástimi.
+
+\end{tcolorbox}
+
+\rieh Vzhľadom na to, že $12 = 3 \cdot 4$, stačí ukázať, že číslo $a = n^{k+2} -  {n^k} = n^k (n^2 - 1) = (n - 1)n(n + 1)n^{k-1}$ je deliteľné tromi a štyrmi. Prvé tri činitele posledného výrazu sú tri po sebe idúce prirodzené čísla, takže práve jedno z~nich je deliteľné tromi, a preto aj číslo $a$ je deliteľné tromi. Je deliteľné aj štyrmi, lebo pri párnom $n$ je v~poslednom výraze druhý a štvrtý činiteľ párny, zatiaľ čo pri nepárnom $n$ je párny prvý a tretí činiteľ. Tým je dôkaz hotový.\\
+\\
+\textbf{Iné riešenie.} Položme $a = n^{k+2} - n^k = n^k (n^2 - 1) = (n - 1)n^k (n + 1)$. Opäť ukážeme, že $a$ je deliteľné štyrmi a tromi. Ak je $n$ párne, je $n^k$ deliteľné štyrmi pre každé celé $k \geq 2$. Ak je $n$ nepárne, sú činitele $n - 1$ a $n + 1$ párne čísla, takže $a$ je deliteľné štyrmi pre každé celé $n = 2$.
+
+Deliteľnosť tromi je zrejmá pre $n = 3l$. Ak $n = 3l + 1$, pričom $l$ je celé kladné číslo, je tromi deliteľný činiteľ $n - 1$ (a teda aj číslo $a$). Ak $n = 3l + 2$ ($l$ je celé nezáporné), je tromi deliteľný činiteľ $n + 1$. Keďže iné možnosti pre zvyšok čísla $n$ po delení tromi nie sú, je číslo $a$ deliteľné tromi. Tým je požadovaný dôkaz ukončený.\\
+\\
+\kom  Deliteľnosť štyrmi je tiež možné dokázať aj rozborom možností $n=4l$, $n=4l+1$, $n=4l+2$ a $n=4l+3$, pre $l$ celé a nezáporné. Kľúčovým krokom v~riešení bolo vhodné rozloženie čísla $a$ na súčin. To však súdiac podľa priemerného počtu bodov udelených za túto úlohu v~krajských kolách\footnote{3,0\,b v~prípade úspešných riešiteľov, 1,8\,b v~prípade všetkých riešiteľov, najmenej zo všetkých úloh krajského kola daného ročníka} na Slovensku bola úloha pre riešiteľov neľahká.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{6.7} [58-S-3]
+Keď isté dve prirodzené čísla v~rovnakom poradí sčítame, odčítame, vydelíme a vynásobíme a všetky štyri výsledky sčítame, dostaneme 2 009. Určte tieto dve čísla.
+
+\end{tcolorbox}
+
+\rie Pre hľadané prirodzené čísla $x$ a $y$ sa dá podmienka zo zadania vyjadriť rovnicou
+$$(x + y) + (x - y) +\frac{x}{y}+ (x \cdot y) = 2 009, \ \ \ \ (1)$$
+v~ktorej sme čiastočné výsledky jednotlivých operácií dali do zátvoriek.
+
+Vyriešme rovnicu (1) vzhľadom na neznámu $x$ (v~ktorej je, na rozdiel od neznámej $y$, rovnica lineárna):
+\begin{align*}
+2x +\frac{x}{y}+ xy &= 2 009,\\
+2xy + x + xy^2 &= 2 009y,\\
+x(y + 1)^2 &= 2 009y,\\
+x &= \frac{2009y}{(y + 1)^2}. \ \ \ \ (2)
+\end{align*}
+Hľadáme práve tie prirodzené čísla $y$, pre ktoré má nájdený zlomok celočíselnú hodnotu, čo možno vyjadriť vzťahom $(y + 1)^2 \mid 2009y$. Keďže čísla $y$ a $y + 1$ sú nesúdeliteľné, sú nesúdeliteľné aj čísla $y$ a $(y +1)^2$, takže musí platiť $(y +1)^2 \mid 2009 = 7^2 \cdot41$. Keďže $y +1$ je celé číslo väčšie ako 1 (a činitele 7, 41 sú prvočísla), poslednej podmienke vyhovuje iba hodnota $y = 6$, ktorej po dosadení do (2) zodpovedá $x = 246$. (Skúška nie je nutná, lebo rovnice (1) a (2) sú v~obore prirodzených čísel ekvivalentné.)
+
+Hľadané čísla v~uvažovanom poradí sú 246 a 6.\\
+\\
+\kom Úloha je zaujímavá v~tom, že na prvý pohľad nemusí riešiteľ tušiť, že ide o~problém využívajúci poznatky z~deliteľnosti. Zároveň vyžaduje netriviálnu zručnosť a nápad pri upravovaní počiatočnej rovnice do vhodného tvaru, nadväzuje tým na predchádzajúce semináre o~algebraických výrazoch a rovniciach. Úloha je tak peknou ukážkou toho, že v~matematike (a~nielen tam) nie sú znalosti a koncepty nesúvisiace, ale často sú vzájomne prepojené.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{6.8} [66-I-2-N2] Nájdite všetky celé $d > 1$, pri ktorých hodnoty výrazov $U(n) = n^3+ 17n^2-1$ a $V (n) = n^3+ 4n^2+ 12$ dávajú po delení číslom $d$ rovnaké zvyšky, nech je celé číslo $n$ zvolené akokoľvek.
+
+\end{tcolorbox}
+
+\rieh Hľadané $d$ sú práve tie, ktoré delia rozdiel $U(n) - V~(n) = 13n^2 - 13 = 13(n - 1)(n + 1)$ pre každé celé $n$. Tento rozdiel je tak určite deliteľný 13. Aby sme ukázali, že (zrejme vyhovujúce) $d = 13$ je jediné, dosaďme do rozdielu $U(n) - V~(n)$ hodnotu $n = d$: číslo $d$ je s~číslami $d - 1$ a $d + 1$ nesúdeliteľné, takže delí súčin $13(d - 1)(d + 1)$ jedine vtedy, keď delí činiteľ 13, teda keď $d = 13$. Vyhovuje jedine $d = 13$.\\
+\\
+\kom Úloha stavia na myšlienke deliteľnosti rozdielu $U(n)$ a $V(n)$ hľadaným $d$, čo je ďalší užitočný nástroj: namiesto upravovania výrazov $U(n)$ a $V(n)$ ich odčítať. Taktiež je vhodné upozorniť študentov, že druhá časť riešenia -- dokázanie, že nájdené riešenie je jediné -- je taktiež podstatnou súčasťou riešenia (nielen) tejto úlohy.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{6.9} [66-I-2-D1] Pre ktoré prirodzené čísla $n$ nie je výraz $V (n) = n^4+ 11n^2 - 12$ násobkom ôsmich?
+
+\end{tcolorbox}
+
+\rieh Upravme výraz $V(n)$ do tvaru súčinu: $V (n) = (n^2-1)(n^2+12)=(n-1)(n+1)(n^2+12)$. Vidíme, že $V(n)$ je určite násobkom ôsmich v~prípade nepárneho $n$ (viď. tretia úloha tohto seminára). Keďže pre párne $n$ je súčin $(n-1)(n+1)$ nepárny, hľadáme práve tie $n$ tvaru $n = 2k$, pre ktoré nie je deliteľný ôsmimi výraz $n^2+ 12 = 4(k^2+ 3)$, čo nastane práve vtedy, keď $k$ je párne. Hľadané $n$ sú teda práve tie, ktoré sú deliteľné štyrmi.\\
+\\
+\kom Úloha využíva vhodnú úpravu výrazu $V$ na súčin. Tu študenti zúročia zručnosti nadobudnuté v~algebraických seminároch. Zároveň využijú skôr dokázané tvrdenie o~deliteľnosti ôsmimi a napokon, úloha ich pripraví na nasledujúci komplexnejší problém.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{6.10} [66-I-2]
+Nájdite najväčšie prirodzené číslo $d$, ktoré má tú vlastnosť, že pre ľubovoľné prirodzené číslo $n$ je hodnota výrazu $$V (n) = n^4+ 11n^2-12$$
+deliteľná číslom $d$.
+
+\end{tcolorbox}
+
+\rieh Vypočítajme najskôr hodnoty $V (n)$ pre niekoľko najmenších prirodzených čísel $n$ a ich rozklady na súčin prvočísel zapíšme do tabuľky:
+\begin{center}
+\begin{tabular}{c c}
+$n$ & $V (n) $\\
+\hline
+1 & 0\\
+2 & $48 = 2^4 \cdot 3$\\
+3 & $168 = 2^3 \cdot 3 \cdot 7$\\
+4 & $420 = 2^2 \cdot 3 \cdot 5 \cdot 7$
+\end{tabular}
+\end{center}
+Z~toho vidíme, že hľadaný deliteľ $d$ všetkých čísel $V (n)$ musí byť deliteľom čísla $2^2 \cdot 3 = 12$, spĺňa teda nerovnosť $d \leq 12$. Preto ak ukážeme, že číslo $d = 12$ zadaniu vyhovuje,  t.\,j. že $V (n)$ je násobkom čísla 12 pre každé prirodzené $n$, budeme s~riešením hotoví.
+
+Úprava $$V (n) = n^4+ 11n^2 - 12 = (12n^2 - 12) + (n^4 - n^2),$$ pri ktorej sme z~výrazu $V (n)$ ”vyčlenili“ dvojčlen 1$2n^2 -12$, ktorý je zrejmým násobkom čísla 12, redukuje našu úlohu na overenie deliteľnosti číslom 12 (teda deliteľnosti číslami 3 a 4) dvojčlena $n^4 - n^2$ . Využijeme na to jeho rozklad $$n^4 - n^2 = n^2(n^2 - 1) = (n - 1)n^2(n + 1).$$
+Pre každé celé $n$ je tak výraz $n^4 - n^2$ určite deliteľný tromi (také je totiž jedno z~troch
+po sebe idúcich celých čísel $n - 1$, $n$, $n + 1$) a súčasne aj deliteľný štyrmi (zaručuje to
+v~prípade párneho $n$ činiteľ $n^2$, v~prípade nepárneho $n$ dva párne činitele $n-1$ a $n+1$).
+
+Dodajme, že deliteľnosť výrazu $V (n)$ číslom 12 možno dokázať aj inými spôsobmi, napríklad môžeme využiť rozklad $V (n) = n^4+ 11n^2 - 12 = (n^2+ 12)(n^2 - 1)$ z~predchádzajúcej úlohy alebo prejsť k~dvojčlenu $n^4 + 11n^2$ a podobne.
+
+\textit{Záver.} Hľadané číslo $d$ je rovné 12.\\
+\\
+\kom Úloha je okrem využitia všetkých doterajších poznatkov zaradená aj z~dôvodu prvého kroku riešenia. Je vhodné študentom ukázať, že preskúmanie výrazu pre niekoľko malých hodnôt $n$ nám môže pomôcť utvoriť si predstavu o~tom, ako sa bude výraz správať ďalej, príp. vytvoriť hypotézu, ktorú sa neskôr pokúsime dokázať. Táto metóda nájde uplatnenie nielen v~tejto konkrétnej úlohe, ale aj v~ďalších partiách matematiky.\\
+
+\subsection*{Domáca práca}
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{6.11} [66-S-2]
+Označme $M$ množinu všetkých hodnôt výrazu $V (n) = n^4 + 11n^2 - 12$, pričom $n$ je nepárne prirodzené číslo. Nájdite všetky možné zvyšky po delení číslom 48, ktoré dávajú prvky množiny $M$.
+
+\end{tcolorbox}
+
+\rieh Najskôr vypočítame prislúchajúce hodnoty výrazu $V$ pre niekoľko prvých nepárnych čísel:
+\begin{center}
+\begin{tabular}{c c}
+$n$ & $V (n)$\\
+\hline
+1 & 0\\
+3 & $168 = 3 \cdot 48 + 24$ \\
+5 & $888 = 18 \cdot 48 + 24$ \\
+7 & $2928 = 61 \cdot 48$\\
+9 & $7440 = 155 \cdot 48$
+\end{tabular}
+\end{center}
+
+Medzi hľadané zvyšky teda patria čísla 0 a 24. Ukážeme, že iné zvyšky už možné nie sú. Na to stačí dokázať, že pre každé nepárne číslo $n$ platí $24 \mid V~(n)$. Z~školskej časti seminára vieme, že pre každé prirodzené číslo $n$ platí $12 \mid V~(n)$, teda aj $3 \mid V~(n)$. Keďže čísla 3 a 8 sú nesúdeliteľné, stačí ukázať, že pre každé nepárne číslo $n$ platí $8 \mid V~(n)$. Využijeme
+pritom rozklad daného výrazu na súčin
+$$V (n) = n^4+ 11n^2 - 12 = (n^2 - 1)(n^2+ 12) = (n - 1)(n + 1)(n^2+ 12). \ \ \ (1)$$
+Ľubovoľné nepárne prirodzené číslo $n$ možno zapísať v~tvare $n = 2k - 1$, pričom $k \in \NN$ . Pre také $n$ potom dostávame
+$$V (2k - 1) = [(2k - 1) - 1][(2k - 1) + 1][(2k - 1)^2
++ 12] = 4(k - 1)k(4k^2 - 4k + 13),$$
+a keďže súčin $(k - 1)k$ dvoch po sebe idúcich celých čísel je deliteľný dvoma, je celý výraz deliteľný ôsmimi.
+
+\textit{Záver}. Daný výraz môže dávať po delení číslom 48 práve len zvyšky 0 a 24.
+
+\textit{Poznámka}. Poznatok, že $8 \mid V~(n)$ pre každé nepárne $n$, možno dokázať aj inak, bez použitia rozkladu (1). Ak je totiž $n = 2k - 1$, pričom $k \in \NN$ , tak číslo
+$$n^2= (2k - 1)^2= 4k^2 - 4k + 1 = 4k(k - 1) + 1$$
+dáva po delení ôsmimi (vďaka tomu, že jedno z~čísel $k$, $k - 1$ je párne) zvyšok 1, a teda rovnaký zvyšok dáva aj číslo $n^4$ (ako druhá mocnina nepárneho čísla $n^2$). Platí teda $n^2 = 8u + 1$ a $n^4 = 8v + 1$ pre vhodné celé $u$ a $v$, takže hodnota výrazu
+$$V (2k - 1) = (8v + 1) + 11(8u + 1) - 12 = 8(v + 11u)$$
+je naozaj násobkom ôsmich.
+
+Pripojme aj podobný dôkaz poznatku $3 \mid V~(n)$ zo seminárneho stretnutia. Pre čísla $n$ deliteľné tromi je to zrejmé, ostatné $n$ sú tvaru $n = 3k \pm 1$, takže číslo
+$$n^2= (3k \pm 1)^2= 9k^2 \pm 6k + 1 = 3k(3k \pm 2) + 1$$
+dáva po delení tromi zvyšok 1, rovnako tak aj číslo $n^4 = (n^2)^2$. Dosadenie $n^2 = 3u + 1$ a $n^4 = 3v + 1$ do výrazu $V (n)$ už priamo vedie k~záveru, že $3 \mid V~(n)$.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{6.12} [60-I-2]
+Dokážte, že výrazy $23x + y$, $19x + 3y$ sú deliteľné číslom 50 pre rovnaké dvojice prirodzených čísel $x$, $y$.
+
+\end{tcolorbox}
+
+\rieh Predpokladajme, že pre dvojicu prirodzených čísel $x, y$ platí $50 \mid 23x + y$. Potom pre nejaké prirodzené číslo $k$ platí $23x + y = 50k$. Z~tejto rovnosti dostaneme $y = 50k - 23x$, čiže $19x + 3y = 19x + 3(50k - 23x) = 150k - 50x = 50(3k - x)$, takže číslo $19x + 3y$ je násobkom čísla 50.
+
+Podobne to funguje aj z~druhej strany. Ak pre nejakú dvojicu prirodzených čísel $x,y$ platí $50 \mid 19x + 3y$, tak $19x + 3y = 50l$ pre nejaké prirodzené číslo $l$. Z~tejto rovnosti vyjadríme číslo~$y$; dostaneme $y = (50l - 19x)/3$ (ďalší postup by bol podobný, aj keby sme vyjadrili $x$ namiesto~$y$). Po dosadení dostaneme $$23x + y = 23x + \frac{50l - 19x}{3}=\frac{69x + 50l - 19x}{3}=\frac{50 \cdot (x + l)}{3}.$$
+O~výslednom zlomku vieme, že je to prirodzené číslo. Čitateľ tohto zlomku je deliteľný číslom 50. V~menovateli je len číslo 3, ktoré je nesúdeliteľné s~50, preto sa číslo 50 nemá s~čím z~menovateľa vykrátiť a teda číslo $23x + y$ je deliteľné 50.\\
+\\
+\textbf{Iné riešenie.} Zrejme $3 \cdot (23x + y) - (19x + 3y) = 50x$, čiže ak 50 delí jedno z~čísel $23x + y$ a $19x + 3y$, tak delí aj druhé z~nich.\\
+\subsection*{Doplňujúce zdroje a materiály}
+Výborným zdrojom úloh jednoduchých aj zložitejších je publikácia [~\cite{holton2010}], najmä jej časti 4.1, 4.2 a 4.3, ktoré obsahujú mnoho jednoduchších aj zložitejších príkladov na dokazovanie deliteľnosti, spoločné delitele a násobky aj úlohy o~ciferných zápisoch, preto môže byť vhodným doplnením banky úloh nielen pre tento, ale aj nasledujúce dva semináre.
+

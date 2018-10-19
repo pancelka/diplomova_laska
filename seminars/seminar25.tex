@@ -1,0 +1,103 @@
+\section*{Seminár 25}
+\subsection*{Téma}
+Kombinatorika II -- hry s hľadaním víťaznej stratégie a logické úlohy.
+\subsection*{Ciele}
+Pokračovať v precvičovaní úloh zameraných na hľadanie víťaznej stratégie a úloh, ktoré nevyžadujú špeciálne matematické znalosti.
+
+\subsection*{Úlohy a riešenia}
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{25.1} [61-I-6-N2] Na tabuli sú napísané všetky prvočísla menšie ako 100. Gitka a Terka sa striedajú v~ťahoch pri nasledujúcej hre. Najprv Gitka zmaže jedno z~prvočísel. Ďalej vždy hráčka, ktorá je na ťahu, zmaže jedno z~prvočísel, ktoré má s~predchádzajúcim zmazaným prvočíslom jednu zhodnú číslicu (tak po prvočísle 3 je možné zmazať trebárs 13 alebo 37). Hráčka, ktorá je na ťahu a nemôže už žiadne prvočíslo zmazať, prehráva. Ktorá z~oboch hráčok môže hrať tak, že vyhrá nezávisle od ťahov súperky?
+
+\end{tcolorbox}
+
+\rieh Pretože prvočísel menších ako 100 je nepárny počet (25), ponúka sa hypotéza, že víťaznú stratégiu bude mať prvá hráčka. Ukážme, že to tak naozaj je. Táto hráčka si vopred v~duchu spáruje (podľa spoločnej číslice) napísané prvočísla (dá sa to urobiť viacerými spôsobmi, uvedieme ten, pri ktorom v~každom kroku párujeme najmenšie doposiaľ nespárované prvočíslo s~najmenším ďalším doposiaľ nespárovaným prvočíslom so spoločnou číslicou): (2, 23), (3, 13), (5, 53), (7, 17), (11, 19), (29, 59), (31, 37), (41, 43), (47, 67), (61, 71), (73, 79), (83, 89); jediné zostávajúce nespárované prvočíslo 97 preto Gitka zmaže ako prvé a ďalej pri hre bude mazať vždy prvočíslo, ktoré je v~páre s~predchádzajúcim zmazaným prvočíslom. Týmto postupom musí vyhrať.\\
+\\
+\kom Úloha je malým opakovaním toho, ktoré čísla do 100 sú prvočísla a môžeme ju využiť pripomenutie definície prvočísla. Ako aj v nasledujúcich úlohách, môžeme študentov nechať najprv odohrať niekoľko hier a potom skúsiť ich čiastkové zistenia spoločne pretaviť do univerzálnej stratégie.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{25.2} [61-II-4] Na tabuli je napísaných prvých $n$ celých kladných čísel. Marína a Tamara sa striedajú v~ťahoch pri nasledujúcej hre. Najskôr Marína zotrie jedno z~čísel na tabuli. Ďalej vždy hráčka, ktorá je na ťahu, zotrie jedno z~čísel, ktoré sa od predchádzajúceho zotretého čísla ani nelíši o~1, ani s~ním nie je súdeliteľné. Hráčka, ktorá je na ťahu a nemôže už žiadne číslo zotrieť, prehrá. Pre $n = 6$ a pre $n = 12$ rozhodnite, ktorá z~hráčok môže hrať tak, že vyhrá nezávisle na ťahoch druhej hráčky.
+
+\end{tcolorbox}
+
+\rieh Úloha dvoch po sebe zotieraných čísel je v~zadanej hre symetrická: ak je po čísle $x$ možné zotrieť číslo $y$, je (pri inom priebehu hry) po čísle $y$ možné zotrieť číslo $x$. Preto si môžeme celú hru (so zadaným číslom $n$) \uv{sprehľadniť} tak, že najskôr vypíšeme všetky takéto (nazývajme ich prípustné) dvojice $(x, y)$. Keďže na poradí čísel v~prípustnej dvojici nezáleží, stačí vypisovať len tie dvojice $(x, y)$, v~ktorých $x < y$.
+
+V~prípade $n = 6$ všetky prípustné dvojice sú
+$$(1, 3), (1, 4), (1, 5), (1, 6), (2, 5), (3, 5).$$
+Z~tohto zoznamu ľahko odhalíme, že víťaznú stratégiu má (prvá) hráčka Marína. Ak totiž zotrie na začiatku hry číslo 4, musí Tamara zotrieť číslo 1, a keď potom Marína zotrie číslo 6, nemôže už Tamara žiadne ďalšie číslo zotrieť. Okrem tohto priebehu $4 \rightarrow 1\rightarrow 6$ si môže Marína zaistiť víťazstvo aj inými, pre Tamaru ”vynútenými“ priebehmi, napríklad $6\rightarrow 1 \rightarrow 4$ alebo $4 \rightarrow 1 \rightarrow 3 \rightarrow 5 \rightarrow 2$.
+
+V~prípade $n = 12$ je všetkých prípustných dvojíc výrazne väčšie množstvo. Preto si položíme otázku, či všetky čísla od 1 do 12 možno rozdeliť na šesť prípustných dvojíc. Ak totiž nájdeme takú šesticu, môžeme opísať víťaznú stratégiu druhej hráčky (Tamary): ak zotrie Marína pri ktoromkoľvek svojom ťahu číslo $x$, Tamara potom vždy zotrie to číslo $y$, ktoré s~číslom $x$ tvorí jednu zo šiestich nájdených dvojíc. Tak nakoniec Tamara zotrie aj posledné (dvanáste) číslo a vyhrá (prípadne hra skončí skôr tak, že Marína nebude môcť zotrieť žiadne číslo).
+
+Hľadané rozdelenie všetkých 12 čísel do šiestich dvojíc naozaj existuje, napríklad
+$$(1, 4), (2, 9), (3, 8), (5, 12), (6, 11), (7, 10).$$
+Iné vyhovujúce rozdelenie dostaneme, keď v~predošlom dvojice (1, 4) a (6, 11) zameníme dvojicami (1, 6) a (4, 11). Ďalšie, menej podobné vyhovujúce rozdelenie je napríklad
+$$(1, 6), (2, 5), (3, 10), (4, 9), (7, 12), (8, 11).$$
+\textit{Záver.} Pre $n = 6$ má víťaznú stratégiu Marína, pre $n = 12$ Tamara.\\
+\\
+\kom Úloha je náročnejšia ako predchádzajúca, no študenti by mali prvú časť zvládnuť samostatne, v časti druhej môžu svoje sily spojiť so s ďalšími spolužiakmi, príp. stratégie, ktoré vymysleli, otestovať pri vzájomnej hre.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{25.3} [61-I-6-N3] Dve hráčky majú k~dispozícii pre hru, ktorú opíšeme, neobmedzený počet dvadsaťcentových mincí a stôl s~kruhovou doskou s~priemerom 1\,m. Hra prebieha tak, že sa hráčky pravidelne striedajú v~ťahoch. Najprv prvá hráčka položí jednu mincu kamkoľvek na prázdny stôl. Ďalej vždy hráčka, ktorá je na ťahu, položí na voľnú časť stola ďalšiu mincu (tak, aby nepresahovala okraj stola a aby sa skôr položených mincí nanajvýš dotýkala). Ktorá z~oboch hráčok môže hrať tak, že vyhrá nezávisle od ťahov súperky?
+
+\end{tcolorbox}
+
+\rieh Víťaznú stratégiu má prvá hráčka: prvú mincu položí doprostred stola a v~každom ďalšom kroku položí mincu na miesto súmerne združené podľa stredu stola s~miestom práve položenej mince.\\
+\\
+\kom Úloha je zaujímavým príkladom, kde zohráva špeciálnu úlohu jeden konkrétny bod hracej plochy. Nájdenie víťaznej stratégie je po uvedomení si tejto vlastnosti už úlohou jednoduchou. Na príklade tejto hry môžeme študentov upozorniť na ďalší všeobecný princíp, ktorý pri riešení matematických problémov môže prísť vhod -- hľadanie symetrií, príp. špeciálnych bodov týchto symetrií a skúmanie ich vlastností, pričom symetrie nemusíme chápať nutne iba v geometrickom kontexte. \\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{25.4} [59-D-1] Erika a Klárka hrali hru ”slovný logik“ s týmito pravidlami: Hráč $A$ si myslí slovo zložené z piatich rôznych písmen. Hráč $B$ vysloví ľubovoľné slovo zložené z piatich rôznych písmen a hráč $A$ mu prezradí, koľko písmen uhádol na správnej pozícii a koľko na nesprávnej. Písmená považujeme za rôzne, aj keď sa líšia iba mäkčeňom alebo dĺžňom (napríklad písmena $A$, \textit{Á} sú rôzne). Keby si hráč $A$ myslel napríklad slovo \textit{LOĎKA} a $B$ by vyslovil slovo \textit{KOLÁČ}, odpovie hráč $A$, že jedno písmeno uhádol hráč $B$ na správnej pozícii a dve na nesprávnej. Skrátene oznámi \uv{1 + 2}, lebo sa naozaj obe slová zhodujú iba v písmene $O$ vrátane pozície (druhej zľava) a v písmenách $K$ a $L$, ktorých pozície sú odlišné. Erika si myslela slovo z piatich rôznych písmen a Klárka vyslovila slová \textit{KABÁT, STRUK, SKOBA, CESTA} a \textit{ZÁPAL}. Erika na tieto slová v danom poradí odpovedala 0 + 3, 0 + 2, 1 + 2, 2 + 0 a 1 + 2. Zistite, aké slovo si Erika mohla myslieť.
+
+\end{tcolorbox}
+
+\rieh Slová \textit{ZÁPAL} a $STRUK$ nemajú spoločné písmená. Preto sa, ako vyplýva z odpovedí 1 + 2 a 0 + 2, medzi ich písmenami, ktoré dokopy tvoria množinu $M= \{Z$, \textit{Á}, $P, A, L, S, T, R, U, K\}$, nachádza všetkých päť písmen hľadaného slova. V slove $SKOBA$ majú byť práve tri z hľadaných písmen. Sú to teda písmená $S, K, A$. (Zvyšné písmená $B$ a $O$ totiž do množiny $M$ nepatria.) V slove $CESTA$ majú byť len dve z hľadaných písmen, a obe na správnej pozícii. Sú to už nájdené $S$ a $A$, ktoré teda patria na tretie, resp. piate miesto hľadaného slova (a písmeno $T$ môžeme z množiny $M$ ”vylúčiť“). Písmeno $K$ nemôže byť ani na prvom, ani na druhom mieste: vyplýva to z odpovedí pre slová \textit{KABÁT} (0 + 3) a $SKOBA$ (1 + 2). Takže je na štvrtom mieste a ostáva určiť prvé dve písmená. V slove $STRUK$ sú len dve z hľadaných písmen (musia to teda byť $S$ a $K$), obe na nesprávnych pozíciách. Preto z množiny $M$ \uv{ vylúčime} aj písmená $R, U$ (a $T$, ak sme to doteraz neurobili). Zvyšné dve hľadané písmená potom patria do množiny $\{Z$, \textit{Á}, $P, L\}$. Z podmienok pre slovo \textit{KABÁT} vyplýva, že jedno z nich je \textit{Á}. V slove \textit{ZÁPAL} je práve jedno písmeno na správnej pozícii. Keby to bolo $Z$, nemali by sme kam uložiť písmeno \textit{Á}. Takže \textit{Á} je na druhom mieste a navyše môžeme vylúčiť písmeno $Z$. Na prvom mieste hľadaného slova môže byť $L$ alebo $P$. Ľahko sa presvedčíme, že nájdené slová \textit{LÁSKA} aj \textit{PÁSKA} vyhovujú všetkým podmienkam úlohy.\\
+\\
+\kom Úloha opäť nevyžaduje žiadne matematické znalosti, je však výbornou previerkou toho, ako sú študenti schopní narábať s veľkým množstvom informácií, nestratiť v nich prehľad a využiť ich na zdarné vyriešenie zadaného problému. \\
+\\
+
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{25.5} [63-D-6]
+Šachového turnaja sa zúčastnilo 8 hráčov a každý s každým odohral jednu partiu. Za víťazstvo získal hráč 1 bod, za remízu pol bodu, za prehru žiadny bod. Na konci turnaja mali všetci účastníci rôzne počty bodov. Hráč, ktorý skončil na 2. mieste, získal rovnaký počet bodov ako poslední štyria dokopy. Určte výsledok partie medzi 4. a 6. hráčom v celkovom poradí.
+
+\end{tcolorbox}
+
+\rieh Poslední štyria hráči odohrali medzi sebou 6 partií, takže počet bodov, ktoré dokopy získali, je aspoň 6. Hráč, ktorý skončil na 2. mieste, teda získal aspoň 6 bodov. Keby získal viac ako 6, teda aspoň 6,5 bodov, musel by najlepší hráč (vďaka podmienke rôznych počtov) získať všetkých 7 možných bodov; porazil by tak i hráča na 2. mieste, ktorý by v dôsledku toho získal menej ako 6,5 bodov, a to je spor. Hráč v poradí druhý preto získal práve 6 bodov. Presne toľko ale získali dokopy i poslední štyria, a tak mohli tieto body získať len zo vzájomných partií, čo znamená, že prehrali všetky partie s hráčmi z prvej polovice výsledného poradia. Hráč, ktorý skončil na 6. mieste, preto prehral partiu s hráčom, ktorý skončil na 4. mieste.\\
+\\
+\kom Posledná logická úloha seminára poskytuje niekoľko rôznych ciest k riešeniu, nielen jedinú popísanú v zadaní a tak môže byť pre študentov inšpiratívne svoje riešenia medzi sebou pozdieľať. Na úlohu tiež nadväzuje domáca práca.
+\subsection*{Domáca práca}
+
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul [63-K-2]{25.6}
+Šachového turnaja sa zúčastnilo 5 hráčov a každý s každým odohral jednu partiu. Za prvenstvo získal hráč 1 bod, za remízu pol bodu, za prehru žiadny bod. Poradie hráčov na turnaji sa určuje podľa počtu získaných bodov. Jediným ďalším kritériom rozhodujúcim o konečnom umiestnení hráčov v prípade rovnosti bodov je počet výhier (kto má viac výhier, je na tom v umiestnení lepšie). Na turnaji získali všetci hráči rovnaký počet bodov. Vojto porazil Petra a o prvé miesto sa delil s Tomášom. Ako dopadla partia
+medzi Petrom a Martinom?
+
+\end{tcolorbox}
+
+\rieh Každý hráč odohral po jednej partii so zvyšnými štyrmi. Bolo teda odo hraných celkom $\frac{1}{2}\cdot5 \cdot 4 = 10$ partií, takže každý hráč získal práve 2 body. Sú len tri možnosti, ako získať odohraním štyroch partií 2 body, a podľa toho obsahovala celková tabuľka nanajvýš tri rovnocenné skupiny hráčov. Tieto skupiny, $A, B$ a $C$, uvádzame v poradí, v ktorom by sa v konečnej tabuľke umiestnili:
+
+Skupina $A$ obsahuje všetkých hráčov, ktorí majú po dvoch výhrach a dvoch prehrách. Skupina $B$ pozostáva z hráčov s jednou výhrou, jednou prehrou a dvoma remízami. Skupina $C$ obsahuje hráčov so štyrmi remízami.
+
+Vojto a Tomáš sú jediní víťazi, preto nepatria do skupiny $C$. Nepatria ani do skupiny $B$, pretože v opačnom prípade by s nimi museli všetci traja hráči zo skupiny $C$ s horším výsledkom remizovať (a každý hráč skupiny B má len dve remízy).
+
+Z toho vyplýva, že Vojto a Tomáš majú po dvoch výhrach a dvoch prehrách a skupina $C$ je prázdna. Zvyšní traja hráči tak majú po jednej výhre, jednej prehre a dvoch remízach, ktoré museli uhrať navzájom medzi sebou.\\
+\textit{Záver}. Peter a Martin spolu remizovali.\\
+
+\textbf{Iné riešenie.} Využijeme (nadbytočný) údaj, že Vojto porazil Petra: Keby mali Vojto a Tomáš po jednej výhre, jednej prehre a dvoch remízach, musel by aj Peter patriť medzi víťazov turnaja. Jediný v poradí nižší celkový výsledok sú totiž štyri remízy, Peter však jednu partiu prehral, a tak musel aj jednu vyhrať. Vojto a Tomáš majú 1preto po dvoch výhrach a dvoch prehrách. Ak Peter prehral s Vojtom, musel poraziť Tomáša. (Nemohol mať dve prehry, keďže bol v poradí nižšie ako Tomáš a Vojto. Ani nemohol s Tomášom, ktorý žiadnu remízu nemá, remizovať.) Potrebný druhý bod získal dvoma remízami -- s Martinom a nepomenovaným piatym hráčom.\\
+\textit{Záver}. Peter a Martin spolu remizovali.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul {25.7}[64-D-3] Simona a Lenka hrajú hru. Pre dané celé číslo $k$ také, že $0 \leq k \leq 64$, vyberie Simona $k$ políčok šachovnice $8 \times 8$ a každé z nich označí krížikom. Lenka potom šachovnicu nejakým spôsobom vyplní tridsiatimi dvoma dominovými kockami. Ak je počet kociek pokrývajúcich dva krížiky nepárny, vyhráva Lenka, inak vyhráva Simona. V závislosti
+od $k$ určte, ktoré z dievčat má vyhrávajúcu stratégiu.
+
+\end{tcolorbox}
+
+\rieh Riešenie rozdeľme podľa hodnoty čísla $k$.
+
+Ak $k = 0$, je počet kociek pokrývajúcich dva krížiky rovný nule, preto vyhrá Simona.
+
+Ak $0 < k \leq 32$, umiestni Simona krížiky napr. iba na biele políčka šachovnice. Potom pod žiadnou kockou nie sú dva krížiky, preto vyhrá Simona.
+
+Ak $k > 32$, pričom $k$ je párne, umiestni Simona 32 krížikov na biele políčka a zvyšné krížiky kamkoľvek. Potom pod párnym počtom kociek sú dva krížiky (takých kociek je totiž práve $k - 32$, pretože každá dominová kocka pokrýva jedno biele a jedno čierne
+políčko šachovnice), takže vyhrá Simona.
+
+Ak $32 < k \leq 61$, pričom k je nepárne, nenapíše Simona krížiky do troch políčok v jednom z \uv{bielych rohov}, t. j. do rohového bieleho a do dvoch susedných čiernych políčok, ale napíše ich do všetkých ostatných 31 bielych políčok a zvyšok do akýchkoľvek čiernych políčok (okrem spomenutých dvoch). Na bielych políčkach je teda nepárny počet krížikov a na čiernych párny počet krížikov. Okolo každého čierneho políčka s krížikom sú všetky biele políčka tiež s krížikom, preto každá kocka, ktorá zakrýva čierne políčko s krížikom, zakrýva dva krížiky. Iné kocky dva krížiky nezakrývajú. Preto opäť vyhrá Simona.
+
+Ak $k = 63$, dva krížiky nie sú iba pod jedinou kockou, preto v takom prípade vyhrá Lenka, a to bez potreby akejkoľvek stratégie.\\
+\textit{Záver.} Pre každé $0 \leq k \leq 64$, $k \neq 63$, má vyhrávajúcu stratégiu Simona, pri $k = 63$ vyhráva automaticky Lenka.\\
+\\
+
+\subsection*{Doplňujúce zdroje a materiály}
+Výborným zdrojom všemožných matematických hier, spolu s ich kategorizáciou a možnosťou využitia v triede je  [~\cite{burjan1999}].
+

@@ -1,0 +1,185 @@
+\section*{Seminár 5}
+\subsection*{Téma}
+Algebraické výrazy, rovnice a nerovnosti III -- lineárne rovnice a sústavy lineárnych rovníc
+
+\subsection*{Ciele}
+Upevniť poznatky o~riešení lineárnych rovníc a sústav lineárnych rovníc.
+
+\subsection*{Úlohy a riešenia}
+
+\textbf{Úvodný komentár.} Seminárne stretnutie je zamerané na prácu s~rovnicami a úlohami, ktoré na rovnice, príp. sústavy rovníc vedú. Ide o~jedno z~dvoch stretnutí (ďalším je Seminár 19), v~tejto chvíli sa zameriame na jednoduchšie (priamočiarejšie) úlohy, v~pokračovaní sa potom budeme zaoberať zložitejšími rovnicami a sústavami.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{5.1} [60-I-1-N1] Máme tri čísla so súčtom 2010, pričom každé z~nich je aritmetickým priemerom zvyšných dvoch. Aké sú to čísla?
+
+\end{tcolorbox}
+
+\rie Označme hľadané čísla $a,b$ a $c$. Podľa zadania platí
+\begin{align*}
+\frac{a+b}{2} &=c,\\
+\frac{b+c}{2} &=a,\\
+\frac{c+a}{2} &=b.
+\end{align*}
+Riešením sústavy dostávame $a=b=c$ a z~podmienky $a+b+c=2010$ potom jediné riešenie úlohy $a=b=c=670$.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{5.2} [60-I-1-N2] Máme tri čísla, o~ktorých vieme, že každé z~nich je aritmetickým priemerom niektorých dvoch z~našich troch čísel. Dokážte, že naše tri čísla sú rovnaké.
+
+\end{tcolorbox}
+
+\rieh Predpokladajme, že niektoré z~našich čísel je priemerom seba a iného z~našich čísel. Potom ich vieme označiť $a, b, c$ tak, že $a = (a + b)/2$. Z~tejto rovnosti vyplýva $a = b$. Číslo $c$ je buď priemerom čísel $a$ a $b$, z~čoho hneď máme, že je týmto číslam rovné, alebo je priemerom seba a niektorého z~čísel $a, b$, čiže $c = (c + a)/2$, z~toho opäť dostaneme $c = a = b$. Ak každé z~našich čísel je aritmetickým priemerom zvyšných dvoch, riešime predošlú úlohu.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{5.3} [60-I-1]
+Lucia napísala na tabuľu dve nenulové čísla. Potom medzi ne postupne vkladala znamienka plus, mínus, krát a delené a všetky štyri príklady správne vypočítala. Medzi výsledkami boli iba dve rôzne hodnoty. Aké dve čísla mohla Lucia na tabuľu napísať?
+
+\end{tcolorbox}
+
+\rieh Označme hľadané čísla $a, b$. Keďže $b \neq 0$ nutne $a + b \neq a - b$. Každé z~čísel $a \cdot b, a : b$ je rovné buď $a + b$, alebo $a - b$. Stačí teda rozobrať štyri prípady a v~každom z~nich vyriešiť sústavu rovníc. Ukážeme si však rýchlejší postup.
+Ak by platilo
+$$ a + b = a \cdot b \ \mathrm{a} \ a - b = a : b \ \ \  \mathrm{alebo} \ \ \  a + b = a : b \ \mathrm{a} \ a - b = a \cdot b,$$
+vynásobením rovností by sme v~oboch prípadoch dostali $a^2 - b^2 = a^2$ , čo je v~spore s~$b\neq 0$. Preto sú čísla $a \cdot b$ a $a : b$ buď obe rovné $a + b$ alebo obe rovné $a - b$. Tak či tak musí platiť $a \cdot b = a : b$, odkiaľ po úprave $a(b^2 - 1) = 0$. Keďže $a\neq 0$, nutne $b \in \{ 1, - 1 \}$. Ale ak $b = 1$, tak štyri výsledky sú postupne $a + 1$, $a - 1$, $a$, $a$, čo sú pre každé $a$ až tri rôzne hodnoty. Pre $b = - 1$ máme výsledky $a - 1$, $a + 1$, $- a$, $- a$. Dva rôzne výsledky to budú práve vtedy, keď $a - 1 = - a$ alebo $a + 1 = - a$. V~prvom prípade dostávame $a =\frac{1}{2}$, v~druhom $a = - \frac{1}{2}$.
+Lucia mohla na začiatku na tabuľu napísať buď čísla $\frac{1}{2}$ a $- 1$, alebo čísla $-\frac{1}{2}$ a $- 1$.\\
+\\
+\kom Ak sa študenti rozhodnú riešiť sústavy rovníc pre spomínané štyri prípady, je to v~poriadku, na záver by však bolo inšpiratívne ukázať im aj rýchlejší postup.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{5.4} [60-II-1]
+Na tabuli sú napísané práve tri (nie nutne rôzne) reálne čísla. Vieme, že súčet ľubovoľných dvoch z~nich je tam napísaný tiež. Určte všetky trojice takých čísel.
+
+\end{tcolorbox}
+
+\rieh Označme čísla napísané na tabuli $a, b, c$. Súčet $a + b$ sa tiež nachádza na tabuli, je teda rovný jednému z~čísel $a, b, c$. Keby $a + b$ bolo rovné $a$ alebo $b$, bola by na tabuli aspoň jedna nula. Rozoberieme preto tri prípady podľa počtu núl napísaných na tabuli.
+
+Ak sú na tabuli aspoň dve nuly, ľahko sa presvedčíme, že súčet každých dvoch čísel z~tabule je tam tiež. Dostávame, že trojica $t, 0, 0$ je pre ľubovoľné reálne číslo $t$ riešením úlohy.
+
+Ak je na tabuli práve jedna nula, je tam trojica $a, b, 0,$ pričom $a$ aj $b$ sú nenulové čísla. Súčet $a + b$ teda nie je rovný ani $a$, ani $b$, musí preto byť rovný 0. Dostávame tak ďalšiu trojicu $t, -t, 0$, ktorá je riešením úlohy pre ľubovoľné reálne číslo $t$.
+Ak na tabuli nie je ani jedna nula, súčet $a + b$ nie je rovný ani $a$, ani $b$, preto $a + b = c$. Z~rovnakých dôvodov je $b + c = a$ a $c + a = b$. Dostali sme sústavu troch lineárnych rovníc s~neznámymi $a, b, c$, ktorú môžeme vyriešiť. Avšak hneď z~prvých dvoch rovníc po dosadení vyjde $b + (a + b) = a$, čiže $b = 0$. To je v~spore s~tým, že na tabuli žiadna nula nie je.
+
+\textit{Záver.} Úlohe vyhovujú trojice $t, 0, 0$ a $t, -t, 0$ pre ľubovoľné reálne číslo $t$ a žiadne iné.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{5.5} [60-S-1]
+Po okruhu behajú dvaja atléti, každý inou konštantnou rýchlosťou. Keď bežia opačnými smermi, stretávajú sa každých 10 minút, keď bežia rovnakým smerom, stretávajú sa každých 40 minút. Za aký čas zabehne okruh rýchlejší atlét?
+
+\end{tcolorbox}
+
+\rieh Označme rýchlosti bežcov $v_1$ a $v_2$ tak, že $v_1 > v_2$ (rýchlosti udávame v~okruhoch za minútu). Predstavme si, že atléti vyštartujú z~rovnakého miesta, ale opačným smerom. V~okamihu ich ďalšieho stretnutia po 10 minútach bude súčet dĺžok oboch prebehnutých úsekov zodpovedať presne dĺžke jedného okruhu, teda
+$10v_1 +10v_2= 1$.
+Ak bežia atléti z~rovnakého miesta rovnakým smerom, dôjde k~ďalšiemu stretnutiu, akonáhle rýchlejší atlét zabehne o~jeden okruh viac ako pomalší. Preto $40v_1 -40v_2 = 1$.
+Dostali sme sústavu dvoch lineárnych rovníc s~neznámymi $v_1 , v_2$:
+\begin{align*}
+10v_1 + 10v_2 &= 1,\\
+40v_1 - 40v_2 &= 1,
+\end{align*}
+ktorú vyriešime napríklad tak, že k~štvornásobku prvej rovnice pripočítame druhú, čím dostaneme $80v_1 = 5$, čiže $v_1 =\frac{1}{16}$. Zaujíma nás, ako dlho trvá rýchlejšiemu bežcovi prebehnúť jeden okruh, teda hodnota podielu $1/v_1$ . Po dosadení vypočítanej hodnoty $v_1$ dostaneme odpoveď: 16 minút.\\
+\\
+\textit{Poznámka.} Úlohu možno riešiť aj úvahou: za 40 minút ubehnú atléti spolu 4 okruhy (to vyplýva z~prvej podmienky), pritom rýchlejší o~1 okruh viac ako pomalší (to vyplýva z~druhej podmienky). To teda znamená, že prvý za uvedenú dobu ubehne 2,5 okruhu a druhý 1,5 okruhu, takže rýchlejší ubehne jeden okruh za 40/2,5 = 16 minút.\\
+\\
+\kom V~tomto prípade vyžaduje netriviálne úsilie správne zostavenie sústavy rovníc tak, aby skutočne zodpovedala zadaniu. Jej vyriešenie potom už zložité nie je. Za zmienku stojí, že úloha je vhodným príkladom situácie, v~ktorej si zmysluplnosť výsledku môžeme aspoň približne overiť (záporné rýchlosti, rýchlosti väčšie ako rýchlosť svetla).\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{5.6} [66-I-4-N1] Určte všetky dvojčleny $P (x) = ax + b$, pre ktoré platí $P(2) = 3$ a $P (3) = 2$.
+
+\end{tcolorbox}
+
+\rie Z~podmienok zo zadania zostavíme dve rovnice s~dvomi neznámymi $a$ a $b$:
+\begin{align*}
+P (2) &= 2a + b = 3,\\
+P (3) &= 3a + b = 2.
+\end{align*}
+Odčítaním prvej rovnice od druhej ihneď dostávame $a = -1$, dosadením tejto hodnoty do jednej z~podmienok potom máme $b= 5$. Sústava má práve jedno riešenie, a preto zadaniu vyhovuje jediný dvojčlen $P(x)=-x+5$.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{5.7} [66-I-4-N2] Určte všetky trojčleny $P (x) = ax^2+ bx + c$, pre ktoré platí $P (1) = 4$, $P (2) = 9$ a $P (3) = 18$.
+
+\end{tcolorbox}
+
+\rie Podobne, ako v~predchádzajúcej úlohe, zostavíme z~podmienok sústavu troch lineárnych rovníc s~tromi neznámymi $a$, $b$ a $c$:
+\begin{align*}
+P(1) &= a + b + c = 4, \\
+P(2) &= 4a + 2b + c = 9, \\
+P(3) &= 9a + 3b + c = 18.
+\end{align*}
+Sústava má opäť jediné riešenie $a = 2, b = -1, c = 3$, a preto existuje práve jeden trojčlen vyhovujúci zadaniu: $P(x)=2x^2-x+3$.\\
+\\
+\kom Predchádzajúce dve jednoduchšie úlohy majú prípravný charakter na nasledujúcu úlo\-hu a domácu prácu. Študenti si prostredníctvom nich zopakujú metódy riešenia sústav rovníc s~viacerými neznámymi. Tieto metódy by študentom mali byť známe zo ZŠ, ak však zistíme, že ich používanie nie je až také samozrejmé, je vhodné zaradiť niekoľko jednoduchších úloh, napr. z~\cite{kubat2000}.\\
+
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{5.8} [66-I-4-N3] Určte všetky dvojčleny $P (x) = ax+b$ s~celočíselnými koeficientmi $a$ a $b$, pre ktoré platí $P (1) < P (2)$ a $P (1)^2+ P(2)^2= 5$.
+
+\end{tcolorbox}
+
+\rieh Keďže $a$ a $b$ sú podľa zadania celé čísla, budú celými číslami aj hodnoty $P(1)$ a $P(2)$. Preto hľadáme, akými spôsobmi sa dá číslo 5 zapísať ako súčet dvoch druhých mocnín celých čísel. Ak neberieme ohľad na poradie sčítancov, je taký spôsob jediný: $5 = (\pm 1)^2+ (\pm 2)^2$. Zároveň vieme, že $P(1)<P(2)$, preto dvojicu $(P(1), P(2))$ tvoria niektoré z~nasledujúcich štyroch možností: $(1, 2), (-1, 2), (-2, -1), (-2, 1)$. Každá z~týchto štyroch dvojíc podmienok potom vedie k~sústave dvoch rovníc s~dvomi neznámymi, takže dostávame objemnejšiu variáciu prvej úlohy tohto seminára. Vyriešením systémov získame 4 vyhovujúce dvojčleny $x + 0$, $3x - 4$, $x - 3$ a $3x - 5$.\\
+\\
+\kom Úloha využíva takmer rovnaký princíp ako prvé dve seminárne úlohy, vyžaduje však dodatočnú analýzu plynúcu z~poslednej podmienky, čo úlohe pridáva na náročnosti. Poslednou úlohou tejto gradovanej série je domáca práca, ktorej analýza povedie k~riešeniu niekoľkých sústav troch rovníc s~tromi neznámymi.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{5.9} [66-I-4-D2] Koeficienty $a, b, c$ trojčlena $P (x) = ax^2+ bx + c$ sú reálne čísla, pritom každá z~troch jeho hodnôt $P (1), P (2)$ a $P (3)$ je celým číslom. Vyplýva z~toho, že aj čísla $a, b, c$ sú celé, alebo je nutne celé aspoň niektoré z~nich (ktoré)?
+
+\end{tcolorbox}
+
+\rieh Nevyplýva. Uvážme príklad trojčlena $P (x) =\frac{1}{2}x^2+\frac{1}{2}x+1$: z~vyjadrenia $P (x) =\frac{1}{2}x(x + 1) + 1$ vyplýva, že $P (x)$ je celým číslom pre každé celé $x$, pretože súčin $x(x + 1)$ je vtedy deliteľný dvoma. Vo všeobecnej situácii je iba koeficient $c$ nutne celé číslo; vyplýva to z~vyjadrenia $c = P (0) = 3P (1) - 3P (2) + P (3)$.\\
+\\
+\kom Úloha je zaujímavá tým, že cesta k~riešeniu je tentoraz menej priamočiara a študenti pravdepodobne prídu na viac rôznych príkladov mnohočlenov s~neceločíselnými koeficientami, ktoré dané podmienky spĺňajú. Zaujímavá bude tiež pravdepodobne diskusia nad zdôvodnením, ktoré z~koeficientov nutne celočíselné byť musia.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{5.10} [59-S-3] Nájdite všetky dvojice nezáporných celých čísel $a$, $b$, pre ktoré platí
+$$a^2 + b + 2 = a + b^2.$$
+
+\end{tcolorbox}
+
+\rieh Rovnicu prepíšeme na tvar $2 = (b^2 -a^2 )-(b-a)$, z~ktorého po využití vzťahu pre rozdiel štvorcov a následnom vyňatí výrazu $b - a$ dostaneme $2 = (b - a)(a + b - 1)$.
+Keďže 2 je prvočíslo, máme pre uvedený súčin nasledujúce štyri možnosti:
+
+\begin{enumerate}[a)]
+\item $b - a = 1$ a $a + b - 1 = 2$, potom $a = 1$ a $b = 2.$
+\item  $b - a = 2$ a $a + b - 1 = 1$, potom $a = 0$ a $b = 2$.
+\item $b - a = -1$ a $a + b - 1 = -2$. Druhú rovnicu možno prepísať na tvar $a + b = -1$, z~ktorého vidíme, že rovnosť nenastane pre žiadnu dvojicu nezáporných celých čísel.
+\item  $b - a = -2$ a $a + b - 1 = -1$. Druhú rovnicu možno prepísať na tvar $a + b = 0$, z~ktorého vidíme, že vyhovuje jediná dvojica nezáporných celých čísel $a = b = 0$, ktorá však nevyhovuje prvej rovnici.
+\end{enumerate}
+
+\textit{Záver.} Úloha má dve riešenia: Buď $a = 1$ a $b = 2$, alebo $a = 0$ a $b = 2$.
+
+\textit{Poznámka.} Namiesto rozboru štyroch možností môžeme začať úvahou, že nulové čísla $a, b$ nie sú riešením úlohy, takže $a + b - 1 = 0$, a teda aj $b - a = 0$. Stačí teda uvažovať iba možnosti a) a b).\\
+\\
+\textbf{Iné riešenie.} Rovnicu upravíme na tvar $2 = (b^2 - b) - (a^2 - a)$, resp. na tvar $2 = b(b - 1)-a(a-1)$. Z~nasledujúcej tabuľky a tvaru čísel $x^2 -x = x(x-1)$ je zrejmé, že rozdiely medzi susednými hodnotami výrazov $x(x - 1)$ rastú s~rastúcim $x$ (ľahko sa o~tom presvedčíme výpočtom: $(x + 1)x - x(x - 1) = 2x$).
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+$x$ & 0 & 1 & 2 & 3 & 4 & 5 & \ldots \\
+\hline
+$x(x-1)$ & 0 & 0 & 2 & 6 & 12 & 20 & \ldots\\
+\hline
+\end{tabular}
+\end{center}
+Môže teda platiť iba $b^2 - b = 2$ a $a^2 - a = 0$. Odtiaľ $a \in \{0, 1\}$ a $b = 2$. Riešením úlohy sú teda dve dvojice nezáporných celých čísel: $a = 0, b = 2$ a $a = 1, b = 2$.\\
+\\
+\kom Úloha je (okrem iného) zaujímavá tým, že poskytuje priestor na rôznorodé prístupy k~riešeniu a môže byť dobrým podnetom na vzájomné vysvetľovanie riešení medzi študentmi. Kľúčovým prvkom riešenia je úprava rovnice na vhodný tvar -- na tomto mieste je študentom vhodné pripomenúť, že zručnosť a dôvtip pri manipulácii s~algebraickými výrazmi nájdu uplatenie v~širokom spektre problémov, nielen na prvom seminárnom stretnutí, ktoré na túto problematiku bolo zamerané.
+
+\subsection*{Domáca práca}
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{5.11} [66-I-4]
+Nájdite všetky trojčleny $P(x)=ax^2+bx+c$ s~celočíselnými koeficientami $a, b, c$, pre ktoré platí $P(1) < P(2) < P(3)$ a zároveň $$(P(1))^2+ (P(2))^2+ (P(3))^2= 22.$$
+\end{tcolorbox}
+
+\rie Keďže $a, b, c$ sú podľa zadania celé čísla, sú také aj hodnoty $P(1), P(2)$ a $P(3)$. Ich druhé mocniny, čiže čísla  $P(1)^2 , P(2)^2$ a $P(3)^2$, sú preto druhými mocninami
+celých čísel, teda tri (nie nutne rôzne) čísla z~množiny $\{0, 1, 4, 9, 16, 25, . . .\}$. Ich súčet je podľa zadania rovný 22, takže každý z~troch sčítancov je menší ako šieste možné číslo 25. Akými spôsobmi možno vôbec zostaviť súčet 22 z~troch čísel vybraných z~množiny  $\{0, 1, 4, 9, 16\}$?
+Systematickým rozborom rýchlo zistíme, že rozklad čísla 22 na súčet troch druhých mocnín je (až na poradie sčítancov) iba jeden, a to $22 = 4+9+9$. Dve z~čísel $P(1), P(2)$ a $P(3)$ majú teda absolútnu hodnotu 3 a tretie 2, a keďže
+$P(1) < P(2) < P(3)$, musí nutne platiť $P(1) = -3$, $P(3) = 3$ a $P(2) \in \{-2, 2\}$. Pre každú z~oboch vyhovujúcich
+trojíc $(P(1), P(2), P(3)) = (-3, -2, 3)$ a $(P(1), P(2), P(3)) = (-3, 2, 3)$ určíme koeficienty $a, b, c$ príslušného trojčlena $P(x)$ tak, že nájdené hodnoty dosadíme do pravých strán rovníc
+\begin{align*}
+a + b + c &= P(1),\\
+4a + 2b + c &= P(2),\\
+9a + 3b + c &= P(3)
+\end{align*}
+a výslednú sústavu troch rovníc s~neznámymi $a, b, c$ vyriešime. Tento jednoduchý výpočet tu vynecháme, v~oboch prípadoch vyjdú celočíselné trojice $(a, b, c)$, ktoré zapíšeme rovno ako koeficienty trojčlenov, ktoré sú jedinými dvoma riešeniami danej úlohy:
+$$P_1(x) = 2x^2 -5x \ \ \ \  \text{a} \ \ \ \ P_2 (x) = -2x^2+ 11x -12.$$
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{5.12} [62-II-3]
+Nájdite všetky dvojice celých kladných čísel $a$ a $b$, pre ktoré je číslo $a^2 +b$ o~62 väčšie
+ako číslo $b^2 + a$.
+
+\end{tcolorbox}
+
+\rie  Zadanie zapíšeme rovnosťou, ktorej pravú stranu rovno upravíme na súčin: $$62 = (a^2+ b) - (b^2
++ a) = (a^2 - b^2)- (a - b) = (a - b)(a + b - 1).$$
+Súčin celých čísel $u = a - b$ a $v = a + b - 1$ je teda rovný súčinu dvoch prvočísel $2 \cdot 31$.
+Keďže $v \geq 1 + 1 - 1 = 1$, je nutne aj číslo $u$ kladné a zrejme $u < v$, takže $(u, v)$ je jedna
+z~dvojíc $(1, 62)$ alebo $(2, 31)$. Ak vyjadríme naopak $a, b$ pomocou $u, v$, dostaneme $$a =\frac{u+v+1}{2} \ \ \ \  \textrm{a} \ \ \ \  b=\frac{v-u+1}{2}.$$ Pre $(u, v) = (1, 62)$ tak dostávame riešenie $(a, b) = (32, 31)$, dvojici $(u, v) = (2, 31)$ zodpovedá druhé riešenie $(a, b) = (17, 15)$. Iné riešenia úloha nemá.\\
+\\
+\kom Úloha je veľmi podobná tej, ktorou sme sa zaoberali na stretnutí, slúži tak na overenie toho, či si študenti princíp riešenia osvojili. Zároveň ale zadanie nie je zapísané priamo rovnosťou, takže úloha precvičí aj schopnosť transformovať slovný text na matematický zápis.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{5.13} [60-I-1-D1] Nech $n$ je prirodzené číslo väčšie ako 2. Máme $n$ čísel so súčtom $n$, pričom každé z~nich je aritmetickým priemerom ostatných čísel. Aké sú to čísla?
+
+\end{tcolorbox}
+
+\rieh Usporiadajme si naše čísla podľa veľkosti, nech $x_1 \leq x_2 \leq \ldots \leq x_n$. Aritmetický priemer skupiny čísel je aspoň taký, ako najmenšie z~nich. Aritmetický priemer čísel $x_2, x_3,\ldots , x_n$ je preto aspoň $x_2$, a je rovný $x_1$ len v~prípade, že žiadne z~čísel $x_3, \ldots , x_n$ nie je väčšie ako $x_2$. Z~toho hneď dostávame, že všetky naše čísla musia byť rovnaké a teda rovné 1.

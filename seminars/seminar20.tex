@@ -1,0 +1,163 @@
+\section*{Seminár 20}
+\subsection*{Téma}
+Teória čísel V~-- miš-maš
+\subsection*{Ciele}
+Trénovať riešenie rôznorodých úloh z~oblasti elementárnej teórie čísel bez špecifického zamerania
+
+\subsection*{Úlohy a riešenia}
+\textbf{Úvodný komentár.}
+Toto seminárne stretnutie sa nevyznačuje špecifickou témou, ale ide skôr o~panoptikum rôznych úloh, ktoré sa dajú zahrnúť do oblasti teórie čísel lepšie ako do akejkoľvek inej.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{20.1} [65-II-4]
+Adam s~Barborou hrajú so zlomkom
+$$ \frac{10a + b}{10c + d}$$
+takúto hru na štyri ťahy: Hráči striedavo nahrádzajú ľubovoľné z~doposiaľ neurčených písmen $a$, $b$, $c$, $d$ nejakou cifrou od 1 do 9. Barbora vyhrá, keď výsledný zlomok bude rovný buď celému číslu, alebo číslu s~konečným počtom desatinných miest; inak vyhrá Adam (napríklad keď vznikne zlomok $\frac{11}{29}$). Ak začína Adam, ako má hrať Barbora, aby zaručene vyhrala? Ak začína Barbora, je možné poradiť Adamovi tak, aby vždy vyhral?
+
+\end{tcolorbox}
+
+\rieh Ak má prvý ťah Adam, môže Barbora hrať tak, aby bol výsledný zlomok rovný jednej, čo podľa zadania prinesie Barbore výhru. Taký zlomok vyjde, keď budú súčasne platiť obe rovnosti $a = c$ a $b = d$, ktoré Barbora dosiahne ťahmi \uv{súmerne združenými} podľa zlomkovej čiary s~Adamovými ťahmi.
+
+Ak začína Barbora, môže Adam hrať tak, aby vyšiel zlomok s~menovateľom $10c+d$ deliteľným tromi, ktorého čitateľ $10a + b$ však deliteľný tromi nebude. Na to Adamovi stačí po každom z~oboch Barboriných ťahov vhodne \uv{doplniť} čitateľ či menovateľ, napríklad podľa kritéria deliteľnosti tromi mu stačí zabezpečiť, aby sa ciferný súčet $a+b$ čitateľa rovnal 10 a aby sa ciferný súčet $c+d$ menovateľa rovnal 9 alebo 12. Adam tak vyhrá, pretože výsledný zlomok nebude možné krátiť tromi, takže sa nebude rovnať žiadnemu zlomku s~mocninou čísla 10 v~menovateli, akým sa dá zapísať každé číslo s~konečným počtom desatinných miest.\\
+\\
+\kom Úlohu je možné najprv zadať ako hru medzi dvoma hráčmi a až po tom, čo študenti odohrajú niekoľko kôl a vypozorujú zákonitosti, je vhodné pustiť sa do tvrdého riešenia. Zaujímavé tiež môže byť porovnať stratégie jednotlivých študentov medzi sebou, príp. ich po samostatnej práci nechať niekoľko súbojov odohrať znova, aby svoju stratégiu overili v~praxi.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{20.2} [57-I-1-N1] Ak $m, k$ a $\sqrt[k]{m}$ sú celé čísla väčšie ako 1, tak v~rozklade čísla $m$ na súčin prvočísel sa každé prvočíslo vyskytuje v~mocnine, ktorej exponent je násobkom čísla $k$. Dokážte.
+
+\end{tcolorbox}
+
+\rieh Rozklad čísla $m$ dostaneme, keď rozklad čísla $\sqrt[k]{m}$ umocníme na $k$-tu, každý exponent v~rozklade čísla $m$ tak bude súčinom exponentu v~rozklade čísla $\sqrt[k]{m}$ a čísla $k$. \\ %Nech je rozklad čísla $\sqrt[k]{m}=p_1^{\alpha_1}\cdot p_2^{\alpha_2}\cdots p_n^{\alpha_n}$ a rozklad čísla $m=p_1^{\beta_1}\cdot p_2^{\beta_2}\cdots p_n^{\beta_n}$, kde $p_1< \ldots < p_n$ sú prvočísla\\
+\\
+\kom Úloha je prípravou k~riešeniu komplexnejšieho problému, ktorý nasleduje.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{20.3} [57-I-1]
+Určte najmenšie prirodzené číslo $n$, pre ktoré aj čísla
+$\sqrt{2n}, \sqrt[3]{3n}, \sqrt[5]{5n}$ sú prirodzené.
+
+\end{tcolorbox}
+
+\rieh Vysvetlíme, prečo prvočíselný rozklad hľadaného čísla musí obsahovať len vhodné mocniny prvočísel 2, 3 a 5. Každé prípadné ďalšie prvočíslo by sa v~rozklade čísla $n$ muselo vyskytovať v~mocnine, ktorej exponent je deliteľný dvoma, tromi aj piatimi zároveň (viď predchádzajúca úloha). Po vyškrtnutí takého prvočísla by sa číslo $n$ zmenšilo a skúmané odmocniny by pritom ostali celočíselné.
+
+Položme preto $n = 2^a \cdot 3^b \cdot 5^c$, pričom $a, b, c$ sú prirodzené čísla. Čísla $\sqrt[3]{3n}$ a $\sqrt[5]{5n}$ sú celé, preto je exponent $a$ násobkom troch a piatich. Aj $\sqrt{2n}$ je celé číslo, preto musí byť číslo $a$ nepárne. Je teda nepárnym násobkom pätnástich: $a \in \{15, 45, 75, \ldots\}$. Analogicky je exponent~$b$ taký násobok desiatich, ktorý po delení tromi dáva zvyšok 2: $b \in \{20, 50, 80, \ldots\}$. Napokon $c$ je násobok šiestich, ktorý po delení piatimi dáva zvyšok 4: $c \in \{24, 54, 84, \ldots\}$. Z~podmienky, že $n$ je najmenšie, dostávame $n = 2^{15} \cdot3^{20} \cdot 5^{24}$.
+
+Presvedčíme sa ešte, že dané odmocniny sú prirodzené čísla:
+$$\sqrt{2n} = 2^8 \cdot 3^{10} \cdot 5^{12},\ \ \ \sqrt[3]{3n} = 2^5 \cdot 3^7 \cdot 5^8, \ \ \ \sqrt[5]{5n} = 2^3 \cdot 3^2 \cdot5^5.$$
+
+\textit{Záver}. Hľadaným číslom je $n = 2^{15} \cdot 3^{20} \cdot 5^{24}$.\\
+\\
+\kom Úloha je netradičným príkladom uplatnenia poznatkov o~rozklade čísla na súčin prvočísel a vďaka návodnej úlohe by študenti mali byť dostatočne pripravení na jej samostatné riešenie.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{20.4} [60-II-2]
+Nájdite všetky kladné celé čísla $n$, pre ktoré je číslo $n^2 + 6n$ druhou mocninou celého čísla.
+
+\end{tcolorbox}
+
+\rieh Zrejme $n^2 +6n > n^2$ a zároveň $n^2 +6n < n^2 +6n+9 = (n+3)^2$. V~uvedenom intervale ležia iba dve druhé mocniny celých čísel: $(n + 1)^2$ a $(n + 2)^2$.
+
+V~prvom prípade máme $n^2 + 6n = n^2 + 2n + 1$, teda $4n = 1$, tomu však žiadne celé číslo $n$ nevyhovuje.
+
+V~druhom prípade máme $n^2 + 6n = n^2 + 4n + 4$, teda $2n = 4$. Dostávame tak jediné riešenie $n = 2$.\\
+\\
+\textbf{Iné riešenie.} Budeme skúmať rozklad $n^2 + 6n = n(n+ 6)$. Spoločný deliteľ oboch čísel $n$ a $n + 6$ musí deliť aj ich rozdiel, preto ich najväčším spoločným deliteľom môžu byť len čísla 1, 2, 3 alebo 6. Tieto štyri možnosti rozoberieme.
+
+Keby boli čísla $n$ a $n+6$ nesúdeliteľné, muselo by byť každé z~nich druhou mocninou. Rozdiel dvoch druhých mocnín prirodzených čísel však nikdy nie je 6. Pre malé čísla sa o~tom ľahko presvedčíme, a pre $k = 4$ už je rozdiel susedných štvorcov $k^2$ a $(k - 1)^2$ aspoň 7. Vlastnosť, že 1, 3, 4, 5 a 7 je päť najmenších rozdielov dvoch druhých mocnín, využijeme aj ďalej.
+
+Ak je najväčším spoločným deliteľom čísel $n$ a $n+6$ číslo 2, je $n = 2m$ pre vhodné $m$, ktoré navyše nie je deliteľné tromi. Ak $n(n + 6) = 4m(m + 3)$ je štvorec, musí byť aj $m(m + 3)$ štvorec. Čísla $m$ a $m + 3$ sú však nesúdeliteľné, preto musí byť každé z~nich druhou mocninou prirodzeného čísla. To nastane len pre $m = 1$, čiže $n = 2$. Ľahko overíme, že $n(n + 6)$ je potom naozaj druhou mocninou celého čísla.
+
+Ak je najväčším spoločným deliteľom čísel $n$ a $n + 6$ číslo 3, je $n = 3m$ pre vhodné nepárne $m$. Ak $n(n+6) = 9m(m+2)$ je štvorec, musia byť nesúdeliteľné čísla $m$ a $m+2$ tiež štvorce. Také dva štvorce však neexistujú.
+
+Ak je najväčším spoločným deliteľom čísel $n$ a $n + 6$ číslo 6, je $n = 6m$ pre vhodné $m$. Ak $n(n + 6) = 36m(m + 1)$ je štvorec, musia byť štvorce aj obe nesúdeliteľné čísla $m$ a $m + 1$, čo nastane len pre $m = 0$, my však hľadáme len kladné čísla $n$.
+
+Úlohe vyhovuje jedine $n = 2$.\\
+\\
+\kom K~správnemu riešeniu úlohy vedú mnohé cesty. Prvé uvedené riešenie je trochu trikové, avšak nápadité, a preto ak ho študenti neobjavia, je vhodné im ho na záver ukázať. Nie je tiež nepravdepodobné, že študenti budú skúšať, ako sa číslo $n^2+6n$ správa pre rôzne hodnoty $n$, čo by ich mohlo naviesť na správu cestu nájdenia jediného riešenia.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{20.5} [66-II-1] Nájdite všetky mnohočleny $P(x) = ax^2 +bx+c$ s~celočíselnými koeficientami spĺňajúce
+$$1 < P(1) < P(2) < P(3) \ \ \ \text{a súčasne} \ \  \
+\frac{P(1) \cdot P(2) \cdot P(3)}{4}= 17^2.$$
+
+\end{tcolorbox}
+
+\rieh Rovnosť zo zadania je ekvivalentná rovnosti $P(1)\cdot P(2)\cdot P(3) = 4\cdot17^2$, takže čísla $P(1)$, $P(2)$, $P(3)$ môžu byť iba z~množiny deliteľov čísla $4 \cdot 17^2$ väčších ako 1:
+$$2 < 4 < 17 < 2 \cdot 17 < 4 \cdot 17 < 17^2< 2 \cdot 17^2< 4 \cdot 17^2.$$
+
+Ak by platilo $P(1) = 4$, bol by súčin $P(1)\cdot P(2)\cdot P(3)$ aspoň $4 \cdot 17 \cdot (2 \cdot 17) = 8 \cdot 17^2$, čo nevyhovuje zadaniu. Preto $P(1) = 2$ a tak je nutne $P(2) = 17$, pretože keby bolo $P(2) = 4$, musel by byť daný súčin $4 \cdot 17^2$ deliteľný číslom $P(1)\cdot P(2) = 8$, čo neplatí, a pre $P(2) = 2 \cdot 17$ by bol súčin $P(1)\cdot P(2)\cdot P(3)$ opäť príliš veľký. Pre tretiu neznámu
+hodnotu $P(3)$ potom vychádza $P(3) = 4 \cdot 17^2 /(2 \cdot 17) = 2 \cdot 17$.
+
+Hľadané koeficienty $a$, $b$, $c$ tak sú práve také celé čísla, ktoré vyhovujú sústave
+\begin{align*}
+P(1) &= a + b + c = 2,\\
+P(2) &= 4a + 2b + c = 17,\\
+P(3) &= 9a + 3b + c = 34.
+\end{align*}
+Jej vyriešením dostaneme $a = 1$, $b = 12$, $c = -11$.
+
+\textit{Záver}. Úlohe vyhovuje jediný mnohočlen $P(x) = x^2 + 12x - 11$.\\
+\\
+\kom Úloha spája poznatky o~deliteľnosti, mnohočlenoch a na jej úspešné doriešenie je nutná aj schopnosť popasovať sa so sústavou troch rovníc s~tromi neznámymi. Zaujímavé bude tiež pozorovať, koľko študentov si spomenie, že podobnou úlohou sa už zaoberali v~seminári 5.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{20.6} [64-II-1]
+Celé čísla od 1 do 9 rozdelíme ľubovoľne na tri skupiny po troch a potom čísla v~každej skupine medzi sebou vynásobíme.
+
+a) Určte tieto tri súčiny, ak viete, že dva z~nich sa rovnajú a sú menšie ako tretí súčin.
+
+b) Predpokladajme, že jeden z~troch súčinov, ktorý označíme $S$, je menší ako dva ostatné súčiny (ktoré môžu byť rovnaké). Nájdite najväčšiu možnú hodnotu $S$.
+
+\end{tcolorbox}
+
+\rieh Najskôr vyjadríme súčin všetkých deviatich čísel pomocou jeho rozkladu na súčin prvočísel:
+$$ 1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7 \cdot 8 \cdot 9 = 2^7 \cdot 3^4 \cdot 5 \cdot 7.$$
+
+a) Označme dva z~uvažovaných (rôznych) súčinov $S$ a $Q$, pričom $S < Q$. Z~rovnosti
+$$S \cdot S~\cdot Q = 2^7 \cdot 3^4 \cdot 5 \cdot 7$$
+vidíme, že prvočísla 5 a 7 musia byť zastúpené v~súčine $Q$, takže $Q = 5 \cdot 7 \cdot x = 35x$, pričom $x$ je jedno zo zvyšných čísel 1, 2, 3, 4, 6, 8 a 9. Ďalej vidíme, že v~rozklade dotyčného $x$ musí mať prvočíslo 2 nepárny exponent a prvočíslo 3 párny exponent -- tomu vyhovujú iba čísla 2 a 8. Pre $x = 2$ ale vychádza $Q = 35 \cdot 2 = 70 < S= 2^3 \cdot 3^2 = 72$, čo odporuje predpokladu $S < Q$. Preto je nutne $x = 8$, pre ktoré vychádza $Q = 35 \cdot 2 = 280$ a $S^2 = 2^4 \cdot 3^4$ čiže $S = 2^2 \cdot 3^2 = 36$. Trojica súčinov je teda
+$(36, 36, 280)$.
+
+Ostáva ukázať, že získanej trojici naozaj zodpovedá rozdelenie daných deviatich čísel na trojice:
+$$S = 1 \cdot 4 \cdot 9 = 36, \ \ \ S~= 2 \cdot 3 \cdot 6 = 36, \ \ \ Q = 5 \cdot 7 \cdot 8 = 280.$$
+
+b) Označme uvažované súčiny $S, Q$ a $R$, pričom $S < Q$ a $S < R$ (nie je ale vylúčené, že $Q = R$). V~riešení časti a) sme zistili, že platí rovnosť
+$$S \cdot Q \cdot R = 70 \cdot 72 \cdot 72.$$
+Ak teda ukážeme, že existuje rozdelenie čísel, pri ktorom $S = 70$ a $R = Q = 72$, bude $S = 70$ hľadaná najväčšia hodnota, lebo keby pri niektorom rozdelení platilo $S \geq 71$, muselo by byť $R \geq 72$ aj $Q \geq 72$ a tiež $S \cdot Q \cdot R \geq 71 \cdot 72 \cdot 72$, čo zrejme odporuje predchádzajúcej rovnosti. Nájsť potrebné rozdelenie je jednoduché:
+$$ S~= 2 \cdot 5 \cdot 7 = 70, \ \ \ Q = 1 \cdot 8 \cdot 9 = 72, \ \ \  R = 3 \cdot 4 \cdot 6 = 72.$$ \\
+\\
+\kom Zaujímavá úloha, ktorá dôvtipne využíva rozklady čísel na súčin prvočísel.
+
+\subsection*{Domáca práca}
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{20.7} [58-I-5] Z~množiny $\{1, 2, 3, \ldots, 99\}$ vyberte čo najväčší počet čísel tak, aby súčet žiadnych dvoch vybraných čísel nebol násobkom jedenástich. (Vysvetlite, prečo zvolený výber má požadovanú vlastnosť a prečo žiadny výber väčšieho počtu čísel nevyhovuje.)
+
+\end{tcolorbox}
+
+\rieh Čísla od 1 do 99 rozdelíme podľa ich zvyšku po delení číslom 11 do jedenástich deväťprvkových skupín $T_0, T_1 ,\ldots, T_{10}$:
+\begin{center}
+\begin{align*}
+T_0 &= \{11, 22, 33, . . . , 99\},\\
+T_1 &= \{1, 12, 23, . . . , 89\},\\
+T_2 &= \{2, 13, 24, . . . , 90\},\\
+\vdots\\
+T_{10} &= \{10, 21, 32, . . . , 98\}.\\
+\end{align*}
+\end{center}
+Ak vyberieme jedno číslo z~$T_0$ (viac ich ani vybrať nesmieme) a všetky čísla z~$T_1, T_2, T_3, T_4$ a $T_5$, dostaneme vyhovujúci výber $1 + 5 \cdot 9 = 46$ čísel, lebo súčet dvoch čísel z~$0, 1, 2, 3, 4, 5$ je deliteľný jedenástimi jedine v~prípade 0 + 0, z~množiny $T_0$ sme však vybrali iba jedno číslo.
+
+Na druhej strane, v~ľubovoľnom vyhovujúcom výbere je najviac jedno číslo zo skupiny $T_0$ a najviac 9 čísel z~každej zo skupín
+$$ T_1 \cup T_{10}, \ \ T_2 \cup T_9, \ \ T_3 \cup T_8, \ \  T_4 \cup T_7, \ \ T_5 \cup T_6,$$
+lebo pri výbere 10 čísel z~niektorej skupiny $T_i \cup T_{11-i}$ by medzi vybranými bolo niektoré číslo zo skupiny $T_i$ a aj niektoré číslo zo skupiny $T_{11-i}$; ich súčet by potom bol deliteľný jedenástimi. Celkom je teda vo výbere najviac $1 + 5 \cdot 9 = 46$ čísel.
+
+\textit{Poznámka}. Možno uvedené \uv{učesané} riešenie vyzerá príliš trikovo. Avšak počiatočné úvahy každého riešiteľa k~nemu rýchlo vedú: iste záleží len na zvyškoch vybraných čísel, takže rozdelenie na triedy $T_i$ a vyberanie z~nich je prirodzené. Je jasné, že z~$T_0$ môže byť vybrané len jedno číslo a všetko ďalšie, o~čo sa musíme starať, je požiadavka, aby sme nevybrali zároveň po čísle zo skupiny $T_i$ aj zo skupiny $T_{11-i}$. Ak je už vybrané niektoré číslo z~triedy $T_i$, kde $i\neq 0$, môžeme pokojne vybrať všetky čísla z~$T_i$, to už skúmanú vlastnosť nepokazí. Je preto dokonca jasné, ako všetky možné výbery najväčšieho počtu čísel vyzerajú.\\
+\\
+\kom Je veľmi vhodné sa k tejto úlohe v nasledujúcom seminári vrátiť s poznámkou, že množiny $T_1, \ldots, T_{10}$ nazývame zvyškové triedy. \\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{20.8} [66-I-6]
+Nájdite najmenšie prirodzené číslo $n$ také, že v~zápise iracionálneho čísla $\sqrt{n}$ nasledujú bezprostredne za desatinnou čiarkou dve deviatky.
+
+\end{tcolorbox}
+
+\rieh Označme $a$ najbližšie väčšie prirodzené číslo k~iracionálnemu číslu $\sqrt{n}$. Podľa zadania potom platí $a - 0,01 \leq \sqrt{n}$. Keďže $a^2$ je prirodzené číslo väčšie ako $n$, musí spolu platiť
+$$(a - 0,01)^2 \leq n \leq a^2 - 1.$$
+Po úprave nerovnosti medzi krajnými výrazmi vyjde
+$$\frac{1}{50} a \geq 1,000 1, \ \ \ \text{čiže} \ \ \  a = 50,005.$$
+Keďže je číslo $a$ celé, vyplýva z~toho $a \geq 51$. A~keďže
+$$(51 - 0,01)^2= 2 601 -\frac{102}{100}+\frac{1}{100^2}\in (2 599, 2 600),$$
+je hľadaným číslom $n = 2 600$.
+
+\textit{Poznámka}. Za správne riešenie možno uznať aj riešenie pomocou kalkulačky. Ak majú totiž byť za desatinnou čiarkou dve deviatky, musí byť číslo $n$ veľmi blízko zľava k~nejakej druhej mocnine. Preto stačí na kalkulačke vyskúšať čísla $\sqrt{3}, \sqrt{8}, \sqrt{15}$ atď. Keďže $51^2 = 2601$, nájdeme, že $\sqrt{2600} = 50,990 195\ldots$

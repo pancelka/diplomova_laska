@@ -1,0 +1,184 @@
+\section*{Seminár 8}
+\subsection*{Téma}
+Teória čísel III -- úlohy o~ciferných zápisoch
+\subsection*{Ciele}
+Precvičenie úloh zaoberajúcich sa cifernými zápismi, použitie rozvinutého zápisu čísla a úvah o~deliteľnosti pri riešení týchto úloh.
+
+\subsection*{Úlohy a riešenia}
+
+\textbf{Úvodný komentár.} Seminár nie je náročný z~pohľadu objemu nových poznatkov, nemalé úsilie však bude vyžadovať systematická práca, využitie poznatkov o~deliteľnosti z~predchádzajúcich seminárov, zváženie všetkých možných variantov či hľadanie správneho riešenia efektívnejším spôsobom než vypísaním všetkých možností.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{8.1} [59-I-6-N1, TODO: Sedláček, J.: Co víme o~přirozených číslech, str. 7] Trojciferné číslo sa končí cifrou 4. Ak túto cifru presunieme na prvé miesto (a ostatné dve cifry necháme bez zmeny), dostaneme číslo, ktoré je o~81 menšie ako pôvodné číslo. Určte pôvodné číslo.
+
+\end{tcolorbox}
+
+\rie Označme prvé dve cifry hľadaného trojciferného čísla $a$ a $b$. Zadanie potom môžeme prepísať do nasledujúcej rovnice $100a+10b+4=4\cdot 100 + 10a+b+81$. Po úprave a vydelení celej rovnosti deviatimi dostávame $10a+b=53$. Keďže $a$ aj $b$ sú kladné jednociferné čísla (pretože sú to cifry), je zrejmé, že $a=5$ a $b=3$. Hľadaným trojciferným číslom je tak číslo 534, čo potvrdí aj skúška správnosti. \\
+\\
+\kom Úloha je v~porovnaní s~tým, čo v~seminárnom stretnutí nasleduje, jednoduchá, osvieži však študentom často používanú myšlienku: číslo $\overline{abc}$ môžeme zapísať v~tvare $100a+10b+c$. Tú využijeme v~mnohých ďalších úlohách.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{8.2} [\cite{holton2010}, časť 4.1, problem 20] Nájdite všetky prirodzené dvojciferné čísla, ktoré sa rovnajú dvojnásobku súčinu svojich cifier.
+
+\end{tcolorbox}
+
+\rie Nech je naše hľadané číslo $\overline{ab}$. Zadanie potom môžeme napísať ako $10a+b=2ab$, pričom $a\neq 0$ (inak by hľadané číslo nebolo dvojciferné). Taktiež $b\neq 0$, pretože $10a+b=2ab>0$. Keďže čísla $10a$ a $2ab$ sú párne, musí byť párne aj $b$, teda $b=2k$, $k \in \{1,2,3,4\}$. Využitím tohto poznatku môžeme zadanie úlohy upraviť na tvar $10a=b(2a-1)=2k(2a-1)$, teda $5a=k(2a-1)$. Preto buď $5\mid k$ alebo $5\mid (2a-1)$. Keďže je ale $k\in \{0, 1, 2, 3, 4\}$, platí $5\nmid k$ a teda určite $5 \mid (2a-1)$. Jediné možnosti, ktoré túto podmienku spĺňajú, sú $a=3$ alebo $a=8$. Ak je $a=8$, dostávame zo zadania $10\cdot 8 +b = 2\cdot 8 \cdot b$, teda $b=16/3$, čo ale nie je riešením, keďže $b$ musí byť celé číslo. Preto ostáva len možnosť $a=3$, z~ktorej potom dostávame $b=6$. Skúškou overíme, že nájdené číslo 36 vyhovuje zadaniu.\\
+\\
+\kom Úloha má krátke a jednoduché zadanie, jej riešenie však vyžaduje uplatnenie znalostí o~deliteľnosti aj zápis čísla v~rozvinutom tvare. \\
+\\
+%\ul{8.3} [59-I-6-N2 resp. 45-Z7-I-2] Nájdite všetky čísla od 1 do $1 000 000$, ktoré sa po škrtnutí prvej cifry $73$-krát zmenšia.\\
+%\rie Blabla.\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{8.4} [61-II-2] Janko má tri kartičky, na každej je iná nenulová cifra. Súčet všetkých trojciferných čísel, ktoré možno z~týchto kartičiek zostaviť, je číslo o~6 väčšie ako trojnásobok jedného z~nich. Aké cifry sú na kartičkách?
+
+\end{tcolorbox}
+
+\rie Označme $\overline{abc}$ to trojciferné číslo, o~ktorého trojnásobku sa píše v~texte úlohy. Platí tak rovnica
+$$3\overline{abc} + 6 = \overline{abc} + \overline{acb}+ \overline{bac}+\overline{bca}+\overline{cab}+\overline{cba}$$  Keďže na pravej strane je každá z~cifier $a, b, c$ dvakrát na mieste jednotiek, desiatok aj
+stoviek, môžeme rovnicu prepísať na tvar
+$$300a + 30b + 3c + 6 = 222a + 222b + 222c, \quad \text{čiže} \quad 78a + 6 = 192b + 219c.$$
+Po vydelení číslom 3 dostaneme rovnicu $26a + 2 = 64b + 73c$, z~ktorej vidíme, že $c$ je párna cifra. Platí preto $c \geq 2$, čo spolu so zrejmou nerovnosťou $b \geq 1$ (pripomíname, že všetky tri neznáme cifry sú podľa zadania nenulové) vedie k~odhadu $$ 64b + 73c \geq 64 + 146 = 210.$$
+Musí preto platiť $26a + 2 \geq 210$, odkiaľ $a \geq (210 - 2) : 26 = 8$, takže cifra $a$ je buď 8, alebo 9. Pre $a = 8$ však v~nerovnosti z~predošlej vety nastane rovnosť, takže nutne $b = 1$ a $c = 2$ (a rovnica zo zadania úlohy je potom splnená). Pre $a = 9$ dostávame
+rovnicu $$ 64b + 73c = 26 \cdot 9 + 2 = 236,$$
+z~ktorej vyplýva, že $c$ je jednak deliteľné štyrmi, jednak je menšie ako 4, čo nemôže nastať súčasne.
+
+\textit{Záver.} Cifry na kartičkách sú 8, 2 a 1.
+
+\textit{Poznámka.} Riešiť odvodenú rovnicu $26a + 2 = 64b + 73c$ pre neznáme (nenulové a navzájom rôzne) cifry $a, b, c$ možno viacerými úplnými a systematickými postupmi, uviedli sme len jeden z~nich.\\
+\\
+\kom Úloha je zložitejšia než úvodné dve. Vychádza síce z~rozvinutého zápisu čísla, avšak vyžaduje dodatočnú netriviálnu analýzu. Bude preto iste zaujímavé diskutovať so študentmi o~tom, ako k~pristupovali k~riešeniu rovnice $26a + 2 = 64b + 73c$. \\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{8.5} [63-II-1]
+Nájdite všetky trojice (nie nutne rôznych) cifier $a, b, c$ také, že päťciferné čísla $\overline{6abc3}$ a $\overline{3abc6}$ sú v~pomere 63 : 36.
+
+\end{tcolorbox}
+
+\rie Zostavíme a vyriešime rovnicu pre neznáme cifry $a, b, c$, ktorú vďaka tvaru zadaných čísel môžeme zapísať rovno pre jedinú neznámu $x = 100a + 10b + c$:
+\begin{align*}
+\frac{60000+10x+3}{30000+10x+3} &=\frac{63}{36}=\frac{7}{4},\\
+40x + 240 012 &= 70x + 210 042,\\
+30x &= 29 970,\\
+x &= 999.
+\end{align*}
+
+\textit{Záver.} Nájdenému $x$ zodpovedá trojica cifier $a = b = c = 9$. Úloha má jediné riešenie.\\
+\\
+\kom Úloha prináša zaujímavú myšlienku zjednodušenia zápisu, ktorý potom vedie k~riešeniu jednoduchej lineárnej rovnice. Aj napriek tomu, že riešenie nevyžaduje mnoho počítania, ukrýva úloha záludnosť v~podobe toho, že študenti môžu prísť k~správnemu riešeniu nesprávnymi úvahami. Viac o~tejto konkrétnej úlohe a jej úskaliach je možné nájsť v~článku \url{http://mfi.upol.cz/files/24/2405/mfi_2405_331_334.pdf}, ktorý považujeme za hodný preštudovania.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{8.6} [57-I-6-D2 resp. 53-C-II-4]  Žiaci mali vypočítať príklad $x + y \cdot z$ pre trojciferné číslo $x$ a dvojciferné čísla $y, z$. Martin vie násobiť a sčítať čísla zapísané v~desiatkovej sústave, ale zabudol na pravidlo prednosti násobenia pred sčítaním. Preto mu vyšlo síce zaujímavé číslo, ktoré sa píše rovnako zľava doprava ako sprava doľava, správny výsledok bol ale o~$2 004$ menší. Určte čísla $x, y, z$.
+
+\end{tcolorbox}
+
+\rieh Martin vypočítal hodnotu $(x + y)z$ namiesto $x + yz$, takže podľa zadania platí
+$$(x + y)z - (x + yz) = 2 004, \ \ \ \ \text{čiže} \ \ \  x \cdot (z~- 1) = 2 004 = 12 \cdot 167,$$
+pričom 167 je prvočíslo. Činitele $x$ a $z -1$ určíme, keď si uvedomíme, že $z$ je dvojciferné číslo, takže $9 \leq z~- 1 \leq 98$. Vidíme, že nutne $z - 1 = 12$ a  $x = 167$, odkiaľ $z = 13$. Martin teda vypočítal číslo $V = (167+y)\cdot 13$. Číslo $V$ je preto štvorciferné, a pretože sa číta spredu rovnako ako zozadu, má tvar $\overline{abba} = 1 001a + 110b$. Pretože $1 001 = 13 \cdot 77$, musí platiť rovnosť $(167 + y) \cdot 13 = 13 \cdot 77a + 110b$, z~ktorej vyplýva, že číslica $b$ je deliteľná trinástimi, takže $b = 0$. Po dosadení dostaneme (po delení trinástimi) rovnosť $167 + y = 77a$, ktorá vzhľadom na nerovnosti $10 \leq  y \leq 99$ znamená, že číslica $a$ sa rovná 3, takže $y = 64$.
+
+V~druhej časti riešenia sme mohli postupovať aj nasledovne. Pre číslo $V = (167 + y) \cdot 13$ vychádzajú z~nerovností $10 \leq y \leq 99$ odhady $2301 \leq V~\leq 3 458$. Zistíme
+preto, ktoré z~čísel $\overline{2bb2}$, kde $b \in \{3, 4, 5, 6, 7, 8, 9\}$ a čísel $\overline{3bb3}$, kde $b \in \{0, 1, 2, 3, 4\}$, sú deliteľné trinástimi. Aj keď sa týchto dvanásť čísel dá rýchlo otestovať, urobme to všeobecne ich čiastočným vydelením trinástimi:
+\vspace{-30pt}
+\begin{center}
+\begin{align*}
+ \overline{2bb2} &= 2 002 + 110b = 13 \cdot (154 + 8b) + 6b,\\
+\overline{3bb3} &= 3 003 + 110b = 13 \cdot (231 + 8b) + 6b.
+\end{align*}
+\end{center}
+Vidíme, že vyhovuje jedine číslo $\overline{3bb3}$ pre $b = 0$. Vtedy $167 + y = 231$, takže $y = 64$.
+
+\textit{Záver.} Žiaci mali počítať príklad $167 + 64 \cdot 13$, teda $x = 167$, $y = 64$ a $z = 13$.\\
+\\
+\kom Na prvý pohľad sa môže zdať, že úloha nepatrí do tohto seminára, ako sa však v~priebehu riešenia ukáže, má tu svoje miesto. Taktiež zaujímavým spôsobom spája poznatky o~deliteľnosti, príp. sa v~jej riešení uplatnia odhady -- túto metódu sme už taktiež v~dnešnom seminári využili.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{8.7} [58-I-3-N1 resp. 56-C-S-1] Určte počet všetkých štvorciferných prirodzených čísel, ktoré sú deliteľné šiestimi a v~ktorých zápise sa vyskytujú práve dve jednotky.
+
+\end{tcolorbox}
+
+\rieh  Aby číslo bolo deliteľné šiestimi, musí byť párne a mať ciferný súčet deliteľný tromi. Označme teda $b$ číslicu na mieste jednotiek (tá musí byť párna, $b \in \{0, 2, 4, 6, 8\}$) a $a$ tú číslicu, ktorá je spolu s~číslicami 1, 1 ($a \neq 1$) na prvých troch miestach štvorciferného čísla, ktoré spĺňa požiadavky úlohy. Aby bol súčet číslic $a + 1 + 1 + b$ takého čísla deliteľný tromi, musí číslo $a + b$ dávať po delení tromi zvyšok 1. Pre $b \in \{0, 6\}$ tak máme pre $a$ možnosti $a \in {4, 7}$ $(a \neq 1)$, pre $b \in \{2, 8\}$ máme $a \in \{2, 5, 8\}$ a konečne pre $b = 4$ máme $a \in \{0, 3, 6, 9\}$. Pre každé zvolené $b$ a zodpovedajúce $a \neq 0$ sú zrejme tri možnosti, ako číslice 1, 1 a $a$ na prvých troch miestach usporiadať, to je spolu $(2 \cdot 2 + 2 \cdot 3 + 3) \cdot 3 = 39$ možností, pre $a = 0$ (keď $b = 4$) potom sú len dve možnosti (číslica nula nemôže byť prvá číslica štvorciferného čísla).
+
+Celkom existuje 41 štvorciferných prirodzených čísel, ktoré spĺňajú podmienky.
+
+Alternatívnym postupom je vypísanie všetkých možností na základe ciferného súčtu, ktorý musí byť deliteľný troma a zároveň sa končiť párnou cifrou.\\
+\\
+\kom Úloha využíva poznatky o~deliteľnosti, takže pekne nadväzuje na predchádzajúce semináre. Tiež je prvou úlohou o~cifernom zápise, v~riešení ktorej nevyužijeme rozvinutý zápis čísla, ale skôr intuitívne kombinatorické úvahy.
+
+Ak sa študenti vyberú cestou vypisovania všetkých možných kombinácií, skúsime ich povzbudiť, aby ich úsilie bolo čo najsystematickejšie a efektívne, príp. prediskutujeme, či sa riešenie dá nájsť aj inou cestou. \\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{8.8} [58-I-3-N2 resp.54-C-I-5]  Určte počet všetkých trojíc dvojciferných prirodzených čísel $a$, $b$, $c$, ktorých súčin $abc$ má zápis, v~ktorom sú všetky cifry rovnaké. Trojice líšiace sa len poradím čísel považujeme za rovnaké,  t.\,j. započítavame ich iba raz.
+
+\end{tcolorbox}
+
+\rieh Pre dvojmiestne čísla $a, b, c$ je súčin $abc$ číslo štvormiestne, alebo päťmiestne, alebo šesťmiestne. Ak sú teda všetky číslice čísla $abc$ rovné jednej číslici $k$, platí jedna z~rovností $abc = k~\cdot 1 111$, $abc = k~\cdot 11 111$ alebo $abc = k~\cdot 111 111$, $k \in \{1, 2, \ldots , 9\}$.
+
+Čísla $1 111 = 11\cdot 101$ a $11111 = 41\cdot 271$ však majú vo svojom rozklade trojmiestne prvočísla, takže nemôžu byť súčinom dvojmiestnych čísel. Ostáva preto jediná možnosť:
+$$ abc = k~\cdot 111 111 = k~\cdot 3 \cdot 7 \cdot 11 \cdot 13 \cdot 37.$$
+Pozrime sa, ako môžu byť prvočísla 3, 7, 11, 13, 37 rozdelené medzi jednotlivé činitele $a, b, c$. Pretože súčiny $37 \cdot 3$ a $3 \cdot 7 \cdot 11$ sú väčšie ako 100, musí byť prvočíslo 37 samo ako jeden činiteľ a zvyšné štyri prvočísla 3, 7, 11, 13 musia byť rozdelené do dvojíc. Keďže aj súčin $11 \cdot 13$ je väčší ako 100, prichádzajú do úvahy iba rozdelenia na činitele $3 \cdot 11, 7 \cdot 13$ a 37, alebo na činitele $3 \cdot 13$, $7 \cdot 11$ a 37. K~týmto činiteľom ešte pripojíme možné činitele z~rozkladu číslice $k$ a dostaneme riešenia dvoch typov:
+$$a = 33k_1, b = 91, c = 37k_2, \ \ \ \ \text {pričom} \ \ k_1 \in \{1, 2, 3\}, k_2 \in \{1, 2\},$$
+$$a = 39k_1, b = 77, c = 37k_2,\ \ \ \ \text{pričom}\ \ k_1 \in \{1, 2\}, k_2 \in \{1, 2\},$$
+Hľadaný počet trojíc čísel $a, b, c$ je teda $3 \cdot 2 + 2 \cdot 2 = 10$.\\
+\\
+\kom Posledná úloha seminára je zaujímavá myšlienkou, že čísla, ktoré majú všetky cifry rovnaké, sú násobkami čísel 11, 111, 1111, \ldots. Ďalšia analýza uplatní poznatky o~rozklade čísla na súčin prvočísel a je tak ďalším príkladom úlohy, v~ktorej musia študenti zapojiť vedomosti z~predchádzajúcich seminárov.
+
+
+\subsection*{Domáca práca}
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{8.9} [58-I-3] Nájdite všetky štvorciferné čísla $n$, ktoré majú nasledujúce tri vlastnosti: V~zápise čísla $n$ sú dve rôzne cifry, každá dvakrát. Číslo $n$ je deliteľné siedmimi. Číslo, ktoré vznikne otočením poradia cifier čísla $n$, je tiež štvorciferné a deliteľné siedmimi.
+
+\end{tcolorbox}
+
+\rieh V~riešení budeme označovať číslo, ktoré vznikne otočením poradia cifier čísla $n$, ako $\overline{n}$. Rozoberieme tri prípady.
+
+(i) Číslo $n$ má tvar $aabb$, kde $a$, $b$ sú rôzne cifry. Takže $n = 1100a + 11b$ a $\overline{n} = 1100b + 11a$. Číslo 7 má deliť ako $n$, tak $\overline{n}$, teda aj ich rozdiel $n - \overline{n} = 1089(a - b)$ a súčet $n + \overline{n} = 1111(a + b)$. Keďže ani číslo 1089, ani číslo 1111 nie sú násobkom siedmich a sedem je prvočíslo, tak $7 \mid a - $b aj $7 \mid a + b$. Ak použijeme rovnakú úvahu ešte raz, vidíme, že $7 \mid (a - b) + (a + b) = 2a$ a $7 \mid (a + b) - (a - b) = 2b$, teda $7 \mid a$ a $7 \mid b$, čiže $a, b \in \{0, 7\}$. Cifry $a, b$ sú navzájom rôzne, preto jedna z~nich musí byť 0. Ale potom jedno z~čísel $aabb$, $bbaa$ nie je štvorciferné. Hľadané číslo $n$ teda nemôže mať uvedený tvar.
+
+(ii) Číslo $n$ má tvar $abab$. Potom $7 \mid n = 1010a + 101b$ a tiež $7 \mid \overline{n} = 1010b + 101a$. Podobne ako v~predchádzajúcom prípade odvodíme, že $7 \mid n - \overline{n} = 909(a - b)$ a $7 \mid n + \overline{n} = 1111(a + b)$, a z~rovnakých dôvodov ako v~predchádzajúcom prípade zisťujeme, že $7 \mid a$, $7 \mid b$. Niektorá z~cifier by teda musela byť 0. Číslo $n$ tak nemôže mať ani tvar $abab$.
+
+(iii) Číslo $n$ má tvar $abba$. Potom otočením poradia cifier vznikne to isté číslo, takže máme jedinú podmienku $7 \mid 1001a + 110b$. Keďže $7 \mid 1001$ a $7 \nmid 110$, je táto podmienka ekvivalentná s~podmienkou $7 \mid b$. Preto $b \in \{0, 7\}$, $a \in \{1, 2, \ldots, 9\}$, $a \neq b$. Vyhovuje tak všetkých 17 čísel, ktoré práve uvedené podmienky spĺňajú: 1001, 2002, 3003, 4004, 5005, 6006, 7007, 8008, 9009, 1771, 2772, 3773, 4774, 5775, 6776, 8778, 9779.\\
+\\
+\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{8.10} [57-I-6] Klárka mala na papieri napísané trojciferné číslo. Keď ho správne vynásobila deviatimi, dostala štvorciferné číslo, ktoré sa začínalo rovnakou číslicou ako pôvodné číslo, prostredné dve číslice sa rovnali a posledná číslica bola súčtom číslic pôvodného čísla. Ktoré štvorciferné číslo mohla Klárka dostať?
+
+\end{tcolorbox}
+
+\rieh Hľadajme pôvodné číslo $x = 100a + 10b + c$, ktorého cifry sú $a, b, c$. Cifru, ktorá sa vyskytuje na prostredných dvoch miestach výsledného súčinu, označme $d$. Zo zadania vyplýva
+$$ 9(100a + 10b + c) = 1 000a + 100d + 10d + (a + b + c), \ \ \ \ \ \ (1)$$
+pričom výraz v~poslednej zátvorke predstavuje cifru zhodnú s~poslednou cifrou súčinu $9c$. To však znamená, že nemôže byť $c \geq 5$: pre také $c$ sa totiž končí číslo $9c$ cifrou neprevyšujúcou 5, a pretože $a\neq 0$, platí naopak $a + b + c > c \geq 5$.
+
+Zrejme tiež $c \neq 0$ (v~opačnom prípade by platilo $a = b = c = x = 0$). Ostatné
+možnosti vyšetríme zostavením nasledujúcej tabuľky.
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+$c$ &$9c$ & $a+b+c$ & $a+b$ \\
+\hline
+\hline
+1 & 9 & 9 & 8 \\
+\hline
+2 & 18 & 8 & 6\\
+\hline
+3& 27 & 7& 4\\
+\hline
+4& 36 & 6 & 2\\
+\hline
+\end{tabular}
+\end{center}
+
+Rovnosť (1) možno prepísať na tvar
+$$ 100(b - a - d) = 10d + a + 11b - 8c. (2)$$
+Hodnota pravej strany je aspoň $-72$ a menšia ako 200, lebo každé z~čísel $a, b, c, d$ je najviac rovné deviatim. Takže buď $b - a - d = 0$, alebo $b - a - d = 1$.
+
+V~prvom prípade po substitúcii $d = b - a$ upravíme vzťah (2) na tvar $8c = 3(7b - 3a)$, z~ktorého vidíme, že $c$ je násobkom troch. Z~prvej tabuľky potom vyplýva $c = 3, a = 4 - b$, čo po dosadení do rovnice $8c = 3(7b - 3a)$ vedie k~riešeniu $a = b = 2, c = 3$. Pôvodné číslo je teda $x = 223$ a jeho deväťnásobok $9x = 2 007.$
+
+V~druhom prípade dosadíme $d = b - a - 1$ do (2) a zistíme, že $8c + 110 = 3(7b-3a)$. Výraz $8c+110$ je teda deliteľný tromi, preto číslo $c$ dáva po delení tromi zvyšok 2. Dosadením jediných možných hodnôt $c = 2$ a $b = 6 - a$ do poslednej rovnice zistíme, že $a = 0$, čo je v~rozpore s~tým, že číslo $x = 100a + 10b + c$ je trojciferné.
+
+\textit{Záver.} Klárka dostala štvorciferné číslo 2 007.
+
+\textit{Poznámka.} Prvá tabuľka ponúka jednoduchší, ale numericky pracnejší postup priameho dosadzovania všetkých prípustných hodnôt čísel $a, b, c$ do rovnice (1). Počet všetkých možností možno obmedziť na desať odhadom $b \geq a$, ktorý zistíme pomocou vhodnej úpravy vzťahu (1) napríklad na tvar (2). Riešenie uvádzame v~druhej tabuľke.
+\begin{center}
+\begin{tabular}{|r||r|r|r|r|r|r|r|r|r|r|}
+\hline
+$a$ & 1 & 2 & 3 & 4 & 1 & 2 & 3 & 1 & \textbf{2} & 1\\
+\hline
+$b$ & 7 & 6 & 5 & 4 & 5 & 4 & 3 & 3 & \textbf{2} & 1 \\
+\hline
+$c$ & 1 & 1 & 1 & 1 & 2 & 2 & 2 & 3 & \textbf{3} & 4 \\
+\hline
+$9x$ & 1539 & 2349 & 3159 & 3969 & 1368 & 2178 & 2988 & 1197 & \textbf{2007} & 1026\\
+\hline
+\end{tabular}
+\end{center}
+\subsection*{Doplňujúce zdroje a materiály}
+Výborným zdrojom úloh jednoduchších aj zložitejších je~\cite{sedlacek1961}\footnote{\url{https://dml.cz/handle/10338.dmlcz/403433}}.
+
