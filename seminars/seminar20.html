@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>latex-header</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <base href="https://pancelka.github.io/diplomova_laska/">
+  <link rel="stylesheet" href="style.css" media="screen">
+</head>
+<body>
+<h1>Zbierka uloh</h1>
+<p>Link to <a href="/index.html">zoznam seminarov</a>.</p>
+<h1 id="seminár-20" class="unnumbered">Seminár 20</h1>
+<h2 id="téma" class="unnumbered">Téma</h2>
+<p>Teória čísel V – miš-maš</p>
+<h2 id="ciele" class="unnumbered">Ciele</h2>
+<p>Trénovať riešenie rôznorodých úloh z oblasti elementárnej teórie čísel bez špecifického zamerania</p>
+<h2 id="úlohy-a-riešenia" class="unnumbered">Úlohy a riešenia</h2>
+<p><strong>Úvodný komentár.</strong> Toto seminárne stretnutie sa nevyznačuje špecifickou témou, ale ide skôr o panoptikum rôznych úloh, ktoré sa dajú zahrnúť do oblasti teórie čísel lepšie ako do akejkoľvek inej.<br />
+<br />
+</p>
+<p>[65-II-4] Adam s Barborou hrajú so zlomkom <span class="math display">\[\frac{10a + b}{10c + d}\]</span> takúto hru na štyri ťahy: Hráči striedavo nahrádzajú ľubovoľné z doposiaľ neurčených písmen <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(c\)</span>, <span class="math inline">\(d\)</span> nejakou cifrou od 1 do 9. Barbora vyhrá, keď výsledný zlomok bude rovný buď celému číslu, alebo číslu s konečným počtom desatinných miest; inak vyhrá Adam (napríklad keď vznikne zlomok <span class="math inline">\(\frac{11}{29}\)</span>). Ak začína Adam, ako má hrať Barbora, aby zaručene vyhrala? Ak začína Barbora, je možné poradiť Adamovi tak, aby vždy vyhral?</p>
+<p>Ak má prvý ťah Adam, môže Barbora hrať tak, aby bol výsledný zlomok rovný jednej, čo podľa zadania prinesie Barbore výhru. Taký zlomok vyjde, keď budú súčasne platiť obe rovnosti <span class="math inline">\(a = c\)</span> a <span class="math inline">\(b = d\)</span>, ktoré Barbora dosiahne ťahmi podľa zlomkovej čiary s Adamovými ťahmi.</p>
+<p>Ak začína Barbora, môže Adam hrať tak, aby vyšiel zlomok s menovateľom <span class="math inline">\(10c+d\)</span> deliteľným tromi, ktorého čitateľ <span class="math inline">\(10a + b\)</span> však deliteľný tromi nebude. Na to Adamovi stačí po každom z oboch Barboriných ťahov vhodne čitateľ či menovateľ, napríklad podľa kritéria deliteľnosti tromi mu stačí zabezpečiť, aby sa ciferný súčet <span class="math inline">\(a+b\)</span> čitateľa rovnal 10 a aby sa ciferný súčet <span class="math inline">\(c+d\)</span> menovateľa rovnal 9 alebo 12. Adam tak vyhrá, pretože výsledný zlomok nebude možné krátiť tromi, takže sa nebude rovnať žiadnemu zlomku s mocninou čísla 10 v menovateli, akým sa dá zapísať každé číslo s konečným počtom desatinných miest.<br />
+<br />
+Úlohu je možné najprv zadať ako hru medzi dvoma hráčmi a až po tom, čo študenti odohrajú niekoľko kôl a vypozorujú zákonitosti, je vhodné pustiť sa do tvrdého riešenia. Zaujímavé tiež môže byť porovnať stratégie jednotlivých študentov medzi sebou, príp. ich po samostatnej práci nechať niekoľko súbojov odohrať znova, aby svoju stratégiu overili v praxi.<br />
+<br />
+</p>
+<p>[57-I-1-N1] Ak <span class="math inline">\(m, k\)</span> a <span class="math inline">\(\sqrt[k]{m}\)</span> sú celé čísla väčšie ako 1, tak v rozklade čísla <span class="math inline">\(m\)</span> na súčin prvočísel sa každé prvočíslo vyskytuje v mocnine, ktorej exponent je násobkom čísla <span class="math inline">\(k\)</span>. Dokážte.</p>
+<p>Rozklad čísla <span class="math inline">\(m\)</span> dostaneme, keď rozklad čísla <span class="math inline">\(\sqrt[k]{m}\)</span> umocníme na <span class="math inline">\(k\)</span>-tu, každý exponent v rozklade čísla <span class="math inline">\(m\)</span> tak bude súčinom exponentu v rozklade čísla <span class="math inline">\(\sqrt[k]{m}\)</span> a čísla <span class="math inline">\(k\)</span>.<br />
+<br />
+Úloha je prípravou k riešeniu komplexnejšieho problému, ktorý nasleduje.<br />
+<br />
+</p>
+<p>[57-I-1] Určte najmenšie prirodzené číslo <span class="math inline">\(n\)</span>, pre ktoré aj čísla <span class="math inline">\(\sqrt{2n}, \sqrt[3]{3n}, \sqrt[5]{5n}\)</span> sú prirodzené.</p>
+<p>Vysvetlíme, prečo prvočíselný rozklad hľadaného čísla musí obsahovať len vhodné mocniny prvočísel 2, 3 a 5. Každé prípadné ďalšie prvočíslo by sa v rozklade čísla <span class="math inline">\(n\)</span> muselo vyskytovať v mocnine, ktorej exponent je deliteľný dvoma, tromi aj piatimi zároveň (viď predchádzajúca úloha). Po vyškrtnutí takého prvočísla by sa číslo <span class="math inline">\(n\)</span> zmenšilo a skúmané odmocniny by pritom ostali celočíselné.</p>
+<p>Položme preto <span class="math inline">\(n = 2^a \cdot 3^b \cdot 5^c\)</span>, pričom <span class="math inline">\(a, b, c\)</span> sú prirodzené čísla. Čísla <span class="math inline">\(\sqrt[3]{3n}\)</span> a <span class="math inline">\(\sqrt[5]{5n}\)</span> sú celé, preto je exponent <span class="math inline">\(a\)</span> násobkom troch a piatich. Aj <span class="math inline">\(\sqrt{2n}\)</span> je celé číslo, preto musí byť číslo <span class="math inline">\(a\)</span> nepárne. Je teda nepárnym násobkom pätnástich: <span class="math inline">\(a \in \{15, 45, 75, \ldots\}\)</span>. Analogicky je exponent <span class="math inline">\(b\)</span> taký násobok desiatich, ktorý po delení tromi dáva zvyšok 2: <span class="math inline">\(b \in \{20, 50, 80, \ldots\}\)</span>. Napokon <span class="math inline">\(c\)</span> je násobok šiestich, ktorý po delení piatimi dáva zvyšok 4: <span class="math inline">\(c \in \{24, 54, 84, \ldots\}\)</span>. Z podmienky, že <span class="math inline">\(n\)</span> je najmenšie, dostávame <span class="math inline">\(n = 2^{15} \cdot3^{20} \cdot 5^{24}\)</span>.</p>
+<p>Presvedčíme sa ešte, že dané odmocniny sú prirodzené čísla: <span class="math display">\[\sqrt{2n} = 2^8 \cdot 3^{10} \cdot 5^{12},\ \ \ \sqrt[3]{3n} = 2^5 \cdot 3^7 \cdot 5^8, \ \ \ \sqrt[5]{5n} = 2^3 \cdot 3^2 \cdot5^5.\]</span></p>
+<p><em>Záver</em>. Hľadaným číslom je <span class="math inline">\(n = 2^{15} \cdot 3^{20} \cdot 5^{24}\)</span>.<br />
+<br />
+Úloha je netradičným príkladom uplatnenia poznatkov o rozklade čísla na súčin prvočísel a vďaka návodnej úlohe by študenti mali byť dostatočne pripravení na jej samostatné riešenie.<br />
+<br />
+</p>
+<p>[60-II-2] Nájdite všetky kladné celé čísla <span class="math inline">\(n\)</span>, pre ktoré je číslo <span class="math inline">\(n^2 + 6n\)</span> druhou mocninou celého čísla.</p>
+<p>Zrejme <span class="math inline">\(n^2 +6n &gt; n^2\)</span> a zároveň <span class="math inline">\(n^2 +6n &lt; n^2 +6n+9 = (n+3)^2\)</span>. V uvedenom intervale ležia iba dve druhé mocniny celých čísel: <span class="math inline">\((n + 1)^2\)</span> a <span class="math inline">\((n + 2)^2\)</span>.</p>
+<p>V prvom prípade máme <span class="math inline">\(n^2 + 6n = n^2 + 2n + 1\)</span>, teda <span class="math inline">\(4n = 1\)</span>, tomu však žiadne celé číslo <span class="math inline">\(n\)</span> nevyhovuje.</p>
+<p>V druhom prípade máme <span class="math inline">\(n^2 + 6n = n^2 + 4n + 4\)</span>, teda <span class="math inline">\(2n = 4\)</span>. Dostávame tak jediné riešenie <span class="math inline">\(n = 2\)</span>.<br />
+<br />
+<strong>Iné riešenie.</strong> Budeme skúmať rozklad <span class="math inline">\(n^2 + 6n = n(n+ 6)\)</span>. Spoločný deliteľ oboch čísel <span class="math inline">\(n\)</span> a <span class="math inline">\(n + 6\)</span> musí deliť aj ich rozdiel, preto ich najväčším spoločným deliteľom môžu byť len čísla 1, 2, 3 alebo 6. Tieto štyri možnosti rozoberieme.</p>
+<p>Keby boli čísla <span class="math inline">\(n\)</span> a <span class="math inline">\(n+6\)</span> nesúdeliteľné, muselo by byť každé z nich druhou mocninou. Rozdiel dvoch druhých mocnín prirodzených čísel však nikdy nie je 6. Pre malé čísla sa o tom ľahko presvedčíme, a pre <span class="math inline">\(k = 4\)</span> už je rozdiel susedných štvorcov <span class="math inline">\(k^2\)</span> a <span class="math inline">\((k - 1)^2\)</span> aspoň 7. Vlastnosť, že 1, 3, 4, 5 a 7 je päť najmenších rozdielov dvoch druhých mocnín, využijeme aj ďalej.</p>
+<p>Ak je najväčším spoločným deliteľom čísel <span class="math inline">\(n\)</span> a <span class="math inline">\(n+6\)</span> číslo 2, je <span class="math inline">\(n = 2m\)</span> pre vhodné <span class="math inline">\(m\)</span>, ktoré navyše nie je deliteľné tromi. Ak <span class="math inline">\(n(n + 6) = 4m(m + 3)\)</span> je štvorec, musí byť aj <span class="math inline">\(m(m + 3)\)</span> štvorec. Čísla <span class="math inline">\(m\)</span> a <span class="math inline">\(m + 3\)</span> sú však nesúdeliteľné, preto musí byť každé z nich druhou mocninou prirodzeného čísla. To nastane len pre <span class="math inline">\(m = 1\)</span>, čiže <span class="math inline">\(n = 2\)</span>. Ľahko overíme, že <span class="math inline">\(n(n + 6)\)</span> je potom naozaj druhou mocninou celého čísla.</p>
+<p>Ak je najväčším spoločným deliteľom čísel <span class="math inline">\(n\)</span> a <span class="math inline">\(n + 6\)</span> číslo 3, je <span class="math inline">\(n = 3m\)</span> pre vhodné nepárne <span class="math inline">\(m\)</span>. Ak <span class="math inline">\(n(n+6) = 9m(m+2)\)</span> je štvorec, musia byť nesúdeliteľné čísla <span class="math inline">\(m\)</span> a <span class="math inline">\(m+2\)</span> tiež štvorce. Také dva štvorce však neexistujú.</p>
+<p>Ak je najväčším spoločným deliteľom čísel <span class="math inline">\(n\)</span> a <span class="math inline">\(n + 6\)</span> číslo 6, je <span class="math inline">\(n = 6m\)</span> pre vhodné <span class="math inline">\(m\)</span>. Ak <span class="math inline">\(n(n + 6) = 36m(m + 1)\)</span> je štvorec, musia byť štvorce aj obe nesúdeliteľné čísla <span class="math inline">\(m\)</span> a <span class="math inline">\(m + 1\)</span>, čo nastane len pre <span class="math inline">\(m = 0\)</span>, my však hľadáme len kladné čísla <span class="math inline">\(n\)</span>.</p>
+<p>Úlohe vyhovuje jedine <span class="math inline">\(n = 2\)</span>.<br />
+<br />
+K správnemu riešeniu úlohy vedú mnohé cesty. Prvé uvedené riešenie je trochu trikové, avšak nápadité, a preto ak ho študenti neobjavia, je vhodné im ho na záver ukázať. Nie je tiež nepravdepodobné, že študenti budú skúšať, ako sa číslo <span class="math inline">\(n^2+6n\)</span> správa pre rôzne hodnoty <span class="math inline">\(n\)</span>, čo by ich mohlo naviesť na správu cestu nájdenia jediného riešenia.<br />
+<br />
+</p>
+<p>[66-II-1] Nájdite všetky mnohočleny <span class="math inline">\(P(x) = ax^2 +bx+c\)</span> s celočíselnými koeficientami spĺňajúce <span class="math display">\[1 &lt; P(1) &lt; P(2) &lt; P(3) \ \ \ \text{a súčasne} \ \  \
+\frac{P(1) \cdot P(2) \cdot P(3)}{4}= 17^2.\]</span></p>
+<p>Rovnosť zo zadania je ekvivalentná rovnosti <span class="math inline">\(P(1)\cdot P(2)\cdot P(3) = 4\cdot17^2\)</span>, takže čísla <span class="math inline">\(P(1)\)</span>, <span class="math inline">\(P(2)\)</span>, <span class="math inline">\(P(3)\)</span> môžu byť iba z množiny deliteľov čísla <span class="math inline">\(4 \cdot 17^2\)</span> väčších ako 1: <span class="math display">\[2 &lt; 4 &lt; 17 &lt; 2 \cdot 17 &lt; 4 \cdot 17 &lt; 17^2&lt; 2 \cdot 17^2&lt; 4 \cdot 17^2.\]</span></p>
+<p>Ak by platilo <span class="math inline">\(P(1) = 4\)</span>, bol by súčin <span class="math inline">\(P(1)\cdot P(2)\cdot P(3)\)</span> aspoň <span class="math inline">\(4 \cdot 17 \cdot (2 \cdot 17) = 8 \cdot 17^2\)</span>, čo nevyhovuje zadaniu. Preto <span class="math inline">\(P(1) = 2\)</span> a tak je nutne <span class="math inline">\(P(2) = 17\)</span>, pretože keby bolo <span class="math inline">\(P(2) = 4\)</span>, musel by byť daný súčin <span class="math inline">\(4 \cdot 17^2\)</span> deliteľný číslom <span class="math inline">\(P(1)\cdot P(2) = 8\)</span>, čo neplatí, a pre <span class="math inline">\(P(2) = 2 \cdot 17\)</span> by bol súčin <span class="math inline">\(P(1)\cdot P(2)\cdot P(3)\)</span> opäť príliš veľký. Pre tretiu neznámu hodnotu <span class="math inline">\(P(3)\)</span> potom vychádza <span class="math inline">\(P(3) = 4 \cdot 17^2 /(2 \cdot 17) = 2 \cdot 17\)</span>.</p>
+<p>Hľadané koeficienty <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(c\)</span> tak sú práve také celé čísla, ktoré vyhovujú sústave <span class="math display">\[\begin{aligned}
+P(1) &amp;= a + b + c = 2,\\
+P(2) &amp;= 4a + 2b + c = 17,\\
+P(3) &amp;= 9a + 3b + c = 34.\end{aligned}\]</span> Jej vyriešením dostaneme <span class="math inline">\(a = 1\)</span>, <span class="math inline">\(b = 12\)</span>, <span class="math inline">\(c = -11\)</span>.</p>
+<p><em>Záver</em>. Úlohe vyhovuje jediný mnohočlen <span class="math inline">\(P(x) = x^2 + 12x - 11\)</span>.<br />
+<br />
+Úloha spája poznatky o deliteľnosti, mnohočlenoch a na jej úspešné doriešenie je nutná aj schopnosť popasovať sa so sústavou troch rovníc s tromi neznámymi. Zaujímavé bude tiež pozorovať, koľko študentov si spomenie, že podobnou úlohou sa už zaoberali v seminári 5.<br />
+<br />
+</p>
+<p>[64-II-1] Celé čísla od 1 do 9 rozdelíme ľubovoľne na tri skupiny po troch a potom čísla v každej skupine medzi sebou vynásobíme.</p>
+<p>a) Určte tieto tri súčiny, ak viete, že dva z nich sa rovnajú a sú menšie ako tretí súčin.</p>
+<p>b) Predpokladajme, že jeden z troch súčinov, ktorý označíme <span class="math inline">\(S\)</span>, je menší ako dva ostatné súčiny (ktoré môžu byť rovnaké). Nájdite najväčšiu možnú hodnotu <span class="math inline">\(S\)</span>.</p>
+<p>Najskôr vyjadríme súčin všetkých deviatich čísel pomocou jeho rozkladu na súčin prvočísel: <span class="math display">\[1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7 \cdot 8 \cdot 9 = 2^7 \cdot 3^4 \cdot 5 \cdot 7.\]</span></p>
+<p>a) Označme dva z uvažovaných (rôznych) súčinov <span class="math inline">\(S\)</span> a <span class="math inline">\(Q\)</span>, pričom <span class="math inline">\(S &lt; Q\)</span>. Z rovnosti <span class="math display">\[S \cdot S~\cdot Q = 2^7 \cdot 3^4 \cdot 5 \cdot 7\]</span> vidíme, že prvočísla 5 a 7 musia byť zastúpené v súčine <span class="math inline">\(Q\)</span>, takže <span class="math inline">\(Q = 5 \cdot 7 \cdot x = 35x\)</span>, pričom <span class="math inline">\(x\)</span> je jedno zo zvyšných čísel 1, 2, 3, 4, 6, 8 a 9. Ďalej vidíme, že v rozklade dotyčného <span class="math inline">\(x\)</span> musí mať prvočíslo 2 nepárny exponent a prvočíslo 3 párny exponent – tomu vyhovujú iba čísla 2 a 8. Pre <span class="math inline">\(x = 2\)</span> ale vychádza <span class="math inline">\(Q = 35 \cdot 2 = 70 &lt; S= 2^3 \cdot 3^2 = 72\)</span>, čo odporuje predpokladu <span class="math inline">\(S &lt; Q\)</span>. Preto je nutne <span class="math inline">\(x = 8\)</span>, pre ktoré vychádza <span class="math inline">\(Q = 35 \cdot 2 = 280\)</span> a <span class="math inline">\(S^2 = 2^4 \cdot 3^4\)</span> čiže <span class="math inline">\(S = 2^2 \cdot 3^2 = 36\)</span>. Trojica súčinov je teda <span class="math inline">\((36, 36, 280)\)</span>.</p>
+<p>Ostáva ukázať, že získanej trojici naozaj zodpovedá rozdelenie daných deviatich čísel na trojice: <span class="math display">\[S = 1 \cdot 4 \cdot 9 = 36, \ \ \ S~= 2 \cdot 3 \cdot 6 = 36, \ \ \ Q = 5 \cdot 7 \cdot 8 = 280.\]</span></p>
+<p>b) Označme uvažované súčiny <span class="math inline">\(S, Q\)</span> a <span class="math inline">\(R\)</span>, pričom <span class="math inline">\(S &lt; Q\)</span> a <span class="math inline">\(S &lt; R\)</span> (nie je ale vylúčené, že <span class="math inline">\(Q = R\)</span>). V riešení časti a) sme zistili, že platí rovnosť <span class="math display">\[S \cdot Q \cdot R = 70 \cdot 72 \cdot 72.\]</span> Ak teda ukážeme, že existuje rozdelenie čísel, pri ktorom <span class="math inline">\(S = 70\)</span> a <span class="math inline">\(R = Q = 72\)</span>, bude <span class="math inline">\(S = 70\)</span> hľadaná najväčšia hodnota, lebo keby pri niektorom rozdelení platilo <span class="math inline">\(S \geq 71\)</span>, muselo by byť <span class="math inline">\(R \geq 72\)</span> aj <span class="math inline">\(Q \geq 72\)</span> a tiež <span class="math inline">\(S \cdot Q \cdot R \geq 71 \cdot 72 \cdot 72\)</span>, čo zrejme odporuje predchádzajúcej rovnosti. Nájsť potrebné rozdelenie je jednoduché: <span class="math display">\[S~= 2 \cdot 5 \cdot 7 = 70, \ \ \ Q = 1 \cdot 8 \cdot 9 = 72, \ \ \  R = 3 \cdot 4 \cdot 6 = 72.\]</span><br />
+<br />
+Zaujímavá úloha, ktorá dôvtipne využíva rozklady čísel na súčin prvočísel.</p>
+<h2 id="domáca-práca" class="unnumbered">Domáca práca</h2>
+<p>[58-I-5] Z množiny <span class="math inline">\(\{1, 2, 3, \ldots, 99\}\)</span> vyberte čo najväčší počet čísel tak, aby súčet žiadnych dvoch vybraných čísel nebol násobkom jedenástich. (Vysvetlite, prečo zvolený výber má požadovanú vlastnosť a prečo žiadny výber väčšieho počtu čísel nevyhovuje.)</p>
+<p>Čísla od 1 do 99 rozdelíme podľa ich zvyšku po delení číslom 11 do jedenástich deväťprvkových skupín <span class="math inline">\(T_0, T_1 ,\ldots, T_{10}\)</span>:</p>
+<p><span class="math display">\[\begin{aligned}
+T_0 &amp;= \{11, 22, 33, . . . , 99\},\\
+T_1 &amp;= \{1, 12, 23, . . . , 89\},\\
+T_2 &amp;= \{2, 13, 24, . . . , 90\},\\
+\vdots\\
+T_{10} &amp;= \{10, 21, 32, . . . , 98\}.\\\end{aligned}\]</span></p>
+<p>Ak vyberieme jedno číslo z <span class="math inline">\(T_0\)</span> (viac ich ani vybrať nesmieme) a všetky čísla z <span class="math inline">\(T_1, T_2, T_3, T_4\)</span> a <span class="math inline">\(T_5\)</span>, dostaneme vyhovujúci výber <span class="math inline">\(1 + 5 \cdot 9 = 46\)</span> čísel, lebo súčet dvoch čísel z <span class="math inline">\(0, 1, 2, 3, 4, 5\)</span> je deliteľný jedenástimi jedine v prípade 0 + 0, z množiny <span class="math inline">\(T_0\)</span> sme však vybrali iba jedno číslo.</p>
+<p>Na druhej strane, v ľubovoľnom vyhovujúcom výbere je najviac jedno číslo zo skupiny <span class="math inline">\(T_0\)</span> a najviac 9 čísel z každej zo skupín <span class="math display">\[T_1 \cup T_{10}, \ \ T_2 \cup T_9, \ \ T_3 \cup T_8, \ \  T_4 \cup T_7, \ \ T_5 \cup T_6,\]</span> lebo pri výbere 10 čísel z niektorej skupiny <span class="math inline">\(T_i \cup T_{11-i}\)</span> by medzi vybranými bolo niektoré číslo zo skupiny <span class="math inline">\(T_i\)</span> a aj niektoré číslo zo skupiny <span class="math inline">\(T_{11-i}\)</span>; ich súčet by potom bol deliteľný jedenástimi. Celkom je teda vo výbere najviac <span class="math inline">\(1 + 5 \cdot 9 = 46\)</span> čísel.</p>
+<p><em>Poznámka</em>. Možno uvedené riešenie vyzerá príliš trikovo. Avšak počiatočné úvahy každého riešiteľa k nemu rýchlo vedú: iste záleží len na zvyškoch vybraných čísel, takže rozdelenie na triedy <span class="math inline">\(T_i\)</span> a vyberanie z nich je prirodzené. Je jasné, že z <span class="math inline">\(T_0\)</span> môže byť vybrané len jedno číslo a všetko ďalšie, o čo sa musíme starať, je požiadavka, aby sme nevybrali zároveň po čísle zo skupiny <span class="math inline">\(T_i\)</span> aj zo skupiny <span class="math inline">\(T_{11-i}\)</span>. Ak je už vybrané niektoré číslo z triedy <span class="math inline">\(T_i\)</span>, kde <span class="math inline">\(i\neq 0\)</span>, môžeme pokojne vybrať všetky čísla z <span class="math inline">\(T_i\)</span>, to už skúmanú vlastnosť nepokazí. Je preto dokonca jasné, ako všetky možné výbery najväčšieho počtu čísel vyzerajú.<br />
+<br />
+Je veľmi vhodné sa k tejto úlohe v nasledujúcom seminári vrátiť s poznámkou, že množiny <span class="math inline">\(T_1, \ldots, T_{10}\)</span> nazývame zvyškové triedy.<br />
+<br />
+</p>
+<p>[66-I-6] Nájdite najmenšie prirodzené číslo <span class="math inline">\(n\)</span> také, že v zápise iracionálneho čísla <span class="math inline">\(\sqrt{n}\)</span> nasledujú bezprostredne za desatinnou čiarkou dve deviatky.</p>
+<p>Označme <span class="math inline">\(a\)</span> najbližšie väčšie prirodzené číslo k iracionálnemu číslu <span class="math inline">\(\sqrt{n}\)</span>. Podľa zadania potom platí <span class="math inline">\(a - 0,01 \leq \sqrt{n}\)</span>. Keďže <span class="math inline">\(a^2\)</span> je prirodzené číslo väčšie ako <span class="math inline">\(n\)</span>, musí spolu platiť <span class="math display">\[(a - 0,01)^2 \leq n \leq a^2 - 1.\]</span> Po úprave nerovnosti medzi krajnými výrazmi vyjde <span class="math display">\[\frac{1}{50} a \geq 1,000 1, \ \ \ \text{čiže} \ \ \  a = 50,005.\]</span> Keďže je číslo <span class="math inline">\(a\)</span> celé, vyplýva z toho <span class="math inline">\(a \geq 51\)</span>. A keďže <span class="math display">\[(51 - 0,01)^2= 2 601 -\frac{102}{100}+\frac{1}{100^2}\in (2 599, 2 600),\]</span> je hľadaným číslom <span class="math inline">\(n = 2 600\)</span>.</p>
+<p><em>Poznámka</em>. Za správne riešenie možno uznať aj riešenie pomocou kalkulačky. Ak majú totiž byť za desatinnou čiarkou dve deviatky, musí byť číslo <span class="math inline">\(n\)</span> veľmi blízko zľava k nejakej druhej mocnine. Preto stačí na kalkulačke vyskúšať čísla <span class="math inline">\(\sqrt{3}, \sqrt{8}, \sqrt{15}\)</span> atď. Keďže <span class="math inline">\(51^2 = 2601\)</span>, nájdeme, že <span class="math inline">\(\sqrt{2600} = 50,990 195\ldots\)</span></p>
+Autor: Alexandra Porembova (techicnke spracovanie Martin Ukrop, Jan Mrazek)
+</body>
+</html>

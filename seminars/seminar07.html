@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>latex-header</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <base href="https://pancelka.github.io/diplomova_laska/">
+  <link rel="stylesheet" href="style.css" media="screen">
+</head>
+<body>
+<h1>Zbierka uloh</h1>
+<p>Link to <a href="/index.html">zoznam seminarov</a>.</p>
+<h1 id="seminár-7" class="unnumbered">Seminár 7</h1>
+<h2 id="téma" class="unnumbered">Téma</h2>
+<p>Teória čísel II – úlohy o najmenšom spoločnom násobku a najväčšom spoločnom deliteli</p>
+<h2 id="ciele" class="unnumbered">Ciele</h2>
+<p>Zoznámiť sa s metódami riešenia príkladov o spoločných deliteľoch a násobkoch, upevniť znalosti zo seminára predchádzajúceho.</p>
+<h2 id="úlohy-a-riešenia" class="unnumbered">Úlohy a riešenia</h2>
+<p>[61-I-3-N1] Určte, pre ktoré prirodzené čísla <span class="math inline">\(a, b\)</span> platí <span class="math inline">\((a, b) = 10\)</span> a zároveň <span class="math inline">\([a, b] = 150\)</span>.</p>
+<p>Pretože <span class="math inline">\(10 = 2 \cdot 5\)</span> a <span class="math inline">\(150 = 2 \cdot 3 \cdot 5^2\)</span>, požadované rovnosti sú splnené práve vtedy, keď <span class="math inline">\(a = 2 \cdot 3^s \cdot 5^t\)</span> a <span class="math inline">\(b = 2 \cdot 3^u \cdot 5^v\)</span>, kde <span class="math inline">\(\{s, u\} = \{0, 1\}\)</span> a <span class="math inline">\(\{t, v\} = \{1, 2\}\)</span>. Riešením je teda jedna zo štvoríc <span class="math inline">\(\{a, b\} = \{10, 150\}\)</span> alebo <span class="math inline">\(\{a, b\} = \{30, 50\}\)</span>.<br />
+<br />
+Úloha je relatívne jednoduchá a nevyžaduje žiadne špeciálne znalosti, zároveň však nie je triviálna. Tvorí tak príjemné preklenutie medzi školskými a olympiádnymi príkladmi.<br />
+<br />
+</p>
+<p>[69-I-5-N1] Nech <span class="math inline">\(d\)</span> je najväčší spoločný deliteľ prirodzených čísel <span class="math inline">\(a\)</span> a <span class="math inline">\(b\)</span>. Ukážte, že čísla <span class="math inline">\(a/d\)</span> a <span class="math inline">\(b/d\)</span> sú celé a nesúdeliteľné.</p>
+<p>Ak je <span class="math inline">\(d\)</span> najväčším spoločným deliteľom čísel <span class="math inline">\(a\)</span> a <span class="math inline">\(b\)</span>, potom existujú prirodzené čísla <span class="math inline">\(u\)</span> a <span class="math inline">\(v\)</span> také, že <span class="math inline">\(a=ud\)</span> a <span class="math inline">\(b=vd\)</span>, čím sme dokázali prvú časť tvrdenia. Druhú dokážeme sporom. Predpokladajme, že <span class="math inline">\(a/d\)</span> a <span class="math inline">\(b/d\)</span> nie sú nesúdeliteľné. Potom existuje ich najväčší spoločný deliteľ <span class="math inline">\(d_1\)</span>. Číslo <span class="math inline">\(d_1\)</span> však potom delí aj čísla <span class="math inline">\(a\)</span> a <span class="math inline">\(b\)</span>, čo je spor s predpokladom, že <span class="math inline">\(d=(a,b)\)</span>.<br />
+<br />
+Táto mini-úloha je prípravným krokom k nasledujúcemu všeobecnejšiemu tvrdeniu a zároveň môže pripomenúť použitie dôkazu sporom.<br />
+<br />
+</p>
+<p>[60-I-5-N2] Dokážte, že pre ľubovoľné prirodzené čísla <span class="math inline">\(a, b\)</span> platí vzťah <span class="math display">\[[a, b] \cdot (a, b) = ab.\]</span></p>
+<p>Nech <span class="math inline">\(d = (a, b)\)</span>, potom <span class="math inline">\(a = ud\)</span>, <span class="math inline">\(b = vd\)</span> pre nesúdeliteľné <span class="math inline">\(u\)</span> a <span class="math inline">\(v\)</span>, a teda <span class="math inline">\([a, b] = uvd\)</span>. Porovnaním ľavej a pravej strany dokazovanej nerovnosti dostávame <span class="math inline">\(uvd\cdot d = ud\cdot vd\)</span>, čo je pravdivé tvrdenie, teda vzťah je dokázaný.</p>
+<p>Alternatívne môžeme vzťah dokázať úvahou o exponentoch prvočísel, z ktorých sú čísla <span class="math inline">\(a\)</span> a <span class="math inline">\(b\)</span> zložené. Nech <span class="math inline">\(a=p_1^{\alpha_1}\cdot p_2^{\alpha_2} \cdots p_k^{\alpha_k}\)</span> a <span class="math inline">\(b=p_1^{\beta_1}\cdot p_2^{\beta_2} \cdots p_k^{\beta_k}\)</span>, kde <span class="math inline">\(p_1\)</span> až <span class="math inline">\(p_k\)</span> sú prvočísla a <span class="math inline">\(\alpha_k, \beta_k\)</span> prirodzené čísla. Potom</p>
+<p><span class="math display">\[\begin{aligned}
+(a,b) &amp;=p_1^{\min\{\alpha_1, \beta_1\}}\cdot p_2^{\min\{\alpha_2, \beta_2\}}\cdots p_k^{\min\{\alpha_k, \beta_k\}},\\
+[a,b] &amp;=p_1^{\max\{\alpha_1, \beta_1\}}\cdot p_2^{\max\{\alpha_2, \beta_2\}}\cdots p_k^{\max\{\alpha_k, \beta_k\}},\\
+ab &amp;=p_1^{\alpha_1+\beta_1}\cdot p_2^{\alpha_2+\beta_2}\cdots p_k^{\alpha_k, \beta_k}.\end{aligned}\]</span></p>
+<p>Keďže pre akékoľvek čísla <span class="math inline">\(\alpha, \beta\)</span> platí <span class="math inline">\(\max\{\alpha, \beta\}+\min\{\alpha, \beta\}=\alpha+\beta\)</span>, a to vo všetkých prípadoch <span class="math inline">\(\alpha &lt; \beta\)</span>, <span class="math inline">\(\alpha = \beta\)</span>, <span class="math inline">\(\alpha &gt; \beta\)</span>, je naše tvrdenie dokázané.<br />
+<br />
+Predchádzajúce tvrdenie je stavebným kameňom mnohých úloh o spoločných násobkoch a deliteľoch, najmä myšlienka zápisu prirodzených čísel <span class="math inline">\(a\)</span> a <span class="math inline">\(b\)</span> v tvare <span class="math inline">\(a=ud\)</span> a <span class="math inline">\(b=vd\)</span>, kde <span class="math inline">\(u\)</span> a <span class="math inline">\(v\)</span> sú prirodzené čísla také, že <span class="math inline">\((u,v)=1\)</span> a <span class="math inline">\(d=(a,b)\)</span> nájde uplatnenie veľmi často.<br />
+<br />
+</p>
+<p>[64-I-5-N4] Platí pre každé tri prirodzené čísla <span class="math inline">\(a, b, c\)</span> a ich najväčší spoločný deliteľ <span class="math inline">\(d\)</span> a ich najmenší spoločný násobok <span class="math inline">\(n\)</span> rovnosť <span class="math inline">\(abc = nd\)</span>?</p>
+<p>Neplatí, uvedieme protipríklad. Napríklad pre čísla <span class="math inline">\(15, 18\)</span> a <span class="math inline">\(24\)</span> je <span class="math inline">\(d=(15,18,24)=3\)</span>, <span class="math inline">\(n=[15, 18, 24]=360\)</span>. Ďalej <span class="math inline">\(15\cdot 18 \cdot 24 =6480\)</span> a <span class="math inline">\((15,18,24)\cdot[15, 18, 24]=3\cdot 360=1080\)</span>, to však nie sú rovnaké čísla a tvrdenie neplatí.<br />
+<br />
+Všeobecnejší pohľad na predchádzajúci problém by sme dostali skrz pohľad na exponenty prvočísel, z ktorých sú čísla <span class="math inline">\(a, b, c\)</span> zložené. Dokazovaná rovnosť nastane len v prípade, že sú všetky tri čísla navzájom po dvoch nesúdeliteľné.</p>
+<p>Zároveň úloha demonštruje riešenie uvedením protipríkladu, čo je princíp, s ktorým sme sa v seminároch zatiaľ nestretli a jeho spomenutie je určite vhodné.<br />
+<br />
+</p>
+<p>[64-I-5-N5] Ak majú prirodzené čísla <span class="math inline">\(a, b\)</span> najväčšieho spoločného deliteľa <span class="math inline">\(d\)</span>, majú rovnakého najväčšieho spoločného deliteľa aj čísla <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(a - b\)</span>, <span class="math inline">\(a + b\)</span>. Dokážte. Platí rovnaké tvrdenie pre najmenší spoločný násobok?</p>
+<p>Najväčší spoločný deliteľ týchto štyroch čísel nebude určite väčší ako <span class="math inline">\(d\)</span> (ak by bol, potom by <span class="math inline">\(d\)</span> nebol najväčší spoločný deliteľ čísel <span class="math inline">\(a\)</span> a <span class="math inline">\(b\)</span>, čo by bolo v spore s predpokladom úlohy). Stačí teda ukázať, že <span class="math inline">\(d\)</span> delí <span class="math inline">\(a+b\)</span> a <span class="math inline">\(a-b\)</span>. Ak zapíšeme <span class="math inline">\(a\)</span> a <span class="math inline">\(b\)</span> v tvare <span class="math inline">\(a=ud\)</span> a <span class="math inline">\(b=vd\)</span>, pričom pre prirodzené čísla <span class="math inline">\(u\)</span>, <span class="math inline">\(v\)</span> platí <span class="math inline">\((u,v)=1\)</span>, bude potom <span class="math inline">\(a+b=ud+vd=(u+v)d\)</span>, <span class="math inline">\(a-b=ud-vd=(u-v)d\)</span>. Vidíme, že <span class="math inline">\(d\)</span> delí súčet aj rozdiel čísel <span class="math inline">\(a\)</span> a <span class="math inline">\(b\)</span>, tvrdenie je teda dokázané.</p>
+<p>Tvrdenie pre najmenší spoločný násobok neplatí, uvedieme protipríklad. Pre čísla <span class="math inline">\(a=12\)</span>, <span class="math inline">\(b=8\)</span>, <span class="math inline">\(a+b=20\)</span>, <span class="math inline">\(a-b=4\)</span>, <span class="math inline">\([12,8]=24\)</span>, avšak <span class="math inline">\([12,8,20,4]=120\)</span>.<br />
+<br />
+Úloha precvičuje dôkaz všeobecného tvrdenia a opäť prináša protipríklad ako dostatočný argument.<br />
+<br />
+</p>
+<p>[61-I-3-N4, resp. 50-C-II-1] Nájdite všetky dvojice prirodzených čísel <span class="math inline">\(a, b\)</span>, pre ktoré platí <span class="math inline">\(a+b+[a, b]+(a, b) = 50\)</span>.</p>
+<p>Položme <span class="math inline">\(a = ud\)</span>, <span class="math inline">\(b = vd\)</span>, kde <span class="math inline">\(d\)</span> je najväčší spoločný deliteľ čísel <span class="math inline">\(a, b\)</span>, prirodzené čísla <span class="math inline">\(u, v\)</span> sú nesúdeliteľné a <span class="math inline">\([a,b]=uvd\)</span>. Podľa zadania má platiť <span class="math inline">\(ud+vd+uvd+d= 50\)</span>. Inak napísané, <span class="math inline">\((1 + u)(1 + v)d = 50\)</span>. Nájdime preto všetky rozklady čísla 50 na súčin troch prirodzených čísel <span class="math inline">\(d, u+1, v+1\)</span>, z ktorých posledné dve sú väčšie ako 1. Bez ujmy na všeobecnosti môžeme predpokladať, že <span class="math inline">\(a \leq b\)</span>, tj. <span class="math inline">\(u \leq v\)</span>. Dostaneme nasledujúce možnosti.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math inline">\(d\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(u+1\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(v+1\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(u\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(v\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(a\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(b\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">24</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">24</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">8</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">20</td>
+</tr>
+</tbody>
+</table>
+<p>V prípade <span class="math inline">\(d=2\)</span> dostaneme <span class="math inline">\(u=v=4\)</span>, to je však spor s tým, že <span class="math inline">\(u\)</span> a <span class="math inline">\(v\)</span> sú nesúdeliteľné. Preto má úloha práve tri riešenia.<br />
+<br />
+Úloha okrem vhodného zapísania čísel <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> a <span class="math inline">\([a,b]\)</span> vyžaduje ešte vhodnú úpravu rovnosti zo zadania, opäť tak kombinuje algebraické poznatky s poznatkami z oblasti teórie čísel.<br />
+<br />
+</p>
+<p>[61-S-1] Nájdite všetky dvojice prirodzených čísel <span class="math inline">\(a, b\)</span>, pre ktoré platí rovnosť množín <span class="math display">\[\{a \cdot [a, b], b \cdot (a, b)\} = \{45, 180\}.\]</span></p>
+<p>Z danej rovnosti vyplýva, že číslo <span class="math inline">\(b\)</span> je nepárne (inak by obe čísla naľavo boli párne), a teda číslo <span class="math inline">\(a\)</span> je párne (inak by obe čísla naľavo boli nepárne). Rovnosť množín preto musí byť splnená nasledovne: <span class="math display">\[a \cdot [a, b] = 180 \ \ \ \text{a} \ \ \  b \cdot (a, b) = 45. \ \ \ (1)\]</span> Keďže číslo <span class="math inline">\(a\)</span> delí číslo <span class="math inline">\([a, b]\)</span>, je číslo <span class="math inline">\(180 = 2^2 \cdot3^2 \cdot 5\)</span> deliteľné druhou mocninou (párneho) čísla <span class="math inline">\(a\)</span>, takže musí platiť buď <span class="math inline">\(a = 2\)</span>, alebo <span class="math inline">\(a = 6\)</span>.</p>
+<p>V prípade <span class="math inline">\(a = 2\)</span> (vzhľadom na to, že <span class="math inline">\(b\)</span> je nepárne) platí <span class="math display">\[a \cdot [a, b] = 2 \cdot [2, b] = 2 \cdot 2b = 4b,\]</span> čo znamená, že prvá rovnosť v (1) je splnená jedine pre <span class="math inline">\(b = 45\)</span>. Vtedy <span class="math inline">\(b \cdot (a, b) = 45 \cdot (2, 45) = 45\)</span>, takže je splnená aj druhá rovnosť v (1), a preto dvojica <span class="math inline">\(a = 2, b = 45\)</span> je riešením úlohy.</p>
+<p>V prípade <span class="math inline">\(a = 6\)</span> podobne dostaneme <span class="math display">\[a \cdot [a, b] = 6 \cdot [6, b] = 6 \cdot 2 \cdot [3, b] = 12 \cdot [3, b],\]</span> čo znamená, že prvá rovnosť v (1) je splnená práve vtedy, keď <span class="math inline">\([3, b] = 15\)</span>. Tomu vyhovujú jedine hodnoty <span class="math inline">\(b = 5\)</span> a <span class="math inline">\(b = 15\)</span>. Z nich však iba hodnota <span class="math inline">\(b = 15\)</span> spĺňa druhú rovnosť v (1), ktorá je teraz v tvare <span class="math inline">\(b\cdot(6, b) = 45\)</span>. Druhým riešením úlohy je teda dvojica <span class="math inline">\(a = 6\)</span>, <span class="math inline">\(b = 15\)</span>, žiadne ďalšie riešenia neexistujú.<br />
+<em>Záver</em>. Hľadané dvojice sú dve, a to <span class="math inline">\(a = 2, b = 45\)</span> a <span class="math inline">\(a = 6, b = 15\)</span>.<br />
+<br />
+<strong>Iné riešenie.</strong> Označme <span class="math inline">\(d = (a, b)\)</span>. Potom <span class="math inline">\(a = ud\)</span> a <span class="math inline">\(b = vd\)</span>, pričom <span class="math inline">\(u, v\)</span> sú nesúdeliteľné prirodzené čísla, takže <span class="math inline">\([a, b] = uvd\)</span>. Z rovností <span class="math display">\[a \cdot [a, b] = ud \cdot uvd = u^2vd^2 \ \ \ \text{a} \ \ \ \ b \cdot (a, b) = vd \cdot d = vd^2\]</span> vidíme, že číslo <span class="math inline">\(a \cdot [a, b]\)</span> je <span class="math inline">\(u^2\)</span>-násobkom čísla <span class="math inline">\(b \cdot (a, b)\)</span>, takže zadaná rovnosť množín môže byť splnená jedine tak, ako sme zapísali vzťahmi (1) v prvom riešení. Tie teraz môžeme vyjadriť rovnosťami <span class="math display">\[u^2vd^2= 180 \ \ \  \text{a} \ \ \ \ vd^2= 45.\]</span> Preto platí <span class="math inline">\(u^2 =180/45= 4\)</span>, čiže <span class="math inline">\(u = 2\)</span>. Z rovnosti <span class="math inline">\(vd^2 = 45 = 3^2 \cdot 5\)</span> vyplýva, že buď <span class="math inline">\(d = 1\)</span> (a <span class="math inline">\(v = 45\)</span>), alebo <span class="math inline">\(d = 3\)</span> (a <span class="math inline">\(v = 5\)</span>). V prvom prípade <span class="math inline">\(a = ud = 2 \cdot 1 = 2\)</span> a <span class="math inline">\(b = vd = 45 \cdot 1 = 45\)</span>, v druhom <span class="math inline">\(a = ud = 2 \cdot 3 = 6\)</span> a <span class="math inline">\(b = vd = 5 \cdot 3 = 15\)</span>.<br />
+<br />
+<em>Poznámka</em>. Keďže zo zadanej rovnosti okamžite vyplýva, že obe čísla <span class="math inline">\(a, b\)</span> sú deliteľmi čísla 180 (takým deliteľom je dokonca aj ich najmenší spoločný násobok <span class="math inline">\([a, b]\)</span>), je možné úlohu vyriešiť rôznymi inými cestami, založenými na testovaní konečného počtu dvojíc konkrétnych čísel <span class="math inline">\(a\)</span> a <span class="math inline">\(b\)</span>. Takýto postup urýchlime, keď vopred zistíme niektoré nutné podmienky, ktoré musia čísla <span class="math inline">\(a, b\)</span> spĺňať. Napríklad spresnenie rovnosti množín na dvojicu rovností (1) možno (aj bez použitia úvahy o parite čísel <span class="math inline">\(a, b\)</span>) vysvetliť všeobecným postrehom: súčin <span class="math inline">\(a \cdot [a, b]\)</span> je vždy deliteľný súčinom <span class="math inline">\(b \cdot (a, b)\)</span>, pretože ich podiel možno zapísať v tvare <span class="math display">\[\frac{a \cdot [a, b]}{b \cdot (a, b)}=\frac{a}{(a, b)}\cdot\frac{[a, b]}{b},\]</span> teda ako súčin dvoch <em>celých</em> čísel.<br />
+<br />
+Úloha je zložitejšia ako predchádzajúce, dá sa však riešiť mnohými spôsobmi a bude iste zaujímavé vidieť rôzne študentské riešenia. Je taktiež vhodným miestom na to, aby sme študentov nechali diskutovať o prístupoch medzi sebou a prípadne skúšali hľadať slabiny jednotlivých zdôvodnení. Určite považujeme za vhodné zmieniť poslednú rovnosť z poznámky, keďže ide o zaujímavý postreh a metóda vhodného zapísania tvaru zlomku je užitočná nielen tu. Na túto úlohu nadväzuje komplexnejšia domáca práca, ktorá však vychádza z veľmi podobného princípu.<br />
+<br />
+</p>
+<p>[64-I-5] Rozdiel dvoch prirodzených čísel je <span class="math inline">\(2010\)</span> a ich najväčší spoločný deliteľ je <span class="math inline">\(2014\)</span>-krát menší ako ich najmenší spoločný násobok. Určte všetky také dvojice čísel.</p>
+<p>Označme hľadané čísla <span class="math inline">\(a\)</span> a <span class="math inline">\(b\)</span> <span class="math inline">\((a &gt; b)\)</span> a <span class="math inline">\(d\)</span> ich najväčší spoločný deliteľ. Potom <span class="math inline">\(a = ud\)</span>, <span class="math inline">\(b = vd\)</span>, pričom <span class="math inline">\(u &gt; v\)</span> sú nesúdeliteľné čísla. Keďže najmenší spoločný násobok čísel <span class="math inline">\(a, b\)</span> je číslo <span class="math inline">\(uvd\)</span>, dosadením do zadaných vzťahov dostaneme rovnosti <span class="math display">\[a - b = (u~- v)d = 2 010,\]</span> <span class="math display">\[uvd = 2 014d, \ \ \ \text{čiže} \ \ \  uv = 2 014.\]</span> Podľa rozkladu na súčin prvočísel <span class="math inline">\(2 014 = 2\cdot19\cdot53\)</span> vypíšeme všetky možné dvojice <span class="math inline">\((u, v)\)</span> a pre každú z nich sa presvedčíme, či číslo <span class="math inline">\(u- v\)</span> je deliteľom čísla <span class="math inline">\(2010\)</span>. V pozitívnom prípade príslušný podiel udáva číslo <span class="math inline">\(d\)</span> a výpočet neznámych <span class="math inline">\(a = ud\)</span> a <span class="math inline">\(b = vd\)</span> je už jednoduchý:</p>
+<p>a) <span class="math inline">\(u = 2 014\)</span> a <span class="math inline">\(v = 1\)</span>: <span class="math inline">\(u - v~= 2 013\)</span> nedelí 2 010;</p>
+<p>b) <span class="math inline">\(u = 19 \cdot 53 = 1 007\)</span> a <span class="math inline">\(v = 2\)</span>: <span class="math inline">\(u - v~= 1 005 \mid 2 010\)</span>, <span class="math inline">\(d = 2\)</span>, <span class="math inline">\(a = 1 007 \cdot 2 = 2 014\)</span>, <span class="math inline">\(b = 2 \cdot 2 = 4\)</span>;</p>
+<p>c) <span class="math inline">\(u = 2 \cdot 53 = 106\)</span> a <span class="math inline">\(v = 19\)</span>: <span class="math inline">\(u - v~= 87\)</span> nedelí 2 010;</p>
+<p>d) <span class="math inline">\(u = 53\)</span> a <span class="math inline">\(v = 2 \cdot 19 = 38\)</span>: <span class="math inline">\(u - v= 15 \mid 2010\)</span>, <span class="math inline">\(d = 134\)</span>, <span class="math inline">\(a = 53 \cdot 134 = 7 102\)</span>, <span class="math inline">\(b = 38 \cdot 134 = 5 092\)</span>.</p>
+<p><em>Záver</em>. Hľadané čísla tvoria jednu z dvojíc <span class="math inline">\((2014, 4)\)</span> alebo <span class="math inline">\((7 102, 5 092)\)</span>.<br />
+<br />
+Úloha neprináša žiadne nové poznatky a princípy, je však vhodná na trénovanie riešenia sústavy dvoch rovníc s dvomi neznámymi a opäť tak vytvorí prepojenie s minulými seminármi.<br />
+<br />
+</p>
+<p>[60-I-5-D3] Nájdite všetky dvojice kladných celých čísel <span class="math inline">\(a, b\)</span>, pre ktoré má výraz <span class="math display">\[\frac{a}{b}+\frac{14b}{9a}\]</span> celočíselnú hodnotu.</p>
+<p>Nech <span class="math inline">\(d = (a, b)\)</span>, potom <span class="math inline">\(a = ud\)</span>, <span class="math inline">\(b = vd\)</span> pre nesúdeliteľné prirodzené <span class="math inline">\(u\)</span> a <span class="math inline">\(v\)</span>. Skúmaný výraz bude po dosadení <span class="math inline">\((9u^2+ 14v^2)/(9uv)\)</span>, takže <span class="math inline">\(9u \mid 14v^2\)</span> a z nesúdeliteľnosti <span class="math inline">\(u\)</span> a <span class="math inline">\(v\)</span> máme <span class="math inline">\(u \mid 14\)</span>, navyše <span class="math inline">\(3 \mid v\)</span>. Podobne <span class="math inline">\(v \mid 9\)</span>; vyskúšame konečne veľa možností.<br />
+<br />
+Úloha je zaujímavá tým, že prácu s najväčším spoločným deliteľom obsahuje nepriamo a využíva tiež poznatky o deliteľnosti z minulého seminára.<br />
+<br />
+</p>
+<p>[60-I-5] Dokážte, že najmenší spoločný násobok <span class="math inline">\([a, b]\)</span> a najväčší spoločný deliteľ <span class="math inline">\((a, b)\)</span> ľubovoľných dvoch kladných celých čísel <span class="math inline">\(a, b\)</span> spĺňajú nerovnosť <span class="math display">\[a \cdot (a, b) + b \cdot [a, b] \geq 2ab.\]</span> Zistite, kedy v tejto nerovnosti nastane rovnosť.</p>
+<p>Nerovnosť by bolo ľahké dokázať, ak by niektorý z dvoch sčítancov na ľavej strane bol sám osebe aspoň taký, ako pravá strana. Číslo <span class="math inline">\([a, b]\)</span> je zjavne násobkom čísla <span class="math inline">\(a\)</span>. Ak <span class="math inline">\([a, b] \geq 2a\)</span>, tak <span class="math inline">\(b[a, b] \geq 2ab\)</span> a v zadanej nerovnosti platí dokonca ostrá nerovnosť, lebo číslo <span class="math inline">\(a(a, b)\)</span> je kladné. Ak <span class="math inline">\([a, b] &lt; 2a\)</span>, tak neostáva iná možnosť ako <span class="math inline">\([a, b] = a\)</span>. To však nastane iba v prípade, keď <span class="math inline">\(b \mid a\)</span>. V tomto prípade <span class="math inline">\((a, b) = b\)</span> a v zadanej nerovnosti nastane rovnosť.<br />
+<br />
+<strong>Iné riešenie.</strong> Označme <span class="math inline">\(d = (a, b)\)</span>, takže <span class="math inline">\(a = ud\)</span> a <span class="math inline">\(b = vd\)</span> pre nesúdeliteľné prirodzené čísla <span class="math inline">\(u, v\)</span>. Z toho hneď vieme, že <span class="math inline">\([a, b] = uvd\)</span>. Keďže <span class="math display">\[a \cdot (a, b) + b \cdot [a, b] = ud^2+ uv^2d^2= u(1 + v^2
+)d^2,\]</span> <span class="math display">\[2ab = 2uvd^2,\]</span> je vzhľadom na <span class="math inline">\(ud^2 &gt; 0\)</span> nerovnosť zo zadania ekvivalentná s nerovnosťou <span class="math inline">\(1 + v^2 \geq 2v\)</span>, čiže <span class="math inline">\((v - 1)^2 \geq0\)</span>, čo platí pre každé <span class="math inline">\(v\)</span>. Rovnosť nastane práve vtedy, keď <span class="math inline">\(v = 1\)</span>, čiže <span class="math inline">\(b \mid a\)</span>.<br />
+<br />
+<strong>Iné riešenie.</strong> Označme <span class="math inline">\(d = (a, b)\)</span>. Je známe, že <span class="math inline">\([a, b] \cdot (a, b) = ab\)</span>. Po vyjadrení <span class="math inline">\([a, b]\)</span> z tohto vzťahu, dosadení do zadanej nerovnosti a ekvivalentnej úprave dostaneme ekvivalentnú nerovnosť <span class="math inline">\(d^2 + b^2 \geq 2bd\)</span>, ktorá platí, lebo <span class="math inline">\((d - b)^2 \geq 0\)</span>. Rovnosť nastáva pre <span class="math inline">\(d = b\)</span>, čiže v prípade <span class="math inline">\(b \mid a\)</span>.<br />
+<br />
+Na úspešné zvládnutie úlohy je opäť potrebná znalosť z predchádzajúceho seminára o nerovnostiach a taktiež ponúka široké spektrum prístupov, takže bude zaujímavé sledovať, ako k nej študenti pristúpia.</p>
+<h2 id="domáca-práca" class="unnumbered">Domáca práca</h2>
+<p>[61-I-3] Nájdite všetky trojice prirodzených čísel <span class="math inline">\(a, b, c\)</span>, pre ktoré platí množinová rovnosť <span class="math display">\[\{(a, b), (a, c), (b, c), [a, b], [a, c], [b, c]\}= \{2, 3, 5, 60, 90, 180\},\]</span> pričom <span class="math inline">\((x, y)\)</span> a <span class="math inline">\([x, y]\)</span> označuje postupne najväčší spoločný deliteľ a najmenší spoločný násobok čísel <span class="math inline">\(x\)</span> a <span class="math inline">\(y\)</span>.</p>
+<p>Prvky danej množiny <span class="math inline">\(M\)</span> rozložíme na prvočinitele: <span class="math display">\[M = \{2, 3, 5, 2^2 \cdot 3 \cdot 5, 2 \cdot 3^2 \cdot 5, 2^2 \cdot 3^2 \cdot 5\}.\]</span> Odtiaľ vyplýva, že v rozklade hľadaných čísel <span class="math inline">\(a, b, c\)</span> vystupujú iba prvočísla 2, 3 a 5. Každé z nich je pritom prvočiniteľom práve dvoch z čísel <span class="math inline">\(a, b, c\)</span>: keby bolo prvočiniteľom len jedného z nich, chýbalo by v rozklade troch najväčších spoločných deliteľov a jedného najmenšieho spoločného násobku, teda v štyroch číslach z <span class="math inline">\(M\)</span>; keby naopak bolo prvočiniteľom všetkých troch čísel <span class="math inline">\(a, b, c\)</span>, nechýbalo by v rozklade žiadneho čísla z <span class="math inline">\(M\)</span>. Okrem toho vidíme, že v rozklade každého z čísel <span class="math inline">\(a, b, c\)</span> je prvočíslo 5 najviac v jednom exemplári.</p>
+<p>Podľa uvedených zistení môžeme čísla <span class="math inline">\(a, b, c\)</span> usporiadať tak, že rozklady čísel <span class="math inline">\(a, b\)</span> obsahujú po jednom exemplári prvočísla 5 (potom <span class="math inline">\((c, 5) = 1\)</span>) a že <span class="math inline">\((a, 2) = 2\)</span> (ako vieme, aspoň jedno z čísel <span class="math inline">\(a, b\)</span> musí byť párne). Číslo 5 z množiny <span class="math inline">\(M\)</span> je potom nutne rovné <span class="math inline">\((a, b)\)</span>, takže platí <span class="math inline">\((b, 2) = 1\)</span>, a preto <span class="math inline">\((b, 3) = 3\)</span> (inak by platilo <span class="math inline">\((b, c) = 1\)</span>), odtiaľ zase s ohľadom na <span class="math inline">\((a, b) = 5\)</span> vyplýva <span class="math inline">\((a, 3) = 1\)</span>. Máme teda <span class="math inline">\(a = 5 \cdot 2^s\)</span> a <span class="math inline">\(b = 5 \cdot 3^t\)</span> pre vhodné prirodzené čísla <span class="math inline">\(s\)</span> a <span class="math inline">\(t\)</span>.</p>
+<p>Z rovnosti <span class="math inline">\([a, b] = 2^s \cdot3^t \cdot5\)</span> vyplýva, že nastane jeden z troch nasledujúcich prípadov.</p>
+<p>(1) <span class="math inline">\(2^s \cdot 3^t \cdot 5 = 60 = 2^2 \cdot 3^1 \cdot 5\)</span>. Vidíme, že platí <span class="math inline">\(s = 2\)</span> a <span class="math inline">\(t = 1\)</span>, čiže <span class="math inline">\(a = 20\)</span> a <span class="math inline">\(b = 15.\)</span> Ľahko určíme, že tretím číslom je <span class="math inline">\(c = 18\)</span>.</p>
+<p>(2) <span class="math inline">\(2^s \cdot 3^t \cdot 5 = 90 = 2^1 \cdot 3^2 \cdot 5\)</span>. V tomto prípade <span class="math inline">\(a = 10\)</span>, <span class="math inline">\(b = 45\)</span> a <span class="math inline">\(c = 12\)</span>.</p>
+<p>(3) <span class="math inline">\(2^s \cdot 3^t \cdot 5 = 180 = 2^2 \cdot 3^2 \cdot 5\)</span>. Teraz <span class="math inline">\(a = 20\)</span>, <span class="math inline">\(b = 45\)</span> a <span class="math inline">\(c = 6\)</span>.<br />
+<em>Záver</em>. Hľadané čísla <span class="math inline">\(a, b, c\)</span> tvoria jednu z množín <span class="math inline">\(\{20, 15, 18\}\)</span>, <span class="math inline">\(\{10, 45, 12\}\)</span> a <span class="math inline">\(\{20, 45, 6\}\)</span>.<br />
+<br />
+<strong>Iné riešenie.</strong> V danej rovnosti je množina napravo tvorená šiestimi rôznymi číslami väčšími ako 1, takže čísla <span class="math inline">\((a, b), (a, c), (b, c)\)</span> musia byť netriviálnymi deliteľmi postupne čísel <span class="math inline">\([a, b], [a, c], [b, c]\)</span>. Čísla 2, 3, 5 ale žiadne netriviálne delitele nemajú, musí teda platiť <span class="math display">\[\{(a, b), (a, c), (b, c)\}= \{2, 3, 5\} \ \ \ \text{a} \ \ \  \{[a, b], [a, c], [b, c]\} = \{60, 90, 180\}.\]</span> Pretože poradie čísel <span class="math inline">\(a, b, c\)</span> nehrá žiadnu úlohu, môžeme predpokladať, že platí <span class="math inline">\((a, b) = 2, (a, c) = 3\)</span> a <span class="math inline">\((b, c) = 5\)</span>. Odtiaľ vyplývajú vyjadrenia <span class="math display">\[a = 2 \cdot 3 \cdot x = 6x, \ \ \ b = 2 \cdot 5 \cdot y = 10y, \ \ \ c = 3 \cdot 5 \cdot z~= 15z\]</span> pre vhodné prirodzené čísla <span class="math inline">\(x, y, z\)</span>. Zo známej rovnosti <span class="math inline">\([x, y]\cdot(x, y) = xy\)</span> tak dostaneme vyjadrenia najmenších spoločných násobkov v tvare <span class="math display">\[[a, b] =\frac{6x \cdot 10y}{2}= 30xy, \ \ \ [a, c] =\frac{6x \cdot 15z}{3}= 30xz,\ \ \  [b, c] =\frac{10y \cdot 15z}{5}= 30yz.\]</span> Z rovnosti <span class="math inline">\(\{30xy, 30xz, 30yz\} = \{60, 90, 180\}\)</span> upravenej na <span class="math inline">\(\{xy, xz, yz\} = \{2, 3, 6\}\)</span> potom vďaka tomu, že 2 a 3 sú prvočísla, vyplýva <span class="math inline">\(\{x, y, z\} = \{1, 2, 3\}\)</span>. Pretože z podmienky <span class="math inline">\(5 = (b, c) = (10y, 15z)\)</span> vyplýva <span class="math inline">\(y \neq 3\)</span> a <span class="math inline">\(z \neq 2\)</span>, prichádzajú do úvahy len trojice <span class="math inline">\((x, y, z)\)</span> rovné (1, 2, 3), (2, 1, 3) a (3, 2, 1), ktorým postupne zodpovedajú trojice <span class="math inline">\((a, b, c)\)</span> rovné (6, 20, 45), (12, 10, 45), (18, 20, 15). Skúškou sa presvedčíme, že všetky tri vyhovujú množinovej rovnosti zo zadania úlohy.<br />
+<br />
+</p>
+<p>[63-S-2] Čísla 1, 2, …, 10 rozdeľte na dve skupiny tak, aby najmenší spoločný násobok súčinu všetkých čísel prvej skupiny a súčinu všetkých čísel druhej skupiny bol čo najmenší.</p>
+<p>Pre uvažované súčiny <span class="math inline">\(a\)</span> a <span class="math inline">\(b\)</span> určite platí <span class="math inline">\(a \cdot b = 1 \cdot 2 \cdot \ldots \cdot 10 = 2^8 \cdot 3^4 \cdot 5^2 \cdot 7\)</span>. Aspoň jedno z čísel <span class="math inline">\(a, b\)</span> je preto deliteľné <span class="math inline">\(2^4\)</span>, aspoň jedno deliteľné <span class="math inline">\(3^2\)</span>, aspoň jedno deliteľné 5 a práve jedno deliteľné 7. Pre najmenší spoločný násobok <span class="math inline">\(n\)</span> čísel <span class="math inline">\(a, b\)</span> preto platí <span class="math inline">\(n \geq 2^4 \cdot 3^2 \cdot 5 \cdot 7 = 5 040\)</span>, pritom rovnosť tu nastane práve vtedy, keď ani jedno z čísel <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> nebude deliteľné žiadnym z čísel <span class="math inline">\(2^5, 3^3\)</span> a <span class="math inline">\(5^2\)</span>.</p>
+<p>Ak zvolíme napríklad <span class="math inline">\(a = 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 = 720\)</span> a <span class="math inline">\(b = 1 \cdot 7 \cdot 8 \cdot 9 \cdot 10 = 5040\)</span>, bude najmenší spoločný násobok oboch čísel práve <span class="math inline">\(5040\)</span>. Tým je ukázané, že <span class="math inline">\(5040\)</span> je naozaj najmenšia zo všetkých možných hodnôt <span class="math inline">\(n\)</span>.</p>
+<p>I keď bolo úlohou nájsť iba jeden príklad, pre úplnosť uvedieme všetky rozdelenia s minimálnou hodnotou <span class="math inline">\(n = 5040\)</span>:</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Prvá skupina čísel</th>
+<th style="text-align: center;">Druhá skupina čísel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">2, 3, 4, 5, 6</td>
+<td style="text-align: center;">1, 7, 8, 9, 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">3, 5, 6, 8</td>
+<td style="text-align: center;">1, 2, 4, 7, 9, 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2, 5, 8, 9</td>
+<td style="text-align: center;">1, 3, 4, 6, 7, 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1, 2, 3, 4, 5, 6</td>
+<td style="text-align: center;">7, 8, 9, 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">1, 3, 5, 6, 8</td>
+<td style="text-align: center;">2, 4, 7, 9, 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1, 2, 5, 8, 9</td>
+<td style="text-align: center;">3, 4, 6, 7, 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2, 3, 4, 5, 6, 7</td>
+<td style="text-align: center;">1, 8, 9, 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">3, 5, 6, 7, 8</td>
+<td style="text-align: center;">1, 2, 4, 9, 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2, 5, 7, 8, 9</td>
+<td style="text-align: center;">1, 3, 4, 6, 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1, 2, 3, 4, 5, 6, 7</td>
+<td style="text-align: center;">8, 9, 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">1, 3, 5, 6, 7, 8</td>
+<td style="text-align: center;">2, 4, 9, 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1, 2, 5, 7, 8, 9</td>
+<td style="text-align: center;">3, 4, 6, 10</td>
+</tr>
+</tbody>
+</table>
+<p>Nájsť ich nie je ťažké, keď si uvedomíme, že čísla 1 a 7 môžeme dať do ľubovoľnej z oboch skupín, zatiaľ čo v tej istej skupine spolu nemôžu byť 4 s 8, 5 s 10, 3 s 9 ani 6 s 9; s 8 spolu môže byť práve jedno z párnych čísel 2, 6 a 10. Získame tak iba tri základné rozdelenia (prvé tri riadky tabuľky), z ktorých možno každé štyrmi spôsobmi doplniť číslami 1 a 7.<br />
+<br />
+<em>Poznámka</em>. Úlohu možno vyriešiť aj bez výpočtu súčinu <span class="math inline">\(a \cdot b\)</span>. Deliteľnosť <span class="math inline">\(n\)</span> číslami <span class="math inline">\(3^2, 5\)</span> a 7 vyplýva z ich priameho zastúpenia medzi rozdeľovanými číslami, deliteľnosť číslom <span class="math inline">\(2^4\)</span> z jednoduchej úvahy o rozdelení všetkých piatich párnych čísel: ak nie je číslo 8 vo svojej skupine ako párne jediné, je všetko jasné, v opačnom prípade sú v rovnakej skupine čísla 2, 4 a 6 (aj 10, ale to už ani nepotrebujeme).<br />
+</p>
+<h2 id="doplňujúce-zdroje-a-materiály" class="unnumbered">Doplňujúce zdroje a materiály</h2>
+<p>Materiály vhodné na ďalšie počítanie nájdeme v minulom seminári. Keďže témy sú si veľmi blízke, publikácie zvyčajne obsahujú úlohy zamerané na obe témy.</p>
+Autor: Alexandra Porembova (techicnke spracovanie Martin Ukrop, Jan Mrazek)
+</body>
+</html>
