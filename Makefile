@@ -27,7 +27,7 @@ web: web-init $(IMAGES_PNG) $(SEMINARS_HTML)
 
 web-init:
 	mkdir -p build-web/seminars build-web/images
-	cp -v templates/index.html templates/style.css build-web/
+	cp -v templates/index.html templates/style.css templates/background.png build-web/
 	cp -v images/*.png build-web/images/
 	./scripts/getVersion.sh
 
