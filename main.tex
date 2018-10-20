@@ -16,31 +16,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ZAKLADNI NASTAVENI %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%
-%% Zvolte kodovani dokumentu
-%%%%%%%%%%%%
-
-\usepackage[utf8]{inputenc}
-% \usepackage[cp1250]{inputenc} %% NASTAVENI PRO WINDOWS
-\usepackage[T1]{fontenc} %% puvodni evropske fonty->spatne umistene hacky nad c, d s hackem ma za sebou mezeru
-%\usepackage[IL2]{fontenc} %fonty vyladene pro cestinu/slovenstinu
-
-%%%%%%%%%%%%
-%% Nastavte si jazyk dokumentu
-%% lze pouzit volbu babel (pro pdflatex a latex) nebo bez babelu (pro pdfcslatex a cslatex
-%%
-%% pri volbe bez babelu bude zlobit v ukazkovych souborech prikaz ``\shorthandoff{-}'' a ``\shorthandoff{-}''
-%% ty staci vymazat a je to bez problemu
-%%
-%% pri volbe ``\usepackage[english]{babel}'' nefunguji ceske uvozovky pomoci \uv{..} - staci nahradit ``..''
-%%%%%%%%%%%%
-
-% \usepackage[czech]{babel}
-\usepackage[slovak]{babel}
-% \usepackage[english]{babel}
-% \usepackage{czech}
-% \usepackage{slovak}
-
-%%%%%%%%%%%%
 %% Muzete si zkusit zmenit font dokumentu - pak ale musite v souboru zemnit nektera nastaveni (nebot je nastaveno
 %% \overfullrule10pt je preteceni textu ihned vyznaceno cernym obdelnikem)
 %% Veskere nastaveni je testovano pro pouzitou volbu
@@ -55,20 +30,6 @@
 % \usepackage{utopia}
 \usepackage{mathptmx}  %% volne dostupny font Adobe Times Roman
 %  \usepackage[mtbold,mtplusscr,mtpluscal]{mathtime} % komercni matematicky font, dostupne pouze na UMS
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BALIKY POTREBNE PRO SABLONU %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\usepackage{longtable,lipsum}
-%%% balik ``longtable`` je potrebny pro sazeni kapitoly s pouzitym znacenim, jinak neni potreba
-%%% balik ``lipsum`` je pouze pro sablonu, aby se generoval nahodny text - pro samotnou praci je mozne jej odstranit
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BALIKY POTREBNE PRO MATEMATIKU %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\usepackage{amsmath,amssymb,amsthm}
-\usepackage{booktabs}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%% NASTAVENI POVINNYCH CASTI DLE SMERNICE DEKANA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -85,29 +46,8 @@
 %% Barevne - pro dokument s barevnymi odkazy
 %% Tisk - pro dokument v cernobile barve
 
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{multicol}
-\usepackage{tabularx}
-\usepackage{colortbl}
-\usepackage{graphicx}
-\usepackage[shortlabels]{enumitem}
-\usepackage{xcolor}
-\usepackage{tcolorbox}
-\tcbuselibrary{breakable}
-\definecolor{light-gray}{gray}{0.95}
-
-\newcommand{\NN}{\mathbb{N}}
-\newcommand{\ZZ}{\mathbb{Z}}
-\newcommand{\QQ}{\mathbb{Q}}
-\newcommand{\RR}{\mathbb{R}}
-\newcommand{\kom}{\textbf{Komentár.} }
-\newcommand{\ul}[1]{\textbf{Úloha #1.} }
-\newcommand{\rie}{\textbf{Riešenie.} }
-\newcommand{\rieh}{\textbf{Riešenie*.} }
-\newcommand{\ma}{\measuredangle}
-
-\renewcommand{\labelitemi}{$\triangleright$}
+% Include the common header with loading packages and basic user macros
+\input{templates/latex-includes-commands.tex}
 
 % bibliography management
 \usepackage[
@@ -212,24 +152,9 @@
 %
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% VLASTNI PRIKLAZY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%% ZDE SI MUZETE DEFINOVAT VLASTNI PRIKAZY PRO SNAZSI SAZENI CELEHO TEXTU %%%%%%%%%%%%%%%%
-
-\newcommand{\Cbb}{\mathbb{C}}
-\newcommand{\Rbb}{\mathbb{R}}
-\newcommand{\Zbb}{\mathbb{Z}}
-\newcommand{\Nbb}{\mathbb{N}}
-\DeclareMathOperator{\tg}{tg}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%% VYTVOR POMOCNY SOUBOR PRO REJSTRIK %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \makeindex
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%% ZAPNUTI OPAKOVANI MATEMATICKYCH SYMBOLU %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
- \input{opakuj.sty}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ZACATEK DOKUMETU %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -332,9 +257,8 @@
 %\vloz{06_Priloha}
 %\cleardoublepage
 
-
-\renewcommand{\bibname}{Zoznam použitej literatúry}
-\HlavickaLiteratura
+% \renewcommand{\bibname}{Zoznam použitej literatúry}
+% \HlavickaLiteratura
 % \nocite{*}
 % \printbibliography
 % \cleardoublepage

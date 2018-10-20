@@ -8,15 +8,15 @@ WEB_TEX := $(wildcard ./seminars/*.tex)
 WEB_PDF_STUDENT := $(patsubst ./seminars/%.tex,./build-web/pdf/%-student.pdf,$(WEB_TEX))
 WEB_PDF_TEACHER := $(patsubst ./seminars/%.tex,./build-web/pdf/%-teacher.pdf,$(WEB_TEX))
 TEMPLATES_HTML = ./templates/header.html ./templates/before-body.html ./templates/after-body.html ./templates/latex-header-web.tex
-TEMPLATES_PDF = ./templates/footer.tex ./templates/header-teacher.tex ./templates/header-student.tex ./templates/latex-header-pdf.tex
+TEMPLATES_PDF = ./templates/footer.tex ./templates/header-teacher.tex ./templates/header-student.tex ./templates/latex-header-pdf.tex ./templates/latex-includes-commands.tex
 MATHJAX_URL = https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 TMP_TEX := tmp.tex
 
-all: diplomka web
+all: thesis web
 
-clean: diplomka-clean web-clean
+clean: thesis-clean web-clean
 
-diplomka-clean:
+thesis-clean:
 	latexmk -c -outdir=build-pdf
 
 web-clean:
@@ -26,7 +26,7 @@ cleanbib:
 	bibtool -r bibstyle.rsc -r biblatex -i $(BIBFILE).bib >tmp.bib
 	mv tmp.bib $(BIBFILE).bib
 
-diplomka:
+thesis:
 	latexmk -halt-on-error -pdf -outdir=build-pdf main.tex | ./scripts/brief.py
 
 web: web-init $(IMAGES_PNG) $(WEB_PDF_STUDENT) $(WEB_PDF_TEACHER) $(SEMINARS_HTML)
@@ -65,7 +65,7 @@ build-web/pdf/%-student.pdf: seminars/%.tex $(TEMPLATES_PDF)
 	mv build-web-pdf/tmp.pdf $@
 	rm -rf build-web-pdf $(TMP_TEX)
 
-.PHONY: all clean cleanbib diplomka web web-init
+.PHONY: all clean cleanbib thesis web web-init
 
 # Run all recipe lines as bash commands
 .ONESHELL:
