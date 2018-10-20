@@ -5,3 +5,13 @@
 
 % Display PDF download links
 \newcommand{\weblinks}[1]{#1}
+
+% Display problems (in gray box) + solutions
+\newcommand{\problem}[3]{
+    \stepcounter{problem}
+    \textbf{Úloha \theseminar .\theproblem.}
+    [#1] #2
+
+    \textbf{Riešenie \theseminar .\theproblem.}
+    #3
+}

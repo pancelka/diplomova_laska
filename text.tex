@@ -1,15 +1,3 @@
-% LaTeX header setting the web/thesis commands right
-\input{templates/latex-header-thesis.tex}
-
-\newcommand{\problem}[3]{
-  \stepcounter{problem}
-  \begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]
-    \textbf{Úloha \theseminar .\theproblem.}
-    [#1] #2
-  \end{tcolorbox}
-  #3
-}
-
 \newcounter{seminar}
 \newcounter{problem}
 \newcommand{\seminar}[1]{
@@ -17,6 +5,9 @@
   \setcounter{problem}{0}
   \subsection*{Seminár #1}
 }
+
+% LaTeX header setting the web/thesis commands right
+\input{templates/latex-header-pdf.tex}
 
 \HlavickaUvod
 \setcounter{page}{1}

@@ -1,0 +1,17 @@
+% DOCUMENT COMPOSITION DIRECTIVES (PDF)
+
+% Use PDF images
+\newcommand{\imagesuffix}{}
+
+% Do not display download links
+\newcommand{\weblinks}[1]{}
+
+% Display problems + solutions
+\newcommand{\problem}[3]{
+  \stepcounter{problem}
+  \begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]
+    \textbf{Úloha \theseminar .\theproblem.}
+    [#1] #2
+  \end{tcolorbox}
+  \textbf{Riešenie \theseminar .\theproblem.} #3
+}

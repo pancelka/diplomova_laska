@@ -1,4 +1,9 @@
 \input{templates/header-teacher.tex}
 
-% Macro for hiding solutions
-\newcommand{\solution}{}
+% Display problems (no gray box) but not solutions
+\renewcommand{\problem}[3]{
+    \stepcounter{problem}
+    \textbf{Úloha \theseminar .\theproblem.}
+    [#1] #2
+}
+
