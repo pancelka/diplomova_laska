@@ -31,11 +31,10 @@ diplomka:
 
 web: web-init $(IMAGES_PNG) $(WEB_PDF_STUDENT) $(WEB_PDF_TEACHER) $(SEMINARS_HTML)
 
-web-init: build-web/index.html
+web-init: build-web/index.html templates/style.css templates/background.png templates/collapsible.js
 	mkdir -p build-web/seminars build-web/images build-web/pdf build-web/images/
-	cp -v templates/style.css templates/background.png build-web/
+	cp -v templates/style.css templates/background.png templates/collapsible.js build-web/
 	cp -v images/*.png build-web/images/
-	
 	./scripts/getVersion.sh
 
 build-web/index.html: $(TEMPLATES_HTML) templates/index.html
