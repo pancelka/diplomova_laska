@@ -40,12 +40,12 @@ web-init: build-web/index.html
 
 build-web/index.html: $(TEMPLATES_HTML)
 	mkdir -p build-web
-	echo -e "<html>\n<head>\n<title>Matematický seminár pre talentovaných študentov</title>" > $@
+	printf "<html>\n<head>\n<title>Matematický seminár pre talentovaných študentov</title>" > $@
 	cat templates/header.html >> $@
-	echo -e "</head>\n<body>\n<div class="main">" >> $@
+	printf "</head>\n<body>\n<div class="main">" >> $@
 	cat templates/index.html >> $@
 	cat templates/after-body.html >> $@
-	echo -e "</body>\n</html>" >> $@
+	printf "</body>\n</html>" >> $@
 
 build-web/images/%.png: images/%.pdf
 	convert -verbose -density 500 -resize '1200' $< $@
