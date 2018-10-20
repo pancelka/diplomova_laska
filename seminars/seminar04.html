@@ -21,7 +21,7 @@
 <body>
 <div class="main">
     <div class="backlink"><a href="index.html">&larrhk;&nbsp;späť na zoznam cvičení</a></div>
-
+<h1 id="seminár-4" class="unnumbered">Seminár 4</h1>
 <p>Na stiahnutie: <a href="pdf/seminar04-teacher.pdf">učiteľská verzia</a>, <a href="pdf/seminar04-student.pdf">študentská verzia</a></p>
 <h2 id="téma" class="unnumbered">Téma</h2>
 <p>Algebraické výrazy, rovnice a nerovnosti II – nerovnosti</p>
@@ -30,12 +30,76 @@
 <h3 id="úvodný-komentár" class="unnumbered">Úvodný komentár</h3>
 <p>Dokazovanie nerovností nie je bežným obsahom základoškolskej, príp. gymnaziálnej výuky, keďže študenti sa stretávajú prevažne s cvičeniami a problémami, kde je ich úlohou riešiť (lineárne) nerovnice. Dokazovanie nerovností je však častou súčasťou všetkých kôl MO, preto považujeme za vhodné tieto typy úloh so študentami precvičovať. Keďže je tento seminár jedným z dvoch, ktoré sú na nerovnosti zamerané, budeme sa v ňom zaoberať jednoduchšími úlohami. Študenti si tak osvoja základné postupy, ktoré im neskôr (snáď) poslúžia pri úlohách zložitejších, zaradených do seminára v budúcnosti.</p>
 <h2 id="úlohy-a-riešenia" class="unnumbered">Úlohy a riešenia</h2>
-
-
-
-
-
-
+<h3 id="úloha-58-s-1">Úloha 58-S-1</h3>
+<p>Dokážte, že pre ľubovoľné nezáporné čísla <span class="math inline">\(a, b, c\)</span> platí <span class="math display">\[(a + bc)(b + ac) \geq ab(c + 1)^2.\]</span> Zistite, kedy nastane rovnosť.</p>
+<h4 id="riešenie">Riešenie</h4>
+<p>Roznásobením a ďalšími ekvivalentnými úpravami dostaneme <span class="math display">\[\begin{aligned}
+ab + b^2 c + a^2 c + abc^2 &amp;\geq abc^2 + 2abc + ab,\\
+b^2 c + a^2 c &amp;\geq 2abc,\\
+(a - b)^2 c &amp;\geq 0.\end{aligned}\]</span> Podľa zadania platí <span class="math inline">\(c \geq 0\)</span> a druhá mocnina reálneho čísla <span class="math inline">\(a-b\)</span> je tiež nezáporná, takže je nezáporná aj ľavá strana upravenej nerovnosti. Rovnosť v tejto (a rovnako aj v pôvodnej nerovnosti) nastane práve vtedy, keď <span class="math inline">\(a - b = 0\)</span> alebo <span class="math inline">\(c = 0\)</span>, teda práve vtedy, keď je splnená aspoň jedna z podmienok <span class="math inline">\(a = b\)</span>, <span class="math inline">\(c = 0\)</span>.<br />
+<br />
+Úloha demonštruje jeden zo základných spôsobov dokazovania nerovností: úpravu výrazu na jednej strane nerovnosti na tvar, o ktorom s určitosťou vieme, že je nezáporný/nekladný a jeho porovnanie s nulou. Taktiež si študenti precvičia ekvivalentné úpravy nerovností a úpravy výrazov do tvaru súčinu.<br />
+<br />
+</p>
+<h3 id="úloha-66-i-1-n1">Úloha 66-I-1-N1</h3>
+<p>Dokážte, že pre ľubovoľné reálne čísla <span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span> a <span class="math inline">\(z\)</span> platia nerovnosti</p>
+<ol type="a">
+<li><p><span class="math inline">\(2xyz \leq x^2+ y^2z^2\)</span>,</p></li>
+<li><p><span class="math inline">\((x^2-y^2)^2\geq 4xy(x - y)^2\)</span>.</p></li>
+</ol>
+<h4 id="riešenie-1">Riešenie</h4>
+<p>a) Prevedieme výraz <span class="math inline">\(2xyz\)</span> na pravú stranu nerovnosti a upravíme pomocou vzorca <span class="math inline">\(A^2-2AB-B^2=(A-B)^2\)</span> na tvar <span class="math inline">\(0 \leq (x - yz)^2\)</span>, ktorý je pravdivým výrokom, keďže druhá mocnina ľubovoľného výrazu je vždy nezáporná.<br />
+b) Výraz z pravej strany nerovnosti prevedieme na opačnú stranu a upravíme nasledujúcim spôsobom: <span class="math display">\[\begin{aligned}
+((x-y)(x+y))^2-4xy(x-y)^2 &amp;\geq 0,\\
+(x-y)^2(x+y)^2-4xy(x-y)^2 &amp;\geq 0,\\
+(x-y)^2((x+y)^2-4xy) &amp;\geq 0,\\
+(x-y)^2(x+2xy+y^2-4xy) &amp;\geq 0,\\
+(x-y)^4 &amp;\geq 0.\end{aligned}\]</span> Posledná nerovnosť je zrejme pravdivým tvrdením a pôvodná nerovnosť je tak dokázaná.<br />
+<br />
+Úloha neprináša žiadny nový princíp, je však dobrým tréningom práce s upravovaním výrazov, podobne ako úloha nasledujúca.<br />
+<br />
+</p>
+<h3 id="úloha-66-i-1-n2">Úloha 66-I-1-N2</h3>
+<p>Dokážte, že pre ľubovoľné kladné čísla <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> platí nerovnosť <span class="math display">\[\frac{a}{b^2}+ \frac{b}{a^2}\geq \frac{1}{a} + \frac{1}{b}.\]</span></p>
+<h4 id="riešenie-2">Riešenie</h4>
+<p>Vynásobíme celú nerovnosť kladným výrazom <span class="math inline">\(a^2b^2\)</span>. Ľavú stranu <span class="math inline">\(a^3+b^3\)</span> upravíme na súčin pomocou vzorca <span class="math inline">\(a^3+b^3=(a+b)(a^2-ab+b^2)\)</span>, pravú stranu <span class="math inline">\(ab^2+a^2b\)</span> upravíme na súčin vyňatím výrazu <span class="math inline">\(ab\)</span> na tvar <span class="math inline">\(ab(a+b)\)</span>. Dostaneme tak nerovnosť <span class="math inline">\((a+b)(a^2-ab+b^2)\geq ab(a+b)\)</span>. Tá po vydelení kladným výrazom <span class="math inline">\(a + b\)</span> a úprave na súčin dostane tvar <span class="math inline">\((a - b)^2\geq 0\)</span>, ktorý je zrejme pravdivým tvrdením.<br />
+<br />
+Úloha využíva rovnaký princíp ako prechádzajúce dve. Prvýkrát však pri úprave využívame násobenie a delenie výrazmi. Tým sa z úlohy stáva dobrá príležitosť na pripomenutie faktu, že pri úprave nerovností musíme brať do úvahy (ne)zápornosť výrazov, ktoré pri takýchto úkonoch využívame.<br />
+<br />
+Ďalším z užitočných nástrojov pri dokazovaní nerovností je znalosť nerovnosti <span class="math inline">\(u+\frac{1}{u}\geq 2\)</span> pre každé kladné reálne číslo <span class="math inline">\(u\)</span>, pričom táto nerovnosť prechádza v rovnosť len pre <span class="math inline">\(u=1\)</span>. Dokázanie tohto faktu nie je zložité: vynásobením celej nerovnosti <span class="math inline">\(u\)</span>, prevedením všetkých členov na jednu stranu dostávame <span class="math inline">\((u-1)^2\geq 0\)</span>, čo je pravdivé tvrdenie. Nasledujúce úlohy sú zaradené ako tréning uplatnenia tejto nerovnosti.<br />
+<br />
+</p>
+<h3 id="úloha-62-i-2-n1">Úloha 62-I-2-N1</h3>
+<p>Dokážte, že pre ľubovoľné kladné čísla <span class="math inline">\(a, b, c\)</span> platí nerovnosť <span class="math display">\[\bigg(a +\frac{1}{b}\bigg)\bigg(b+\frac{1}{c}\bigg)\bigg(c+\frac{1}{a}\bigg)\geq 8\]</span> a zistite, kedy prechádza v rovnosť.</p>
+<h4 id="riešenie-3">Riešenie</h4>
+<p>Ľavú stranu <span class="math inline">\(L\)</span> dokazovanej nerovnosti najskôr upravíme roznásobením a vzniknuté členy zoskupíme do súčtov dvojíc navzájom prevrátených výrazov: <span class="math display">\[\begin{gathered}
+ L = \bigg(a +\frac{1}{b}\bigg)\bigg(b+\frac{1}{c}\bigg)\bigg(c+\frac{1}{a}\bigg) = \bigg(ab+ \frac{a}{c} + 1 +\frac{1}{bc}\bigg) \bigg(c +\frac{1}{a}\bigg)=\\ =\bigg( abc + \frac{1}{abc}\bigg)+\bigg( a+\frac{1}{a}\bigg)+ \bigg(b+\frac{1}{b}\bigg)+\bigg(c+\frac{1}{c}\bigg).\end{gathered}\]</span> Pretože pre <span class="math inline">\(u &gt; 0\)</span> je <span class="math inline">\(u+\frac{1}{u}\geq 2\)</span>, pričom rovnosť nastane práve vtedy, keď <span class="math inline">\(u = 1\)</span>, pre výraz <span class="math inline">\(L\)</span> platí <span class="math inline">\(L \geq 2 + 2 + 2 + 2 = 8\)</span>, čo sme mali dokázať. Rovnosť <span class="math inline">\(L = 8\)</span> nastane práve vtedy, keď platí <span class="math display">\[abc+\frac{1}{abc}=a+\frac{1}{a}=b+\frac{1}{b}=c+\frac{1}{c}=2\]</span> teda, ako sme už spomenuli, práve vtedy, keď <span class="math inline">\(abc = a = b = c = 1\)</span>, t. j. práve vtedy, keď <span class="math inline">\(a = b = c = 1\)</span>.<br />
+<br />
+Úloha sa dá riešiť využitím AG nerovnosti, tá však bude obsahom jedného z ďalších seminárov, v ktorom sa (okrem iného) k tejto úlohe vrátime.<br />
+<br />
+</p>
+<h3 id="úloha-66-i-1">Úloha 66-I-1</h3>
+<p>Dokážte, že pre ľubovoľné reálne číslo a platí nerovnosť <span class="math display">\[a^2+\frac{1}{a^2-a+1}\geq a+1.\]</span> Určte, kedy nastáva rovnosť.</p>
+<h4 id="riešenie-4">Riešenie</h4>
+<p>Úpravou dvojčlena <span class="math inline">\(a^2 - a\)</span> doplnením na štvorec a využitím faktu že druhá mocnina reálneho čísla je nezáporná ukážeme, že menovateľ zlomku v nerovnosti je kladný: <span class="math display">\[a^2-a+1=\bigg(a^2-a+\frac{1}{4}\bigg) +\frac{3}{4}=\bigg(a-\frac{1}{2}\bigg)^2+\frac{3}{4}\geq \frac{3}{4}&gt;0.\]</span> Ak ním teda obe strany dokazovanej nerovnosti vynásobíme, dostaneme ekvivalentnú nerovnosť <span class="math display">\[a^2(a^2-a+1)+1\geq (a+1)(a^2-a+1).\]</span> Po roznásobení a zlúčení rovnakých mocnín a dôjdeme k nerovnosti <span class="math display">\[a^4-2a^3+a^2\geq 0,\]</span> ktorá však platí, pretože jej ľavá strana má rozklad <span class="math inline">\(a^2 (a - 1)^2\)</span> s nezápornými činiteľmi <span class="math inline">\(a^2\)</span> a <span class="math inline">\((a - 1)^2\)</span>. Tým je pôvodná nerovnosť pre každé reálne číslo a dokázaná. Zároveň sme zistili, že rovnosť vo výslednej, a teda aj v pôvodnej nerovnosti nastane práve vtedy, keď platí <span class="math inline">\(a^2 (a - 1)^2 = 0\)</span>, teda jedine vtedy, keď <span class="math inline">\(a = 0\)</span> alebo <span class="math inline">\(a = 1\)</span>.<br />
+<br />
+<strong>Iné riešenie.</strong> Danú nerovnosť môžeme prepísať na tvar <span class="math display">\[(a^2 - a + 1) + \frac{1}{a^2-a+1}\geq 2 \ \ \ \ \text{čiže} \ \ \ \  u~+\frac{1}{u}\geq 2,\]</span> pričom <span class="math inline">\(u = a^2 -a + 1\)</span>. Využitím faktu, že posledná nerovnosť platí pre každé kladné reálne číslo <span class="math inline">\(u\)</span> a že prechádza v rovnosť jedine pre <span class="math inline">\(u = 1\)</span>.</p>
+<p>Na dôkaz pôvodnej nerovnosti ostáva už len overiť, že výraz <span class="math inline">\(u = a^2 - a + 1\)</span> je kladný pre každé reálne číslo <span class="math inline">\(a\)</span>. To možno spraviť rovnako ako v prvom riešení, alebo prepísať nerovnosť <span class="math inline">\(a^2 - a + 1 &gt; 0\)</span> na tvar <span class="math display">\[a(a -1) &gt; -1\]</span> a uskutočniť krátku diskusiu: Posledná nerovnosť platí ako pre každé <span class="math inline">\(a \geq 1\)</span>, tak pre každé <span class="math inline">\(a\leq 0\)</span>, lebo v oboch prípadoch máme dokonca <span class="math inline">\(a(a - 1) \geq 0\)</span>; pre zvyšné hodnoty <span class="math inline">\(a\)</span>, teda pre <span class="math inline">\(a \in (0, 1)\)</span>, je súčin <span class="math inline">\(a(a - 1)\)</span> síce záporný, avšak určite väčší ako <span class="math inline">\(-1\)</span>, pretože oba činitele <span class="math inline">\(a\)</span>, <span class="math inline">\(a - 1\)</span> majú absolútnu hodnotu menšiu ako 1. Prepísaná nerovnosť je tak dokázaná pre každé reálne číslo <span class="math inline">\(a\)</span>, a tým je podmienka pre použitie nerovnosti <span class="math inline">\(u + \frac{1}{u} \geq 2\)</span> pre <span class="math inline">\(u = a^2 + a + 1\)</span> overená.</p>
+<p>Ako sme už uviedli, rovnosť <span class="math inline">\(u + \frac{1}{u} = 2\)</span> nastane jedine pre <span class="math inline">\(u = 1\)</span>. Pre rovnosť v nerovnosti zo zadania úlohy tak dostávame podmienku <span class="math inline">\(a^2 -a+1 = 1\)</span>, čiže <span class="math inline">\(a(a-1)= 0\)</span>, čo je splnené iba pre <span class="math inline">\(a = 0\)</span> a pre <span class="math inline">\(a = 1\)</span>.<br />
+<br />
+Úloha využíva spojenie viacerých poznatkov – faktu, že druhá mocnina akéhokoľvek reálneho čísla je nezáporná, úpravu na štvorec, ekvivalentné úpravy nerovností a tiež známu nerovnosť <span class="math inline">\(u+\frac{1}{u} \geq 2\)</span> pre každé kladné reálne <span class="math inline">\(u\)</span>. Je síce náročnejšia ako úlohy, ktorými sme sa doteraz zaoberali, ale považujeme ju za vhodnú ilustráciu toho, ako nám rozšírený arzenál metód pomôže v úspešnom zvládnutí zložitejších problémov. Úloha tiež demonštruje, že k správnemu riešeniu častokrát vedú viaceré cesty.<br />
+<br />
+</p>
+<h3 id="úloha-59-i-5">Úloha 59-I-5</h3>
+<p>Dokážte, že pre ľubovoľné kladné reálne čísla <span class="math inline">\(a, b\)</span> platí <span class="math display">\[\sqrt{ab}\leq \frac{2(a^2+3ab+b^2)}{5(a+b)}\leq \frac{a+b}{2},\]</span> a pre každú z oboch nerovností zistite, kedy prechádza na rovnosť.</p>
+<h4 id="riešenie-5">Riešenie</h4>
+<p>Pravá nerovnosť je ekvivalentná s nerovnosťou <span class="math display">\[4(a^2 + 3ab + b^2 ) \leq 5(a + b)^2,\]</span> ktorú možno ekvivalentne upraviť na nerovnosť <span class="math inline">\(a^2 + b^2 - 2ab = (a - b)^2 \geq 0\)</span>. Tá je splnená vždy a rovnosť v nej nastane práve vtedy, keď <span class="math inline">\(a = b\)</span>.</p>
+<p>Z ľavej nerovnosti odstránime zlomky a umocníme ju na druhú, <span class="math display">\[\begin{aligned}
+25ab(a^2 + 2ab + b^2) &amp;\leq 4(a^4 + 9a^2 b^2 + b^4 + 6a^3 b + 6ab^3 + 2a^2 b^2),\\
+25ab(a^2 + b^2 ) + 50a^2 b^2 &amp;\leq 4a^4 + 4b^4 + 44a^2 b^2 + 24ab(a^2 + b^2 ),\end{aligned}\]</span> takže po úprave dostaneme ekvivalentnú nerovnosť <span class="math display">\[4a^4 + 4b^4 - 6a^2 b^2 \geq ab(a^2 + b^2 ).\]</span> Po odčítaní výrazu <span class="math inline">\(2a^2 b^2\)</span> od oboch strán nerovnosti sa nám podarí na oboch stranách použiť úpravu na štvorec. Dostaneme tak (opäť ekvivalentnú) nerovnosť <span class="math display">\[4(a^2 - b^2 )^2 \geq ab(a - b)^2.\]</span> Rozdiel štvorcov v zátvorke na ľavej strane ešte rozložíme na súčin a vzťah upravíme na tvar <span class="math inline">\(4(a - b)^2 (a + b)^2 \geq ab(a - b)^2\)</span>.</p>
+<p>Ak <span class="math inline">\(a = b\)</span>, platí rovnosť. Ak <span class="math inline">\(a \neq b\)</span>, môžeme poslednú nerovnosť vydeliť kladným výrazom <span class="math inline">\((a - b)^2\)</span> a dostaneme tak nerovnosť <span class="math inline">\(4(a + b)^2 \geq ab\)</span>, čiže <span class="math inline">\(4a^2 + 4b^2 + 7ab \geq 0\)</span>. Ľavá strana tejto nerovnosti je vždy kladná, preto vyšetrovaná nerovnosť platí pre všetky kladné čísla <span class="math inline">\(a, b\)</span>, pričom rovnosť v nej nastane práve vtedy, keď <span class="math inline">\(a = b\)</span>.<br />
+<br />
+Táto úloha prvýkrát prináša sústavu nerovností a je vhodné so študentmi zopakovať, ako k riešeniu sústav nerovností pristupujeme: musíme dokázať riešenie každej nerovnosti zvlášť. V priebehu riešenia opäť využijeme úpravu na štvorec a nezápornosť druhej mocniny reálneho čísla. Úloha sa dá riešiť ešte iným spôsobom, ten si však ukážeme v ďalšom seminári zameranom na nerovnosti.</p>
 <h2 id="domáca-práca" class="unnumbered">Domáca práca</h2>
 <h2 id="doplňujúce-zdroje-a-materiály" class="unnumbered">Doplňujúce zdroje a materiály</h2>
 <p>Publikácií a článkov zaoberajúcich sa dokazovaním nerovností existuje veľké množstvo. Ak by študenti mali záujem o širšie štúdium tejto problematiky, na úvod je vhodné odporučiť im napr. publikácie <span class="citation" data-cites="bocek1994"></span> alebo [YY]TODO.</p>
