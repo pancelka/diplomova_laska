@@ -1,6 +1,24 @@
 % DOCUMENT COMPOSITION DIRECTIVES (PDF)
+
+% Images
 \newcommand{\imagesuffix}{}
-\newcommand{\weblinks}[1]{}
+
+\newcommand{\problem}[3]{
+  \stepcounter{problem}
+  \begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]
+    \textbf{Úloha \theseminar .\theproblem.}
+    [#1] #2
+  \end{tcolorbox}
+  #3
+}
+
+\newcounter{seminar}
+\newcounter{problem}
+\newcommand{\seminar}[1]{
+  \setcounter{seminar}{#1}
+  \setcounter{problem}{0}
+  \subsection*{Seminár #1}
+}
 
 \HlavickaUvod
 \setcounter{page}{1}
