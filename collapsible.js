@@ -10,7 +10,12 @@ function addClickListeners() {
         content.style.maxHeight = null;
       } else {
         content.style.maxHeight = content.scrollHeight + "px";
-      } 
+      }
+      if (content.style.padding){
+        content.style.padding = null;
+      } else {
+        content.style.padding = "18px";
+      }
     });
   }
 }
