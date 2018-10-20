@@ -8,10 +8,13 @@
 
 % Display problems (in gray box) + solutions
 \newcommand{\problem}[3]{
-    \stepcounter{problem}
-    \textbf{Úloha \theseminar .\theproblem.}
-    [#1] #2
-
-    \textbf{Riešenie \theseminar .\theproblem.}
+    \subsubsection{Úloha #1}
+    #2
+    \paragraph{Riešenie}
     #3
+}
+
+% Seminar title
+\newcommand{\seminar}[1]{
+  \section*{Seminár #1}
 }
