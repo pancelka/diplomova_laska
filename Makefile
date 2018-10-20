@@ -7,8 +7,8 @@ IMAGES_PNG := $(patsubst ./images/%.pdf,./build-web/images/%.png,$(IMAGES_PDF))
 WEB_TEX := $(wildcard ./seminars/*.tex)
 WEB_PDF_STUDENT := $(patsubst ./seminars/%.tex,./build-web/pdf/%-student.pdf,$(WEB_TEX))
 WEB_PDF_TEACHER := $(patsubst ./seminars/%.tex,./build-web/pdf/%-teacher.pdf,$(WEB_TEX))
-TEMPLATES_HTML := $(wildcard ./templates/*.html)
-TEMPLATES_PDF := $(wildcard ./templates/*.tex)
+TEMPLATES_HTML = ./templates/header.html ./templates/before-body.html ./templates/after-body.html ./templates/latex-header-web.tex
+TEMPLATES_PDF = ./templates/footer.tex ./templates/header-teacher.tex ./templates/header-student.tex ./templates/latex-header-pdf.tex
 MATHJAX_URL = https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 TMP_TEX := tmp.tex
 
@@ -38,7 +38,7 @@ web-init: build-web/index.html
 	
 	./scripts/getVersion.sh
 
-build-web/index.html: $(TEMPLATES_HTML)
+build-web/index.html: $(TEMPLATES_HTML) templates/index.html
 	mkdir -p build-web
 	printf "<html>\n<head>\n<title>Matematický seminár pre talentovaných študentov</title>" > $@
 	cat templates/header.html >> $@
