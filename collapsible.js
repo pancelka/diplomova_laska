@@ -1,4 +1,3 @@
-<script>
 var coll = document.getElementsByClassName("solution-button");
 var i;
 
@@ -13,4 +12,3 @@ for (i = 0; i < coll.length; i++) {
     } 
   });
 }
-</script>
