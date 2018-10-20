@@ -54,26 +54,20 @@ a:hover {
     color: rgba(255, 255, 255, 0.9);
 }
 
-.cleaner {
-    clear: both;
-    display: none;
-}
-
 .solution-button {
     background-color: #3661A2;
     color: white;
     cursor: pointer;
     padding: 15px;
     margin-top: 20px;
-    float: left;
   }
   
 .solution-button:before {
-    content: "&plus";
+    content: "\002B ";
 }
 
 .active:before {
-    content: "&minus;";
+    content: "\2212 ";
 }
 
 .active, .solution-button:hover {
@@ -81,7 +75,7 @@ a:hover {
 }
 
 .solution {
-    padding: 18px;
+    padding: 0;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
