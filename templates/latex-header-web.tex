@@ -9,13 +9,9 @@
 % Display problems (in gray box) + solutions
 \newcommand{\problem}[3]{
     \subsubsection{Úloha #1}
-    #2
-    \texttt{<div class="solution-button">}
+    \texttt{<div class="problem">} #2 \texttt{</div>}
     \paragraph{Riešenie}
-    \texttt{</div>}
-    \texttt{<div class="solution">}
-    #3
-    \texttt{</div>}
+    \texttt{<div class="solution">} #3 \texttt{</div>}
 }
 
 % Seminar title
