@@ -1,0 +1,10 @@
+\problem{65-I-1}{
+Nájdite všetky možné hodnoty súčinu prvočísel $p$, $q$, $r$, pre ktoré platí
+$$p^2 - (q + r)^2= 637.$$
+}{
+\rieh Ľavú stranu danej rovnice rozložíme na súčin podľa vzorca pre $A^2 - B^2$. V~takto upravenej rovnici
+$$(p + q + r)(p - q - r) = 637$$
+už ľahko rozoberieme všetky možnosti pre dva celočíselné činitele naľavo. Prvý z~nich je väčší a kladný, preto aj druhý musí byť kladný (lebo taký je ich súčin), takže podľa rozkladu na súčin prvočísel čísla $637 = 7^2 \cdot 13$ ide o~jednu z~dvojíc $(637, 1)$, $(91, 7)$
+alebo $(49, 13)$. Prvočíslo $p$ je zrejme aritmetickým priemerom oboch činiteľov, takže sa musí rovnať jednému z~čísel $\frac{1}{2}(637 + 1) = 319$, $\frac{1}{2}(91 + 7) = 49$, $\frac{1}{2}(49 + 13) = 31$. Prvé dve z~nich však prvočísla nie sú ($319 = 11 \cdot  29$ a $49 = 7^2$), tretie áno. Takže nutne $p = 31$ a prislúchajúce rovnosti $31 + q + r = 49$ a $31 - q - r = 13$ platia práve vtedy, keď $q + r = 18$. Také dvojice prvočísel $\{q, r\}$ sú iba $\{5, 13\}$ a $\{7, 11\}$ (stačí prebrať
+všetky možnosti, alebo si uvedomiť, že jedno z~prvočísel $q$, $r$ musí byť aspoň $18 : 2 = 9$, nanajvýš však $18 - 2 = 16$). Súčin $pqr$ tak má práve dve možné hodnoty, a to $31 \cdot  5\cdot  13 = 2 015$ a $31 \cdot  7 \cdot  11 = 2 387$.\\
+}

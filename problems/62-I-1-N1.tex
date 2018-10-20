@@ -1,0 +1,10 @@
+\problem{62-I-1-N1}{
+Kobylka skáče po úsečke dĺžky 10\,cm a to skokmi o~1\,cm alebo o~2\,cm (vždy rovnakým smerom). Koľkými spôsobmi sa môže dostať z~jedného krajného bodu úsečky do druhého?
+}{
+\rieh Ak označíme $a_n$ počet spôsobov, koľkými sa môže kobylka dostať do bodu vzdialeného $n$ cm od začiatočného bodu úsečky, tak pre každé $n \geq 1$ platí $a_{n+2}= a_{n+1} + a_n$. Keďže $a_1 = 1$ a $a_2 = 2$, môžeme ďalšie počty $a_3, a_4,\ldots$ postupne počítať podľa vzorca z~predošlej vety, až dospejeme k~hodnote $a_{10} = 89$.
+
+Pri inom postupe je možné rozdeliť všetky cesty podľa toho, koľko pri nich urobí kobylka skokov dĺžky dva (ich počet môže byť 0, 1, 2, 3, 4 alebo 5 a tým je tiež určený počet skokov dĺžky $1$: 10, 8, 6, 4, 2 alebo 0). Ku každému takému počtu potom určíme počet všetkých rôznych poradí jednotiek a dvojok (dávajúcich v~súčte 10). Dostaneme tak $1+9+28+ 35 + 15 + 1 = 89$ možných ciest.\\
+\\
+\kom Úloha opäť pravdepodobne nebude pre študentov neprekonateľnou výzvou. Bude však určite zaujímavé sledovať, ako sa študenti popasujú s hľadaním počtu spôsobov. Taktiež úloha slúži ako príprava na úlohu nasledujúcu a domácu prácu.\\
+\\
+}

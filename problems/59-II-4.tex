@@ -1,0 +1,29 @@
+\problem{59-II-4}{
+Určte všetky dvojice reálnych čísel $x, y$, ktoré vyhovujú sústave rovníc
+\begin{align*}
+\lfloor x + y\rfloor &= 2 010,\\
+\lfloor x\rfloor - y &= p,
+\end{align*}
+ak a) $p = 2$, b) $p = 3$.
+Symbol $\lfloor x \rfloor$ označuje najväčšie celé číslo, ktoré nie je väčšie ako dané reálne číslo $x$ (tzv. dolná celá časť reálneho čísla $x$).
+}{
+\rieh Keďže číslo $p$ je celé, je aj $y = \lfloor x \rfloor-p$ celé číslo a $\lfloor x+y \rfloor = \lfloor x\rfloor+y$. Pôvodná sústava rovníc je teda ekvivalentná so sústavou
+\begin{align*}
+\lfloor x \rfloor + y &= 2 010,\\
+\lfloor x\rfloor - y &= p,
+\end{align*}
+ktorú ľahko vyriešime napríklad sčítacou metódou. Dostaneme $\lfloor x \rfloor = \frac{1}{2}(2 010 + p)$ (čo môže platiť len pre párne $p$) a $y = \lfloor x \rfloor - p$.
+
+a) Pre $p = 2$ je riešením sústavy ľubovoľné $x \in \langle 1006, 1007)$ a $y = 1 004$.\\
+
+b) Pre $p = 3$ nemá sústava žiadne riešenie.
+\\
+\\
+\textbf{Iné riešenie.} Položme $\lfloor x \rfloor = a$, potom $x = a + t$, pričom $t \in \langle 0, 1)$.
+
+a) Pre $p = 2$ sústavu prepíšeme na tvar $y = a-2$ a $\lfloor 2a-2+t \rfloor = 2 010$. Z~poslednej
+rovnice vyplýva $2a - 2 = 2 010$, odtiaľ  $a = 1 006$. Keďže $t \in \langle 0, 1)$, vyhovuje pôvodnej sústave každé $x \in \langle 1006, 1007)$, pričom $y = 1 004$.
+
+b) Pre $p = 3$ dostávame $y = a - 3$ a $\lfloor 2a - 3 + t\rfloor = 2 010$. Posledná rovnica je ekvivalentná so vzťahom $2a - 3 = 2 010$, ktorému nevyhovuje žiadne celé číslo $a$. Pre $p = 3$ nemá daná sústava rovníc riešenie.\\
+\\
+}

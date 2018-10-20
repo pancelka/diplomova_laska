@@ -1,0 +1,18 @@
+\problem{63-I-4}{
+Vo štvorci $ABCD$ označme $K$ stred strany $AB$ a $L$ stred strany $AD$. Úsečky $KD$ a $LC$ sa pretínajú v~bode $M$ a rozdeľujú štvorec na dva trojuholníky a dva štvoruholníky. Vypočítajte ich obsahy, ak úsečka $LM$ má dĺžku 1\,cm.
+}{
+\rieh Platí $|AK| = |DL|$ a $|AD| = |DC| = 2|AK|$ (obr. 7), takže pravouhlé trojuholníky $AKD$ a $DLC$ sú zhodné podľa vety $sus$. Okrem toho sú trojuholníky $MLD$ a $AKD$ podobné podľa vety $uu$, lebo $|\ma LDM| = |\ma KDA|$ a $|\ma DLM| = |\ma DLC| = |\ma AKD|$. Analogicky sa dá overiť i podobnosť trojuholníkov $MDC$ a $AKD$. Z~podobnosti trojuholníkov $AKD$, $MLD$ a $MDC$ vyplýva, že $|MD| = 2|ML| = 2$\,cm a $|MC| = 2|MD| = 4$\,cm. Obsahy útvarov $MLD$, $MDC$ a $AKML$ sú
+$$S_{MLD} =\frac{1\cdot 2}{2}= 1\,\text{cm}^2, \ \ \ \  S_{MDC} = \frac{2\cdot 4}{2}= 4\,\text{cm}^2$$
+a
+$$S_{AKML} = S_{AKD}- S_{MLD} = S_{DLC} - S_{MLD} = S_{MDC} = 4\,\text{cm}^2.$$
+Nakoniec pomocou Pytagorovej vety dostávame $S_{ABCD} = |DC|^2 = |DM|^2 + |CM|^2= 20$\,cm$^2$, takže
+$$S_{KBCM} = S_{ABCD} - (S_{MLD} + S_{MDC} + S_{AKML}) = 11\,\text{cm}^2.$$
+\textit{Záver.} Obsahy trojuholníkov $MLD$, $MDC$ a štvoruholníkov $AKML$, $KBCM$ sú postupne 1\,cm$^2$, 4\,cm$^2$, 4\,cm$^2$ a 11\,cm$^2$.
+\begin{center}
+\includegraphics{images/63D41\imagesuffix}
+
+Obr. 7
+\end{center}
+\kom Opäť je potrebné identifikovať podobné trojuholníky a potom pomocou známeho koeficientu určiť ich obsahy. Oproti predchádzajúcej úlohe ešte študenti navyše využijú Pytagorovu vetu.\\
+\\
+}

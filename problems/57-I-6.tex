@@ -1,0 +1,51 @@
+\problem{57-I-6}{
+Klárka mala na papieri napísané trojciferné číslo. Keď ho správne vynásobila deviatimi, dostala štvorciferné číslo, ktoré sa začínalo rovnakou číslicou ako pôvodné číslo, prostredné dve číslice sa rovnali a posledná číslica bola súčtom číslic pôvodného čísla. Ktoré štvorciferné číslo mohla Klárka dostať?
+}{
+\rieh Hľadajme pôvodné číslo $x = 100a + 10b + c$, ktorého cifry sú $a, b, c$. Cifru, ktorá sa vyskytuje na prostredných dvoch miestach výsledného súčinu, označme $d$. Zo zadania vyplýva
+$$ 9(100a + 10b + c) = 1 000a + 100d + 10d + (a + b + c), \ \ \ \ \ \ (1)$$
+pričom výraz v~poslednej zátvorke predstavuje cifru zhodnú s~poslednou cifrou súčinu $9c$. To však znamená, že nemôže byť $c \geq 5$: pre také $c$ sa totiž končí číslo $9c$ cifrou neprevyšujúcou 5, a pretože $a\neq 0$, platí naopak $a + b + c > c \geq 5$.
+
+Zrejme tiež $c \neq 0$ (v~opačnom prípade by platilo $a = b = c = x = 0$). Ostatné
+možnosti vyšetríme zostavením nasledujúcej tabuľky.
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+$c$ &$9c$ & $a+b+c$ & $a+b$ \\
+\hline
+\hline
+1 & 9 & 9 & 8 \\
+\hline
+2 & 18 & 8 & 6\\
+\hline
+3& 27 & 7& 4\\
+\hline
+4& 36 & 6 & 2\\
+\hline
+\end{tabular}
+\end{center}
+
+Rovnosť (1) možno prepísať na tvar
+$$ 100(b - a - d) = 10d + a + 11b - 8c. (2)$$
+Hodnota pravej strany je aspoň $-72$ a menšia ako 200, lebo každé z~čísel $a, b, c, d$ je najviac rovné deviatim. Takže buď $b - a - d = 0$, alebo $b - a - d = 1$.
+
+V~prvom prípade po substitúcii $d = b - a$ upravíme vzťah (2) na tvar $8c = 3(7b - 3a)$, z~ktorého vidíme, že $c$ je násobkom troch. Z~prvej tabuľky potom vyplýva $c = 3, a = 4 - b$, čo po dosadení do rovnice $8c = 3(7b - 3a)$ vedie k~riešeniu $a = b = 2, c = 3$. Pôvodné číslo je teda $x = 223$ a jeho deväťnásobok $9x = 2 007.$
+
+V~druhom prípade dosadíme $d = b - a - 1$ do (2) a zistíme, že $8c + 110 = 3(7b-3a)$. Výraz $8c+110$ je teda deliteľný tromi, preto číslo $c$ dáva po delení tromi zvyšok 2. Dosadením jediných možných hodnôt $c = 2$ a $b = 6 - a$ do poslednej rovnice zistíme, že $a = 0$, čo je v~rozpore s~tým, že číslo $x = 100a + 10b + c$ je trojciferné.
+
+\textit{Záver.} Klárka dostala štvorciferné číslo 2 007.
+
+\textit{Poznámka.} Prvá tabuľka ponúka jednoduchší, ale numericky pracnejší postup priameho dosadzovania všetkých prípustných hodnôt čísel $a, b, c$ do rovnice (1). Počet všetkých možností možno obmedziť na desať odhadom $b \geq a$, ktorý zistíme pomocou vhodnej úpravy vzťahu (1) napríklad na tvar (2). Riešenie uvádzame v~druhej tabuľke.
+\begin{center}
+\begin{tabular}{|r||r|r|r|r|r|r|r|r|r|r|}
+\hline
+$a$ & 1 & 2 & 3 & 4 & 1 & 2 & 3 & 1 & \textbf{2} & 1\\
+\hline
+$b$ & 7 & 6 & 5 & 4 & 5 & 4 & 3 & 3 & \textbf{2} & 1 \\
+\hline
+$c$ & 1 & 1 & 1 & 1 & 2 & 2 & 2 & 3 & \textbf{3} & 4 \\
+\hline
+$9x$ & 1539 & 2349 & 3159 & 3969 & 1368 & 2178 & 2988 & 1197 & \textbf{2007} & 1026\\
+\hline
+\end{tabular}
+\end{center}
+}

@@ -1,0 +1,54 @@
+\problem{66-II-2}{
+Štvorcovú tabuľku $6\times 6$ zaplníme všetkými celými číslami od 1 do 36.
+
+a) Uveďte príklad takého zaplnenia tabuľky, že súčet každých dvoch čísel v~rovnakom riadku či v~rovnakom stĺpci je väčší ako 11.
+
+b) Dokážte, že pri ľubovoľnom zaplnení tabuľky sa v~niektorom riadku alebo stĺpci nájdu dve čísla, ktorých súčet neprevyšuje 12.
+}{
+\rieh  a) Aby sme dosiahli požadované rozmiestnenie čísel v~tabuľke, nesmú v~žiadnom riadku ani stĺpci spolu zostať dve z~čísel nanajvýš rovných šiestim. Preto jednu z~mnohých vyhovujúcich tabuliek zostavíme, keď čísla od 1 do 6 vpíšeme zhora nadol do políčok jednej uhlopriečky a ďalej budeme postupne zdola nahor brať rady políčok rovnobežných s~druhou uhlopriečkou a do voľných miest každej z~nich vpisovať zhora
+nadol zvyšné čísla 7, 8 atď. až 36:
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+1 & 35 & 33 & 29 & 25 & 19 \\
+\hline
+36 & 2 & 30 & 26 & 20 & 15 \\
+\hline
+34 & 31 & 3 & 21 & 16 &11 \\
+\hline
+32 & 27 & 22 & 4 & 12 & 9 \\
+\hline
+28 & 23 & 17 & 13 & 5 & 7 \\
+\hline
+24 & 18 & 14 & 10 & 8 & 6\\
+\hline
+\end{tabular}
+\end{center}
+Najmenšie súčty dvoch čísel z~jednotlivých riadkov (zhora nadol) sú
+$$1 + 19, 2 + 15, 3 + 11, 4 + 9, 5 + 7, 6 + 8$$
+a z~jednotlivých stĺpcov (zľava doprava)
+$$1 + 24, 2 + 18, 3 + 14, 4 + 10, 5 + 8, 6 + 7.$$
+Rýchlejší opis príkladu vyhovujúcej tabuľky a jeho jednoduchšiu kontrolu dostaneme, keď do tabuľky vpíšeme iba čísla od 1 do 12, ako vidíme nižšie. Rozmiestnenie čísel od 13 do 36 do prázdnych políčok už zrejme môže byť ľubovoľné -- dve najmenšie čísla v~každom riadku aj stĺpci sú totiž práve tie od 1 do 12.
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+1 & 11 & & & & \\
+\hline
+12 & 2 & & & & \\
+\hline
+ & & 3 & 9 & & \\
+\hline
+ & & 10 & 4 & & \\
+\hline
+ & & & & 5 & 7\\
+\hline
+ & & & & 8 & 6 \\
+\hline
+\end{tabular}
+\end{center}
+
+b) Ak sú dve z~čísel od 1 do 6 v~rovnakom riadku alebo v~rovnakom stĺpci, ich súčet neprevýši dokonca ani číslo $6 + 5 = 11$. V~opačnom prípade sú čísla od 1 do 6 rozmiestnené vo všetkých riadkoch a všetkých stĺpcoch, takže číslo 7 je v~rovnakom riadku s~číslom $x$ a v~rovnakom stĺpci s~číslom $y$, pričom $x$ a $y$ sú dve rôzne čísla od 1 do 6. Potom menšie z~čísel $7 + x$ a $7 + y$ neprevýši menšie z~čísel $7 + 6$ a $7 + 5$, teda číslo 12. Tým je tvrdenie dokázané.\\
+\\
+\kom Úloha je relatívne jednoduchá a nevyžaduje žiadne špeciálne matematické vedomosti, len starostlivý logický úsudok. Študenti pravdepodobne vymyslia rôzne zaplnenia tabuľky a to môže byť výbornou príležitosťou nechať ich riešenia skontrolovať si medzi sebou navzájom. \\
+\\
+}

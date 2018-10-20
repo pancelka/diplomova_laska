@@ -1,0 +1,19 @@
+\problem{64-D-3}{
+Simona a Lenka hrajú hru. Pre dané celé číslo $k$ také, že $0 \leq k \leq 64$, vyberie Simona $k$ políčok šachovnice $8 \times 8$ a každé z nich označí krížikom. Lenka potom šachovnicu nejakým spôsobom vyplní tridsiatimi dvoma dominovými kockami. Ak je počet kociek pokrývajúcich dva krížiky nepárny, vyhráva Lenka, inak vyhráva Simona. V závislosti
+od $k$ určte, ktoré z dievčat má vyhrávajúcu stratégiu.
+}{
+\rieh Riešenie rozdeľme podľa hodnoty čísla $k$.
+
+Ak $k = 0$, je počet kociek pokrývajúcich dva krížiky rovný nule, preto vyhrá Simona.
+
+Ak $0 < k \leq 32$, umiestni Simona krížiky napr. iba na biele políčka šachovnice. Potom pod žiadnou kockou nie sú dva krížiky, preto vyhrá Simona.
+
+Ak $k > 32$, pričom $k$ je párne, umiestni Simona 32 krížikov na biele políčka a zvyšné krížiky kamkoľvek. Potom pod párnym počtom kociek sú dva krížiky (takých kociek je totiž práve $k - 32$, pretože každá dominová kocka pokrýva jedno biele a jedno čierne
+políčko šachovnice), takže vyhrá Simona.
+
+Ak $32 < k \leq 61$, pričom k je nepárne, nenapíše Simona krížiky do troch políčok v jednom z \uv{bielych rohov}, t. j. do rohového bieleho a do dvoch susedných čiernych políčok, ale napíše ich do všetkých ostatných 31 bielych políčok a zvyšok do akýchkoľvek čiernych políčok (okrem spomenutých dvoch). Na bielych políčkach je teda nepárny počet krížikov a na čiernych párny počet krížikov. Okolo každého čierneho políčka s krížikom sú všetky biele políčka tiež s krížikom, preto každá kocka, ktorá zakrýva čierne políčko s krížikom, zakrýva dva krížiky. Iné kocky dva krížiky nezakrývajú. Preto opäť vyhrá Simona.
+
+Ak $k = 63$, dva krížiky nie sú iba pod jedinou kockou, preto v takom prípade vyhrá Lenka, a to bez potreby akejkoľvek stratégie.\\
+\textit{Záver.} Pre každé $0 \leq k \leq 64$, $k \neq 63$, má vyhrávajúcu stratégiu Simona, pri $k = 63$ vyhráva automaticky Lenka.\\
+\\
+}

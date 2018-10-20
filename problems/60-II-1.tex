@@ -1,0 +1,13 @@
+\problem{60-II-1}{
+Na tabuli sú napísané práve tri (nie nutne rôzne) reálne čísla. Vieme, že súčet ľubovoľných dvoch z~nich je tam napísaný tiež. Určte všetky trojice takých čísel.
+}{
+\rieh Označme čísla napísané na tabuli $a, b, c$. Súčet $a + b$ sa tiež nachádza na tabuli, je teda rovný jednému z~čísel $a, b, c$. Keby $a + b$ bolo rovné $a$ alebo $b$, bola by na tabuli aspoň jedna nula. Rozoberieme preto tri prípady podľa počtu núl napísaných na tabuli.
+
+Ak sú na tabuli aspoň dve nuly, ľahko sa presvedčíme, že súčet každých dvoch čísel z~tabule je tam tiež. Dostávame, že trojica $t, 0, 0$ je pre ľubovoľné reálne číslo $t$ riešením úlohy.
+
+Ak je na tabuli práve jedna nula, je tam trojica $a, b, 0,$ pričom $a$ aj $b$ sú nenulové čísla. Súčet $a + b$ teda nie je rovný ani $a$, ani $b$, musí preto byť rovný 0. Dostávame tak ďalšiu trojicu $t, -t, 0$, ktorá je riešením úlohy pre ľubovoľné reálne číslo $t$.
+Ak na tabuli nie je ani jedna nula, súčet $a + b$ nie je rovný ani $a$, ani $b$, preto $a + b = c$. Z~rovnakých dôvodov je $b + c = a$ a $c + a = b$. Dostali sme sústavu troch lineárnych rovníc s~neznámymi $a, b, c$, ktorú môžeme vyriešiť. Avšak hneď z~prvých dvoch rovníc po dosadení vyjde $b + (a + b) = a$, čiže $b = 0$. To je v~spore s~tým, že na tabuli žiadna nula nie je.
+
+\textit{Záver.} Úlohe vyhovujú trojice $t, 0, 0$ a $t, -t, 0$ pre ľubovoľné reálne číslo $t$ a žiadne iné.\\
+\\
+}

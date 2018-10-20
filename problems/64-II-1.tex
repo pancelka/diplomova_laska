@@ -1,0 +1,25 @@
+\problem{64-II-1}{
+Celé čísla od 1 do 9 rozdelíme ľubovoľne na tri skupiny po troch a potom čísla v~každej skupine medzi sebou vynásobíme.
+
+a) Určte tieto tri súčiny, ak viete, že dva z~nich sa rovnajú a sú menšie ako tretí súčin.
+
+b) Predpokladajme, že jeden z~troch súčinov, ktorý označíme $S$, je menší ako dva ostatné súčiny (ktoré môžu byť rovnaké). Nájdite najväčšiu možnú hodnotu $S$.
+}{
+\rieh Najskôr vyjadríme súčin všetkých deviatich čísel pomocou jeho rozkladu na súčin prvočísel:
+$$ 1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7 \cdot 8 \cdot 9 = 2^7 \cdot 3^4 \cdot 5 \cdot 7.$$
+
+a) Označme dva z~uvažovaných (rôznych) súčinov $S$ a $Q$, pričom $S < Q$. Z~rovnosti
+$$S \cdot S~\cdot Q = 2^7 \cdot 3^4 \cdot 5 \cdot 7$$
+vidíme, že prvočísla 5 a 7 musia byť zastúpené v~súčine $Q$, takže $Q = 5 \cdot 7 \cdot x = 35x$, pričom $x$ je jedno zo zvyšných čísel 1, 2, 3, 4, 6, 8 a 9. Ďalej vidíme, že v~rozklade dotyčného $x$ musí mať prvočíslo 2 nepárny exponent a prvočíslo 3 párny exponent -- tomu vyhovujú iba čísla 2 a 8. Pre $x = 2$ ale vychádza $Q = 35 \cdot 2 = 70 < S= 2^3 \cdot 3^2 = 72$, čo odporuje predpokladu $S < Q$. Preto je nutne $x = 8$, pre ktoré vychádza $Q = 35 \cdot 2 = 280$ a $S^2 = 2^4 \cdot 3^4$ čiže $S = 2^2 \cdot 3^2 = 36$. Trojica súčinov je teda
+$(36, 36, 280)$.
+
+Ostáva ukázať, že získanej trojici naozaj zodpovedá rozdelenie daných deviatich čísel na trojice:
+$$S = 1 \cdot 4 \cdot 9 = 36, \ \ \ S~= 2 \cdot 3 \cdot 6 = 36, \ \ \ Q = 5 \cdot 7 \cdot 8 = 280.$$
+
+b) Označme uvažované súčiny $S, Q$ a $R$, pričom $S < Q$ a $S < R$ (nie je ale vylúčené, že $Q = R$). V~riešení časti a) sme zistili, že platí rovnosť
+$$S \cdot Q \cdot R = 70 \cdot 72 \cdot 72.$$
+Ak teda ukážeme, že existuje rozdelenie čísel, pri ktorom $S = 70$ a $R = Q = 72$, bude $S = 70$ hľadaná najväčšia hodnota, lebo keby pri niektorom rozdelení platilo $S \geq 71$, muselo by byť $R \geq 72$ aj $Q \geq 72$ a tiež $S \cdot Q \cdot R \geq 71 \cdot 72 \cdot 72$, čo zrejme odporuje predchádzajúcej rovnosti. Nájsť potrebné rozdelenie je jednoduché:
+$$ S~= 2 \cdot 5 \cdot 7 = 70, \ \ \ Q = 1 \cdot 8 \cdot 9 = 72, \ \ \  R = 3 \cdot 4 \cdot 6 = 72.$$ \\
+\\
+\kom Zaujímavá úloha, ktorá dôvtipne využíva rozklady čísel na súčin prvočísel.
+}

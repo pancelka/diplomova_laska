@@ -1,0 +1,30 @@
+\problem{63-I-2}{
+V~rovine sú dané body $A$, $P$, $T$ neležiace na jednej priamke. Zostrojte trojuholník $ABC$ tak, aby $P$ bola päta jeho výšky z~vrcholu $A$ a $T$ bod dotyku strany $AB$ s~kružnicou jemu vpísanou. Uveďte diskusiu o~počte riešení vzhľadom na polohu daných bodov.
+}{
+\rieh Vrchol $B$ je určený polpriamkou $AT$ a kolmicou $p$ na výšku $AP$ v~bode $P$ (obr. 4), na ktorej leží strana $BC$. Pritom bod $T$ musí byť vnútorným bodom úsečky $AB$. Stred $S$ kružnice vpísanej trojuholníku $ABC$ potom dostaneme ako priesečník kolmice $q$
+\begin{center}
+\includegraphics{images/63D2\imagesuffix}\\
+
+Obr. 4
+\end{center}
+na priamku $AT$ v~bode $T$ s~osou uhla ohraničeného priamkou $p$ a polpriamkou $BA$. Jej polomer bude mať veľkosť $|ST|$.
+
+Ostáva zostrojiť vrchol $C$ hľadaného trojuholníka $ABC$. Ten bude ležať jednak na priamke $p$, jednak na druhej dotyčnici vpísanej kružnice z~vrcholu $A$, ktorá je súmerne združená so stranou $AB$ podľa priamky $AS$. Stačí teda zostrojiť bod $U$ dotyku strany $AC$ s~kružnicou vpísanou ako obraz bodu $T$ v~uvedenej osovej súmernosti.
+
+Odtiaľ vyplýva \textit{konštrukcia}:
+\begin{enumerate}
+\item $p$: $P \in p$ a $p \perp AP$;
+\item $B$: $B \in AT \cap p$, bod $B$ musí ležať na polpriamke $AT$ za bodom $T$;
+\item $q$: $T \in q$ a $q \perp AT$;
+\item $u_1$, $u_2$: dve (navzájom kolmé) osi rôznobežiek $AB$, $p$;
+\item $S_1$, $S_2$: $S_1 \in q \cap u_1$, $S_2 \in q \cap u_2$;
+\item $U_1$, $U_2$: obrazy bodu $T$ v~súmernostiach podľa priamok $AS_1$ a $AS_2$;
+\item $C_1$, $C_2$: priesečníky priamky $p$ s~polpriamkami $AU_1$ a $AU_2$;
+\item trojuholníky $ABC_1$ a $ABC_2$.
+\end{enumerate}
+\textit{Diskusia.} Bod $B$ konštruovaný v~2. kroku existuje, len ak uhol $PAT$ je ostrý (inak ani polpriamka $AT$ nepretne priamku $p$) a zároveň bod $T$ leží vnútri polroviny $pA$, čo je ekvivalentné s~tým, že aj uhol $APT$ je ostrý. Body $S_1$, $S_2$ existujú vždy a sú rôzne, lebo ležia v~opačných polrovinách určených priamkou $AB$. Kružnica vpísaná leží celá v~trojuholníku $ABC$, a teda i v~páse určenom priamkou $p$ a priamkou s~ňou rovnobežnou, ktorá prechádza vrcholom $A$, takže stred $S$ vpísanej kružnice musí padnúť do pásu tvoreného priamkou $p$ a priamkou $p'$ s~ňou rovnobežnou, ktorá rozpoľuje výšku $AP$. V~takom prípade dotyčnica ku kružnici $(S; |ST|)$ (súmerne združená s~dotyčnicou $AB$ podľa priamky $AS$) určite pretne priamku $p$ v~hľadanom vrchole $C$.
+
+Diskusiu zhrnieme takto: Ak pre vnútorné uhly trojuholníka $APT$ platí $|\ma PAT| \geq 90^\circ$ alebo $|\ma APT| \geq 90^\circ$, nemá úloha riešenie. Ak platí $|\ma PAT| < 90^\circ$ a zároveň $|\ma APT| < 90^\circ$, je počet riešení 0 až 2 podľa toho, koľko zo zostrojených bodov $S_1$ a $S_2$ leží medzi rovnobežkami $p$ a $p'$.\\
+\\
+\kom V~posledných rokoch sa v~MO nevyskytlo veľké množstvo konštrukčných úloh. Napriek tomu však považujeme za dôležité vyriešiť so študentmi aspoň jeden takýto problém a poukázať na to, že zostrojením vyhovujúceho útvaru riešenie úlohy nekončí a je potrebné uviesť aj diskusiu, ktorá je častokrát aspoň tak náročná ako vhodná konštrukcia. Zaradenie úlohy v~tomto seminári považujeme za vhodné tiež preto, lebo úloha využíva vlastnosti kružnice vpísanej, a tak so cťou uzavrie toto seminárne stretnutie.
+}

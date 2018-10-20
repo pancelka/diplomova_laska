@@ -1,0 +1,20 @@
+\problem{61-II-4}{
+Na tabuli je napísaných prvých $n$ celých kladných čísel. Marína a Tamara sa striedajú v~ťahoch pri nasledujúcej hre. Najskôr Marína zotrie jedno z~čísel na tabuli. Ďalej vždy hráčka, ktorá je na ťahu, zotrie jedno z~čísel, ktoré sa od predchádzajúceho zotretého čísla ani nelíši o~1, ani s~ním nie je súdeliteľné. Hráčka, ktorá je na ťahu a nemôže už žiadne číslo zotrieť, prehrá. Pre $n = 6$ a pre $n = 12$ rozhodnite, ktorá z~hráčok môže hrať tak, že vyhrá nezávisle na ťahoch druhej hráčky.
+}{
+\rieh Úloha dvoch po sebe zotieraných čísel je v~zadanej hre symetrická: ak je po čísle $x$ možné zotrieť číslo $y$, je (pri inom priebehu hry) po čísle $y$ možné zotrieť číslo $x$. Preto si môžeme celú hru (so zadaným číslom $n$) \uv{sprehľadniť} tak, že najskôr vypíšeme všetky takéto (nazývajme ich prípustné) dvojice $(x, y)$. Keďže na poradí čísel v~prípustnej dvojici nezáleží, stačí vypisovať len tie dvojice $(x, y)$, v~ktorých $x < y$.
+
+V~prípade $n = 6$ všetky prípustné dvojice sú
+$$(1, 3), (1, 4), (1, 5), (1, 6), (2, 5), (3, 5).$$
+Z~tohto zoznamu ľahko odhalíme, že víťaznú stratégiu má (prvá) hráčka Marína. Ak totiž zotrie na začiatku hry číslo 4, musí Tamara zotrieť číslo 1, a keď potom Marína zotrie číslo 6, nemôže už Tamara žiadne ďalšie číslo zotrieť. Okrem tohto priebehu $4 \rightarrow 1\rightarrow 6$ si môže Marína zaistiť víťazstvo aj inými, pre Tamaru ”vynútenými“ priebehmi, napríklad $6\rightarrow 1 \rightarrow 4$ alebo $4 \rightarrow 1 \rightarrow 3 \rightarrow 5 \rightarrow 2$.
+
+V~prípade $n = 12$ je všetkých prípustných dvojíc výrazne väčšie množstvo. Preto si položíme otázku, či všetky čísla od 1 do 12 možno rozdeliť na šesť prípustných dvojíc. Ak totiž nájdeme takú šesticu, môžeme opísať víťaznú stratégiu druhej hráčky (Tamary): ak zotrie Marína pri ktoromkoľvek svojom ťahu číslo $x$, Tamara potom vždy zotrie to číslo $y$, ktoré s~číslom $x$ tvorí jednu zo šiestich nájdených dvojíc. Tak nakoniec Tamara zotrie aj posledné (dvanáste) číslo a vyhrá (prípadne hra skončí skôr tak, že Marína nebude môcť zotrieť žiadne číslo).
+
+Hľadané rozdelenie všetkých 12 čísel do šiestich dvojíc naozaj existuje, napríklad
+$$(1, 4), (2, 9), (3, 8), (5, 12), (6, 11), (7, 10).$$
+Iné vyhovujúce rozdelenie dostaneme, keď v~predošlom dvojice (1, 4) a (6, 11) zameníme dvojicami (1, 6) a (4, 11). Ďalšie, menej podobné vyhovujúce rozdelenie je napríklad
+$$(1, 6), (2, 5), (3, 10), (4, 9), (7, 12), (8, 11).$$
+\textit{Záver.} Pre $n = 6$ má víťaznú stratégiu Marína, pre $n = 12$ Tamara.\\
+\\
+\kom Úloha je náročnejšia ako predchádzajúca, no študenti by mali prvú časť zvládnuť samostatne, v časti druhej môžu svoje sily spojiť so s ďalšími spolužiakmi, príp. stratégie, ktoré vymysleli, otestovať pri vzájomnej hre.\\
+\\
+}

@@ -1,0 +1,34 @@
+\problem{57-S-5}{
+Určte všetky dvojice $(a, b)$ reálnych čísel, pre ktoré majú rovnice
+$$x^2 + (3a + b)x + 4a = 0, \ \ \ \  x^2 + (3b + a)x + 4b = 0$$
+spoločný reálny koreň.
+}{
+\rieh Nech $x_0$ je spoločný koreň oboch rovníc. Potom platí
+$$x_0^2+ (3a + b)x_0 + 4a = 0, \ \ \ \  x_0^2+ (3b + a)x_0 + 4b = 0.$$
+Odčítaním týchto rovníc dostaneme $(2a-2b)x_0 +4(a-b) = 0$, odkiaľ po úprave získame $(a - b)(x_0 + 2) = 0$.
+
+Rozoberieme dve možnosti:
+
+Ak $a = b$, majú obidve dané rovnice rovnaký tvar $x^2 + 4ax + 4a = 0$. Aspoň jeden koreň (samozrejme spoločný) existuje práve vtedy, keď je diskriminant $16a^2-16a$ nezáporný, teda $a \in (-\infty, 0\rangle \cup \langle 1, \infty)$.
+
+Ak $x_0 = -2$, dostaneme z~prvej aj z~druhej rovnice $4-2a-2b = 0$, teda $b = 2-a$. Dosadením do zadania dostaneme rovnice
+$$x^2 + (2a + 2)x + 4a = 0, \ \ \ \ x^2 + (6-2a)x + 8-4a = 0,$$
+ktoré majú pri ľubovoľnej hodnote parametra a spoločný koreň $-2$.
+
+\textit{Záver.} Dané rovnice majú aspoň jeden spoločný koreň pre všetky dvojice $(a, a)$, kde $a \in (-\infty, 0\rangle \cup \langle 1, \infty)$, a pre všetky dvojice tvaru $(a, 2-a)$, kde $a$ je ľubovoľné.\\
+\\
+\ul{30.3} [57-II-1]  Uvažujme dve kvadratické rovnice
+$$x^2-ax-b = 0,\ \ \ \  x^2-bx-a = 0$$
+s~reálnymi parametrami $a$, $b$. Zistite, akú najmenšiu a akú najväčšiu hodnotu môže nadobudnúť súčet $a + b$, ak existuje práve jedno reálne číslo $x$, ktoré súčasne vyhovuje obom rovniciam. Určte ďalej všetky dvojice $(a, b)$ reálnych parametrov, pre ktoré tento súčet tieto hodnoty nadobúda.
+
+\rieh Odčítaním oboch daných rovníc dostaneme rovnosť $(b-a)x+a-b = 0$, čiže $(b-a)(x-1) = 0$. Odtiaľ vyplýva, že $b = a$ alebo $x = 1$.
+
+Ak $b = a$, majú obidve rovnice tvar $x^2-ax-a = 0$. Práve jedno riešenie existuje práve vtedy, keď diskriminant $a^2 + 4a$ je nulový. To platí pre $a = 0$ a pre $a = -4$. Pretože $b = a$, má súčet $a + b$ v~prvom prípade hodnotu $0$ a v~druhom prípade hodnotu $-8$.
+
+Ak $x = 1$, dostaneme z~daných rovníc $a + b = 1$, teda $b = 1-a$. Rovnice potom majú tvar
+$$x^2-ax + a-1 = 0 \ \ \ \ \text{a} \ \ \ \ x^2 + (a-1)x-a = 0.$$
+Prvá má korene $1$ a $a-1$, druhá má korene $1$ a $-a$. Práve jedno spoločné riešenie tak dostaneme vždy s~výnimkou prípadu, keď $a-1 = -a$, čiže $a = \frac{1}{2}$ -- vtedy sú spoločné riešenia dve.
+
+\textit{Záver.} Najmenšia hodnota súčtu $a + b$ je $-8$ a je dosiahnutá pre $a = b = -4$. Najväčšia hodnota súčtu $a + b$ je $1$; túto hodnotu má súčet $a + b$ pre všetky dvojice $(a, 1-a)$, kde $a\neq \frac{1}{2}$ je ľubovoľné reálne číslo.\\
+\\
+}

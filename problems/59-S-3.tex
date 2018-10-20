@@ -1,0 +1,32 @@
+\problem{59-S-3}{
+Nájdite všetky dvojice nezáporných celých čísel $a$, $b$, pre ktoré platí
+$$a^2 + b + 2 = a + b^2.$$
+}{
+\rieh Rovnicu prepíšeme na tvar $2 = (b^2 -a^2 )-(b-a)$, z~ktorého po využití vzťahu pre rozdiel štvorcov a následnom vyňatí výrazu $b - a$ dostaneme $2 = (b - a)(a + b - 1)$.
+Keďže 2 je prvočíslo, máme pre uvedený súčin nasledujúce štyri možnosti:
+
+\begin{enumerate}[a)]
+\item $b - a = 1$ a $a + b - 1 = 2$, potom $a = 1$ a $b = 2.$
+\item  $b - a = 2$ a $a + b - 1 = 1$, potom $a = 0$ a $b = 2$.
+\item $b - a = -1$ a $a + b - 1 = -2$. Druhú rovnicu možno prepísať na tvar $a + b = -1$, z~ktorého vidíme, že rovnosť nenastane pre žiadnu dvojicu nezáporných celých čísel.
+\item  $b - a = -2$ a $a + b - 1 = -1$. Druhú rovnicu možno prepísať na tvar $a + b = 0$, z~ktorého vidíme, že vyhovuje jediná dvojica nezáporných celých čísel $a = b = 0$, ktorá však nevyhovuje prvej rovnici.
+\end{enumerate}
+
+\textit{Záver.} Úloha má dve riešenia: Buď $a = 1$ a $b = 2$, alebo $a = 0$ a $b = 2$.
+
+\textit{Poznámka.} Namiesto rozboru štyroch možností môžeme začať úvahou, že nulové čísla $a, b$ nie sú riešením úlohy, takže $a + b - 1 = 0$, a teda aj $b - a = 0$. Stačí teda uvažovať iba možnosti a) a b).\\
+\\
+\textbf{Iné riešenie.} Rovnicu upravíme na tvar $2 = (b^2 - b) - (a^2 - a)$, resp. na tvar $2 = b(b - 1)-a(a-1)$. Z~nasledujúcej tabuľky a tvaru čísel $x^2 -x = x(x-1)$ je zrejmé, že rozdiely medzi susednými hodnotami výrazov $x(x - 1)$ rastú s~rastúcim $x$ (ľahko sa o~tom presvedčíme výpočtom: $(x + 1)x - x(x - 1) = 2x$).
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+$x$ & 0 & 1 & 2 & 3 & 4 & 5 & \ldots \\
+\hline
+$x(x-1)$ & 0 & 0 & 2 & 6 & 12 & 20 & \ldots\\
+\hline
+\end{tabular}
+\end{center}
+Môže teda platiť iba $b^2 - b = 2$ a $a^2 - a = 0$. Odtiaľ $a \in \{0, 1\}$ a $b = 2$. Riešením úlohy sú teda dve dvojice nezáporných celých čísel: $a = 0, b = 2$ a $a = 1, b = 2$.\\
+\\
+\kom Úloha je (okrem iného) zaujímavá tým, že poskytuje priestor na rôznorodé prístupy k~riešeniu a môže byť dobrým podnetom na vzájomné vysvetľovanie riešení medzi študentmi. Kľúčovým prvkom riešenia je úprava rovnice na vhodný tvar -- na tomto mieste je študentom vhodné pripomenúť, že zručnosť a dôvtip pri manipulácii s~algebraickými výrazmi nájdu uplatenie v~širokom spektre problémov, nielen na prvom seminárnom stretnutí, ktoré na túto problematiku bolo zamerané.
+}

@@ -1,0 +1,19 @@
+\problem{61-II-2}{
+Janko má tri kartičky, na každej je iná nenulová cifra. Súčet všetkých trojciferných čísel, ktoré možno z~týchto kartičiek zostaviť, je číslo o~6 väčšie ako trojnásobok jedného z~nich. Aké cifry sú na kartičkách?
+}{
+\rie Označme $\overline{abc}$ to trojciferné číslo, o~ktorého trojnásobku sa píše v~texte úlohy. Platí tak rovnica
+$$3\overline{abc} + 6 = \overline{abc} + \overline{acb}+ \overline{bac}+\overline{bca}+\overline{cab}+\overline{cba}$$  Keďže na pravej strane je každá z~cifier $a, b, c$ dvakrát na mieste jednotiek, desiatok aj
+stoviek, môžeme rovnicu prepísať na tvar
+$$300a + 30b + 3c + 6 = 222a + 222b + 222c, \quad \text{čiže} \quad 78a + 6 = 192b + 219c.$$
+Po vydelení číslom 3 dostaneme rovnicu $26a + 2 = 64b + 73c$, z~ktorej vidíme, že $c$ je párna cifra. Platí preto $c \geq 2$, čo spolu so zrejmou nerovnosťou $b \geq 1$ (pripomíname, že všetky tri neznáme cifry sú podľa zadania nenulové) vedie k~odhadu $$ 64b + 73c \geq 64 + 146 = 210.$$
+Musí preto platiť $26a + 2 \geq 210$, odkiaľ $a \geq (210 - 2) : 26 = 8$, takže cifra $a$ je buď 8, alebo 9. Pre $a = 8$ však v~nerovnosti z~predošlej vety nastane rovnosť, takže nutne $b = 1$ a $c = 2$ (a rovnica zo zadania úlohy je potom splnená). Pre $a = 9$ dostávame
+rovnicu $$ 64b + 73c = 26 \cdot 9 + 2 = 236,$$
+z~ktorej vyplýva, že $c$ je jednak deliteľné štyrmi, jednak je menšie ako 4, čo nemôže nastať súčasne.
+
+\textit{Záver.} Cifry na kartičkách sú 8, 2 a 1.
+
+\textit{Poznámka.} Riešiť odvodenú rovnicu $26a + 2 = 64b + 73c$ pre neznáme (nenulové a navzájom rôzne) cifry $a, b, c$ možno viacerými úplnými a systematickými postupmi, uviedli sme len jeden z~nich.\\
+\\
+\kom Úloha je zložitejšia než úvodné dve. Vychádza síce z~rozvinutého zápisu čísla, avšak vyžaduje dodatočnú netriviálnu analýzu. Bude preto iste zaujímavé diskutovať so študentmi o~tom, ako k~pristupovali k~riešeniu rovnice $26a + 2 = 64b + 73c$. \\
+\\
+}

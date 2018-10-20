@@ -1,0 +1,21 @@
+\problem{64-I-5}{
+Rozdiel dvoch prirodzených čísel je $2010$ a ich najväčší spoločný deliteľ je $2014$-krát menší ako ich najmenší spoločný násobok. Určte všetky také dvojice čísel.
+}{
+\rieh Označme hľadané čísla $a$ a $b$ $(a > b)$ a $d$ ich najväčší spoločný deliteľ. Potom $a = ud$, $b = vd$, pričom $u > v$ sú nesúdeliteľné čísla. Keďže najmenší spoločný násobok čísel $a, b$ je číslo $uvd$, dosadením do zadaných vzťahov dostaneme rovnosti
+$$ a - b = (u~- v)d = 2 010,$$
+$$uvd = 2 014d, \ \ \ \text{čiže} \ \ \  uv = 2 014.$$
+Podľa rozkladu na súčin prvočísel $2 014 = 2\cdot19\cdot53$ vypíšeme všetky možné dvojice $(u, v)$ a pre každú z~nich sa presvedčíme, či číslo $u- v$ je deliteľom čísla $2010$. V~pozitívnom prípade príslušný podiel udáva číslo $d$ a výpočet neznámych $a = ud$ a $b = vd$ je už jednoduchý:
+
+a) $u = 2 014$ a $v = 1$: $u - v~= 2 013$ nedelí 2 010;
+
+b) $u = 19 \cdot 53 = 1 007$ a $v = 2$: $u - v~= 1 005 \mid 2 010$, $d = 2$, $a = 1 007 \cdot 2 = 2 014$, $b = 2 \cdot 2 = 4$;
+
+c) $u = 2 \cdot 53 = 106$ a $v = 19$: $u - v~= 87$ nedelí 2 010;
+
+d) $u = 53$ a $v = 2 \cdot 19 = 38$: $u - v= 15 \mid 2010$, $d = 134$, $a = 53 \cdot 134 = 7 102$, $b = 38 \cdot 134 = 5 092$.
+
+\textit{Záver}. Hľadané čísla tvoria jednu z~dvojíc $(2014, 4)$ alebo $(7 102, 5 092)$.\\
+\\
+\kom Úloha neprináša žiadne nové poznatky a princípy, je však vhodná na trénovanie riešenia sústavy dvoch rovníc s~dvomi neznámymi a opäť tak vytvorí prepojenie s~minulými seminármi.\\
+\\
+}

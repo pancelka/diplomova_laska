@@ -1,0 +1,15 @@
+\problem{63-I-5-N3+63-I-5-N4, resp. C-55-I-1}{
+\begin{enumerate}[a)]
+\item Dokážte, že pre všetky celé kladné čísla $m$ je rozdiel $m^6 - m^2$ deliteľný šesťdesiatimi.
+\item Určte všetky kladné celé čísla $m$, pre ktoré je rozdiel $m^6 - m^2$ deliteľný číslom 120.
+\end{enumerate}
+}{
+\rieh a) Číslo $n = m^6 -m^2 = m^2 (m^2-1)(m^2 +1)$ je vždy deliteľné štyrmi, pretože pri párnom $m$ je $m^2$ deliteľné štyrmi a pri nepárnom $m$ sú čísla $m^2-1$, $m^2 +1$ obe párne, jedno z~nich je dokonca deliteľné štyrmi a ich súčin je teda deliteľný ôsmimi. Z~troch po sebe idúcich prirodzených čísel $m^2-1$, $m^2$, $m^2 + 1$ je práve jedno deliteľné tromi, a preto je aj číslo $n$ deliteľné tromi. Ak je $m$ deliteľné piatimi, je $m^2$ deliteľné piatimi, dokonca dvadsiatimi piatimi. V~opačnom prípade je $m$ tvaru $5k + r$, kde $r$ je rovné niektorému z~čísel 1, 2, 3, 4 a $k$ je prirodzené alebo 0. Potom $m^2 = 25k^2 + 10kr + r^2$ a $r^2$ sa rovná niektorému z~čísel 1, 4, 9, 16. V~prvom a v~poslednom prípade je číslo $m^2-1$ deliteľné piatimi, v~ostatných dvoch prípadoch je číslo $m^2 + 1$ deliteľné piatimi. Teda číslo $n$ je vždy deliteľné nesúdeliteľnými číslami 4, 3 a 5, a teda aj ich súčinom 60.\\
+
+b) Už sme ukázali, že v~prípade nepárneho $m$ je súčin $(m^2-1)(m^2 + 1)$ deliteľný ôsmimi a číslo $n = m^6- m^2$ je teda deliteľné číslom $120 = 8 \cdot 3 \cdot 5$. Ak je však číslo $m$ párne, sú čísla $m^2 -1$, $m^2 + 1$ nepárne, žiadne nie je deliteľné dvoma. Číslo $n$ je potom deliteľné ôsmimi iba v~prípade, že $m^2$ je deliteľné ôsmimi, teda $m$ je deliteľné štyrmi. Číslo $n$ je potom deliteľné šestnástimi, tromi a piatimi, a preto dokonca číslom 240.
+
+\textit{Záver.} Naše výsledky môžeme zhrnúť. Číslo $n = m^6 - m^2$ je deliteľné číslom 120 práve vtedy, keď $m$ je nepárne alebo deliteľné štyrmi.\\
+\\
+\kom Sada dvoch na seba nadväzujúcich úloh využíva poznatky získané pri riešení jednoduchších prípravných úloh zo začiatku seminára a vyžaduje sústredené a starostlivé aplikovanie všetkých z~nich.\\
+\\
+}

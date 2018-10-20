@@ -1,0 +1,12 @@
+\problem{58-I-3}{
+Nájdite všetky štvorciferné čísla $n$, ktoré majú nasledujúce tri vlastnosti: V~zápise čísla $n$ sú dve rôzne cifry, každá dvakrát. Číslo $n$ je deliteľné siedmimi. Číslo, ktoré vznikne otočením poradia cifier čísla $n$, je tiež štvorciferné a deliteľné siedmimi.
+}{
+\rieh V~riešení budeme označovať číslo, ktoré vznikne otočením poradia cifier čísla $n$, ako $\overline{n}$. Rozoberieme tri prípady.
+
+(i) Číslo $n$ má tvar $aabb$, kde $a$, $b$ sú rôzne cifry. Takže $n = 1100a + 11b$ a $\overline{n} = 1100b + 11a$. Číslo 7 má deliť ako $n$, tak $\overline{n}$, teda aj ich rozdiel $n - \overline{n} = 1089(a - b)$ a súčet $n + \overline{n} = 1111(a + b)$. Keďže ani číslo 1089, ani číslo 1111 nie sú násobkom siedmich a sedem je prvočíslo, tak $7 \mid a - $b aj $7 \mid a + b$. Ak použijeme rovnakú úvahu ešte raz, vidíme, že $7 \mid (a - b) + (a + b) = 2a$ a $7 \mid (a + b) - (a - b) = 2b$, teda $7 \mid a$ a $7 \mid b$, čiže $a, b \in \{0, 7\}$. Cifry $a, b$ sú navzájom rôzne, preto jedna z~nich musí byť 0. Ale potom jedno z~čísel $aabb$, $bbaa$ nie je štvorciferné. Hľadané číslo $n$ teda nemôže mať uvedený tvar.
+
+(ii) Číslo $n$ má tvar $abab$. Potom $7 \mid n = 1010a + 101b$ a tiež $7 \mid \overline{n} = 1010b + 101a$. Podobne ako v~predchádzajúcom prípade odvodíme, že $7 \mid n - \overline{n} = 909(a - b)$ a $7 \mid n + \overline{n} = 1111(a + b)$, a z~rovnakých dôvodov ako v~predchádzajúcom prípade zisťujeme, že $7 \mid a$, $7 \mid b$. Niektorá z~cifier by teda musela byť 0. Číslo $n$ tak nemôže mať ani tvar $abab$.
+
+(iii) Číslo $n$ má tvar $abba$. Potom otočením poradia cifier vznikne to isté číslo, takže máme jedinú podmienku $7 \mid 1001a + 110b$. Keďže $7 \mid 1001$ a $7 \nmid 110$, je táto podmienka ekvivalentná s~podmienkou $7 \mid b$. Preto $b \in \{0, 7\}$, $a \in \{1, 2, \ldots, 9\}$, $a \neq b$. Vyhovuje tak všetkých 17 čísel, ktoré práve uvedené podmienky spĺňajú: 1001, 2002, 3003, 4004, 5005, 6006, 7007, 8008, 9009, 1771, 2772, 3773, 4774, 5775, 6776, 8778, 9779.\\
+\\
+}

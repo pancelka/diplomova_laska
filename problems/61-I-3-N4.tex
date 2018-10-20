@@ -1,0 +1,21 @@
+\problem{61-I-3-N4, resp. 50-C-II-1}{
+Nájdite všetky dvojice prirodzených čísel $a, b$, pre ktoré platí $a+b+[a, b]+(a, b) = 50$.
+}{
+\rieh Položme $a = ud$, $b = vd$, kde $d$ je najväčší spoločný deliteľ čísel $a, b$, prirodzené čísla $u, v$ sú nesúdeliteľné a $[a,b]=uvd$. Podľa zadania má platiť $ud+vd+uvd+d= 50$. Inak napísané, $(1 + u)(1 + v)d = 50$. Nájdime preto všetky rozklady čísla 50 na súčin troch prirodzených čísel $d, u+1, v+1$, z~ktorých posledné dve sú väčšie ako 1. Bez ujmy na všeobecnosti môžeme predpokladať, že $a \leq b$, tj. $u \leq v$. Dostaneme nasledujúce možnosti.
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+$d$ & $u+1$ & $v+1$ & $u$ & $v$ & $a$ & $b$\\
+\hline
+1 & 2 & 25 & 1 & 24 & 1 & 24 \\
+1 & 5 & 10 & 4 & 9 & 4 & 9\\
+2 & 5 & 5 & 4 & 4 & 8 & 8 \\
+5 & 2 & 5 & 1 & 4 & 5 & 20\\
+\hline
+\end{tabular}
+\end{center}
+V~prípade $d=2$ dostaneme $u=v=4$, to je však spor s~tým, že $u$ a $v$ sú nesúdeliteľné. Preto má úloha práve tri riešenia. \\
+\\
+\kom Úloha okrem vhodného zapísania čísel $a$, $b$ a $[a,b]$ vyžaduje ešte vhodnú úpravu rovnosti zo zadania, opäť tak kombinuje algebraické poznatky s~poznatkami z~oblasti teórie čísel.\\
+\\
+}

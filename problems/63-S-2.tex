@@ -1,0 +1,32 @@
+\problem{63-S-2}{
+Čísla 1, 2, \ldots , 10 rozdeľte na dve skupiny tak, aby najmenší spoločný násobok súčinu všetkých čísel prvej skupiny a súčinu všetkých čísel druhej skupiny bol čo najmenší.
+}{
+\rieh Pre uvažované súčiny $a$ a $b$ určite platí $a \cdot b = 1 \cdot 2 \cdot \ldots \cdot 10 = 2^8 \cdot 3^4 \cdot 5^2 \cdot 7$. Aspoň jedno z~čísel $a, b$ je preto deliteľné $2^4$, aspoň jedno deliteľné $3^2$, aspoň jedno deliteľné 5 a práve jedno deliteľné 7. Pre najmenší spoločný násobok $n$ čísel $a, b$ preto platí $n \geq 2^4 \cdot 3^2 \cdot 5 \cdot 7 = 5 040$, pritom rovnosť tu nastane práve vtedy, keď ani jedno z~čísel $a$, $b$ nebude deliteľné žiadnym z~čísel $2^5, 3^3$ a $5^2$.
+
+Ak zvolíme napríklad $a = 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 = 720$ a $b = 1 \cdot 7 \cdot 8 \cdot 9 \cdot 10 = 5040$, bude najmenší spoločný násobok oboch čísel práve $5040$. Tým je ukázané, že $5040$ je naozaj najmenšia zo všetkých možných hodnôt $n$.
+
+I~keď bolo úlohou nájsť iba jeden príklad, pre úplnosť uvedieme všetky rozdelenia s~minimálnou hodnotou $n = 5040$:
+\begin{center}
+\begin{tabular}{c c}
+\hline
+Prvá skupina čísel & Druhá skupina čísel \\
+\hline
+2, 3, 4, 5, 6 &1, 7, 8, 9, 10\\
+3, 5, 6, 8 & 1, 2, 4, 7, 9, 10\\
+2, 5, 8, 9 & 1, 3, 4, 6, 7, 10\\
+1, 2, 3, 4, 5, 6 & 7, 8, 9, 10\\
+1, 3, 5, 6, 8 & 2, 4, 7, 9, 10\\
+1, 2, 5, 8, 9 & 3, 4, 6, 7, 10\\
+2, 3, 4, 5, 6, 7 & 1, 8, 9, 10\\
+3, 5, 6, 7, 8 & 1, 2, 4, 9, 10\\
+2, 5, 7, 8, 9 & 1, 3, 4, 6, 10\\
+1, 2, 3, 4, 5, 6, 7 & 8, 9, 10\\
+1, 3, 5, 6, 7, 8 & 2, 4, 9, 10\\
+1, 2, 5, 7, 8, 9 & 3, 4, 6, 10
+\end{tabular}
+\end{center}
+
+Nájsť ich nie je ťažké, keď si uvedomíme, že čísla 1 a 7 môžeme dať do ľubovoľnej z~oboch skupín, zatiaľ čo v~tej istej skupine spolu nemôžu byť 4 s~8, 5 s~10, 3 s~9 ani 6 s~9; s~8 spolu môže byť práve jedno z~párnych čísel 2, 6 a 10. Získame tak iba tri základné rozdelenia (prvé tri riadky tabuľky), z~ktorých možno každé štyrmi spôsobmi doplniť číslami 1 a 7.\\
+\\
+\textit{Poznámka}. Úlohu možno vyriešiť aj bez výpočtu súčinu $a \cdot b$. Deliteľnosť $n$ číslami $3^2, 5$ a 7 vyplýva z~ich priameho zastúpenia medzi rozdeľovanými číslami, deliteľnosť číslom $2^4$ z~jednoduchej úvahy o~rozdelení všetkých piatich párnych čísel: ak nie je číslo 8 vo svojej skupine ako párne jediné, je všetko jasné, v~opačnom prípade sú v~rovnakej skupine čísla 2, 4 a 6 (aj 10, ale to už ani nepotrebujeme).\\
+}

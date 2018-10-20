@@ -1,0 +1,20 @@
+\problem{57-II-4}{
+Nájdite všetky trojice celých čísel $x, y, z$, pre ktoré platí
+$$x+y\sqrt{3}+z\sqrt{7}=y+z\sqrt{3}+x\sqrt{7}. $$
+}{
+\rieh Rovnicu prepíšeme na tvar
+$$x-y=(z-y)\sqrt{3}+(x-z)\sqrt{7}$$
+a umocníme. Po jednoduchej úprave dostaneme
+$$(x - y)^2 - 3(z - y)^2 - 7(x - z)^2 = 2(x - z)(z - y)\sqrt{21}. \ \ \ \ \ \ \ (1)$$
+Pre $x \neq z$ a $y \neq z$ nemôže rovnosť (1) platiť, pretože jej pravá strana je v~takom prípade číslo iracionálne, zatiaľ čo ľavá strana je číslo celé. Rovnosť teda môže nastať, len keď
+$x = z$ alebo $y = z$.
+
+V~prvom prípade po dosadení $x = z$ do pôvodnej rovnice dostaneme $z-y =\sqrt{3}(z- y)$. Odtiaľ $z = y = x$.
+
+V~druhom prípade, keď $y = z$, dôjdeme analogicky k~rovnakému výsledku.
+
+\textit{Záver.} Riešením danej rovnice sú všetky trojice $(x, y, z) = (k, k, k)$, kde $k$ je ľubovoľné celé číslo.\\
+\\
+\kom Aj napriek tomu, že vzorové riešenie úlohy vyzerá zrozumiteľne, úloha riešiteľov krajských kôl potrápila (bola najhoršie hodnotenou úlohou daného krajského kola). Záludnosti sa ukrývajú vo vytyčovaní iracionálnych čísel a nie neznámych, vhodnej úprave rovnice a diskusii o~(i)racionalite oboch strán rovnice. \\
+\\
+}

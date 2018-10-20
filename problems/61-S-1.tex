@@ -1,0 +1,31 @@
+\problem{61-S-1}{
+Nájdite všetky dvojice prirodzených čísel $a, b$, pre ktoré platí rovnosť množín
+$$\{a \cdot [a, b], b \cdot (a, b)\} = \{45, 180\}.$$
+}{
+\rieh Z~danej rovnosti vyplýva, že číslo $b$ je nepárne (inak by obe čísla naľavo boli párne), a teda číslo $a$ je párne (inak by obe čísla naľavo boli nepárne). Rovnosť množín preto musí byť splnená nasledovne:
+$$a \cdot [a, b] = 180 \ \ \ \text{a} \ \ \  b \cdot (a, b) = 45. \ \ \ (1)$$
+Keďže číslo $a$ delí číslo $[a, b]$, je číslo $180 = 2^2 \cdot3^2 \cdot 5$ deliteľné druhou mocninou (párneho) čísla $a$, takže musí platiť buď $a = 2$, alebo $a = 6$.
+
+V~prípade $a = 2$ (vzhľadom na to, že $b$ je nepárne) platí
+$$a \cdot [a, b] = 2 \cdot [2, b] = 2 \cdot 2b = 4b,$$
+čo znamená, že prvá rovnosť v~(1) je splnená jedine pre $b = 45$. Vtedy $b \cdot (a, b) = 45 \cdot (2, 45) = 45$, takže je splnená aj druhá rovnosť v~(1), a preto dvojica $a = 2, b = 45$ je riešením úlohy.
+
+V~prípade $a = 6$ podobne dostaneme
+$$a \cdot [a, b] = 6 \cdot [6, b] = 6 \cdot 2 \cdot [3, b] = 12 \cdot [3, b],$$
+čo znamená, že prvá rovnosť v~(1) je splnená práve vtedy, keď $[3, b] = 15$. Tomu vyhovujú jedine hodnoty $b = 5$ a $b = 15$. Z~nich však iba hodnota $b = 15$ spĺňa druhú rovnosť v~(1), ktorá je teraz v~tvare $b\cdot(6, b) = 45$. Druhým riešením úlohy je teda dvojica $a = 6$, $b = 15$, žiadne ďalšie riešenia neexistujú.\\
+\textit{Záver}. Hľadané dvojice sú dve, a to $a = 2, b = 45$ a $a = 6, b = 15$.\\
+\\
+\textbf{Iné riešenie.} Označme $d = (a, b)$. Potom $a = ud$ a $b = vd$, pričom $u, v$ sú nesúdeliteľné prirodzené čísla, takže $[a, b] = uvd$. Z~rovností
+$$a \cdot [a, b] = ud \cdot uvd = u^2vd^2 \ \ \ \text{a} \ \ \ \ b \cdot (a, b) = vd \cdot d = vd^2$$
+vidíme, že číslo $a \cdot [a, b]$ je $u^2$-násobkom čísla $b \cdot (a, b)$, takže zadaná rovnosť množín môže byť splnená jedine tak, ako sme zapísali vzťahmi (1) v~prvom riešení. Tie teraz môžeme vyjadriť rovnosťami
+$$u^2vd^2= 180 \ \ \  \text{a} \ \ \ \ vd^2= 45.$$
+Preto platí $u^2 =180/45= 4$, čiže $u = 2$. Z~rovnosti $vd^2 = 45 = 3^2 \cdot 5$ vyplýva, že buď $d = 1$ (a $v = 45$), alebo $d = 3$ (a $v = 5$). V~prvom prípade $a = ud = 2 \cdot 1 = 2$ a $b = vd = 45 \cdot 1 = 45$, v~druhom $a = ud = 2 \cdot 3 = 6$ a $b = vd = 5 \cdot 3 = 15$.\\
+\\
+\textit{Poznámka}. Keďže zo zadanej rovnosti okamžite vyplýva, že obe čísla $a, b$ sú deliteľmi čísla 180 (takým deliteľom je dokonca aj ich najmenší spoločný násobok $[a, b]$), je možné úlohu vyriešiť rôznymi inými cestami, založenými na testovaní konečného počtu dvojíc konkrétnych čísel $a$ a $b$. Takýto postup urýchlime, keď vopred zistíme niektoré nutné podmienky, ktoré musia čísla $a, b$ spĺňať. Napríklad spresnenie rovnosti množín na dvojicu rovností (1) možno (aj bez použitia úvahy o~parite čísel $a, b$) vysvetliť všeobecným postrehom: súčin $a \cdot [a, b]$ je vždy deliteľný súčinom $b \cdot (a, b)$, pretože ich
+podiel možno zapísať v~tvare
+$$ \frac{a \cdot [a, b]}{b \cdot (a, b)}=\frac{a}{(a, b)}\cdot\frac{[a, b]}{b},$$
+teda ako súčin dvoch \textit{celých} čísel.\\
+\\
+\kom Úloha je zložitejšia ako predchádzajúce, dá sa však riešiť mnohými spôsobmi a bude iste zaujímavé vidieť rôzne študentské riešenia. Je taktiež vhodným miestom na to, aby sme študentov nechali diskutovať o~prístupoch medzi sebou a prípadne skúšali hľadať slabiny jednotlivých zdôvodnení. Určite považujeme za vhodné zmieniť poslednú rovnosť z~poznámky, keďže ide o~zaujímavý postreh a metóda vhodného zapísania tvaru zlomku je užitočná nielen tu. Na túto úlohu nadväzuje komplexnejšia domáca práca, ktorá však vychádza z~veľmi podobného princípu.\\
+\\
+}

@@ -1,0 +1,19 @@
+\problem{58-I-6}{
+Dokážte, že pre ľubovoľné rôzne kladné čísla $a, b$ platí
+$$\frac{a+b}{2}<\frac{2(a^2 + ab + b^2 )}{3(a+b)}<\sqrt{\frac{a^2+b^2}{2}}.$$
+}{
+\rieh Ľavú nerovnosť dokážeme ekvivalentnými úpravami:
+\begin{align*}
+\frac{a+b}{2}&<\frac{2(a^2 + ab + b^2 )}{3(a+b)}, \ \ | \cdot 6(a+b)\\
+3(a+b)^2&<4(a^2+ab+b^2),\\
+0&<(a-b)^2.
+\end{align*}
+Posledná nerovnosť vzhľadom na predpoklad $a\neq b$ platí. Aj pravú nerovnosť zo zadania budeme ekvivalentne upravovať, začneme umocnením každej strany na druhú:
+\begin{align*}
+\frac{4(a^2 + ab + b^2 )^2}{9(a + b)^2}&<\frac{a^2 + b^2}{2}, \ \ | \cdot 18(a + b)^2\\
+8(a^2 + ab + b^2 )^2 &< 9(a^2 + b^2 )(a + b)^2,\\
+8(a^4 + b^4 + 2a^3 b + 2ab^3 + 3a^2 b^2 ) &< 9(a^4 + b^4 + 2a^3 b + 2ab^3 + 2a^2 b^2 ),\\
+6a^2 b^2 &< a^4 + b^4 + 2a^3 b + 2ab^3.
+\end{align*}
+Posledná nerovnosť je súčtom nerovností $2a^2 b^2 < a^4 + b^4$ a $4a^2 b^2 < 2a^3 b + 2ab^3$, ktoré obe platia, lebo po presune členov z~ľavých strán na pravé dostaneme po rozklade už zrejmé nerovnosti $0 < (a^2- b^2)^2$, resp. $0 < 2ab(a - b)^2$.
+}

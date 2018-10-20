@@ -1,0 +1,8 @@
+\problem{65-I-1-D2 resp. 55-C-II-4}{
+Nájdite všetky dvojice prvočísel $p$ a $q$, pre ktoré platí $p + q^2= q + 145p^2$.
+}{
+\rieh Pre prvočísla $p, q$ má platiť $q(q - 1) = p(145p -1)$, takže prvočíslo $p$ delí $q(q -1)$. Prvočíslo $p$ nemôže deliť prvočíslo $q$, pretože to by znamenalo, že $p = q$, a teda $145p = p$, čo nie je možné. Preto $p$ delí $q-1$,  t.\,j. $q - 1 = kp$ pre nejaké prirodzené $k$. Po dosadení do daného vzťahu dostaneme podmienku $$p=\frac{k+1}{145-k^2}.$$ Vidíme, že menovateľ zlomku na pravej strane je kladný jedine pre $k \leq 12$, zároveň však pre $k \leq 11$ je jeho čitateľ menší ako menovateľ: $k + 1 \leq 12 < 24 \leq 145 k^2$. Iba pre $k = 12$ tak vyjde $p$ prirodzené a prvočíslo, $p = 13$. Potom $q = 157$, čo je tiež prvočíslo. Úloha má jediné riešenie.\\
+\\
+\kom Úloha opäť ukazuje, že upravenie podmienok zo zadania do vhodného tvaru, o~ktorom môžeme ďalej diskutovať, je často kľúčovým krokom v~riešení. V~tomto prípade ide o~podmienku $q=kp+1$ a následný rozbor hodnôt v~čitateli a menovateli zlomku. To by v~študentoch malo umocniť dojem, že zručné narábanie s~algebraickými výrazmi nájde svoje široké uplatnenie.\\
+\\
+}

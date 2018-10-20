@@ -1,0 +1,43 @@
+\problem{61-I-5}{
+Daný je rovnoramenný trojuholník so základňou dĺžky $a$ a ramenami dĺžky $b$. Pomocou nich vyjadrite polomer $R$ kružnice opísanej a polomer $r$ kružnice vpísanej tomuto trojuholníku. Potom ukážte, že platí $R \geq 2r$ a zistite, kedy nastane rovnosť.
+}{
+\rieh Označme $S$ stred základne $BC$ daného rovnoramenného trojuholníka $ABC$, $O$ stred jeho opísanej kružnice, $M$ stred vpísanej kružnice a $P$ pätu kolmice z~bodu $M$ na rameno $AC$ (obr. 3).
+\begin{center}
+\includegraphics{images/61D5\imagesuffix}
+
+Obr. 3
+\end{center}
+Z~pravouhlého trojuholníka $BSA$ pomocou Pytagorovej vety vyjadríme veľkosť $v$ výšky $AS$, pričom v~pravouhlom trojuholníku $BSO$ s~preponou dĺžky $R$ pre odvesnu $OS$ platí $|OS| =||AS|-|AO|| = |v-R|$ (musíme si uvedomiť, že v~tupouhlom trojuholníku $ABC$ bude bod $S$ ležať medzi bodmi $A$ a $O$!). Dostávame tak dve rovnosti
+\begin{align*}
+v^2 &= b^2 -\frac{a^2}{4},\\
+R^2 &= \frac{a^2}{4}+ (v~-R)^2;
+\end{align*}
+ich sčítaním vyjde
+$$v^2+ R^2= b^2 + (v~- R)^2,\ \ \ \ \text{čiže} \ \ \ \  b^2= 2vR.$$
+Dosadením z~prvej rovnice $v =\frac{1}{2}\sqrt{4b^2- a^2}$ do poslednej rovnosti dostaneme hľadaný vzorec pre $R$.
+
+Dodajme, že rovnosť $b^2 = 2vR$, ktorú sme práve odvodili a z~ktorej už ľahko vyplýva vzorec pre polomer $R$, je Euklidovou vetou o~odvesne $AB$ pravouhlého trojuholníka $ABA'$ s~preponou $AA'$, ktorá je priemerom kružnice opísanej trojuholníku $ABC$ (obr. 3).
+
+Nájdený vzorec pre polomer $R$ zapíšeme prehľadne spolu s~druhým hľadaným vzorcom pre polomer $r$, ktorého odvodeniu sa ešte len budeme venovať:
+$$R =\frac{\sqrt{b^2}}{\sqrt{4b^2 - a^2}}\ \ \ \ \text{a}\ \ \ \  r = \frac{a\sqrt{4b^2-a^2}}{2(a+2b)}.\ \ \ \  (\ast)$$
+Druhý zo vzorcov ($\ast$) sa dá získať okamžite zo známeho vzťahu $r = 2S/(a + b + c)$ pre polomer $r$ kružnice vpísanej do trojuholníka so stranami $a$, $b$, $c$ a obsahom $S$;
+v~našom prípade stačí len dosadiť $b = c$ a $2S = av$, kde $v = \frac{1}{2}\sqrt{4b^2 - a^2}$ podľa úvodnej časti riešenia.
+
+Ďalšie dva spôsoby odvodenia druhého zo vzorcov ($\ast$) založíme na úvahe o~pravouhlom trojuholníku $AMP$, ktorého strany majú dĺžky
+$$|AM| = v~-r, \ \ \ \ |MP| = r, \ \ \ \ |AP| = |AC| - |PC| = b - |SC| = b - \frac{a}{2}.$$
+Pre tento trojuholník môžeme napísať Pytagorovu vetu alebo využiť jeho podobnosť s~trojuholníkom $ACS$, konkrétne zapísať rovnosť sínusov ich spoločného uhla pri vrchole $A$. Podľa toho dostaneme rovnice
+$$(v - r)^2= r^2+\big(b -\frac{a}{2}\big)^2, \ \ \ \ \text{resp.} \ \ \ \ \frac{r}{v-r}=  \frac{\frac{1}{2}a}{b},$$
+ktoré sú obidve lineárne vzhľadom na neznámu $r$ a majú riešenie
+$$r = \frac{v}{2}-\frac{1}{2v}\cdot \big( b - \frac{a}{2} \big)^2, \ \ \ \ \text{resp.}\ \ \ \  r=
+\frac{av}{a+2b}.$$
+Po dosadení za $v$ v~oboch prípadoch dostaneme hľadaný vzorec pre $r$. V~druhom prípade
+je to zrejmé, v~prvom to ukážeme:
+$$r =\frac{v}{2}  - \frac{1}{2v} \cdot \big(b \frac{a}{2}\big)^2= \frac{v^2 - b^2 + ab \frac{1}{4}a^2}{2v}=\frac{2ab - a^2}{4v}=\frac{a(2b - a)}{2\sqrt{(2b -a)(2b + a)}}=\frac{2\sqrt{2b-a}}{2\sqrt{2b-a}}= \\ =\frac{a \sqrt{4b^2 -a^2}}{2(a + 2b)}.$$
+
+Ešte ostáva dokázať nerovnosť $R \geq 2r$. Využijeme na to odvodené vzorce ($\ast$), z~ktorých dostávame (pripomíname, že $2b > a > 0$)
+$$ \frac{R}{2r}= R \cdot \frac{1}{2r}=\frac{b^2}{\sqrt{4b^2-a^2}}\cdot \frac{a+2b}{a \sqrt{4b^2-a^2}}=\frac{b^2}{a(2b-a)}.$$
+Nerovnosť $R \geq 2r$ teda platí práve vtedy, keď $b^2\geq a(2b -a)$. Posledná nerovnosť je však ekvivalentná s~nerovnosťou $(a - b)^2\geq 0$, ktorej platnosť je už zrejmá. Tým je dôkaz nerovnosti $R \geq 2r$ hotový. Navyše vidíme, že rovnosť v~nej nastane jedine v~prípade, keď $(a - b)^2 = 0$, čiže $a = b$, teda práve vtedy, keď je pôvodný trojuholník nielen rovnoramenný, ale dokonca rovnostranný.\\
+\\
+\kom Úloha poskytuje mnoho prístupov k~riešeniu a bude zaujímavé nechať študentov porovnať ich výsledky. Spája tiež zistenia z~predchádzajúcich úloh, v~niektorých prípadoch študenti využijú Euklidovu vetu a nezaobídu sa ani bez zručnej manipulácie s~algebraickými výrazmi. \\
+\\
+}

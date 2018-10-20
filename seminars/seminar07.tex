@@ -9,231 +9,36 @@ Teória čísel II -- úlohy o~najmenšom spoločnom násobku a najväčšom spo
 Zoznámiť sa s~metódami riešenia príkladov o~spoločných deliteľoch a násobkoch, upevniť znalosti zo seminára predchádzajúceho.
 
 \subsection*{Úlohy a riešenia}
-\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{7.1} [61-I-3-N1] Určte, pre ktoré prirodzené čísla $a, b$ platí $(a, b) = 10$ a zároveň  $[a, b] = 150$.
 
-\end{tcolorbox}
+\input{problems/61-I-3-N1.tex}
 
-\rieh Pretože $10 = 2 \cdot 5$ a $150 = 2 \cdot 3 \cdot 5^2$, požadované rovnosti sú splnené práve vtedy, keď $a = 2 \cdot 3^s \cdot 5^t$ a $b = 2 \cdot 3^u \cdot 5^v$, kde $\{s, u\} = \{0, 1\}$ a $\{t, v\} = \{1, 2\}$. Riešením je teda jedna zo štvoríc $\{a, b\} = \{10, 150\}$ alebo $\{a, b\} = \{30, 50\}$.\\
-\\
-\kom Úloha je relatívne jednoduchá a nevyžaduje žiadne špeciálne znalosti, zároveň však nie je triviálna. Tvorí tak príjemné preklenutie medzi školskými a olympiádnymi príkladmi.\\
-\\
-\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{7.2} [69-I-5-N1] Nech $d$ je najväčší spoločný deliteľ prirodzených čísel $a$ a $b$. Ukážte, že čísla $a/d$ a $b/d$ sú celé a nesúdeliteľné.
+\input{problems/69-I-5-N1.tex}
 
-\end{tcolorbox}
+\input{problems/60-I-5-N2.tex}
 
-\rie Ak je $d$ najväčším spoločným deliteľom čísel $a$ a $b$, potom existujú prirodzené čísla $u$ a $v$ také, že $a=ud$ a $b=vd$, čím sme dokázali prvú časť tvrdenia. Druhú dokážeme sporom. Predpokladajme, že $a/d$ a $b/d$ nie sú nesúdeliteľné. Potom existuje ich najväčší spoločný deliteľ $d_1$. Číslo $d_1$ však potom delí aj čísla $a$ a $b$, čo je spor s~predpokladom, že $d=(a,b)$.\\
-\\
-\kom Táto mini-úloha je prípravným krokom k~nasledujúcemu všeobecnejšiemu tvrdeniu a zároveň môže pripomenúť použitie dôkazu sporom.\\
-\\
-\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{7.3} [60-I-5-N2] Dokážte, že pre ľubovoľné prirodzené čísla $a, b$ platí vzťah $$[a, b] \cdot (a, b) = ab.$$
+\input{problems/64-I-5-N4.tex}
 
-\end{tcolorbox}
+\input{problems/64-I-5-N5.tex}
 
-\rie Nech $d = (a, b)$, potom $a = ud$, $b = vd$ pre nesúdeliteľné $u$ a $v$, a teda $[a, b] = uvd$. Porovnaním ľavej a pravej strany dokazovanej nerovnosti dostávame $uvd\cdot d = ud\cdot vd$, čo je pravdivé tvrdenie, teda vzťah je dokázaný.
+\input{problems/61-I-3-N4.tex}
 
-Alternatívne môžeme vzťah dokázať úvahou o~exponentoch prvočísel, z~ktorých sú čísla $a$ a $b$ zložené. Nech $a=p_1^{\alpha_1}\cdot p_2^{\alpha_2} \cdots p_k^{\alpha_k}$ a $b=p_1^{\beta_1}\cdot p_2^{\beta_2} \cdots p_k^{\beta_k}$, kde $p_1$ až $p_k$ sú prvočísla a $\alpha_k, \beta_k$ prirodzené čísla. Potom
-\vspace{-25pt}
-\begin{center}
-\begin{align*}
-(a,b) &=p_1^{\min\{\alpha_1, \beta_1\}}\cdot p_2^{\min\{\alpha_2, \beta_2\}}\cdots p_k^{\min\{\alpha_k, \beta_k\}},\\
-[a,b] &=p_1^{\max\{\alpha_1, \beta_1\}}\cdot p_2^{\max\{\alpha_2, \beta_2\}}\cdots p_k^{\max\{\alpha_k, \beta_k\}},\\
-ab &=p_1^{\alpha_1+\beta_1}\cdot p_2^{\alpha_2+\beta_2}\cdots p_k^{\alpha_k, \beta_k}.
-\end{align*}
-\end{center}
-Keďže pre akékoľvek čísla $\alpha, \beta$ platí $\max\{\alpha, \beta\}+\min\{\alpha, \beta\}=\alpha+\beta$, a to vo všetkých prípadoch $\alpha < \beta$, $\alpha = \beta$, $\alpha > \beta$, je naše tvrdenie dokázané.\\
-\\
-\kom Predchádzajúce tvrdenie je stavebným kameňom mnohých úloh o~spoločných násobkoch a deliteľoch, najmä myšlienka zápisu prirodzených čísel $a$ a $b$ v~tvare $a=ud$ a $b=vd$, kde $u$ a $v$ sú prirodzené čísla také, že $(u,v)=1$ a $d=(a,b)$ nájde uplatnenie veľmi často. \\
-\\
-\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{7.4} [64-I-5-N4] Platí pre každé tri prirodzené čísla $a, b, c$ a ich najväčší spoločný deliteľ $d$ a ich najmenší spoločný násobok $n$ rovnosť $abc = nd$?
+\input{problems/61-S-1.tex}
 
-\end{tcolorbox}
+\input{problems/64-I-5.tex}
 
-\rie Neplatí, uvedieme protipríklad. Napríklad pre čísla $15, 18$ a $24$ je $d=(15,18,24)=3$, $n=[15, 18, 24]=360$. Ďalej $15\cdot 18 \cdot 24 =6480$ a $(15,18,24)\cdot[15, 18, 24]=3\cdot 360=1080$, to však nie sú rovnaké čísla a tvrdenie neplatí. \\
-\\
-\kom Všeobecnejší pohľad na predchádzajúci problém by sme dostali skrz pohľad na exponenty prvočísel, z~ktorých sú čísla $a, b, c$ zložené. Dokazovaná rovnosť nastane len v~prípade, že sú všetky tri čísla navzájom po dvoch nesúdeliteľné.
+\input{problems/60-I-5-D3.tex}
 
-Zároveň úloha demonštruje riešenie uvedením protipríkladu, čo je princíp, s~ktorým sme sa v~seminároch zatiaľ nestretli a jeho spomenutie je určite vhodné.\\
-\\
-\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{7.5} [64-I-5-N5] Ak majú prirodzené čísla $a, b$ najväčšieho spoločného deliteľa $d$, majú rovnakého najväčšieho spoločného deliteľa aj čísla $a$, $b$, $a - b$, $a + b$. Dokážte. Platí rovnaké tvrdenie pre najmenší spoločný násobok?
+\input{problems/60-I-5.tex}
 
-\end{tcolorbox}
 
-\rie Najväčší spoločný deliteľ týchto štyroch čísel nebude určite väčší ako $d$ (ak by bol, potom by $d$ nebol najväčší spoločný deliteľ čísel $a$ a $b$, čo by bolo v~spore s~predpokladom úlohy). Stačí teda ukázať, že $d$ delí $a+b$ a $a-b$. Ak zapíšeme $a$ a $b$ v~tvare $a=ud$ a $b=vd$, pričom pre prirodzené čísla $u$, $v$ platí $(u,v)=1$, bude potom $a+b=ud+vd=(u+v)d$, $a-b=ud-vd=(u-v)d$. Vidíme, že $d$ delí súčet aj rozdiel čísel $a$ a $b$, tvrdenie je teda dokázané.
-
-Tvrdenie pre najmenší spoločný násobok neplatí, uvedieme protipríklad. Pre čísla $a=12$, $b=8$, $a+b=20$, $a-b=4$, $[12,8]=24$, avšak $[12,8,20,4]=120$.\\
-\\
-\kom Úloha precvičuje dôkaz všeobecného tvrdenia a opäť prináša protipríklad ako dostatočný argument.\\
-\\
-\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{7.6} [61-I-3-N4, resp. 50-C-II-1] Nájdite všetky dvojice prirodzených čísel $a, b$, pre ktoré platí $a+b+[a, b]+(a, b) = 50$.
-
-\end{tcolorbox}
-
-\rieh Položme $a = ud$, $b = vd$, kde $d$ je najväčší spoločný deliteľ čísel $a, b$, prirodzené čísla $u, v$ sú nesúdeliteľné a $[a,b]=uvd$. Podľa zadania má platiť $ud+vd+uvd+d= 50$. Inak napísané, $(1 + u)(1 + v)d = 50$. Nájdime preto všetky rozklady čísla 50 na súčin troch prirodzených čísel $d, u+1, v+1$, z~ktorých posledné dve sú väčšie ako 1. Bez ujmy na všeobecnosti môžeme predpokladať, že $a \leq b$, tj. $u \leq v$. Dostaneme nasledujúce možnosti.
-\begin{center}
-\begin{tabular}{|c|c|c|c|c|c|c|}
-\hline
-$d$ & $u+1$ & $v+1$ & $u$ & $v$ & $a$ & $b$\\
-\hline
-1 & 2 & 25 & 1 & 24 & 1 & 24 \\
-1 & 5 & 10 & 4 & 9 & 4 & 9\\
-2 & 5 & 5 & 4 & 4 & 8 & 8 \\
-5 & 2 & 5 & 1 & 4 & 5 & 20\\
-\hline
-\end{tabular}
-\end{center}
-V~prípade $d=2$ dostaneme $u=v=4$, to je však spor s~tým, že $u$ a $v$ sú nesúdeliteľné. Preto má úloha práve tri riešenia. \\
-\\
-\kom Úloha okrem vhodného zapísania čísel $a$, $b$ a $[a,b]$ vyžaduje ešte vhodnú úpravu rovnosti zo zadania, opäť tak kombinuje algebraické poznatky s~poznatkami z~oblasti teórie čísel.\\
-\\
-\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{7.7} [61-S-1]
-Nájdite všetky dvojice prirodzených čísel $a, b$, pre ktoré platí rovnosť množín
-$$\{a \cdot [a, b], b \cdot (a, b)\} = \{45, 180\}.$$
-
-\end{tcolorbox}
-
-\rieh Z~danej rovnosti vyplýva, že číslo $b$ je nepárne (inak by obe čísla naľavo boli párne), a teda číslo $a$ je párne (inak by obe čísla naľavo boli nepárne). Rovnosť množín preto musí byť splnená nasledovne:
-$$a \cdot [a, b] = 180 \ \ \ \text{a} \ \ \  b \cdot (a, b) = 45. \ \ \ (1)$$
-Keďže číslo $a$ delí číslo $[a, b]$, je číslo $180 = 2^2 \cdot3^2 \cdot 5$ deliteľné druhou mocninou (párneho) čísla $a$, takže musí platiť buď $a = 2$, alebo $a = 6$.
-
-V~prípade $a = 2$ (vzhľadom na to, že $b$ je nepárne) platí
-$$a \cdot [a, b] = 2 \cdot [2, b] = 2 \cdot 2b = 4b,$$
-čo znamená, že prvá rovnosť v~(1) je splnená jedine pre $b = 45$. Vtedy $b \cdot (a, b) = 45 \cdot (2, 45) = 45$, takže je splnená aj druhá rovnosť v~(1), a preto dvojica $a = 2, b = 45$ je riešením úlohy.
-
-V~prípade $a = 6$ podobne dostaneme
-$$a \cdot [a, b] = 6 \cdot [6, b] = 6 \cdot 2 \cdot [3, b] = 12 \cdot [3, b],$$
-čo znamená, že prvá rovnosť v~(1) je splnená práve vtedy, keď $[3, b] = 15$. Tomu vyhovujú jedine hodnoty $b = 5$ a $b = 15$. Z~nich však iba hodnota $b = 15$ spĺňa druhú rovnosť v~(1), ktorá je teraz v~tvare $b\cdot(6, b) = 45$. Druhým riešením úlohy je teda dvojica $a = 6$, $b = 15$, žiadne ďalšie riešenia neexistujú.\\
-\textit{Záver}. Hľadané dvojice sú dve, a to $a = 2, b = 45$ a $a = 6, b = 15$.\\
-\\
-\textbf{Iné riešenie.} Označme $d = (a, b)$. Potom $a = ud$ a $b = vd$, pričom $u, v$ sú nesúdeliteľné prirodzené čísla, takže $[a, b] = uvd$. Z~rovností
-$$a \cdot [a, b] = ud \cdot uvd = u^2vd^2 \ \ \ \text{a} \ \ \ \ b \cdot (a, b) = vd \cdot d = vd^2$$
-vidíme, že číslo $a \cdot [a, b]$ je $u^2$-násobkom čísla $b \cdot (a, b)$, takže zadaná rovnosť množín môže byť splnená jedine tak, ako sme zapísali vzťahmi (1) v~prvom riešení. Tie teraz môžeme vyjadriť rovnosťami
-$$u^2vd^2= 180 \ \ \  \text{a} \ \ \ \ vd^2= 45.$$
-Preto platí $u^2 =180/45= 4$, čiže $u = 2$. Z~rovnosti $vd^2 = 45 = 3^2 \cdot 5$ vyplýva, že buď $d = 1$ (a $v = 45$), alebo $d = 3$ (a $v = 5$). V~prvom prípade $a = ud = 2 \cdot 1 = 2$ a $b = vd = 45 \cdot 1 = 45$, v~druhom $a = ud = 2 \cdot 3 = 6$ a $b = vd = 5 \cdot 3 = 15$.\\
-\\
-\textit{Poznámka}. Keďže zo zadanej rovnosti okamžite vyplýva, že obe čísla $a, b$ sú deliteľmi čísla 180 (takým deliteľom je dokonca aj ich najmenší spoločný násobok $[a, b]$), je možné úlohu vyriešiť rôznymi inými cestami, založenými na testovaní konečného počtu dvojíc konkrétnych čísel $a$ a $b$. Takýto postup urýchlime, keď vopred zistíme niektoré nutné podmienky, ktoré musia čísla $a, b$ spĺňať. Napríklad spresnenie rovnosti množín na dvojicu rovností (1) možno (aj bez použitia úvahy o~parite čísel $a, b$) vysvetliť všeobecným postrehom: súčin $a \cdot [a, b]$ je vždy deliteľný súčinom $b \cdot (a, b)$, pretože ich
-podiel možno zapísať v~tvare
-$$ \frac{a \cdot [a, b]}{b \cdot (a, b)}=\frac{a}{(a, b)}\cdot\frac{[a, b]}{b},$$
-teda ako súčin dvoch \textit{celých} čísel.\\
-\\
-\kom Úloha je zložitejšia ako predchádzajúce, dá sa však riešiť mnohými spôsobmi a bude iste zaujímavé vidieť rôzne študentské riešenia. Je taktiež vhodným miestom na to, aby sme študentov nechali diskutovať o~prístupoch medzi sebou a prípadne skúšali hľadať slabiny jednotlivých zdôvodnení. Určite považujeme za vhodné zmieniť poslednú rovnosť z~poznámky, keďže ide o~zaujímavý postreh a metóda vhodného zapísania tvaru zlomku je užitočná nielen tu. Na túto úlohu nadväzuje komplexnejšia domáca práca, ktorá však vychádza z~veľmi podobného princípu.\\
-\\
-\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{7.8} [64-I-5]
-Rozdiel dvoch prirodzených čísel je $2010$ a ich najväčší spoločný deliteľ je $2014$-krát menší ako ich najmenší spoločný násobok. Určte všetky také dvojice čísel.
-
-\end{tcolorbox}
-
-\rieh Označme hľadané čísla $a$ a $b$ $(a > b)$ a $d$ ich najväčší spoločný deliteľ. Potom $a = ud$, $b = vd$, pričom $u > v$ sú nesúdeliteľné čísla. Keďže najmenší spoločný násobok čísel $a, b$ je číslo $uvd$, dosadením do zadaných vzťahov dostaneme rovnosti
-$$ a - b = (u~- v)d = 2 010,$$
-$$uvd = 2 014d, \ \ \ \text{čiže} \ \ \  uv = 2 014.$$
-Podľa rozkladu na súčin prvočísel $2 014 = 2\cdot19\cdot53$ vypíšeme všetky možné dvojice $(u, v)$ a pre každú z~nich sa presvedčíme, či číslo $u- v$ je deliteľom čísla $2010$. V~pozitívnom prípade príslušný podiel udáva číslo $d$ a výpočet neznámych $a = ud$ a $b = vd$ je už jednoduchý:
-
-a) $u = 2 014$ a $v = 1$: $u - v~= 2 013$ nedelí 2 010;
-
-b) $u = 19 \cdot 53 = 1 007$ a $v = 2$: $u - v~= 1 005 \mid 2 010$, $d = 2$, $a = 1 007 \cdot 2 = 2 014$, $b = 2 \cdot 2 = 4$;
-
-c) $u = 2 \cdot 53 = 106$ a $v = 19$: $u - v~= 87$ nedelí 2 010;
-
-d) $u = 53$ a $v = 2 \cdot 19 = 38$: $u - v= 15 \mid 2010$, $d = 134$, $a = 53 \cdot 134 = 7 102$, $b = 38 \cdot 134 = 5 092$.
-
-\textit{Záver}. Hľadané čísla tvoria jednu z~dvojíc $(2014, 4)$ alebo $(7 102, 5 092)$.\\
-\\
-\kom Úloha neprináša žiadne nové poznatky a princípy, je však vhodná na trénovanie riešenia sústavy dvoch rovníc s~dvomi neznámymi a opäť tak vytvorí prepojenie s~minulými seminármi.\\
-\\
-\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{7.9} [60-I-5-D3] Nájdite všetky dvojice kladných celých čísel $a, b$, pre ktoré má výraz
-$$\frac{a}{b}+\frac{14b}{9a}$$
-celočíselnú hodnotu.
-
-\end{tcolorbox}
-
-\rieh Nech $d = (a, b)$, potom $a = ud$, $b = vd$ pre nesúdeliteľné prirodzené $u$ a $v$. Skúmaný výraz bude po dosadení $(9u^2+ 14v^2)/(9uv)$, takže $9u \mid 14v^2$ a z~nesúdeliteľnosti~$u$ a $v$ máme $u \mid 14$, navyše $3 \mid v$. Podobne $v \mid 9$; vyskúšame konečne veľa možností.\\
-\\
-\kom Úloha je zaujímavá tým, že prácu s~najväčším spoločným deliteľom obsahuje nepriamo a využíva tiež poznatky o~deliteľnosti z~minulého seminára.\\
-\\
-\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{7.10} [60-I-5]
-Dokážte, že najmenší spoločný násobok $[a, b]$ a najväčší spoločný deliteľ $(a, b)$ ľubovoľných dvoch kladných celých čísel $a, b$ spĺňajú nerovnosť
-$$a \cdot (a, b) + b \cdot [a, b] \geq 2ab.$$
-Zistite, kedy v~tejto nerovnosti nastane rovnosť.
-
-\end{tcolorbox}
-
-\rieh Nerovnosť by bolo ľahké dokázať, ak by niektorý z~dvoch sčítancov na ľavej strane bol sám osebe aspoň taký, ako pravá strana. Číslo $[a, b]$ je zjavne násobkom čísla $a$. Ak $[a, b] \geq 2a$, tak $b[a, b] \geq 2ab$ a v~zadanej nerovnosti platí dokonca ostrá nerovnosť, lebo číslo $a(a, b)$ je kladné. Ak $[a, b] < 2a$, tak neostáva iná možnosť ako $[a, b] = a$. To však nastane iba v~prípade, keď $b \mid a$. V~tomto prípade $(a, b) = b$ a v~zadanej nerovnosti
-nastane rovnosť.\\
-\\
-\textbf{Iné riešenie.} Označme $d = (a, b)$, takže $a = ud$ a $b = vd$ pre nesúdeliteľné prirodzené čísla $u, v$. Z~toho hneď vieme, že $[a, b] = uvd$. Keďže
-$$a \cdot (a, b) + b \cdot [a, b] = ud^2+ uv^2d^2= u(1 + v^2
-)d^2,$$
-$$2ab = 2uvd^2,$$
-je vzhľadom na $ud^2 > 0$ nerovnosť zo zadania ekvivalentná s~nerovnosťou $1 + v^2 \geq 2v$, čiže $(v - 1)^2 \geq0$, čo platí pre každé $v$. Rovnosť nastane práve vtedy, keď $v = 1$, čiže $b \mid a$.\\
-\\
-\textbf{Iné riešenie.} Označme $d = (a, b)$. Je známe, že $[a, b] \cdot (a, b) = ab$. Po vyjadrení $[a, b]$ z~tohto vzťahu, dosadení do zadanej nerovnosti a ekvivalentnej úprave dostaneme ekvivalentnú nerovnosť $d^2 + b^2 \geq 2bd$, ktorá platí, lebo $(d - b)^2 \geq 0$. Rovnosť nastáva
-pre $d = b$, čiže v~prípade $b \mid a$.\\
-\\
-\kom Na úspešné zvládnutie úlohy je opäť potrebná znalosť z~predchádzajúceho seminára o~nerovnostiach a taktiež ponúka široké spektrum prístupov, takže bude zaujímavé sledovať, ako k~nej študenti pristúpia.
 
 \subsection*{Domáca práca}
-\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{7.11} [61-I-3]
-Nájdite všetky trojice prirodzených čísel $a, b, c$, pre ktoré platí množinová rovnosť
-$$\{(a, b), (a, c), (b, c), [a, b], [a, c], [b, c]\}= \{2, 3, 5, 60, 90, 180\},$$
-pričom $(x, y)$ a $[x, y]$ označuje postupne najväčší spoločný deliteľ a najmenší spoločný násobok čísel $x$ a $y$.
 
-\end{tcolorbox}
+\input{problems/61-I-3.tex}
 
-\rieh Prvky danej množiny $M$ rozložíme na prvočinitele:
-$$M = \{2, 3, 5, 2^2 \cdot 3 \cdot 5, 2 \cdot 3^2 \cdot 5, 2^2 \cdot 3^2 \cdot 5\}.$$
-Odtiaľ vyplýva, že v~rozklade hľadaných čísel $a, b, c$ vystupujú iba prvočísla 2, 3 a 5. Každé z~nich je pritom prvočiniteľom práve dvoch z~čísel $a, b, c$: keby bolo prvočiniteľom len jedného z~nich, chýbalo by v~rozklade troch najväčších spoločných deliteľov a jedného najmenšieho spoločného násobku, teda v~štyroch číslach z~$M$; keby naopak bolo prvočiniteľom všetkých troch čísel $a, b, c$, nechýbalo by v~rozklade žiadneho čísla z~$M$. Okrem toho vidíme, že v~rozklade každého z~čísel $a, b, c$ je prvočíslo 5 najviac v~jednom exemplári.
+\input{problems/63-S-2.tex}
 
-Podľa uvedených zistení môžeme čísla $a, b, c$ usporiadať tak, že rozklady čísel $a, b$ obsahujú po jednom exemplári prvočísla 5 (potom $(c, 5) = 1$) a že $(a, 2) = 2$ (ako vieme, aspoň jedno z~čísel $a, b$ musí byť párne). Číslo 5 z~množiny $M$ je potom nutne rovné $(a, b)$, takže platí $(b, 2) = 1$, a preto $(b, 3) = 3$ (inak by platilo $(b, c) = 1$), odtiaľ zase s~ohľadom na $(a, b) = 5$ vyplýva $(a, 3) = 1$. Máme teda $a = 5 \cdot 2^s$ a $b = 5 \cdot 3^t$ pre vhodné prirodzené čísla $s$ a $t$.
 
-Z~rovnosti $[a, b] = 2^s \cdot3^t \cdot5$ vyplýva, že nastane jeden z~troch nasledujúcich prípadov.
-
-(1) $2^s \cdot 3^t \cdot 5 = 60 = 2^2 \cdot 3^1 \cdot 5$. Vidíme, že platí $s = 2$ a $t = 1$, čiže $a = 20$ a $b = 15.$ Ľahko určíme, že tretím číslom je $c = 18$.
-
-(2) $2^s \cdot 3^t \cdot 5 = 90 = 2^1 \cdot 3^2 \cdot 5$. V~tomto prípade $a = 10$, $b = 45$ a $c = 12$.
-
-(3) $2^s \cdot 3^t \cdot 5 = 180 = 2^2 \cdot 3^2 \cdot 5$. Teraz $a = 20$, $b = 45$ a $c = 6$.\\
-\textit{Záver}. Hľadané čísla $a, b, c$ tvoria jednu z~množín $\{20, 15, 18\}$, $\{10, 45, 12\}$ a $\{20, 45, 6\}$.\\
-\\
-\textbf{Iné riešenie.} V~danej rovnosti je množina napravo tvorená šiestimi rôznymi číslami väčšími ako 1, takže čísla $(a, b), (a, c), (b, c)$ musia byť netriviálnymi deliteľmi postupne čísel $[a, b], [a, c], [b, c]$. Čísla 2, 3, 5 ale žiadne netriviálne delitele nemajú, musí teda platiť
-$$\{(a, b), (a, c), (b, c)\}= \{2, 3, 5\} \ \ \ \text{a} \ \ \  \{[a, b], [a, c], [b, c]\} = \{60, 90, 180\}.$$
-Pretože poradie čísel $a, b, c$ nehrá žiadnu úlohu, môžeme predpokladať, že platí $(a, b) = 2, (a, c) = 3$ a $(b, c) = 5$. Odtiaľ vyplývajú vyjadrenia
-$$a = 2 \cdot 3 \cdot x = 6x, \ \ \ b = 2 \cdot 5 \cdot y = 10y, \ \ \ c = 3 \cdot 5 \cdot z~= 15z$$
-pre vhodné prirodzené čísla $x, y, z$. Zo známej rovnosti $[x, y]\cdot(x, y) = xy$ tak dostaneme vyjadrenia najmenších spoločných násobkov v~tvare
-$$[a, b] =\frac{6x \cdot 10y}{2}= 30xy, \ \ \ [a, c] =\frac{6x \cdot 15z}{3}= 30xz,\ \ \  [b, c] =\frac{10y \cdot 15z}{5}= 30yz.$$
-Z~rovnosti $\{30xy, 30xz, 30yz\} = \{60, 90, 180\}$ upravenej na $\{xy, xz, yz\} = \{2, 3, 6\}$ potom vďaka tomu, že 2 a 3 sú prvočísla, vyplýva $\{x, y, z\} = \{1, 2, 3\}$. Pretože z~podmienky $5 = (b, c) = (10y, 15z)$ vyplýva $y \neq 3$ a $z \neq 2$, prichádzajú do úvahy len trojice $(x, y, z)$ rovné (1, 2, 3), (2, 1, 3) a (3, 2, 1), ktorým postupne zodpovedajú trojice $(a, b, c)$ rovné (6, 20, 45), (12, 10, 45), (18, 20, 15). Skúškou sa presvedčíme, že všetky tri vyhovujú množinovej rovnosti zo zadania úlohy.\\
-\\
-\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{7.12} [63-S-2]
-Čísla 1, 2, \ldots , 10 rozdeľte na dve skupiny tak, aby najmenší spoločný násobok súčinu všetkých čísel prvej skupiny a súčinu všetkých čísel druhej skupiny bol čo najmenší.
-
-\end{tcolorbox}
-
-\rieh Pre uvažované súčiny $a$ a $b$ určite platí $a \cdot b = 1 \cdot 2 \cdot \ldots \cdot 10 = 2^8 \cdot 3^4 \cdot 5^2 \cdot 7$. Aspoň jedno z~čísel $a, b$ je preto deliteľné $2^4$, aspoň jedno deliteľné $3^2$, aspoň jedno deliteľné 5 a práve jedno deliteľné 7. Pre najmenší spoločný násobok $n$ čísel $a, b$ preto platí $n \geq 2^4 \cdot 3^2 \cdot 5 \cdot 7 = 5 040$, pritom rovnosť tu nastane práve vtedy, keď ani jedno z~čísel $a$, $b$ nebude deliteľné žiadnym z~čísel $2^5, 3^3$ a $5^2$.
-
-Ak zvolíme napríklad $a = 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 = 720$ a $b = 1 \cdot 7 \cdot 8 \cdot 9 \cdot 10 = 5040$, bude najmenší spoločný násobok oboch čísel práve $5040$. Tým je ukázané, že $5040$ je naozaj najmenšia zo všetkých možných hodnôt $n$.
-
-I~keď bolo úlohou nájsť iba jeden príklad, pre úplnosť uvedieme všetky rozdelenia s~minimálnou hodnotou $n = 5040$:
-\begin{center}
-\begin{tabular}{c c}
-\hline
-Prvá skupina čísel & Druhá skupina čísel \\
-\hline
-2, 3, 4, 5, 6 &1, 7, 8, 9, 10\\
-3, 5, 6, 8 & 1, 2, 4, 7, 9, 10\\
-2, 5, 8, 9 & 1, 3, 4, 6, 7, 10\\
-1, 2, 3, 4, 5, 6 & 7, 8, 9, 10\\
-1, 3, 5, 6, 8 & 2, 4, 7, 9, 10\\
-1, 2, 5, 8, 9 & 3, 4, 6, 7, 10\\
-2, 3, 4, 5, 6, 7 & 1, 8, 9, 10\\
-3, 5, 6, 7, 8 & 1, 2, 4, 9, 10\\
-2, 5, 7, 8, 9 & 1, 3, 4, 6, 10\\
-1, 2, 3, 4, 5, 6, 7 & 8, 9, 10\\
-1, 3, 5, 6, 7, 8 & 2, 4, 9, 10\\
-1, 2, 5, 7, 8, 9 & 3, 4, 6, 10
-\end{tabular}
-\end{center}
-
-Nájsť ich nie je ťažké, keď si uvedomíme, že čísla 1 a 7 môžeme dať do ľubovoľnej z~oboch skupín, zatiaľ čo v~tej istej skupine spolu nemôžu byť 4 s~8, 5 s~10, 3 s~9 ani 6 s~9; s~8 spolu môže byť práve jedno z~párnych čísel 2, 6 a 10. Získame tak iba tri základné rozdelenia (prvé tri riadky tabuľky), z~ktorých možno každé štyrmi spôsobmi doplniť číslami 1 a 7.\\
-\\
-\textit{Poznámka}. Úlohu možno vyriešiť aj bez výpočtu súčinu $a \cdot b$. Deliteľnosť $n$ číslami $3^2, 5$ a 7 vyplýva z~ich priameho zastúpenia medzi rozdeľovanými číslami, deliteľnosť číslom $2^4$ z~jednoduchej úvahy o~rozdelení všetkých piatich párnych čísel: ak nie je číslo 8 vo svojej skupine ako párne jediné, je všetko jasné, v~opačnom prípade sú v~rovnakej skupine čísla 2, 4 a 6 (aj 10, ale to už ani nepotrebujeme).\\
 \subsection*{Doplňujúce zdroje a materiály}
 Materiály vhodné na ďalšie počítanie nájdeme v~minulom seminári. Keďže témy sú si veľmi blízke, publikácie zvyčajne obsahujú úlohy zamerané na obe témy.
 %Prečo bol Heisenberg zlý milenec? Lebo keď našiel správnu polohu, nemal správnu rýchlosť. A keď mal energiu, nemal čas.

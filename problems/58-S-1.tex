@@ -1,0 +1,15 @@
+\problem{58-S-1}{
+Dokážte, že pre ľubovoľné nezáporné čísla $a, b, c$ platí $$(a + bc)(b + ac) \geq ab(c + 1)^2.$$
+Zistite, kedy nastane rovnosť.
+}{
+\rieh Roznásobením a ďalšími ekvivalentnými úpravami dostaneme
+\begin{align*}
+ab + b^2 c + a^2 c + abc^2 &\geq abc^2 + 2abc + ab,\\
+b^2 c + a^2 c &\geq 2abc,\\
+(a - b)^2 c &\geq 0.
+\end{align*}
+Podľa zadania platí $c \geq 0$ a druhá mocnina reálneho čísla $a-b$ je tiež nezáporná, takže je nezáporná aj ľavá strana upravenej nerovnosti. Rovnosť v~tejto (a rovnako aj v~pôvodnej nerovnosti) nastane práve vtedy, keď $a - b = 0$ alebo $c = 0$, teda práve vtedy, keď je splnená aspoň jedna z~podmienok $a = b$, $c = 0$.\\
+\\
+\kom Úloha demonštruje jeden zo základných spôsobov dokazovania nerovností: úpravu výrazu na jednej strane nerovnosti na tvar, o~ktorom s~určitosťou vieme, že je nezáporný/nekladný a jeho porovnanie s~nulou. Taktiež si študenti precvičia ekvivalentné úpravy nerovností a úpravy výrazov do tvaru súčinu.\\
+\\
+}

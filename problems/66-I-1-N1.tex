@@ -1,0 +1,22 @@
+\problem{66-I-1-N1}{
+Dokážte, že pre ľubovoľné reálne čísla $x$, $y$ a $z$ platia nerovnosti
+\begin{enumerate}[a)]
+\item $2xyz \leq x^2+ y^2z^2$,
+\item $(x^2-y^2)^2\geq 4xy(x - y)^2$.
+\end{enumerate}
+}{
+\rie a) Prevedieme výraz $2xyz$ na pravú stranu nerovnosti a upravíme pomocou vzorca $A^2-2AB-B^2=(A-B)^2$ na tvar $0 \leq (x - yz)^2$, ktorý je pravdivým výrokom, keďže druhá mocnina ľubovoľného výrazu je vždy nezáporná.\\
+
+b) Výraz z~pravej strany nerovnosti prevedieme na opačnú stranu a upravíme nasledujúcim spôsobom:
+\begin{align*}
+((x-y)(x+y))^2-4xy(x-y)^2 &\geq 0,\\
+(x-y)^2(x+y)^2-4xy(x-y)^2 &\geq 0,\\
+(x-y)^2((x+y)^2-4xy) &\geq 0,\\
+(x-y)^2(x+2xy+y^2-4xy) &\geq 0,\\
+(x-y)^4 &\geq 0.
+\end{align*}
+Posledná nerovnosť je zrejme pravdivým tvrdením a pôvodná nerovnosť je tak dokázaná.\\
+\\
+\kom Úloha neprináša žiadny nový princíp, je však dobrým tréningom práce s~upravovaním výrazov, podobne ako úloha nasledujúca.\\
+\\
+}

@@ -1,0 +1,13 @@
+\problem{66-I-6}{
+Nájdite najmenšie prirodzené číslo $n$ také, že v~zápise iracionálneho čísla $\sqrt{n}$ nasledujú bezprostredne za desatinnou čiarkou dve deviatky.
+}{
+\rieh Označme $a$ najbližšie väčšie prirodzené číslo k~iracionálnemu číslu $\sqrt{n}$. Podľa zadania potom platí $a - 0,01 \leq \sqrt{n}$. Keďže $a^2$ je prirodzené číslo väčšie ako $n$, musí spolu platiť
+$$(a - 0,01)^2 \leq n \leq a^2 - 1.$$
+Po úprave nerovnosti medzi krajnými výrazmi vyjde
+$$\frac{1}{50} a \geq 1,000 1, \ \ \ \text{čiže} \ \ \  a = 50,005.$$
+Keďže je číslo $a$ celé, vyplýva z~toho $a \geq 51$. A~keďže
+$$(51 - 0,01)^2= 2 601 -\frac{102}{100}+\frac{1}{100^2}\in (2 599, 2 600),$$
+je hľadaným číslom $n = 2 600$.
+
+\textit{Poznámka}. Za správne riešenie možno uznať aj riešenie pomocou kalkulačky. Ak majú totiž byť za desatinnou čiarkou dve deviatky, musí byť číslo $n$ veľmi blízko zľava k~nejakej druhej mocnine. Preto stačí na kalkulačke vyskúšať čísla $\sqrt{3}, \sqrt{8}, \sqrt{15}$ atď. Keďže $51^2 = 2601$, nájdeme, že $\sqrt{2600} = 50,990 195\ldots$
+}

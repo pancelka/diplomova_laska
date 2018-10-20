@@ -1,0 +1,17 @@
+\problem{57-I-3}{
+Máme určitý počet krabičiek a určitý počet guľôčok. Ak dáme do každej krabičky práve jednu guľôčku, ostane nám $n$ guľôčok. Keď však necháme práve $n$ krabičiek bokom, môžeme všetky guľôčky rozmiestniť tak, aby ich v~každej zostávajúcej krabičke bolo práve $n$. Koľko máme krabičiek a koľko guľôčok?
+}{
+\rie  Keď označíme $x$ počet krabičiek a $y$ počet guľôčok, dostaneme zo zadania sústavu rovníc
+$$x + n = y \ \ \ \ \textrm{a} \ \ \ \ (x - n) \cdot n = y\ \ \ \ (1) $$
+s~neznámymi $x$, $y$ a $n$ z~oboru prirodzených čísel. Vylúčením neznámej $y$ dostaneme rovnicu $x + n = (x - n) \cdot n$, ktorá pre $n = 1$ nemá riešenie. Pre $n \geq 2$ dostaneme
+$$ x =\frac{n^2+n}{n-1}=n+2+\frac{2}{n-1}, \ \ \ \ (2)$$
+odkiaľ vidíme, že (prirodzené) číslo $n - 1$ musí byť deliteľom čísla 2. Teda $n \in \{2, 3\}$.
+Prípustné hodnoty $n$ dosadíme do (1) a sústavu vyriešime (možno tiež využiť vzťah (2)). Pre $n = 2$ dostaneme $x = 6, y = 8$ a pre $n = 3$ určíme $x = 6$ a $y = 9$.
+
+\textit{Skúška.} Majme šesť krabičiek a osem guľôčok. Keď do každej krabičky dáme práve jednu guľôčku, ostane $n = 2$ guľôčok. Keď však odoberieme dve krabičky, môžeme do zostávajúcich štyroch rozdeliť guľôčky práve po dvoch. Podmienky úlohy sú teda splnené. Pre šesť krabičiek a deväť guľôčok urobíme skúšku rovnako ľahko.
+
+\textit{Záver.} Buď máme šesť krabičiek a osem guľôčok, alebo šesť krabičiek a deväť guľôčok.\\
+\\
+\kom Úloha, spolu s~úlohou predchádzajúcou, je bežnou slovnou úlohou vedúcou na sústavu rovníc. Jej úspešné vyriešenie však vyžaduje umnú manipuláciu s~výrazmi.\\
+\\
+}

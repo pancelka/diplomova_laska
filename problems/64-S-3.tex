@@ -1,0 +1,12 @@
+\problem{64-S-3}{
+Nájdite najmenšie prirodzené číslo $n$ s~ciferným súčtom 8, ktoré sa rovná súčinu troch rôznych prvočísel, pričom rozdiel dvoch najmenších z~nich je 8.
+}{
+\rieh Hľadané číslo $n$ je súčinom troch rôznych prvočísel, ktoré označíme $p, q, r$, $p < q < r$. Číslo $n = pqr$ má ciferný súčet 8, ktorý nie je deliteľný tromi, preto ani $n$ nie je deliteľné tromi a teda $p, q, r \neq 3$. Napokon hľadané číslo $n$ nie je deliteľné ani dvoma, pretože by muselo byť $p = 2$ a $q = p + 8 = 10$, čo nie je prvočíslo. Musí teda byť $p = 5$.
+
+Ak je $p = 5$, je $q = p + 8 = 13$, takže $r \in \{17, 19, 23, 29, 31, \ldots \}$ a $n \in \{1 105,1 235, 1 495,$ $1 885, 2 015, \ldots\}$. V~tejto množine je zrejme najmenšie číslo s~ciferným súčtom 8 číslo $2 015$.
+
+Ak je $p > 5$, je $p = 11$ najmenšie prvočíslo také, že aj $q = p + 8$ je prvočíslo. Preto $p = 11$, $q = 19$, a teda $r = 23$, takže pre zodpovedajúce čísla $n$ platí $n = 11 \cdot 19 \cdot 23= 4 807 > 2 015$.\\
+\\
+\kom Úloha príjemne spája poznatky o~deliteľnosti a prvočíslach a nemala by pre študentov byť neprekonateľnou výzvou.\\
+\\
+}

@@ -1,0 +1,38 @@
+\problem{59-I-6}{
+Reálne čísla $a$, $b$ majú túto vlastnosť: rovnica $x^2 -ax+b-1 = 0$ má v~množine reálnych čísel dva rôzne korene, ktorých rozdiel je kladným koreňom rovnice $x^2 - ax + b + 1 = 0$.
+
+a) Dokážte nerovnosť $b > 3$.
+
+b) Pomocou $b$ vyjadrite korene oboch rovníc.
+}{
+\rieh  Označme $x_1$ menší a $x_2$ väčší koreň prvej rovnice. Potom platí $x_1 + x_2 = a$, $x_1 x_2 = b - 1$. Druhá rovnica má koreň $x_2 - x_1$, a keďže súčet oboch koreňov je $a$, musí byť druhý koreň $a - (x_2 - x_1 ) = x_1 + x_2 - x_2 + x_1 = 2x_1$. Súčin koreňov druhej rovnice je $(x_2 -x_1 )\cdot2x_1 = b+1$. Odtiaľ dostávame $b = -1+2x_1 x_2 -2x_1^2= -1+2(b-1)-2x_1^2$, a teda
+$$b = 3 + 2x_1^3> 3, \ \ \ \  (1)$$
+lebo z~rovnosti $x_1 = 0$ by vyplývalo $b + 1 = b - 1 = 0$.
+
+Keďže $x_2 - x_1 > 0$ a $b + 1 > 0$, musí byť aj $x_1 > 0$; z~(1) máme $x_1 =\sqrt{(b - 3)/2}$ a ďalej
+$$x_2 =\frac{b-1}{x_1}=\frac{(b - 1)\sqrt{2}}{\sqrt{b-3}}.$$
+Korene druhej rovnice sú potom
+$$x_2 - x_1 = \frac{b+1}{} \ \ \ \ \text{a} \ \ \ \  2x_1=\sqrt{2(b - 3)}.$$
+\\
+\textbf{Iné riešenie}. Korene prvej rovnice sú
+$$x_1 = \frac{a -\sqrt{a^2 - 4b + 4}}{2}, \ \ \ \  x_2 =\frac{a +\sqrt{a^2 - 4b + 4}}{2},$$
+pričom pre diskriminant máme
+$$D = a^2 - 4(b - 1) > 0. \ \ \ \  (2)$$
+Rozdiel koreňov $x_2 - x_1 =\sqrt{a^2 - 4b + 4}$ je koreňom druhej rovnice, a preto
+\begin{align*}
+a^2 - 4b + 4 - a \sqrt{a^2 - 4b + 4} + b + 1 &= 0,\\
+a^2 - 3b + 5 &= a\sqrt{a 2 - 4b + 4}, \ \ \ \  (3)\\
+a^4 + 2a^2 (5 - 3b) + (3b - 5)^2 &= a^4 - 4a^2 b + 4a^2,\\
+(3b - 5)^2 &= a^2 (2b - 6).
+\end{align*}
+Rovnosť  $a = 0$ nastáva práve vtedy, keď $3b - 5 = 0$; potom by ale neplatilo (2). Preto $a^2 > 0$, $(3b - 5)^2 > 0$, a teda aj $2b - 6 > 0$, čiže $b > 3$. Z~(2) a (3) potom vyplýva $a > 0$, a teda $a = (3b - 5)/\sqrt{2(b - 3)}$; ďalej potom
+\begin{align*}
+x_1 &=\frac{1}{2}\bigg( \frac{3a-5}{\sqrt{2(b-3)}}-\sqrt{\frac{(3b-5)^2}{2(b-3)}}-4b+4\bigg)=\sqrt{\frac{b-3}{2}},\\
+x_2 &=\frac{1}{2} \bigg( \frac{3a-5}{\sqrt{2(b-3)}}+\sqrt{\frac{(3b-5)^2}{2(b-3)}}-4b+4\bigg)=\frac{(b-1)\sqrt{2}}{\sqrt{b-3}}.
+\end{align*}
+Druhá rovnica má korene
+\begin{align*}
+x_3 &=\frac{a-\sqrt{a^2-4b-4}}{2}=\frac{b+1}{\sqrt{2(b-3)}}=x_2-x_1\\
+x_4 &=\frac{a+\sqrt{a^2-4b-4}}{2}=\sqrt{2(b-3)}.
+\end{align*}
+}

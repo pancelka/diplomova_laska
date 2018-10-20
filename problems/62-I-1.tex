@@ -1,0 +1,31 @@
+\problem{62-I-1}{
+Štvorcová tabuľka je rozdelená na $16\times16$ políčok. Kobylka sa po nej pohybuje dvoma smermi: vpravo alebo dole, pričom strieda skoky o~dve a o~tri políčka ( t.\,j. žiadne dva po sebe idúce skoky nie sú rovnako dlhé). Začína skokom dĺžky dva z~ľavého horného políčka. Koľkými rôznymi cestami sa môže kobylka dostať na pravé dolné políčko? (Pod cestou máme na mysli postupnosť políčok, na ktoré kobylka doskočí.)
+}{
+\rieh V~priebehu svojej cesty sa kobylka musí posunúť o~celkom 15 políčok doprava a 15 políčok nadol. Dohromady sa tak posunie o~30 políčok, takže dvojicu skokov dĺžky $2+3 = 5$ zopakuje celkom šesťkrát. Presnejšie vyjadrené, jej jednotlivé skoky budú mať
+dĺžky postupne
+$$ 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, \ \ \ \ \ \ \ (1)$$
+takže pôjde šesťkrát o~skok dĺžky dva (2-skok) a šesťkrát o~skok dĺžky tri (3-skok). Ak jednotlivým 2-skokom a 3-skokom pripíšeme poradové čísla podľa ich pozície v~(1), bude kobylkina cesta jednoznačne určená výberom poradových čísel skokov smerujúcich doprava (zvyšné potom budú smerovať nadol). Musíme pritom dodržať len to, aby súčet dĺžok takto vybraných skokov ( t.\,j. skokov doprava) bol rovný 15. To možno povolenými dĺžkami dosiahnuť (bez rozlíšenia poradia skokov) nasledujúcimi spôsobmi:
+\begin{align*}
+15 &= 3 + 3 + 3 + 3 + 3,\\
+15 &= 3 + 3 + 3 + 2 + 2 + 2,\\
+15 &= 3 + 2 + 2 + 2 + 2 + 2 + 2.
+\end{align*}
+
+V~prvom prípade bude päť zo šiestich 3-skokov doprava (a všetky 2-skoky nadol), takže cesta bude určená len poradovým číslom toho (jediného) 3-skoku, ktorý bude smerovať nadol. Preto je ciest tohto typu práve 6.
+
+V~druhom prípade bude cesta určená poradovými číslami troch 3-skokov doprava a poradovými číslami troch 2-skokov doprava. Výbery oboch trojíc sú nezávislé ( t.\,j. možno ich spolu ľubovoľne kombinovať) a pri každom z~nich vyberáme tri prvky zo šiestich, čo možno urobiť 20 spôsobmi.\footnote{Väčšina riešiteľov kategórie C ešte zrejme nepozná kombinačné čísla, hodnotu $\binom{6}{3}=20$ však možno vypočítať aj vypísaním jednotlivých možností.} Preto je ciest tohto typu $20 \cdot 20 = 400$.
+
+V~treťom prípade je kobylkina cesta určená len poradovým číslom toho jediného 3-skoku, ktorý bude smerovať doprava, takže ciest tohto typu je (rovnako ako v~prvom prípade) opäť 6.\\
+\textit{Záver}. Hľadaný celkový počet kobylkiných ciest je 6 + 400 + 6 = 412.\\
+\\
+\textbf{Iné riešenie.} Zadanú úlohu ”pre pravé dolné políčko“ vyriešime tak, že budeme postupne určovať počty kobylkiných ciest, ktoré vedú do jednotlivých políčok tabuľky (políčka budeme postupne voliť od ľavého horného políčka po jednotlivých vedľajších diagonálach\footnote{V tomto prípade pod vedľajšou diagonálou chápeme skupinu políčok, ktorých stredy ležia na priamke kolmej na spojnicu stredu začiatočného políčka so stredom koncového políčka.}, lebo ako ľahko zistíme, po určitom počte skokov skončí kobylka na tej istej vedľajšej diagonále; tak sa nakoniec dostaneme k~tomu najvzdialenejšiemu, teda pravému dolnému políčku). Pre zjednodušenie ďalšieho výkladu označme $(i, j)$ políčko v~$i$-tom riadku a $j$-tom stĺpci.
+
+Je zrejmé, že povoleným spôsobom skákania sa kobylka vie dostať len na niektoré políčka celej tabuľky. Po prvom skoku (ktorý musí byť 2-skok z~políčka (1, 1)) sa kobylka dostane len na políčko (1, 3) alebo (3, 1), po druhom skoku (teda 3-skoku) to bude niektoré z~políčok
+$$(1, 6), (3, 4), (4, 3), (6, 1).$$
+Vo všetkých doteraz uvedených políčkach je v~tabuľke vpísané číslo 1, lebo na každé z~nich vedie jediná kobylkina cesta. Situácia sa zmení po treťom skoku (2-skoku) kobylky, lebo na políčka (3, 6) a (6, 3) vedú vždy dve rôzne cesty, a to z~políčok (1, 6) a (3, 4), resp. z~políčok (6, 1) a (4, 3). Takto v~ďalšom kroku našej úvahy určíme všetky políčka, na ktoré sa kobylka môže dostať po štyroch skokoch, aj počty ciest, ktoré v~týchto políčkach končia. V~zapĺňaní tabuľky týmito číslami (postupom podľa počtu skokov kobylky) pokračujeme, až sa dostaneme do ”cieľového“ políčka (16, 16). Pritom neustále využívame to, že posledný skok kobylky na dané políčko má danú dĺžku a jeden či oba možné smery. V~prvom prípade číslo z~predposledného políčka na ceste na posledné políčko opíšeme, v~druhom prípade tam napíšeme súčet čísel z~oboch možných predposledných políčok.
+\begin{center}
+\includegraphics{images/62D1\imagesuffix}
+\end{center}
+Rovnako ako v~prvom riešení prichádzame k~výsledku 412.\\
+\\
+}

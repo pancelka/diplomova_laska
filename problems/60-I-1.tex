@@ -1,0 +1,12 @@
+\problem{60-I-1}{
+Lucia napísala na tabuľu dve nenulové čísla. Potom medzi ne postupne vkladala znamienka plus, mínus, krát a delené a všetky štyri príklady správne vypočítala. Medzi výsledkami boli iba dve rôzne hodnoty. Aké dve čísla mohla Lucia na tabuľu napísať?
+}{
+\rieh Označme hľadané čísla $a, b$. Keďže $b \neq 0$ nutne $a + b \neq a - b$. Každé z~čísel $a \cdot b, a : b$ je rovné buď $a + b$, alebo $a - b$. Stačí teda rozobrať štyri prípady a v~každom z~nich vyriešiť sústavu rovníc. Ukážeme si však rýchlejší postup.
+Ak by platilo
+$$ a + b = a \cdot b \ \mathrm{a} \ a - b = a : b \ \ \  \mathrm{alebo} \ \ \  a + b = a : b \ \mathrm{a} \ a - b = a \cdot b,$$
+vynásobením rovností by sme v~oboch prípadoch dostali $a^2 - b^2 = a^2$ , čo je v~spore s~$b\neq 0$. Preto sú čísla $a \cdot b$ a $a : b$ buď obe rovné $a + b$ alebo obe rovné $a - b$. Tak či tak musí platiť $a \cdot b = a : b$, odkiaľ po úprave $a(b^2 - 1) = 0$. Keďže $a\neq 0$, nutne $b \in \{ 1, - 1 \}$. Ale ak $b = 1$, tak štyri výsledky sú postupne $a + 1$, $a - 1$, $a$, $a$, čo sú pre každé $a$ až tri rôzne hodnoty. Pre $b = - 1$ máme výsledky $a - 1$, $a + 1$, $- a$, $- a$. Dva rôzne výsledky to budú práve vtedy, keď $a - 1 = - a$ alebo $a + 1 = - a$. V~prvom prípade dostávame $a =\frac{1}{2}$, v~druhom $a = - \frac{1}{2}$.
+Lucia mohla na začiatku na tabuľu napísať buď čísla $\frac{1}{2}$ a $- 1$, alebo čísla $-\frac{1}{2}$ a $- 1$.\\
+\\
+\kom Ak sa študenti rozhodnú riešiť sústavy rovníc pre spomínané štyri prípady, je to v~poriadku, na záver by však bolo inšpiratívne ukázať im aj rýchlejší postup.\\
+\\
+}

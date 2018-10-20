@@ -1,0 +1,13 @@
+\problem{63-S-3}{
+Daný je trojuholník $ABC$ s~pravým uhlom pri vrchole $C$. Stredom $I$ kružnice trojuholníku vpísanej vedieme rovnobežky so stranami $CA$ a $CB$, ktoré pretnú preponu postupne v~bodoch $X$ a $Y$. Dokážte, že platí $|AX|^2 + |BY |^2 = |XY |^2$.
+}{
+\rieh Trojuholník $AIX$ je rovnoramenný, pretože $|\ma IAX| = |\ma IAC| = | \ma AIX|$ (prvá rovnosť vyplýva z~podmienky, že bod $I$ leží na osi uhla $BAC$, druhá potom z~vlastností striedavých uhlov, obr. 4). Preto $|AX| = |IX|$. Analogicky zistíme, že $|BY | = |Y I|$. Keďže úsečky $IX$ a $IY$ zvierajú (rovnako ako s~nimi rovnobežné úsečky $CA$ a $CB$) pravý uhol, podľa Pytagorovej vety pre pravouhlý trojuholník $XIY$ platí $$|AX|^2+ |BY |^2= |IX|^2+ |Y I|^2= |XY |^2,$$
+čo sme mali dokázať.
+\begin{center}
+\includegraphics{images/63S3\imagesuffix}\\
+
+Obr. 4
+\end{center}
+\kom Úloha už vyžaduje trochu viac invencie a postrehu, keďže kľúčovým krokom v~riešení je všimnúť si, že trojuholníky $AIX$ a $BIY$ sú rovnoramenné. K~tomu však študentov môže naviesť poloha bodu $I$, ktorý leží na osi uhlov a to, že rovnobežky $AC$ a $XI$, resp. $BC$ a $YI$ sú preťaté priečkami $AI$, resp. $BI$, takže v~náčrtku vieme nájsť niekoľko dvojíc zhodných uhlov. Úloha tak kombinuje použitie Pytagorovej vety aj vlastnosti rovnoramenných trojuholníkov.\\
+\\
+}

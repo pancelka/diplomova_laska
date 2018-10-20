@@ -1,0 +1,37 @@
+\problem{66-S-2}{
+Označme $M$ množinu všetkých hodnôt výrazu $V (n) = n^4 + 11n^2 - 12$, pričom $n$ je nepárne prirodzené číslo. Nájdite všetky možné zvyšky po delení číslom 48, ktoré dávajú prvky množiny $M$.
+}{
+\rieh Najskôr vypočítame prislúchajúce hodnoty výrazu $V$ pre niekoľko prvých nepárnych čísel:
+\begin{center}
+\begin{tabular}{c c}
+$n$ & $V (n)$\\
+\hline
+1 & 0\\
+3 & $168 = 3 \cdot 48 + 24$ \\
+5 & $888 = 18 \cdot 48 + 24$ \\
+7 & $2928 = 61 \cdot 48$\\
+9 & $7440 = 155 \cdot 48$
+\end{tabular}
+\end{center}
+
+Medzi hľadané zvyšky teda patria čísla 0 a 24. Ukážeme, že iné zvyšky už možné nie sú. Na to stačí dokázať, že pre každé nepárne číslo $n$ platí $24 \mid V~(n)$. Z~školskej časti seminára vieme, že pre každé prirodzené číslo $n$ platí $12 \mid V~(n)$, teda aj $3 \mid V~(n)$. Keďže čísla 3 a 8 sú nesúdeliteľné, stačí ukázať, že pre každé nepárne číslo $n$ platí $8 \mid V~(n)$. Využijeme
+pritom rozklad daného výrazu na súčin
+$$V (n) = n^4+ 11n^2 - 12 = (n^2 - 1)(n^2+ 12) = (n - 1)(n + 1)(n^2+ 12). \ \ \ (1)$$
+Ľubovoľné nepárne prirodzené číslo $n$ možno zapísať v~tvare $n = 2k - 1$, pričom $k \in \NN$ . Pre také $n$ potom dostávame
+$$V (2k - 1) = [(2k - 1) - 1][(2k - 1) + 1][(2k - 1)^2
++ 12] = 4(k - 1)k(4k^2 - 4k + 13),$$
+a keďže súčin $(k - 1)k$ dvoch po sebe idúcich celých čísel je deliteľný dvoma, je celý výraz deliteľný ôsmimi.
+
+\textit{Záver}. Daný výraz môže dávať po delení číslom 48 práve len zvyšky 0 a 24.
+
+\textit{Poznámka}. Poznatok, že $8 \mid V~(n)$ pre každé nepárne $n$, možno dokázať aj inak, bez použitia rozkladu (1). Ak je totiž $n = 2k - 1$, pričom $k \in \NN$ , tak číslo
+$$n^2= (2k - 1)^2= 4k^2 - 4k + 1 = 4k(k - 1) + 1$$
+dáva po delení ôsmimi (vďaka tomu, že jedno z~čísel $k$, $k - 1$ je párne) zvyšok 1, a teda rovnaký zvyšok dáva aj číslo $n^4$ (ako druhá mocnina nepárneho čísla $n^2$). Platí teda $n^2 = 8u + 1$ a $n^4 = 8v + 1$ pre vhodné celé $u$ a $v$, takže hodnota výrazu
+$$V (2k - 1) = (8v + 1) + 11(8u + 1) - 12 = 8(v + 11u)$$
+je naozaj násobkom ôsmich.
+
+Pripojme aj podobný dôkaz poznatku $3 \mid V~(n)$ zo seminárneho stretnutia. Pre čísla $n$ deliteľné tromi je to zrejmé, ostatné $n$ sú tvaru $n = 3k \pm 1$, takže číslo
+$$n^2= (3k \pm 1)^2= 9k^2 \pm 6k + 1 = 3k(3k \pm 2) + 1$$
+dáva po delení tromi zvyšok 1, rovnako tak aj číslo $n^4 = (n^2)^2$. Dosadenie $n^2 = 3u + 1$ a $n^4 = 3v + 1$ do výrazu $V (n)$ už priamo vedie k~záveru, že $3 \mid V~(n)$.\\
+\\
+}

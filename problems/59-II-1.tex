@@ -1,0 +1,12 @@
+\problem{59-II-1}{
+Dokážte, že pre ľubovoľné celé čísla $n$ a $k$ väčšie ako 1 je číslo $n^{k+2} - n^k$ deliteľné dvanástimi.
+}{
+\rieh Vzhľadom na to, že $12 = 3 \cdot 4$, stačí ukázať, že číslo $a = n^{k+2} -  {n^k} = n^k (n^2 - 1) = (n - 1)n(n + 1)n^{k-1}$ je deliteľné tromi a štyrmi. Prvé tri činitele posledného výrazu sú tri po sebe idúce prirodzené čísla, takže práve jedno z~nich je deliteľné tromi, a preto aj číslo $a$ je deliteľné tromi. Je deliteľné aj štyrmi, lebo pri párnom $n$ je v~poslednom výraze druhý a štvrtý činiteľ párny, zatiaľ čo pri nepárnom $n$ je párny prvý a tretí činiteľ. Tým je dôkaz hotový.\\
+\\
+\textbf{Iné riešenie.} Položme $a = n^{k+2} - n^k = n^k (n^2 - 1) = (n - 1)n^k (n + 1)$. Opäť ukážeme, že $a$ je deliteľné štyrmi a tromi. Ak je $n$ párne, je $n^k$ deliteľné štyrmi pre každé celé $k \geq 2$. Ak je $n$ nepárne, sú činitele $n - 1$ a $n + 1$ párne čísla, takže $a$ je deliteľné štyrmi pre každé celé $n = 2$.
+
+Deliteľnosť tromi je zrejmá pre $n = 3l$. Ak $n = 3l + 1$, pričom $l$ je celé kladné číslo, je tromi deliteľný činiteľ $n - 1$ (a teda aj číslo $a$). Ak $n = 3l + 2$ ($l$ je celé nezáporné), je tromi deliteľný činiteľ $n + 1$. Keďže iné možnosti pre zvyšok čísla $n$ po delení tromi nie sú, je číslo $a$ deliteľné tromi. Tým je požadovaný dôkaz ukončený.\\
+\\
+\kom  Deliteľnosť štyrmi je tiež možné dokázať aj rozborom možností $n=4l$, $n=4l+1$, $n=4l+2$ a $n=4l+3$, pre $l$ celé a nezáporné. Kľúčovým krokom v~riešení bolo vhodné rozloženie čísla $a$ na súčin. To však súdiac podľa priemerného počtu bodov udelených za túto úlohu v~krajských kolách\footnote{3,0\,b v~prípade úspešných riešiteľov, 1,8\,b v~prípade všetkých riešiteľov, najmenej zo všetkých úloh krajského kola daného ročníka} na Slovensku bola úloha pre riešiteľov neľahká.\\
+\\
+}

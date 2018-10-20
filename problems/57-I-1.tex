@@ -1,0 +1,16 @@
+\problem{57-I-1}{
+Určte najmenšie prirodzené číslo $n$, pre ktoré aj čísla
+$\sqrt{2n}, \sqrt[3]{3n}, \sqrt[5]{5n}$ sú prirodzené.
+}{
+\rieh Vysvetlíme, prečo prvočíselný rozklad hľadaného čísla musí obsahovať len vhodné mocniny prvočísel 2, 3 a 5. Každé prípadné ďalšie prvočíslo by sa v~rozklade čísla $n$ muselo vyskytovať v~mocnine, ktorej exponent je deliteľný dvoma, tromi aj piatimi zároveň (viď predchádzajúca úloha). Po vyškrtnutí takého prvočísla by sa číslo $n$ zmenšilo a skúmané odmocniny by pritom ostali celočíselné.
+
+Položme preto $n = 2^a \cdot 3^b \cdot 5^c$, pričom $a, b, c$ sú prirodzené čísla. Čísla $\sqrt[3]{3n}$ a $\sqrt[5]{5n}$ sú celé, preto je exponent $a$ násobkom troch a piatich. Aj $\sqrt{2n}$ je celé číslo, preto musí byť číslo $a$ nepárne. Je teda nepárnym násobkom pätnástich: $a \in \{15, 45, 75, \ldots\}$. Analogicky je exponent~$b$ taký násobok desiatich, ktorý po delení tromi dáva zvyšok 2: $b \in \{20, 50, 80, \ldots\}$. Napokon $c$ je násobok šiestich, ktorý po delení piatimi dáva zvyšok 4: $c \in \{24, 54, 84, \ldots\}$. Z~podmienky, že $n$ je najmenšie, dostávame $n = 2^{15} \cdot3^{20} \cdot 5^{24}$.
+
+Presvedčíme sa ešte, že dané odmocniny sú prirodzené čísla:
+$$\sqrt{2n} = 2^8 \cdot 3^{10} \cdot 5^{12},\ \ \ \sqrt[3]{3n} = 2^5 \cdot 3^7 \cdot 5^8, \ \ \ \sqrt[5]{5n} = 2^3 \cdot 3^2 \cdot5^5.$$
+
+\textit{Záver}. Hľadaným číslom je $n = 2^{15} \cdot 3^{20} \cdot 5^{24}$.\\
+\\
+\kom Úloha je netradičným príkladom uplatnenia poznatkov o~rozklade čísla na súčin prvočísel a vďaka návodnej úlohe by študenti mali byť dostatočne pripravení na jej samostatné riešenie.\\
+\\
+}

@@ -1,0 +1,19 @@
+\problem{61-I-2}{
+Dĺžky strán trojuholníka sú v~metroch vyjadrené celými číslami. Určte ich, ak má trojuholník obvod 72\,m a ak je najdlhšia strana trojuholníka rozdelená bodom dotyku vpísanej kružnice v~pomere $3 : 4.$
+}{
+\rieh Využijeme všeobecný poznatok, že body dotyku vpísanej kružnice delia hranicu trojuholníka na šesť úsečiek, a to tak, že každé dve z~nich, ktoré vychádzajú z~toho istého vrcholu trojuholníka, sú zhodné. (Dotyčnice z~daného bodu k~danej kružnici sú totiž súmerne združené podľa spojnice daného bodu so stredom danej kružnice.)
+
+V~našej úlohe je najdlhšia strana trojuholníka rozdelená na úseky, ktorých dĺžky označíme $3x$ a $4x$; dĺžku úsekov z~vrcholu oproti najdlhšej strane označíme $y$ (obr. 6). Strany trojuholníka majú teda dĺžky $7x$, $4x + y$ a $3x + y$, kde $x$, $y$ sú neznáme kladné čísla (dĺžky berieme bez jednotiek). Ak má byť $7x$ dĺžka najdlhšej strany, musí platiť $7x > 4x + y$, čiže $3x > y$. Zdôraznime, že hľadané čísla $x, y$ nemusia byť nutne celé, podľa zadania to však platí o~číslach $7x$, $4x + y$ a $3x + y$.
+\begin{center}
+\includegraphics{images/61D1\imagesuffix}\\
+
+Obr. 6
+\end{center}
+Údaj o~obvode trojuholníka zapíšeme rovnosťou
+$$72 = 7x + (3x + y) + (4x + y), \ \ \ \ \text{čiže} \ \ \ \ 36 = 7x + y.$$
+Pretože $7x$ je celé číslo, je celé i číslo $y = 36 - 7x$; a pretože podľa zadania i čísla $4x + y$ a $3x + y$ sú celé, je celé i číslo $x = (4x + y) - (3x + y)$. Preto od tohto okamihu už hľadáme dvojice celých kladných čísel $x$, $y$, pre ktoré platí
+$$3x > y \ \ \ \ \text{a}  \ \ \ \ 7x + y = 36.$$
+Odtiaľ vyplýva $7x < 36 < 7x + 3x = 10x$, teda $x \leq 5$ a súčasne $x \geq 4$.
+
+Pre $x = 4$ je $y = 8$ a $(7x, 4x+y, 3x+y) = (28, 24, 20)$, pre $x = 5$ je $y = 1$ a $(7x, 4x+ + y, 3x + y) = (35, 21, 16)$. Strany trojuholníka sú teda $(28, 24, 20)$ alebo $(35, 21, 16)$. (Trojuholníkové nerovnosti sú zrejme splnené.)
+}

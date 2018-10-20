@@ -1,0 +1,17 @@
+\problem{62-I-6}{
+Vnútri pravidelného šesťuholníka $ABCDEF$ s~obsahom 30\,cm$^2$ je zvolený bod $M$. Obsahy trojuholníkov $ABM$ a $BCM$ sú postupne 3\,cm$^2$ a 2\,cm$^2$. Určte obsahy trojuholníkov $CDM$, $DEM$, $EFM$ a $FAM$.
+}{
+\rieh Úloha je o~obsahu šiestich trojuholníkov, na ktoré je daný pravidelný šesťuholník rozdelený spojnicami jeho vrcholov s~bodom $M$ (obr. 7). Celý šesťuholník s~daným obsahom, ktorý označíme $S$, možno rozdeliť na šesť rovnostranných trojuholníkov s~obsahom $S/6$ (obr. 8). Ak označíme $r$ ich stranu, $v$ vzdialenosť rovnobežiek $AB$, $CD$ a $v_1$ vzdialenosť bodu $M$ od priamky $AB$, dostaneme
+$$S_{ABM} + S_{EDM} =\frac{1}{2}rv_1 +\frac{1}{2}r(v - v_1 ) = \frac{1}{2} rv =\frac{S}{3},$$
+lebo $S/3$ je súčet obsahov dvoch vyfarbených rovnostranných trojuholníkov. Vďaka symetrii majú tú istú hodnotu $S/3$ aj súčty $S_{BCM} +S_{EFM}$ a $S_{CDM} +S_{FAM}$. Odtiaľ už dostávame prvé dva neznáme obsahy $S_DEM = S/3 - S_{ABM} = 7$\,cm$^2$ a $S_{EFM}= S/3 - S_{BCM} = 8$\,cm$^2$.
+\begin{center}
+\includegraphics{images/62D61\imagesuffix} \includegraphics{images/62D62\imagesuffix}\\
+
+Obr. 7  \hspace{160pt} Obr. 8
+\end{center}
+Ako určiť zvyšné dva obsahy $S_{CDM}$ a $S_{FAM}$, keď zatiaľ poznáme len ich súčet $S/3$? Všimnime si, že súčet zadaných obsahov trojuholníkov $ABM$ a $BCM$ má významnú hodnotu $S/6$, ktorá je aj obsahom trojuholníka $ABC$ (to vyplýva opäť z~obr. 8). Taká zhoda obsahov znamená práve to, že bod $M$ leží na uhlopriečke $AC$. Trojuholníky $ABM$ a $BCM$ tak majú zhodné výšky zo spoločného vrcholu $B$ a to isté platí aj pre výšky trojuholníkov $CDM$ a $FAM$ z~vrcholov $F$ a $D$ ( t.\,j. bodov, ktoré majú od priamky $AC$ rovnakú vzdialenosť). Pre pomery obsahov týchto dvojíc trojuholníkov tak dostávame
+$$\frac{S_{CDM}}{S_{FAM}}=\frac{|CM|}{|AM|}=\frac{S_{BCM}}{S_{ABM}}=\frac{2}{3}.$$
+V~súčte $S_{CDM} + S_{FAM}$ majúcom hodnotu $S/3$ sú teda sčítance v~pomere $2 : 3$. Preto $S_{CDM} =4$\,cm$^2$ a $S_{FAM} = 6$\,cm$^2$.\\
+\\
+\kom Úloha je odľahčeným a netradičným príkladom využitia princípu, na ktorom sme stavali celé toto seminárne stretnutie: súčty obsahov \uv{protiľahlých} trojuholníkov sú stále rovnaké. Posledná časť úlohy vyžaduje netriviálny nápad a študenti tak možno budú potrebovať malú radu.
+}

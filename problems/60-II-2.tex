@@ -1,0 +1,24 @@
+\problem{60-II-2}{
+Nájdite všetky kladné celé čísla $n$, pre ktoré je číslo $n^2 + 6n$ druhou mocninou celého čísla.
+}{
+\rieh Zrejme $n^2 +6n > n^2$ a zároveň $n^2 +6n < n^2 +6n+9 = (n+3)^2$. V~uvedenom intervale ležia iba dve druhé mocniny celých čísel: $(n + 1)^2$ a $(n + 2)^2$.
+
+V~prvom prípade máme $n^2 + 6n = n^2 + 2n + 1$, teda $4n = 1$, tomu však žiadne celé číslo $n$ nevyhovuje.
+
+V~druhom prípade máme $n^2 + 6n = n^2 + 4n + 4$, teda $2n = 4$. Dostávame tak jediné riešenie $n = 2$.\\
+\\
+\textbf{Iné riešenie.} Budeme skúmať rozklad $n^2 + 6n = n(n+ 6)$. Spoločný deliteľ oboch čísel $n$ a $n + 6$ musí deliť aj ich rozdiel, preto ich najväčším spoločným deliteľom môžu byť len čísla 1, 2, 3 alebo 6. Tieto štyri možnosti rozoberieme.
+
+Keby boli čísla $n$ a $n+6$ nesúdeliteľné, muselo by byť každé z~nich druhou mocninou. Rozdiel dvoch druhých mocnín prirodzených čísel však nikdy nie je 6. Pre malé čísla sa o~tom ľahko presvedčíme, a pre $k = 4$ už je rozdiel susedných štvorcov $k^2$ a $(k - 1)^2$ aspoň 7. Vlastnosť, že 1, 3, 4, 5 a 7 je päť najmenších rozdielov dvoch druhých mocnín, využijeme aj ďalej.
+
+Ak je najväčším spoločným deliteľom čísel $n$ a $n+6$ číslo 2, je $n = 2m$ pre vhodné $m$, ktoré navyše nie je deliteľné tromi. Ak $n(n + 6) = 4m(m + 3)$ je štvorec, musí byť aj $m(m + 3)$ štvorec. Čísla $m$ a $m + 3$ sú však nesúdeliteľné, preto musí byť každé z~nich druhou mocninou prirodzeného čísla. To nastane len pre $m = 1$, čiže $n = 2$. Ľahko overíme, že $n(n + 6)$ je potom naozaj druhou mocninou celého čísla.
+
+Ak je najväčším spoločným deliteľom čísel $n$ a $n + 6$ číslo 3, je $n = 3m$ pre vhodné nepárne $m$. Ak $n(n+6) = 9m(m+2)$ je štvorec, musia byť nesúdeliteľné čísla $m$ a $m+2$ tiež štvorce. Také dva štvorce však neexistujú.
+
+Ak je najväčším spoločným deliteľom čísel $n$ a $n + 6$ číslo 6, je $n = 6m$ pre vhodné $m$. Ak $n(n + 6) = 36m(m + 1)$ je štvorec, musia byť štvorce aj obe nesúdeliteľné čísla $m$ a $m + 1$, čo nastane len pre $m = 0$, my však hľadáme len kladné čísla $n$.
+
+Úlohe vyhovuje jedine $n = 2$.\\
+\\
+\kom K~správnemu riešeniu úlohy vedú mnohé cesty. Prvé uvedené riešenie je trochu trikové, avšak nápadité, a preto ak ho študenti neobjavia, je vhodné im ho na záver ukázať. Nie je tiež nepravdepodobné, že študenti budú skúšať, ako sa číslo $n^2+6n$ správa pre rôzne hodnoty $n$, čo by ich mohlo naviesť na správu cestu nájdenia jediného riešenia.\\
+\\
+}

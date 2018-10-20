@@ -98,6 +98,6 @@ for file in glob.glob("seminars/*.tex"):
     print("Processing " + file)
     document = open(file).read()
     document = process_seminar(document)
-    # save_seminar(file, document)
+    save_seminar(file, document)
 
 print("Generated names: " + ", ".join(names))

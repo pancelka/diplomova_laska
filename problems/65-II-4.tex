@@ -1,0 +1,12 @@
+\problem{65-II-4}{
+Adam s~Barborou hrajú so zlomkom
+$$ \frac{10a + b}{10c + d}$$
+takúto hru na štyri ťahy: Hráči striedavo nahrádzajú ľubovoľné z~doposiaľ neurčených písmen $a$, $b$, $c$, $d$ nejakou cifrou od 1 do 9. Barbora vyhrá, keď výsledný zlomok bude rovný buď celému číslu, alebo číslu s~konečným počtom desatinných miest; inak vyhrá Adam (napríklad keď vznikne zlomok $\frac{11}{29}$). Ak začína Adam, ako má hrať Barbora, aby zaručene vyhrala? Ak začína Barbora, je možné poradiť Adamovi tak, aby vždy vyhral?
+}{
+\rieh Ak má prvý ťah Adam, môže Barbora hrať tak, aby bol výsledný zlomok rovný jednej, čo podľa zadania prinesie Barbore výhru. Taký zlomok vyjde, keď budú súčasne platiť obe rovnosti $a = c$ a $b = d$, ktoré Barbora dosiahne ťahmi \uv{súmerne združenými} podľa zlomkovej čiary s~Adamovými ťahmi.
+
+Ak začína Barbora, môže Adam hrať tak, aby vyšiel zlomok s~menovateľom $10c+d$ deliteľným tromi, ktorého čitateľ $10a + b$ však deliteľný tromi nebude. Na to Adamovi stačí po každom z~oboch Barboriných ťahov vhodne \uv{doplniť} čitateľ či menovateľ, napríklad podľa kritéria deliteľnosti tromi mu stačí zabezpečiť, aby sa ciferný súčet $a+b$ čitateľa rovnal 10 a aby sa ciferný súčet $c+d$ menovateľa rovnal 9 alebo 12. Adam tak vyhrá, pretože výsledný zlomok nebude možné krátiť tromi, takže sa nebude rovnať žiadnemu zlomku s~mocninou čísla 10 v~menovateli, akým sa dá zapísať každé číslo s~konečným počtom desatinných miest.\\
+\\
+\kom Úlohu je možné najprv zadať ako hru medzi dvoma hráčmi a až po tom, čo študenti odohrajú niekoľko kôl a vypozorujú zákonitosti, je vhodné pustiť sa do tvrdého riešenia. Zaujímavé tiež môže byť porovnať stratégie jednotlivých študentov medzi sebou, príp. ich po samostatnej práci nechať niekoľko súbojov odohrať znova, aby svoju stratégiu overili v~praxi.\\
+\\
+}

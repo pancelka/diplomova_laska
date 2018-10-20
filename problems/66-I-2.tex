@@ -1,0 +1,28 @@
+\problem{66-I-2}{
+Nájdite najväčšie prirodzené číslo $d$, ktoré má tú vlastnosť, že pre ľubovoľné prirodzené číslo $n$ je hodnota výrazu $$V (n) = n^4+ 11n^2-12$$
+deliteľná číslom $d$.
+}{
+\rieh Vypočítajme najskôr hodnoty $V (n)$ pre niekoľko najmenších prirodzených čísel $n$ a ich rozklady na súčin prvočísel zapíšme do tabuľky:
+\begin{center}
+\begin{tabular}{c c}
+$n$ & $V (n) $\\
+\hline
+1 & 0\\
+2 & $48 = 2^4 \cdot 3$\\
+3 & $168 = 2^3 \cdot 3 \cdot 7$\\
+4 & $420 = 2^2 \cdot 3 \cdot 5 \cdot 7$
+\end{tabular}
+\end{center}
+Z~toho vidíme, že hľadaný deliteľ $d$ všetkých čísel $V (n)$ musí byť deliteľom čísla $2^2 \cdot 3 = 12$, spĺňa teda nerovnosť $d \leq 12$. Preto ak ukážeme, že číslo $d = 12$ zadaniu vyhovuje,  t.\,j. že $V (n)$ je násobkom čísla 12 pre každé prirodzené $n$, budeme s~riešením hotoví.
+
+Úprava $$V (n) = n^4+ 11n^2 - 12 = (12n^2 - 12) + (n^4 - n^2),$$ pri ktorej sme z~výrazu $V (n)$ ”vyčlenili“ dvojčlen 1$2n^2 -12$, ktorý je zrejmým násobkom čísla 12, redukuje našu úlohu na overenie deliteľnosti číslom 12 (teda deliteľnosti číslami 3 a 4) dvojčlena $n^4 - n^2$ . Využijeme na to jeho rozklad $$n^4 - n^2 = n^2(n^2 - 1) = (n - 1)n^2(n + 1).$$
+Pre každé celé $n$ je tak výraz $n^4 - n^2$ určite deliteľný tromi (také je totiž jedno z~troch
+po sebe idúcich celých čísel $n - 1$, $n$, $n + 1$) a súčasne aj deliteľný štyrmi (zaručuje to
+v~prípade párneho $n$ činiteľ $n^2$, v~prípade nepárneho $n$ dva párne činitele $n-1$ a $n+1$).
+
+Dodajme, že deliteľnosť výrazu $V (n)$ číslom 12 možno dokázať aj inými spôsobmi, napríklad môžeme využiť rozklad $V (n) = n^4+ 11n^2 - 12 = (n^2+ 12)(n^2 - 1)$ z~predchádzajúcej úlohy alebo prejsť k~dvojčlenu $n^4 + 11n^2$ a podobne.
+
+\textit{Záver.} Hľadané číslo $d$ je rovné 12.\\
+\\
+\kom Úloha je okrem využitia všetkých doterajších poznatkov zaradená aj z~dôvodu prvého kroku riešenia. Je vhodné študentom ukázať, že preskúmanie výrazu pre niekoľko malých hodnôt $n$ nám môže pomôcť utvoriť si predstavu o~tom, ako sa bude výraz správať ďalej, príp. vytvoriť hypotézu, ktorú sa neskôr pokúsime dokázať. Táto metóda nájde uplatnenie nielen v~tejto konkrétnej úlohe, ale aj v~ďalších partiách matematiky.\\
+}

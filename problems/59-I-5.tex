@@ -1,0 +1,24 @@
+\problem{59-I-5}{
+Dokážte, že pre ľubovoľné kladné reálne čísla $a, b$ platí
+$$ \sqrt{ab}\leq \frac{2(a^2+3ab+b^2)}{5(a+b)}\leq \frac{a+b}{2},$$
+a pre každú z~oboch nerovností zistite, kedy prechádza na rovnosť.
+}{
+\rieh Pravá nerovnosť je ekvivalentná s~nerovnosťou
+$$ 4(a^2 + 3ab + b^2 ) \leq 5(a + b)^2,$$
+ktorú možno ekvivalentne upraviť na nerovnosť $a^2 + b^2 - 2ab = (a - b)^2 \geq 0$. Tá je splnená vždy a rovnosť v~nej nastane práve vtedy, keď $a = b$.
+
+Z~ľavej nerovnosti odstránime zlomky a umocníme ju na druhú,
+\begin{align*}
+25ab(a^2 + 2ab + b^2) &\leq 4(a^4 + 9a^2 b^2 + b^4 + 6a^3 b + 6ab^3 + 2a^2 b^2),\\
+25ab(a^2 + b^2 ) + 50a^2 b^2 &\leq 4a^4 + 4b^4 + 44a^2 b^2 + 24ab(a^2 + b^2 ),
+\end{align*}
+takže po úprave dostaneme ekvivalentnú nerovnosť
+$$4a^4 + 4b^4 - 6a^2 b^2 \geq ab(a^2 + b^2 ).$$
+Po odčítaní výrazu $2a^2 b^2$ od oboch strán nerovnosti sa nám podarí na oboch stranách použiť úpravu na štvorec. Dostaneme tak (opäť ekvivalentnú) nerovnosť $$ 4(a^2 - b^2 )^2 \geq ab(a - b)^2.$$
+Rozdiel štvorcov v~zátvorke na ľavej strane ešte rozložíme na súčin a vzťah upravíme
+na tvar $4(a - b)^2 (a + b)^2 \geq ab(a - b)^2$.
+
+Ak $a = b$, platí rovnosť. Ak $a \neq b$, môžeme poslednú nerovnosť vydeliť kladným výrazom $(a - b)^2$ a dostaneme tak nerovnosť $4(a + b)^2 \geq ab$, čiže $4a^2 + 4b^2 + 7ab \geq 0$. Ľavá strana tejto nerovnosti je vždy kladná, preto vyšetrovaná nerovnosť platí pre všetky kladné čísla $a, b$, pričom rovnosť v~nej nastane práve vtedy, keď $a = b$.\\
+\\
+\kom Táto úloha prvýkrát prináša sústavu nerovností a je vhodné so študentmi zopakovať, ako k~riešeniu sústav nerovností pristupujeme: musíme dokázať riešenie každej nerovnosti zvlášť. V~priebehu riešenia opäť využijeme úpravu na štvorec a nezápornosť druhej mocniny reálneho čísla. Úloha sa dá riešiť ešte iným spôsobom, ten si však ukážeme v~ďalšom seminári zameranom na nerovnosti.
+}

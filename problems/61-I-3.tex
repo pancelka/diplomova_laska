@@ -1,0 +1,29 @@
+\problem{61-I-3}{
+Nájdite všetky trojice prirodzených čísel $a, b, c$, pre ktoré platí množinová rovnosť
+$$\{(a, b), (a, c), (b, c), [a, b], [a, c], [b, c]\}= \{2, 3, 5, 60, 90, 180\},$$
+pričom $(x, y)$ a $[x, y]$ označuje postupne najväčší spoločný deliteľ a najmenší spoločný násobok čísel $x$ a $y$.
+}{
+\rieh Prvky danej množiny $M$ rozložíme na prvočinitele:
+$$M = \{2, 3, 5, 2^2 \cdot 3 \cdot 5, 2 \cdot 3^2 \cdot 5, 2^2 \cdot 3^2 \cdot 5\}.$$
+Odtiaľ vyplýva, že v~rozklade hľadaných čísel $a, b, c$ vystupujú iba prvočísla 2, 3 a 5. Každé z~nich je pritom prvočiniteľom práve dvoch z~čísel $a, b, c$: keby bolo prvočiniteľom len jedného z~nich, chýbalo by v~rozklade troch najväčších spoločných deliteľov a jedného najmenšieho spoločného násobku, teda v~štyroch číslach z~$M$; keby naopak bolo prvočiniteľom všetkých troch čísel $a, b, c$, nechýbalo by v~rozklade žiadneho čísla z~$M$. Okrem toho vidíme, že v~rozklade každého z~čísel $a, b, c$ je prvočíslo 5 najviac v~jednom exemplári.
+
+Podľa uvedených zistení môžeme čísla $a, b, c$ usporiadať tak, že rozklady čísel $a, b$ obsahujú po jednom exemplári prvočísla 5 (potom $(c, 5) = 1$) a že $(a, 2) = 2$ (ako vieme, aspoň jedno z~čísel $a, b$ musí byť párne). Číslo 5 z~množiny $M$ je potom nutne rovné $(a, b)$, takže platí $(b, 2) = 1$, a preto $(b, 3) = 3$ (inak by platilo $(b, c) = 1$), odtiaľ zase s~ohľadom na $(a, b) = 5$ vyplýva $(a, 3) = 1$. Máme teda $a = 5 \cdot 2^s$ a $b = 5 \cdot 3^t$ pre vhodné prirodzené čísla $s$ a $t$.
+
+Z~rovnosti $[a, b] = 2^s \cdot3^t \cdot5$ vyplýva, že nastane jeden z~troch nasledujúcich prípadov.
+
+(1) $2^s \cdot 3^t \cdot 5 = 60 = 2^2 \cdot 3^1 \cdot 5$. Vidíme, že platí $s = 2$ a $t = 1$, čiže $a = 20$ a $b = 15.$ Ľahko určíme, že tretím číslom je $c = 18$.
+
+(2) $2^s \cdot 3^t \cdot 5 = 90 = 2^1 \cdot 3^2 \cdot 5$. V~tomto prípade $a = 10$, $b = 45$ a $c = 12$.
+
+(3) $2^s \cdot 3^t \cdot 5 = 180 = 2^2 \cdot 3^2 \cdot 5$. Teraz $a = 20$, $b = 45$ a $c = 6$.\\
+\textit{Záver}. Hľadané čísla $a, b, c$ tvoria jednu z~množín $\{20, 15, 18\}$, $\{10, 45, 12\}$ a $\{20, 45, 6\}$.\\
+\\
+\textbf{Iné riešenie.} V~danej rovnosti je množina napravo tvorená šiestimi rôznymi číslami väčšími ako 1, takže čísla $(a, b), (a, c), (b, c)$ musia byť netriviálnymi deliteľmi postupne čísel $[a, b], [a, c], [b, c]$. Čísla 2, 3, 5 ale žiadne netriviálne delitele nemajú, musí teda platiť
+$$\{(a, b), (a, c), (b, c)\}= \{2, 3, 5\} \ \ \ \text{a} \ \ \  \{[a, b], [a, c], [b, c]\} = \{60, 90, 180\}.$$
+Pretože poradie čísel $a, b, c$ nehrá žiadnu úlohu, môžeme predpokladať, že platí $(a, b) = 2, (a, c) = 3$ a $(b, c) = 5$. Odtiaľ vyplývajú vyjadrenia
+$$a = 2 \cdot 3 \cdot x = 6x, \ \ \ b = 2 \cdot 5 \cdot y = 10y, \ \ \ c = 3 \cdot 5 \cdot z~= 15z$$
+pre vhodné prirodzené čísla $x, y, z$. Zo známej rovnosti $[x, y]\cdot(x, y) = xy$ tak dostaneme vyjadrenia najmenších spoločných násobkov v~tvare
+$$[a, b] =\frac{6x \cdot 10y}{2}= 30xy, \ \ \ [a, c] =\frac{6x \cdot 15z}{3}= 30xz,\ \ \  [b, c] =\frac{10y \cdot 15z}{5}= 30yz.$$
+Z~rovnosti $\{30xy, 30xz, 30yz\} = \{60, 90, 180\}$ upravenej na $\{xy, xz, yz\} = \{2, 3, 6\}$ potom vďaka tomu, že 2 a 3 sú prvočísla, vyplýva $\{x, y, z\} = \{1, 2, 3\}$. Pretože z~podmienky $5 = (b, c) = (10y, 15z)$ vyplýva $y \neq 3$ a $z \neq 2$, prichádzajú do úvahy len trojice $(x, y, z)$ rovné (1, 2, 3), (2, 1, 3) a (3, 2, 1), ktorým postupne zodpovedajú trojice $(a, b, c)$ rovné (6, 20, 45), (12, 10, 45), (18, 20, 15). Skúškou sa presvedčíme, že všetky tri vyhovujú množinovej rovnosti zo zadania úlohy.\\
+\\
+}

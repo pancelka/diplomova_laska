@@ -1,0 +1,23 @@
+\problem{57-I-6-D2 resp. 53-C-II-4}{
+Žiaci mali vypočítať príklad $x + y \cdot z$ pre trojciferné číslo $x$ a dvojciferné čísla $y, z$. Martin vie násobiť a sčítať čísla zapísané v~desiatkovej sústave, ale zabudol na pravidlo prednosti násobenia pred sčítaním. Preto mu vyšlo síce zaujímavé číslo, ktoré sa píše rovnako zľava doprava ako sprava doľava, správny výsledok bol ale o~$2 004$ menší. Určte čísla $x, y, z$.
+}{
+\rieh Martin vypočítal hodnotu $(x + y)z$ namiesto $x + yz$, takže podľa zadania platí
+$$(x + y)z - (x + yz) = 2 004, \ \ \ \ \text{čiže} \ \ \  x \cdot (z~- 1) = 2 004 = 12 \cdot 167,$$
+pričom 167 je prvočíslo. Činitele $x$ a $z -1$ určíme, keď si uvedomíme, že $z$ je dvojciferné číslo, takže $9 \leq z~- 1 \leq 98$. Vidíme, že nutne $z - 1 = 12$ a  $x = 167$, odkiaľ $z = 13$. Martin teda vypočítal číslo $V = (167+y)\cdot 13$. Číslo $V$ je preto štvorciferné, a pretože sa číta spredu rovnako ako zozadu, má tvar $\overline{abba} = 1 001a + 110b$. Pretože $1 001 = 13 \cdot 77$, musí platiť rovnosť $(167 + y) \cdot 13 = 13 \cdot 77a + 110b$, z~ktorej vyplýva, že číslica $b$ je deliteľná trinástimi, takže $b = 0$. Po dosadení dostaneme (po delení trinástimi) rovnosť $167 + y = 77a$, ktorá vzhľadom na nerovnosti $10 \leq  y \leq 99$ znamená, že číslica $a$ sa rovná 3, takže $y = 64$.
+
+V~druhej časti riešenia sme mohli postupovať aj nasledovne. Pre číslo $V = (167 + y) \cdot 13$ vychádzajú z~nerovností $10 \leq y \leq 99$ odhady $2301 \leq V~\leq 3 458$. Zistíme
+preto, ktoré z~čísel $\overline{2bb2}$, kde $b \in \{3, 4, 5, 6, 7, 8, 9\}$ a čísel $\overline{3bb3}$, kde $b \in \{0, 1, 2, 3, 4\}$, sú deliteľné trinástimi. Aj keď sa týchto dvanásť čísel dá rýchlo otestovať, urobme to všeobecne ich čiastočným vydelením trinástimi:
+\vspace{-30pt}
+\begin{center}
+\begin{align*}
+ \overline{2bb2} &= 2 002 + 110b = 13 \cdot (154 + 8b) + 6b,\\
+\overline{3bb3} &= 3 003 + 110b = 13 \cdot (231 + 8b) + 6b.
+\end{align*}
+\end{center}
+Vidíme, že vyhovuje jedine číslo $\overline{3bb3}$ pre $b = 0$. Vtedy $167 + y = 231$, takže $y = 64$.
+
+\textit{Záver.} Žiaci mali počítať príklad $167 + 64 \cdot 13$, teda $x = 167$, $y = 64$ a $z = 13$.\\
+\\
+\kom Na prvý pohľad sa môže zdať, že úloha nepatrí do tohto seminára, ako sa však v~priebehu riešenia ukáže, má tu svoje miesto. Taktiež zaujímavým spôsobom spája poznatky o~deliteľnosti, príp. sa v~jej riešení uplatnia odhady -- túto metódu sme už taktiež v~dnešnom seminári využili.\\
+\\
+}

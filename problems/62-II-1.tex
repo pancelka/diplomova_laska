@@ -1,0 +1,26 @@
+\problem{62-II-1}{
+Pre ľubovoľné reálne čísla $k\neq \pm 1$, $p \neq 0$ a $q$ dokážte tvrdenie: Rovnica
+$$x^2+ px + q = 0$$
+má v~obore reálnych čísel dva korene, z~ktorých jeden je $k$-násobkom druhého, práve vtedy, keď platí $kp^2 = (k~+ 1)^2 q$.
+}{
+\rieh Čísla $x_1$, $x_2$ sú koreňmi danej kvadratickej rovnice práve vtedy, keď platí
+$$x_1 + x_2 = -p \ \ \ \ \text{a} \ \ \ \  x_1 x_2 = q. \ \ \ \  (1)$$
+
+Predpokladajme, že daná kvadratická rovnica má reálne korene $x_1 = \alpha$, $x_2 = k\alpha$.
+Dosadením do (1) dostaneme $(k + 1)\alpha = -p$ a $k\alpha^2 = q$. Pre obe strany dokazovanej
+rovnosti $kp^2 = (k~+ 1)^2 q$ odtiaľ vyplýva
+$$kp^2= k(-(k + 1)\alpha)^2= k(k + 1)^2\alpha^2,$$
+$$(k + 1)^2q = (k~+ 1)^2 \cdot k\alpha^2= k(k + 1)^2\alpha^2,$$
+teda daná rovnosť skutočne platí.
+
+Nech naopak pre reálne čísla $p$, $q$ a $k \neq -1$ platí $kp^2 = (k+1)^2q$. Uvažujme dvojicu
+reálnych čísel
+$$x_1 =\frac{-kp}{k + 1} \ \ \ \ \text{a} \ \ \ \  x 2 =\frac{-p}{k + 1}.$$
+Také čísla (pre ktoré platí $x_1 = kx_2$) sú koreňmi danej kvadratickej rovnice, ak spĺňajú obe rovnosti (1). Overenie urobíme dosadením:
+\begin{align*}
+x_1 + x_2 &= \frac{-kp}{k + 1}+\frac{-p}{k + 1}=\frac{-(k + 1)p}{k + 1}= -p,\\
+x_1 x_2 &=\frac{-kp}{k + 1}\cdot\frac{-p}{k + 1}=\frac{kp^2}{(k + 1)^2}=\frac{(k + 1)^2q}{(k + 1)^2}= q.
+\end{align*}
+Tým je celý dôkaz hotový.\\
+\\
+}

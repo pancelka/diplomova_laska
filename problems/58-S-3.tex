@@ -1,0 +1,21 @@
+\problem{58-S-3}{
+Keď isté dve prirodzené čísla v~rovnakom poradí sčítame, odčítame, vydelíme a vynásobíme a všetky štyri výsledky sčítame, dostaneme 2 009. Určte tieto dve čísla.
+}{
+\rie Pre hľadané prirodzené čísla $x$ a $y$ sa dá podmienka zo zadania vyjadriť rovnicou
+$$(x + y) + (x - y) +\frac{x}{y}+ (x \cdot y) = 2 009, \ \ \ \ (1)$$
+v~ktorej sme čiastočné výsledky jednotlivých operácií dali do zátvoriek.
+
+Vyriešme rovnicu (1) vzhľadom na neznámu $x$ (v~ktorej je, na rozdiel od neznámej $y$, rovnica lineárna):
+\begin{align*}
+2x +\frac{x}{y}+ xy &= 2 009,\\
+2xy + x + xy^2 &= 2 009y,\\
+x(y + 1)^2 &= 2 009y,\\
+x &= \frac{2009y}{(y + 1)^2}. \ \ \ \ (2)
+\end{align*}
+Hľadáme práve tie prirodzené čísla $y$, pre ktoré má nájdený zlomok celočíselnú hodnotu, čo možno vyjadriť vzťahom $(y + 1)^2 \mid 2009y$. Keďže čísla $y$ a $y + 1$ sú nesúdeliteľné, sú nesúdeliteľné aj čísla $y$ a $(y +1)^2$, takže musí platiť $(y +1)^2 \mid 2009 = 7^2 \cdot41$. Keďže $y +1$ je celé číslo väčšie ako 1 (a činitele 7, 41 sú prvočísla), poslednej podmienke vyhovuje iba hodnota $y = 6$, ktorej po dosadení do (2) zodpovedá $x = 246$. (Skúška nie je nutná, lebo rovnice (1) a (2) sú v~obore prirodzených čísel ekvivalentné.)
+
+Hľadané čísla v~uvažovanom poradí sú 246 a 6.\\
+\\
+\kom Úloha je zaujímavá v~tom, že na prvý pohľad nemusí riešiteľ tušiť, že ide o~problém využívajúci poznatky z~deliteľnosti. Zároveň vyžaduje netriviálnu zručnosť a nápad pri upravovaní počiatočnej rovnice do vhodného tvaru, nadväzuje tým na predchádzajúce semináre o~algebraických výrazoch a rovniciach. Úloha je tak peknou ukážkou toho, že v~matematike (a~nielen tam) nie sú znalosti a koncepty nesúvisiace, ale často sú vzájomne prepojené.\\
+\\
+}

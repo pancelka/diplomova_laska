@@ -1,0 +1,19 @@
+\problem{60-I-5-N2}{
+Dokážte, že pre ľubovoľné prirodzené čísla $a, b$ platí vzťah $$[a, b] \cdot (a, b) = ab.$$
+}{
+\rie Nech $d = (a, b)$, potom $a = ud$, $b = vd$ pre nesúdeliteľné $u$ a $v$, a teda $[a, b] = uvd$. Porovnaním ľavej a pravej strany dokazovanej nerovnosti dostávame $uvd\cdot d = ud\cdot vd$, čo je pravdivé tvrdenie, teda vzťah je dokázaný.
+
+Alternatívne môžeme vzťah dokázať úvahou o~exponentoch prvočísel, z~ktorých sú čísla $a$ a $b$ zložené. Nech $a=p_1^{\alpha_1}\cdot p_2^{\alpha_2} \cdots p_k^{\alpha_k}$ a $b=p_1^{\beta_1}\cdot p_2^{\beta_2} \cdots p_k^{\beta_k}$, kde $p_1$ až $p_k$ sú prvočísla a $\alpha_k, \beta_k$ prirodzené čísla. Potom
+\vspace{-25pt}
+\begin{center}
+\begin{align*}
+(a,b) &=p_1^{\min\{\alpha_1, \beta_1\}}\cdot p_2^{\min\{\alpha_2, \beta_2\}}\cdots p_k^{\min\{\alpha_k, \beta_k\}},\\
+[a,b] &=p_1^{\max\{\alpha_1, \beta_1\}}\cdot p_2^{\max\{\alpha_2, \beta_2\}}\cdots p_k^{\max\{\alpha_k, \beta_k\}},\\
+ab &=p_1^{\alpha_1+\beta_1}\cdot p_2^{\alpha_2+\beta_2}\cdots p_k^{\alpha_k, \beta_k}.
+\end{align*}
+\end{center}
+Keďže pre akékoľvek čísla $\alpha, \beta$ platí $\max\{\alpha, \beta\}+\min\{\alpha, \beta\}=\alpha+\beta$, a to vo všetkých prípadoch $\alpha < \beta$, $\alpha = \beta$, $\alpha > \beta$, je naše tvrdenie dokázané.\\
+\\
+\kom Predchádzajúce tvrdenie je stavebným kameňom mnohých úloh o~spoločných násobkoch a deliteľoch, najmä myšlienka zápisu prirodzených čísel $a$ a $b$ v~tvare $a=ud$ a $b=vd$, kde $u$ a $v$ sú prirodzené čísla také, že $(u,v)=1$ a $d=(a,b)$ nájde uplatnenie veľmi často. \\
+\\
+}

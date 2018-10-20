@@ -1,0 +1,24 @@
+\problem{66-II-1}{
+Nájdite všetky mnohočleny $P(x) = ax^2 +bx+c$ s~celočíselnými koeficientami spĺňajúce
+$$1 < P(1) < P(2) < P(3) \ \ \ \text{a súčasne} \ \  \
+\frac{P(1) \cdot P(2) \cdot P(3)}{4}= 17^2.$$
+}{
+\rieh Rovnosť zo zadania je ekvivalentná rovnosti $P(1)\cdot P(2)\cdot P(3) = 4\cdot17^2$, takže čísla $P(1)$, $P(2)$, $P(3)$ môžu byť iba z~množiny deliteľov čísla $4 \cdot 17^2$ väčších ako 1:
+$$2 < 4 < 17 < 2 \cdot 17 < 4 \cdot 17 < 17^2< 2 \cdot 17^2< 4 \cdot 17^2.$$
+
+Ak by platilo $P(1) = 4$, bol by súčin $P(1)\cdot P(2)\cdot P(3)$ aspoň $4 \cdot 17 \cdot (2 \cdot 17) = 8 \cdot 17^2$, čo nevyhovuje zadaniu. Preto $P(1) = 2$ a tak je nutne $P(2) = 17$, pretože keby bolo $P(2) = 4$, musel by byť daný súčin $4 \cdot 17^2$ deliteľný číslom $P(1)\cdot P(2) = 8$, čo neplatí, a pre $P(2) = 2 \cdot 17$ by bol súčin $P(1)\cdot P(2)\cdot P(3)$ opäť príliš veľký. Pre tretiu neznámu
+hodnotu $P(3)$ potom vychádza $P(3) = 4 \cdot 17^2 /(2 \cdot 17) = 2 \cdot 17$.
+
+Hľadané koeficienty $a$, $b$, $c$ tak sú práve také celé čísla, ktoré vyhovujú sústave
+\begin{align*}
+P(1) &= a + b + c = 2,\\
+P(2) &= 4a + 2b + c = 17,\\
+P(3) &= 9a + 3b + c = 34.
+\end{align*}
+Jej vyriešením dostaneme $a = 1$, $b = 12$, $c = -11$.
+
+\textit{Záver}. Úlohe vyhovuje jediný mnohočlen $P(x) = x^2 + 12x - 11$.\\
+\\
+\kom Úloha spája poznatky o~deliteľnosti, mnohočlenoch a na jej úspešné doriešenie je nutná aj schopnosť popasovať sa so sústavou troch rovníc s~tromi neznámymi. Zaujímavé bude tiež pozorovať, koľko študentov si spomenie, že podobnou úlohou sa už zaoberali v~seminári 5.\\
+\\
+}

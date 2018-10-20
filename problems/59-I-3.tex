@@ -1,0 +1,11 @@
+\problem{59-I-3}{
+Určte všetky reálne čísla $x$, ktoré vyhovujú rovnici $4x - 2\lfloor x\rfloor = 5$.
+}{
+\rieh Položme $\lfloor x\rfloor = a$, potom $x = a + t$, pričom $t \in \langle 0, 1)$, a rovnicu $4(a + t)- 2a = 5$ ekvivalentne upravme na tvar $a=\frac{5}{2}- 2t$. Aby bolo číslo $a$ celé, musí byť $2t = k~\cdot\frac{1}{2}$, pričom $k$ je nepárne číslo. Navyše $2t \in \langle 0, 2)$. Teda buď $2t =\frac{1}{2}$ a $a = 2$, alebo $2t =\frac{3}{2}$ a $a = 1$. Pôvodná rovnica má preto dve riešenia: $x_1 = 2,25$ a $x_2 = 1,75$.\\
+%\textbf{Iné riešenie.} Rovnicu upravíme na tvar $2x - \frac{5}{1}=\lfloor x \rfloor$. Jej riešením sú $x$-ové súradnice priesečníkov grafov funkcií $l: y = 2x - \frac{5}{2}$ a $p: y = \lfloor x \rfloor$. Grafy sa pretínajú v dvoch bodoch, ako vidíme na obr. XXX FIX ME. Pre prvý priesečník platí $\lfloor x \rfloor = 1$. Po dosadení do pôvodnej rovnice dostaneme $4x-2 = 5$ a odtiaľ $x_1 =\frac{7}{4}= 1,75$. Pre druhý priesečník platí $\lfloor x\rfloor = 2$, takže $4x - 4 = 5$ a $x_2 = \frac{9}{4}= 2,25.$
+\\
+\textbf{Iné riešenie.} Rovnicu upravíme na tvar $2x - \frac{5}{2} = \lfloor x\rfloor$. Taká rovnica bude splnená práve vtedy, keď číslo $2x - \frac{5}{2}$ bude celé a bude spĺňať nerovnosti $x - 1 < 2x - \frac{5}{2} \leq x$, ktoré sú ekvivalentné s~podmienkou $\frac{3}{2} < x \leq \frac{5}{2}$. Pre takéto $x$ zrejme hodnoty výrazu $2x - \frac{5}{2}$ vyplnia interval $( \frac{1}{2}, \frac{5}{2} \rangle $. V~ňom ležia práve dve celé čísla 1 a 2, teda hľadané $x$ nájdeme z~rovníc $2x - \frac{5}{2} = 1$ a $2x - \frac{5}{2} = 2$.\\
+\\
+\kom Aj napriek tomu, že funkcia dolná celá časť nie je bežným učivom preberaným v~školách, nemala by analýza úlohy robiť žiakom veľké problémy.\\
+\\
+}

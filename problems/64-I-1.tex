@@ -1,0 +1,33 @@
+\problem{64-I-1}{
+Určte všetky dvojice $(x, y)$ reálnych čísel, ktoré vyhovujú sústave rovníc
+\begin{align*}
+\sqrt{(x + 4)^2} &= 4 - y,\\
+\sqrt{(y - 4)^2} &= x + 8.
+\end{align*}
+}{
+\rie Vzhľadom na to, že pre každé reálne číslo $a$ platí $\sqrt{a^2}= |a|$, je daná sústava rovníc ekvivalentná so sústavou rovníc
+\begin{align*}
+|x + 4| &= 4 - y,\\
+|y - 4| &= x + 8.
+\end{align*}
+
+Z~prvej rovnice vidíme, že musí byť $4 - y \geq 0$, teda $y \leq 4$. V~druhej rovnici môžeme teda odstrániť absolútnu hodnotu. Dostaneme tak $$|y - 4| = 4 - y = x + 8,\ \mathrm{ t.\,j.}\ - y = x + 4.$$
+Po dosadení za $x + 4$ do prvej rovnice dostaneme
+$$|-y| = |y| = 4 - y.$$
+Keďže $y \leq 4$, budeme ďalej uvažovať dva prípady.
+
+Pre $0 \leq y \leq 4$ riešime rovnicu $y = 4 - y$, a teda $y = 2$. Nájdenej hodnote $y = 2$ zodpovedá po dosadení do druhej rovnice $x = -6$.
+
+Pre $y < 0$ dostaneme rovnicu $-y = 4 - y$, ktorá však nemá riešenie.
+
+\textit{Záver.} Daná sústava rovníc má práve jedno riešenie, a to $(x, y) = (-6, 2)$.\\
+
+\textbf{Iné riešenie.} Odstránením absolútnych hodnôt v~oboch rovniciach,  t.\,j. rozborom štyroch možných prípadov, keď\\
+a) $(x + 4 \geq 0) \wedge (y - 4 \geq 0), \ \mathrm{ t.\,j.} \ (x \geq -4) \wedge (y \geq 4)$,\\
+b) $(x + 4 \geq 0) \wedge (y - 4 < 0), \ \mathrm{ t.\,j.} \ (x \geq -4) \wedge  (y < 4)$,\\
+c) $(x + 4 < 0) \wedge (y - 4 \geq 0), \ \mathrm{ t.\,j.} \ (x < -4) \wedge  (y \geq 4)$,\\
+d) $(x + 4 < 0) \wedge (y - 4 < 0), \ \mathrm{ t.\,j.} \ (x < -4) \wedge  (y < 4)$,\\
+zistíme, že prípady a), b), c) nedávajú (vzhľadom na uvedené obmedzenia v~jednotlivých prípadoch) žiadne reálne riešenie. V~prípade d) potom dostaneme jediné riešenie $(x, y) = (-6, 2)$ danej sústavy.\\
+\\
+\kom V~úvode riešenia pripomenieme vzťah $\sqrt{a^2}=|a|$, ktorý nám pomôže transformovať sústavu zo zadania na sústavu rovníc s~absolútnou hodnotou, ktorú by študenti mali byť schopní bez väčších komplikácií vyriešiť.
+}

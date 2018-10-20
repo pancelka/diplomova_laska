@@ -1,0 +1,13 @@
+\problem{62-II-3}{
+Nájdite všetky dvojice celých kladných čísel $a$ a $b$, pre ktoré je číslo $a^2 +b$ o~62 väčšie
+ako číslo $b^2 + a$.
+}{
+\rie  Zadanie zapíšeme rovnosťou, ktorej pravú stranu rovno upravíme na súčin: $$62 = (a^2+ b) - (b^2
++ a) = (a^2 - b^2)- (a - b) = (a - b)(a + b - 1).$$
+Súčin celých čísel $u = a - b$ a $v = a + b - 1$ je teda rovný súčinu dvoch prvočísel $2 \cdot 31$.
+Keďže $v \geq 1 + 1 - 1 = 1$, je nutne aj číslo $u$ kladné a zrejme $u < v$, takže $(u, v)$ je jedna
+z~dvojíc $(1, 62)$ alebo $(2, 31)$. Ak vyjadríme naopak $a, b$ pomocou $u, v$, dostaneme $$a =\frac{u+v+1}{2} \ \ \ \  \textrm{a} \ \ \ \  b=\frac{v-u+1}{2}.$$ Pre $(u, v) = (1, 62)$ tak dostávame riešenie $(a, b) = (32, 31)$, dvojici $(u, v) = (2, 31)$ zodpovedá druhé riešenie $(a, b) = (17, 15)$. Iné riešenia úloha nemá.\\
+\\
+\kom Úloha je veľmi podobná tej, ktorou sme sa zaoberali na stretnutí, slúži tak na overenie toho, či si študenti princíp riešenia osvojili. Zároveň ale zadanie nie je zapísané priamo rovnosťou, takže úloha precvičí aj schopnosť transformovať slovný text na matematický zápis.\\
+\\
+}

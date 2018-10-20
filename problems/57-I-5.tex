@@ -1,0 +1,21 @@
+\problem{57-I-5}{
+Určte všetky dvojice $a, b$ reálnych čísel, pre ktoré má každá z~kvadratických rovníc
+$$ax^2 + 2bx + 1 = 0, \ \ \ \ bx^2 + 2ax + 1 = 0$$
+dva rôzne reálne korene, pričom práve jeden z~nich je spoločný obom rovniciam.
+}{
+\rieh Zo zadania vyplýva, že a $6\neq 0$, $b \neq 0$ (inak by rovnice neboli kvadratické)
+a $a \neq b$ (inak by rovnice boli totožné, a ak by mali dva reálne korene, boli by oba
+spoločné).
+
+Označme $x_0$ spoločný koreň oboch rovníc, takže
+$$ax_0^2+ 2bx_0 + 1 = 0,\ \ \ bx_0^2+ 2ax_0 + 1 = 0.$$
+Odčítaním oboch rovníc dostaneme $(a - b)(x_0^2- 2x_0 ) = x_0 (a - b)(x_0 - 2) = 0$. Keďže $a \neq b$ a 0 zrejme koreňom daných rovníc nie je, musí byť spoločným koreňom číslo $x_0 = 2$. Dosadením do daných rovníc tak dostaneme jedinú podmienku $4a + 4b + 1 = 0$, čiže
+$$b = -a -\frac{1}{4}.$$
+
+
+Diskriminant druhej z~daných rovníc je potom $4a^2 - 4b = 4a^2 + 4a + 1 = (2a + 1)^2$, takže rovnica má dva rôzne reálne korene pre ľubovoľné $a \neq -\frac{1}{2}$. Podobne diskriminant prvej z~daných rovníc je $4b^2- 4a = 4b^2 + 4b +1 = (2b +1)^2$. Rovnica má teda dva rôzne reálne korene pre ľubovoľné $b \neq -\frac{1}{2}$, čiže $a\neq  \frac{1}{4}$
+
+Z~uvedených predpokladov však zároveň vyplýva $a \neq -\frac{1}{4}$ $(b \neq 0)$ a $a \neq - \frac{1}{8}$ $(a \neq b)$.
+
+\textit{Záver.} Vyhovujú všetky dvojice $(a, -a - \frac{1}{4})$, kde $a \in \RR \ \{-\frac{1}{2}, -\frac{1}{4}, -\frac{1}{8}, 0, \frac{1}{4}\}$.\\
+}

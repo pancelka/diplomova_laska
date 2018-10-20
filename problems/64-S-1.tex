@@ -1,0 +1,22 @@
+\problem{64-S-1}{
+V~obore reálnych čísel vyriešte sústavu rovníc
+\begin{align*}
+|1 - x| &= y + 1,\\
+|1 + y| &= z~- 2,\\
+|2 - z| &= x - x^2.
+\end{align*}
+}{
+\rieh  Pravá strana prvej rovnice je nezáporné číslo, čo sa premietne do druhej rovnice, pričom môžeme odstrániť absolútnu hodnotu. Aj pravá strana druhej rovnice je nezáporné číslo, čo sa s~využitím rovnosti $|z -2| = |2-z|$ premietne do tretej rovnice, pričom môžeme odstrániť absolútnu hodnotu. Daná sústava má potom tvar
+\begin{align*}
+|1 - x| &= y + 1,\\
+1 + y &= z~- 2,\\
+z~- 2 &= x - x^2
+\end{align*}
+a odtiaľ jednoduchým porovnaním dostávame rovnicu
+$$|1 - x| = x - x^2.$$
+Pre $x < 1$ dostaneme rovnicu $1-x = x-x^2$ čiže $(1-x)^2 = 0$, ktorej riešenie $x = 1$ ale predpokladu $x < 1$ nevyhovuje.
+
+Pre $x \geq 1$ vyjde rovnica $x^2 = 1$; z~jej dvoch riešení $x = -1$ a $x = 1$ predpokladu $x \geq 1$ vyhovuje iba $x = 1$.
+
+Z~danej sústavy potom jednoducho dopočítame hodnoty $y = -1$ a $z = 2$. Sústava má teda jediné riešenie $(x, y, z) = (1, -1, 2).$\\
+}
