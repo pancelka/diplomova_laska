@@ -12,4 +12,5 @@ RUN apt-get update -y \
     texlive-bibtex-extra pandoc \
     latexmk \
     imagemagick \
-    ghostscript
+    ghostscript \
+    python3

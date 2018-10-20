@@ -51,6 +51,7 @@ build-web/images/%.png: images/%.pdf
 
 build-web/seminars/%.html: seminars/%.tex $(TEMPLATES_HTML) $(PROBLEMS)
 	pandoc -s --mathjax=$(MATHJAX_URL) --metadata-file=templates/metadata.yaml -H templates/header.html -B templates/before-body.html -A templates/after-body.html -f latex -t html -o $@ templates/latex-header-web.tex $<
+	./scripts/freeHtml.py $@
 
 build-web/pdf/%-teacher.pdf: seminars/%.tex $(TEMPLATES_PDF)
 	cat templates/header-teacher.tex $< templates/footer.tex >$(TMP_TEX)
