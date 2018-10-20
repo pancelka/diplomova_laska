@@ -1,6 +1,7 @@
 # Ignore build directories
 build-pdf
 build-web
+tmp.tex
 
 # Ignore common TeX extensions
 *.aux
