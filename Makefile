@@ -1,4 +1,5 @@
 BIBFILE=bibliografia
+PROBLEMS := $(wildcard ./problems/*.tex)
 SEMINARS_TEX := $(wildcard ./seminars/*.tex)
 SEMINARS_HTML := $(patsubst ./seminars/%.tex,./build-web/seminars/%.html,$(SEMINARS_TEX))
 IMAGES_PDF := $(wildcard ./images/*.pdf)
@@ -49,7 +50,7 @@ build-web/index.html: $(TEMPLATES_HTML)
 build-web/images/%.png: images/%.pdf
 	convert -verbose -density 500 -resize '1200' $< $@
 
-build-web/seminars/%.html: seminars/%.tex $(TEMPLATES_HTML)
+build-web/seminars/%.html: seminars/%.tex $(TEMPLATES_HTML) $(PROBLEMS)
 	pandoc -s --mathjax=$(MATHJAX_URL) --metadata-file=templates/metadata.yaml -H templates/header.html -B templates/before-body.html -A templates/after-body.html -f latex -t html -o $@ templates/latex-header-web.tex $<
 
 build-web/pdf/%-teacher.pdf: seminars/%.tex $(TEMPLATES_PDF)
