@@ -53,3 +53,38 @@ a:hover {
 .footer a {
     color: rgba(255, 255, 255, 0.9);
 }
+
+.solution-button {
+    background-color: #3661A2;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+  }
+  
+  .active, .solution-button:hover {
+    background-color: rgb(31, 67, 122);
+  }
+  
+  .solution-button:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .solution {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
