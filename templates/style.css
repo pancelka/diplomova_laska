@@ -13,7 +13,7 @@ body {
 
 .main {
     margin: 30px auto 0 auto;
-    max-width: 900px;
+    max-width: 910px;
     padding: 30px;
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 0px 50px black;
@@ -24,7 +24,7 @@ body {
 
 .footer {
     margin: 20px auto 30px auto;
-    max-width: 900px;
+    max-width: 910px;
     padding: 0 30px 0 30px;
     color: rgba(255, 255, 255, 0.9);
     font-style: italic;
@@ -71,6 +71,28 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.index { 
+    text-align: center;
+}
+
+.index>a {
+    display: block;
+    float: left;
+    width: 122px;
+    padding: 20px;
+    background: rgba(54, 97, 162, 0.1);
+    margin: 10px;
+}
+
+.index>a:hover {
+    background: rgba(54, 97, 162, 0.3);
+    text-decoration: none;
+}
+
+.cleaner {
+    clear: both;
 }
 
 .footer a {
