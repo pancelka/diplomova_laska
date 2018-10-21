@@ -1,27 +1,33 @@
 body {
     background-image: url("background.png");
     font-size: 1.3em;
-    text-align: justify;
+    text-align: left;
+    margin: 15px;
+}
+
+@media only screen and (min-width: 880px) {
+    body {
+        text-align: justify;
+    }
 }
 
 .main {
     margin: 30px auto 0 auto;
-    width: 100%;
-    max-width: 900px;
+    max-width: 910px;
     padding: 30px;
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 0px 50px black;
-    border-color: #3661A2;
+    border-color: rgba(54, 97, 162, 1);
     border-style: solid;
     border-width: 15px 0 15px 0;
 }
 
 .footer {
     margin: 20px auto 30px auto;
-    width: 100%;
-    max-width: 900px;
+    max-width: 910px;
     padding: 0 30px 0 30px;
     color: rgba(255, 255, 255, 0.9);
+    font-style: italic;
 }
 
 .backlink {
@@ -29,20 +35,37 @@ body {
 }
 
 img {
-    width: 50%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
 
+@media only screen and (min-width: 600px) {
+    img {
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    img {
+        width: 50%;
+    }
+}
+
 h1 {
-    color: 	#3661A2;
+    color: 	rgba(54, 97, 162, 1);
     margin-top: 0px;
     text-align: left;
 }
 
+.pdflinks {
+    font-style: italic;
+    margin-top: -25px;
+}
+
 a {
-    color: #3661A2;
+    color: rgba(54, 97, 162, 1);
     text-decoration: none;
 }
 
@@ -50,28 +73,51 @@ a:hover {
     text-decoration: underline;
 }
 
+.index { 
+    text-align: center;
+}
+
+.index>a {
+    display: block;
+    float: left;
+    width: 122px;
+    padding: 20px;
+    background: rgba(54, 97, 162, 0.1);
+    margin: 10px;
+}
+
+.index>a:hover {
+    background: rgba(54, 97, 162, 0.3);
+    text-decoration: none;
+}
+
+.cleaner {
+    clear: both;
+}
+
 .footer a {
     color: rgba(255, 255, 255, 0.9);
 }
 
 .solution-button {
-    background-color: #3661A2;
+    background-color: rgba(54, 97, 162, 0.1);
     color: white;
     cursor: pointer;
     padding: 15px;
-    margin-top: 20px;
+    margin: 20px 0 0 0;
   }
   
 .solution-button:before {
-    content: "\002B ";
+    content: "\002B";
+    margin-right: 10px;
 }
 
 .active:before {
-    content: "\2212 ";
+    content: "\2212";
 }
 
 .active, .solution-button:hover {
-    background-color: rgb(31, 67, 122);
+    background-color: rgba(54, 97, 162, 0.3);
 }
 
 .solution {
