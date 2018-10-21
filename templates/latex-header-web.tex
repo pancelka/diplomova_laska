@@ -3,9 +3,6 @@
 % Use PNG-converted images
 \newcommand{\imagesuffix}{.png}
 
-% Display PDF download links
-\newcommand{\weblinks}[1]{#1}
-
 % Display problems (in gray box) + solutions
 \newcommand{\problem}[3]{
     \subsubsection{Úloha #1}
@@ -17,4 +14,8 @@
 % Seminar title
 \newcommand{\seminar}[1]{
   \section*{Seminár #1}
+  \texttt{<div class="pdflinks">PDF na stiahnutie: <a href="pdf/seminar#1-teacher.pdf">učiteľská verzia</a>, <a href="pdf/seminar#1-student.pdf">študentská verzia</a></div>}
 }
+
+% Fix measured angle symbol for build web pages
+\newcommand{\ma}{\measuredangle}
