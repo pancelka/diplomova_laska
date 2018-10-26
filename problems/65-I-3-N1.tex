@@ -1,8 +1,8 @@
 % Do not delete this line (pandoc magic!)
 
-\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{3.1} [65-I-3-N1] Pre ľubovoľné reálne čísla $x, y$ a $z$ dokážte nezápornosť hodnoty každého z~výrazov $$x^2z^2+ y^2- 2xyz, \ x^2+ 4y^2+ 3z^2- 2x - 12y - 6z + 13, \ 2x^2+ 4y^2 + z^2- 4xy - 2xz$$ a zistite tiež, kedy je dotyčná hodnota rovná nule.
-\end{tcolorbox}
-
+\problem{65-I-3-N1}{
+Pre ľubovoľné reálne čísla $x, y$ a $z$ dokážte nezápornosť hodnoty každého z~výrazov $$x^2z^2+ y^2- 2xyz, \ x^2+ 4y^2+ 3z^2- 2x - 12y - 6z + 13, \ 2x^2+ 4y^2 + z^2- 4xy - 2xz$$ a zistite tiež, kedy je dotyčná hodnota rovná nule.
+}{
 \rieh  Prvý výraz upravíme použitím vzorca $(A-B)^2$, kde $A=xz$ a $B=y$, čím dostaneme $x^2z^2+ y^2- 2xyz=(xz-y)^2$. Keďže ide o~druhú mocninu reálneho čísla, bude hodnota výrazu vždy nezáporná a rovnať sa nule bude v~prípade $xz=y$.
 
 Druhý výraz upravíme podobným spôsobom, obdržíme však súčet troch druhých mocnín: $x^2+ 4y^2+ 3z^2- 2x - 12y - 6z + 13= (x^2-2x+1)+(4y^2-12y+9)+3(z^2-2z+1)=(x-1)^2+(2y-3)^2+3(z-1)^2$. Všetky tri sčítance sú nezáporné a teda aj ich súčet bude nezáporný a rovný nule bude v~prípade, ak základy všetkých troch mocnín budú tiež rovné nule, teda $x=1$, $y=\frac{3}{2}$ a $z=1$.
@@ -10,3 +10,4 @@ Druhý výraz upravíme podobným spôsobom, obdržíme však súčet troch druh
 Pohľad na posledné dva členy posledného výrazu nám napovie, že pravdepodobne opäť využijeme podobnú úpravu ako v~predchádzajúcich prípadoch, základy mocnín však budú obsahovať dve premenné. Skutočne rozpísaním člena $2x^2=x^2+x^2$ a preusporiadaním poradia členov dostávame $(x^2-4xy+4y^2)+(x^2-2xy+z^2)$, odkiaľ je už zrejmé, že výraz bude mať tvar súčtu dvoch druhých mocnín $(x-2y)^2+(x-z)^2$. Výraz je vždy nezáporný a nulovú hodnotu nadobúda pre $x=2y=z$.\\
 
 \kom Cieľom úlohy je zopakovať použitie vzorcov $(A\pm B)^2$ v~trochu menej priamočia\-rych mnohočlenoch než na aké je priestor v~bežnom vyučovaní. Zároveň rozpísanie člena $2x^2$ na súčet dvoch rovnakých členov je trik, na ktorý je vhodné študentov upozorniť, keďže tento princíp nájde uplatnenie v~nejednej úlohe.\\
+}

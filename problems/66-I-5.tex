@@ -1,0 +1,27 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{66-I-5}{
+V~danom trojuholníku ABC zvoľme vnútri strany $AC$ body $K$, $M$ a vnútri strany $BC$ body $L$, $N$ tak, že
+$$|AK| = |KM| = |MC|, |BL| = |LN| = |NC|.$$
+Ďalej označme $E$ priesečník uhlopriečok lichobežníka $ABLK$, $F$ priesečník uhlopriečok lichobežníka $KLNM$ a $G$ priesečník uhlopriečok lichobežníka $ABNM$. Dokážte, že body $E$, $F$ a $G$ ležia na ťažnici trojuholníka $ABC$ z~vrcholu $C$ a určte pomer $|GF| : |EF|$.
+}{
+\rieh
+Dokázané vlastnosti všeobecného lichobežníka z~predchádzajúcej úlohy nám umožnia celkom ľahko vyriešiť zadanú úlohu. Situácia je znázornená na obr. 10. Okrem pomenovaných bodov sme tam ešte označili $S_1$, $S_2$, $S_3$ stredy úsečiek $AB$, $KL$ a $MN$. Keďže trojuholníky $ABC$, $KLC$
+\begin{center}
+\includegraphics{images/66D52\imagesuffix}
+
+Obr. 10
+\end{center}
+a $MNC$ sú navzájom podobné (podľa vety $sus$), platí $|AB| : |KL| : |MN| = |AC| : |KC| : |MC| = 3 : 2 : 1$. Podľa zhodných vnútorných uhlov spomenutých troch trojuholníkov platí tiež $AB \parallel KL$, $KL \parallel MN$. Štvoruholníky $ABLK$, $KLNM$ a $ABNM$ tak sú naozaj lichobežníky (ako je prezradené v~zadaní) so základňami $AB$, $KL$ a $MN$, ktorých dĺžky sú v~už odvodenom pomere $3 : 2 : 1$. Navyše predĺžené ramená všetkých troch lichobežníkov sa pretínajú v~bode $C$, ktorým preto podľa dokázanej vlastnosti prechádzajú priamky $S_1 S_2$, $S_2 S_3$ (a $S_1 S_3$), takže ide o~jednu priamku, na ktorej body $S_1$, $S_2$, $S_3$ a $C$ ležia v~uvedenom poradí tak, že $|S_1 C| : |S_2 C| : |S_3 C| = 3 : 2 : 1$. Z~toho vyplýva $|S_1 S_2 | = |S_2 S_3 | (= |S_3 C|)$, takže bod $S_2$ je stredom úsečky $S_1 S_3$. Na nej (opäť podľa dokázaného tvrdenia) ležia aj body $E$, $F$ a $G$, pričom pre bod $E$ medzi bodmi $S_1$, $S_2$ platí $|ES_1 | : |ES_2 | = 3 : 2$, pre bod $F$ medzi bodmi $S_2$, $S_3$ platí $|FS_2| : |FS_3| = 2 : 1$ a napokon pre bod $G$ medzi bodmi $S_1$, $S_3$ platí $|GS_1| : |GS_3 | = 3 : 1$. Tieto delenia troch úsečiek sme znázornili na obr. 11, kam sme zapísali aj dĺžky vzniknutých úsekov pri voľbe jednotky $1 = |S_1 S_2 | = |S_2 S_3 |$ (pri ktorej $|S_1 S_3 | = 2$).
+\begin{center}
+\includegraphics{images/66D53\imagesuffix}
+
+Obr. 11
+\end{center}
+Keďže
+$$|S_1 F| = |S_1 S_2 | + |S_2 F| = 1 +\frac{2}{3}=\frac{5}{3}>\frac{3}{2}= |S_1 G|,$$
+platí $|GF| = |S_1 F| - |S_1 G| =\frac{5}{3} -\frac{3}{2}=\frac{1}{6}$, čo spolu s~rovnosťou $|EF| = |ES_2 | + |S_2 F|=\frac{2}{5}+\frac{2}{3}=\frac{16}{15}$ už vedie k~určeniu hľadaného pomeru
+$$|GF| : |EF| =\frac{1}{6}:\frac{16}{15}= 5 : 32.$$
+\\
+\kom Úloha je zložitejšia ako predchádzajúca, ale študenti zoznámení s~prípravnou úlohou, zbehlí vo využívaní podobných trojuholníkov a precízni, aby sa nestratili v~záverečnom pomerovaní, by si s~úlohou poradiť mali.
+}

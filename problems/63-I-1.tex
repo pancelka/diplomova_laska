@@ -1,13 +1,12 @@
 % Do not delete this line (pandoc magic!)
 
-\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{3.3} [63-I-1] Určte, akú najmenšiu hodnotu môže nadobúdať výraz $V = (a-b)^2 +(b-c)^2 +(c-a)^2$, ak reálne čísla $a, b, c$ spĺňajú dvojicu podmienok
+\problem{63-I-1}{
+ Určte, akú najmenšiu hodnotu môže nadobúdať výraz $V = (a-b)^2 +(b-c)^2 +(c-a)^2$, ak reálne čísla $a, b, c$ spĺňajú dvojicu podmienok
 \begin{align*}
 a + 3b + c &= 6,\\
 -a + b - c &= 2.
 \end{align*}
-
-\end{tcolorbox}
-
+}{
 \rieh Sčítaním oboch rovníc z~podmienky zistíme, že $b = 2$. Dosadením za $b$ do niektorej z~nich vyjde $c = -a$. Platí teda $V = (a - 2)^2 + (2 + a)^2 + (-2a)^2$. Po umocnení a sčítaní zistíme, že $V = 6a^2 + 8 \geq 8$. Rovnosť nastane práve vtedy, keď $a = 0$, $b = 2$ a $c = 0$.
 
 Hľadaná najmenšia hodnota výrazu $V$ je teda rovná 8.\\
@@ -30,3 +29,4 @@ Ak teda zvolíme substitúciu $m = a + c$ a $n = b + d$, dostaneme riešením s�
 \textbf{Iné riešenie.} Podmienky úlohy si predstavíme ako sústavu rovníc s~neznámymi $a, b$ a parametrami $c, d$. Vyriešením tejto sústavy (sčítacou alebo dosadzovacou metódou) vyjadríme $a = 2 - c, b = -d \ (c, d \in \RR )$ a po dosadení do výrazu $V$ dostávame $$V = (2 - c)(-d) - dc + cd + d(2 - c) = 0.$$
 \\
 \kom Zadanie úlohy opäť obsahuje sústavu dvoch rovníc. Jej riešenie sa však po substitúcii zredukuje na veľmi jednoduchú sústavu, s~ktorou sa študenti stretli už na základnej škole, takže by nemala spôsobiť výrazné problémy. \\
+}

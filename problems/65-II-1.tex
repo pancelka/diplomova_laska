@@ -1,10 +1,9 @@
 % Do not delete this line (pandoc magic!)
 
-\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{3.6} [65-II-1] Nájdite najmenšiu možnú hodnotu výrazu $$3x^2 - 12xy + y^4,$$
+\problem{65-II-1}
+{Nájdite najmenšiu možnú hodnotu výrazu $$3x^2 - 12xy + y^4,$$
 v~ktorom $x$ a $y$ sú ľubovoľné celé nezáporné čísla.
-
-\end{tcolorbox}
-
+}{
 \rieh Označme daný výraz $V$ a upravme ho dvojakým doplnením na štvorec: $$V = 3x^2 - 12xy + y^4= 3(x - 2y)^2 - 12y^2+ y^4= 3(x - 2y)^2+ (y^2 - 6)^2 - 36.$$
 Zrejme platí $(x-2y)^2\geq0$, takže najmenšiu hodnotu výrazu V~pri pevnom $y$ dostaneme, keď položíme $x = 2y$. Ostáva preto nájsť najmenšiu možnú hodnotu mocniny $(y^2 - 6)^2$
 s~nezápornou celočíselnou premennou $y$. Keďže $y^2 \in \{0, 1, 4, 9, 16, 25, \ldots\}$ a číslo 6 padne medzi čísla 4 a 9 tejto množiny, platí pre každé celé číslo $y$ nerovnosť $$(y^2 - 6)^
@@ -12,3 +11,4 @@ s~nezápornou celočíselnou premennou $y$. Keďže $y^2 \in \{0, 1, 4, 9, 16, 2
 $$V \geq 3 \cdot 0 + 4 - 36 = -32,$$
 pritom rovnosť $V = -32$ nastáva pre $y = 2$ a $x = 2y = 4$.\\
 \textit{Záver.} Hľadaná najmenšia možná hodnota daného výrazu je -32.\\
+}

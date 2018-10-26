@@ -1,14 +1,13 @@
 % Do not delete this line (pandoc magic!)
 
-\begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]\ul{3.5} [65-I-3] Uvažujme výraz $$2x^2+ y^2 - 2xy + 2x + 4.$$
+\problem{65-I-3}{
 \begin{enumerate}[a)]
 
 \item Nájdite všetky reálne čísla $x$ a $y$, pre ktoré daný výraz nadobúda svoju najmenšiu hodnotu.
 
 \item Určte všetky dvojice celých nezáporných čísel $x$ a $y$, pre ktoré je hodnota daného výrazu rovná číslu 16.
 \end{enumerate}
-\end{tcolorbox}
-
+}{
 \rieh Daný výraz $V (x, y)$ upravme podľa vzorcov pre $(A \pm B)^2$:$$
 V(x, y) =  x^2 - 2xy + y^2 +  x^2+ 2x + 1 + 3 = (x - y)^2+ (x + 1)^2+ 3.$$
 
@@ -18,3 +17,4 @@ b) Podľa úpravy z~úvodu riešenia platí $$V (x, y) = 16 \Leftrightarrow (x -
 Oba sčítance $(x - y)^2$ a $(x + 1)^2$ sú (pre celé nezáporné čísla $x$ a $y$) z~množiny $\{0, 1, 4, 9, 16, \ldots \}$. Jeden preto zrejme musí byť 4 a druhý 9. Vzhľadom na predpoklad $x \geq 0$ je základ $x+1$ mocniny $(x+1)^2$ kladný, musí preto byť rovný 2 alebo 3 (a nie $-2$ či $-3$). V~prvom prípade,  t.\,j. pre $x = 1$, potom pre základ mocniny $(x - y)^2$ dostávame podmienku $1 - y = \pm $, teda $y = 1 \pm 3$, čiže $y = 4$ (hodnota $y = -2$ je zadaním časti b) vylúčená). V~druhom prípade, keď $x = 2$, dostaneme podobne z~rovnosti $x - y = 2 - y = \pm 2$ dve vyhovujúce hodnoty $y = 0$ a $y = 4$. Celkovo teda všetky hľadané dvojice $(x, y)$ sú $(1, 4), (2, 0)$ a $(2, 4)$.\\
 \\
 \kom Záverečná úloha stavia na poznatkoch z~predchádzajúcich úloh, avšak vyžaduje dodatočnú analýzu, preto sme ju zvolili ako vyvrcholenie prvého algebraického seminára.
+}

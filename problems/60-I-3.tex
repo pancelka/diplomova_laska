@@ -1,0 +1,36 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{60-I-3}{
+Máme štvorec $ABCD$ so stranou dĺžky 1\,cm. Body $K$ a $L$ sú stredy strán $DA$ a $DC$. Bod $P$ leží na strane $AB$ tak, že $| BP | = 2 | AP |$. Bod $Q$ leží na strane $BC$ tak, že $| CQ | = 2 | BQ |$. Úsečky $KQ$ a $PL$ sa pretínajú v~bode $X$. Obsahy štvoruholníkov $APXK$, $BQXP$, $QCLX$ a $LDKX$ označíme postupne $S_A$, $S_B$, $S_C$, $S_D$ (obr. 6).
+
+a) Dokážte, že $S_B = S_D$.
+
+b) Vypočítajte rozdiel $S_C - S_A$.
+
+c) Vysvetlite, prečo neplatí $S_A + S_C = S_B + S_D$.
+\begin{center}
+\includegraphics{images/60D31\imagesuffix}\\
+
+Obr. 6
+\end{center}
+}{
+\rieh  a) Štvoruholníky $ABQK$ a $DAPL$ sú zhodné (jeden z~nich je obrazom druhého v~otočení o~$90^\circ$ so stredom v~strede štvorca $ABCD$). Preto majú aj rovnaký obsah, čiže $S_A + S_B = S_A + S_D$. Z~toho hneď dostaneme $S_B = S_D$.
+
+b) Ľahko sa nám podarí vypočítať obsah pravouhlého lichobežníka $ABQK$, lebo poznáme dĺžky základní aj výšku. Dostaneme
+$$S_A + S_B =\bigg( \frac{1}{2}+\frac{1}{3}\bigg)\cdot \frac{1}{2}=\frac{5}{12}\,\text{cm}^2.$$
+Podobne výpočtom obsahu lichobežníka $PBCL$ dostaneme
+$$S_C + S_B =\bigg(\frac{1}{2}+\frac{2}{3}\bigg)\cdot\frac{1}{2}=\frac{7}{12}\,\text{cm}^2.$$
+Odčítaním prvej získanej rovnosti od druhej dostávame $S_C - S_A =\frac{7}{12}-\frac{5}{12}=\frac{1}{6}\,\text{cm}^2$.
+
+c) Nerovnosť medzi obsahmi $S_A + S_C$ a $S_B + S_D$ (ktorých priame výpočty nie sú v~silách žiakov 1. ročníka) môžeme zdôvodniť nasledovným spôsobom: Súčet týchto dvoch obsahov je 1\,cm$^2$, takže sa nerovnajú práve vtedy, keď je jeden z~nich menší ako $\frac{1}{2}$\,cm$^2$. Bude to obsah $S_B +S_D$ (rovný $2S_B$, ako už vieme), keď ukážeme, že obsah $S_B$ je menší ako $\frac{1}{4}$\,cm$^2$. Urobíme to tak, že do celého štvorca $ABCD$ umiestnime bez prekrytia štyri kópie štvoruholníka $PBQX$. Ako ich umiestnime, vidíme na obr. 7, pričom $M$, $N$ sú stredy strán $BC$, $AB$ a $R$, $S$ body, ktoré delia strany $CD$, $DA$ v~pomere $1 : 2$.
+\begin{center}
+\includegraphics{images/60D32\imagesuffix} \includegraphics{images/60D33\imagesuffix}\\
+
+Obr. 7 \hspace{140pt} Obr. 8
+\end{center}
+\textbf{Iné riešenie} časti c). Tentoraz namiesto nerovnosti $S_B + S_ D < \frac{1}{2}$\,cm$^2$ dokážeme ekvivalentnú nerovnosť $S_A +S_C >\frac{1}{2}$\,cm$^2$. Preto sa pokúsime \uv{premiestniť} štvoruholník $APXK$ tak, aby ležal pri štvoruholníku $XQCL$ a aby sa ich obsahy dali geometricky sčítať. Uhly $AKQ$ a $DLP$ sú zhodné a $| AK | = | DL |$, preto môžeme štvoruholník $APXK$ premiestniť vo štvorci $ABCD$ do jeho \uv{rohu} $D$ tak, že k~štvoruholníku $XQCL$ priľahne pozdĺž strany $LX$ svojou stranou $LY$, pričom $Y$ je priesečník úsečiek $SM$ a $PL$ z~pôvodného riešenia (obr. 8). Obsah $S_A + S_C$ je potom obsahom šesťuholníka $DSYXQC$. Prečo je väčší ako $\frac{1}{2}$\,cm$^2$, môžeme zdôvodniť napríklad takto:
+
+Úsečka spájajúca bod $L$ so stredom $U$ úsečky $KQ$ pretne úsečku $SM$ v~jej strede $V$. Štvoruholník $UQMV$ má obsah rovný polovici obsahu rovnobežníka $KQMS$, teda rovný obsahu trojuholníka $KMS$. Preto má šesťuholník $DSV UQC$ obsah rovný obsahu štvoruholníka $KMCD$,  t.\,j. polovici obsahu štvorca $ABCD$. Obsah $S_A +S_C$ je ešte väčší, a to o~obsah štvoruholníka $XUVY$. Teda naozaj $S_A + S_C >\frac{1}{2}$\,cm$^2$.\\
+\\
+\kom Prvé dve časti sú príjemným úvahovým rozohriatím k~časti tretej, ktorá vyžaduje trochu viac invencie. Demonštruje však zaujímavý prístup k~riešeniu a porovnávanie obsahov obrazcov namiesto priameho výpočtu obsahov.\\
+}

@@ -1,0 +1,41 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{61-II-3}{
+Nech $E$ je stred strany $CD$ rovnobežníka $ABCD$, v~ktorom platí $2|AB| = 3|BC|$. Dokážte, že ak sa dá do štvoruholníka ABCE vpísať kružnica, dotýka sa táto kružnica strany $BC$ v~jej strede.
+}{
+\rieh Keďže štvoruholník $ABCE$ je podľa zadania dotyčnicový, pre dĺžky jeho strán platí známa rovnosť\footnote{Rovnosť sa odvodí rozpísaním dĺžok strán na ich úseky vymedzené bodmi dotyku vpísanej kružnice a následným využitím toho, že každé dva z~týchto úsekov, ktoré vychádzajú z~rovnakého vrcholu
+štvoruholníka, sú zhodné.}
+$$|AB| + |CE| = |BC| + |AE|.$$
+V~našej situácii pri označení $a = |AB|$ platí $|BC| = |AD| = \frac{2}{3}a$ a $|CE| = |DE| =\frac{1}{2}a$
+(obr. 2), odkiaľ po dosadení do uvedenej rovnosti zistíme, že $|AE| = \frac{5}{6}a$.
+\begin{center}
+\includegraphics{images/61K31\imagesuffix}\\
+
+Obr. 2
+\end{center}
+Teraz si všimneme, že pre dĺžky strán trojuholníka $ADE$ platí
+$$|AD| : |DE| : |AE| = \frac{2}{3}a : \frac{1}{2}a : \frac{5}{6}a = 4 : 3 : 5,$$
+takže podľa (obrátenej časti) Pytagorovej vety má trojuholník $ADE$ pravý uhol pri vrchole $D$, a teda rovnobežník $ABCD$ je obdĺžnik. Dotyčnica $BC$ kružnice vpísanej štvoruholníku $ABCE$ je teda kolmá na dve jej (navzájom rovnobežné) dotyčnice $AB$ a $CE$. To už zrejme znamená, že bod dotyku dotyčnice $BC$ je stredom úsečky $BC$ (vyplýva to zo zistenej kolmosti vyznačeného priemeru kružnice na jej vyznačený
+polomer).\\
+\\
+\textbf{Iné riešenie.} Ukážeme, že požadované tvrdenie možno dokázať aj bez toho, aby sme si všimli, že rovnobežník $ABCD$ je v~danej úlohe obdĺžnikom. Namiesto toho využijeme, že úsečka $CE$ je stredná priečka trojuholníka $ABF$, pričom $F$ je priesečník polpriamok $BC$ a $AE$ (obr. 3), lebo $CE \parallel AB$ a $|CE| =\frac{1}{2}|AB|$. Označme preto $a = |AB| = 2|CE|$,
+\begin{center}
+\includegraphics{images/61K32\imagesuffix}\\
+
+Obr. 3
+\end{center}
+$b = |BC| = |CF|$ a $e = |AE| = |EF|$ (rovnosť $2a = 3b$ použijeme až neskôr). Rovnako ako v~prvom riešení využijeme rovnosť $b+e = a+\frac{1}{2}a (=\frac{3}{2}a)$, ktorá platí pre dĺžky strán dotyčnicového štvoruholníka $ABCE$. Kružnica jemu vpísaná sa dotýka strán $BC$, $CE$, $AE$ postupne v~bodoch $P$, $Q$, $R$ tak, že platia rovnosti
+$$|CP| = |CQ|, \ \ \ \ |EQ| = |ER| \ \ \ \ \text{a tiež}\ \ \ \ |FP| = |FR|.$$
+Pre súčet zhodných dĺžok $|FP|$ a $|FR|$ teda platí
+\begin{align*}
+|FP| + |FR| &= (b + |CP|) + (e + |ER|) = (b + e) + (|CP| + |ER|) =\\
+&=\frac{3}{2}a + (|CQ| + |EQ|) = \frac{3}{2}a + \frac{1}{2}a = 2a,
+\end{align*}
+čo znamená, že $|FP| = |FR| = a$.
+
+Teraz už riešenie úlohy ľahko dokončíme. Rovnosť $|BP| =\frac{1}{2}b$, ktorú máme v~našej situácii dokázať, vyplýva z~rovnosti
+$$|BP| = |BF| - |FP| = 2b -a,$$
+keď do nej dosadíme zadaný vzťah $a=\frac{3}{2}b$.\\
+\\
+\kom Úloha nadväzuje na predchádzajúcu a využíva rovnosť súčtov dĺžok opačných strán dotyčnicového štvoruholníka. Ďalej študenti uplatnia buď Pytagorovu vetu alebo vedomosti o~stredných priečkach v~trojuholníku, čo úlohu činí zaujímavou z~hľadiska pestrosti.\\
+}
