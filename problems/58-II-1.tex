@@ -1,0 +1,22 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{58-II-1}{
+Uvažujme výraz $$V(x) =\frac{5x^4 - 4x^2 + 5}{x^4 + 1}.$$
+
+a) Dokážte, že pre každé reálne číslo $x$platí $V (x) \geq 3$.
+
+b) Nájdite najväčšiu hodnotu $V (x)$.
+
+}{
+\rie  Výraz $V$ je zrejme definovaný pre všetky reálne čísla $x$.
+
+a) Keďže $x^4 +1 > 0$ pre každé $x$, nerovnosť $V (x) \geq 3$ je ekvivalentná s nerovnosťou $5x^4 - 4x^2 + 5 \geq 3(x^4 + 1)$, čiže $2x^4 - 4x^2 + 2 \geq 0$. Výraz na ľavej strane je rovný $2(x^2 - 1)^2$, takže je nezáporný pre každé $x$.
+
+b) Využime nasledujúcu úpravu:
+$$V (x) =\frac{5x^4 - 4x^2 + 5}{x^4 + 1}=\frac{5(x^4 +1)}{x^4 + 1}-\frac{4x^2}{x^4 + 1}=5-\frac{4x^2}{x^4 + 1}.$$
+Keďže zlomok
+$$\frac{4x^2}{x^4 + 1}$$
+je vďaka párnym mocninám premennej $x$ pre ľubovoľné reálne číslo $x$ nezáporný, nadobúda výraz $V$ svoju najväčšiu hodnotu $V_{max}$ práve vtedy, keď
+$$\frac{4x^2}{x^4 + 1}=0$$
+teda práve vtedy, keď $x = 0$. Dostávame tak $V_{max} = V (0) = 5$.
+}

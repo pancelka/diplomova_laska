@@ -1,0 +1,36 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{65-I-5}{
+Máme kartičky s číslami $5, 6, 7, \ldots, 55$ (na každej kartičke je jedno číslo). Koľko najviac kartičiek môžeme vybrať tak, aby súčet čísel na žiadnych dvoch vybraných kartičkách nebol palindróm? (Palindróm je číslo, ktoré je rovnaké pri čítaní zľava doprava i sprava doľava.)
+}{
+\rieh Aby sme sa mohli stručnejšie vyjadrovať, budeme vyberať priamo \textit{čísla}, a nie kartičky.
+
+Všimnime si najskôr, že pre súčet s ľubovoľných dvoch daných čísel platí $11 = 5 + 6 \leq  s \leq 55 + 54 = 109$. Medzi číslami od 11 po 109 sú palindrómy práve všetky násobky 11 a navyše aj číslo 101. Uvedomme si teraz, že deliteľnosť súčtu dvoch čísel daným číslom $d$ (nám pôjde o hodnotu $d = 11$) závisí iba na zvyškoch oboch sčítaných čísel po delení dotyčným $d$. Toto užitočné pravidlo uplatníme tak, že všetky dané čísla
+od 5 po 55 rozdelíme do skupín podľa ich zvyškov po delení číslom 11 a tieto skupiny zapíšeme do riadkov tak, aby súčet dvoch čísel z rôznych skupín na rovnakom riadku bol deliteľný číslom 11; o význame zátvoriek na konci každého riadku budeme hovoriť vzápätí.
+\begin{center}
+\begin{align*}
+\{5, 16, 27, 38, 49\}&, \ \ \ \{6, 17, 28, 39, 50\} &\text{(5 čísel)},\\
+\{7, 18, 29, 40, 51\}&, \ \ \ \{15, 26, 37, 48\}  &\text{(5 čísel)},\\
+\{8, 19, 30, 41, 52\}&, \ \ \ \{14, 25, 36, 47\} &\text{(5 čísel)},\\
+\{9, 20, 31, 42, 53\}&, \ \ \ \{13, 24, 35, 46\}  &\text{(5 čísel)},\\
+\{10, 21, 32, 43, 54\}&, \ \ \ \{12, 23, 34, 45\} &\text{(5 čísel)}\\
+\{11, 22, 33,& 44, 55\} \ \ &\text{(1 číslo)}.
+\end{align*}
+\end{center}
+
+Na koniec každého riadku sme pripísali maximálny počet na ňom zapísaných čísel, ktoré môžeme súčasne vybrať bez toho, aby súčet dvoch z nich bol násobkom čísla 11. Napríklad v treťom riadku máme päticu čísel so zvyškom 8 a štvoricu čísel so zvyškom 3. Je jasné, že nemôžeme súčasne vybrať po čísle z oboch týchto skupín (ich súčet by bol násobkom 11), môžeme však vybrať súčasne všetkých päť čísel z pätice (súčet každých dvoch z nich bude po delení 11 dávať taký istý zvyšok ako súčet 8 + 8, teda zvyšok 5). Dodajme ešte, že uvedená schéma šiestich riadkov má pre nás ešte jednu obrovskú výhodu: súčet žiadnych dvoch čísel z rôznych riadkov nie je násobkom 11 (tým totiž nie
+je ani súčet ich dvoch zvyškov).
+
+Z uvedeného rozdelenia všetkých daných čísel do šiestich riadkov vyplýva, že vyhovujúcim spôsobom nemôžeme vybrať viac ako $5 \cdot 5 + 1 = 26$ čísel. Keby sme však vybrali 26 čísel, muselo by medzi nimi byť aj jedno z čísel 49 alebo 50 a z ďalších štyroch riadkov postupne čísla 51, 52, 53 a 54 -- potom by sme ale dostali palindróm 49 + 52 alebo 50 + 51. A tak sa nedá vybrať viac ako 25 čísel, pritom výber 25 čísel možný je: z prvých piatich riadkov vyberieme napríklad všetky čísla z ľavých skupín s výnimkou čísla 52 a k tomu jedno číslo (napríklad 11) z posledného riadku. Potom súčet žiadnych dvoch vybraných čísel nebude deliteľný 11 (vďaka zaradeniu čísel do skupín), ani rovný poslednému ”kritickému“ číslu, palindrómu 101 (preto sme pri voľbe čísla 49 vylúčili 52).\\
+\textit{Odpoveď}. Najväčší možný počet kartičiek, ktoré môžeme požadovaným spôsobom vybrať, je rovný číslu 25.
+\textbf{Iné riešenie}. Medzi vybranými číslami môžu byť
+\begin{itemize}
+\item iba jedno číslo z pätice (11, 22, 33, 44, 55);
+\item nanajvýš jedno číslo z každej z 20 nasledujúcich dvojíc (5, 6), (7, 15), (8, 14), (9, 13), (10, 12), (16, 17), (18, 26), (19, 25), (20, 24), (21, 23), (27, 28), (29, 37), (30, 36), (31, 35), (32, 34), (38, 39), (40, 48), (41, 47), (42, 46) a (43, 45); \footnote{Tieto dvojice so súčtami deliteľnými číslom 11 sme vytvorili postupne zo zvyšných čísel tak, že sme k najmenšiemu doposiaľ nezapísanému číslu sme pripojili ďalšie najmenšie doposiaľ nezapísané číslo, ktoré ”dopľňa“ prvé číslo na nejaký násobok 11. Takému postupu sa najmä v matematickej
+informatike hovorí pažravý \textit{algoritmus}.}
+\item nanajvýš dve čísla zo štvorice (49, 50, 51, 52) (pretože súčty 49 + 50, 50 + 51 a 49 + 52 sú palindrómy);
+\item obe zvyšné čísla 53 a 54.
+\end{itemize}
+
+Preto sa nedá požadovaným spôsobom vybrať viac ako 1 + 20 + 2 + 2 = 25 čísel. Vyhovujúci výber 25 čísel je možný: jedno číslo z pätice násobkov 11, menšie z dvoch čísel z každej z 20 dvojíc, čísla 49 a 51 zo štvorice a napokon obe čísla 53 a 54. Je však nutné vysvetliť, prečo súčet žiadnych dvoch vybraných čísel nie je násobkom 11 (prečo nie je rovný 101, je zrejmé hneď). Na to si stačí všimnúť, že menšie čísla z 20 dvojíc dávajú po delení jedenástimi postupne zvyšky, ktoré sa opakujú s periódou dĺžky 5 majúcou zloženie (5, 7, 8, 9, 10), napokon posledné štyri vybrané čísla majú postupne zvyšky 5, 7, 9 a 10, takže súčet žiadnych dvoch zvyškov nami vybraných čísel naozaj nie je násobkom 11. (Zhodou okolností sa jedná o rovnaký príklad vyhovujúceho výberu 25 čísel ako v prvom riešení.)
+}

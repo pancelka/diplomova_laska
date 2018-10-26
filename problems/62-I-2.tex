@@ -1,0 +1,20 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{62-I-2}{
+Pre kladné reálne čísla $a, b, c, d$ platí
+$$a + b = c + d, ad = bc, ac + bd = 1.$$
+Akú najväčšiu hodnotu môže mať súčet $a + b + c + d$?
+}{
+\rieh Najskôr ukážeme, že prvé dve rovnosti zo zadania úlohy sú splnené len vtedy, keď platí $a = c$ a súčasne $b = d$. Naozaj, vďaka tomu, že zadané čísla sú kladné (a teda rôzne od nuly), môžeme uvedené rovnosti zapísať ako
+$$ a \bigg( 1+\frac{b}{a}\bigg) = c\bigg(1+\frac{d}{c}\bigg) \ \ \mathrm{a} \ \ \frac{b}{a}=\frac{d}{c}.$$
+Podľa druhej rovnosti vidíme, že súčty v oboch zátvorkách z prvej rovnosti majú rovnakú kladnú hodnotu, takže sa musia rovnať prvé činitele oboch jej strán. Platí teda $a = c$, odkiaľ už vyplýva aj rovnosť $b = d$.
+Keď už vieme, že platí $a = c$ a $b = d$, vystačíme ďalej len s premennými $a$ a $b$ a nájdeme najväčšiu hodnotu zadaného súčtu
+$$S = a + b + c + d = 2(a + b)$$
+za jedinej podmienky, totiž že kladné čísla $a, b$ spĺňajú rovnosť $a^2 + b^2 = 1$, ktorá je
+vyjadrením tretej zadanej rovnosti $ac + bd = 1$ (prvé dve sú vďaka rovnostiam $a = c$ a $b = d$ zrejmé).
+Všimnime si, že pre druhú mocninu (kladného) súčtu $S$ platí
+$$S^2= 4(a + b)^2= 4(a^2+ b^2) + 8ab = 4 \cdot 1 + 8ab = 4(1 + 2ab),$$
+takže hodnota $S$ bude najväčšia práve vtedy, keď bude najväčšia hodnota $2ab$. Zo zrejmej nerovnosti $(a - b)^2\geq 0$ po roznásobení však dostaneme
+$$2ab \leq a^2+ b^2= 1,$$
+pritom rovnosť $2ab = 1$ nastane práve vtedy, keď bude platiť $a = b$, čo pre kladné čísla $a, b$ spolu s podmienkou $a^2 + b^2 = 1$ vedie k jedinej vyhovujúcej dvojici $a = b = 1/\sqrt{2}$. Najväčšia hodnota výrazu $2ab$ je teda 1, takže najväčšia hodnota výrazu $S^2$ je $4(1 + 1) = 8$, a teda najväčšia hodnota $S$ je $\sqrt{8} = 2\sqrt{2}$. Dosiahne sa pre jedinú prípustnú štvoricu $a = b = c = d = 1/\sqrt{2}$.
+}

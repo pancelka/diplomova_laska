@@ -1,0 +1,24 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{58-II-3}{
+Z množiny $\{1, 2, 3, \ldots , 99\}$ je vybraných niekoľko rôznych čísel tak, že súčet žiadnych troch z nich nie je násobkom deviatich.
+
+a) Dokážte, že medzi vybranými číslami sú najviac štyri deliteľné tromi.
+b) Ukážte, že vybraných čísel môže byť 26.
+}{
+\rieh Podľa zvyškov po delení deviatimi rozdelíme všetkých 99 uvažovaných čísel do deviatich jedenásťprvkových tried $T_0, T_1 , \ldots, T_8$ (do triedy $T_i$ patria všetky čísla so zvyškom $i$):
+\begin{center}
+\begin{align*}
+T_0 &= \{9, 18, 27, \ldots , 99\},\\
+T_1 &= \{1, 10, 19, \ldots, 91\},\\
+T_2 &= \{2, 11, 20, \ldots , 92\},\\
+\vdots\\
+T_8 &= \{8, 17, 26, \ldots , 98\}.
+\end{align*}
+\end{center}
+
+a) Našou úlohou je dokázať, že v $T_0\cup T_3 \cup T_6$ ležia najviac štyri vybrané čísla. Z každej z tried $T_0, T_3, T_6$ môžu pochádzať najviac dve z vybraných čísel (súčet ľubovoľných troch čísel z jednej takej triedy už totiž deliteľný deviatimi je). Keďže súčet ľubovoľných troch čísel, ktoré po jednom ležia v triedach $T_0, T_3 a T_6$, je deviatimi deliteľný, aspoň jedna z týchto tried žiadne vybrané číslo neobsahuje. Z oboch vyslovených záverov vyplýva dokazované tvrdenie: vybraných čísel deliteľných tromi je totiž najviac $2 + 2 + 0 = 4$.
+
+b) Ukážeme, že vyhovujúci výber môže obsahovať 26 čísel. Vyberieme po dvoch číslach z $T_0, T_3$ a po 11 číslach (teda všetky čísla) z $T_1$ a $T_2$. Dostaneme tak celkom $2 \cdot 2 + 2 \cdot 11 = 26$ čísel; pritom súčet ľubovoľných troch z nich dáva po delení deviatimi zvyšok aspoň $0 + 0 + 1 = 1$, najviac však $2 + 3 + 3 = 8$, takže deviatimi deliteľný byť
+nemôže.
+}

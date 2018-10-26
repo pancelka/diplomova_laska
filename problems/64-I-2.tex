@@ -1,0 +1,50 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{64-I-2}{
+Peter má zvláštne hodinky s tromi ručičkami -- prvá z nich obehne kruhový ciferník za minútu, druhá za 3 minúty a tretia za 15 minút. Na začiatku sú všetky ručičky v rovnakej polohe. Určte, za ako dlho budú ručičky rozdeľovať ciferník na tri zhodné časti. Nájdite všetky riešenia.
+}{
+
+\rieh Predstavme si klasický ciferník s číslami $1 - 12$. Bez ujmy na všeobecnosti si predstavme, že na začiatku sú všetky tri ručičky na čísle 12.
+
+Ak sa otočí 15-minútová ručička o uhol $\alpha$, otočí sa 3-minútová ručička o uhol $5\alpha$ a minútová ručička o uhol $15\alpha$. Keďže každé dve ručičky v hľadaných polohách spolu
+zvierajú uhol $120^{\circ}$ a 3-minútová ručička je rýchlejšia ako 15-minútová, dajú sa hľadané polohy získať ako riešenia rovnice $5\alpha-\alpha = k \cdot 120^{\circ}$, ktorými sú uhly $\alpha = k \cdot 30^{\circ}$, pričom $k$ nadobúda kladné celé hodnoty, ktoré nie sú násobkami troch, inak by sa dotyčné
+ručičky prekrývali.
+
+Môžeme teda postupovať tak, že budeme testovať hodnoty $\alpha = k\cdot 30^{\circ}$ postupne pre jednotlivé hodnoty čísla $k$. Naozaj tak začneme a priebežne uvidíme, ako sa dajú po niekoľkých krokoch vďaka periodickosti získať všetky ďalšie riešenia danej úlohy.
+
+Uvažujme najskôr $k = 1$, teda $\alpha = 30^{\circ}$. Pri tejto hodnote sa otočila najrýchlejšia ručička o uhol $450^{\circ}$. V tomto okamihu sa najpomalšia ručička nachádza na čísle 1 ciferníka, druhá ručička na čísle 5 a najrýchlejšia ručička na čísle 3. Tento prípad teda nie je riešením danej úlohy.
+
+Nech je ďalej $k = 2$, čiže $\alpha = 60^{\circ}$. Pri tejto hodnote sa otočila najrýchlejšia ručička o uhol $900^{\circ}$. V tomto okamihu sa najpomalšia ručička nachádza na čísle 2 ciferníka, druhá ručička na čísle 10 a najrýchlejšia ručička na čísle 6. Tento prípad je teda jedným riešením danej úlohy.
+
+Vidíme, že môžeme zostaviť tabuľku, z ktorej jednoducho vyčítame všetky riešenia:
+\begin{center}
+\begin{tabular}{l c c c c r}
+\hline
+ & \multicolumn{3}{l}{polohy príslušnej ručičky na ciferníku} &  & \\
+ & 15-minútová & 3-minútová & minútová & je riešením? & čas \\
+ \hline
+ $k=1$ & 1 & 5 & 3 & nie & 1,25\,min \\
+ $k=2$ & 2 & 10 & 6 & \textit{áno} & $2\cdot1,25$\,min \\
+ $k=4$ & 4 & 8 & 12 & \textit{áno} & $4\cdot1,25$\,min \\
+ $k=5$ & 5 & 1 & 3 & nie &  \\
+ $k=7$ & 7 & 11 & 9 & nie &  \\
+ $k=8$ & 8 & 4 & 12 & \textit{áno} & $8\cdot 1,25$\,min \\
+ $k=10$ & 10 & 2 & 6 & \textit{áno} & $10\cdot1,25$\,min \\
+ $k=11$ & 11 & 7 & 9 & nie & \\
+ $k=12$ & 12 & 12 & 12 & nie & \\
+ \hline
+\end{tabular}
+\end{center}
+
+Do tabuľky sme uviedli aj ”zakázanú“ hodnotu $k = 12$ deliteľnú tromi, pri ktorej sa všetky tri ručičky prekryjú, takže v ďalšom priebehu sa budú ich polohy periodicky opakovať. Časy, v ktorých to nastane, budú vždy o 15 minút dlhšie. Zistili sme tak, že
+všetky hľadané časy sú
+\begin{center}
+\begin{align*}
+t &= (12n + 2) \cdot 1, 25\,\text{min} =(15n + 2, 5)\,\text{min},\\
+t &= (12n + 4) \cdot 1, 25\,\text{min}= (15n + 5)\,\text{min},\\
+t &= (12n + 8) \cdot 1, 25\,\text{min}  = (15n + 10)\,\text{min},\\
+t &= (12n + 10) \cdot 1, 25 \,\text{min} = (15n + 12, 5)\,\text{min},
+\end{align*}
+\end{center}
+pričom $n = 0, 1, 2, \ldots$
+}

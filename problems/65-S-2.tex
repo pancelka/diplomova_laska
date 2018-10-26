@@ -1,0 +1,15 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{65-S-2}{
+Pri stole sedí niekoľko ľudí (aspoň dvaja) a hrajú takúto hru: V každom kole tajným hlasovaním každý hráč udelí hlas jednému hráčovi (môže aj sám sebe). Potom sa kolo vyhodnotí: každý hráč, ktorý dostal práve jeden hlas, z hry vypadáva.
+
+a) Koľko ľudí mohlo sedieť pri stole na začiatku, ak v prvom kole vypadol z hry práve jeden hráč?
+
+b) Mohla mať hra jediného víťaza, teda človeka, ktorý po určitom počte kôl zostal v hre sám?
+}{
+\rieh a) Ukážeme, že v opísanej situácii mohol na začiatku pri stole sedieť ľubovoľný počet ľudí väčší ako 2. Dvaja hráči to totiž byť nemohli (to by v prvom kole vypadli z hry buď obaja, alebo žiadny z nich, rozdelenie dvoch hlasov je totiž buď 1 : 1, alebo 2 : 0).
+
+Ak sú na začiatku hráči aspoň traja, tak v prvom kole vypadne iba jeden hráč $A$, keď napríklad hráč $A$ dá hlas sebe a všetci ostatní (sú najmenej dvaja) ho dajú tomu istému hráčovi $B$, $B \neq A$ (teda aj hráč $B$ dá hlas sebe). Nie je to samozrejme jediný spôsob hlasovania s požadovaným výsledkom.
+
+b) Vysvetlíme, prečo jediný hráč v hre nikdy zostať nemôže. Opak by znamenal, že v poslednom kole pred uvedenou situáciou, keď v hre bolo povedzme m hráčov, pričom $m > 1$, by v dôsledku ich hlasovania vypadlo $m - 1$ hráčov. Keďže pri tomto hlasovaní bolo rozdaných práve $m$ hlasov a $m - 1$ hráčov (tí, čo potom vypadli) dostalo práve jeden hlas, musel aj zvyšný $m$-tý hráč dostať práve jeden (zvyšný) hlas, a teda tiež vypadnúť, a to je spor.
+}

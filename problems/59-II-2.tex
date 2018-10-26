@@ -1,0 +1,25 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{59-II-2}{
+Dokážte, že pre ľubovoľné čísla $a, b$ z~intervalu $\langle 1, \infty)$ platí nerovnosť
+$$ (a^2 + 1)(b^2 + 1) - (a - 1)^2 (b - 1)^2 \geq 4$$
+a zistite, kedy nastane rovnosť.
+}{
+\rieh Danú nerovnosť ekvivalentne upravujme:
+\begin{align*}
+(a^2 b^2 + a^2 + b^2 + 1) - (a^2 - 2a + 1)(b^2 - 2b + 1) &\geq 4,\\
+\begin{split}(a^2 b^2 + a^2 + b^2 + 1) - (a^2 b^2 - 2ab^2 + b^2 )+ \\+ (2a^2b - 4ab + 2b) - (a^2 - 2a + 1) &\geq 4,\end{split}\\
+2ab(a + b) - 4ab + 2(a + b) &\geq 4,\\
+2(a + b)(ab + 1) &\geq 4(ab + 1),\\
+2(ab + 1)(a + b - 2) &\geq0.
+\end{align*}
+Vzhľadom na predpoklad $a\geq 1$, $b \geq 1$ je $a + b \geq 2$, takže upravená nerovnosť zrejme platí. Rovnosť v~nej (a teda aj v~zadanej) nerovnosti pritom nastane práve vtedy, keď $a + b = 2$, čiže $a = b = 1$.\\
+\\
+\textbf{Iné riešenie.} Pri označení $m = a^2 +1$ a $n = b^2 +1$ možno ľavú stranu dokazovanej nerovnosti prepísať na tvar $L = mn-(m-2a)(n-2b) = 2an+2bm-2ab-2ab,$ z~ktorého vynímaním dostaneme $L = 2a(n - b) + 2b(m - a)$.
+
+Čísla $a, b$ sú z~intervalu $\langle 1, \infty)$, preto $1 = m - a^2 \leq m - a$. Odtiaľ $2b(m - a) \geq 2$. Analogicky dostaneme $2a(n - b) \geq 2$. Teda $L \geq 4$ a rovnosť nastáva práve vtedy, keď $a = b = 1$.\\
+\\
+\textbf{Iné riešenie.} Po substitúcii $a = 1 + m$ a $b = 1 + n$, pričom $m, n \geq 0$, získa ľavá strana nerovnosti tvar $$L = (m^2 + 2m + 2)(n^2 + 2n + 2) - m^2 n^2.$$
+Po roznásobení, ktoré si stačí iba predstaviť, sa zruší člen $m^2 n^2$, takže $L$ bude súčtom nezáporných členov, medzi ktorými bude aj člen $2 \cdot 2 = 4$. Tým je nerovnosť $L \geq 4$ dokázaná. A~keďže medzi spomenutými členmi budú aj $4m$ a $4n$, z~rovnosti $L = 4$ vyplýva $m = n = 0$, čo naopak rovnosť $L = 4$ tiež zrejme zaručuje. To znamená, že rovnosť nastáva práve vtedy, keď $a = b = 1$.\\
+\\
+}

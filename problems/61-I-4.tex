@@ -1,0 +1,14 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{61-I-4}{
+Reálne čísla $a, b, c, d$ vyhovujú rovnici $ab + bc + cd + da = 16$.
+a) Dokážte, že medzi číslami $a, b, c, d$ sa nájdu dve so súčtom najviac 4.
+b) Akú najmenšiu hodnotu môže mať súčet $a^2 + b^2 + c^2 + d^2$ ?
+}{
+\rieh a) Z rovnosti $16 = ab + bc + cd + da = (a + c)(b + d)$ vyplýva, že obidva súčty $a + c$ a $b + d$ nemôžu byť väčšie ako 4 súčasne, lebo v opačnom prípade by bol ich súčin väčší ako 16. Preto vždy aspoň jeden zo súčtov $a + c$ alebo $b + d$ má požadovanú
+vlastnosť.
+b) Využijeme všeobecnú rovnosť $$a^2+ b^2+ c^2+ d^2=\frac{1}{2}(a - b)^2+\frac{1}{2}(b - c)^2+\frac{1}{2}(c - d)^2+\frac{1}{2}(d - a)^2+ ab + bc + cd + da,$$
+o platnosti ktorej sa ľahko presvedčíme úpravou pravej strany. Vzhľadom na nezápornosť druhých mocnín $(a-b)^2 $, $(b-c)^2$ , $(c-d)^2$ a $(d-a)^2$ dostávame pre ľavú stranu rovnosti odhad $$a^2+ b^2+ c^2+ d^2\geq ab + bc + cd + da = 16.$$
+Je nájdené číslo 16 najmenšou hodnotou uvažovaných súčtov? Ináč povedané: nastane pre niektorú vyhovujúcu štvoricu v odvodenej nerovnosti rovnosť? Z nášho postupu je jasné, že musíme rozhodnúť, či pre niektorú z uvažovaných štvoríc platí $a - b = b - c = c - d = d - a = 0$, čiže $a = b = c = d$. Pre takú štvoricu má rovnosť $ab + bc + cd + da = 16$ tvar $4a^2 = 16$, čomu vyhovuje $a = \pm 2$. Pre vyhovujúce štvorice
+$a = b = c = d = 2$ a $a = b = c = d = -2$ má súčet $a^2 + b^2 + c^2 + d^2$ naozaj hodnotu 16, preto ide o hľadané minimum.
+}

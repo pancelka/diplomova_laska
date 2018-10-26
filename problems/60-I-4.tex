@@ -1,0 +1,21 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{60-I-4}{
+V skupine $n$ žiakov sa spolu niektorí kamarátia. Vieme, že každý má medzi ostatnými aspoň štyroch kamarátov. Učiteľka chce žiakov rozdeliť na dve nanajvýš štvorčlenné skupiny tak, že každý bude mať vo svojej skupine aspoň jedného kamaráta.
+
+a) Ukážte, že v prípade $n = 7$ sa dajú žiaci požadovaným spôsobom vždy rozdeliť.
+
+b) Zistite, či možno žiakov takto vždy rozdeliť aj v prípade $n = 8$.
+}{
+\rieh a) Jediný spôsob, ako rozdeliť 7 žiakov na dve nanajvýš štvorčlenné skupiny, je mať jednu trojčlennú a jednu štvorčlennú skupinu. Každý žiak zo štvorčlennej skupiny pritom bude mať vo svojej skupine kamaráta pri hocijakom rozdelení, pretože sa nemôže stať, že by všetci jeho kamaráti boli v trojčlennej skupine (sú aspoň štyria).
+
+Takže stačí rozdeliť žiakov tak, že každý v trojčlennej skupine má v nej kamaráta. Preto do nej dáme hociktorého zo žiakov a k nemu niektorých jeho dvoch kamarátov.
+
+b) Vezmime hocijaké rozdelenie 8 žiakov na dve štvorčlenné skupiny. Ak toto rozdelenie nevyhovuje učiteľkinmu zámeru, máme nejakého žiaka $X$, ktorý je zle zaradený -- má všetkých svojich štyroch kamarátov $A, B, C, D$ v druhej skupine. Ukážeme, že vieme vymeniť $X$ a niektorého zo žiakov $A, B, C, D$ tak, že počet zle zaradených žiakov sa zmenší.
+
+Po každej zo štyroch výmen prichádzajúcich do úvahy $X$ prestane byť zle zaradený a všetci traja žiaci, ktorí budú s $X$ v skupine, budú dobre zaradení, lebo sú to kamaráti žiaka $X$. Žiaci $K, L, M$, ktorí boli pred výmenou v skupine s X, môžu byť po výmene zle zaradení len vtedy, ak boli zle zaradení aj predtým (lebo $X$ nemal ani jedného z nich za kamaráta). Keďže žiak K má štyroch kamarátov a nekamaráti sa s $X$, musí mať aspoň jedného kamaráta $Y$ aj v skupine obsahujúcej žiakov $A, B, C, D$, a keď žiaka $Y$ vymeníme s $X$, bude mať vo svojej novej skupine za kamaráta $K$.
+
+Ukázali sme teda, že výmenou žiakov $X$ a $Y$ počet zle zaradených žiakov klesol. Dostali sme nejaké nové rozdelenie; ak v ňom je aspoň jeden žiak zle zaradený, môžeme zopakovať predošlý postup a opäť znížiť počet zle zaradených žiakov. Po nanajvýš ôsmich krokoch dostaneme rozdelenie, v ktorom už nie sú žiadni zle zaradení žiaci.\\
+\textbf{Iné riešenie} časti b). Uvažujme všetky možné rozdelenia žiakov na dve štvorčlenné skupiny. Rozdelenia, kde niekto nemá vo svojej skupine žiadneho kamaráta, budeme nazývať zlé, ostatné budú dobré. Koľko je zlých rozdelení? Ak má žiak $X$ aspoň päť kamarátov, aspoň jeden z nich musí byť v jeho skupine. Ak má žiak $X$ iba štyroch kamarátov, a všetci sú v druhej skupine, máme len jedno jediné rozdelenie s touto vlastnosťou. Celkovo teda k danému
+žiakovi $X$ existuje nanajvýš jedno rozdelenie, ktoré je zlé. Za $X$ môžeme zobrať jedného z 8 rôznych žiakov, preto zlých rozdelení je nanajvýš 8 (niektoré sme možno zarátali viackrát). Pritom všetkých rozdelení je $\binom{7}{3}=35$, čiže aspoň 27 z nich je dobrých.
+}

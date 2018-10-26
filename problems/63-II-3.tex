@@ -1,0 +1,15 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{63-II-3}{
+Pre kladné reálne čísla $a, b, c$ platí $c^2 + ab = a^2 + b^2$. Dokážte, že potom platí aj $c^2 + ab \leq ac + bc$.
+}{
+\rie Vzhľadom na podmienku $c^2 + ab = a^2 + b^2$ stačí dokázať nerovnosť $a^2 + b^2 \leq ac + bc$. Tá je ekvivalentná so vzťahom $(a^2 + b^2)^2 \leq c^2 (a + b)^2$ , ktorý vzhľadom
+na danú podmienku prepíšeme na tvar $$ (a^2+ b^2)^2 \leq (a^2+
+b^2 - ab)(a + b)^2.$$
+Po roznásobení a zlúčení rovnakých členov zistíme, že máme dokázať nerovnosť $$0 \leq a^3b + ab^3 - 2a^2b^2= ab(a - b)^2,$$ ktorá pre kladné čísla $a, b$ zrejme platí. Vzhľadom na to, že všetky úpravy boli ekvivalentné, môžeme celý postup obrátiť. Nerovnosť je tak dokázaná.
+
+\textbf{Iné riešenie.} Bez ujmy na všeobecnosti predpokladajme, že $0 < b \leq a$ (dané vzťahy sa výmenou čísel $a$ a $b$ nemenia). Nerovnosť $c^2 +ab \leq ac+bc$ je ekvivalentná s nerovnosťou
+$(a - c)(c - b) \geq 0$, takže stačí dokázať, že $b \leq c \leq a$. Platí $$c^2 = b^2+ a^2 - ab = b^2+ a(a - b) \geq b^2,$$
+teda $b \leq c$. Analogicky zistíme, že $$c^2= a^2+ b^2 - ab =a^2+ b(b - a) \leq a^2,$$
+a odtiaľ $c \leq a$. Tým je dôkaz prevedený.
+}
