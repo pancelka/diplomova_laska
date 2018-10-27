@@ -27,7 +27,7 @@ cleanbib:
 	mv tmp.bib $(BIBFILE).bib
 
 thesis:
-	latexmk -halt-on-error -pdf -outdir=build-pdf main.tex | ./scripts/brief.py
+	texfot latexmk -halt-on-error -pdf -outdir=build-pdf main.tex
 
 web: web-init $(IMAGES_PNG) $(WEB_PDF_STUDENT) $(WEB_PDF_TEACHER) $(SEMINARS_HTML)
 
@@ -55,13 +55,13 @@ build-web/seminars/%.html: seminars/%.tex $(TEMPLATES_HTML) $(PROBLEMS)
 
 build-web/pdf/%-teacher.pdf: seminars/%.tex $(TEMPLATES_PDF)
 	cat templates/header-teacher.tex $< templates/footer.tex >$(TMP_TEX)
-	latexmk -halt-on-error -pdf -outdir=build-web-pdf $(TMP_TEX) | ./scripts/brief.py
+	texfot latexmk -halt-on-error -pdf -outdir=build-web-pdf $(TMP_TEX)
 	mv build-web-pdf/tmp.pdf $@
 	rm -rf build-web-pdf $(TMP_TEX)
 
 build-web/pdf/%-student.pdf: seminars/%.tex $(TEMPLATES_PDF)
 	cat templates/header-student.tex $< templates/footer.tex >$(TMP_TEX)
-	latexmk -halt-on-error -pdf -outdir=build-web-pdf $(TMP_TEX) | ./scripts/brief.py
+	texfot latexmk -halt-on-error -pdf -outdir=build-web-pdf $(TMP_TEX)
 	mv build-web-pdf/tmp.pdf $@
 	rm -rf build-web-pdf $(TMP_TEX)
 
