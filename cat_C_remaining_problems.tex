@@ -1,0 +1,1408 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage[T1]{fontenc} 
+% \usepackage[czech]{babel}
+\usepackage[slovak]{babel}
+% \usepackage[english]{babel}
+% \usepackage{czech}
+% \usepackage{slovak}
+
+\usepackage{mathptmx}  %% volne dostupny font Adobe Times Roman
+%  \usepackage[mtbold,mtplusscr,mtpluscal]{mathtime} % komercni matematicky font, dostupne pouze na UMS
+
+
+
+\usepackage{longtable,lipsum} 
+
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{colortbl}
+\usepackage{graphicx}
+\usepackage[shortlabels]{enumitem}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\tcbuselibrary{breakable}
+\definecolor{light-gray}{gray}{0.95}
+
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\kom}{\textbf{Komentár.} }
+\newcommand{\ul}[1]{\textbf{Úloha #1.} }
+\newcommand{\rie}{\textbf{Riešenie.} }
+\newcommand{\rieh}{\textbf{Riešenie*.} }
+\newcommand{\ma}{\measuredangle}
+\newcommand\todo[1]{\noindent\textcolor{red}{(#1)}}
+\newcommand{\problem}[3]{
+  \begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]
+    \textbf{Úloha}
+    [#1] #2
+  \end{tcolorbox}
+  \noindent#3
+}
+\begin{document}
+
+\problem{57-I-2-N2}{
+N2. Lichobežníku $ABCD$ $(AB \parallel CD)$ je vpísaná kružnica so stredom $O$. Dokážte, že
+a) $|\ma AOD| = 90^\circ$, b) $|\ma DOC| = |\ma DAO| + |\ma ABO|$.
+}{
+\rieh
+}
+
+
+\problem{57-I-2-N3}{
+Dotyčnice vedené ku kružnici $k(O; r)$ z bodu $A$ sa dotýkajú kružnice $k$ v bodoch $T$
+a $U$. Tretia dotyčnica pretína úsečky $AT$ a $AU$ postupne v bodoch $B$ a $C$. Určte obvod
+trojuholníka $ABC$, ak $|AT| = 12$\,cm.
+}{
+\rieh 24\,cm; pre bod $V$ dotyku dotyčnice $BC$ platí $|CV|=|CT|$ a $|BV| =|BU|$, takže $|BC| =|CT| +|BU|$.
+}
+
+
+\problem{57-I-4}{
+Tangram je\,Skladačka, ktorú možno vyrobiť z papiera rozrezaním vystrihnutého
+štvorca na sedem dielov podľa čiar vyznačených na \todo{obr. 2}. Predpokladajme, že dĺžka
+\todo{Obr. 2}
+strany štvorca je $2\sqrt{2}$\,cm. Rozhodnite, či možno z dielov tangramu zložiť:
+\begin{enumerate}[a)]
+    \item obdĺžnik 2\,cm $\times$ 4\,cm,
+    \item obdĺžnik $\sqrt{2}$\,cm $\times 4 \sqrt{2}$\,cm.
+\end{enumerate}
+}{
+\rieh a) Daný obdĺžnik sa zložiť dá \todo{(obr. 3)}.
+\todo{Obr. 3}
+
+b) Celková dĺžka \uv{iracionálnych} strán všetkých dielov tangramu je $10\sqrt{2}$\,cm. Je
+teda rovná obvodu obdĺžnika, ktorý máme zložiť. Odtiaľ a z textu návodnej úlohy 1 vyplýva, že všetky \uv{iracionálne} strany dielov tangramu musia byť umiestnené na hranici\,Skladaného obdĺžnika. To však nie je možné, lebo protiľahlé
+\uv{iracionálne} strany kosodĺžnikového dielu majú vzdialenosť menšiu ako 1\,cm, ale najmenšia vzdialenosť protiľahlých strán obdĺžnika je $\sqrt{2}$\,cm.
+\textit{Záver.} Obdĺžnik 2\,cm $\times$ 4\,cm sa z tangramu zložiť dá, obdĺžnik $\sqrt{2}$\,cm $\times$ 4$\sqrt{2}$\,cm sa zložiť nedá.
+}
+
+
+\problem{57-I-4-N1}{
+Dokážte, že pre celé nezáporné čísla $a$, $b$, $c$, $d$ platí: Dĺžku úsečky možno vyjadriť
+v tvare $a + b\sqrt{2}$ a súčasne v tvare $c + d\sqrt{2}$ práve vtedy, keď $a = c$ a $b = d$. 
+}{
+\rieh Rovnosť $a + b \sqrt{2}= c + d\sqrt{2}$ je ekvivalentná so vzťahom $a-c = (d-b)\sqrt{2}$, ktorého ľavá strana je celé číslo, ale pravá strana je pre $b \neq d$ iracionálna. Rovnosť nastáva, len keď $b = d$ a $a = c$.
+}
+
+\problem{57-I-4-D1}{
+Dokážte, že z tangramu nemožno zložiť kosodĺžnik so základňou dĺžky 2\,cm a výškou
+4\,cm. 
+}{
+\rieh Z dielov tangramu sa dajú zostaviť iba tie uhly, ktorých veľkosť je násobkom 45$^\circ$. Preto musí mať\,Skladaný kosodĺžnik veľkosti vnútorných uhlov 45$^\circ$ a 135$^\circ$. Keďže má výšku 4\,cm, má jeho dlhšia strana dĺžku 4$\sqrt{2}$\,cm. Tangram má sedem dielov, z ktorých jedine štvorec má všetky strany celočíselnej dĺžky. Pozdĺž oboch dlhších strán kosodĺžnika je preto nutné umiestniť po jednej \uv{iracionálnej} strane každého zo šiestich zvyšných \uv{iracionálnych} dielov. Ostanú tak práve dve strany dĺžky  $\sqrt{2}$\,cm, ktoré musia byť vnútri\,Skladaného kosodĺžnika. Jedna z nich zrejme patrí dielu tvaru kosodĺžnika (lebo ten nemôže mať kvôli svojej malej výške obe protiľahlé \uv{iracionálne} strany na hranici\,Skladaného obrazca), druhá dielu tvaru trojuholníka s \uv{iracionálnymi} odvesnami. V dôsledku vety z predošlej úlohy musia byť tieto strany umiestnené pozdĺž jednej priamky. To však nie je možné, pretože môžu byť umiestnené jedine v smeroch navzájom kolmých.
+}
+
+\problem{57-I-4-D2}{
+Určte všetky dvojice $(a, b)$ prirodzených čísel, pre ktoré platí $a + b\sqrt{5} = b + a\sqrt{5}$.
+}{
+\rieh 56-C-I-1
+}
+
+
+\problem{57-I-4-D3}{
+Určte všetky dvojice $(a, b)$ prirodzených čísel, ktorých rozdiel $a-b$ je piatou mocninou
+niektorého prvočísla a pre ktoré platí $a-4\sqrt{b} = b + 4\sqrt{a}$.
+}{
+\rieh 56-C-S-3
+}
+
+\problem{57-I-4-D4}{
+Nájdite všetky dvojice $(a, b)$ nezáporných reálnych čísel, pre ktoré platí $$\sqrt{a^2+b}+\sqrt{b^2+a}=\sqrt{a^2+b^2}+\sqrt{a+b}.$$
+}{
+\rieh 48-C-S-1
+}
+
+\problem{57-I-5-N1}{
+V\,Skupine piatich osôb sa v každej štvorici vyskytujú práve tri dvojice známych.
+\begin{enumerate}[a)]
+    \item Dokážte, že v\,Skupine nemôže byť trojica osôb, ktoré sa poznajú navzájom (tzv. trojuholník známych), ani osoba, ktorá má aspoň troch známych.
+    \item Dokážte, že tu nemôže byť trojuholník neznámych ani osoba, ktorá sa nepozná aspoň s tromi osobami.
+    \item Nakreslite graf známostí v takej\,Skupine osôb.
+\end{enumerate}
+}{
+\rieh 
+}
+
+
+\problem{57-I-6-D1}{
+K prirodzenému číslu $m$ zapísanému rovnakými ciframi sme pripočítali štvorciferné prirodzené číslo $n$. Získali sme štvorciferné číslo s opačným poradím cifier, ako má číslo $n$. Určte všetky také dvojice čísel $m$ a $n$.
+}{
+\rieh 52-C-I-5
+}
+
+-----------------
+
+\problem{57-II-3}{
+Dokážte, že pokiaľ v\,Skupine šiestich osôb existuje aspoň desať dvojíc známych, tak
+v nej možno nájsť tri osoby, ktoré sa poznajú navzájom. Vzťah \uv{poznať sa} je vzájomný,
+t. j. ak osoba $A$ pozná osobu $B$, tak aj $B$ pozná $A$. Ukážte, že taká trojica existovať
+nemusí, ak v\,Skupine šiestich osôb je menej ako desať dvojíc známych.
+}{
+\rieh Nazvime $A$ osobu (prípadne jednu z osôb), ktorá má v danej\,Skupine najviac
+známych, a tento počet známych označme $n$. Zrejme $n\leq 5$.
+
+Ak $n = 5$, existuje medzi zostávajúcimi osobami aspoň päť ďalších dvojíc známych. Ktorákoľvek z týchto dvojíc potom tvorí s osobou A trojicu známych.
+
+Ak $n = 4$, existuje osoba $B$, ktorá sa s $A$ nepozná, a tá má tiež najviac štyroch
+známych. Preto sa medzi známymi osoby $A$ vyskytujú aspoň dve dvojice známych.
+Osoba $A$ s jednou z týchto dvojíc tvorí opäť trojicu známych.
+
+Situácia $n\leq 3$ nemôže nastať, pretože celkový počet dvojíc známych v\,Skupine by
+vtedy bol nanajvýš $\frac{1}{2}\cdot 6n \leq 9$.
+\todo{Obr. 2} 
+
+Príklad\,Skupiny šiestich osôb s deviatimi dvojicami, ale s žiadnou trojicou známych,
+je znázornený grafom na \todo{obr. 2}. V ňom body $A$, $B$, $C$, $D$, $E$ a $F$ predstavujú jednotlivé osoby a dvojice známych sú vyznačené úsečkami. Pritom žiadne tri z úsečiek netvoria
+trojuholník. Pokiaľ je v\,Skupine menej ako deväť dvojíc známych, zostrojíme vhodný
+príklad odstránením príslušného počtu úsečiek z \todo{obr. 2} (pritom určite žiadny trojuholník
+nevznikne).
+
+\textbf{Iné riešenie*.} Ak je v šestici osôb aspoň 10 dvojíc známych, je v nej najviac 5 dvojíc neznámych, lebo všetkých dvojíc je práve 15. Budeme preto naopak predpokladať, že v každej trojici sa nájde dvojica neznámych, a dokážeme, že v celej šestici je takých dvojíc aspoň 6. Pri uvedenom predpoklade môžeme označenie osôb zvoliť tak, aby v trojiciach $ABC$ a $DEF$ boli dvojice neznámych $AB$ a $DE$. Potom ďalšie štyri rôzne dvojice neznámych nájdeme (po jednej) v trojiciach $ACD$, $AEF$, $BCE$, $BDF$ (presvedčte sa, že každá dvojice sa vyskytuje najviac v jednej z uvedených štyroch trojíc a žiadna z týchto trojíc neobsahuje ani dvojicu $AB$, ani dvojicu $DE$). Príklad pre menší počet dvojíc známych zostrojíme rovnako ako v predchádzajúcom riešení.
+}
+
+
+\problem{57-S-3}{
+V\,Skupine šiestich ľudí existuje práve 11 dvojíc známych. Vzťah \uv{poznať sa} je vzájomný, t. j. ak osoba $A$ pozná osobu $B$, tak aj $B$ pozná $A$. Keď sa ktokoľvek zo\,Skupiny dozvie nejakú správu, povie ju všetkým svojim známym. Dokážte, že sa týmto spôsobom nakoniec správu dozvedia všetci. 
+}{
+\rieh Jednotlivé osoby označíme písmenami $A$, $B$, $C$, $D$, $E$ a $F$. Aspoň jedna
+z nich (označme ju $A$) má aspoň štyroch známych (ak by mala každá osoba najviac
+troch známych, bolo by dvojíc známych menej ako desať). Keby mala dokonca päť známych, dozvie sa správu od každého v\,Skupine a môže ju komukoľvek v\,Skupine povedať.
+\todo{doplniť Obr. 4  a Obr. 5}
+
+Ak má osoba $A$ práve štyroch známych, napríklad osoby $B$, $C$, $D$ a $E$, existuje
+v\,Skupine osôb $A$, $B$, $C$, $D$, $E$ najviac 10 známostí (\todo{obr. 4}, dvojice známych znázorňujú úsečky), a tak sa osoba $F$ musí poznať s niektorou osobou $X \in \{B, C, D, E\}$. Možnosť
+šírenia správy od ľubovoľnej osoby ku ktorejkoľvek inej ľahko overíme podľa \todo{obr. 5}.
+
+\textbf{Iné riešenie*.} Znázornenie ktorejkoľvek množiny práve jedenástich dvojíc známych
+v\,Skupine šiestich osôb dostaneme odstránením štyroch z pätnástich hrán úplného grafu
+(\todo{obr. 6}, v ňom z každého uzla vychádza práve päť hrán). Po odstránení iba štyroch hrán
+z grafu na \todo{obr. 6} musí teda z každého vrcholu vychádzať aspoň jedna hrana. V\,Skupine
+teda neexistuje človek, ktorý by nikoho nepoznal. Aby sa preto správa nemohla od
+niektorej z osôb rozšíriť ku všetkým ostatným, musela by v príslušnom grafe existovať
+buď aspoň jedna oddelená dvojica, alebo dve oddelené trojice, v ktorých sa osoby môžu
+poznať navzájom. V žiadnej z týchto situácií však počet dvojíc známych neprevyšuje
+sedem, ako vidíme z \todo{obr. 7}. Tým je tvrdenie úlohy dokázané. 
+\todo{pridať  Obr. 6 a  Obr. 7}
+}
+
+
+\problem{58-I-1}{
+Tomáš, Jakub, Martin a Peter organizovali na námestí zbierku pre dobročinné účely. Za chvíľu sa pri nich postupne zastavilo päť okoloidúcich. Prvý dal Tomášovi do jeho pokladničky 3\,Sk, Jakubovi 2\,Sk, Martinovi 1\,Sk a Petrovi nič. Druhý dal jednému
+z chlapcov 8\,Sk a ostatným trom nedal nič. Tretí dal dvom chlapcom po 2\,Sk a dvom nič. Štvrtý dal dvom chlapcom po 4\,Sk a dvom nič. Piaty dal dvom chlapcom po 8\,Sk a dvom nič. Potom chlapci zistili, že každý z nich vyzbieral inú čiastku, pričom tieto
+tvoria štyri po sebe idúce prirodzené čísla. Ktorý z chlapcov vyzbieral najmenej a ktorý
+najviac korún?
+}{
+\rieh Dokopy chlapci dostali $3 + 2 + 1 + 8 + 2 \cdot 2 + 2 \cdot 4 + 2 \cdot 8 = 42$\,Sk. Toto
+číslo možno jediným spôsobom vyjadriť ako súčet štyroch po sebe idúcich prirodzených
+čísel: $42 = 9 + 10 + 11 + 12$. Štyria chlapci teda (v nejakom poradí) vyzbierali sumy 9,
+10, 11 a 12\,Sk.
+
+Žiadny chlapec nemohol dostať 8\,Sk zároveň od druhého aj od piateho okoloidúceho
+(inak by mal aspoň 16\,Sk, najviac však mohol každý z chlapcov dostať 12\,Sk). Takže od
+druhého a piateho majú traja chlapci po 8\,Sk a jeden od nich nedostal nič. Najviac jeden
+z týchto troch chlapcov mohol dostať 4\,Sk od štvrtého okoloidúceho, inak by mali už
+aspoň dvaja chlapci aspoň 12\,Sk. Štvrtý okoloidúci musel teda dať 4\,Sk práve jednému
+z nich a 4\,Sk zostávajúcemu chlapcovi. Bez peňazí prvého a tretieho okoloidúceho
+teda majú chlapci vybraných 12, 8, 8 a 4\,Sk. Chlapec, ktorý dostal v súčte od druhého,
+štvrtého a piateho okoloidúceho dvanásť korún, už nemohol dostať od prvého a tretieho
+okoloidúceho nič, lebo by mal viac ako dvanásť korún. Ten, ktorý dostal v súčte od
+druhého, štvrtého a piateho okoloidúceho 4\,Sk, musel dostať od prvého a tretieho v súčte
+maximálnu možnú čiastku, t. j. $3+2 = 5$\,Sk, inak by mal dokopy menej ako 9\,Sk (dostal
+teda práve 9\,Sk a vyzbieral najmenej). Takže najmenej vyzbieral Tomáš, lebo on dostal
+od prvého okoloidúceho 3\,Sk, a najviac Peter, ktorý od prvého okoloidúceho nedostal
+nič.
+
+Úvahy ľahko dokončíme a ukážeme, že popísané rozdelenie je skutočne možné. Ako
+už vieme, Tomáš vyzbieral 9\,Sk a Peter 12\,Sk. Jakub, ktorý dostal 2\,Sk od prvého,
+nemohol dostať od tretieho nič, takže dostal celkom 10\,Sk, a Martin 11\,Sk. Všetky
+úvahy môžeme prehľadne usporiadať do tabuľky, ktorú postupne dopĺňame.
+    \begin{tabular}{|c|c|c|c|c|c}
+        1 & 2 & 3 & 4 & 5 & $\Sigma$  \\
+        \hline
+         & 8 & & 0 & 0 & \\
+         \hline 
+         & 0 & & 0 & 8 & \\
+         \hline
+         0 & 0 & 0 & 4 & 8 & 12 $\rightarrow$ P \\
+         \hline
+         3 & 0 & 2 & 4 & 0 & $\leq 9 \rightarrow $ T \\
+         \hline
+         $1+2+3$ & $1 \times 8$ & $2\times 2$  & $2 \times 4$ & $2 \times 8$  & \\ 
+    
+           \end{tabular}
+}
+
+
+\problem{58-I-1-N1}{
+Ukážte, že prirodzené číslo $n$ možno vyjadriť ako súčet štyroch po sebe idúcich čísel práve vtedy, keď $n \geq 10$ a $n$ dáva zvyšok dva po delení štyrmi.
+}{
+\rieh $(k + 1) + (k + 2) + (k + 3) + (k + 4) = 4k + 10$
+}
+
+
+\problem{58-I-1-D1}{
+Dokážte, že ľubovoľné prirodzené číslo $n \geq 3$, ktoré nie je mocninou čísla 2, možno
+vyjadriť ako súčet niekoľkých po sebe idúcich prirodzených čísel.
+}{
+\rieh $n = \frac{n-1}{2}+ \frac{n+1}{2}$ pre
+$n$ nepárne, $n = ( \frac{n}{p}-\frac{p-1}{2}+1)+(\frac{n}{p}-\frac{p-1}{2}+ 1) + \ldots + ( \frac{n}{p}+\frac{p-1}{2})$ pre $n = p\cdot q$, kde $p > 1$ je nepárny deliteľ
+}
+
+
+\problem{58-I-1-D2}{
+V klobúku je päť loptičiek a na každej z nich je napísané jedno prirodzené číslo. Súčet
+čísel na loptičkách v klobúku je 27 a čísla na ľubovoľných dvoch loptičkách sa líšia
+aspoň o dva. Dokážte, že v klobúku nie je loptička s číslom 6.
+}{
+\rieh V klobúku môžu byť buď loptičky s číslami 1, 3, 5, 7, 11, alebo 1, 3, 5, 8, 10.
+}
+
+\problem{58-I-2-N1}{
+Vyjadrite výšku $v_c$ pravouhlého trojuholníka $ABC$ s pravým uhlom pri vrchole $C$
+pomocou strán $a$, $b$, $c$ tohto trojuholníka.
+}{
+}
+
+\problem{58-I-2-D3}{
+V obdĺžniku $ABCD$ platí $|AB| > |BC|$. Oblúk $AC$ kružnice, ktorej stred leží na strane $AB$, pretína stranu $CD$ v bode $M$. Dokážte, že priamky $AM$ a $BD$ sú navzájom
+kolmé. 
+}{
+\rieh 48-C-I-2
+}
+
+
+\problem{58-I-4}{
+Daný je konvexný päťuholník $ABCDE$. Na polpriamke $BC$ zostrojte taký bod $G$, aby
+obsah trojuholníka $ABG$ bol zhodný s obsahom daného päťuholníka.
+}{
+\rieh \textit{Rozbor.} Najskôr uvažujme bod $F$, ktorý je priesečníkom priamky $BC$ a rovnobežky s $EC$ prechádzajúcej bodom $D$ (keďže $E\notin BC$, sú $EC$ a $BC$ rôznobežné, \todo{obr. 3}). Obsahy trojuholníkov $ECD$ a $ECF$ sú zhodné (majú spoločnú stranu $EC$ a zhodnú výšku na túto stranu), obsah päťuholníka $ABCDE$ je teda zhodný s obsahom štvoruholníka $ABFE$.
+
+\todo{ DOPLNIŤ Obr. 3}
+
+Ďalej uvažujme bod $G$, ktorý je priesečníkom priamky $BC$ a rovnobežky s $AF$
+prechádzajúcej bodom $E$. Potom sú opäť obsahy trojuholníkov $AFE$ a $AFG$ zhodné, a sú preto zhodné aj obsahy štvoruholníka $ABFE$ a trojuholníka $ABG$. Bod $G$ tak má
+požadovanú vlastnosť.
+
+Hľadaný bod je na polpriamke $BC$ jediný, lebo pre rôzne body $X$, $Y$ na polpriamke $BC$ majú trojuholníky $ABX$ a $ABY$ rôzne výšky na spoločnú stranu $AB$, majú teda rôzne obsahy.
+\textit{Popis konštrukcie.}
+\begin{enumerate}
+    \item $p$; $p \parallel EC, D \in p$;
+    \item $F$; $F \in p \cap BC$;
+    \item $q$; $q \parallel AF, E \in q$;
+    \item $G$; $G \in q \cap BC$;
+\end{enumerate}
+
+Úloha má jediné riešenie.
+}
+
+\problem{58-I-4-N2}{
+V kružnici s polomerom 2 je daná tetiva $AB$ dĺžky 3. Určte, aký najväčší obsah môže
+mať štvoruholník $AXBY$, ak jeho vrcholy $X$, $Y$ ležia na kružnici $k$.
+}{
+\rieh Najväčší obsah 6 má deltoid, ktorého uhlopriečka $XY$ je priemerom kružnice $k$.
+}
+
+\problem{58-I-4-D1}{
+Daný je obdĺžnik $ABCD$. Nech priamky $p$ a $q$, ktoré prechádzajú vrcholom $A$, pretínajú
+polkružnice zvonka pripísané stranám $BC$ a $CD$ daného obdĺžnika postupne v bodoch
+$K$ a $L$ ($B\neq K \neq C \neq L \neq D$) a strany $BC$ a $CD$ postupne v bodoch $P$ a $Q$ tak, že trojuholník $ABP$ má rovnaký obsah ako trojuholník $KCP$ a zároveň trojuholník
+$AQD$ má rovnaký obsah ako trojuholník $CLQ$. Dokážte, že body $K$, $L$, $C$ ležia na
+jednej priamke.
+}{
+\rieh 53-C-I-2
+}
+
+\problem{58-II-4}{
+Pravouhlému trojuholníku $ABC$ s preponou $AB$ a obsahom $S$ je opísaná kružnica. Dotyčnica k tejto kružnici v bode $C$ pretína dotyčnice vedené bodmi $A$ a $B$ v bodoch $D$ a $E$. Vyjadrite dĺžku úsečky $DE$ pomocou dĺžky $c$ prepony a obsahu $S$.
+}{
+\rieh Označme $O$ stred opísanej kružnice, teda stred prepony $AB$ daného pravouhlého trojuholníka $ABC$, $a_v$ veľkosť jeho výšky na preponu \todo{(obr. 3)}. Trojuholník
+
+\todo{DOPLNIŤ Obr. 3}
+
+$EDO$ je zrejme tiež pravouhlý, pretože jeho strany $DO$ a $EO$ sú kolmé na odvesny
+trojuholníka $ABC$; pritom jeho výškou na preponu je úsečka $OC$ (s veľkosťou $\frac{1}{2}c$). Vzhľadom na súmernosť úsečky $AC$ podľa osi $OD$ platí pre jeho uhol pri vrchole $D$, že $|\ma CDO| = 90^\circ - |\ma COD| = 90^\circ - |\ma AOD| = \alpha$. Trojuholníky $EDO$ a $ABC$ sú teda
+podobné ($uu$). Koeficient k tejto podobnosti je daný pomerom dĺžok zodpovedajúcich
+výšok na prepony, takže $k = |OC|/v = \frac{1}{2}c/v$, a keďže $vc = 2S$, je
+$$k =\frac{c^2}{4S}.$$
+V uvedenej podobnosti zodpovedá prepone $AB$ prepona $DE$, preto pre jej veľkosť platí
+$$|DE| = kc =\frac{c^3}{4S}.$$
+
+\textbf{Iné riešenie*.} Zo súmernosti dotyčníc z bodu ku kružnici vyplýva, že oba trojuholníky $ACD$ aj $BCE$ sú rovnoramenné, $|AD| = |DC|$, $|BE| = |CE|$. Rovnoramenné sú aj trojuholníky $ACO$ a $BCO$, pričom $O$ je stred prepony $AB$ (ramená oboch trojuholníkov
+majú veľkosť polomeru kružnice opísanej pravouhlému trojuholníku $ABC$, čo je $\frac{1}{2}c$). Ukážeme, že ide o dve dvojice podobných trojuholníkov $ACD \backsim BCO$ a $ACO \backsim BCE$. K tomu si stačí všimnúť, že v štvoruholníku $AOCD$, ktorý je zložený z dvoch zhodných pravouhlých trojuholníkov, platí $| \ma CDA| = 180^\circ -| \ma AOC| = |\ma COB|$. Rovnoramenné trojuholníky $ACD$ a BCO sú teda podobné podľa vety $uu$. Z tejto podobnosti vyplýva rovnosť $|CD| : |CA| = |CO| : |CB|$, takže pri zvyčajnom označení odvesien dostávame $|CD| = \frac{1}{2}cb/a$, a z podobnosti trojuholníkov $ACO$ a $BCE$ potom $|CE| = \frac{1}{2}ca/b$.
+Celkom tak je
+$$|DE| = |DC| + |CE| = \frac{cb}{2a}+\frac{ca}{2b}=\frac{cb^2 + ca^2}{2ab}= \frac{c(a^2 + b^2)}{2\cdot 2S}=\frac{c^3}{4S}.$$
+\textit{Poznámky.} Podobnosť spomenutých rovnoramenných trojuholníkov môžeme odvodiť tiež tak, že si všimneme rovnosti zodpovedajúcich uhlov $ACO$ a $BCE$ pri
+základniach: oba totiž dopĺňajú uhol $OCB$ do pravého uhla ($ACB$, resp. $OCE$). Preto
+$ACO \backsim BCE$.
+
+Ďalšiu možnosť dáva objavenie rovnosti $|\ma ADO| = |\ma BAC| = \alpha$ (ramená jedného
+uhla sú kolmé na ramená druhého). Z  pravouhlého trojuholníka $ODA$ tak máme $|AO| 
+: |AD| = \tan |\ma ADO| = \tan \alpha = a : b$, takže $|CD| = |AD| = \frac{1}{2}cb/a$, a analogicky pre pravouhlý trojuholník $OEB$.
+}
+
+\problem{59-I-2}{
+Vrcholom $C$ pravouholníka $ABCD$ veďte priamky $p$ a $q$, ktoré majú s daným pravouholníkom spoločný iba bod $C$, pričom priamka $p$ má od bodu $A$ najväčšiu možnú
+vzdialenosť a priamka $q$ vymedzuje s priamkami $AB$, $AD$ trojuholník s čo najmenším obsahom. 
+}{
+\rieh Päta $P$ kolmice z bodu $A$ na priamku $p$ prechádzajúcu bodom $C$ leží na
+Tálesovej kružnici nad priemerom $AC$. Vzdialenosť bodu $A$ od priamky $p$, t. j. dĺžka úsečky $AP$, je teda nanajvýš rovná veľkosti priemeru $AC$. Pritom rovnosť nastane práve vtedy, keď je priamka $p$ kolmá na uhlopriečku $AC$. Je zrejmé, že taká priamka $p$ má s daným pravouholníkom spoločný iba bod $C$.
+
+Zvoľme teraz ľubovoľnú priamku $q$ tak, aby mala s pravouholníkom $ABCD$ spoločný iba bod $C$. Jej priesečníky s priamkami $AB$, $AD$ označme $M$ a $N$ (v uvedenom poradí). Ďalej označme $M'$ obraz bodu $M$ v osovej súmernosti podľa priamky $BC$ a $N*$ obraz bodu $N$ v osovej súmernosti podľa priamky $CD$. Keďže $|\ma NCD| + |\ma MCB|= 180^\circ- |\ma BCD| = 90^\circ$, vyplýva z práve uvedených súmerností rovnosť $|\ma MCM'| = 2|\ma MCB| = 2(90^\circ - |\ma NCD|) = 180^\circ - 2|\ma NCD| = 180^\circ - |\ma NCN* |$. Body $C$, $M'$ a $N*$ teda ležia na jednej polpriamke s počiatkom $C$. Pre obsah trojuholníka $AMN$
+tak vždy platí (\todo{obr. 2})
+$$S_{AMN}= S_{ABCD} + S_{BMC} + S_{DCN} = S_{ABCD} + S_{M'BC} + S_{DN*C} \geq 2S_{ABCD},$$
+s rovnosťou práve vtedy, keď polpriamka $CM'= CN*$ bude prechádzať vrcholom $A$ daného pravouholníka, t. j. práve vtedy, keď $M'= A = N*$ (potom budú $BC$ a $CD$ strednými priečkami trojuholníka $AMN$).
+
+\todo{DOPLNIŤ Obr. 2}
+
+\textit{Záver.} Priamku $q$, pre ktorú je obsah trojuholníka $AMN$ minimálny, zostrojíme
+ako priamku $CM$, pričom $M$ je obraz bodu $A$ v osovej súmernosti podľa osi $BC$.
+Priamka $p$ s najväčšou možnou vzdialenosťou od bodu $A$ pri daných podmienkach
+je kolmica na úsečku $AC$ zostrojená v bode $C$
+
+\textit{Poznámka.} K práve uvedenému riešeniu môže žiakov inšpirovať aktivita so sklada-
+ním papiera opísaná v úlohe N1. Namiesto skladania papiera možno situáciu modelovať
+na počítači v niektorom z nástrojov dynamickej geometrie, napríklad v \textit{Cabri geometrii} alebo v {Geonexte}.
+
+\textbf{Iné riešenie*.} Označme $P$ pätu kolmice z bodu $A$ na hľadanú priamku $p$ a $\varphi$ veľkosť odchýlky priamok $p$ a $AC$. Pre vzdialenosť $d$ priamky $p$ od bodu $A$ platí $d = |AP| = |AC| \sin \varphi \leq |AC|$. Priamka $p$ má teda najväčšiu možnú vzdialenosť od bodu $A$ práve vtedy, keď je kolmá na $AC$.
+
+Uvažujme ľubovoľnú priamku $q$, ktorá má s pravouholníkom $ABCD$ spoločný iba
+bod $C$, a budeme hľadať, za akých podmienok ohraničuje spolu s priamkami $AB$ a $AD$
+trojuholník s najmenším obsahom. Použijeme označenie z \todo{obr. 2} a označíme $a = |AB|
+= |DC|$, $x = |BM|$, $b = |AD| = |BC|$ a $y = |DN|$. Pomocou týchto veličín vyjadríme
+obsah trojuholníka $AMN$ a odhadneme ho použitím AG-nerovnosti:
+$$S_{AMN}=\frac{1}{2}(a + x)(b + y) = \frac{1}{2}(ab + xy + ay + bx)\geq \frac{1}{2}(ab + xy + 2\sqrt{ab \cdot xy}. \todo{(1)}$$
+Z podobnosti trojuholníkov $BMC$ a $DCN$ dostávame $|DN|/|BC| = |DC|/|BM|$, čo
+vzhľadom na zvolené označenie dáva $xy = ab$. Po dosadení do \todo{(1)} a po jednoduchej
+úprave tak dostaneme $S_{AMN} = 2ab = 2S_{ABCD}$. Pritom rovnosť nastane práve vtedy, keď platí $ay = bx$. Spolu s podmienkou $xy = ab$ predstavujú oba vzťahy sústavu rovníc s neznámymi $x$, $y$, ktorej vyriešením dostaneme $x = a$ a $y = b$. Dospeli sme teda
+k rovnakému výsledku ako v prvom riešení, kde sme tiež uviedli konštrukciu priamky $q$.
+
+\textbf{Iné riešenie*.} Postupujeme rovnako ako v predchádzajúcom riešení s tým rozdielom, že najskôr z podobnosti trojuholníkov $BMC$ a $DCN$ určíme $y = ab/x$ a potom odhadneme obsah trojuholníka $AMN$ pomocou tvrdenia z úlohy \todo{N2 za piatou súťažnou
+úlohou} takto:
+$$S_{AMN} =\frac{1}{2}(a + x)(b + y) =\frac{1}{2}(a + x)\bigg(b +\frac{ab}{x}\bigg)=\frac{1}{2}\bigg(2ab + bx + \frac{a^2 b}{x}\bigg)= ab +\frac{1}{2}ab\bigg(\frac{x}{a}+\frac{a}{x}\bigg)\geq 2ab.$$
+Rovnosť nastáva práve vtedy, keď $x/a = a/x$, čo je ekvivalentné s podmienkou $x = a$.
+}
+
+
+\problem{59-I-2-N1}{
+Na hárok papiera tvaru obdĺžnika narysujte podľa \todo{obr. 3} pravouholník $ABCD$ tak,
+
+\todo{DOPLNIŤ Obr. 3}
+
+aby jeho strany $AB$ a $AD$ splývali s okrajom papiera. Potom zostrojte priamku, aby mala s pravouholníkom spoločný len bod $C$ a jej prienik s hárkom papiera tvoril úsečku $MN$, pozdĺž ktorej papier rozstrihnite. Vzniknutý papierový model trojuholníka $AMN$ s narysovaným obdĺžnikom $ABCD$ preložte pozdĺž úsečiek $BC$ a $DC$. Túto činnosť niekoľkokrát opakujte, pritom pre rovnaký pravouholník $ABCD$ voľte rôzne dĺžky úsečky $BM$. Čo možno z výsledku usúdiť o pomere obsahov trojuholníka $AMN$ a pravouholníka $ABCD$? Hypotézu dokážte.
+}{
+\rie 
+}
+
+\problem{59-I-2-N2}{
+Dokážte, že pre ľubovoľné nezáporné čísla $a$, $b$ platí $\frac{1}{2}(a + b) \geq \sqrt{ab}$, pričom rovnosť nastane práve vtedy, keď $a = b$.
+}{
+\rieh Žiakom možno poradiť substitúciu $a = u^2$ a $b = v^2$ alebo $a = m-d$ a $b = m + d$, pričom $m = \frac{1}{2}(a + b)$ a $0 \leq |d|\leq \frac{1}{2} m$.
+}
+
+
+\problem{59-I-2-D1}{
+Daný je ostrý uhol $KBL$ a vnútri neho bod $M$. Zostrojte bodom $M$ priamku $p$ tak, aby odrezala z uhla $KBL$ trojuholník $ABC$ s najmenším možným obsahom. 
+}{
+\rieh Kuřina, F.: Umění vidět v matematice, str. 101.
+}
+
+
+\problem{59-I-2-D2}{
+Daný je ostrý uhol $XVY$ a jeho vnútorný bod $C$. Zostrojte na ramene $VX$ bod $A$ a na ramene $VY$ bod $B$ tak, aby vzniknutý trojuholník $ABC$ mal čo najmenší obvod.
+}{
+\rieh 
+Polák, J.: Středoškolská matematika v úlohách II, str. 262.
+}
+
+
+\problem{59-I-4-N1}{
+Kružnice $k$, $l$, $m$ sa po dvoch zvonka dotýkajú a všetky tri majú spoločnú dotyčnicu.
+Polomery kružníc $k$, $l$ sú 3\,cm a 12\,cm. Vypočítajte polomer kružnice $m$. Nájdite všetky riešenia.
+}{
+\rieh 55-C-I-2
+}
+
+\problem{59-I-4-N2}{
+Kružnice $k$, $l$, $m$ sa dotýkajú spoločnej dotyčnice v troch rôznych bodoch a ich stredy
+ležia na jednej priamke. Kružnice $k$ a $l$, a tiež kružnice $l$ a $m$, majú vonkajší dotyk.
+Určte polomer kružnice $l$, ak polomery kružníc $k$ a $m$ sú 3\,cm a 12\,cm.
+}{
+\rieh 55-C-S-3
+}
+
+
+\problem{59-I-4-D1}{
+Kružnice $k$, $l$ s vonkajším dotykom ležia obe v obdĺžniku $ABCD$, ktorého obsah je
+72\,cm$^2$. Kružnica k sa pritom dotýka strán $CD$, $DA$ a $AB$, zatiaľ čo kružnica $l$ sa
+dotýka strán $AB$ a $BC$. Určte polomery kružníc $k$ a $l$, ak viete, že polomer kružnice $k$ je v centimetroch vyjadrený celým číslom.
+}{
+\rieh 55-C-II-3
+}
+
+\problem{59-I-4-D2}{
+Do kružnice $k$ s polomerom $r$ sú vpísané dve kružnice $k_1$, $k_2$ s polomerom $r=2$, ktoré
+sa vzájomne dotýkajú. Kružnica $l$ sa zvonka dotýka kružníc $k_1$, $k_2$ a s kružnicou $k$ má vnútorný dotyk. Kružnica $m$ má vonkajší dotyk s kružnicami $k_2$ a $l$ a vnútorný dotyk s kružnicou $k$. Vypočítajte polomery kružníc $l$ a $m$.
+}{
+\rieh 54-B-I-6
+}
+
+
+\problem{59-I-6-N2}{
+Nájdite všetky čísla od 1 do 1 000 000, ktoré sa po škrtnutí prvej cifry 73-krát zmenšia.
+}{
+\rieh 45-Z7-I-2
+}
+
+
+\problem{59-I-6-D1}{
+Určte najväčšie dvojciferné číslo $k$ s nasledujúcou vlastnosťou: existuje prirodzené
+číslo $N$, z ktorého po škrtnutí prvej číslice zľava dostaneme číslo $k$-krát menšie. (Po
+škrtnutí číslice môže zápis čísla začínať jednou či niekoľkými nulami.) K určenému
+číslu k potom nájdite najmenšie vyhovujúce číslo $N$. 
+}{
+\rieh 56-C-II-4
+}
+
+\problem{60-I-2-N1}{
+Ukážte, že každé prvočíslo väčšie ako 3 sa dá napísať v tvare $6k + 1$ alebo $6k - 1$ pre
+vhodné prirodzené číslo $k$.
+}{
+\rieh Každé prvočíslo sa dá napísať v tvare $6k + z$, kde $z$ je jeho zvyšok po delení šiestimi. Čísla $6k$, $6k +2$ a $6k +4$ sú evidentne deliteľné dvoma, $6k +3$ je deliteľné tromi, preto ostávajú len čísla v tvare $6k + 1$ a $6k + 5$.
+}
+
+
+\problem{60-I-2-N2}{
+Nech $x + 5y$ dáva zvyšok 1 po delení 7. Aký zvyšok po delení 7 dáva číslo $3x + 15y$? A číslo $4x + 13y$?
+}{
+\rieh Keďže $x + 5y = 7k + 1$ pre vhodné $k$, máme $3x + 15y = 3(7k + 1) = 7 \cdot 3k + 3$, čiže zvyšok je 3. Podobne $4x + 20y = 4(7k + 1) = 7 \cdot 4k + 4$, pritom číslo
+$4x + 13y$ sa od $4x + 20y$ líši len o násobok 7, preto dáva rovnaký zvyšok.
+}
+
+
+\problem{60-I-2-D1}{
+Dokážte, že ak pre celé čísla $a$, $b$, $c$ platí $7 \mid a - 3b + 5c$, tak platí aj $7 \mid 4a + 2b - c$. Zistite, či platí opačná implikácia.
+}{
+\rieh Platí aj opačná implikácia. Návod: $(4a + 2b - c) - 4(a - 3b + 5c) = 14b - 21c = 7(2b - 3c)$.
+}
+
+\problem{60-I-2-D2}{
+Dokážte, že ku každému celému číslu $x$ existuje celé číslo $y$ také, že $19x+3y$ je deliteľné 50.
+}{
+Číslo $19x$ dáva po delení 50 zvyšok, ktorý označíme $z$. Chceme ukázať, že pre
+ľubovoľné $z$ vieme nájsť $y$ tak, aby číslo $3y$ dávalo zvyšok $50 - z$. Vezmime si čísla
+$3 \cdot 1$, $3 \cdot 2$, $3 \cdot 3$, $\ldots$, $3 \cdot 50$. Keby dve z týchto čísel, povedzme $3i$ a $3j$, dávali rovnaký
+zvyšok, musí byť ich rozdiel $3(i - j)$ deliteľný 50. Pritom 3 a 50 sú nesúdeliteľné, preto $50 \mid i - j$. To však nie je možné, lebo $1 \leq  i - j \leq 49$. Preto vymenované čísla dávajú všetky možné rôzne zvyšky po delení 50, a teda jedno z nich dáva zvyšok $50 - z$.
+}
+
+
+\problem{60-I-3-N1}{
+Daný je lichobežník $ABCD$ s dlhšou základňou $AB$ a priesečníkom uhlopriečok $P$.
+Vieme, že obsah trojuholníka $ABP$ je 16 a obsah trojuholníka $BCP$ je 10.
+\begin{enumerate}[a)]
+    \item Vypočítajte obsah trojuholníka $ADP$.
+    \item Vypočítajte obsah lichobežníka $ABCD$.
+\end{enumerate}
+}{
+\rieh Trojuholníky $ABC$ a $ABD$ majú spoločnú stranu $AB$ a rovnaké výšky na túto stranu, teda majú rovnaký obsah. Preto majú rovnaký obsah trojuholníky $ADP$ a $BCP$. Obsah trojuholníka $CDP$ vyrátame napríklad z jeho podobnosti s trojuholníkom $ABP$, pomer podobnosti je $| AP | / | CP | = S_{ABP}/S_{CBP}$. Dostaneme $S_{ABCD} = 169/4$.
+}
+
+
+\problem{60-I-3-N2}{
+Vo štvorci $ABCD$ s obsahom 1 označme $K$, $L$ po rade stredy strán $AB$, $AD$. Priamky $CK$ a $BL$ sa pretínajú v bode $M$, priamky $CL$ a $KD$ sa pretínajú v bode $N$. Ukážte, že súčet obsahov trojuholníkov $KBM$, $KLN$ a $CDN$ nie je väčší ako 3/8.
+}{
+\rieh Priamo vypočítať obsahy jednotlivých trojuholníkov ide len ťažko. Pomohlo by premiestniť tieto trojuholníky \uv{viac k sebe}, aby sa ich obsahy dali geometricky sčítať. Napríklad vďaka osovej súmernosti podľa priamky $AC$ je trojuholník $KLN$ zhodný s trojuholníkom $KLM$. A obsah trojuholníka $KBL$ už vypočítame ľahko, je to 1/8. Ostáva ukázať, že obsah trojuholníka $DCN$ je menší ako 1/4. To hneď vidno z toho, že trojuholník $DCN$ je súčasťou trojuholníka $DCL$ s obsahom 1/4. 
+}
+
+\problem{60-I-3-D1}{
+V ostrouhlom trojuholníku $ABC$ označme $D$ pätu výšky z vrcholu $C$ a $P$, $Q$ zodpovedajúce päty kolmíc vedených bodom $D$ na strany $AC$ a $BC$. Obsahy trojuholníkov $ADP$, $DCP$, $DBQ$, $CDQ$ označme postupne $S_1$, $S_2$, $S_3$, $S_4$. Vypočítajte $S_1 : S_3$, ak $S_1 : S_2 = 2 : 3$ a $S_3 : S_4 = 3 : 8$.
+}{
+\rieh C-55-I-5
+}
+
+\problem{60-I-3-D2}{
+V ľubovoľnom konvexnom štvoruholníku $ABCD$ označme $E$ stred strany $BC$ a $F$ stred strany $AD$. Dokážte, že trojuholníky $AED$ a $BFC$ majú rovnaký obsah práve vtedy, keď sú strany $AB$ a $CD$ rovnobežné.
+}
+{\rieh C-54-I-3}
+
+
+\problem{60-I-3-D3}{
+Spojnica stredov strán $AB$ a $CD$ konvexného štvoruholníka $ABCD$ rozdelí tento štvoruholník na dve časti s rovnakým obsahom. Ukážte, že priamky $AB$ a $CD$ sú rovnobežné.
+}{
+\rieh Označme $S$ a $T$ po rade stredy strán $AB$ a $CD$. Trojuholníky $DST$ a $CST$ majú rovnaký obsah (rovnako dlhé strany $DT$ a $CT$, spoločná výška). Preto trojuholníky $ADS$ a $BCS$ majú rovnaký obsah, a keďže majú rovnako dlhé strany $AS$ a $BS$, musia mať aj rovnaké výšky, čiže body $D$ a $C$ sú rovnako vzdialené od priamky $AB$.
+}
+
+
+\problem{60-I-3-D4}{
+Nájdite všetky konvexné štvoruholníky $ABCD$ s nasledujúcou vlastnosťou: v rovine štvoruholníka $ABCD$ existuje bod $P$ taký, že každá priamka vedená bodom $P$ rozdelí štvoruholník $ABCD$ na dve časti s rovnakým obsahom.
+}{
+\rieh 49-A-II-4
+}
+
+
+\problem{60-I-5-N3}{
+Ukážte, že výraz $[a, 15]/a$, kde $a$ je prirodzené číslo, môže nadobúdať len štyri rôzne hodnoty, ktoré sú všetky celočíselné. Koľko rôznych celočíselných hodnôt môže nadobudnúť výraz $[120, b]/2b$? 
+}{
+\rieh Výraz $[60, b]/2b$ môže nadobudnúť celočíselné hodnoty $1, 2,3, 5, 6, 10, 15, 30$, okrem toho nadobúda hodnoty $1/2, 3/2, 5/2, 15/2$.
+}
+
+
+
+\problem{60-I-5-D2}{
+Nájdite všetky dvojice prirodzených čísel $a$, $b$, pre ktoré platí $[a, b] + (a, b) = 63$.
+}{
+\rieh 50-C-I-3
+}
+
+
+\problem{60-II-3}{
+V lichobežníku ABCD má základňa $AB$ dĺžku 18\,cm a základňa $CD$ dĺžku 6\,cm. Pre bod $E$ strany $AB$ platí $2|AE| = |EB|$. Body $K$, $L$, $M$, ktoré sú postupne ťažiskami trojuholníkov $ADE$, $CDE$, $BCE$, tvoria vrcholy rovnostranného trojuholníka. 
+\begin{enumerate}[a)]
+    \item Dokážte, že priamky $KM$ a $CM$ zvierajú pravý uhol.
+    \item Vypočítajte dĺžky ramien lichobežníka $ABCD$.
+\end{enumerate}
+}{
+\rieh Štvoruholník $AECD$ je rovnobežník, pretože jeho strany $AE$ a $CD$ sú rovnobežné a rovnako dlhé (obe merajú 6\,cm). Na jeho uhlopriečke $AC$ tak leží ťažnica trojuholníka $ADE$ z vrcholu $A$ aj ťažnica trojuholníka $CDE$ z vrcholu $C$, a preto na tejto priamke ležia aj body $K$ a $L$ \todo{(obr. 1)}. Navyše vieme, že ťažisko trojuholníka delí jeho ťažnice v pomere $2 : 1$, preto sú úsečky $AK$, $KL$ a $LC$ rovnako dlhé.
+
+\todo{DOPLNIŤ Obr. 1}
+
+Bod $L$ je stredom úsečky $KC$, preto na osi súmernosti úsečky $KM$ leží nielen výška rovnostranného trojuholníka $KLM$, ale aj stredná priečka trojuholníka $KMC$. Preto je priamka $CM$ kolmá na $KM$. Ostáva vypočítať dĺžky ramien lichobežníka $ABCD$. Označme $P$ stred úsečky $EB$. Keďže $CM$ je kolmá na $KM$, je ťažnica $CP$ kolmá na $EB$, takže trojuholník $EBC$ je rovnoramenný, a teda aj daný lichobežník $ABCD$ je rovnoramenný. Dĺžku ramena $BC$ teraz vypočítame z pravouhlého trojuholníka $PBC$, v ktorom poznáme dĺžku odvesny $PB$. Pre druhú odvesnu $CP$ zrejme platí
+$$|CP| = \frac{3}{2} |CM| = 3\cdot \frac{\sqrt{3}}{2}|KM|,$$
+čo jednoducho vyplýva z vlastností trojuholníka $KMC$. A keďže z podobnosti trojuholníkov $KMC$ a $APC$ máme $|KM| =\frac{2}{3}|AP|$, dostávame (počítané v centimetroch)
+$$|CP| = 3\cdot \frac{\sqrt{3}}{2}|KM| = 3\cdot \frac{\sqrt{3}}{2}\frac{2}{3}|AP| =\sqrt{3}\frac{2}{3}|AB| = 12\sqrt{3}.$$
+Potom
+$$|BC| =\sqrt{|PB|^2 + |PC|^2} =\sqrt{36 + 12^2\cdot3} = 6\sqrt{1 + 12} = 6\sqrt{13}.$$
+Ramená daného lichobežníka majú dĺžku $6\sqrt{13}$\,cm.
+
+\textit{Alternatívny dôkaz kolmosti priamok KM a CM}. Keďže bod $L$ je stredom úsečky $KC$ a zároveň $|LK| = |LM|$, lebo trojuholník $KLM$ je rovnostranný, leží bod $M$ na Tálesovej kružnici nad priemerom $KC$, takže trojuholník $KMC$ je pravouhlý.
+}
+
+
+\problem{60-S-3}{
+Nech $x, y$ sú také kladné celé čísla, že obe čísla $3x + 5y$ a $5x + 2y$ sú deliteľné číslom 60. Zdôvodnite, prečo číslo 60 delí aj súčet $2x + 3y$.
+}{
+\rieh Na základe predpokladu zo zadania vieme, že existujú kladné celé čísla $m$ a $n$, pre ktoré platí
+\begin{align*}
+3x + 5y &= 60m,\\
+5x + 2y &= 60n.
+\end{align*}
+Na tieto vzťahy sa môžeme pozerať ako na sústavu lineárnych rovníc s neznámymi $x$ a $y$ a parametrami $m$ a $n$. Vyriešiť ju vieme ľubovoľnou štandardnou metódou, napríklad od dvojnásobku prvej rovnice odčítame päťnásobok druhej a vyjadríme $x$, potom dopočítame $y$. Dostaneme
+$$x = \frac{60(5n - 2m)}{19}, \ \ \ y =\frac{60(5m - 3n)}{19}.$$
+Keďže čísla 19 a 60 sú nesúdeliteľné, sú obe čísla $x$ a $y$ deliteľné 60. Preto aj súčet $2x + 3y$ je deliteľný 60.
+
+\textbf{Iné riešenie*.} Vieme, že $60 = 3 \cdot 4 \cdot 5$. Pritom čísla 3, 4, 5 sú po dvoch nesúdeliteľné, preto na dôkaz deliteľnosti 60 stačí dokázať deliteľnosť jednotlivými číslami 3, 4, 5.
+
+Keďže číslo $3x + 5y$ je deliteľné $5$, je aj $x$ deliteľné 5. Podobne z relácie $5 \mid 5x + 2y$ vyplýva $5 \mid y$. Preto 5 delí aj $2x + 3y$.
+
+Keďže číslo $3x + 5y$ je deliteľné 3, je $y$ deliteľné 3. Vzhľadom na $3 \mid 5x + 2y$ máme tiež $3 \mid 5x$, a teda $3 \mid x$. Preto 3 delí aj $2x + 3y$.
+
+Keďže $4 \mid 3x + 5y$ a $4 \mid 5x + 2y$, máme aj $4 \mid (3x + 5y) + (5x + 2y) = 8x + 7y$, takže $4 | y$. Ďalej napríklad $4 \mid 3x + 5y$, takže $4 \mid 3x$, čiže $4 \mid x$. Preto 4 delí aj $2x + 3y$.
+
+\textbf{Iné riešenie*.}. Vyjadríme výraz $2x + 3y$ pomocou $3x + 5y$ a $5x + 2y$. Budeme hľadať čísla $p$ a $q$ také, že $2x + 3y = p(3x + 5y) + q(5x + 2y)$ pre každú dvojicu celých čísel $x$, $y$. Jednoduchou úpravou dostaneme rovnicu
+$$(2 - 3p - 5q)x + (3 - 5p - 2q)y = 0. \ \ \ \todo{(1)}$$
+Ak budú hľadané čísla $p$ a $q$ spĺňať sústavu
+\begin{align*}
+3p + 5q &= 2,\\
+5p + 2q &= 3,
+\end{align*}
+bude zrejme rovnosť \todo{fix (1)} splnená pre každú dvojicu $x$, $y$. Vyriešením sústavy dostaneme $p = 11/19$, $q = 1/19$. Dosadením do \todo{fix (1)} dostávame vyjadrenie
+$$19(2x + 3y) = 11(3x + 5y) + (5x + 2y),$$
+z ktorého vyplýva, že spolu s číslami $3x + 5y$ a $5x + 2y$ je súčasne deliteľné 60 aj číslo $2x + 3y$, pretože čísla 19 a 60 sú nesúdeliteľné.
+}
+
+
+\problem{61-I-1}{
+Nájdite všetky trojčleny $p(x) = ax^2 + bx + c$, ktoré dávajú po delení dvojčlenom $x + 1$ zvyšok 2 a po delení dvojčlenom $x + 2$ zvyšok 1, pričom $p(1) = 61$. 
+}{
+\rieh Dvojnásobným použitím algoritmu delenia dostaneme
+\begin{align*}
+    ax^2+ bx + c &= (ax + b - a)(x + 1) + c - b + a,\\
+    ax^2+ bx + c &= (ax + b - 2a)(x + 2) + c - 2b + 4a.
+\end{align*}
+
+Dodajme k tomu, že nájdené zvyšky $c - b + a$ a $c - 2b + 4a$ sú zrejme rovné hodnotám $p(-1)$, resp. $p(-2)$, čo je v zhode s poznatkom, že akýkoľvek mnohočlen $q(x)$ dáva pri delení dvojčlenom $x - x_0$ zvyšok rovný číslu $q(x_0)$.
+
+Podľa zadania platí $c - b + a = 2$ a $c - 2b + 4a = 1$. Tretia rovnica $a + b + c = 61$ je vyjadrením podmienky $p(1) = 61$. Získanú sústavu troch rovníc vyriešime jedným z mnohých možných postupov.
+
+Z prvej rovnice vyjadríme $c = b - a + 2$, po dosadení do tretej rovnice dostaneme $a + b + (b - a + 2) = 61$, čiže $2b = 59$. Odtiaľ $b = 59/2$, čo po dosadení do prvej a druhej rovnice dáva $a+c = 63/2$, resp. $c+4a = 60$. Ak odčítame posledné dve rovnice od seba, dostaneme $3a = 57/2$, odkiaľ $a = 19/2$, takže $c = 63/2 - 19/2 = 22$. Hľadaný trojčlen je teda jediný a má tvar
+$$p(x) =\frac{19}{2} \cdot x^2+\frac{59}{2}\cdot x + 22 = \frac{19x^2 + 59x + 44}{2}.$$
+}
+
+
+\problem{61-I-1-N1}{
+Ukážte, že pre každé číslo $a$ je mnohočlen $x^4+(1-a)x^2+x^2+a$ deliteľný mnohočlenom $x^2+ x + 1$ bezo zvyšku.
+}{
+\rieh Podiel je rovný $x^2 - ax + a$.
+}
+
+\problem{61-I-1-N2}{
+Určte všetky reálne čísla $a$, pre ktoré je trojčlen $x^2+5x+6$ deliteľný dvojčlenom $x+a$. Riešte jednak použitím algoritmu delenia, jednak použitím pravidla (často nazývaného \textit{Bezoutova veta}), že mnohočlen $p(x)$ je deliteľný dvojčlenom $x - x_0$ práve vtedy, keď $p(x_0) = 0$.
+}{
+\rieh Vyhovujú čísla $a = 2$ a $a = 3$, lebo priamym delením dostaneme rovnosť mnohočlenov $x^2+ 5x + 6 = (x + a)(x + 5 - a) + a^2 - 5a + 6$, takže hľadané čísla a sú korene rovnice $a^2 - 5a + 6 = 0$.
+}
+
+\problem{61-I-1-N3}{
+Určte všetky reálne čísla $a$, pre ktoré trojčlen $x^2+ 5x + 6$ dáva pri delení dvojčlenom $x + a$ zvyšok 2.
+}{
+\rieh Vyhovujú čísla $a = 1$ a $a = 4$, ktoré dostaneme, keď pre všeobecný zvyšok $a^2 - 5a + 6$ (pozri \todo{úlohu 2}) zostavíme a vyriešime rovnicu $a^2 - 5a + 6 = 2$.
+}
+
+\problem{61-I-1-N4}{
+Ukážte, že všetky trojčleny $p(x) = ax^2+ 2(a - 1)x - 4$, kde $a$ je ľubovoľné číslo, sú deliteľné jedným dvojčlenom $x+b$ s vhodným koeficientom $b$. Akým?
+}{
+\rieh $b = 2$. Číslo $b$ má požadovanú vlastnosť práve vtedy, keď platí $p(-b) = 0$. Pretože $p(-b) = a(b^2 - 2b)+ 2b - 4 = (b - 2)(ab + 2)$, je rovnosť $p(-b) = 0$ splnená pre každé $a$ práve vtedy, keď $b = 2$.
+}
+
+
+\problem{61-I-1-N5}{
+Určte všetky dvojice reálnych čísel $a$ a $b$, pre ktoré je mnohočlen $x^4+ ax^2+ b$ deliteľný
+mnohočlenom $x^2+ bx + a$.
+}{
+\rieh 56-B-S-1
+}
+
+
+\problem{61-I-2-N1}{
+Pomocou dĺžok $a$, $b$, $c$ strán všeobecného trojuholníka vyjadrite dĺžky úsečiek, na ktoré sú tieto strany rozdelené bodmi dotyku kružnice vpísanej tomuto trojuholníku. Na príklade potom ukážte, že tieto dĺžky nemusia byť vyjadrené celými číslami, aj keď strany trojuholníka takéto vyjadrenia majú. 
+}{
+\rieh Ide o dve úsečky dĺžky $x =\frac{1}{2}(a + b - c)$, dve úsečky dĺžky $y =\frac{1}{2}(b + c - a)$ a dve úsečky dĺžky $z =\frac{1}{2}(c + a - b)$. Tieto dĺžky nie sú celočíselné, ak sú napríklad všetky tri dĺžky $a$, $b$, $c$ vyjadrené nepárnymi číslami.
+}
+
+
+\problem{61-I-2-N2}{
+Ak zostrojíme z troch úsečiek ľubovoľných dĺžok $p$, $q$, $r$ úsečky dĺžok $a = p+q$, $b = q+r$ a $c = r + p$, budú tieto tri nové úsečky dĺžkami strán nejakého trojuholníka. Vysvetlite a potom zistite, aký význam v takom trojuholníku budú mať pôvodné dĺžky $p$, $q$, $r$.
+}{
+\rieh Overiť algebraicky trojuholníkové nerovnosti $a + b > c > |a - b|$ je triviálne, lebo ide o zrejmé nerovnosti $p + 2q + r > p + r > |p - r|$. V trojuholníku so stranami $a$, $b$, $c$ sú dĺžky $p$, $q$, $r$ dĺžkami úsečiek, na ktoré sú strany $a$, $b$, $c$ rozdelené bodmi dotyku vpísanej kružnice, ako to vyplýva z výsledku \todo{úlohy 1}.
+}
+
+
+\problem{61-I-2-N3}{
+Trojuholník $ABC$ spĺňa pri zvyčajnom označení dĺžok strán podmienku $a \leq  b \leq c$. Vpísaná kružnica sa dotýka strán $AB$, $BC$ a $AC$ postupne v bodoch $K$, $L$ a $M$. Dokážte, že z úsečiek $AK$, $BL$ a $CM$ je možné zostrojiť trojuholník práve vtedy, keď platí $b + c < 3a$. 
+}{
+\rieh 57-C-II-1
+}
+
+\problem{61-I-2-N4}{
+Dokážte, že v každom pravouhlom trojuholníku je súčet polomerov vpísanej kružnice a opísanej kružnice rovný aritmetickému priemeru dĺžok oboch odvesien.
+}{
+\rieh Prvé riešenie úlohy 59-A-S-2.
+}
+
+\problem{61-I-2-N5}{
+Určte dĺžku prepony pravouhlého trojuholníka, ak poznáte polomer $r$ kružnice vpísanej a polomer $R$ kružnice pripísanej k prepone tohto trojuholníka (t. j. kružnice, ktorá sa dotýka zvonku prepony a predĺženia oboch odvesien trojuholníka). 
+}{
+\rieh 45-C-I-6
+}
+
+
+\problem{61-I-3-N3}{
+Nájdite všetky trojice $a$, $b$, $c$ prirodzených čísel, pre ktoré súčasne platí $(ab, c) = 2^8$, $(bc, a) = 2^9$ a $(ca, b) = 2^{11}$.
+}{
+\rieh 50-C-S-1
+}
+
+
+\problem{61-I-5-N2}{
+Kružnice $k(S; 6$\,cm) a $l(O; 4$\,cm) majú vnútorný dotyk v bode $B$. Určte dĺžky strán trojuholníka $ABC$, kde bod $A$ je priesečník priamky $OB$ s kružnicou $k$ a bod $C$ je priesečník kružnice $k$ s dotyčnicou z bodu $A$ ku kružnici $l$.
+}{
+\rieh 59-C-S-2
+}
+
+\problem{61-I-5-N3}{
+Kružnica $l(T ; s)$ prechádza stredom kružnice $k(S; 2$\,cm). Kružnica $m(U; t)$ sa zvonku dotýka kružníc $k$ a $l$, pričom $US \perp ST$. Polomery $s$ a $t$ vyjadrené v centimetroch sú
+celé čísla. Určte ich.
+}{
+\rieh 59-B-II-1
+}
+
+
+\problem{61-I-5-N4}{
+Pravouhlému trojuholníku $ABC$ s preponou $AB$ je opísaná kružnica. Päty kolmíc z bodov $A$, $B$ na dotyčnicu k tejto kružnici v bode $C$ označme $D$, $E$. Vyjadrite dĺžku úsečky $DE$ pomocou dĺžok odvesien trojuholníka $ABC$.
+}{
+\rieh 58-C-I-2
+}
+
+
+\problem{61-I-5-N5}{
+Pravouhlému trojuholníku $ABC$ s preponou $AB$ a obsahom $S$ je opísaná kružnica. Dotyčnica k tejto kružnici v bode $C$ pretína dotyčnice vedené bodmi $A$ a $B$ v bodoch $D$ a $E$. Vyjadrite dĺžku úsečky $DE$ pomocou dĺžky $c$ prepony a obsahu $S$.
+}{
+\rieh 58-C-II-4
+}
+
+
+\problem{61-I-5-N6}{
+Rovnoramennému lichobežníku $ABCD$ so základňami $AB$, $CD$ je možné vpísať kružnicu so stredom $O$. Určte obsah $S$ lichobežníka, ak sú dané dĺžky úsečiek $OB$ a $OC$.
+}{
+\rieh 56-C-II-3
+}
+
+
+\problem{61-I-5-N7}
+{Kružnice $k$, $l$, $m$ sa po dvoch zvonku dotýkajú a všetky tri majú spoločnú dotyčnicu. Polomery kružníc $k$, $l$ sú 3\,cm a 12\,cm. Vypočítajte polomer kružnice $m$. Nájdite všetky riešenia. 
+}{
+\rieh 55-C-I-2
+}
+
+
+\problem{61-I-5-N8}{
+Kružnice $k$, $l$ s vonkajším dotykom ležia obe v obdĺžniku $ABCD$, ktorého obsah je 72\,cm$^2$. Kružnica $k$ sa pritom dotýka strán $CD$, $DA$ a $AB$ a kružnica $l$ sa dotýka strán $AB$ a $BC$. Určte polomery kružníc $k$ a $l$, ak je polomer kružnice $k$ v centimetroch vyjadrený celým číslom.\todo{Čekni, kde inde sa toto ešte opakuje, lebo niekde hej.}
+}{
+\rieh 55-C-II-3
+}
+
+
+\problem{61-II-1}{
+Pre všetky reálne čísla $x, y, z$ také, že $x < y < z$, dokážte nerovnosť $$x^2 - y^2 + z^2> (x - y + z)^2.$$
+}{
+\rieh Aby sme mohli použiť vzorec $A^2 - B^2 = (A - B)(A + B)$, presuňme najskôr jeden z krajných členov ľavej strany, napríklad člen $z^2$, na pravú stranu:
+\begin{align*}
+x^2 - y^2 & > (x - y + z)^2-z^2,\\
+(x - y)(x + y) & > (x - y + z - z)(x - y + z + z),\\
+(x - y)(x + y) & > (x - y)(x - y + 2z).
+\end{align*}
+Keďže spoločný činiteľ $x - y$ oboch strán poslednej nerovnosti je podľa predpokladu úlohy číslo záporné, budeme s dôkazom hotoví, keď ukážeme, že zvyšné činitele spĺňajú opačnú nerovnosť $x + y < x - y + 2z$. Tá je však zrejme ekvivalentná s nerovnosťou $2y < 2z$, čiže $y < z$, ktorá podľa zadania úlohy naozaj platí.
+
+\textbf{Iné riešenie*.} Podľa vzorca pre druhú mocninu trojčlena platí $$(x - y + z)^2= x^2+ y^2+ z^2 - 2xy + 2xz - 2yz.$$
+Dosaďme to do pravej strany dokazovanej nerovnosti a urobme niekoľko ďalších ekvivalentných úprav:
+\begin{align*}
+x^2 - y^2+ z^2 &> x^2+ y^2+ z^2 - 2xy + 2xz - 2yz,\\
+0 &> 2y^2 - 2xy + 2xz - 2yz,\\
+0 &>  2y(y - x) + 2z(x - y),\\
+0 &> 2(y - x)(y - z).
+\end{align*}
+Posledná nerovnosť už vyplýva z predpokladov úlohy, podľa ktorých je činiteľ $y - x$ kladný, zatiaľ čo činiteľ $y - z$ je záporný.
+}
+
+
+\problem{62-I-1-N2}{
+Škriatok sa pohybuje v tabuľke $10 \times 15$ skokmi o jedno políčko nahor alebo o jedno políčko doprava. Koľkými rôznymi cestami sa môže dostať z ľavého dolného do pravého horného políčka? 
+}{
+\rieh Škriatok urobí 9 skokov nahor a 14 skokov doprava. Jeho cestu určíme, keď v poradí všetkých 23 skokov vyberieme tých deväť, ktoré povedú nahor. Počet týchto výberov 9 prvkov z daných 23 je rovný zlomku $\cfrac{23\cdot 22 \cdots 16\cdot 15}{9 \cdot 8 \cdots 2 \cdot 1}$, teda číslu 817 190.
+}
+
+
+\problem{62-I-2-D4}{
+Ak reálne čísla $a$, $b$, $c$, $d$ spĺňajú rovnosti
+$$a^2+ b^2= b^2+ c^2= c^2+ d^2= 1,$$
+platí nerovnosť 
+$$ab + ac + ad + bc + bd + cd \leq 3.$$
+Dokážte a zistite, kedy za daných podmienok nastane rovnosť.
+}{
+\rieh 55-C-II-2
+}
+
+
+\problem{62-I-3}{
+Daný je obdĺžnik $ABCD$ s obvodom $o$. V jeho rovine nájdite množinu všetkých bodov, ktorých súčet vzdialeností od priamok $AB$, $BC$, $CD$, $DA$ je rovný $\frac{2}{3}o$. 
+}{
+\rieh Požadovanú hodnotu súčtu štyroch vzdialeností zapíšeme v tvare
+$$ \frac{2}{3}o = \frac{1}{6}o +\frac{1}{2}o =\frac{1}{6}o + |AB| + |BC|. \todo{(1)}$$
+Pre ľubovoľný bod v páse určenom priamkami $AB$ a $CD$ platí, že súčet jeho vzdialeností od týchto dvoch rovnobežiek je rovný ich vzdialenosti, t. j. $|BC|$. Pre ľubovoľný bod zvonka tohto pásu je súčet dvoch uvažovaných vzdialeností rovný súčtu hodnoty $|BC|$ a dvojnásobku vzdialenosti od bližšej z oboch rovnobežiek. Podobné dve tvrdenia platia pre súčet vzdialeností ľubovoľného bodu od rovnobežiek $BC$ a $AD$ vo vzťahu k ich vzdialenosti $|AB|$. Vzhľadom na vyjadrenie \todo{ (1)} tak môžeme urobiť prvé dva závery.
+
+\begin{enumerate}[(1)]
+    \item  V páse medzi priamkami AB a CD sú hľadanými bodmi práve tie, ktorých súčet vzdialeností od priamok $BC$ a $AD$ je rovný $\frac{1}{6}o + |AB|$. Sú to teda body, ktoré ležia zvonka pásu určeného priamkami $BC$ a $AD$ a majú od bližšej z nich vzdialenosť rovnú $\frac{2}{6}o : 2 = \frac{1}{12}o$. Množinu hľadaných bodov v páse medzi $AB$ a $CD$ tak tvoria dve úsečky $B_1 C_1$ a $A_1 D_1$ znázornené na \todo{obr. 1}. Ich krajné body $A_1$, $B_1$ ležia na priamke $AB$ zvonka úsečky $AB$ tak, že $|AA_1 | = |BB_1 | =\frac{1}{12}o$; krajné body $C_1$, $D_1$ ležia na priamke $CD$ zvonka úsečky $CD$ tak, že $|CC_1 | = |DD_1 | = \frac{1}{12}o$.
+    
+    \todo{DOPLNIŤ Obr. 1}
+    
+    \item V páse medzi priamkami $BC$ a $AD$ sú hľadanými bodmi práve tie, ktorých súčet vzdialeností od priamok $AB$ a $CD$ je rovný $\frac{1}{6}o + |BC|$. Sú to teda body, ktoré ležia zvonka pásu určeného priamkami $AB$ a $CD$ a ktoré majú od bližšej z nich vzdialenosť $\frac{1}{12}o$. Množinu hľadaných bodov v páse medzi $BC$ a $AD$ tak tvoria dve úsečky $A_2 B_2$ a $C_2 D_2$, pritom krajné body $B_2$, $C_2$ ležia na priamke $BC$ zvonka úsečky $BC$ tak, že $|BB_2 | = |CC_2 | =\frac{1}{12}o$ a krajné body $A_2$, $D_2$ ležia na priamke $AD$ zvonka úsečky $AD$ tak, že $|AA_2 | = |DD_2 | =\frac{1}{12}o$. 
+    
+    \todo{DOPLNIŤ Obr. 2}
+
+\end{enumerate}
+Ostáva nájsť hľadané body mimo zjednotenia oboch uvažovaných pásov, teda body ležiace v nejakom zo štyroch
+pravých uhlov $A_1 AA_2$, $B_1 BB_2$, $C_1 CC_2$, $D_1 DD_2$. Z vyššie uvedených úvah vyplýva, že v každom z týchto uhlov hľadáme práve tie body, ktorých súčet vzdialeností od oboch ramien uhla je rovný hodnote $\frac{1}{12}o$. Vzhľadom na symetriu ukážeme len to, že také body uhla $A_1 AA_2$ vyplnia úsečku $A_1 A_2$; v ostatných troch uhloch to potom budú úsečky $B_1 B_2$, $C_1 C_2$, $D_1 D_2$ \todo{(obr. 1)}.
+
+Všimnime si najskôr, že body $A_1$, $A_2$ sú jediné body na ramenách uhla $A_1 AA_2$, ktoré majú požadovanú vlastnosť. Pre ľubovoľný vnútorný bod $X$ uhla $A_1 AA_2$ označme $d_1$, $d_2$ vzdialenosti bodu $X$ od ramien $AA_1$, resp. $AA_2$. Hľadáme potom práve tie body $X$, pre ktoré platí $d_1 +d_2 =\frac{1}{12}o$ \todo{ (obr. 2)}. Túto \uv{rovnicu} teraz vyriešime úvahou o obsahu S útvaru $AA_1 XA_2$, ktorý je buď trojuholník, alebo konvexný či nekonvexný štvoruholník.
+
+Obsah $S$ je vždy rovný súčtu obsahov dvoch trojuholníkov $AA_1 X$ a $AA_2 X$:
+$$S = S_{AA_1 X} + S_{AA_2 X} =\frac{1}{2}|AA_1 |d_1 + \frac{1}{2}|AA_2 |d_2 = \frac{1}{2} \cdot \frac{1}{12}o \cdot (d_1 + d_2 ).$$
+Rovnica $d_1 +d_2 =\frac{1}{12}o$ je tak splnená práve vtedy, keď obsah $S$ má rovnakú hodnotu ako obsah $S_0$ pravouhlého trojuholníka $AA_1 A_2$, ktorého obe odvesny majú zhodnú dĺžku $\frac{1}{12}o$. Hľadané body $X$ sú teda práve tie, pre ktoré je útvar $AA_1 XA_2$ trojuholník; ak je totiž $AA_1 XA_2$ konvexný, resp. nekonvexný štvoruholník, platí zrejme $S > S_0$, resp. $S < S_0$. Hľadané body $X$ uhla $AA_1 A_2$ preto naozaj tvoria úsečku $A_1 A_2$.
+
+\textit{Odpoveď.} Hľadaná množina je zjednotením ôsmich úsečiek, ktoré tvoria hranicu osemuholníka $A_1 A_2 B_2 B_1 C_1 C_2 D_2 D_1$.
+
+\textit{Poznámka.} Z \todo{obr. 2} je tiež zrejmé, že rovnica $d_1 + d_2 = c$, pričom $c = |AA_1 | = |AA_2|$, bude splnená práve vtedy, keď bude $|X_1 A_1 | = d_1$ a $|X_2 A_2| = d_2$, t. j. práve vtedy, keď budú oba trojuholníky $XX_1 A_1$ a $XX_2 A_2$ rovnoramenné. To zrejme nastane práve vtedy, keď bude uhol $A_1 XA_2$ priamy, pretože $|\ma AA_1 A_2 | = 45^\circ$.
+}
+
+
+\problem{62-I-3-N1}{
+V rovine je daných $k$ navzájom rôznych rovnobežiek. Ktoré body tejto roviny majú najmenší súčet vzdialeností od týchto k rovnobežiek? Odpoveď si premyslite najskôr pre malé hodnoty $k = 2, 3, 4, \ldots$ a potom spravte zovšeobecnenie.
+}{
+\rieh V prípade párneho $k$ sa jedná o body pásu medzi dvoma \uv{prostrednými} rovnobežkami, v prípade nepárneho $k$ sú to body na prostrednej rovnobežke.
+}
+
+
+\problem{62-I-3-N2}{
+Daný je pravouhlý rovnoramenný trojuholník $ABC$ s odvesnami $AC$, $BC$ dĺžky 1\,cm. V pravom uhle $ACB$ určte všetky tie body, ktorých súčet vzdialeností od ramien $CA$, $CB$ je rovný a) 1\,cm, b) 3\,cm.
+}{
+\rieh V prípade a) pre hľadaný bod $X$ porovnajte obsah útvaru vzniknutého zlepením trojuholníkov $ACX$ a $BCX$ s obsahom trojuholníka $ABC$ a odvoďte odtiaľ, že vyhovujúce body $X$ vyplnia úsečku $AB$. V prípade b) nahraďte body $A$, $B$ vhodnými bodmi $A'$, $B'$ na ramenách $CA$, resp. $CB$ a použite ten istý postup ako v prípade a).
+}
+
+\problem{62-I-3-D1}{
+Je daná úsečka $AB$. Zostrojte bod $C$ tak, aby sa obsah trojuholníka $ABC$ rovnal 1/8 obsahu $S$ štvorca so stranou $AB$ a súčet obsahov štvorcov so stranami $AC$ a $BC$ sa rovnal $S$.
+}{
+\rieh C-54-S-3
+}
+
+\problem{62-I-4-N1}{
+Užitočný \textit{Dirichletov (priehradkový) princíp} sa najčastejšie uvádza s dvoma prirodzenými číslami $k$ a $n$ takto: ”Ak je aspoň $nk+1$ predmetov rozdelených do $n$ priehradiek, v niektorej z nich je aspoň $k + 1$ z týchto predmetov.“ Aj keď je to veľmi jednoduché tvrdenie (zdôvodnite ho sami), nachádza použitie v mnohých situáciách (často dokonca s hodnotou $k = 1$).\\
+\\
+Z ľubovoľných 82 prirodzených čísel možno vybrať dve čísla tak, aby ich rozdiel bol deliteľný číslom 81. Dokážte.
+}{
+\rieh Rozdeľte čísla na skupiny podľa ich zvyšku po delení číslom 81.
+}
+
+
+\problem{62-I-4-N2}{
+Ak vyberieme z množiny $\{1, 2, 3, \ldots , 100\}$ ľubovoľne 12 rôznych čísel, tak rozdiel niektorých dvoch z nich bude dvojciferné číslo zapísané dvoma rovnakými ciframi. Dokážte.
+}{
+\rieh Rozdeľte čísla na skupiny podľa ich zvyšku po delení číslom 11.
+}
+
+
+\problem{62-I-4-N3}{
+Dokážte, že zo 111 rôznych celých čísel sa vždy dá vybrať jedenásť takých, že ich súčet je deliteľný jedenástimi.
+}{
+\rieh Využite to, že súčet 11 čísel s rovnakým zvyškom po delení číslom 11 je násobkom čísla 11.
+}
+
+
+\problem{62-I-4-N4}{
+Žiadne z daných 17 celých čísel nie je deliteľné číslom 17. Dokážte, že súčet niekoľkých z týchto čísel je násobkom čísla 17.
+}{
+\rieh Dané čísla označte $a_1, \ldots, a_{17}$ a uvažujte zvyšky 17 súčtov $s_i = a_1 + a_2 + \ldots + a_i (i = 1, 2, \ldots, 17)$ po delení číslom 17; ak nie je žiadny z nich rovný 0, dávajú dva zo súčtov $s_i < s_j$ ten istý zvyšok modulo 17, takže číslom 17 je deliteľný rozdiel $s_j - s_i$ pre niektoré $i < j$.
+}
+
+
+\problem{62-I-4-N5}{
+Tabuľka $6 \times 6$ je zaplnená číslami $-1, 0, 1$. Sčítame čísla v jednotlivých riadkoch, stľpcoch aj oboch uhlopriečkach. Dostaneme $6+6+2 = 14$ súčtov. Dokážte, že niektoré dva z nich sa rovnajú.
+}{
+\rieh Všetky súčty ležia v množine celých čísel z intervalu $\langle -6, 6 \rangle$ ktorá má len 13 prvkov.
+}
+
+\problem{62-I-4-N6}{
+Aký najväčší počet kráľov môžeme umiestniť na šachovnicu $8\times 8$, aby sa žiadni dvaja navzájom neohrozovali?
+}{
+\rieh 16. Rozdeľte celú šachovnicu na 16 dielov $2\times 2$.
+}
+
+
+\problem{62-I-4-N7}{
+Dokážte, že ak vyberieme v rovnostrannom trojuholníku so stranou $a$ ľubovoľne 10 bodov, tak vzdialenosť niektorých dvoch vybraných bodov bude nanajvýš $a/3$.
+}{
+\rieh Celý trojuholník rozdeľte na 9 rovnostranných trojuholníkov so stranou $a/3$.
+}
+
+
+\problem{62-I-4-N8}{
+Desať rodín z jedného domu bolo na dovolenke v zahraničí. Každá cestovala inde a poslala domov pohľadnice piatim zo zvyšných rodín. Dokážte, že niektoré dve rodiny si poslali pohľadnice navzájom.
+}{
+\rieh Všetkých pohľadníc bolo 50, rôznych dvojprvkových množín $\{$odosielateľ, adresát$\}$ je len $(10\cdot9) : 2 = 45$.
+}
+
+
+\problem{62-I-4-D1}{
+Z množiny $\{1, 2, 3, \ldots , 99\}$ vyberte čo najväčší počet čísel tak, aby súčet žiadnych dvoch vybraných čísel nebol násobkom jedenástich. (Vysvetlite, prečo zvolený výber má požadovanú vlastnosť a prečo žiadny výber väčšieho počtu čísel nevyhovuje.)
+}{
+\rieh 58-C-I-5
+}
+
+
+\problem{62-I-5}{
+Určte všetky celé čísla $n$, pre ktoré $2n^3 -3n^2 +n+3$ je prvočíslo. 
+}{
+\rieh Ukážeme, že jedinými celými číslami, ktoré vyhovujú úlohe, sú $n = 0$ a $n = 1$.
+
+Upravme najskôr výraz $V = 2n^3 - 3n^2 + n + 3$ nasledujúcim spôsobom:
+$$V = (n^3 - 3n^2+ 2n) + (n^3 - n) + 3 = (n - 2)(n - 1)n + (n - 1)n(n + 1) + 3.$$
+Oba súčiny $(n-2)(n-1)n$ a $(n-1)n(n+1)$ v upravenom výraze $V$ sú deliteľné tromi pre každé celé číslo $n$ (v oboch prípadoch sa jedná o súčin troch po sebe idúcich celých čísel), takže výraz $V$ je pre všetky celé čísla $n$ deliteľný tromi. Hodnota výrazu $V$ je preto prvočíslom práve vtedy, keď $V = 3$, teda práve vtedy, keď súčet oboch spomenutých súčinov je rovný nule:
+$$0 = (n - 2)(n - 1)n + (n - 1)n(n + 1) = n(n - 1)[(n - 2) + (n + 1)] = n(n - 1)(2n - 1).$$
+Poslednú podmienku však spĺňajú iba dve celé čísla $n$, a to $n = 0$ a $n = 1$. Tým je úloha vyriešená.
+ 
+\textit{Poznámka.} Fakt, že výraz $V$ je deliteľný tromi pre ľubovoľné celé $n$, môžeme odvodiť aj tak, že doňho postupne dosadíme $n = 3k$, $n = 3k + 1$ a $n = 3k + 2$, pričom $k$ je celé číslo, rozdelíme teda všetky celé čísla $n$ na tri skupiny podľa toho, aký dávajú zvyšok po delení tromi. 
+}
+
+
+\problem{62-I-5-N2}{
+Pre ktoré dvojciferné čísla $n$ je číslo $n^3-n$ deliteľné číslom sto? 
+}{
+\rieh C-50-S-3
+}
+
+
+\problem{62-I-6-N1}{
+V danom rovnobežníku $ABCD$ je bod $E$ stred strany $BC$ a bod $F$ leží vnútri strany $AB$. Obsah trojuholníka $AFD$ je 15\,cm$^2$ a obsah trojuholníka $FBE$ je 14\,cm$^2$. Určte obsah štvoruholníka $FECD$.
+}{
+\rieh 57-C-S-2
+}
+
+
+\problem{62-I-6-N2}{
+V ostrouhlom trojuholníku $ABC$ označme $D$ pätu výšky z vrcholu $C$ a $P$, $Q$ zodpovedajúce päty kolmíc vedených bodom $D$ na strany $AC$ a $BC$. Obsahy trojuholníkov $ADP$, $DCP$, $DBQ$, $CDQ$ označme postupne $S_1$, $S_2$, $S_3$, $S_4$. Vypočítajte $S_1 : S_3$, ak $S_1 : S_2 = 2 : 3$ a $S3 : S4 = 3 : 8$. \todo{Pohľadať, toto už niekde bolo.}
+}{
+\rieh 55-C-I-5
+}
+
+
+\problem{62-I-6-D1}{
+Základňa $AB$ lichobežníka $ABCD$ je trikrát dlhšia ako základňa $CD$. Označme $M$ stred strany $AB$ a $P$ priesečník úsečky $DM$ s uhlopriečkou $AC$. Vypočítajte pomer obsahov trojuholníka $CDP$ a štvoruholníka $MBCP$.
+}{
+\rieh 55-C-II-1
+}
+
+
+\problem{62-S-2}{
+Určte všetky dvojice $a$, $b$ celých kladných čísel, pre ktoré platí
+$$a \cdot [a, b] = 4 \cdot (a, b),$$
+pričom symbol $[a, b]$ označuje najmenší spoločný násobok a $(a, b)$ najväčší spoločný deliteľ celých kladných čísel a, b. 
+}{
+\rieh Ak označíme $d$ najväčšieho spoločného deliteľa čísel $a$ a $b$, môžeme písať $a = kd$ a $b = ld$, pričom $(k, l) = 1$, takže $[a, b] = kld$. Po dosadení do danej rovnice tak dostaneme
+$$kd \cdot kld = 4 \cdot d \ \ \ \text{a po úprave} \ \ \ k^2ld = 4.$$
+
+Z poslednej rovnosti je zrejmé, že môže byť jedine $k = 2$ alebo $k = 1$.
+
+Pre $k = 2$ vychádza $l = d = 1$, čomu zodpovedá dvojica $a = 2$, $b = 1$.
+
+Pre $k = 1$ dostávame rovnicu $ld = 4$, ktorá má v obore kladných celých čísel tri riešenia:
+\begin{enumerate}
+    \item $l = 4$, $d = 1$ a riešením úlohy je dvojica $a = 1$, $b = 4$;
+    \item $l = 2$, $d = 2$ a riešením úlohy je dvojica $a = 2$, $b = 4$;
+    \item $l = 1$, $d = 4$ a riešením úlohy je dvojica $a = 4$, $b = 4$.
+\end{enumerate}
+\textit{Záver.} Úlohe vyhovujú práve štyri dvojice kladných celých čísel $(a, b)$, a to (2, 1), (1, 4),
+(2, 4) a (4, 4).
+
+\textbf{Iné riešenie*.} Využijeme známu rovnosť $[a, b] \cdot (a, b) = a \cdot b$, ktorá platí pre všetky celé kladné $a$, $b$. Vynásobením oboch strán danej rovnice číslom [a, b] tak dostaneme
+$$a[a, b]^2= 4ab, \ \ \ \text{čiže} \ \ \ [a, b]^2= 4b. \ \ \ \todo{ (1)}$$
+
+Vzhľadom na to, že $[a, b] \geq b$, a teda 
+$$4b = [a, b]^2 \geq b^2,$$
+je $b^2\leq  4b$, takže $b \leq 4$. Navyše z upravenej rovnice \todo{(1)} vyplýva, že $4b$, a teda aj $b$ je druhou mocninou celého čísla. Preskúmaním oboch prípadov $b \in \{1, 4\}$ (dosadíme do pôvodnej rovnice postupne všetky možné hodnoty $(a, b)$, ktorých je konečne veľa, alebo dosadíme do \todo{(1)} a využijeme to, že $a$ je deliteľom najmenšieho spoločného násobku $[a, b]$) dôjdeme k rovnakému záveru ako v prvom riešení.
+
+\textbf{Iné riešenie*.} Keďže zrejme platí $[a, b] = (a, b)$, vyplýva zo zadanej rovnosti nerovnosť $a \leq 4$, pričom rovnosť $a = 4$ nastane práve vtedy, keď $[a, b] = (a, b)$ čiže $a = b = 4$. To je prvé riešenie danej úlohy, pri všetkých ostatných musí byť $a = 1$, $a = 2$, alebo $a = 3$. Pre $a = 1$ máme rovnicu $1 \cdot b = 4$, takže $(a, b) = (1, 4)$ je druhým riešením. Pre $a = 2$ máme rovnicu $2[2, b] = 4(2, b)$ čiže $[2, b] = 2(2, b)$, odkiaľ podľa možných hodnôt $(2, b) = 1$ a $(2, b) = 2$ dostaneme $b = 1$, resp. $b = 4$; ďalšie dve (tretie a štvrté) riešenia teda sú $(a, b) = (2, 1)$ a $(a, b) = (2, 4)$. Napokon pre $a = 3$ máme rovnicu $3[3, b] = 4(3, b)$, z ktorej vyplýva $3 \mid (3, b)$, čiže $3 \mid b$, takže máme vlastne rovnicu $3b = 12$, ktorej jediné riešenie $b = 4$ však podmienku $3 \mid b$ nespĺňa.
+
+\textit{Poznámka.} Diskusii o prípade $a = 3$ sa možno vyhnúť nasledujúcou úvahou. Prepíšme zadanú rovnicu na tvar
+$$\frac{[a, b]}{(a, b)}=\frac{4}{a}.$$
+Keďže zlomok na ľavej strane je zrejme celé číslo, musí byť taký aj zlomok na pravej strane, takže a je jedno z čísel 1, 2 alebo 4.
+}
+
+
+\problem{63-I-2-N1}{
+Zostrojte trojuholník, ak sú dané body dotyku jeho strán s kružnicou tomuto trojuholníku vpísanou.
+}{
+\rie
+}
+
+
+\problem{61-I-2-N2}{
+V trojuholníku $ABC$ označme postupne $P$, $Q$, $R$ päty výšok z vrcholov $A$, $B$, $C$. Ďalej postupne označme $T$, $U$, $V$ body dotyku kružnice vpísanej so stranami $BC$, $CA$, $AB$.
+Zostrojte trojuholník $ABC$, ak je dané:
+\begin{enumerate}[a)]
+    \item $A$, $C$, $V$,
+    \item $A$, $U$, $R$,
+    \item $A$, $P$, $Q$,
+    \item $A$, $B$, $R$.
+\end{enumerate}
+}{
+\rieh V a) i b) vieme zostrojiť vpísanú kružnicu; v c) zostrojíme $AB$ ako priemer kružnice určenej danými bodmi. Úloha d) nemá riešenie, pokiaľ $R$ neleží na priamke $AB$. Ak $R$ leží na priamke $AB$, má úloha nekonečne veľa riešení.
+}
+
+\problem{63-I-4-N1}{
+Dva zhodné pravouhlé trojuholníky $ABC$ a $DEB$ sú umiestnené podľa \todo{obr. 3} a platí $|BD| = 10$\,cm, $|CD| = 20$\,cm.
+\begin{enumerate}[a)]
+    \item Určte dĺžky strán trojuholníka $ABC$. 
+    \item Dokážte, že trojuholníky $DBF$, $ABC$ a $BEF$ sú navzájom podobné.
+    \item Určte dĺžky strán trojuholníkov $DBF$ a $BEF$. 
+    \item Určte obsahy trojuholníkov $ABC$, $DBF$ a $BEF$. 
+    \item Určte obsah štvoruholníka $AFDC$. 
+\end{enumerate}
+}{
+\rieh \begin{enumerate}[a)]
+    \item 10, 30, $10\sqrt{10}$
+    \item
+    \item 10, $3\sqrt{10}$, $\sqrt{10}$; 30, $9\sqrt{10}$, $3\sqrt{10}$
+    \item 150, 15, 135
+    \item 135
+\end{enumerate}
+}
+
+
+\problem{63-I-4-N2}{
+Dva zhodné pravouhlé trojuholníky $ABC$ a $DEB$ sú umiestnené podľa \todo{obr. 3}. Trojuholník $BEF$ má obsah 30\,cm$^2$. Určte obsah štvoruholníka $AFDC$.
+}{
+\rieh 30
+}
+
+\problem{63-I-4-N4}{
+V rovnoramennom pravouhlom trojuholníku $ABC$ s preponou $BC$ je $|AB| = 12$\,cm. Označme $K$ stred strany $AB$ a $L$ taký bod strany $BC$, pre ktorý platí $|CL| : |LB|= 1 : 2$. Určte obsahy útvarov, ktoré vzniknú rozrezaním trojuholníka $ABC$ pozdĺž úsečiek $KC$ a $AL$.
+}{
+\rieh Nakreslite si obrázok, označte $M$ priesečník úsečiek $KC$ a $AL$, dokreslite úsečku $BM$ a pomocou viet z predošlej úlohy vypočítajte najprv obsahy všetkých piatich trojuholníkov, ktoré majú spoločný vrchol $M$.
+}
+
+
+\problem{63-I-4-N5}{
+V danom rovnobežníku $ABCD$ je bod $E$ stred strany $BC$ a bod $F$ leží vnútri strany $AB$. Obsah trojuholníka $AFD$ je 15\,cm$^2$ a obsah trojuholníka $FBE$ je 14\,cm$^2$. Určte obsah štvoruholníka $FECD$.
+}{
+\rieh C-57-S-2
+}
+
+
+\problem{63-I-5}{Dokážte, že pre každé nepárne prirodzené číslo $n$ je súčet $n^4 + 2n^2 + 2 013$ deliteľný číslom 96.
+}{
+\rieh Keďže $96 = 3 \cdot 32 = 3 \cdot 2^5$, budeme dokazovať deliteľnosť súčtu $S = n^4+ 2n^2 + 2 013$ dvoma nesúdeliteľnými číslami 3 a 32.
+
+Deliteľnosť tromi: Pretože číslo 2 013 je deliteľné tromi, stačí dokázať deliteľnosť tromi zmenšeného súčtu
+$$S - 2 013 = n^4 + 2n^2= n^2(n^2+ 2).$$
+V prípade $3 \mid n$ je všetko jasné, v opačnom prípade je $n = 3k \pm 1$ pre vhodné celé $k$, takže platí $3 \mid n^2 + 2$, lebo $n^2 + 2 = 3(3k^2 + 2k + 1)$.
+
+Deliteľnosť číslom 32: Keďže $2 016 = 32 \cdot 63$, stačí dokázať deliteľnosť číslom 32 zmenšeného súčtu
+$$S - 2 016 = n^4+ 2n^2 - 3 = (n^2+ 1)^2 - 2^2= (n^2+ 3)(n2 - 1).$$
+Predpokladáme, že $n$ je nepárne, teda $n = 2k + 1$ pre vhodné celé $k$, preto platí
+$$n^2+ 3 = (2k + 1)^2+ 3 = 4(k^2+ k + 1)\ \ \ \mathrm{a} \ \ \ n^2 - 1 = (2k + 1)^2 - 1 = 4k(k + 1).$$
+Odtiaľ vyplýva, že $32 \mid (n^2 + 3)(n^2 - 1)$, lebo číslo $k(k + 1)$ je párne.
+
+\textit{Poznámka.} Deliteľnosť číslom 32 sa dá dokazovať i bez vykonaného algebraického rozkladu trojčlena $n^4 + 2n^2 - 3$, z ktorého po dosadení $n = 2k + 1$ roznásobením dostaneme
+$$n^4+ 2n^2 - 3 = 16k^4+ 32k^3+ 32k^2+ 16k = 16k(k^3+ 2k^2+ 2k + 1).$$
+Pre párne $k$ je deliteľnosť takto upraveného výrazu číslom 32 zrejmá. Pre nepárne $k$ je zase párny súčet $k^3 + 1$, takže je párny i druhý činiteľ $k^3 + 2k^2 + 2k + 1$.
+}
+
+
+\problem{63-S-1}{
+Určte, aké hodnoty môže nadobúdať výraz $V = ab + bc + cd + da$, ak reálne čísla $a,b, c, d$ spĺňajú dvojicu podmienok
+\begin{align*}
+2a - 5b + 2c - 5d &= 4,\\
+3a + 4b + 3c + 4d &= 6.
+\end{align*}
+}{
+\rieh Pre daný výraz $V$ platí $$V = a(b + d) + c(b + d) = (a + c)(b + d).$$
+Podobne môžeme upraviť aj obe dané podmienky: $$2(a + c) - 5(b + d) = 4 \ \ \mathrm{a} \ \  3(a + c) + 4(b + d) = 6.\ \ \  \ \ \ \ \ \ \ \todo{(1)}$$
+Ak teda zvolíme substitúciu $m = a + c$ a $n = b + d$, dostaneme riešením sústavy \todo{(1)} $m = 2$ a $n = 0$. Pre daný výraz potom platí $V = mn = 0$.
+
+\textit{Záver.} Za daných podmienok nadobúda výraz $V$ iba hodnotu 0.\\
+
+\textbf{Iné riešenie*.} Podmienky úlohy si predstavíme ako sústavu rovníc s neznámymi $a, b$ a parametrami $c, d$. Vyriešením tejto sústavy (sčítacou alebo dosadzovacou metódou) vyjadríme $a = 2 - c, b = -d \ (c, d \in \RR )$ a po dosadení do výrazu $V$ dostávame $$V = (2 - c)(-d) - dc + cd + d(2 - c) = 0.$$
+\\
+\kom Zadanie úlohy opäť obsahuje sústavu dvoch rovníc. Je riešenie sa však po substitúcii zredukuje na veľmi jednoduchú sústavu, s ktorou sa študenti stretli už na základnej škole, takže by nemala spôsobiť výrazné problémy. 
+\todo{Čo s komentárom tuto? A nie je to v nejakom seminári už?}
+}
+
+
+\problem{64-I-2-N1}{
+Aký uhol spolu zvierajú hodinová a minútová ručička o 1:30 na ciferníku
+}{
+\rie 
+}
+
+\problem{64-I-2-N2}{
+Aký uhol spolu zvierajú hodinová a minútová ručička o 1:30 na ciferníku s 12 číslami?
+}{
+\rieh $135^{\circ}$
+}
+
+\problem{64-I-2-N3}{
+Aký uhol spolu zvierajú hodinová a minútová ručička o 1:30 na ciferníku s 24 číslami? 
+}{
+\rieh $157,5^{\circ}$
+}
+
+
+\problem{64-I-2-N4-N5}{
+Na ciferníku s 12 číslami nájdite všetky časy, kedy budú hodinová a minútová ručička zvierať uhol $120^{\circ}$ v intervale 0-12 hodín.
+}{
+\rieh \todo{fujky zlomky}
+}
+
+\problem{64-I-2-N6}{
+Na ciferníku s 12 číslami nájdite všetky časy, kedy budú hodinová a minútová ručička zvierať uhol $120^{\circ}$ v intervale $0-\infty$ hodín.
+}{
+\rieh $(3n+1) \cdot \frac{4}{11}$\,h, $(3n+2)\cdot\frac{4}{11}$\,h, $n=0, 1, 2, \ldots$
+}
+
+
+\problem{64-I-4-N2}{
+ Platí $a : b = 1 : 2$, $b : c = 3 : 4$, $c : d = 5 : 6$. Určte $a : b : c : d$.
+ }{
+ \rieh $15 : 30 : 40 : 48$
+ }
+
+
+\problem{64-I-5-N1}{
+Nájdite všetky delitele čísla 2 014. 
+}{
+\rieh 1, 2, 19, 38, 53, 106, 1 007, 2 014
+}
+
+\problem{64-I-5-N2}{
+Rozdiel dvoch prirodzených čísel je 5 a ich najväčší spoločný deliteľ je 6-krát menší ako ich najmenší spoločný násobok. Určte obe také dvojice čísel.
+}{
+\rie 
+}
+
+
+\problem{64-I-5-N3}{
+Dokážte, že pre každé dve prirodzené čísla $a$, $b$ a ich najväčší spoločný deliteľ $D$ a ich najmenší spoločný násobok $n$ platí $ab = nD$.
+}{
+\rie
+}
+
+
+\problem{64-I-6}{
+Nájdite najmenšie prirodzené číslo $n$ také, že v zápise iracionálneho čísla $\sqrt{n}$ nasledujú bezprostredne za desatinnou čiarkou dve deviatky.
+}{
+\rieh Označme $a$ najbližšie väčšie prirodzené číslo k iracionálnemu číslu $\sqrt{n}$. Podľa zadania potom platí $a - 0,01 \leq \sqrt{n}$. Keďže $a^2$ je prirodzené číslo väčšie ako $n$, musí spolu platiť
+$$(a - 0,01)^2 \leq n \leq  a^2 - 1.$$
+Po úprave nerovnosti medzi krajnými výrazmi vyjde
+$$\frac{1}{50}a \geq 1,000 1, \ \ \ \text{čiže} \ \ \  a = 50,005.$$
+Keďže je číslo $a$ celé, vyplýva z toho $a = 51$. A keďže
+$$(51 - 0,01)^2= 2 601 - \frac{102}{100}+\frac{1}{100^2}\in (2 599, 2 600),$$
+je hľadaným číslom $n = 2 600$.
+
+\textit{Poznámka.} Za správne riešenie možno uznať aj riešenie pomocou kalkulačky. Ak majú totiž byť za desatinnou čiarkou dve deviatky, musí byť číslo $n$ veľmi blízko zľava k nejakej druhej mocnine. Preto stačí na kalkulačke vyskúšať čísla $\sqrt{3}, \sqrt{8}, \sqrt{15}$ atď. Keďže $51^2= 2 601$, nájdeme, že $\sqrt{2 600} = 50,990 195\ldots$
+
+Prácnejšou úlohou by bolo nájsť najmenšie číslo $n$, pre ktoré za desatinnou čiarkou iracionálneho čísla $\sqrt{n}$ sú dve osmičky, či dve sedmičky a pod.
+}
+
+
+\problem{65-I-4-N1}{
+Vymyslite pravidlo, ako jednoducho vyjadriť pomer obsahov dvoch trojuholníkov, ktoré sa zhodujú v jednej strane či v jednej výške. Uplatnite ho potom na riešenie úloh \todo{N2 a N3}. \todo{Toto už niekde bolo ako N2 a N3, pohľadať.}
+}{
+\rie 
+}
+
+
+\problem{65-I-4-N2}{
+Uhlopriečky konvexného štvoruholníka $ABCD$ sa pretínajú v bode $P$. Obsahy trojuholníkov $ABP$, $BCP$, $CDP$, $DAP$ označme postupne $S_1$, $S_2$, $S_3$, $S_4$. Dokážte všeobecnú
+rovnosť $S_1 \cdot S_3 = S_2 \cdot S_4$ a vysvetlite, prečo špeciálna rovnosť $S_2 = S_4$ nastane práve vtedy, keď $AB \parallel CD$.
+}{
+\rieh Pri prvej rovnosti prejdite k úmere $S1 : S2 = S4 : S3$, pri druhej k rovnosti obsahov trojuholníkov $ABC$ a $ABD$.
+}
+
+
+\problem{65-I-4-N3}{
+Vnútri strán $BC$, $CA$, $AB$ daného trojuholníka $ABC$ sú zvolené postupne body $K$, $L$, $M$ tak, že úsečky $AK$, $BL$, $CM$ sa pretínajú v jednom bode $P$. Dokážte, že oba výrazy
+$$\frac{|BK|}{|KC|}\cdot \frac{|CL|}{|LA|}\cdot \frac{|AM|}{|MB|} \ \ \ \text{a} \ \ \ \frac{|P K|}{|AK|}+\frac{|P L|}{|BL|}+\frac{|P M|}{|CM|}$$
+sa rovnajú číslu 1. 
+}{
+\rieh Pre prvý výraz vyjadrite vhodne pomery obsahov trojuholníkov $ABP$, $BCP$ a $CAP$. Keď potom vyjadríte, akými sú časťami obsahu celého trojuholníka $ABC$, a tieto tri zlomky sčítate, dostanete tvrdenie o hodnote druhého výrazu.
+}
+
+
+\problem{65-I-4-D1}{
+Označme $E$ stred základne $AB$ lichobežníka $ABCD$, v ktorom platí $|AB| : |CD| = 3 : 1$. Uhlopriečka $AC$ pretína úsečky $ED$, $BD$ postupne v bodoch $F$, $G$. Určte postupný pomer $|AF | : |F G| : |GC|$.
+}{
+\rieh 64-C-I-4
+}
+
+
+\problem{65-I-4-D2}{
+Označme $K$ a $L$ postupne body strán $BC$ a $AC$ trojuholníka $ABC$, pre ktoré platí $|BK| =\frac{1}{3}|BC|$, $|AL| =\frac{1}{3}|AC|$. Nech $M$ je priesečník úsečiek $AK$ a $BL$. Vypočítajte pomer obsahov trojuholníkov $ABM$ a $ABC$.
+}{
+\rieh 64-C-S-2
+}
+
+
+\problem{65-I-4-D3}{
+Základňa $AB$ lichobežníka $ABCD$ je trikrát dlhšia ako základňa $CD$. Označme $M$ stred strany $AB$ a $P$ priesečník úsečky $DM$ s uhlopriečkou $AC$. Vypočítajte pomer obsahov trojuholníka $CDP$ a štvoruholníka $MBCP$.
+}{
+\rieh 55-C-II-1
+}
+
+
+
+\problem{65-I-6}{
+Daná je kružnica $k_1 (A; 4$\,cm), jej bod $B$ a kružnica $k_2 (B; 2$\,cm). Bod $C$ je stredom úsečky $AB$ a bod $K$ je stredom úsečky $AC$. Vypočítajte obsah pravouhlého trojuholníka $KLM$, ktorého vrchol $L$ je jeden z priesečníkov kružníc $k_1$, $k_2$ a ktorého prepona $KM$ leží na priamke $AB$.
+}{
+
+
+\rieh Poznamenajme predovšetkým, že vzhľadom na osovú súmernosť podľa priamky $AB$ je jedno, ktorý z oboch priesečníkov kružníc $k_1$ a $k_2$ vyberieme za bod $L$.
+
+Hľadaný obsah trojuholníka $KLM$ vyjadríme nie pomocou dĺžok jeho odvesien $KL$ a $LM$, ale pomocou dĺžok jeho prepony $KM$ a k nej prislúchajúcej výšky $LD$ (\todo{obr. 3 vľavo)}, teda použitím vzorca\footnote{Výpočet dĺžky odvesny $LM$ bez medzivýpočtu výšky $LD$ je totiž prakticky nemožný.}
+
+
+$$S_{KLM} = \frac{|KM| \cdot |LD|}{2}.$$
+
+\todo{DOPLNIŤ Obr. 3}
+
+
+Na určenie vzdialeností bodu $D$ od bodov $B$ a $L$ uvažujme ešte stred S úsečky $BL$ (\todo{obr. 3 vpravo}). Trojuholníky $ASB$ a $LDB$ sú oba pravouhlé so spoločným ostrým uhlom pri vrchole $B$. Sú preto podľa vety $uu$ podobné, takže pre pomer ich strán platí (počítame s dĺžkami bez jednotiek, takže podľa zadania je $|AB| = 4$, $|BL| = 2$, a preto $|BS| = |BL|/2 = 1$)
+
+$$\frac{|BD|}{|BS|}=\frac{|BL|}{|BA|}=\frac{2}{4}, \ \ \ \text{odkiaľ} \ \ \ |BD| =\frac{1}{2}|BS| =\frac{1}{2}.$$
+Z Pytagorovej vety pre trojuholník $LDB$ tak vyplýva\footnote{Inou možnosťou pre výpočet výšky $LD$ na rameno $AB$ rovnoramenného trojuholníka $ABL$ je vypočítať jeho výšku $AS$ na základňu $BL$ (použitím Pytagorovej vety pre trojuholník $ABS$) a potom porovnať dvojaké vyjadrenie obsahu trojuholníka $ABL$ cez jeho výšky $AS$ a $LD$.}
+
+$$|LD| =\sqrt{|BL|^2-|BD|^2}=\sqrt{4-\frac{1}{4}}=\frac{\sqrt{15}}{2}.$$
+
+Z rovnosti $|BD| = 1/2$ už odvodíme aj dĺžku úseku $KD$ prepony $KM$ pravouhlého trojuholníka $KLM$: $|KD| = |AB| - |AK| - |BD| = 4 - 1 - 1/2 = 5/2$. Dĺžku druhého úseku $DM$ teraz určíme z Euklidovej vety o výške, podľa ktorej $|LD|^2 = |KD| \cdot |DM|$. Dostaneme teda $|DM| = |LD|^2 /|KD| = (15/4)/(5/2) = 3/2$, čiže celá prepona $KM$ má dĺžku $|KM| = |KD| + |DM| = 5/2 + 3/2 = 4$. Dosadením do vzorca z úvodu riešenia tak dôjdeme k výsledku
+$$S_{KLM} = \frac{|KM| \cdot |LD|}{2}=\frac{4 \cdot \frac{\sqrt{15}}{2}}{2}=\sqrt{15}.$$
+
+
+\textit{Odpoveď.} Trojuholník $KLM$ má obsah $\sqrt{15}$\,cm$^2$.
+
+\textbf{Iné riešenie*.} Keď narysujeme presne obe kružnice $k_1$, $k_2$ a zodpovedajúci bod $M$, nadobudneme podozrenie, že $|KM| = |AB|$ a bod $L$ je taký bod Tálesovej kružnice $k$ nad priemerom $KM$ so stredom $E$, ktorý leží na osi úsečky $EB$ \todo{(obr. 4)}. Skutočne, pri
+
+\todo{DOPLNIŤ Obr. 4}
+
+opísanej voľbe bodu $M$ a konštrukcii bodu $L$ bude platiť $|BL| = |EL| = 2$\,cm, takže aby sme sa presvedčili, že sa jedná naozaj o bod $L$ zo zadania úlohy, stačí overiť, že aj $|AL| = |AB| = 4$\,cm. Keďže (písané bez jednotiek) $|EM| = 2$, $|BM| = |AK| = 1$, a teda $|BD| = |ED| =\frac{1}{2}$ a $|AD| =\frac{7}{2}$, podľa Pytagorovej vety použitej postupne na pravouhlé trojuholníky $BDL$ a $ADL$ pre takto zostrojený bod $L$ máme
+
+$$|DL|^2 = 2^2 - \bigg( \frac{1}{2}\bigg)^2=\frac{15}{4}, \ \ \ \ \ \ |AL|^2=\bigg(\frac{7}{2}\bigg)^2+ 2^2 - \bigg(\frac{1}{2}\bigg)^2= 4^2.$$
+
+Tým je naša hypotéza overená. Obsah trojuholníka $KLM$ už spočítame ľahko:
+$$S_KLM =\frac{1}{2}|KM| \cdot |LD| = 2|DL|\,\text{cm} =\sqrt{15}\,\text{cm}^2.$$
+}
+
+
+
+\problem{65-I-6-N1}{
+Zopakujte si Euklidove vety o odvesne a o výške pravouhlého trojuholníka a pripomeňte si ich dôkazy na základe podobnosti daného trojuholníka s dvoma menšími trojuholníkmi, ktoré vzniknú jeho rozdelením pomocou výšky na preponu.
+}{
+\rie 
+}
+
+
+\problem{65-I-6-D1}{
+Kružnice $k(S; 6$\,cm) a $l(O; 4$\,cm) majú vnútorný dotyk v bode $B$. Určte dĺžky strán trojuholníka $ABC$, pričom bod $A$ je priesečník priamky $OB$ s kružnicou $k$ a bod $C$ je priesečník kružnice $k$ s dotyčnicou z bodu $A$ ku kružnici $l$.\todo{Toto už tiež niekde bolo}
+}{
+\rieh 59-C-S-2
+}
+
+
+\problem{65-I-6-D2}{
+Pravouhlému trojuholníku $ABC$ s preponou $AB$ a obsahom $S$ je opísaná kružnica. Dotyčnica k tejto kružnici v bode $C$ pretína dotyčnice vedené bodmi $A$ a $B$ v bodoch $D$ a $E$. Vyjadrite dĺžku úsečky $DE$ pomocou dĺžky $c$ prepony a obsahu $S$.
+}{
+\rieh 58-C-II-4
+}
+
+
+
+\problem{65-S-I}{
+ Nájdite všetky štvorciferné čísla $\overline{abcd}$, pre ktoré platí $\overline{abcd} = 20 \cdot \overline{ab} + 16 \cdot \overline{cd}$.
+}{
+\rieh V rovnici zo zadania
+$$1 000a + 100b + 10c + d = 20(10a + b) + 16(10c + d)$$
+majú neznáme cifry $a$ a $b$ väčšie koeficienty na ľavej strane, zatiaľ čo cifry $c$ a $d$ na strane pravej. Preto rovnicu upravíme na tvar $800a + 80b = 150c + 15d$, ktorý po vydelení piatimi a vyňatí menších koeficientov oboch strán prepíšeme ako
+$$16(10a + b) = 3(10c + d). \todo{(1)}$$
+Z toho vďaka nesúdeliteľnosti čísel 3 a 16 vyplýva, že $10c + d$ je dvojciferný násobok čísla 16. Ten je však väčší ako 48, lebo $3 \cdot 48 = 144$, zatiaľ čo $16(10a + b) \geq 160$ (cifra $a$ musí byť nenulová). Ako hodnoty $10c + d$ tak prichádzajú do úvahy iba násobky 16 rovné 64, 80 a 96 - čísla určujúce svojim zápisom cifry $c$ a $d$. Dosadením do rovnice \todo{(1)} dostaneme pre dvojciferné číslo $10a + b$ postupne hodnoty 12, 15 a 18.
+
+\textit{Odpoveď.} Vyhovujú tri čísla 1 264, 1 580 a 1 896.
+
+\textit{Poznámka.} Namiesto štyroch neznámych cifier $a$, $b$, $c$, $d$ možno na zápis rovnice zo zadania využiť zrejme priamo obe dvojciferné čísla $x = ab$ a $y = cd$. Rovnica potom bude mať tvar $100x+y = 20x+16y$, ktorý podobne ako v pôvodnom postupe upravíme na $80x = 15y$, čiže $16x = 3y$. Teraz namiesto vzťahu $16 \mid y$ môžeme využiť druhý podobný dôsledok $3 \mid x$ a uvedomiť si, že z odhadu $y \leq 99$  vyplýva $16x \leq 3 \cdot 99 = 297$, odkiaľ $x \leq 18$, čo spolu s odhadom $x \geq 10$ vedie k možným hodnotám $x \in$ \{12, 15, 18\}. Z rovnice $16x = 3y$ potom už dopočítame $y = 64$ pre $x = 12$, $y = 80$ pre $x = 15$ a  $y = 96$ pre $x = 18$.
+}
+
+
+
+\problem{66-I-3-N2}{
+Ak je $D$ vnútorný bod úsečky $AB$, tak pre každý bod $X$ kolmice vedenej bodom $D$ na priamku $AB$ má výraz $|AX|^2-|BX|^2$ tú istú hodnotu (rovnú hodnote $|AD|^2 -|BD|^2$). Dokážte.
+}{
+\rieh Použite Pytagorovu vetu pre trojuholníky $ADX$ a $BDX$.
+}
+
+\problem{66-I-3-D1}{
+Odvoďte nerovnosť, ktorá je zovšeobecnením nerovnosti zo zadania súťažnej úlohy pre prípad, keď päta výšky z vrcholu $C$ trojuholníka $ABC$ rozdeľuje jeho stranu $AB$ v pomere $1 : p$, pričom $p$ je dané kladné číslo rôzne od 1. 
+}{
+\rieh $(p + 1)|a - b| < |p - 1|c.$
+}
+
+
+\problem{66-I-3-D2}{
+Pre každý bod $M$ vnútri daného rovnostranného trojuholníka $ABC$ označme $M_a$, $M_b$, $M_c$ jeho kolmé priemety postupne na strany $BC$, $AC$, $AB$. Dokážte rovnosť $|AM_b|+ |BM_c| + |CM_a| = |AM_c| + |BM_a| + |CM_b|$.
+}{
+\rieh Najskôr trikrát použite výsledok úlohy \todo{N2} s bodom $X = M$ a z toho vyplývajúce vyjadrenia rozdielov $|AM|^2 - |BM|^2$, $|BM|^2- |CM|^2$, $|CM|^2 -|AM|^2$ jednotlivo upravte a potom sčítajte.
+}
+
+\problem{66-I-4-D1}{
+Pre ktoré trojčleny $P(x) = ax^2+ bx + c$ platí rovnosť $P(4) = P(1) - 3P(2) + 3P(3)$?
+}{
+\rieh Pre všetky. Presvedčte sa dosadením, že obe strany dotyčnej rovnosti sú rovné $16a + 4b + c.$
+}
+
+
+
+\problem{66-I-5-N1}{
+Zopakujte si, čo viete o podobnosti dvoch trojuholníkov z učiva základnej školy: Podobnosť $\triangle A_1B_1C_1 \sim  \triangle A_2B_2C_2$ s koeficientom $k$ znamená, že pre zvyčajne označené dĺžky strán a veľkosti vnútorných uhlov oboch trojuholníkov platia rovnosti $a_2 = ka_1$, $b_2 = kb_1$, $c_2 = kc_1$, $\alpha_2 = \alpha_1$, $\beta_2 = \beta_1$, $\gamma_2 = \gamma_1$. Stačí na to, aby platilo (i) $a_2 : b_2 : c_2 = a_1 : b_1 : c_1$ (veta $sss$) alebo (ii) $\alpha_2 = \alpha_1$ a $\beta_2 = \beta_1$ (veta $uu$) alebo (iii) $a_2 : a_1 = b_2 : b_1$ a $\gamma_2 = \gamma_1$ (veta $sus$).
+}{
+\rie 
+}
+
+\problem{66-I-5-N2}{
+Nech $A_1 B_1 C_1$ a $A_2 B_2 C_2$ sú ľubovoľné dva podobné trojuholníky $(\triangle A_1 B_1 C_1 \sim \triangle A_2 B_2 C_2)$.  Označme $S_1$, $S_2$ postupne stredy strán $A_1 B_1$, $A_2 B_2$. Dokážte podobnosť $\triangle A_1 S_1 C_1 \sim \triangle A_2 S_2 C_2$ a dokážte, že má rovnaký koeficient ako pôvodná podobnosť $\triangle A_1 B_1 C_1 \sim \triangle A_2 B_2 C_2$. 
+}{
+\rieh Podobnosť $\triangle A_1 S_1 C_1 \sim \triangle A_2 S_2 C_2$ platí vďaka vete $sus$, pretože vnútorné uhly oboch trojuholníkov pri vrcholoch $A_1$, $A_2$ sú zhodné a pre dĺžky strán, ktoré ich zvierajú, platí $|A_2 S_2 | : |A_1 S_1 | = \frac{1}{2}|A_2 B_2 | : \frac{1}{2}|A_1 B_1 |= |A_2 B_2 | : |A_1 B_1| = |A_2 C_2 | : |A_1 C_1 |$. Predpokladaná aj dokázaná podobnosť majú taký istý koeficient $k = |A_2 B_2|/|A_1 B_1|$.
+}
+
+\problem{66-I-5-N3}{
+Dokážte, že ľubovoľná spojnica ramien daného lichobežníka $ABCD$, ktorá je rovnobežná s jeho základňami $AB \parallel CD$, je úsečka, ktorej stred leží na spojnici stredov oboch základní. Potom dokážte, že priesečník uhlopriečok P je stredom tej zo spomenutých spojníc ramien, ktorá týmto priesečníkom prechádza.
+}{
+\rieh Použite najskôr výsledok úlohy \todo{N2} pre podobné trojuholníky so spoločným vrcholom, ktorým je priesečník predĺžených ramien, a protiľahlými stranami, ktorými sú jednak základňa lichobežníka, jednak uvažovaná spojnica ramien. Na dôkaz vlastnosti priesečníka $P$ označte $E \in BC$, $F \in AD$ krajné body prislúchajúcej spojnice ramien a využite to, že podobnosť trojuholníkov $APF$, $ACD$ má taký istý koeficient ako podobnosť trojuholníkov $BEP$, $BCD$.
+}
+
+\problem{66-I-5-D1}{
+Vnútri strán $AB$, $AC$ daného trojuholníka $ABC$ sú zvolené postupne body $E$, $F$, pričom $EF \parallel BC$. Úsečka $EF$ je potom rozdelená bodom $D$ tak, že platí $p = |ED|: |DF | = |BE| : |EA|$.
+\begin{enumerate}[a)]
+    \item Ukážte, že pomer obsahov trojuholníkov $ABC$ a $ABD$ je pre $p = 2 : 3$ rovnaký ako pre $p = 3 : 2$.
+    \item Zdôvodnite, prečo pomer obsahov trojuholníkov $ABC$ a $ABD$ má hodnotu aspoň 4.
+\end{enumerate}
+}{
+\rieh 65–C–I–4
+}
+
+\problem{66-I-5-D2}{
+Označme $E$ stred základne $AB$ lichobežníka $ABCD$, v ktorom platí $|AB| : |CD| = 3 : 1$. Uhlopriečka $AC$ pretína úsečky $ED$, $BD$ postupne v bodoch $F$, $G$. Určte postupný pomer $|AF | : |F G| : |GC|$.
+}{
+\rieh 64–C–I–4
+}
+
+
+\problem{66-I-6-N1}{
+K vrcholom pravidelného sedemuholníka pripíšeme čísla od 1 do 7 v akomkoľvek poradí. Dokážte, že súčet troch čísel pri vrcholoch niektorého rovnoramenného trojuholníka je menší ako 9.
+}{
+\rieh Uvážte dva vrcholy $X$ a $Y$ s číslami 1 a 2 a rozborom všetkých možností overte, že existujú vždy tri rovnoramenné trojuholníky $XYZ$ s vhodnou voľbou tretieho vrcholu $Z$. Vyberieme z nich to $Z$, pri ktorom nie je ani číslo 7, ani číslo 6. Súčet čísel pri vrcholoch príslušného trojuholníka $XYZ$ je potom nanajvýš 1 + 2 + 5 = 8.
+}
+
+\problem{66-I-6-N2}{
+Ostane všeobecne platné tvrdenie z úlohy \todo{N1}, keď v ňom záverečné číslo 9 zameníme číslom 8?
+}{
+\rieh Nie. Pripíšte vrcholom v jednom smere po obvode postupne čísla 1, 3, 4, 2, 5, 6 a 7. Potom súčet troch čísel pri vrcholoch každého rovnoramenného trojuholníka bude aspoň 8. Uvedomte si, že pri overovaní posledného poznatku (aj pre iné rozmiestnenie čísel ako nami uvedené) stačí overiť, že sú rôznostranné tie dva trojuholníky, ktoré majú pri svojich vrcholoch trojice čísel (1, 2, 3) a (1, 2, 4).
+}
+
+\problem{66-I-6-D1}{
+Každý vrchol pravidelného devätnásťuholníka je ofarbený jednou zo šiestich farieb. Dokážte, že niektorý tupouhlý trojuholník má všetky vrcholy ofarbené rovnakou farbou.
+}{
+\rieh 62–C–S–3
+}
+
+\problem{66-I-6-D2}{
+Rozhodnite, či z ľubovoľných siedmich vrcholov daného pravidelného 19-uholníka možno vždy vybrať štyri, ktoré sú vrcholmi lichobežníka.
+}{
+\rieh 62–C–I–4
+}
+
+\problem{66-S-1}{
+Nájdite všetky riešenia rovnice
+$$1 =\frac{|3x - 7| - |9 - 2x|}{|x + 2|}.$$
+}{
+\rieh Zo zadania vyplýva, že $x\neq -2$. Po vynásobení výrazom $|x + 2|$ dostávame
+rovnicu $|x + 2| = |3x - 7| - |9 - 2x|$, ktorú teraz vyriešime. Nulové body troch absolútnych hodnôt s neznámou rozdeľujú reálnu os na štyri intervaly, v ktorých má každý z prislúchajúcich dvojčlenov stále rovnaké znamienko. V každom z týchto intervalov už teda môžeme riešiť zodpovedajúcu rovnicu bez absolútnych hodnôt.
+\begin{itemize}
+    \item $x \in (-\infty, -2)$: dostávame rovnicu $-x - 2 = -3x + 7 - (9 - 2x)$, ktorá po úprave prejde na identitu $0 = 0$. Všetky čísla zo skúmaného intervalu pôvodnej rovnici vyhovujú.
+    \item $x \in \langle -2, \frac{7}{3})$: dostávame rovnicu $x+2 = -3x+7-(9-2x)$, čiže $2x = -4$ s jediným riešením $x = -2$, ktoré, ako už vieme, pôvodnej rovnici nevyhovuje.
+    \item $x \in \langle \frac{7}{3}, \frac{9}{2})$: dostávame rovnicu $x + 2 = 3x - 7 - (9 - 2x)$ s riešením $x = \frac{9}{2}$ , ktoré však v uvažovanom intervale neleží.
+    \item $x \in \langle \frac{9}{2}, \infty)$: dostávame rovnicu $x + 2 = 3x - 7 - (-9 + 2x)$, ktorá po úprave prejde na identitu $0 = 0$. Vyhovujú všetky $x$ z tohto intervalu.
+\end{itemize}
+
+\textit{Záver.} Všetky riešenia úlohy tvoria množinu $(-\infty, -2) \cup \langle \frac{9}{2},\infty)$.
+}
+
+
+\end{document}
+
+
+
+
+
+ 
