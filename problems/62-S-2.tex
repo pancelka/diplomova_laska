@@ -1,0 +1,36 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{62-S-2}{
+Určte všetky dvojice $a$, $b$ celých kladných čísel, pre ktoré platí
+$$a \cdot [a, b] = 4 \cdot (a, b),$$
+pričom symbol $[a, b]$ označuje najmenší spoločný násobok a $(a, b)$ najväčší spoločný deliteľ celých kladných čísel a, b. 
+}{
+\rieh Ak označíme $d$ najväčšieho spoločného deliteľa čísel $a$ a $b$, môžeme písať $a = kd$ a $b = ld$, pričom $(k, l) = 1$, takže $[a, b] = kld$. Po dosadení do danej rovnice tak dostaneme
+$$kd \cdot kld = 4 \cdot d \ \ \ \text{a po úprave} \ \ \ k^2ld = 4.$$
+
+Z poslednej rovnosti je zrejmé, že môže byť jedine $k = 2$ alebo $k = 1$.
+
+Pre $k = 2$ vychádza $l = d = 1$, čomu zodpovedá dvojica $a = 2$, $b = 1$.
+
+Pre $k = 1$ dostávame rovnicu $ld = 4$, ktorá má v obore kladných celých čísel tri riešenia:
+\begin{enumerate}
+    \item $l = 4$, $d = 1$ a riešením úlohy je dvojica $a = 1$, $b = 4$;
+    \item $l = 2$, $d = 2$ a riešením úlohy je dvojica $a = 2$, $b = 4$;
+    \item $l = 1$, $d = 4$ a riešením úlohy je dvojica $a = 4$, $b = 4$.
+\end{enumerate}
+\textit{Záver.} Úlohe vyhovujú práve štyri dvojice kladných celých čísel $(a, b)$, a to (2, 1), (1, 4),
+(2, 4) a (4, 4).
+
+\textbf{Iné riešenie*.} Využijeme známu rovnosť $[a, b] \cdot (a, b) = a \cdot b$, ktorá platí pre všetky celé kladné $a$, $b$. Vynásobením oboch strán danej rovnice číslom [a, b] tak dostaneme
+$$a[a, b]^2= 4ab, \ \ \ \text{čiže} \ \ \ [a, b]^2= 4b. \ \ \ \todo{ (1)}$$
+
+Vzhľadom na to, že $[a, b] \geq b$, a teda 
+$$4b = [a, b]^2 \geq b^2,$$
+je $b^2\leq  4b$, takže $b \leq 4$. Navyše z upravenej rovnice \todo{(1)} vyplýva, že $4b$, a teda aj $b$ je druhou mocninou celého čísla. Preskúmaním oboch prípadov $b \in \{1, 4\}$ (dosadíme do pôvodnej rovnice postupne všetky možné hodnoty $(a, b)$, ktorých je konečne veľa, alebo dosadíme do \todo{(1)} a využijeme to, že $a$ je deliteľom najmenšieho spoločného násobku $[a, b]$) dôjdeme k rovnakému záveru ako v prvom riešení.
+
+\textbf{Iné riešenie*.} Keďže zrejme platí $[a, b] = (a, b)$, vyplýva zo zadanej rovnosti nerovnosť $a \leq 4$, pričom rovnosť $a = 4$ nastane práve vtedy, keď $[a, b] = (a, b)$ čiže $a = b = 4$. To je prvé riešenie danej úlohy, pri všetkých ostatných musí byť $a = 1$, $a = 2$, alebo $a = 3$. Pre $a = 1$ máme rovnicu $1 \cdot b = 4$, takže $(a, b) = (1, 4)$ je druhým riešením. Pre $a = 2$ máme rovnicu $2[2, b] = 4(2, b)$ čiže $[2, b] = 2(2, b)$, odkiaľ podľa možných hodnôt $(2, b) = 1$ a $(2, b) = 2$ dostaneme $b = 1$, resp. $b = 4$; ďalšie dve (tretie a štvrté) riešenia teda sú $(a, b) = (2, 1)$ a $(a, b) = (2, 4)$. Napokon pre $a = 3$ máme rovnicu $3[3, b] = 4(3, b)$, z ktorej vyplýva $3 \mid (3, b)$, čiže $3 \mid b$, takže máme vlastne rovnicu $3b = 12$, ktorej jediné riešenie $b = 4$ však podmienku $3 \mid b$ nespĺňa.
+
+\textit{Poznámka.} Diskusii o prípade $a = 3$ sa možno vyhnúť nasledujúcou úvahou. Prepíšme zadanú rovnicu na tvar
+$$\frac{[a, b]}{(a, b)}=\frac{4}{a}.$$
+Keďže zlomok na ľavej strane je zrejme celé číslo, musí byť taký aj zlomok na pravej strane, takže a je jedno z čísel 1, 2 alebo 4.
+}

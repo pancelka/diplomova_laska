@@ -1,0 +1,41 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{65-I-6}{
+Daná je kružnica $k_1 (A; 4$\,cm), jej bod $B$ a kružnica $k_2 (B; 2$\,cm). Bod $C$ je stredom úsečky $AB$ a bod $K$ je stredom úsečky $AC$. Vypočítajte obsah pravouhlého trojuholníka $KLM$, ktorého vrchol $L$ je jeden z priesečníkov kružníc $k_1$, $k_2$ a ktorého prepona $KM$ leží na priamke $AB$.
+}{
+
+
+\rieh Poznamenajme predovšetkým, že vzhľadom na osovú súmernosť podľa priamky $AB$ je jedno, ktorý z oboch priesečníkov kružníc $k_1$ a $k_2$ vyberieme za bod $L$.
+
+Hľadaný obsah trojuholníka $KLM$ vyjadríme nie pomocou dĺžok jeho odvesien $KL$ a $LM$, ale pomocou dĺžok jeho prepony $KM$ a k nej prislúchajúcej výšky $LD$ (\todo{obr. 3 vľavo)}, teda použitím vzorca\footnote{Výpočet dĺžky odvesny $LM$ bez medzivýpočtu výšky $LD$ je totiž prakticky nemožný.}
+
+
+$$S_{KLM} = \frac{|KM| \cdot |LD|}{2}.$$
+
+\todo{DOPLNIŤ Obr. 3}
+
+
+Na určenie vzdialeností bodu $D$ od bodov $B$ a $L$ uvažujme ešte stred S úsečky $BL$ (\todo{obr. 3 vpravo}). Trojuholníky $ASB$ a $LDB$ sú oba pravouhlé so spoločným ostrým uhlom pri vrchole $B$. Sú preto podľa vety $uu$ podobné, takže pre pomer ich strán platí (počítame s dĺžkami bez jednotiek, takže podľa zadania je $|AB| = 4$, $|BL| = 2$, a preto $|BS| = |BL|/2 = 1$)
+
+$$\frac{|BD|}{|BS|}=\frac{|BL|}{|BA|}=\frac{2}{4}, \ \ \ \text{odkiaľ} \ \ \ |BD| =\frac{1}{2}|BS| =\frac{1}{2}.$$
+Z Pytagorovej vety pre trojuholník $LDB$ tak vyplýva\footnote{Inou možnosťou pre výpočet výšky $LD$ na rameno $AB$ rovnoramenného trojuholníka $ABL$ je vypočítať jeho výšku $AS$ na základňu $BL$ (použitím Pytagorovej vety pre trojuholník $ABS$) a potom porovnať dvojaké vyjadrenie obsahu trojuholníka $ABL$ cez jeho výšky $AS$ a $LD$.}
+
+$$|LD| =\sqrt{|BL|^2-|BD|^2}=\sqrt{4-\frac{1}{4}}=\frac{\sqrt{15}}{2}.$$
+
+Z rovnosti $|BD| = 1/2$ už odvodíme aj dĺžku úseku $KD$ prepony $KM$ pravouhlého trojuholníka $KLM$: $|KD| = |AB| - |AK| - |BD| = 4 - 1 - 1/2 = 5/2$. Dĺžku druhého úseku $DM$ teraz určíme z Euklidovej vety o výške, podľa ktorej $|LD|^2 = |KD| \cdot |DM|$. Dostaneme teda $|DM| = |LD|^2 /|KD| = (15/4)/(5/2) = 3/2$, čiže celá prepona $KM$ má dĺžku $|KM| = |KD| + |DM| = 5/2 + 3/2 = 4$. Dosadením do vzorca z úvodu riešenia tak dôjdeme k výsledku
+$$S_{KLM} = \frac{|KM| \cdot |LD|}{2}=\frac{4 \cdot \frac{\sqrt{15}}{2}}{2}=\sqrt{15}.$$
+
+
+\textit{Odpoveď.} Trojuholník $KLM$ má obsah $\sqrt{15}$\,cm$^2$.
+
+\textbf{Iné riešenie*.} Keď narysujeme presne obe kružnice $k_1$, $k_2$ a zodpovedajúci bod $M$, nadobudneme podozrenie, že $|KM| = |AB|$ a bod $L$ je taký bod Tálesovej kružnice $k$ nad priemerom $KM$ so stredom $E$, ktorý leží na osi úsečky $EB$ \todo{(obr. 4)}. Skutočne, pri
+
+\todo{DOPLNIŤ Obr. 4}
+
+opísanej voľbe bodu $M$ a konštrukcii bodu $L$ bude platiť $|BL| = |EL| = 2$\,cm, takže aby sme sa presvedčili, že sa jedná naozaj o bod $L$ zo zadania úlohy, stačí overiť, že aj $|AL| = |AB| = 4$\,cm. Keďže (písané bez jednotiek) $|EM| = 2$, $|BM| = |AK| = 1$, a teda $|BD| = |ED| =\frac{1}{2}$ a $|AD| =\frac{7}{2}$, podľa Pytagorovej vety použitej postupne na pravouhlé trojuholníky $BDL$ a $ADL$ pre takto zostrojený bod $L$ máme
+
+$$|DL|^2 = 2^2 - \bigg( \frac{1}{2}\bigg)^2=\frac{15}{4}, \ \ \ \ \ \ |AL|^2=\bigg(\frac{7}{2}\bigg)^2+ 2^2 - \bigg(\frac{1}{2}\bigg)^2= 4^2.$$
+
+Tým je naša hypotéza overená. Obsah trojuholníka $KLM$ už spočítame ľahko:
+$$S_KLM =\frac{1}{2}|KM| \cdot |LD| = 2|DL|\,\text{cm} =\sqrt{15}\,\text{cm}^2.$$
+}

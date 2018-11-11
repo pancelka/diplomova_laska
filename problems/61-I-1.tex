@@ -1,0 +1,18 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{61-I-1}{
+Nájdite všetky trojčleny $p(x) = ax^2 + bx + c$, ktoré dávajú po delení dvojčlenom $x + 1$ zvyšok 2 a po delení dvojčlenom $x + 2$ zvyšok 1, pričom $p(1) = 61$. 
+}{
+\rieh Dvojnásobným použitím algoritmu delenia dostaneme
+\begin{align*}
+    ax^2+ bx + c &= (ax + b - a)(x + 1) + c - b + a,\\
+    ax^2+ bx + c &= (ax + b - 2a)(x + 2) + c - 2b + 4a.
+\end{align*}
+
+Dodajme k tomu, že nájdené zvyšky $c - b + a$ a $c - 2b + 4a$ sú zrejme rovné hodnotám $p(-1)$, resp. $p(-2)$, čo je v zhode s poznatkom, že akýkoľvek mnohočlen $q(x)$ dáva pri delení dvojčlenom $x - x_0$ zvyšok rovný číslu $q(x_0)$.
+
+Podľa zadania platí $c - b + a = 2$ a $c - 2b + 4a = 1$. Tretia rovnica $a + b + c = 61$ je vyjadrením podmienky $p(1) = 61$. Získanú sústavu troch rovníc vyriešime jedným z mnohých možných postupov.
+
+Z prvej rovnice vyjadríme $c = b - a + 2$, po dosadení do tretej rovnice dostaneme $a + b + (b - a + 2) = 61$, čiže $2b = 59$. Odtiaľ $b = 59/2$, čo po dosadení do prvej a druhej rovnice dáva $a+c = 63/2$, resp. $c+4a = 60$. Ak odčítame posledné dve rovnice od seba, dostaneme $3a = 57/2$, odkiaľ $a = 19/2$, takže $c = 63/2 - 19/2 = 22$. Hľadaný trojčlen je teda jediný a má tvar
+$$p(x) =\frac{19}{2} \cdot x^2+\frac{59}{2}\cdot x + 22 = \frac{19x^2 + 59x + 44}{2}.$$
+}

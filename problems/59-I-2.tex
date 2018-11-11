@@ -1,0 +1,43 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{59-I-2}{
+Vrcholom $C$ pravouholníka $ABCD$ veďte priamky $p$ a $q$, ktoré majú s daným pravouholníkom spoločný iba bod $C$, pričom priamka $p$ má od bodu $A$ najväčšiu možnú
+vzdialenosť a priamka $q$ vymedzuje s priamkami $AB$, $AD$ trojuholník s čo najmenším obsahom. 
+}{
+\rieh Päta $P$ kolmice z bodu $A$ na priamku $p$ prechádzajúcu bodom $C$ leží na
+Tálesovej kružnici nad priemerom $AC$. Vzdialenosť bodu $A$ od priamky $p$, t. j. dĺžka úsečky $AP$, je teda nanajvýš rovná veľkosti priemeru $AC$. Pritom rovnosť nastane práve vtedy, keď je priamka $p$ kolmá na uhlopriečku $AC$. Je zrejmé, že taká priamka $p$ má s daným pravouholníkom spoločný iba bod $C$.
+
+Zvoľme teraz ľubovoľnú priamku $q$ tak, aby mala s pravouholníkom $ABCD$ spoločný iba bod $C$. Jej priesečníky s priamkami $AB$, $AD$ označme $M$ a $N$ (v uvedenom poradí). Ďalej označme $M'$ obraz bodu $M$ v osovej súmernosti podľa priamky $BC$ a $N*$ obraz bodu $N$ v osovej súmernosti podľa priamky $CD$. Keďže $|\ma NCD| + |\ma MCB|= 180^\circ- |\ma BCD| = 90^\circ$, vyplýva z práve uvedených súmerností rovnosť $|\ma MCM'| = 2|\ma MCB| = 2(90^\circ - |\ma NCD|) = 180^\circ - 2|\ma NCD| = 180^\circ - |\ma NCN* |$. Body $C$, $M'$ a $N*$ teda ležia na jednej polpriamke s počiatkom $C$. Pre obsah trojuholníka $AMN$
+tak vždy platí (\todo{obr. 2})
+$$S_{AMN}= S_{ABCD} + S_{BMC} + S_{DCN} = S_{ABCD} + S_{M'BC} + S_{DN*C} \geq 2S_{ABCD},$$
+s rovnosťou práve vtedy, keď polpriamka $CM'= CN*$ bude prechádzať vrcholom $A$ daného pravouholníka, t. j. práve vtedy, keď $M'= A = N*$ (potom budú $BC$ a $CD$ strednými priečkami trojuholníka $AMN$).
+
+\todo{DOPLNIŤ Obr. 2}
+
+\textit{Záver.} Priamku $q$, pre ktorú je obsah trojuholníka $AMN$ minimálny, zostrojíme
+ako priamku $CM$, pričom $M$ je obraz bodu $A$ v osovej súmernosti podľa osi $BC$.
+Priamka $p$ s najväčšou možnou vzdialenosťou od bodu $A$ pri daných podmienkach
+je kolmica na úsečku $AC$ zostrojená v bode $C$
+
+\textit{Poznámka.} K práve uvedenému riešeniu môže žiakov inšpirovať aktivita so sklada-
+ním papiera opísaná v úlohe N1. Namiesto skladania papiera možno situáciu modelovať
+na počítači v niektorom z nástrojov dynamickej geometrie, napríklad v \textit{Cabri geometrii} alebo v {Geonexte}.
+
+\textbf{Iné riešenie*.} Označme $P$ pätu kolmice z bodu $A$ na hľadanú priamku $p$ a $\varphi$ veľkosť odchýlky priamok $p$ a $AC$. Pre vzdialenosť $d$ priamky $p$ od bodu $A$ platí $d = |AP| = |AC| \sin \varphi \leq |AC|$. Priamka $p$ má teda najväčšiu možnú vzdialenosť od bodu $A$ práve vtedy, keď je kolmá na $AC$.
+
+Uvažujme ľubovoľnú priamku $q$, ktorá má s pravouholníkom $ABCD$ spoločný iba
+bod $C$, a budeme hľadať, za akých podmienok ohraničuje spolu s priamkami $AB$ a $AD$
+trojuholník s najmenším obsahom. Použijeme označenie z \todo{obr. 2} a označíme $a = |AB|
+= |DC|$, $x = |BM|$, $b = |AD| = |BC|$ a $y = |DN|$. Pomocou týchto veličín vyjadríme
+obsah trojuholníka $AMN$ a odhadneme ho použitím AG-nerovnosti:
+$$S_{AMN}=\frac{1}{2}(a + x)(b + y) = \frac{1}{2}(ab + xy + ay + bx)\geq \frac{1}{2}(ab + xy + 2\sqrt{ab \cdot xy}. \todo{(1)}$$
+Z podobnosti trojuholníkov $BMC$ a $DCN$ dostávame $|DN|/|BC| = |DC|/|BM|$, čo
+vzhľadom na zvolené označenie dáva $xy = ab$. Po dosadení do \todo{(1)} a po jednoduchej
+úprave tak dostaneme $S_{AMN} = 2ab = 2S_{ABCD}$. Pritom rovnosť nastane práve vtedy, keď platí $ay = bx$. Spolu s podmienkou $xy = ab$ predstavujú oba vzťahy sústavu rovníc s neznámymi $x$, $y$, ktorej vyriešením dostaneme $x = a$ a $y = b$. Dospeli sme teda
+k rovnakému výsledku ako v prvom riešení, kde sme tiež uviedli konštrukciu priamky $q$.
+
+\textbf{Iné riešenie*.} Postupujeme rovnako ako v predchádzajúcom riešení s tým rozdielom, že najskôr z podobnosti trojuholníkov $BMC$ a $DCN$ určíme $y = ab/x$ a potom odhadneme obsah trojuholníka $AMN$ pomocou tvrdenia z úlohy \todo{N2 za piatou súťažnou
+úlohou} takto:
+$$S_{AMN} =\frac{1}{2}(a + x)(b + y) =\frac{1}{2}(a + x)\bigg(b +\frac{ab}{x}\bigg)=\frac{1}{2}\bigg(2ab + bx + \frac{a^2 b}{x}\bigg)= ab +\frac{1}{2}ab\bigg(\frac{x}{a}+\frac{a}{x}\bigg)\geq 2ab.$$
+Rovnosť nastáva práve vtedy, keď $x/a = a/x$, čo je ekvivalentné s podmienkou $x = a$.
+}

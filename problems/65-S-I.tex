@@ -1,0 +1,15 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{65-S-I}{
+ Nájdite všetky štvorciferné čísla $\overline{abcd}$, pre ktoré platí $\overline{abcd} = 20 \cdot \overline{ab} + 16 \cdot \overline{cd}$.
+}{
+\rieh V rovnici zo zadania
+$$1 000a + 100b + 10c + d = 20(10a + b) + 16(10c + d)$$
+majú neznáme cifry $a$ a $b$ väčšie koeficienty na ľavej strane, zatiaľ čo cifry $c$ a $d$ na strane pravej. Preto rovnicu upravíme na tvar $800a + 80b = 150c + 15d$, ktorý po vydelení piatimi a vyňatí menších koeficientov oboch strán prepíšeme ako
+$$16(10a + b) = 3(10c + d). \todo{(1)}$$
+Z toho vďaka nesúdeliteľnosti čísel 3 a 16 vyplýva, že $10c + d$ je dvojciferný násobok čísla 16. Ten je však väčší ako 48, lebo $3 \cdot 48 = 144$, zatiaľ čo $16(10a + b) \geq 160$ (cifra $a$ musí byť nenulová). Ako hodnoty $10c + d$ tak prichádzajú do úvahy iba násobky 16 rovné 64, 80 a 96 - čísla určujúce svojim zápisom cifry $c$ a $d$. Dosadením do rovnice \todo{(1)} dostaneme pre dvojciferné číslo $10a + b$ postupne hodnoty 12, 15 a 18.
+
+\textit{Odpoveď.} Vyhovujú tri čísla 1 264, 1 580 a 1 896.
+
+\textit{Poznámka.} Namiesto štyroch neznámych cifier $a$, $b$, $c$, $d$ možno na zápis rovnice zo zadania využiť zrejme priamo obe dvojciferné čísla $x = ab$ a $y = cd$. Rovnica potom bude mať tvar $100x+y = 20x+16y$, ktorý podobne ako v pôvodnom postupe upravíme na $80x = 15y$, čiže $16x = 3y$. Teraz namiesto vzťahu $16 \mid y$ môžeme využiť druhý podobný dôsledok $3 \mid x$ a uvedomiť si, že z odhadu $y \leq 99$  vyplýva $16x \leq 3 \cdot 99 = 297$, odkiaľ $x \leq 18$, čo spolu s odhadom $x \geq 10$ vedie k možným hodnotám $x \in$ \{12, 15, 18\}. Z rovnice $16x = 3y$ potom už dopočítame $y = 64$ pre $x = 12$, $y = 80$ pre $x = 15$ a  $y = 96$ pre $x = 18$.
+}

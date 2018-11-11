@@ -1,0 +1,25 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{58-I-4}{
+Daný je konvexný päťuholník $ABCDE$. Na polpriamke $BC$ zostrojte taký bod $G$, aby
+obsah trojuholníka $ABG$ bol zhodný s obsahom daného päťuholníka.
+}{
+\rieh \textit{Rozbor.} Najskôr uvažujme bod $F$, ktorý je priesečníkom priamky $BC$ a rovnobežky s $EC$ prechádzajúcej bodom $D$ (keďže $E\notin BC$, sú $EC$ a $BC$ rôznobežné, \todo{obr. 3}). Obsahy trojuholníkov $ECD$ a $ECF$ sú zhodné (majú spoločnú stranu $EC$ a zhodnú výšku na túto stranu), obsah päťuholníka $ABCDE$ je teda zhodný s obsahom štvoruholníka $ABFE$.
+
+\todo{ DOPLNIŤ Obr. 3}
+
+Ďalej uvažujme bod $G$, ktorý je priesečníkom priamky $BC$ a rovnobežky s $AF$
+prechádzajúcej bodom $E$. Potom sú opäť obsahy trojuholníkov $AFE$ a $AFG$ zhodné, a sú preto zhodné aj obsahy štvoruholníka $ABFE$ a trojuholníka $ABG$. Bod $G$ tak má
+požadovanú vlastnosť.
+
+Hľadaný bod je na polpriamke $BC$ jediný, lebo pre rôzne body $X$, $Y$ na polpriamke $BC$ majú trojuholníky $ABX$ a $ABY$ rôzne výšky na spoločnú stranu $AB$, majú teda rôzne obsahy.
+\textit{Popis konštrukcie.}
+\begin{enumerate}
+    \item $p$; $p \parallel EC, D \in p$;
+    \item $F$; $F \in p \cap BC$;
+    \item $q$; $q \parallel AF, E \in q$;
+    \item $G$; $G \in q \cap BC$;
+\end{enumerate}
+
+Úloha má jediné riešenie.
+}

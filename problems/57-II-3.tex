@@ -1,0 +1,29 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{57-II-3}{
+Dokážte, že pokiaľ v\,Skupine šiestich osôb existuje aspoň desať dvojíc známych, tak
+v nej možno nájsť tri osoby, ktoré sa poznajú navzájom. Vzťah \uv{poznať sa} je vzájomný,
+t. j. ak osoba $A$ pozná osobu $B$, tak aj $B$ pozná $A$. Ukážte, že taká trojica existovať
+nemusí, ak v\,Skupine šiestich osôb je menej ako desať dvojíc známych.
+}{
+\rieh Nazvime $A$ osobu (prípadne jednu z osôb), ktorá má v danej\,Skupine najviac
+známych, a tento počet známych označme $n$. Zrejme $n\leq 5$.
+
+Ak $n = 5$, existuje medzi zostávajúcimi osobami aspoň päť ďalších dvojíc známych. Ktorákoľvek z týchto dvojíc potom tvorí s osobou A trojicu známych.
+
+Ak $n = 4$, existuje osoba $B$, ktorá sa s $A$ nepozná, a tá má tiež najviac štyroch
+známych. Preto sa medzi známymi osoby $A$ vyskytujú aspoň dve dvojice známych.
+Osoba $A$ s jednou z týchto dvojíc tvorí opäť trojicu známych.
+
+Situácia $n\leq 3$ nemôže nastať, pretože celkový počet dvojíc známych v\,Skupine by
+vtedy bol nanajvýš $\frac{1}{2}\cdot 6n \leq 9$.
+\todo{Obr. 2} 
+
+Príklad\,Skupiny šiestich osôb s deviatimi dvojicami, ale s žiadnou trojicou známych,
+je znázornený grafom na \todo{obr. 2}. V ňom body $A$, $B$, $C$, $D$, $E$ a $F$ predstavujú jednotlivé osoby a dvojice známych sú vyznačené úsečkami. Pritom žiadne tri z úsečiek netvoria
+trojuholník. Pokiaľ je v\,Skupine menej ako deväť dvojíc známych, zostrojíme vhodný
+príklad odstránením príslušného počtu úsečiek z \todo{obr. 2} (pritom určite žiadny trojuholník
+nevznikne).
+
+\textbf{Iné riešenie*.} Ak je v šestici osôb aspoň 10 dvojíc známych, je v nej najviac 5 dvojíc neznámych, lebo všetkých dvojíc je práve 15. Budeme preto naopak predpokladať, že v každej trojici sa nájde dvojica neznámych, a dokážeme, že v celej šestici je takých dvojíc aspoň 6. Pri uvedenom predpoklade môžeme označenie osôb zvoliť tak, aby v trojiciach $ABC$ a $DEF$ boli dvojice neznámych $AB$ a $DE$. Potom ďalšie štyri rôzne dvojice neznámych nájdeme (po jednej) v trojiciach $ACD$, $AEF$, $BCE$, $BDF$ (presvedčte sa, že každá dvojice sa vyskytuje najviac v jednej z uvedených štyroch trojíc a žiadna z týchto trojíc neobsahuje ani dvojicu $AB$, ani dvojicu $DE$). Príklad pre menší počet dvojíc známych zostrojíme rovnako ako v predchádzajúcom riešení.
+}

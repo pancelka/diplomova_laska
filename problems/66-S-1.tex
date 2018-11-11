@@ -1,0 +1,17 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{66-S-1}{
+Nájdite všetky riešenia rovnice
+$$1 =\frac{|3x - 7| - |9 - 2x|}{|x + 2|}.$$
+}{
+\rieh Zo zadania vyplýva, že $x\neq -2$. Po vynásobení výrazom $|x + 2|$ dostávame
+rovnicu $|x + 2| = |3x - 7| - |9 - 2x|$, ktorú teraz vyriešime. Nulové body troch absolútnych hodnôt s neznámou rozdeľujú reálnu os na štyri intervaly, v ktorých má každý z prislúchajúcich dvojčlenov stále rovnaké znamienko. V každom z týchto intervalov už teda môžeme riešiť zodpovedajúcu rovnicu bez absolútnych hodnôt.
+\begin{itemize}
+    \item $x \in (-\infty, -2)$: dostávame rovnicu $-x - 2 = -3x + 7 - (9 - 2x)$, ktorá po úprave prejde na identitu $0 = 0$. Všetky čísla zo skúmaného intervalu pôvodnej rovnici vyhovujú.
+    \item $x \in \langle -2, \frac{7}{3})$: dostávame rovnicu $x+2 = -3x+7-(9-2x)$, čiže $2x = -4$ s jediným riešením $x = -2$, ktoré, ako už vieme, pôvodnej rovnici nevyhovuje.
+    \item $x \in \langle \frac{7}{3}, \frac{9}{2})$: dostávame rovnicu $x + 2 = 3x - 7 - (9 - 2x)$ s riešením $x = \frac{9}{2}$ , ktoré však v uvažovanom intervale neleží.
+    \item $x \in \langle \frac{9}{2}, \infty)$: dostávame rovnicu $x + 2 = 3x - 7 - (-9 + 2x)$, ktorá po úprave prejde na identitu $0 = 0$. Vyhovujú všetky $x$ z tohto intervalu.
+\end{itemize}
+
+\textit{Záver.} Všetky riešenia úlohy tvoria množinu $(-\infty, -2) \cup \langle \frac{9}{2},\infty)$.
+}

@@ -1,0 +1,33 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{60-S-3}{
+Nech $x, y$ sú také kladné celé čísla, že obe čísla $3x + 5y$ a $5x + 2y$ sú deliteľné číslom 60. Zdôvodnite, prečo číslo 60 delí aj súčet $2x + 3y$.
+}{
+\rieh Na základe predpokladu zo zadania vieme, že existujú kladné celé čísla $m$ a $n$, pre ktoré platí
+\begin{align*}
+3x + 5y &= 60m,\\
+5x + 2y &= 60n.
+\end{align*}
+Na tieto vzťahy sa môžeme pozerať ako na sústavu lineárnych rovníc s neznámymi $x$ a $y$ a parametrami $m$ a $n$. Vyriešiť ju vieme ľubovoľnou štandardnou metódou, napríklad od dvojnásobku prvej rovnice odčítame päťnásobok druhej a vyjadríme $x$, potom dopočítame $y$. Dostaneme
+$$x = \frac{60(5n - 2m)}{19}, \ \ \ y =\frac{60(5m - 3n)}{19}.$$
+Keďže čísla 19 a 60 sú nesúdeliteľné, sú obe čísla $x$ a $y$ deliteľné 60. Preto aj súčet $2x + 3y$ je deliteľný 60.
+
+\textbf{Iné riešenie*.} Vieme, že $60 = 3 \cdot 4 \cdot 5$. Pritom čísla 3, 4, 5 sú po dvoch nesúdeliteľné, preto na dôkaz deliteľnosti 60 stačí dokázať deliteľnosť jednotlivými číslami 3, 4, 5.
+
+Keďže číslo $3x + 5y$ je deliteľné $5$, je aj $x$ deliteľné 5. Podobne z relácie $5 \mid 5x + 2y$ vyplýva $5 \mid y$. Preto 5 delí aj $2x + 3y$.
+
+Keďže číslo $3x + 5y$ je deliteľné 3, je $y$ deliteľné 3. Vzhľadom na $3 \mid 5x + 2y$ máme tiež $3 \mid 5x$, a teda $3 \mid x$. Preto 3 delí aj $2x + 3y$.
+
+Keďže $4 \mid 3x + 5y$ a $4 \mid 5x + 2y$, máme aj $4 \mid (3x + 5y) + (5x + 2y) = 8x + 7y$, takže $4 | y$. Ďalej napríklad $4 \mid 3x + 5y$, takže $4 \mid 3x$, čiže $4 \mid x$. Preto 4 delí aj $2x + 3y$.
+
+\textbf{Iné riešenie*.}. Vyjadríme výraz $2x + 3y$ pomocou $3x + 5y$ a $5x + 2y$. Budeme hľadať čísla $p$ a $q$ také, že $2x + 3y = p(3x + 5y) + q(5x + 2y)$ pre každú dvojicu celých čísel $x$, $y$. Jednoduchou úpravou dostaneme rovnicu
+$$(2 - 3p - 5q)x + (3 - 5p - 2q)y = 0. \ \ \ \todo{(1)}$$
+Ak budú hľadané čísla $p$ a $q$ spĺňať sústavu
+\begin{align*}
+3p + 5q &= 2,\\
+5p + 2q &= 3,
+\end{align*}
+bude zrejme rovnosť \todo{fix (1)} splnená pre každú dvojicu $x$, $y$. Vyriešením sústavy dostaneme $p = 11/19$, $q = 1/19$. Dosadením do \todo{fix (1)} dostávame vyjadrenie
+$$19(2x + 3y) = 11(3x + 5y) + (5x + 2y),$$
+z ktorého vyplýva, že spolu s číslami $3x + 5y$ a $5x + 2y$ je súčasne deliteľné 60 aj číslo $2x + 3y$, pretože čísla 19 a 60 sú nesúdeliteľné.
+}

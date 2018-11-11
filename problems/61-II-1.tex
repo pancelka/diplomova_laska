@@ -1,0 +1,23 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{61-II-1}{
+Pre všetky reálne čísla $x, y, z$ také, že $x < y < z$, dokážte nerovnosť $$x^2 - y^2 + z^2> (x - y + z)^2.$$
+}{
+\rieh Aby sme mohli použiť vzorec $A^2 - B^2 = (A - B)(A + B)$, presuňme najskôr jeden z krajných členov ľavej strany, napríklad člen $z^2$, na pravú stranu:
+\begin{align*}
+x^2 - y^2 & > (x - y + z)^2-z^2,\\
+(x - y)(x + y) & > (x - y + z - z)(x - y + z + z),\\
+(x - y)(x + y) & > (x - y)(x - y + 2z).
+\end{align*}
+Keďže spoločný činiteľ $x - y$ oboch strán poslednej nerovnosti je podľa predpokladu úlohy číslo záporné, budeme s dôkazom hotoví, keď ukážeme, že zvyšné činitele spĺňajú opačnú nerovnosť $x + y < x - y + 2z$. Tá je však zrejme ekvivalentná s nerovnosťou $2y < 2z$, čiže $y < z$, ktorá podľa zadania úlohy naozaj platí.
+
+\textbf{Iné riešenie*.} Podľa vzorca pre druhú mocninu trojčlena platí $$(x - y + z)^2= x^2+ y^2+ z^2 - 2xy + 2xz - 2yz.$$
+Dosaďme to do pravej strany dokazovanej nerovnosti a urobme niekoľko ďalších ekvivalentných úprav:
+\begin{align*}
+x^2 - y^2+ z^2 &> x^2+ y^2+ z^2 - 2xy + 2xz - 2yz,\\
+0 &> 2y^2 - 2xy + 2xz - 2yz,\\
+0 &>  2y(y - x) + 2z(x - y),\\
+0 &> 2(y - x)(y - z).
+\end{align*}
+Posledná nerovnosť už vyplýva z predpokladov úlohy, podľa ktorých je činiteľ $y - x$ kladný, zatiaľ čo činiteľ $y - z$ je záporný.
+}

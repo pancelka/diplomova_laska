@@ -1,0 +1,29 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{58-II-4}{
+Pravouhlému trojuholníku $ABC$ s preponou $AB$ a obsahom $S$ je opísaná kružnica. Dotyčnica k tejto kružnici v bode $C$ pretína dotyčnice vedené bodmi $A$ a $B$ v bodoch $D$ a $E$. Vyjadrite dĺžku úsečky $DE$ pomocou dĺžky $c$ prepony a obsahu $S$.
+}{
+\rieh Označme $O$ stred opísanej kružnice, teda stred prepony $AB$ daného pravouhlého trojuholníka $ABC$, $a_v$ veľkosť jeho výšky na preponu \todo{(obr. 3)}. Trojuholník
+
+\todo{DOPLNIŤ Obr. 3}
+
+$EDO$ je zrejme tiež pravouhlý, pretože jeho strany $DO$ a $EO$ sú kolmé na odvesny
+trojuholníka $ABC$; pritom jeho výškou na preponu je úsečka $OC$ (s veľkosťou $\frac{1}{2}c$). Vzhľadom na súmernosť úsečky $AC$ podľa osi $OD$ platí pre jeho uhol pri vrchole $D$, že $|\ma CDO| = 90^\circ - |\ma COD| = 90^\circ - |\ma AOD| = \alpha$. Trojuholníky $EDO$ a $ABC$ sú teda
+podobné ($uu$). Koeficient k tejto podobnosti je daný pomerom dĺžok zodpovedajúcich
+výšok na prepony, takže $k = |OC|/v = \frac{1}{2}c/v$, a keďže $vc = 2S$, je
+$$k =\frac{c^2}{4S}.$$
+V uvedenej podobnosti zodpovedá prepone $AB$ prepona $DE$, preto pre jej veľkosť platí
+$$|DE| = kc =\frac{c^3}{4S}.$$
+
+\textbf{Iné riešenie*.} Zo súmernosti dotyčníc z bodu ku kružnici vyplýva, že oba trojuholníky $ACD$ aj $BCE$ sú rovnoramenné, $|AD| = |DC|$, $|BE| = |CE|$. Rovnoramenné sú aj trojuholníky $ACO$ a $BCO$, pričom $O$ je stred prepony $AB$ (ramená oboch trojuholníkov
+majú veľkosť polomeru kružnice opísanej pravouhlému trojuholníku $ABC$, čo je $\frac{1}{2}c$). Ukážeme, že ide o dve dvojice podobných trojuholníkov $ACD \backsim BCO$ a $ACO \backsim BCE$. K tomu si stačí všimnúť, že v štvoruholníku $AOCD$, ktorý je zložený z dvoch zhodných pravouhlých trojuholníkov, platí $| \ma CDA| = 180^\circ -| \ma AOC| = |\ma COB|$. Rovnoramenné trojuholníky $ACD$ a BCO sú teda podobné podľa vety $uu$. Z tejto podobnosti vyplýva rovnosť $|CD| : |CA| = |CO| : |CB|$, takže pri zvyčajnom označení odvesien dostávame $|CD| = \frac{1}{2}cb/a$, a z podobnosti trojuholníkov $ACO$ a $BCE$ potom $|CE| = \frac{1}{2}ca/b$.
+Celkom tak je
+$$|DE| = |DC| + |CE| = \frac{cb}{2a}+\frac{ca}{2b}=\frac{cb^2 + ca^2}{2ab}= \frac{c(a^2 + b^2)}{2\cdot 2S}=\frac{c^3}{4S}.$$
+\textit{Poznámky.} Podobnosť spomenutých rovnoramenných trojuholníkov môžeme odvodiť tiež tak, že si všimneme rovnosti zodpovedajúcich uhlov $ACO$ a $BCE$ pri
+základniach: oba totiž dopĺňajú uhol $OCB$ do pravého uhla ($ACB$, resp. $OCE$). Preto
+$ACO \backsim BCE$.
+
+Ďalšiu možnosť dáva objavenie rovnosti $|\ma ADO| = |\ma BAC| = \alpha$ (ramená jedného
+uhla sú kolmé na ramená druhého). Z  pravouhlého trojuholníka $ODA$ tak máme $|AO| 
+: |AD| = \tan |\ma ADO| = \tan \alpha = a : b$, takže $|CD| = |AD| = \frac{1}{2}cb/a$, a analogicky pre pravouhlý trojuholník $OEB$.
+}

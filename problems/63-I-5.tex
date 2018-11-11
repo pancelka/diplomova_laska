@@ -1,0 +1,20 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{63-I-5}{Dokážte, že pre každé nepárne prirodzené číslo $n$ je súčet $n^4 + 2n^2 + 2 013$ deliteľný číslom 96.
+}{
+\rieh Keďže $96 = 3 \cdot 32 = 3 \cdot 2^5$, budeme dokazovať deliteľnosť súčtu $S = n^4+ 2n^2 + 2 013$ dvoma nesúdeliteľnými číslami 3 a 32.
+
+Deliteľnosť tromi: Pretože číslo 2 013 je deliteľné tromi, stačí dokázať deliteľnosť tromi zmenšeného súčtu
+$$S - 2 013 = n^4 + 2n^2= n^2(n^2+ 2).$$
+V prípade $3 \mid n$ je všetko jasné, v opačnom prípade je $n = 3k \pm 1$ pre vhodné celé $k$, takže platí $3 \mid n^2 + 2$, lebo $n^2 + 2 = 3(3k^2 + 2k + 1)$.
+
+Deliteľnosť číslom 32: Keďže $2 016 = 32 \cdot 63$, stačí dokázať deliteľnosť číslom 32 zmenšeného súčtu
+$$S - 2 016 = n^4+ 2n^2 - 3 = (n^2+ 1)^2 - 2^2= (n^2+ 3)(n2 - 1).$$
+Predpokladáme, že $n$ je nepárne, teda $n = 2k + 1$ pre vhodné celé $k$, preto platí
+$$n^2+ 3 = (2k + 1)^2+ 3 = 4(k^2+ k + 1)\ \ \ \mathrm{a} \ \ \ n^2 - 1 = (2k + 1)^2 - 1 = 4k(k + 1).$$
+Odtiaľ vyplýva, že $32 \mid (n^2 + 3)(n^2 - 1)$, lebo číslo $k(k + 1)$ je párne.
+
+\textit{Poznámka.} Deliteľnosť číslom 32 sa dá dokazovať i bez vykonaného algebraického rozkladu trojčlena $n^4 + 2n^2 - 3$, z ktorého po dosadení $n = 2k + 1$ roznásobením dostaneme
+$$n^4+ 2n^2 - 3 = 16k^4+ 32k^3+ 32k^2+ 16k = 16k(k^3+ 2k^2+ 2k + 1).$$
+Pre párne $k$ je deliteľnosť takto upraveného výrazu číslom 32 zrejmá. Pre nepárne $k$ je zase párny súčet $k^3 + 1$, takže je párny i druhý činiteľ $k^3 + 2k^2 + 2k + 1$.
+}

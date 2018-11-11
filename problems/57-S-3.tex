@@ -1,0 +1,25 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{57-S-3}{
+V\,Skupine šiestich ľudí existuje práve 11 dvojíc známych. Vzťah \uv{poznať sa} je vzájomný, t. j. ak osoba $A$ pozná osobu $B$, tak aj $B$ pozná $A$. Keď sa ktokoľvek zo\,Skupiny dozvie nejakú správu, povie ju všetkým svojim známym. Dokážte, že sa týmto spôsobom nakoniec správu dozvedia všetci. 
+}{
+\rieh Jednotlivé osoby označíme písmenami $A$, $B$, $C$, $D$, $E$ a $F$. Aspoň jedna
+z nich (označme ju $A$) má aspoň štyroch známych (ak by mala každá osoba najviac
+troch známych, bolo by dvojíc známych menej ako desať). Keby mala dokonca päť známych, dozvie sa správu od každého v\,Skupine a môže ju komukoľvek v\,Skupine povedať.
+\todo{doplniť Obr. 4  a Obr. 5}
+
+Ak má osoba $A$ práve štyroch známych, napríklad osoby $B$, $C$, $D$ a $E$, existuje
+v\,Skupine osôb $A$, $B$, $C$, $D$, $E$ najviac 10 známostí (\todo{obr. 4}, dvojice známych znázorňujú úsečky), a tak sa osoba $F$ musí poznať s niektorou osobou $X \in \{B, C, D, E\}$. Možnosť
+šírenia správy od ľubovoľnej osoby ku ktorejkoľvek inej ľahko overíme podľa \todo{obr. 5}.
+
+\textbf{Iné riešenie*.} Znázornenie ktorejkoľvek množiny práve jedenástich dvojíc známych
+v\,Skupine šiestich osôb dostaneme odstránením štyroch z pätnástich hrán úplného grafu
+(\todo{obr. 6}, v ňom z každého uzla vychádza práve päť hrán). Po odstránení iba štyroch hrán
+z grafu na \todo{obr. 6} musí teda z každého vrcholu vychádzať aspoň jedna hrana. V\,Skupine
+teda neexistuje človek, ktorý by nikoho nepoznal. Aby sa preto správa nemohla od
+niektorej z osôb rozšíriť ku všetkým ostatným, musela by v príslušnom grafe existovať
+buď aspoň jedna oddelená dvojica, alebo dve oddelené trojice, v ktorých sa osoby môžu
+poznať navzájom. V žiadnej z týchto situácií však počet dvojíc známych neprevyšuje
+sedem, ako vidíme z \todo{obr. 7}. Tým je tvrdenie úlohy dokázané. 
+\todo{pridať  Obr. 6 a  Obr. 7}
+}

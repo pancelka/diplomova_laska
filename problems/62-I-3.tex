@@ -1,0 +1,32 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{62-I-3}{
+Daný je obdĺžnik $ABCD$ s obvodom $o$. V jeho rovine nájdite množinu všetkých bodov, ktorých súčet vzdialeností od priamok $AB$, $BC$, $CD$, $DA$ je rovný $\frac{2}{3}o$. 
+}{
+\rieh Požadovanú hodnotu súčtu štyroch vzdialeností zapíšeme v tvare
+$$ \frac{2}{3}o = \frac{1}{6}o +\frac{1}{2}o =\frac{1}{6}o + |AB| + |BC|. \todo{(1)}$$
+Pre ľubovoľný bod v páse určenom priamkami $AB$ a $CD$ platí, že súčet jeho vzdialeností od týchto dvoch rovnobežiek je rovný ich vzdialenosti, t. j. $|BC|$. Pre ľubovoľný bod zvonka tohto pásu je súčet dvoch uvažovaných vzdialeností rovný súčtu hodnoty $|BC|$ a dvojnásobku vzdialenosti od bližšej z oboch rovnobežiek. Podobné dve tvrdenia platia pre súčet vzdialeností ľubovoľného bodu od rovnobežiek $BC$ a $AD$ vo vzťahu k ich vzdialenosti $|AB|$. Vzhľadom na vyjadrenie \todo{ (1)} tak môžeme urobiť prvé dva závery.
+
+\begin{enumerate}[(1)]
+    \item  V páse medzi priamkami AB a CD sú hľadanými bodmi práve tie, ktorých súčet vzdialeností od priamok $BC$ a $AD$ je rovný $\frac{1}{6}o + |AB|$. Sú to teda body, ktoré ležia zvonka pásu určeného priamkami $BC$ a $AD$ a majú od bližšej z nich vzdialenosť rovnú $\frac{2}{6}o : 2 = \frac{1}{12}o$. Množinu hľadaných bodov v páse medzi $AB$ a $CD$ tak tvoria dve úsečky $B_1 C_1$ a $A_1 D_1$ znázornené na \todo{obr. 1}. Ich krajné body $A_1$, $B_1$ ležia na priamke $AB$ zvonka úsečky $AB$ tak, že $|AA_1 | = |BB_1 | =\frac{1}{12}o$; krajné body $C_1$, $D_1$ ležia na priamke $CD$ zvonka úsečky $CD$ tak, že $|CC_1 | = |DD_1 | = \frac{1}{12}o$.
+    
+    \todo{DOPLNIŤ Obr. 1}
+    
+    \item V páse medzi priamkami $BC$ a $AD$ sú hľadanými bodmi práve tie, ktorých súčet vzdialeností od priamok $AB$ a $CD$ je rovný $\frac{1}{6}o + |BC|$. Sú to teda body, ktoré ležia zvonka pásu určeného priamkami $AB$ a $CD$ a ktoré majú od bližšej z nich vzdialenosť $\frac{1}{12}o$. Množinu hľadaných bodov v páse medzi $BC$ a $AD$ tak tvoria dve úsečky $A_2 B_2$ a $C_2 D_2$, pritom krajné body $B_2$, $C_2$ ležia na priamke $BC$ zvonka úsečky $BC$ tak, že $|BB_2 | = |CC_2 | =\frac{1}{12}o$ a krajné body $A_2$, $D_2$ ležia na priamke $AD$ zvonka úsečky $AD$ tak, že $|AA_2 | = |DD_2 | =\frac{1}{12}o$. 
+    
+    \todo{DOPLNIŤ Obr. 2}
+
+\end{enumerate}
+Ostáva nájsť hľadané body mimo zjednotenia oboch uvažovaných pásov, teda body ležiace v nejakom zo štyroch
+pravých uhlov $A_1 AA_2$, $B_1 BB_2$, $C_1 CC_2$, $D_1 DD_2$. Z vyššie uvedených úvah vyplýva, že v každom z týchto uhlov hľadáme práve tie body, ktorých súčet vzdialeností od oboch ramien uhla je rovný hodnote $\frac{1}{12}o$. Vzhľadom na symetriu ukážeme len to, že také body uhla $A_1 AA_2$ vyplnia úsečku $A_1 A_2$; v ostatných troch uhloch to potom budú úsečky $B_1 B_2$, $C_1 C_2$, $D_1 D_2$ \todo{(obr. 1)}.
+
+Všimnime si najskôr, že body $A_1$, $A_2$ sú jediné body na ramenách uhla $A_1 AA_2$, ktoré majú požadovanú vlastnosť. Pre ľubovoľný vnútorný bod $X$ uhla $A_1 AA_2$ označme $d_1$, $d_2$ vzdialenosti bodu $X$ od ramien $AA_1$, resp. $AA_2$. Hľadáme potom práve tie body $X$, pre ktoré platí $d_1 +d_2 =\frac{1}{12}o$ \todo{ (obr. 2)}. Túto \uv{rovnicu} teraz vyriešime úvahou o obsahu S útvaru $AA_1 XA_2$, ktorý je buď trojuholník, alebo konvexný či nekonvexný štvoruholník.
+
+Obsah $S$ je vždy rovný súčtu obsahov dvoch trojuholníkov $AA_1 X$ a $AA_2 X$:
+$$S = S_{AA_1 X} + S_{AA_2 X} =\frac{1}{2}|AA_1 |d_1 + \frac{1}{2}|AA_2 |d_2 = \frac{1}{2} \cdot \frac{1}{12}o \cdot (d_1 + d_2 ).$$
+Rovnica $d_1 +d_2 =\frac{1}{12}o$ je tak splnená práve vtedy, keď obsah $S$ má rovnakú hodnotu ako obsah $S_0$ pravouhlého trojuholníka $AA_1 A_2$, ktorého obe odvesny majú zhodnú dĺžku $\frac{1}{12}o$. Hľadané body $X$ sú teda práve tie, pre ktoré je útvar $AA_1 XA_2$ trojuholník; ak je totiž $AA_1 XA_2$ konvexný, resp. nekonvexný štvoruholník, platí zrejme $S > S_0$, resp. $S < S_0$. Hľadané body $X$ uhla $AA_1 A_2$ preto naozaj tvoria úsečku $A_1 A_2$.
+
+\textit{Odpoveď.} Hľadaná množina je zjednotením ôsmich úsečiek, ktoré tvoria hranicu osemuholníka $A_1 A_2 B_2 B_1 C_1 C_2 D_2 D_1$.
+
+\textit{Poznámka.} Z \todo{obr. 2} je tiež zrejmé, že rovnica $d_1 + d_2 = c$, pričom $c = |AA_1 | = |AA_2|$, bude splnená práve vtedy, keď bude $|X_1 A_1 | = d_1$ a $|X_2 A_2| = d_2$, t. j. práve vtedy, keď budú oba trojuholníky $XX_1 A_1$ a $XX_2 A_2$ rovnoramenné. To zrejme nastane práve vtedy, keď bude uhol $A_1 XA_2$ priamy, pretože $|\ma AA_1 A_2 | = 45^\circ$.
+}

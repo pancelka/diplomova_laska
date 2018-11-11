@@ -1,0 +1,47 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{58-I-1}{
+Tomáš, Jakub, Martin a Peter organizovali na námestí zbierku pre dobročinné účely. Za chvíľu sa pri nich postupne zastavilo päť okoloidúcich. Prvý dal Tomášovi do jeho pokladničky 3\,Sk, Jakubovi 2\,Sk, Martinovi 1\,Sk a Petrovi nič. Druhý dal jednému
+z chlapcov 8\,Sk a ostatným trom nedal nič. Tretí dal dvom chlapcom po 2\,Sk a dvom nič. Štvrtý dal dvom chlapcom po 4\,Sk a dvom nič. Piaty dal dvom chlapcom po 8\,Sk a dvom nič. Potom chlapci zistili, že každý z nich vyzbieral inú čiastku, pričom tieto
+tvoria štyri po sebe idúce prirodzené čísla. Ktorý z chlapcov vyzbieral najmenej a ktorý
+najviac korún?
+}{
+\rieh Dokopy chlapci dostali $3 + 2 + 1 + 8 + 2 \cdot 2 + 2 \cdot 4 + 2 \cdot 8 = 42$\,Sk. Toto
+číslo možno jediným spôsobom vyjadriť ako súčet štyroch po sebe idúcich prirodzených
+čísel: $42 = 9 + 10 + 11 + 12$. Štyria chlapci teda (v nejakom poradí) vyzbierali sumy 9,
+10, 11 a 12\,Sk.
+
+Žiadny chlapec nemohol dostať 8\,Sk zároveň od druhého aj od piateho okoloidúceho
+(inak by mal aspoň 16\,Sk, najviac však mohol každý z chlapcov dostať 12\,Sk). Takže od
+druhého a piateho majú traja chlapci po 8\,Sk a jeden od nich nedostal nič. Najviac jeden
+z týchto troch chlapcov mohol dostať 4\,Sk od štvrtého okoloidúceho, inak by mali už
+aspoň dvaja chlapci aspoň 12\,Sk. Štvrtý okoloidúci musel teda dať 4\,Sk práve jednému
+z nich a 4\,Sk zostávajúcemu chlapcovi. Bez peňazí prvého a tretieho okoloidúceho
+teda majú chlapci vybraných 12, 8, 8 a 4\,Sk. Chlapec, ktorý dostal v súčte od druhého,
+štvrtého a piateho okoloidúceho dvanásť korún, už nemohol dostať od prvého a tretieho
+okoloidúceho nič, lebo by mal viac ako dvanásť korún. Ten, ktorý dostal v súčte od
+druhého, štvrtého a piateho okoloidúceho 4\,Sk, musel dostať od prvého a tretieho v súčte
+maximálnu možnú čiastku, t. j. $3+2 = 5$\,Sk, inak by mal dokopy menej ako 9\,Sk (dostal
+teda práve 9\,Sk a vyzbieral najmenej). Takže najmenej vyzbieral Tomáš, lebo on dostal
+od prvého okoloidúceho 3\,Sk, a najviac Peter, ktorý od prvého okoloidúceho nedostal
+nič.
+
+Úvahy ľahko dokončíme a ukážeme, že popísané rozdelenie je skutočne možné. Ako
+už vieme, Tomáš vyzbieral 9\,Sk a Peter 12\,Sk. Jakub, ktorý dostal 2\,Sk od prvého,
+nemohol dostať od tretieho nič, takže dostal celkom 10\,Sk, a Martin 11\,Sk. Všetky
+úvahy môžeme prehľadne usporiadať do tabuľky, ktorú postupne dopĺňame.
+    \begin{tabular}{|c|c|c|c|c|c}
+        1 & 2 & 3 & 4 & 5 & $\Sigma$  \\
+        \hline
+         & 8 & & 0 & 0 & \\
+         \hline 
+         & 0 & & 0 & 8 & \\
+         \hline
+         0 & 0 & 0 & 4 & 8 & 12 $\rightarrow$ P \\
+         \hline
+         3 & 0 & 2 & 4 & 0 & $\leq 9 \rightarrow $ T \\
+         \hline
+         $1+2+3$ & $1 \times 8$ & $2\times 2$  & $2 \times 4$ & $2 \times 8$  & \\ 
+    
+           \end{tabular}
+}
