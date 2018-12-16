@@ -11,6 +11,7 @@
       span.underline{text-decoration: underline;}
       div.column{display: inline-block; vertical-align: top; width: 50%;}
   </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -36,9 +37,34 @@
 <h1 id="seminár-26" class="unnumbered">Seminár 26</h1>
 <p><div class="pdflinks">PDF na stiahnutie: <a href="pdf/seminar26-teacher.pdf">učiteľská verzia</a>, <a href="pdf/seminar26-student.pdf">študentská verzia</a></div></p>
 <h2 id="téma" class="unnumbered">Téma</h2>
-<p>Krajské kolo MO</p>
-<h2 id="ciele">Ciele</h2>
-<p>Analyzovať so študentmi úlohy krajského kola MO, ukázať na prípadné spojitosti s kolom domácim a školským, objasniť najčastejšie chyby.</p>
+<p>Kombinatorika II – hry s hľadaním víťaznej stratégie a logické úlohy.</p>
+<h2 id="ciele" class="unnumbered">Ciele</h2>
+<p>Pokračovať v precvičovaní úloh zameraných na hľadanie víťaznej stratégie a úloh, ktoré nevyžadujú špeciálne matematické znalosti.</p>
+<h2 id="úlohy-a-riešenia" class="unnumbered">Úlohy a riešenia</h2>
+<h3 id="úloha-61-i-6-n2">Úloha 61-I-6-N2</h3>
+<p><div class="problem"> Na tabuli sú napísané všetky prvočísla menšie ako 100. Gitka a Terka sa striedajú v ťahoch pri nasledujúcej hre. Najprv Gitka zmaže jedno z prvočísel. Ďalej vždy hráčka, ktorá je na ťahu, zmaže jedno z prvočísel, ktoré má s predchádzajúcim zmazaným prvočíslom jednu zhodnú číslicu (tak po prvočísle 3 je možné zmazať trebárs 13 alebo 37). Hráčka, ktorá je na ťahu a nemôže už žiadne prvočíslo zmazať, prehráva. Ktorá z oboch hráčok môže hrať tak, že vyhrá nezávisle od ťahov súperky? </div> <h4 class="solution-button">Riešenie</h4> <div class="solution"> Pretože prvočísel menších ako 100 je nepárny počet (25), ponúka sa hypotéza, že víťaznú stratégiu bude mať prvá hráčka. Ukážme, že to tak naozaj je. Táto hráčka si vopred v duchu spáruje (podľa spoločnej číslice) napísané prvočísla (dá sa to urobiť viacerými spôsobmi, uvedieme ten, pri ktorom v každom kroku párujeme najmenšie doposiaľ nespárované prvočíslo s najmenším ďalším doposiaľ nespárovaným prvočíslom so spoločnou číslicou): (2, 23), (3, 13), (5, 53), (7, 17), (11, 19), (29, 59), (31, 37), (41, 43), (47, 67), (61, 71), (73, 79), (83, 89); jediné zostávajúce nespárované prvočíslo 97 preto Gitka zmaže ako prvé a ďalej pri hre bude mazať vždy prvočíslo, ktoré je v páre s predchádzajúcim zmazaným prvočíslom. Týmto postupom musí vyhrať.<br />
+<br />
+Úloha je malým opakovaním toho, ktoré čísla do 100 sú prvočísla a môžeme ju využiť pripomenutie definície prvočísla. Ako aj v nasledujúcich úlohách, môžeme študentov nechať najprv odohrať niekoľko hier a potom skúsiť ich čiastkové zistenia spoločne pretaviť do univerzálnej stratégie.<br />
+<br />
+</div></p>
+<h3 id="úloha-61-ii-4">Úloha 61-II-4</h3>
+<p><div class="problem"> Na tabuli je napísaných prvých <span class="math inline">\(n\)</span> celých kladných čísel. Marína a Tamara sa striedajú v ťahoch pri nasledujúcej hre. Najskôr Marína zotrie jedno z čísel na tabuli. Ďalej vždy hráčka, ktorá je na ťahu, zotrie jedno z čísel, ktoré sa od predchádzajúceho zotretého čísla ani nelíši o 1, ani s ním nie je súdeliteľné. Hráčka, ktorá je na ťahu a nemôže už žiadne číslo zotrieť, prehrá. Pre <span class="math inline">\(n = 6\)</span> a pre <span class="math inline">\(n = 12\)</span> rozhodnite, ktorá z hráčok môže hrať tak, že vyhrá nezávisle na ťahoch druhej hráčky. </div> <h4 class="solution-button">Riešenie</h4> <div class="solution"> Úloha dvoch po sebe zotieraných čísel je v zadanej hre symetrická: ak je po čísle <span class="math inline">\(x\)</span> možné zotrieť číslo <span class="math inline">\(y\)</span>, je (pri inom priebehu hry) po čísle <span class="math inline">\(y\)</span> možné zotrieť číslo <span class="math inline">\(x\)</span>. Preto si môžeme celú hru (so zadaným číslom <span class="math inline">\(n\)</span>) tak, že najskôr vypíšeme všetky takéto (nazývajme ich prípustné) dvojice <span class="math inline">\((x, y)\)</span>. Keďže na poradí čísel v prípustnej dvojici nezáleží, stačí vypisovať len tie dvojice <span class="math inline">\((x, y)\)</span>, v ktorých <span class="math inline">\(x &lt; y\)</span>.</p>
+<p>V prípade <span class="math inline">\(n = 6\)</span> všetky prípustné dvojice sú <span class="math display">\[(1, 3), (1, 4), (1, 5), (1, 6), (2, 5), (3, 5).\]</span> Z tohto zoznamu ľahko odhalíme, že víťaznú stratégiu má (prvá) hráčka Marína. Ak totiž zotrie na začiatku hry číslo 4, musí Tamara zotrieť číslo 1, a keď potom Marína zotrie číslo 6, nemôže už Tamara žiadne ďalšie číslo zotrieť. Okrem tohto priebehu <span class="math inline">\(4 \rightarrow 1\rightarrow 6\)</span> si môže Marína zaistiť víťazstvo aj inými, pre Tamaru ”vynútenými“ priebehmi, napríklad <span class="math inline">\(6\rightarrow 1 \rightarrow 4\)</span> alebo <span class="math inline">\(4 \rightarrow 1 \rightarrow 3 \rightarrow 5 \rightarrow 2\)</span>.</p>
+<p>V prípade <span class="math inline">\(n = 12\)</span> je všetkých prípustných dvojíc výrazne väčšie množstvo. Preto si položíme otázku, či všetky čísla od 1 do 12 možno rozdeliť na šesť prípustných dvojíc. Ak totiž nájdeme takú šesticu, môžeme opísať víťaznú stratégiu druhej hráčky (Tamary): ak zotrie Marína pri ktoromkoľvek svojom ťahu číslo <span class="math inline">\(x\)</span>, Tamara potom vždy zotrie to číslo <span class="math inline">\(y\)</span>, ktoré s číslom <span class="math inline">\(x\)</span> tvorí jednu zo šiestich nájdených dvojíc. Tak nakoniec Tamara zotrie aj posledné (dvanáste) číslo a vyhrá (prípadne hra skončí skôr tak, že Marína nebude môcť zotrieť žiadne číslo).</p>
+<p>Hľadané rozdelenie všetkých 12 čísel do šiestich dvojíc naozaj existuje, napríklad <span class="math display">\[(1, 4), (2, 9), (3, 8), (5, 12), (6, 11), (7, 10).\]</span> Iné vyhovujúce rozdelenie dostaneme, keď v predošlom dvojice (1, 4) a (6, 11) zameníme dvojicami (1, 6) a (4, 11). Ďalšie, menej podobné vyhovujúce rozdelenie je napríklad <span class="math display">\[(1, 6), (2, 5), (3, 10), (4, 9), (7, 12), (8, 11).\]</span> <em>Záver.</em> Pre <span class="math inline">\(n = 6\)</span> má víťaznú stratégiu Marína, pre <span class="math inline">\(n = 12\)</span> Tamara.<br />
+<br />
+Úloha je náročnejšia ako predchádzajúca, no študenti by mali prvú časť zvládnuť samostatne, v časti druhej môžu svoje sily spojiť so s ďalšími spolužiakmi, príp. stratégie, ktoré vymysleli, otestovať pri vzájomnej hre.<br />
+<br />
+</div></p>
+<h3 id="úloha-61-i-6-n3">Úloha 61-I-6-N3</h3>
+<p><div class="problem"> Dve hráčky majú k dispozícii pre hru, ktorú opíšeme, neobmedzený počet dvadsaťcentových mincí a stôl s kruhovou doskou s priemerom 1 m. Hra prebieha tak, že sa hráčky pravidelne striedajú v ťahoch. Najprv prvá hráčka položí jednu mincu kamkoľvek na prázdny stôl. Ďalej vždy hráčka, ktorá je na ťahu, položí na voľnú časť stola ďalšiu mincu (tak, aby nepresahovala okraj stola a aby sa skôr položených mincí nanajvýš dotýkala). Ktorá z oboch hráčok môže hrať tak, že vyhrá nezávisle od ťahov súperky? </div> <h4 class="solution-button">Riešenie</h4> <div class="solution"> Víťaznú stratégiu má prvá hráčka: prvú mincu položí doprostred stola a v každom ďalšom kroku položí mincu na miesto súmerne združené podľa stredu stola s miestom práve položenej mince.<br />
+<br />
+Úloha je zaujímavým príkladom, kde zohráva špeciálnu úlohu jeden konkrétny bod hracej plochy. Nájdenie víťaznej stratégie je po uvedomení si tejto vlastnosti už úlohou jednoduchou. Na príklade tejto hry môžeme študentov upozorniť na ďalší všeobecný princíp, ktorý pri riešení matematických problémov môže prísť vhod – hľadanie symetrií, príp. špeciálnych bodov týchto symetrií a skúmanie ich vlastností, pričom symetrie nemusíme chápať nutne iba v geometrickom kontexte.<br />
+<br />
+</div></p>
+<h2 id="domáca-práca" class="unnumbered">Domáca práca</h2>
+<h2 id="doplňujúce-zdroje-a-materiály" class="unnumbered">Doplňujúce zdroje a materiály</h2>
+<p>Výborným zdrojom všemožných matematických hier, spolu s ich kategorizáciou a možnosťou využitia v triede je [ <span class="citation" data-cites="burjan1999"></span>].</p>
         </div>
     <div class="footer">
         Semináre zostavila Alexandra Porembová. Technické spracovanie Martin Ukrop, Jan Mrázek.<br/>
