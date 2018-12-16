@@ -1,0 +1,28 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{B-65-I-3}{
+V pravouhlom trojuholníku $ABC$ s preponou $AB$ a odvesnami dĺžok $|AC| = 4$\,cm a $|BC| = 3$\,cm ležia navzájom sa dotýkajúce kružnice $k_1(S_1; r_1 )$ a $k_2(S_2; r_2)$ tak, že $k_1$ sa dotýka strán $AB$ a $AC$, zatiaľ čo $k_2$ sa dotýka strán $AB$ a $BC$. Určte najmenšiu a najväčšiu možnú hodnotu polomeru $r_2$. 
+}{
+\rieh Majme také dve kružnice, ktoré spĺňajú predpoklady úlohy \todo{fixni ma (obr. 1)}. Zrejme stred $S_1$ leží na osi uhla $BAC$ a stred $S_2$ na osi uhla $ABC$. Ďalej si uvedomme, že veľkosť
+
+\todo{DOPLNIŤ Obr. 1}
+
+polomeru $r_1$ kružnice $k_1$ je priamo úmerná dĺžke úsečky $AS_1$ a podobne veľkosť $r_2$ priamo úmerná dĺžke úsečky $BS_2$. Keď zväčšíme polomer jednej z kružníc, musí sa nutne polomer druhej kružnice zmenšiť. 
+
+Kružnica $k_2$ nemôže mať polomer väčší ako najväčšia kružnica, ktorú možno do trojuholníka $ABC$ vpísať. Takou kružnicou je zrejme kružnica $k$ do trojuholníka $ABC$ vpísaná. A naopak najmenší polomer bude mať kružnica $k_2$, ak zvolíme $k_1 = k$. (Že v oboch opísaných prípadoch pre $k_2 = k$ aj pre $k_1 = k$ existuje príslušná \uv{vpísaná} kružnica $k_1$, resp. $k_2$, je vcelku zrejmé.)
+
+Stačí teda vypočítať polomer $r$ kružnice $k$ do trojuholníka $ABC$ vpísanej a polomer kružnice $k_2$, ktorá sa dotýka kružnice $k$ a strán $AB$ a $BC$ daného trojuholníka.
+
+Polomer $r$ vpísanej kružnice vypočítame napríklad zo vzorca $2S_{ABC} = ro$, pričom $S_{ABC}$ označuje obsah trojuholníka $ABC$ a $o$ jeho obvod.\footnote{Iný postup využívajúci pravouhlosť trojuholníka $ABC$ je predmetom dopĺňajúcej úlohy.} Obsah daného pravouhlého trojuholníka $ABC$ s preponou $AB$ je pri zvyčajnom označení dĺžok strán rovný $\frac{1}{2}ab.$ Prepona v trojuholníku $ABC$ má (v centimetroch) podľa Pytagorovej vety veľkosť $c= \sqrt{a^2 + b^2}=\sqrt{3^2 + 4^2} = 5$. Maximálny polomer kružnice $k_2$ je teda 
+$$r =\frac{2S_{ABC}}{o}=\frac{ab}{a+b+c}=\frac{3\cdot4}{3+4+5}= 1.$$
+
+Pre výpočet polomeru $r_2$ kružnice $k_2$, ktorá sa dotýka kružnice $k$ a strán $AB$ a $BC$, označme $D$ a $E$ body, v ktorých sa kružnice $k$ a $k_2$ dotýkajú strany $AB$, a $F$, $G$ dotykové body kružnice k postupne so stranami $BC$ a $AC$ \todo{fixni ma (obr. 2)}. Keďže daný trojuholník je 
+
+\todo{DOPLNIŤ Obr. 2}
+
+pravouhlý, je $S_1FCG$ štvorec so stranou dĺžky $r = 1$, takže $|BF| = |BD| = 2$ a podľa Pytagorovej vety $|BS_1| =\sqrt{5}$. Z podobnosti pravouhlých trojuholníkov $BES_2$ a $BDS_1$ potom vyplýva
+$$\frac{r_2}{|BS_2|}=\frac{r}{|BS_1|}, \ \ \ \ \text{čiže} \ \ \ \ \frac{r_2}{\sqrt{5}- r_2 - 1}=\frac{1}{\sqrt{5}}.$$
+Po úprave tak pre hľadanú hodnotu neznámej $r_2$ dostaneme lineárnu rovnicu
+$$r_2(\sqrt{5} + 1) =\sqrt{5}-1,$$
+ktorú ešte zjednodušíme vynásobením $\sqrt{5}-1$. Zistíme tak, že najmenšia možná hodnota polomeru kružnice $k_2$ je rovná $$r_2 = \frac{3-\sqrt{5}}{2}.$$
+}

@@ -1,0 +1,22 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{B-66-S-2}{
+Na odvesnách $AC$ a $BC$ daného pravouhlého trojuholníka $ABC$ určte postupne body $K$ a $L$ tak, aby súčet
+$$|AK|^2+ |KL|^2+ |LB|^2$$
+nadobúdal najmenšiu možnú hodnotu a vyjadrite ju pomocou $c = |AB|$.
+}{
+\rieh V súlade s \todo{fixni ma obr. 1} označme $x = |CL|$, $y = |CK|$, potom $|BL| = a - x$, a $|AK| = b - y$, pričom $a$, $b$ sú postupne dĺžky odvesien $BC$, $AC$.
+
+\todo{DOPLNIŤ Obr. 1}
+
+Použitím Pytagorovej vety v pravouhlom trojuholníku $KLC$ dostaneme $|KL|^2= x^2 + y^2$, takže skúmaný súčet môžeme upraviť nasledujúcim spôsobom:
+\begin{align*}
+    |AK|^2+ |KL|^2+ |LB|^2 & = (b - y)^2+ x^2+ y^2+ (a - x)^2=\\
+    & = 2x^2+ 2y^2 - 2ax - 2by + a^2+ b^2=\\
+    & = 2\bigg(x-\frac{a}{2}\bigg)^2+ 2\bigg( y -\frac{b}{2}\bigg)^2+\frac{a^2 + b^2}{2}=\\
+    & = 2\bigg(x -\frac{a}{2}\bigg)^2+ 2\bigg( y -\frac{b}{2}\bigg)^2+\frac{c^2}{2}.
+\end{align*}
+Vďaka nezápornosti druhých mocnín z toho vidíme, že skúmaný výraz nadobúda svoju najmenšiu hodnotu, konkrétne $\frac{1}{2}c$, práve vtedy, keď $x =\frac{1}{2}a$ a súčasne $y=\frac{1}{2}b$, teda práve vtedy, keď body $K$, $L$ sú postupne stredmi odvesien $AC$, $BC$ daného pravouhlého trojuholníka $ABC$.
+
+\textit{Záver.} Najmenšia možná hodnota skúmaného súčtu je rovná $\frac{1}{1}c^2$. Túto hodnotu dostaneme práve vtedy, keď body $K$, $L$ budú postupne stredmi odvesien $AC$, $BC$ daného pravouhlého trojuholníka.
+}

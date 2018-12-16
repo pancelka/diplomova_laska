@@ -1,0 +1,31 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{B-60-S-1}{
+V obore reálnych čísel vyriešte rovnicu
+$$\sqrt{x + 3} +\sqrt{x} = p$$
+s neznámou $x$ a reálnym parametrom $p$.
+}{
+\rieh Aby bola ľavá strana rovnice definovaná, musia byť oba výrazy pod odmocninami nezáporné, čo je splnené práve pre všetky $x \geq 0$. Pre nezáporné $x$ potom $p =\sqrt{x + 3}+\sqrt{x} \geq \sqrt{3}$, rovnica môže teda mať riešenie iba pre $p \geq \sqrt{3}$.
+
+Upravujme danú rovnicu:
+\begin{align*}
+\sqrt{3} +\sqrt{x + 3} & = p,\\
+2x + 3 + 2\sqrt{x(x + 3)} & = p^2,\\
+2\sqrt{x(x + 3)} & = p^2- 2x - 3,\\
+4x(x + 3) & = (p^2 -2x - 3)^2,\\
+4x^2+ 12x & = p^4+ 4x^2+ 9 - 4p^2x - 6p^2+ 12x,\\
+x & = \frac{(p^2 - 3)^2}{4p^2}.\ \ \ \ (1)  
+\end{align*}
+Keďže sme danú rovnicu umocňovali na druhú, je nutné sa presvedčiť skúškou, že vypočítané $x$ je pre hodnotu parametra $p \geq \sqrt{3}$ riešením pôvodnej rovnice:
+\begin{align*}
+    \sqrt{\frac{(p^2 - 3)^2}{4p^2}+ 3} +\sqrt{\frac{(p^2 - 3)^2}{4p^2}} & = \sqrt{\frac{p^4 - 6p^2 + 9 + 12p^2}{4p^2}}+\sqrt{\frac{(p^2 - 3)^2}{4p^2}} =\\
+ & = \sqrt{\frac{(p^2 + 3)^2}{4p^2}}+\sqrt{\frac{(p^2 -3)^2}{4p^2}}=\frac{p^2 + 3}{2p}+\frac{p^2 - 3}{2p}= p.
+\end{align*}
+Pri predposlednej úprave sme využili podmienku $p \geq \sqrt{3}$ (a teda aj $p^2 -3 \geq 0$ a $p > 0$), takže $\sqrt{(p^2 - 3)^2} = p^2 - 3$ a $\sqrt{4p^2} = 2p$.
+
+\textit{Poznámka.} Namiesto skúšky stačí overiť, že pre nájdené $x$ sú všetky umocňované výrazy nezáporné, teda vlastne stačí overiť, že
+$$p^2 - 2x - 3 =\frac{(p^2 - 3)(p^2 + 3)}{2p^2}\geq 0.$$
+Pre $p \geq \sqrt{3}$ to tak naozaj je.
+
+Vynechať skúšku možno aj takouto úvahou: Funkcia $\sqrt{x + 3}+\sqrt{x}$ je zrejme rastúca, v bode 0 (ktorý je krajným bodom jej definičného oboru) nadobúda hodnotu $\sqrt{3}$ a zhora je neohraničená. Preto každú hodnotu $p \geq \sqrt{3}$ nadobúda pre práve jedno $x \geq 0$. Z toho vyplýva, že pre $p \geq \sqrt{3}$ má zadaná rovnica práve jedno riešenie, a teda (jediné) nájdené riešenie \todo{fixni (1)} musí vyhovovať.
+}

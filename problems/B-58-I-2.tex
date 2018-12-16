@@ -1,0 +1,34 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{B-58-I-2}{
+Určte všetky trojice $(x, y, z)$ reálnych čísel, pre ktoré platí
+\begin{align*}
+    x^2 + xy & = y^2 + z^2,\\
+    z^2 + zy & = y^2 + x^2 .
+\end{align*}
+}{
+\rieh Odčítaním prvej rovnice od druhej dostaneme po úprave
+$$(z - x)(2z + 2x + y) = 0.$$
+Sú preto možné dva prípady, ktoré rozoberieme samostatne.
+\begin{enumerate}[a)]
+\item Prípad $z - x = 0$. Dosadením $z = x$ do prvej rovnice sústavy dostaneme $x^2+ xy = y^2 + x^2$, čiže $y(x - y) = 0$. To znamená, že platí $y = 0$ alebo $x = y$. V prvom prípade dostávame trojice $(x, y, z) = (x, 0, x)$, v druhom $(x, y, z) = (x, x, x)$; také trojice sú riešeniami danej sústavy pre ľubovoľné reálne číslo $x$, ako ľahko overíme dosadením
+(aj keď taká skúška pri našom postupe vlastne nie je nutná).
+\item Prípad $2z + 2x + y = 0$. Dosadením $y = -2x - 2z$ do prvej rovnice sústavy dostaneme
+$$x^2 + x(-2x - 2z) = (-2x - 2z)^2 + z^2,\ \ \ \ \text{čiže} \ \ \ \  5(x + z)^2 = 0.$$
+Posledná rovnica je splnená práve vtedy, keď $z = -x$, vtedy však $y = -2x - 2z = 0$.Dostávame trojice $(x, y, z) = (x, 0, -x)$, ktoré sú riešeniami danej sústavy pre každé reálne $x$, ako overíme dosadením. (O takej skúške platí to isté čo v prípade \todo{fixni a)}.)
+\end{enumerate}
+\textit{Odpoveď.} Všetky riešenia $(x, y, z)$ danej sústavy sú trojice troch typov:
+$$(x, x, x), \ \  (x, 0, x), \ \  (x, 0, -x),$$
+kde $x$ je ľubovoľné reálne číslo.
+
+\textbf{Iné riešenie.} Obe rovnice sústavy sčítame. Po úprave dostaneme rovnicu
+$$y(x + z - 2y) = 0$$
+a opäť rozlíšime dve možnosti.
+\begin{enumerate}[a)]
+\item Prípad $y = 0$. Z prvej rovnice sústavy ihneď vidíme, že $x^2 = z^2$, čiže $z =\pm x$. Skúškou overíme, že každá z trojíc $(x, 0, x)$ a $(x, 0, -x)$ je pre ľubovoľné reálne $x$
+riešením.
+\item Prípad $x + z - 2y = 0$. Dosadením $y = \frac{1}{2}(x + z)$ do prvej rovnice sústavy dostaneme
+$$x^2 + x(x + z)^2=\frac{(x + z)^2}{4}+ z^2, \ \ \ \ \text{po úprave} \ \ \ \  x^2 = z^2.$$
+Platí teda $z = -x$ alebo $z = x$. Dosadením do rovnosti $x + z - 2y = 0$ v prvom prípade dostaneme $y = 0$, v druhom prípade $y = x$. Zodpovedajúce trojice $(x, 0, -x)$ a $(x, x, x)$ sú riešeniami pre každé reálne $x$ (prvé z nich sme však našli už v časti \todo{fixni a)}).
+\end{enumerate}
+}
