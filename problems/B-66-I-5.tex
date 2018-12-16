@@ -1,0 +1,23 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{B-66-I-5}{
+Daný je pravouhlý trojuholník $ABC$ s preponou $AB$. Označme $D$ pätu jeho výšky z vrcholu $C$ a $M$, $N$ priesečníky osí uhlov $ADC$, $BDC$ so stranami $AC$, $BC$. Dokážte, že platí
+$$2|AM|\cdot|BN| = |MN|^2.$$
+}{
+\rieh Osi $DM$ a $DN$ pravých uhlov pri vrchole $D$ spolu s výškou $CD$ rozdeľujú priamy uhol pri vrchole $D$ na štyri zhodné uhly veľkosti $45^\circ$. Zároveň vidíme, že uhol $MDN$ je pravý, takže body $C$, $M$, $D$, $N$ ležia na Tálesovej kružnici s priemerom $MN$. 
+
+Ak označíme zvyčajným spôsobom uhly pri vrcholoch $A$ a $B$ trojuholníka $ABC$, je zároveň $|\ma ACD| = 90^\circ-\alpha = \beta$ a $|\ma BCD| = 90^ \circ -\beta = \alpha$ \todo{doplniť (obr. 5)}. Z toho vyplýva podobnosť trojuholníkov $CDM \sim BDN$ a $ADM \sim CDN$, takže
+$$\frac{|MD|}{|ND|}=\frac{|CM|}{|BN|} \ \ \ \ \mathrm{a} \ \ \ \ \frac{|MD|}{|ND|}=\frac{|AM|}{|CN|}.$$
+Porovnaním pravých strán dostaneme
+$$|AM| \cdot |BN| = |CM| \cdot |CN|. \ \ \ \  (1)$$
+\todo{DOPLNIŤ Obr. 5} 
+
+Keďže obvodové uhly nad tetivami $CM$ a $CN$ sú zhodné, je $|CM| = |CN|$. Použitím Pytagorovej vety v pravouhlom (rovnoramennom) trojuholníku $CMN$ tak dostaneme
+$$2|CM|^2= |CM|^2+ |CN|^2= |MN|^2$$
+a dosadením do rovnosti \todo{fixni (1)} vyjde
+$$2|AM| \cdot |BN| = 2|CM| \cdot |CN| = 2 \cdot |CM|^2= |MN|^2.$$
+Tým je tvrdenie úlohy dokázané.
+
+\textit{Poznámka.} Ukážeme ešte jeden spôsob odvodenia kľúčovej rovnosti \todo{fixni (1)}. Pravouhlé trojuholníky $ACD$ a $CBD$ sú podobné, pretože $|\ma BCD| = 90^\circ- |\ma ACD| = |\ma CAD|$. To však znamená, že osi $DM$ a $DN$ oboch vnútorných uhlov z vrcholu $D$, ktoré si v tejto podobnosti zodpovedajú, delia protiľahlé strany v rovnakom pomere. Platí teda
+$$|AM| : |CM| = |CN| : |BN|, \ \ \ \ \mathrm{t.\ j.} \ \ \ \  |AM| \cdot |BN| = |CM| \cdot |CN|.$$
+}

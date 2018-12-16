@@ -1,0 +1,27 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{B-63-II-1}{
+V obore reálnych čísel vyriešte sústavu rovníc
+\begin{align*}
+ x^2+ 6(y + z) & = 85,\\
+ y^2+ 6(z + x) & = 85,\\
+ z^2 + 6(x + y) & = 85.   
+\end{align*}
+}{
+\rieh Odčítaním druhej rovnice od prvej a tretej od druhej dostaneme dve rovnice
+\begin{align*}
+ (x - y)(x + y - 6) & = 0,\\
+(y - z)(y + z - 6) & = 0,   
+\end{align*}
+ktoré spolu s ľubovoľnou z troch daných rovníc tvoria sústavu s danou sústavou ekvivalentnú. Pre splnenie získaných dvoch rovníc pritom máme štyri možnosti:
+
+Ak $x = y = z$, vyjde dosadením do ktorejkoľvek zo zadaných rovníc $y^2 + 12y - 85 = 0$ a odtiaľ $y = 5$ alebo $y = -17$.
+
+Ak $x = y$, $z = 6 - y$, dostaneme z prvej zadanej rovnice $y^2 + 36 = 85$, a teda $y = 7$ alebo $y = -7$.
+
+Ak $x = 6 - y$, $z = y$, dostaneme z poslednej zadanej rovnice opäť $y^2 + 36 = 85$, a teda $y = 7$ alebo $y = -7$.
+
+Ak $x = z = 6 - y$, dostaneme z druhej zadanej rovnice $y^2 + 6(12 - 2y) = 85$ čiže $y^2 - 12y - 13 = 0$ a odtiaľ $y = -1$ alebo $y = 13$.
+
+\textit{Odpoveď.} Sústava rovníc má osem riešení, a to $(5, 5, 5)$, $(-17, -17, -17)$, $(7, 7, -1)$, $(-7, -7, 13)$, $(-1, 7, 7)$, $(13, -7, -7)$, $(7, -1, 7)$, $(-7, 13, -7)$.
+}

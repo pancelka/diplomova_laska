@@ -1,0 +1,28 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{B-63-S-3}{
+Na priamke $a$, na ktorej leží strana $BC$ trojuholníka $ABC$, sú dané body dotyku všetkých troch jemu pripísaných kružníc (body $B$ a $C$ nie sú známe). Nájdite na tejto priamke bod dotyku kružnice vpísanej. 
+}{
+V danom trojuholníku $ABC$ označme $X$, $Y$, $Z$ body dotyku vpísanej kružnice s jeho stranami a $x = |AY | = |AZ|$, $y = |BX| = |BZ|$, $z = |CX| = |CY|$ zhodné úseky dotyčníc k vpísanej kružnici z jednotlivých vrcholov \todo{fixni ma (obr. 1)}. Ak označíme
+
+\todo{DOPLNiŤ Obr. 1}
+
+zvyčajným spôsobom $a$, $b$, $c$ dĺžky jednotlivých strán, platí
+$$a = y + z, \ \ \ \  b = z + x, \ \ \ \ c = x + y.$$
+Sčítaním týchto troch rovníc dostaneme (pomocou $s$ ako zvyčajne označujeme polovičný obvod trojuholníka)
+$$2s = a + b + c = 2x + 2y + 2z,$$
+takže nám vyjde
+$$x + y + z = s, \ \ \ \ x = s - a,\ \ \ \ y = s - b, \ \ \ \ z = s - c. \ \ \ \ (1)$$
+Pozrime sa teraz na pripísanú kružnicu trojuholníku $ABC$, ktorá sa dotýka jeho strany $BC$ v bode $P$ a polpriamok $AB$ a $AC$ v bodoch $R$ a $Q$ \todo{fixni ma (obr. 2)}. Zo zhodnosti úsekov príslušných dotyčníc k tejto kružnici máme
+$$|AR| = |AQ|, \ \ \ \ |BR| = |BP|, \ \ \ \|CP| = |CQ|,$$
+odkiaľ vychádza
+\begin{align*}
+    2|AR| = |AR| + |AQ| & = |AB| + |BR| + |AC| + |CQ| & =\\
+& = |AB| + |BP| + |AC| + |CP| & = a + b + c = 2s,
+\end{align*}
+čiže $|AR| = |AQ| = s$. Z tejto rovnosti ale vyplýva, že $|BP| = |BR| = s - c$, čo je podľa \todo{fixni ma (1)} zároveň dĺžka z úsečky $CX$, teda $|BP| = |CX|$. To znamená, že body $P$ a $X$ sú súmerne združené podľa stredu úsečky $BC$.
+
+\todo{DOPLNIŤ Obr. 2}
+
+Analogicky by sme odvodili rovnosti $|BK| = s$ a $|CL| = s$ pre body dotyku $K$ a $L$ kružníc pripísaných stranám $CA$ a $AB$ \todo{fixni ma(obr. 2)} trojuholníka $ABC$ s priamkou $a$. Z týchto posledných rovností však vidíme, že $|BL| = s - a = |CK|$, teda aj body $K$ a $L$ sú súmerne združené podľa stredu úsečky $BC$. Body $K$ a $L$ sú známe (z troch daných bodov na priamke sú to tie dva krajné), poznáme teda aj stred $S$ strany $BC$ (je to stred úsečky $KL$) a bod $X$ nájdeme ako obraz tretieho daného bodu $P$ v stredovej súmernosti podľa stredu úsečky $BC$.
+}
