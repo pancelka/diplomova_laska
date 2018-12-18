@@ -1,0 +1,17 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{B-57-II-1}{
+Uvažujme dve kvadratické rovnice
+$$x^2-ax-b = 0,\ \ \ \  x^2-bx-a = 0$$
+s~reálnymi parametrami $a$, $b$. Zistite, akú najmenšiu a akú najväčšiu hodnotu môže nadobudnúť súčet $a + b$, ak existuje práve jedno reálne číslo $x$, ktoré súčasne vyhovuje obom rovniciam. Určte ďalej všetky dvojice $(a, b)$ reálnych parametrov, pre ktoré tento súčet tieto hodnoty nadobúda.
+}{
+\rieh Odčítaním oboch daných rovníc dostaneme rovnosť $(b-a)x+a-b = 0$, čiže $(b-a)(x-1) = 0$. Odtiaľ vyplýva, že $b = a$ alebo $x = 1$.
+
+Ak $b = a$, majú obidve rovnice tvar $x^2-ax-a = 0$. Práve jedno riešenie existuje práve vtedy, keď diskriminant $a^2 + 4a$ je nulový. To platí pre $a = 0$ a pre $a = -4$. Pretože $b = a$, má súčet $a + b$ v~prvom prípade hodnotu $0$ a v~druhom prípade hodnotu $-8$.
+
+Ak $x = 1$, dostaneme z~daných rovníc $a + b = 1$, teda $b = 1-a$. Rovnice potom majú tvar
+$$x^2-ax + a-1 = 0 \ \ \ \ \text{a} \ \ \ \ x^2 + (a-1)x-a = 0.$$
+Prvá má korene $1$ a $a-1$, druhá má korene $1$ a $-a$. Práve jedno spoločné riešenie tak dostaneme vždy s~výnimkou prípadu, keď $a-1 = -a$, čiže $a = \frac{1}{2}$ -- vtedy sú spoločné riešenia dve.
+
+\textit{Záver.} Najmenšia hodnota súčtu $a + b$ je $-8$ a je dosiahnutá pre $a = b = -4$. Najväčšia hodnota súčtu $a + b$ je $1$; túto hodnotu má súčet $a + b$ pre všetky dvojice $(a, 1-a)$, kde $a\neq \frac{1}{2}$ je ľubovoľné reálne číslo.
+}
