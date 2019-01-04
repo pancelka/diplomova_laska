@@ -3,21 +3,28 @@
 \problem{57-II-1}{
 Trojuholník $ABC$ spĺňa pri zvyčajnom označení dĺžok strán podmienku $a \leq b \leq c$. Vpísaná kružnica sa dotýka strán $AB$, $BC$ a $AC$ postupne v~bodoch $K$, $L$ a $M$. Dokážte, že z~úsečiek $AK$, $BL$ a $CM$ možno zostrojiť trojuholník práve vtedy, keď platí $b + c < 3a$.
 }{
-\rieh Označme $x = |AK| = |AM|$, $y = |BL| = |BK|$, $z = |CM| = |CL|$ (obr. 1) zhodné úseky dotyčníc z~jednotlivých vrcholov trojuholníka ku vpísanej kružnici.
-\begin{center}
-\includegraphics{images/57K1\imagesuffix}\\
-
-Obr. 1
-\end{center}
+\rieh Označme $x = |AK| = |AM|$, $y = |BL| = |BK|$, $z = |CM| = |CL|$ (\ref{fig:57II1}) zhodné úseky dotyčníc z~jednotlivých vrcholov trojuholníka ku vpísanej kružnici.
+\begin{figure}[h]
+    \centering
+    \includegraphics{images/57K1\imagesuffix}
+    \caption{}
+    \label{fig:57II1}
+\end{figure}
 Zrejme
-$$a= y + z, \ \ \ \ b = z~+ x, \ \ \ \ c = x + y. \ \ \ \ (1)$$
+\begin{equation} \label{eq:57II1_1}
+    a= y + z, \ \ \ \ b = z~+ x, \ \ \ \ c = x + y.
+\end{equation}
 Z~uvedených rovností vidíme, že daná podmienka
-$$b + c < 3a \ \ \ \ (2)$$
+\begin{equation} \label{eq:57II1_2}
+    b + c < 3a
+\end{equation}
 je ekvivalentná nerovnosti
-$$x < y + z, \ \ \ \ (3)$$
+\begin{equation} \label{eq:57II1_3}
+    x < y + z,
+\end{equation}
 čo je nutná podmienka existencie trojuholníka so stranami dĺžok $x$, $y$ a $z$.
 
-Dosadením z~(1) do podmienok $b \leq c$ a $a \leq b$ zistíme, že $z \leq y$ a $y \leq x$. To znamená, že ďalšie dve trojuholníkové nerovnosti $y < z~+ x$ a $z < x + y$ sú automaticky splnené, takže nerovnosť (3), a tým aj (2) je podmienkou postačujúcou. Tým je tvrdenie úlohy dokázané.\\
+Dosadením z~\ref{eq:57II1_1} do podmienok $b \leq c$ a $a \leq b$ zistíme, že $z \leq y$ a $y \leq x$. To znamená, že ďalšie dve trojuholníkové nerovnosti $y < z~+ x$ a $z < x + y$ sú automaticky splnené, takže nerovnosť~\ref{eq:57II1_3}, a tým aj~\ref{eq:57II1_2} je podmienkou postačujúcou. Tým je tvrdenie úlohy dokázané.\\
 \\
 \kom Úloha využíva poznatok, že spojnice vrcholov a bodov dotyku so stredom vpísanej kružnice rozdelia trojuholník na tri dvojice zhodných trojuholníkov. Ten využijeme v~nasledujúcej úlohe aj domácej práci. Okrem toho, aj keď úloha nie je na výpočet nijako extrémne náročná, je študentov potrebné upozorniť, že dokazujú ekvivalenciu, takže nerovnosť zo zadania musí byť nielen podmienkou nutnou, ale aj postačujúcou.\\
 \\

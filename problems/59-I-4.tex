@@ -1,22 +1,25 @@
 % Do not delete this line (pandoc magic!)
 
 \problem{59-I-4}{
-Kružnica $k(S; r)$ sa dotýka priamky $AB$ v~bode $A$. Kružnica $l(T; s)$ sa dotýka priamky $AB$ v~bode $B$ a pretína kružnicu k~v~krajných bodoch $C$, $D$ jej priemeru. Vyjadrite dĺžku a úsečky $AB$ pomocou polomerov $r$, $s$. Dokážte ďalej, že priesečník $M$ priamok $CD$, $AB$ je stredom úsečky $AB$.
+Kružnica $k(S; r)$ sa dotýka priamky $AB$ v~bode $A$. Kružnica $l(T; s)$ sa dotýka priamky $AB$ v~bode $B$ a pretína kružnicu $k$~v~krajných bodoch $C$, $D$ jej priemeru. Vyjadrite dĺžku a úsečky $AB$ pomocou polomerov $r$, $s$. Dokážte ďalej, že priesečník $M$ priamok $CD$, $AB$ je stredom úsečky $AB$.
 }{
-\rieh Keďže kružnica $l$ má ako tetivu priemer $CD$ kružnice $k$ a dané kružnice nie sú totožné, platí pre ich polomery nerovnosť $s > r$. Ak označíme $P$ pätu kolmice z~bodu $S$ na úsečku $BT$ (obr. 5), tak z~Pytagorovej vety pre pravouhlé trojuholníky
-\begin{center}
-\includegraphics{images/59D4\imagesuffix}\\
-
-Obr. 5
-\end{center}
+\rieh Keďže kružnica $l$ má ako tetivu priemer $CD$ kružnice $k$ a dané kružnice nie sú totožné, platí pre ich polomery nerovnosť $s > r$. Ak označíme $P$ pätu kolmice z~bodu $S$ na úsečku $BT$ (\ref{fig:59I4}), tak z~Pytagorovej vety pre pravouhlé trojuholníky
+\begin{figure}[h]
+    \centering
+    \includegraphics{images/59D4\imagesuffix}
+    \caption{}
+    \label{fig:59I4}
+\end{figure}
 $CST$ a $SPT$ vyplýva
-$$|ST|^2 = s^2 - r^2\ \ \ \ \text{a} \ \ \ \  |ST|^2 = |SP|^2 + (s~-r)^2. \ \ \ \  (1)$$
+\begin{equation} \label{eq:59I4}
+    |ST|^2 = s^2 - r^2\ \ \ \ \text{a} \ \ \ \  |ST|^2 = |SP|^2 + (s~-r)^2.
+\end{equation}
 Odtiaľ pre veľkosť úsečky $SP$ vychádza
 $$|SP|^2 = (s^2 - r^2 ) - (s~- r)^2 = 2r(s - r).$$
 A~keďže $ABPS$ je pravouholník, dostávame
 $$|AB| = |SP| =\sqrt{2r(s - r)}.$$
 
-Z~pravouhlých trojuholníkov $AMS$ a $MTS$ ďalej podľa prvej rovnosti v~(1) vyplýva
+Z~pravouhlých trojuholníkov $AMS$ a $MTS$ ďalej podľa prvej rovnosti v~\ref{eq:59I4} vyplýva
 $$|AM|^2 = |SM|^2 - r^2 = |MT|^2- |ST|^2 - r^2 = |MT|^2 -s^2,$$
 pritom z~pravouhlého trojuholníka $MBT$ máme
 $$|BM|^2 = |MT|^2 - s^2.$$

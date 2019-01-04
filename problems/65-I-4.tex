@@ -8,26 +8,32 @@ a) Ukážte, že pomer obsahov trojuholníkov $ABC$ a $ABD$ je pre $p = 2 : 3$ r
 b) Zdôvodnite, prečo pomer obsahov trojuholníkov $ABC$ a $ABD$ má hodnotu aspoň 4.
 }{
 \rieh Pre spoločnú hodnotu $p$ oboch pomerov zo zadania platí
-$$|ED| = p|DF| \ \ \ \ \text{a zároveň} \ \ \ \ |BE| = p|EA|.  \ \ \ \ (1)$$
+\begin{equation} \label{eq:65I4_1}
+    |ED| = p|DF| \ \ \ \ \text{a zároveň} \ \ \ \ |BE| = p|EA|.
+\end{equation}
 Pred vlastným riešením oboch úloh a) a b) vyjadríme pomocou daného čísla $p$ skúmaný pomer obsahov trojuholníkov $ABC$ a $ABD$. Ten je rovný -- keďže trojuholníky majú spoločnú stranu AB -- pomeru dĺžok ich výšok $CC_0$ a $DD_0$ \todo{(obr.9)}, ktorý je rovnaký ako
 \\
 \todo{DOPLNIŤ Obr.\,9}
 \\
-pomer dĺžok úsečiek $BC$ a $ED$, a to na základe podobnosti pravouhlých trojuholníkov $BCC_0$ a $EDD_0$ podľa vety $uu$ (uplatnenej vďaka $BC \parallel ED$).\footnote{V prípade pravých uhlov $ABC$ a $AED$ to platí triviálne, lebo vtedy $B = C_0$ a $E = D0$.} Platí teda rovnosť
-$$\frac{S_{ABC}}{S_{ABD}} =\frac{|BC|}{|ED|}.\ \ \ \  (2)$$
-Vráťme sa teraz k~rovnostiam (1), podľa ktorých
+pomer dĺžok úsečiek $BC$ a $ED$, a to na základe podobnosti pravouhlých trojuholníkov $BCC_0$ a $EDD_0$ podľa vety $uu$ (uplatnenej vďaka $BC \parallel ED$).\footnote{V prípade pravých uhlov $ABC$ a $AED$ to platí triviálne, lebo vtedy $B = C_0$ a $E = D_0$.} Platí teda rovnosť
+\begin{equation} \label{eq:65I4_2}
+    \frac{S_{ABC}}{S_{ABD}} =\frac{|BC|}{|ED|}.
+\end{equation}
+Vráťme sa teraz k~rovnostiam \ref{eq:65I4_1}, podľa ktorých
 $$|EF| = (1 + p)|DF| \ \ \ \ \text{a} \ \ \ \ |AB| = (1 + p)|EA|,$$
 a všimnime si, že trojuholníky $ABC$ a $AEF$ majú spoločný uhol pri vrchole $A$ a zhodné uhly pri vrcholoch $C$ a $F$ (pretože $BC \parallel EF$), takže sú podľa vety $uu$ podobné. Preto
 pre dĺžky ich strán platí
 $$\frac{|AB|}{|AE|}=\frac{|BC|}{|EF|},\ \ \ \ \text{čiže} \ \ \ \  1 + p =\frac{|BC|}{(1 + p)|DF|}, \ \ \ \ \text{odkiaľ} \ \ \ \ |BC| = (1 + p)^2 |DF|.$$
-Keď vydelíme posledný vzťah hodnotou $|ED|$, ktorá je rovná $p|DF|$ podľa (1), získame podiel z~pravej strany (2) a tým aj hľadané vyjadrenie
-$$\frac{S_{ABC}}{S_{ABD}}=\frac{(1 + p)^2}{p}. \ \ \ \  (3)$$
+Keď vydelíme posledný vzťah hodnotou $|ED|$, ktorá je rovná $p|DF|$ podľa~\ref{eq:65I4_1}, získame podiel z~pravej strany~\ref{eq:65I4_2} a tým aj hľadané vyjadrenie
+\begin{equation} \label{eq:65I4_3}
+    \frac{S_{ABC}}{S_{ABD}}=\frac{(1 + p)^2}{p}.    
+\end{equation}
 
-a) Algebraickou úpravou zlomku zo vzťahu (3)
+a) Algebraickou úpravou zlomku zo vzťahu~\ref{eq:65I4_3}
 $$ \frac{(1 + p)^2}{p}=\frac{1 + 2p + p^2}{p}= 2 + p + \frac{1}{p}$$
 zisťujeme, že hodnota pomeru $S_{ABC} : S_{ABD}$ je pre akékoľvek dve navzájom prevrátené hodnoty $p$ a $1/p$ rovnaká, teda nielen pre hodnoty $2/3$ a $3/2$, ako sme mali ukázať.
 
-b) Podľa vzťahu (3) je našou úlohou overiť pre každé $p > 0$ nerovnosť
+b) Podľa vzťahu~\ref{eq:65I4_3} je našou úlohou overiť pre každé $p > 0$ nerovnosť
 $$\frac{(1 + p)^2}{p}\geq4,\ \ \ \ \text{čiže} \ \ \ \  (1 + p)^2\geq 4p.$$
 To je však zrejme ekvivalentné s~nerovnosťou $(1 -p)^2\geq 0$, ktorá skutočne platí, nech je základ druhej mocniny akýkoľvek (rovnosť nastane jedine pre $p = 1$).
 

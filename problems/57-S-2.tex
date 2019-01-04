@@ -3,20 +3,32 @@
 \problem{57-S-2}{
 V~danom rovnobežníku $ABCD$ je bod $E$ stred strany $BC$ a bod $F$ leží vnútri strany $AB$. Obsah trojuholníka $AFD$ je $15$\,cm$^2$ a obsah trojuholníka $FBE$ je $14$\,cm$^2$. Určte obsah štvoruholníka $FECD$.
 }{
-\rieh Označme $v$ vzdialenosť bodu $C$ od priamky $AB$, $a = |AB|$ a $x = |AF|$. Pre obsahy trojuholníkov $AFD$ a $FBE$ (obr. 1) platí $\frac{1}{2}x\cdot v~= 15$, $\frac{1}{2}(a - x) \cdot \frac{1}{2}v = 14$. Odtiaľ $xv = 30$, $av - xv = 56$. Sčítaním oboch rovností nájdeme obsah rovnobežníka $ABCD$: $S_{ABCD} = av = 86$\,cm$^2$. Obsah štvoruholníka $FECD$ je teda $S_{FECD} = S_{ABCD}- (S_{AFD} + S_ {FBE}) = 57$\,cm$^2.$
-\begin{center}
-\includegraphics{images/57S21\imagesuffix} \includegraphics{images/57S22\imagesuffix}\\
-
-Obr. 1  \ \ \ \ \ \hspace{130pt} Obr. 2
-\end{center}
-\textbf{Iné riešenie*.} Trojuholníky $BEF$ a $ECF$ majú spoločnú výšku z~vrcholu $F$ a zhodné základne $BE$ a $EC$. Preto sú obsahy oboch trojuholníkov rovnaké. Z~obr. 2 vidíme, že obsah trojuholníka $CDF$ je polovicou obsahu rovnobežníka $ABCD$ (oba útvary majú spoločnú základňu $CD$ a rovnakú výšku). Druhú polovicu tvorí súčet obsahov trojuholníkov $AFD$ a $BCF$. Odtiaľ $S_{FECD} = S_{ECF} + S_{CDF} = S_{ECF} + (S_{AFD} + S_{BCF}) = S_{AFD} + 3 S_{FBE} = 57$\,cm$^2$.\\
+\rieh Označme $v$ vzdialenosť bodu $C$ od priamky $AB$, $a = |AB|$ a $x = |AF|$. Pre obsahy trojuholníkov $AFD$ a $FBE$ (\ref{fig:57S2_1}) platí $\frac{1}{2}x\cdot v~= 15$, $\frac{1}{2}(a - x) \cdot \frac{1}{2}v = 14$. Odtiaľ $xv = 30$, $av - xv = 56$. Sčítaním oboch rovností nájdeme obsah rovnobežníka $ABCD$: $S_{ABCD} = av = 86$\,cm$^2$. Obsah štvoruholníka $FECD$ je teda $S_{FECD} = S_{ABCD}- (S_{AFD} + S_ {FBE}) = 57$\,cm$^2.$
+\begin{figure}[h]
+    \centering
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{images/57S21\imagesuffix}
+        \caption{}
+        \label{fig:57S2_1}
+    \end{minipage}\hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{images/57S22\imagesuffix}
+        \caption{}
+        \label{fig:57S2_2}
+    \end{minipage}
+\end{figure}
 \\
-\textbf{Iné riešenie*.} Do rovnobežníka dokreslíme úsečky $FG$ a $EH$ rovnobežné so stranami $BC$ a $AB$ tak, ako znázorňuje obr. 3.
-\begin{center}
-\includegraphics{images/57S23\imagesuffix}\\
-
-Obr. 3
-\end{center}
+\textbf{Iné riešenie*.} Trojuholníky $BEF$ a $ECF$ majú spoločnú výšku z~vrcholu $F$ a zhodné základne $BE$ a $EC$. Preto sú obsahy oboch trojuholníkov rovnaké. Z~\ref{fig:57S2_2} vidíme, že obsah trojuholníka $CDF$ je polovicou obsahu rovnobežníka $ABCD$ (oba útvary majú spoločnú základňu $CD$ a rovnakú výšku). Druhú polovicu tvorí súčet obsahov trojuholníkov $AFD$ a $BCF$. Odtiaľ $S_{FECD} = S_{ECF} + S_{CDF} = S_{ECF} + (S_{AFD} + S_{BCF}) = S_{AFD} + 3 S_{FBE} = 57$\,cm$^2$.\\
+\\
+\textbf{Iné riešenie*.} Do rovnobežníka dokreslíme úsečky $FG$ a $EH$ rovnobežné so stranami $BC$ a $AB$ tak, ako znázorňuje~\ref{fig:58S2_3}.
+\begin{figure}[h]
+    \centering
+    \includegraphics{images/57S23\imagesuffix}
+    \caption{}
+    \label{fig:58S2_3}
+\end{figure}
 Rovnobežníky $AFGD$ a $FBEH$ sú svojimi uhlopriečkami $DF$ a $EF$ rozdelené na dvojice zhodných trojuholníkov. Takže $S_{GDF} = S_{AFD} = 15$\,cm$^2$ a $S_{HFE} = S_{BEF} = 14$\,cm$^2$. Zo zhodnosti rovnobežníkov $HECG$ a $FBEH$ navyše ľahko usúdime, že všetky štyri trojuholníky $FBE$, $EHF$, $HEC$ a $CGH$ sú zhodné, takže obsah štvoruholníka $FECD$ je $S_{AFD} + 3S_{FBE} = 57$\,cm$^2$.\\
 \\
 \kom Úloha je zaradená ako rozcvička pred komplexnejšími problémami, nie je totiž veľmi náročná na vyriešenie. Pekne tiež demonštruje, že niekedy nám vhodný prístup, náčrtok alebo správne nakreslená priamka v~obrázku riešenie úlohy významne zjednoduší.\\

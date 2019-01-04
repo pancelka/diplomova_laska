@@ -9,12 +9,14 @@ V obore reálnych čísel vyriešte sústavu
 \end{align*}
 }{
 \rieh Umocnením a odčítaním prvých dvoch rovností dostaneme $x^2 - z^2= (z + 1)^2 - (x + 1)^2$, čo upravíme na $2(x^2 - z^2 ) + 2(x - z) = 0$, čiže
-$$(x - z)(x + z + 1) = 0. \ \ \ \ (1)$$
-Analogicky by sme dostali ďalšie dve rovnice, ktoré vzniknú z \todo{(1)} cyklickou zámenou neznámych $x \rightarrow y \rightarrow z$. Vzhľadom na túto symetriu (daná sústava sa nezmení dokonca pri ľubovoľnej permutácii neznámych) stačí rozobrať len nasledovné dve možnosti:
+\begin{equation} \label{eq:B60I1}
+    (x - z)(x + z + 1) = 0.
+\end{equation}
+Analogicky by sme dostali ďalšie dve rovnice, ktoré vzniknú z \ref{eq:B60I1} cyklickou zámenou neznámych $x \rightarrow y \rightarrow z$. Vzhľadom na túto symetriu (daná sústava sa nezmení dokonca pri ľubovoľnej permutácii neznámych) stačí rozobrať len nasledovné dve možnosti:
 
 Ak $x = y = z$, prejde pôvodná sústava na jedinú rovnicu $\sqrt{2x^2} = x + 1$, ktorá má dve riešenia $x_{1,2} = 1 \pm \sqrt{2}$. Každá z trojíc $(1 \pm \sqrt{2}, 1 \pm \sqrt{2}, 1 \pm{2})$ je zrejme riešením pôvodnej sústavy.
 
-Ak sú niektoré dve z čísel $x, y, z$ rôzne, napríklad $x \neq z$, vyplýva z \todo{(1)} rovnosť $x+z = - 1$. Dosadením $x+1 = - z$ do druhej rovnice sústavy dostávame $y = 0$ a potom z tretej rovnice máme $x^2 + (x + 1)^2 = 1$, čiže $x(x + 1) = 0$. Posledná rovnica má dve riešenia $x = 0$ a $x = - 1$, ktorým zodpovedajú $z = - 1$ a $z = 0$. Ľahko overíme, že obe nájdené trojice $(0, 0, - 1)$ a $(- 1, 0, 0)$ sú riešeniami danej sústavy, rovnako aj trojica $(0, - 1, 0)$, ktorú dostaneme ich permutáciou.
+Ak sú niektoré dve z čísel $x, y, z$ rôzne, napríklad $x \neq z$, vyplýva z \ref{eq:B60I1} rovnosť $x+z = - 1$. Dosadením $x+1 = - z$ do druhej rovnice sústavy dostávame $y = 0$ a potom z tretej rovnice máme $x^2 + (x + 1)^2 = 1$, čiže $x(x + 1) = 0$. Posledná rovnica má dve riešenia $x = 0$ a $x = - 1$, ktorým zodpovedajú $z = - 1$ a $z = 0$. Ľahko overíme, že obe nájdené trojice $(0, 0, - 1)$ a $(- 1, 0, 0)$ sú riešeniami danej sústavy, rovnako aj trojica $(0, - 1, 0)$, ktorú dostaneme ich permutáciou.
 
 Daná sústava má päť riešení:
 $(0, 0, - 1), (0, - 1, 0), ( - 1, 0, 0), (1 +\sqrt{2}, 1 +\sqrt{2}, 1 +\sqrt{2})$ a $(1 -\sqrt{2}, 1 -\sqrt{2}, 1 -\sqrt{2})$.

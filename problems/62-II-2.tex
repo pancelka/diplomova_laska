@@ -3,15 +3,16 @@
 \problem{62-II-2}{
 Vnútri rovnobežníka $ABCD$ je daný bod $K$ a v~páse medzi rovnobežkami $BC$ a $AD$ v~polrovine opačnej k~$CDA$ je daný bod $L$. Obsahy trojuholníkov $ABK, BCK, DAK$ a $DCL$ sú $S_{ABK} = 18$\,cm$^2$, $S_{BCK} = 8$\,cm$^2$, $S_{DAK} = 16$\,cm$^2$, $S_{DCL} = 36$\,cm$^2$. Vypočítajte obsahy trojuholníkov $CDK$ a $ABL$.
 }{
-\rieh Trojuholníky $ABK$ a $CDK$ majú zhodné strany $AB$ a $CD$ a súčet ich výšok $v_1$ a $v_2$ (vzdialeností bodu $K$ od priamky $AB$, resp. $CD$) je rovný výške v~rovnobežníka $ABCD$ (vzdialenosti rovnobežných priamok $AB$ a $CD$, obr. 4). Preto súčet ich obsahov dáva polovicu súčtu obsahu daného rovnobežníka:
+\rieh Trojuholníky $ABK$ a $CDK$ majú zhodné strany $AB$ a $CD$ a súčet ich výšok $v_1$ a $v_2$ (vzdialeností bodu $K$ od priamky $AB$, resp. $CD$) je rovný výške v~rovnobežníka $ABCD$ (vzdialenosti rovnobežných priamok $AB$ a $CD$, \ref{fig:62II2}). Preto súčet ich obsahov dáva polovicu súčtu obsahu daného rovnobežníka:
 $$S_{ABK} + S_{CDK} = \frac{1}{2} |AB|v_1 +\frac{1}{2} |CD|v_2 = \frac{1}{2}|AB| \cdot (v_1 + v_2 ) =\frac{1}{2}|AB| \cdot v~=\frac{1}{2} S_{ABCD}.$$
 Podobne aj $S_{BCK} + S_{DAK} =\frac{1}{2} S_{ABCD}$, teda
 $$S_{CDK} = S_{BCK} + S_{DAK} - S_{ABK}= 6\,\text{cm}^2.$$
-\begin{center}
-\includegraphics{images/62K2\imagesuffix}
-
-Obr. 4
-\end{center}
+\begin{figure}[h]
+    \centering
+    \includegraphics{images/62K2\imagesuffix}
+    \caption{}
+    \label{fig:62II2}
+\end{figure}
 Trojuholníky $ABL$ a $DCL$ majú zhodné strany $AB$ a $CD$. Ak $v_3$ označuje príslušnú výšku druhého z~nich, je výška prvého z~nich rovná $v + v_3$, takže pre rozdiel obsahov týchto trojuholníkov platí
 \begin{align*}
 S_{ABL} - S_{DCL} &= \frac{1}{2} |AB| \cdot (v~+ v_3 ) - \frac{1}{2}|CD|\cdot v_3 =\frac{1}{2} |AB| \cdot (v~+ v_3 - v_3 ) =\\

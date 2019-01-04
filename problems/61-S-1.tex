@@ -5,16 +5,18 @@ Nájdite všetky dvojice prirodzených čísel $a, b$, pre ktoré platí rovnos�
 $$\{a \cdot [a, b], b \cdot (a, b)\} = \{45, 180\}.$$
 }{
 \rieh Z~danej rovnosti vyplýva, že číslo $b$ je nepárne (inak by obe čísla naľavo boli párne), a teda číslo $a$ je párne (inak by obe čísla naľavo boli nepárne). Rovnosť množín preto musí byť splnená nasledovne:
-$$a \cdot [a, b] = 180 \ \ \ \text{a} \ \ \  b \cdot (a, b) = 45. \ \ \ (1)$$
+\begin{equation} \label{eq:61S1}
+    a \cdot [a, b] = 180 \\  \ \ \text{a} \ \ \ \  b \cdot (a, b) = 45.
+\end{equation}
 Keďže číslo $a$ delí číslo $[a, b]$, je číslo $180 = 2^2 \cdot3^2 \cdot 5$ deliteľné druhou mocninou (párneho) čísla $a$, takže musí platiť buď $a = 2$, alebo $a = 6$.
 
 V~prípade $a = 2$ (vzhľadom na to, že $b$ je nepárne) platí
 $$a \cdot [a, b] = 2 \cdot [2, b] = 2 \cdot 2b = 4b,$$
-čo znamená, že prvá rovnosť v~(1) je splnená jedine pre $b = 45$. Vtedy $b \cdot (a, b) = 45 \cdot (2, 45) = 45$, takže je splnená aj druhá rovnosť v~(1), a preto dvojica $a = 2, b = 45$ je riešením úlohy.
+čo znamená, že prvá rovnosť v~\ref{eq:61S1} je splnená jedine pre $b = 45$. Vtedy $b \cdot (a, b) = 45 \cdot (2, 45) = 45$, takže je splnená aj druhá rovnosť v~\ref{eq:61S1}, a preto dvojica $a = 2, b = 45$ je riešením úlohy.
 
 V~prípade $a = 6$ podobne dostaneme
 $$a \cdot [a, b] = 6 \cdot [6, b] = 6 \cdot 2 \cdot [3, b] = 12 \cdot [3, b],$$
-čo znamená, že prvá rovnosť v~(1) je splnená práve vtedy, keď $[3, b] = 15$. Tomu vyhovujú jedine hodnoty $b = 5$ a $b = 15$. Z~nich však iba hodnota $b = 15$ spĺňa druhú rovnosť v~(1), ktorá je teraz v~tvare $b\cdot(6, b) = 45$. Druhým riešením úlohy je teda dvojica $a = 6$, $b = 15$, žiadne ďalšie riešenia neexistujú.\\
+čo znamená, že prvá rovnosť v~\ref{eq:61S1} je splnená práve vtedy, keď $[3, b] = 15$. Tomu vyhovujú jedine hodnoty $b = 5$ a $b = 15$. Z~nich však iba hodnota $b = 15$ spĺňa druhú rovnosť v~\ref{eq:61S1}, ktorá je teraz v~tvare $b\cdot(6, b) = 45$. Druhým riešením úlohy je teda dvojica $a = 6$, $b = 15$, žiadne ďalšie riešenia neexistujú.\\
 \textit{Záver}. Hľadané dvojice sú dve, a to $a = 2, b = 45$ a $a = 6, b = 15$.\\
 \\
 \textbf{Iné riešenie*.} Označme $d = (a, b)$. Potom $a = ud$ a $b = vd$, pričom $u, v$ sú nesúdeliteľné prirodzené čísla, takže $[a, b] = uvd$. Z~rovností

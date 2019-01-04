@@ -3,19 +3,30 @@
 \problem{58-I-2}{
 Pravouhlému trojuholníku $ABC$ s~preponou $AB$ je opísaná kružnica. Päty kolmíc z~bodov $A$, $B$ na dotyčnicu k~tejto kružnici v~bode $C$ označme $D$, $E$. Vyjadrite dĺžku úsečky $DE$ pomocou dĺžok odvesien trojuholníka $ABC$.
 }{
-\rieh Označme odvesny trojuholníka $ABC$ zvyčajným spôsobom $a$, $b$ a protiľahlé uhly $\alpha$, $\beta$. Stred prepony $AB$ (ktorý je súčasne stredom opísanej kružnice) označíme $O$ (obr. 9).
+\rieh Označme odvesny trojuholníka $ABC$ zvyčajným spôsobom $a$, $b$ a protiľahlé uhly $\alpha$, $\beta$. Stred prepony $AB$ (ktorý je súčasne stredom opísanej kružnice) označíme $O$ (\ref{fig:58I2_1}).
 
 Výška $v = CP$ rozdeľuje trojuholník $ABC$ na trojuholníky $ACP$ a $CBP$ podobné trojuholníku $ABC$ podľa vety $uu$ ($\alpha + \beta = 90^\circ$), úsečka $OC$ je kolmá na $DE$ a navyše $|OC| = |OA| = r$ (polomer opísanej kružnice). Odtiaľ $|\ma OCA| = |\ma OAC| = \alpha$ a $|\ma DCA| = 90^\circ - |\ma OCA| = \beta$.
 
 Pravouhlé trojuholníky $ACP$ a $ACD$ so spoločnou preponou $AC$ sa teda zhodujú aj v~uhloch pri vrchole $C$. Sú preto zhodné, dokonca súmerne združené podľa priamky $AC$. Analogicky sú trojuholníky $CBP$ a $CBE$ súmerne združené podľa $BC$. Takže $|CD|= |CE| = v$, čiže $|DE| = 2v = 2ab/\sqrt{a^2 + b^2}$, lebo z~dvojakého vyjadrenia dvojnásobku obsahu trojuholníka $ABC$ vyplýva $v = ab/|AB|$, pričom $|AB| =\sqrt{a^2 + b^2}$.
 
 \textit{Poznámka.} Namiesto dvojakého vyjadrenia obsahu môžeme na výpočet výšky $CP$ využiť podobnosť trojuholníkov $CBP$ a $ABC$: $\sin \alpha = |CP|/|AC| = |BC|/|AB|$.
-\begin{center}
-\includegraphics{images/58D21\imagesuffix} \includegraphics{images/58D22\imagesuffix}\\
+\begin{figure}[h]
+    \centering
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{images/58D21\imagesuffix}
+        \caption{}
+        \label{fig:58I2_1}
+    \end{minipage}\hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{images/58D22\imagesuffix}
+        \caption{}
+        \label{fig:58I2_2}
+    \end{minipage}
+\end{figure}
 
-Obr. 9 \ \ \  \ \ \ \ \ \ \hspace{80pt} \ \ \ \ Obr. 10
-\end{center}
-\textbf{Iné riešenie*.} Úsečka $OC$ je strednou priečkou lichobežníka $DABE$, lebo je rovnobežná so základňami a prechádza stredom $O$ ramena $AB$. Preto $D$ je obrazom bodu $E$ v~súmernosti podľa stredu $C$. Obraz $F$ bodu $B$ v~tej istej súmernosti leží na polpriamke $AD$ za bodom $D$ (obr. 10). Máme $|CF| = |BC| = a$, uhol $ACF$ je pravý, a teda trojuholníky $AFC$ a $ABC$ sú zhodné. Vidíme, že $CD$ je výška v~trojuholníku $AFC$ zhodná s~výškou $v_c$ trojuholníka $ABC$, a $DE$ je jej dvojnásobkom. Veľkosť výšky $v_c$ dopočítame rovnako ako v~predchádzajúcom riešení.
+\textbf{Iné riešenie*.} Úsečka $OC$ je strednou priečkou lichobežníka $DABE$, lebo je rovnobežná so základňami a prechádza stredom $O$ ramena $AB$. Preto $D$ je obrazom bodu $E$ v~súmernosti podľa stredu $C$. Obraz $F$ bodu $B$ v~tej istej súmernosti leží na polpriamke $AD$ za bodom $D$ (\ref{fig:58I2_2}). Máme $|CF| = |BC| = a$, uhol $ACF$ je pravý, a teda trojuholníky $AFC$ a $ABC$ sú zhodné. Vidíme, že $CD$ je výška v~trojuholníku $AFC$ zhodná s~výškou $v_c$ trojuholníka $ABC$, a $DE$ je jej dvojnásobkom. Veľkosť výšky $v_c$ dopočítame rovnako ako v~predchádzajúcom riešení.
 
 \textit{Záver.} $|DE| = 2ab/\sqrt{a^2 + b^2}$.\\
 \\

@@ -3,12 +3,13 @@
 \problem{66-I-3}{
 Päta výšky z~vrcholu $C$ v~trojuholníku $ABC$ delí stranu $AB$ v~pomere $1 : 2$. Dokážte, že pri zvyčajnom označení dĺžok strán trojuholníka $ABC$ platí nerovnosť $$3|a - b| < c.$$
 }{
-\rieh Päta $D$ uvažovanej výšky je podľa zadania tým vnútorným bodom strany $AB$, pre ktorý platí $|AD| = 2|BD|$ alebo $|BD| = 2|AD|$. Obe možnosti sú znázornené na obr.\,2 s~popisom dĺžok strán $AC$, $BC$ a oboch úsekov rozdelenej strany $AB$.
-\begin{center}
-\includegraphics{images/66D31\imagesuffix}\\
-
-Obr. 2
-\end{center}
+\rieh Päta $D$ uvažovanej výšky je podľa zadania tým vnútorným bodom strany $AB$, pre ktorý platí $|AD| = 2|BD|$ alebo $|BD| = 2|AD|$. Obe možnosti sú znázornené na \ref{fig:66I3_1} s~popisom dĺžok strán $AC$, $BC$ a oboch úsekov rozdelenej strany $AB$.
+\begin{figure}[h]
+    \centering
+    \includegraphics{images/66D31\imagesuffix}
+    \caption{}
+    \label{fig:66I3_1}
+\end{figure}
 Pytagorova veta pre pravouhlé trojuholníky $ACD$ a $BCD$ vedie k~dvojakému vyjadreniu druhej mocniny spoločnej odvesny $CD$, pričom v~situácii naľavo dostaneme
 $$|CD|^2= b^2- \bigg(\frac{2}{3}c\bigg)^2= a^2 - \bigg(\frac{1}{3}c\bigg)^2,$$
 odkiaľ po jednoduchej úprave poslednej rovnosti dostaneme vzťah
@@ -26,19 +27,20 @@ absolútnej hodnoty ako dvojicu nerovností
 $$-\frac{1}{3}c < a - b < \frac{1}{3}c.$$
 Opäť ako v~pôvodnom riešení rozlíšime dve možnosti pre polohu päty $D$ uvažovanej výšky a ukážeme, že vypísanú dvojicu nerovností možno upresniť na tvar
 $$-\frac{1}{3} < a - b < 0,\ \ \ \ \text{respektíve} \ \ \ \  0 < a - b <\frac{1}{3}c,$$
-podľa toho, či nastáva situácia z~ľavej či pravej časti obr. 2.
+podľa toho, či nastáva situácia z~ľavej či pravej časti~\ref{fig:66I3_1}.
 
-Pre situáciu z~obr. 2 naľavo prepíšeme avizované nerovnosti $-\frac{1}{3}c < a - b < 0$ ako $a < b < a +\frac{1}{3}c$ a odvodíme ich z~pomocného trojuholníka $ACE$, pričom $E$ je stred úsečky $AD$, takže body $D$ a $E$ delia stranu $AB$ na tri zhodné úseky dĺžky $\frac{1}{3}c$.
-\begin{center}
-\includegraphics{images/66D32\imagesuffix}\\
+Pre situáciu z~\ref{fig:66I3_1} naľavo prepíšeme avizované nerovnosti $-\frac{1}{3}c < a - b < 0$ ako $a < b < a +\frac{1}{3}c$ a odvodíme ich z~pomocného trojuholníka $ACE$, pričom $E$ je stred úsečky $AD$, takže body $D$ a $E$ delia stranu $AB$ na tri zhodné úseky dĺžky $\frac{1}{3}c$.
+\begin{figure}[h]
+    \centering
+    \includegraphics{images/66D32\imagesuffix}
+    \caption{}
+    \label{fig:66I3_2}
+\end{figure}
+V~\ref{fig:66I3_2} sme rovno vyznačili, že úsečka $EC$ má dĺžku $a$ ako úsečka $BC$, a to v~dôsledku zhodnosti trojuholníkov $BCD$ a $ECD$ podľa vety $sus$. Preto je pravá z~nerovností $a < b < a +\frac{1}{3}c$ porovnaním dĺžok strán trojuholníka $ACE$, ktoré má všeobecnú platnosť.
 
-Obr. 3
-\end{center}
-V~obr. 3 sme rovno vyznačili, že úsečka $EC$ má dĺžku $a$ ako úsečka $BC$, a to v~dôsledku zhodnosti trojuholníkov $BCD$ a $ECD$ podľa vety $sus$. Preto je pravá z~nerovností $a < b < a +\frac{1}{3}c$ porovnaním dĺžok strán trojuholníka $ACE$, ktoré má všeobecnú platnosť.
+Ľavú nerovnosť $a < b$ odvodíme z~druhého všeobecného poznatku, že totiž v~každom trojuholníku oproti väčšiemu vnútornému uhlu leží dlhšia strana. Stačí nám teda zdôvodniť, prečo pre uhly vyznačené na~\ref{fig:66I3_2} platí $|\ma CAE| < |\ma AEC|$. To je však jednoduché: zatiaľ čo uhol $CAE$ je vďaka pravouhlému trojuholníku $ACD$ ostrý, uhol $AEC$ je naopak tupý, pretože k~nemu vedľajší uhol $CED$ je ostrý vďaka pravouhlému trojuholníku $CED$.
 
-Ľavú nerovnosť $a < b$ odvodíme z~druhého všeobecného poznatku, že totiž v~každom trojuholníku oproti väčšiemu vnútornému uhlu leží dlhšia strana. Stačí nám teda zdôvodniť, prečo pre uhly vyznačené na obr. 3 platí $|\ma CAE| < |\ma AEC|$. To je však jednoduché: zatiaľ čo uhol $CAE$ je vďaka pravouhlému trojuholníku $ACD$ ostrý, uhol $AEC$ je naopak tupý, pretože k~nemu vedľajší uhol $CED$ je ostrý vďaka pravouhlému trojuholníku $CED$.
-
-Pre prípad situácie z~obr. 2 napravo možno predchádzajúci postup zopakovať s~novým bodom $E$, tentoraz stredom úsečky $BD$. Môžeme však vďaka súmernosti podľa osi $AB$ konštatovať, že z~dokázaných nerovností $-\frac{1}{3}c < a - b < 0$ pre situáciu naľavo vyplývajú nerovnosti $-\frac{1}{3}c < b - a < 0$ pre situáciu napravo, z~ktorých po vynásobení číslom $-1$ dostaneme práve nerovnosti $0 < a - b <\frac{1}{3}$, ktoré sme mali v~druhej situácii dokázať.\\
+Pre prípad situácie z~\ref{fig:66I3_1} napravo možno predchádzajúci postup zopakovať s~novým bodom $E$, tentoraz stredom úsečky $BD$. Môžeme však vďaka súmernosti podľa osi $AB$ konštatovať, že z~dokázaných nerovností $-\frac{1}{3}c < a - b < 0$ pre situáciu naľavo vyplývajú nerovnosti $-\frac{1}{3}c < b - a < 0$ pre situáciu napravo, z~ktorých po vynásobení číslom $-1$ dostaneme práve nerovnosti $0 < a - b <\frac{1}{3}$, ktoré sme mali v~druhej situácii dokázať.\\
 \\
 \kom Nosným prvkom úlohy je opäť Pytagorova veta, väčšiu pozornosť však vyžaduje rozbor úlohy, keďže päta výšky sa môže nachádzať v~dvoch rôznych polohách.\\
 \\

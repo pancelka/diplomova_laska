@@ -2,17 +2,18 @@
 
 \problem{63-II-4}{Daný je konvexný štvoruholník $ABCD$ s bodom$E$ vnútri strany $AB$ tak, že platí $|\ma ADE| = |\ma DEC| = |\ma ECB|$. Obsahy trojuholníkov $AED$ a $CEB$ sú postupne 18\,cm$^2$ a 8\,cm$^2$ . Určte obsah trojuholníka $ECD$.
 }{
-\rieh Hľadaný obsah trojuholníka $ECD$ označme $S$. Uhol $DEC$ je striedavý s uhlami $ADE$ a $ECB$, odtiaľ $AD  \parallel EC$ a $ED \parallel BC$ (obr. 7). Trojuholníky $EDA$
-\begin{center}
-\includegraphics{images/63K41\imagesuffix}\\
-
-Obr. 7
-\end{center}
-a $EDC$ majú spoločnú stranu $ED$, pomer ich obsahov je teda rovný pomeru prislúchajúcich výšok. Ak navyše postupne označíme $P, Q a R$ kolmé priemety vrcholov $A, B a C$ na priamku $DE$ a označíme $v = |AP|$, $w = |BQ| = |CR|$, dostaneme z podobných
+\rieh Hľadaný obsah trojuholníka $ECD$ označme $S$. Uhol $DEC$ je striedavý s uhlami $ADE$ a $ECB$, odtiaľ $AD  \parallel EC$ a $ED \parallel BC$ (\ref{fig:63II4}). Trojuholníky $EDA$
+\begin{figure}[h]
+    \centering
+    \includegraphics{images/63K41\imagesuffix}
+    \caption{}
+    \label{fig:63II4}
+\end{figure}
+a $EDC$ majú spoločnú stranu $ED$, pomer ich obsahov je teda rovný pomeru prislúchajúcich výšok. Ak navyše postupne označíme $P, Q$ a $R$ kolmé priemety vrcholov $A, B$ a $C$ na priamku $DE$ a označíme $v = |AP|$, $w = |BQ| = |CR|$, dostaneme z podobných
 pravouhlých trojuholníkov $AEP$ a $BEQ$ úmeru
 $$\frac{18}{S}=\frac{v}{w}=\frac{|AE|}{|EB|}.$$
 Analogicky pre trojuholníky $ECD$ a $ECB$ zistíme, že
 $$\frac{8}{S}=\frac{|EB|}{|AE|}.$$
-(V obr. 7 sú prislúchajúce priemety iba naznačené, ale jedná sa o ten istý výpočet
+(V \ref{fig:63II4} sú prislúchajúce priemety iba naznačené, ale jedná sa o ten istý výpočet
 ako v predošlom odseku, len v ňom zameníme zodpovedajúce body $A\leftrightarrow B, C \leftrightarrow D$ a prislúchajúce obsahy trojuholníkov $AED$ a $BEC$.) Dokopy teda je $S : 8 = 18 : S$ čiže $S^2 = 144$, takže trojuholník $ECD$ má obsah $S = 12$\,cm$^2$ .
 }
