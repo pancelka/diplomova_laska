@@ -1,6 +1,24 @@
 % Do not delete this line (pandoc magic!)
 
 \problem{59-S-1}{
-
+    Ak zväčšíme čitateľ aj menovateľ istého zlomku o 1, dostaneme zlomok o hodnotu 1/20 väčší. Ak urobíme s väčším zlomkom rovnakú operáciu, dostaneme zlomok o hodnotu 1/12 väčší, ako bola hodnota zlomku na začiatku. Určte všetky tri zlomky.
 }{
+\rieh Označme $a/b$ pôvodný zlomok. Podľa zadania platia rovnosti
+$$\frac{a + 1}{b + 1}-\frac{a}{b}=\frac{1}{20} \ \ \ \ \text{a} \ \ \ \ \frac{a+2}{b+2}-\frac{a}{b}=\frac{1}{12} \ \ \ \  (a, b \in \NN),$$
+ktoré sú ekvivalentné so vzťahmi
+$$20b(a + 1)- 20a(b + 1) = b(b + 1) \ \ \ \ \text{a} \ \ \ \  12b(a + 2)- 12a(b + 2) = b(b + 2).$$
+Tie upravíme na tvar $19b- 20a = b^2$ a $22b - 24a = b^2$. Po odčítaní oboch vzťahov zistíme, že $4a = 3b$, čo po dosadení do druhej rovnosti dá $22b- 18b = b^2$, čiže $b^2 = 4b$. Vzhľadom na podmienku $b \neq 0$ odtiaľ vyplýva $b = 4$ a $a = 3$.
+Hľadané zlomky sú teda $\frac{3}{4}$, $\frac{4}{5}$ a $\frac{5}{6}$.
+
+\textbf{Iné riešenie*.} Označme $a/b$ pôvodný zlomok. Zo vzťahov
+$$\frac{1}{20}=\frac{1}{4\cdot 5} \ \ \ \ \text{a} \ \ \ \ \frac{1}{12}=\frac{1}{4\cdot 3}=\frac{2}{4\cdot 6}$$
+možno odhadnúť, že riešením by mohlo byť $b = 4$. Potom
+$$\frac{4(a + 1) - 5a}{4 \cdot 5}=\frac{1}{20} \ \ \ \ \text{a} \ \ \ \ \frac{4(a + 2) - 6a}{4 \cdot 6}=\frac{1}{12},$$
+čiže $a = 3$. Musíme sa však ešte presvedčiť, že úloha iné riešenie nemá. Podmienky úlohy vedú ku vzťahom
+$$\frac{b - a}{b(b + 1)}=\frac{1}{4\cdot 5} \ \ \ \ \text{a} \ \ \ \  \frac{2(b - a)}{b(b + 2)}=\frac{2}{4\cdot 6}.$$
+Z podielu ich ľavých a pravých strán potom vyplýva
+$$\frac{b + 2}{b + 1}=\frac{6}{5},$$
+čomu vyhovuje jedine $b = 4$.
+
+\textit{Poznámka.} V úplnom riešení nesmie chýbať vylúčenie možnosti $b \neq 4$. Napríklad z podobných rovností $1/20 = 30/(24 \cdot 25)$ a $1/12 = 52/(24 \cdot 26)$ by sme mohli hádať, že $b = 24$, čo riešením nie je.
 }
