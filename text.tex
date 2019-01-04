@@ -6,6 +6,11 @@
   \subsection*{Seminár #1}
 }
 
+\counterwithout{figure}{chapter}
+\counterwithin{figure}{problem}
+\renewcommand{\thefigure}{\theseminar.\theproblem.\arabic{figure}}
+
+
 % LaTeX header setting the web/thesis commands right
 \input{templates/latex-header-pdf.tex}
 
@@ -95,7 +100,7 @@ Všeobecné zadanie práce bolo po diskusii s~vedúcim práce konkretizované na
 
 Práca si kladie za cieľ vytvoriť súbor seminárov obsahujúci dostatok úloh a problémov k~samostatnému precvičovaniu, ktorý by bol prístupný širšiemu spektru študentov, nielen úzkej matematickej špičke. Dúfame, že si tak nájde cestu k väčšiemu okruhu študentov a učiteľov. V~neposlednom rade pri špecifikácii zadania zavážil fakt, že autorka má k~zvolenej vekovej kategórii blízko, či už ako organizátorka matematických seminárov a sústredení pre žiakov druhého stupňa základnej školy, alebo začínajúca učiteľka v~nižších triedach gymnázia.
 
-\newpage 
+\newpage
 
 \section{Východiská pri tvorbe osnov}
 Obsah seminárnych stretnutí sa opiera najmä o~dva kľúčové aspekty -- matematickú olympiádu kategórie C a školský vzdelávací program (ŠVP) pre gymnáziá.
@@ -260,7 +265,7 @@ V~tabuľke nižšie uvádzame konkrétne zamerania jednotlivých seminárov, kto
 \begin{longtable}{ p {0.04\textwidth} p{.35\textwidth} p{.5\textwidth}} \toprule
 \textbf{September} & &\\ \midrule
 1. & Úvod do seminára, \textit{Matematico} & Základné informácie,  očakávania, matematická hra.\\
-2. & Ako riešiť I &  Všeobecná diskusia o~spôsobe riešenia úloh/problémov v~matematike.\\ 
+2. & Ako riešiť I &  Všeobecná diskusia o~spôsobe riešenia úloh/problémov v~matematike.\\
 3. & Ako riešiť II &  Všeobecná diskusia o~spôsobe riešenia úloh/problémov v~matematike.\\ \midrule
 \textbf{Október} & &\\ \midrule
 4. & Algebraické výrazy a rovnice I~& Opakovanie vedomostí zo ZŠ, práca s~výraz\-mi.\\
@@ -334,7 +339,7 @@ Záverom prvej kapitoly ešte poznamenajme, že veľkú väčšinu úloh v semin
 \section{Január}
 \input{seminars/seminar15.tex}
 \input{seminars/seminar16.tex}
-\input{seminars/seminar17.tex} 
+\input{seminars/seminar17.tex}
 \input{seminars/seminar18.tex}
 
 \section{Február}
@@ -352,7 +357,7 @@ Záverom prvej kapitoly ešte poznamenajme, že veľkú väčšinu úloh v semin
 \input{seminars/seminar26.tex}
 \input{seminars/seminar27.tex}
 \input{seminars/seminar28.tex}
-\input{seminars/seminar29.tex} 
+\input{seminars/seminar29.tex}
 
 \section{Máj}
 \input{seminars/seminar30.tex}
