@@ -1,0 +1,50 @@
+\documentclass[10pt]{article}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{ududff}{rgb}{0.30196078431372547,0.30196078431372547,1}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+
+\clip(-6.54,-10.58) rectangle (8.58,4.38);
+%\fill[line width=2pt] (-2.8,-3.62) -- (3.64,-3.62) -- (3.16,0.28) -- cycle;
+\draw [shift={(-2.8,-3.62)},line width=0.5pt] (0,0) -- (0:0.6) arc (0:33.199227840181436:0.6) -- cycle;
+\draw [shift={(3.64,-3.62)},line width=0.5pt] (0,0) -- (97.01650174472292:0.6) arc (97.01650174472292:180:0.6) -- cycle;
+\draw [shift={(3.16,0.28)},line width=0.5pt] (0,0) -- (180:0.6) arc (180:213.19922784018144:0.6) -- cycle;
+\draw [shift={(3.16,0.28)},line width=0.5pt] (0,0) -- (-82.9834982552771:0.6) arc (-82.9834982552771:0:0.6) -- cycle;
+\draw [line width=0.5pt] (-2.8,-3.62)-- (3.64,-3.62);
+\draw [line width=0.5pt] (3.64,-3.62)-- (3.16,0.28);
+\draw [line width=0.5pt] (3.16,0.28)-- (-2.8,-3.62);
+\draw [line width=0.5pt,domain=-6.54:8.58] plot(\x,{(--1.8032-0*\x)/6.44});
+\draw [line width=0.5pt,domain=-6.54:8.58] plot(\x,{(-23.3128-0*\x)/6.44});
+\draw [shift={(3.64,-3.62)},line width=0.5pt] (97.01650174472292:0.6) arc (97.01650174472292:180:0.6);
+\draw [shift={(3.64,-3.62)},line width=0.5pt] (97.01650174472292:0.47) arc (97.01650174472292:180:0.47);
+\draw [shift={(3.16,0.28)},line width=0.5pt] (-82.9834982552771:0.6) arc (-82.9834982552771:0:0.6);
+\draw [shift={(3.16,0.28)},line width=0.5pt] (-82.9834982552771:0.47) arc (-82.9834982552771:0:0.47);
+\begin{scriptsize}
+%\draw [fill=black] (-2.8,-3.62) circle (0.5pt);
+\draw[color=black] (-2.66,-3.41) node {$A$};
+%\draw [fill=black] (3.64,-3.62) circle (0.5pt);
+\draw[color=black] (3.78,-3.41) node {$B$};
+%\draw [fill=black] (3.16,0.28) circle (0.5pt);
+\draw[color=black] (3.3,0.49) node {$C$};
+\draw[color=black] (0.48,-3.77) node {$c$};
+\draw[color=black] (3.76,-1.45) node {$a$};
+\draw[color=black] (0.06,-1.23) node {$b$};
+\draw[color=black] (-6.38,0.13) node {$f$};
+\draw[color=black] (-6.38,-3.29) node {$g$};
+%\draw [fill=black] (-1.88,0.28) circle (0.5pt);
+\draw[color=black] (-1.74,0.49) node {$X$};
+%\draw [fill=black] (6.6,0.28) circle (0.5pt);
+\draw[color=black] (6.74,0.49) node {$Y$};
+\draw[color=black] (-2.13,-3.38) node {$\alpha_1$};
+\draw[color=black] (3.66,-3.35) node {$\beta$};
+\draw[color=black] (3.18,0.25) node {$\alpha'$};
+\draw[color=black] (3.66,0.17) node {$\beta'$};
+\draw [fill=ududff] (-8.2,3.08) circle (0.5pt);
+\draw[color=ududff] (-6.3,2.63) node {$F$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}
