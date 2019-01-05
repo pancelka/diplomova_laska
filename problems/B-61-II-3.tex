@@ -7,11 +7,15 @@ Pravouhlému trojuholníku $ABC$ je vpísaná kružnica, ktorá sa dotýka prepo
     \item Dokážte, že obvod trojuholníka $ABC$ nie je väčší ako obvod trojuholníka $PQK$.Kedy nastane rovnosť obvodov?
 \end{enumerate}
 }{
-\rieh a) Označme $S$ stred a $r$ polomer kružnice vpísanej trojuholníku $ABC$ a $L$, $M$ body dotyku tejto kružnice postupne so stranami $BC$, $CA$ \todo{(obr. 1)}. Ak označíme $|AK| = x$, $|BK| = y$, tak $|AP| = |AM| = x$, $|KP| = x\sqrt{2}$, $|BQ| = |BL| = y$, $|KQ| = y\sqrt{2}$. Keďže oba uhly $AKP$, $BKQ$ majú veľkosť $45^\circ$, je trojuholník $PQK$ pravouhlý, takže jeho obsah je 
+\rieh a) Označme $S$ stred a $r$ polomer kružnice vpísanej trojuholníku $ABC$ a $L$, $M$ body dotyku tejto kružnice postupne so stranami $BC$, $CA$ (obr.~\ref{fig:B61II3}). Ak označíme $|AK| = x$, $|BK| = y$, tak $|AP| = |AM| = x$, $|KP| = x\sqrt{2}$, $|BQ| = |BL| = y$, $|KQ| = y\sqrt{2}$. Keďže oba uhly $AKP$, $BKQ$ majú veľkosť $45^\circ$, je trojuholník $PQK$ pravouhlý, takže jeho obsah je 
 $$S_{PQK} =\frac{x\sqrt{2}y\sqrt{2}}{2}=xy.$$
 
-\todo{DOPLNIŤ Obr. 1}\\
-\\
+\begin{figure}[h]
+    \centering
+    \includegraphics{images/B61II3\imagesuffix}
+    \caption{}
+    \label{fig:B61II3}
+\end{figure}
 Štvoruholník $SLCM$ je štvorec so stranou dĺžky $r$ a $|AM| = x$, $|BL| = y$. Obsah trojuholníka $ABC$ je rovný súčtu obsahov trojuholníkov $ABS$, $BCS$ a $CAS$, teda
 $$S_{ABC}=\frac{(x + y)r + (y + r)r + (x + r)r}{2}= (x + y + r)r.$$
 Obsah trojuholníka $ABC$ je zároveň rovný
@@ -21,7 +25,7 @@ Odtiaľ dostávame $S_{ABC} = xy$, čiže $S_{ABC} = S_{PQK}$, čo sme mali dok�
 
 b) V trojuholníku $ABC$ sú dĺžky strán $a = y + r$, $b = x + r$, $c = x + y$. Obvod trojuholníka $ABC$ je $a + b + |AB|$, obvod trojuholníka $PQK$ je $x\sqrt{2} + y\sqrt{2} + |PQ|$.
 
-Zrejme platí $|AB| \leq |PQ|$ ($|AB|$ je vzdialenosťou rovnobežiek $AP$, $BQ$, \todo{obr. 1}). Rovnosť nastane jedine v prípade $|AP| = |BQ|$, čiže $x = y$.
+Zrejme platí $|AB| \leq |PQ|$ ($|AB|$ je vzdialenosťou rovnobežiek $AP$, $BQ$, (obr.~\ref{fig:B61II3}). Rovnosť nastane jedine v prípade $|AP| = |BQ|$, čiže $x = y$.
 Ešte dokážeme, že $a + b \leq  x\sqrt{2} + y\sqrt{2}$, teda že $a + b \leq c\sqrt{2}$. Posledná nerovnosť je ekvivalentná s nerovnosťou, ktorú dostaneme jej umocnením na druhú, pretože obe jej strany sú kladné. Dostaneme tak $a^2 +b^2 +2ab \leq 2c^2$. Keďže v pravouhlom trojuholníku $ABC$ platí $a^2 + b^2 = c^2$, máme dokázať nerovnosť $2ab \leq a^2 + b^2$, ktorá je však ekvivalentná s nerovnosťou $0 \leq (a - b)^2$. Tá platí pre všetky reálne čísla $a$, $b$ a rovnosť v nej nastane jedine pre $a = b$, t. j. $x = y$.
 
 Celkovo vidíme, že obvod trojuholníka $ABC$ je menší alebo rovný obsahu trojuholníka $PQK$ a rovnosť nastane práve vtedy, keď je pravouhlý trojuholník $ABC$ rovnoramenný.

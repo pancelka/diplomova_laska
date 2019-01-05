@@ -3,11 +3,14 @@
 \problem{B-65-II-2}{
 Daná je úsečka $AB$, jej stred $C$ a vnútri úsečky $AB$ bod $D$. Kružnice $k(C, |BC|)$ a $m(B, |BD|)$ sa pretínajú v bodoch $E$ a $F$. Zdôvodnite, prečo je polpriamka $FD$ osou uhla $AFE$.
 }{
-\rieh Kružnica $k$ je Tálesovou kružnicou nad priemerom $AB$, takže trojuholník $ABF$ je pravouhlý s pravým uhlom pri vrchole $F$. Inými slovami, priamka $AF$ je kolmá \\
-\\
-\todo{DOPLNIŤ Obr. 1}\\
-\\
-na polomer $BF$ kružnice $m$, a preto sa priamka $AF$ dotýka kružnice $m$ v bode $F$ \todo{(obr. 1)}. Z rovnosti úsekového uhla zovretého tetivou $DF$ s dotyčnicou $AF$ a obvodového uhla
+\rieh Kružnica $k$ je Tálesovou kružnicou nad priemerom $AB$, takže trojuholník $ABF$ je pravouhlý s pravým uhlom pri vrchole $F$. Inými slovami, priamka $AF$ je kolmá 
+\begin{figure}[h]
+    \centering
+    \includegraphics{images/B65II2_1\imagesuffix}
+    \caption{}
+    \label{fig:B65II2_1}
+\end{figure}
+na polomer $BF$ kružnice $m$, a preto sa priamka $AF$ dotýka kružnice $m$ v bode $F$ (obr.~\ref{fig:B65II2_1}). Z rovnosti úsekového uhla zovretého tetivou $DF$ s dotyčnicou $AF$ a obvodového uhla
 nad tou istou tetivou máme (ako už je vyznačené na obrázku) 
 $$|\ma AFD| = |\ma DEF|.$$
 Zo súmernosti úsečky $EF$ podľa osi $AB$ tak vyplýva
@@ -22,11 +25,15 @@ Spojením oboch predchádzajúcich rovností tak dostávame
 $$|\ma DFE| = |\ma DFB| - |\ma EFB| =\frac{\beta}{2}.$$
 Z vlastností Tálesovej kružnice $k$ nad priemerom $AB$ vieme, že uhol $AFB$ je pravý. Pritom jeho časť uhol $EFB$ má, ako sme už zistili, veľkosť $90^\circ-\beta$, takže jeho druhá časť, uhol $AFE$, má veľkosť $\beta$, čo je presne dvojnásobok veľkosti uhla $DFE$. Tým sme dokázali, že priamka $FD$ je osou uhla $AFE$.
 
-\textbf{Iné riešenie*.} Nad oblúkom $AE$ kružnice $k$ sa zhodujú uhly $ABE$ a $AFE$ \todo{(obr. 2)}. Oblúku $DE$ kružnice $m$ prislúcha obvodový uhol $DFE$ a stredový uhol $DBE$. Spolu
+\textbf{Iné riešenie*.} Nad oblúkom $AE$ kružnice $k$ sa zhodujú uhly $ABE$ a $AFE$ (obr.~\ref{fig:B65II2_2}). Oblúku $DE$ kružnice $m$ prislúcha obvodový uhol $DFE$ a stredový uhol $DBE$. Spolu
 tak dostávame
 $$|\ma DFE| = \frac{1}{2} |\ma DBE| = \frac{1}{2}
 |\ma ABE| = \frac{1}{2} |\ma AFE|,$$
-čo dokazuje, že $FD$ je osou uhla $AFE$.\\
-\\
-\todo{DOPLNIŤ Obr. 2}
+čo dokazuje, že $FD$ je osou uhla $AFE$.
+\begin{figure}[h]
+    \centering
+    \includegraphics{images/B65II2_2\imagesuffix}
+    \caption{}
+    \label{fig:B65II2_2}
+\end{figure}
 }
