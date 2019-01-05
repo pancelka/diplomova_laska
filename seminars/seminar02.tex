@@ -12,6 +12,33 @@ Prediskutovať so študentmi rôzne prístupy k riešeniu neznámych problémov,
 \problem{ZM 43}{
 V tramtárii chcú zaviesť novú základnú peňažnú jednotku: toliar. V spojitosti s reformou sa vynorila otázka: aké majú mať hodnoty mince, ktoré pripraví mincovňa? Starí obyvatelia Tramtárie považovali 3 a 5 za šťastné čísla. Preto popredný historik navrhol, aby sa obmedzili na razenie troj- a päťtoliarových mincí. Svoj návrh zdôvodňoval takto: troj- a päťtoliarovými mincami možno vyplatiť hociktorú celočíselnú sumu a to skoro vždy presne, bez vrátenia. Ten, kto peniaze dostáva, musí niečo vrátiť iba vtedy, ak je vyplácaná suma 1, 2, 4 alebo 7 toliarov. Bola by to pravda?
 }{
+\rieh Úloha nie je ľahká: ak je tvrdenie pravdivé, tak naraz treba pre všetky celé čísla dokázať, že toľko toliarov možno vyplatiť troj- a päťtoliarovými mincami (v prípade 1, 2, 4 a 7 s vydaním, inak bez neho) -- a ak to nie je pravda, tak o nejakom celom čísle treba dokázať, že toľko toliarov nemožno nijakým spôsobom vyplatiť (v prípade 1, 2, 4 a 7 ani s vydaním, inak bez vydania).
+
+O to posledné sa márne pokúšame: naopak, ak vezmeme hocijaké celé číslo, po väčšom alebo menšom počte pokusov vždy nájdeme nejaký spôsob výplaty. To poukazuje na to, že tvrdenie je asi pravdivé. 
+
+Ale v tom prípade bude najúčelnejšie, ak celé čísla berieme radom a s každým jednotlivo sa o to pokúsime.
+
+Napríklad 1 toliar možno vyplatiť tak, že z dvoch kusov trojtoliarnikových mincí vydáme päťtoliarnikovú. Stručne: 
+$$1=2\cdot 3 -5.$$
+Podobne $$2=5-3.$$
+3 toliare možno vyplatiť jednou mincou. 
+4 toliare môžeme vyplatiť tak, že \uv{zdvojnásobíme} 2 toliare:
+$$4=2\cdot 5 - 2\cdot 3.$$
+5 toliarov možno vyplatiť jednou mincou, 6 toliarov dvoma trojtoliarnikovými mincami.
+$7=3+4$, preto 7 toliarov vyplatíme ako 4 toliare, ale pridáme navyše jednu trojtoliarovú mincu, teda vydáme o 1 menej: $$7=2\cdot 5 - 3.$$ 
+8 toliarov zase môžeme vyplatiť zdvojnásobením 4, čiže $8=4\cdot 5- 4\cdot 3$, to sa ale neoplatí, lebo existuje aj jednoduchší spôsob bez vydania: $$8=5+3.$$
+Tým sme sa dostali k najdôležitejšej hranici: podľa tvrdenia totiž, začínajúc od hodnoty 8, výplatu možno vyplatiť aj bez vydania.
+
+Pretože aj tak nemôžeme do nekonečna pokračovať v pokusoch o spôsobe výplaty jednotlivých súm, začínajúc nejakým číslom musíme nájsť takú súvislosť (vzťah), ktorá zabezpečuje, že v postupnosti môžeme aj ďalej pokračovať. Čiže ak nejakú sumu toliarov môžeme vyplatiť, samozrejme bez vydania, tak môžeme vyplatiť aj sumu o 1 toliar väčšiu. 
+
+Predstavme si, že na stôl sme vyložili sumu $n$ toliarov, ale sa ukáže, že nie toľko, ale $n+1$ toliarov máme vyplatiť. Ako vieme sumu zväčšiť o 1 toliar, keď nemáme jednotolirovú mincu? 
+
+Videli sme, že 
+$$1=2\cdot 3- 5.$$
+Ak teda zo sumy na stole vezmeme jednu päťtoliarnikovú mincu a nahradíme ju dvoma trojtoliarnikovými, dosiahli sme svoj cieľ.
+
+No dobre, ale čo urobíme v prípade, keď v tej hromade mincí, ktorou sme pôvodne chceli vyplatiť $n$ toliarov, nie je päťtoliarniková (napr. pre $n=9$ sme na stôl vyložili 3 trojtoliarnikové mince, alebo pre $n=18$ je tam 6 torjtoliarnikových).
+
 }
 
 \problem{ZM 44}{
