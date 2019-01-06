@@ -11,6 +11,7 @@
       span.underline{text-decoration: underline;}
       div.column{display: inline-block; vertical-align: top; width: 50%;}
   </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -36,17 +37,16 @@
 <h1 id="seminár-3" class="unnumbered">Seminár 3</h1>
 <p><div class="pdflinks">PDF na stiahnutie: <a href="pdf/seminar03-teacher.pdf">učiteľská verzia</a>, <a href="pdf/seminar03-student.pdf">študentská verzia</a></div></p>
 <h2 id="téma" class="unnumbered">Téma</h2>
-<p>Prístup k riešeniu matematických úloh, typy dôkazov II</p>
+<p>Prístup k riešeniu matematických úloh, typy dôkazov</p>
 <h2 id="ciele" class="unnumbered">Ciele</h2>
 <p>Prediskutovať so študentmi rôzne prístupy k riešeniu neznámych problémov, zopakovať a/alebo zoznámiť s typmi dôkazov používaných v matematike.</p>
 <h2 id="priebeh" class="unnumbered">Priebeh</h2>
 <p>Seminár prebehne formou štrukturovanej diskusie, v ktorej so študentami rozoberieme korektný spôsob riešenia matematických úloh a problémov, zamyslíme sa nad tým, čo musí správne riešenie obsahovať a čoho sa, naopak, vyvarovať a vyzbrojíme študentov základnými stratégiami, ktoré môžu pri riešení úloh využiť.</p>
 <h3 id="typy-úloh" class="unnumbered">Typy úloh</h3>
-<p>Pri riešení matematických problémov sa stretávame s dvoma základnými kategóriami: buď je úlohou dokázať (príp. vyvrátiť) dané tvrdenie, alebo nájsť objekty (čísla, tvary, výrazy, množiny bodov), ktoré vyhovujú zadanými podmienkam.</p>
+<p>Pri riešení matematických problémov sa stretávame s dvoma základnými kategóriami: buď je úlohou dokázať (príp. vyvrátiť) dané tvrdenie, alebo nájsť objekty (čísla, tvary, výrazy, množiny bodov), ktoré vyhovujú zadanými podmienkam. Niekedy je úlohou nájsť aspoň jeden vhodný príklad, niekedy sa musia riešitelia popasovať s nájdením všetkých objektov majúcich vhodné vlastnosti.</p>
 <h3 id="fázy-riešenia" class="unnumbered">Fázy riešenia</h3>
-<p>Podľa má riešenie problémov nasledujúce fázy.</p>
+<p>Podľa <span class="citation" data-cites="holton2010"></span> má riešenie problémov nasledujúce fázy.</p>
 <ol type="a">
-<li></li>
 <li><p>Prečítanie a porozumenie.</p></li>
 <li><p>Kľúčové slová.</p></li>
 <li><p>Panika.</p></li>
@@ -57,8 +57,68 @@
 <li><p>Vysvetlenie.</p></li>
 <li><p>Zovšeobecnenie.</p></li>
 </ol>
+<p>V prípade úloh MO sa častokrát k poslednému kroku nedostaneme, považujeme však za vhodné ho zmieniť, keďže sa dotýka všeobecnejšieho matematického myslenia, ku ktorému sa študentov pravdepodobne snažíme viesť.</p>
+<h3 id="správne-riešenie-máldots" class="unnumbered">Správne riešenie má<span class="math inline">\(\ldots\)</span></h3>
+<p>V tejto časti seminára so študentmi prečítame zopár odsekov o riešení úloh z <span class="citation" data-cites="kms"></span> a pozrieme na sa dve nesprávne riešenia úlohy o lodiach.<br />
+<br />
+Nasledujúci text vo zvyšku tejto časti je (takmer) doslovným výťahom z rozsiahlejšieho textu , dostupnom na <span class="citation" data-cites="kms"></span>.</p>
+<p>Vyriešiť úlohu neznamená len nájsť výsledok. Treba taktiež dokázať, že nájdený výsledok je správny. (<span class="math inline">\(\ldots\)</span>) Pri riešení úloh je dôležité vedieť, kedy mám už úlohu dokončenú so všetkým, čo treba, a kedy mi k nej ešte niečo chýba.</p>
+<p>Opisuj svoje úvahy všeobecne. Veľa úloh (<span class="math inline">\(\ldots\)</span>) je formulovaných všeobecne. Treba v nich napríklad niečo dokázať pre všetky prirodzené čísla <span class="math inline">\(n\)</span> (alebo niečo obdobné). Bežným postupom, ako prísť na riešenie takýchto úloh, je skúšať ich vyriešiť postupne pre <span class="math inline">\(n\)</span> rovné <span class="math inline">\(1, 2, 3, \ldots\)</span> objaviť pri tom spoločné princípy a zovšeobecniť ich. Avšak nestačí do riešenia napísať, ako sa úloha rieši pre niekoľko malých hodnôt a zvyšok odbiť slovami a tak ďalej. Trénuj si pri riešení úloh všeobecné vyjadrenie, príde ti vhod počas strednej školy a neskôr aj počas vysokej.</p>
+<p>Dokazuj veci poriadne, nie intuitívne. Častým nedostatkom riešení býva nedostatočné zdôvodnenie tvrdení, resp. zdôvodnenie len na intuitívnej úrovni. Veľmi častými pojmami, ktoré signalizujú intuitívne dokazovanie, sú tvrdenia: …<span>Ak to spravíme inak, tak si len pohoršíme.</span> Aby takéto pojmy mali význam v dôkazoch, musia byť riadne podložené matematickými pojmami. Väčšinou nám však len pomôžu na odhalenie správneho výsledku, ktorý potom už riadne bez nich dokážeme.</p>
+<p>Príklad dôkazu, ktorý je založený na intuícii a nie je formálne správny, nasleduje.<br />
+<br />
+</p>
+<h3 id="úloha-lode">Úloha Lode</h3>
+<p><div class="problem"> Na pláne <span class="math inline">\(7\times 7\)</span> hráme hru lode. Nachádza sa na ňom jedna loď <span class="math inline">\(2\times 3\)</span>. Môžeme vystreliť na ľubovoľné políčko plánu, a ak loď zasiahneme, hra končí. Ak nie, strieľame znova. Určte najmenší počet výstrelov, ktoré potrebujeme, aby sme s istotou loď zasiahli. </div> <h4 class="solution-button">Riešenie</h4> <div class="solution"> <strong>Pokus o riešenie 1*.</strong> Naším cieľom je strieľať čo najoptimálnejšie, aby sme použili čo najmenej výstrelov. Neoplatí sa nám preto strieľať na políčka pri sebe, lebo výstrely pri sebe pokryjú menej políčok ako výstrely ďalej od seba. Nesmieme však strieľať moc ďaleko od seba. Ak medzi dvoma výstrelmi sú aspoň dve políčka už sa tam môže zmestiť loď. Najlepšie teda bude, keď medzi susednými výstrelmi bude jedno voľné políčko. To vieme dosiahnuť vystrelením na políčka ako je znázornené na obrázku.</p>
+
+<figure>
+<img src="images/lode1.png" alt="" id="fig:lode1" style="width:35.0%" /><figcaption><span label="fig:lode1"></span></figcaption>
+</figure>
+<p>Na to, aby s istotou zasiahli loď, potrebujeme najmenej 9 výstrelov. Na menej výstrelov to nie je možné, pretože sme strieľali najoptimálnejšie.<br />
+<br />
+<em>Rozbor riešenia*.</em> Na prvý pohľad toto riešenie môže vyzerať výborne, avšak riešenie má vážny nedostatok - chýba mu zdôvodnenie, prečo nestačí menej ako 9 výstrelov. Ale prečo? Veď sa v riešení spomína, že menej výstrelov nestačí. Objavuje sa tu aj ďalší problém. Uvedené zdôvodnenia sú len veľmi vágne a len na intuitívnej úrovni. Poďme si to postupne rozobrať.</p>
+<p>Slovíčko je znamením intuitívnych dôkazov. Aby malo v dôkaze význam, musí byť matematicky podložené. Ako je podložené tu? Riešiteľ síce opisuje, že výstrely pri sebe pokryjú menej políčok ako výstrely ďalej od seba, ale tu už matematické podklady končia. Riešiteľ nepíše, čo to znamená pokryť políčko. Znamená to, že doňho nesme zasahovať loď, nesmie byť v ňom ľavý horný roh lode alebo niečo iné? Taktiež nezdôvodňuje, prečo počet pokrytých políčok bude menší. Patrilo by sa sem uviesť nejaký výpočet, že naozaj ten počet (tak ako ho máme definovaný) vyjde menší.</p>
+<p>Ďalším problémom je, že riešiteľ sa pozerá na polohu iba dvoch políčok. Vo všeobecnosti neplatí, že lokálne najoptimálnejšie riešenie je najoptimálnejšie aj globálne. Môže sa nám stať (zatiaľ teoreticky), že dva výstrely nebudú umiestnené optimálne, ale to, čo pri nich stratíme, môžeme získať pri iných dvojiciach a môže nás to doviesť k ostro lepšiemu rozloženiu výstrelov ako keby sme sa snažili všetko spraviť na úrovni susedných výstrelov.</p>
+<p>Uvedené riešenie teda iba intuitívne vysvetľuje, prečo je 9 najmenší počet výstrelov. Použitý postup je pre nás dobrý, keď sa snažíme nájsť políčka kam strieľať. Avšak z formálnej stránky to hodnote riešenia nepridáva a riešenie má rovnakú hodnotu, ako keby sme len v ňom uviedli obrázok s vetou, že 9 výstrelov stačí.</p>
+<p>Z hľadiska formulácie riešenia je problém, že riešenie v sebe mieša dve časti: konštrukciu, že 9 výstrelov stačí a dôkaz, že menej nestačí. Síce toto nie je chyba, ktorá by sama o sebe zapríčinila stratu bodov. Ale rozčlenenie riešenia na dve časti vám pomôže si ujasniť, že každá z týchto častí je vyriešená úplne a nie len intuitívne.<br />
+Čo v tejto fáze riešenia? Rozhodne nie sme spokojní s tým, že úlohu máme. Keď máme pocit, že lepšie to už nejde, pustíme sa do dokazovania, že je to naozaj tak. Častokrát si táto fáza vyžaduje pozerať sa na úlohu z inej strany. To bude zrejme potrebné aj v našom prípade. Jednou našou možnosťou síce je matematicky podložiť naše úvahy, ale čaká nás niekoľko problémov. Ide hlavne o to, že sa chceme pozerať na to, ako musia byť umiestnené dva výstrely, čo nemusí stačiť, ako sme spomenuli vyššie.<br />
+<br />
+<strong>Pokus o riešenie 2*.</strong> Na nasledujúcom obrázku vidíme 8 obdĺžnikov <span class="math inline">\(2\times 3\)</span> rozmiestnených na plániku, ktoré sa neprekrývajú.</p>
+
+<figure>
+<img src="images/lode2.png" alt="" id="fig:lode2" style="width:35.0%" /><figcaption><span label="fig:lode2"></span></figcaption>
+</figure>
+<p>Ak by mali menej ako 8 výstrelov, tak jeden z ôsmich obdĺžnikov nezasiahneme a zrovna tam sa môže nachádzať loďka. Potrebujeme teda do každého obdĺžnika vystreliť jeden výstrel. Musíme ich umiestniť zároveň tak, aby sa medzi ne nezmestila žiadna iná loď. Na to, aby sme s istotou zasiahli loď, potrebujeme najmenej 8 výstrelov.<br />
+<br />
+<em>Rozbor riešenia*.</em> Toto riešenie taktiež nie je úplné. Riešiteľ v ňom ukázal len, že potrebuje aspoň 8 výstrelov. Neukázal, že 8 výstrelov stačí. Hovorí iba v teoretickej rovine, že ak sa mu podarí tých 8 výstrelov vhodne umiestniť, tak budú stačiť. Ale je to naozaj možné? Čo ak z nejakého iného dôvodu 8 výstrelov stačiť nebude.<br />
+<br />
+<em>Spoločný rozbor*.</em> Vidíme, že riešenia 1 a 2 majú rôzne výsledky, jedno tvrdí, že najmenej výstrelov je 9 a druhé 8. Jedno riešenie je teda nesprávne, ale ktoré? Ak sme pri riešení tejto úlohy v stave, že máme všetko, čo tieto dve riešenia spolu, tak vieme, že správnym riešením úlohy je 8 alebo 9 výstrelov. Pre dokončenie úlohy potrebujeme buď nájsť 8 políčok, na ktoré nám stačí vystreliť, alebo dokázať, že 8 výstrelov nestačí.</p>
+<p>Na prekvapenie (možno nie pre všetkých je to prekvapenie) naozaj stačí 8 výstrelov. Všetky intuitívne argumenty v riešení 1 sú teda nesprávne. Na riešení uvedenom nižšie si môžete všimnúť, že nie je pravda, že sa neoplatí strieľať blízko seba. Stalo sa tu, pred čím sme varovali. Tým, že sme na niektorých miestach strieľali „neoptimálne“ zlepšilo situáciu inde a v konečnom dôsledku sme dosiahli lepšie riešenie.<br />
+<br />
+<strong>Vzorové riešenie*.</strong> Ukážeme, že 8 je najmenší počet výstrelov, ktorý potrebujeme, aby sme s istotou zasiahli loď.</p>
+
+<figure>
+<img src="images/lode3.png" alt="" id="fig:lode3" style="width:60.0%" /><figcaption><span label="fig:lode3"></span></figcaption>
+</figure>
+<p>Na obrázku <a href="#lode3" data-reference-type="ref" data-reference="lode3">[lode3]</a> vľavo vidíme, že môžeme na plán umiestniť 8 neprekrývajúcich sa obdĺžnikov <span class="math inline">\(2\times 3\)</span> (stredné políčko ostane prázdne). Aby sme s istotou zasiahli loď, musíme zasiahnuť aspoň jedno políčko v každom z ôsmich vyznačených obdĺžnikov, preto potrebujeme aspoň 8 výstrelov.</p>
+<p>Na obrázku vpravo je uvedený príklad výberu ôsmych políčok, na ktoré stačí vystreliť, aby sa už mimo nich nedala na plán umiestniť žiadne loď <span class="math inline">\(2\times 3\)</span>. Preto týchto 8 výstrelov k zasiahnutiu lode vždy stačí.<br />
+<br />
+<em>Rozbor vzorového riešenia*.</em> Táto úloha je pekným príkladom toho, ako sa to, čo je napísané v riešení, líši od toho, čím sme prechádzali pri riešení úlohy. Hoci je samotné riešenie úlohy krátke, úlohu sme veru krátko neriešili. Väčšina riešiteľov začne s deviatimi výstrelmi ako v pokuse 1 a potom sa postupne cez rôzne vylepšenia strieľania, rôzne pokusy o 8 výstrelov a ďalšie iné úvahy dostane k riešeniu s ôsmimi výstrelmi.</p>
+<p>Všimnime si ďalej členenie riešenia. Najprv uvedieme, čo chceme ukázať (táto časť môže byť aj na konci) a vo zvyšku riešenia dokážeme, že naše riešenie je správne. Riešenie je pekne rozčlenené na dve časti podľa dvoch bodov, čo potrebujeme pri takejto úlohe ukázať (môžu byť aj vymenené). V prvej časti ukážeme, že potrebujeme aspoň 8 výstrelov. V druhej ukážeme, že 8 výstrelov nám naozaj stačí. Nie je tu žiadne premiešavanie týchto dvoch častí.<br />
+<br />
+V tejto časti seminára je možné so študentmi text vyššie spoločne prečítať a analyzovať. Zaujímavejšou a prínosnejšou sa však zdá byť možnosť, kedy študentom predostrieme vyššie spomenuté nesprávne pokusy o riešenie a spoločne budeme hľadať problematické miesta a diskutovať, ako ich vylepšiť. </div></p>
 <h3 id="strátegie-na-začiatok" class="unnumbered">Strátegie na začiatok</h3>
+<p>Častokrát sa stane, že úloha, pred ktorú sú študenti postavení, je náročná a nie je zrejmé, akým spôsobom sa pustiť do jej riešenia. Preto považujeme za vhodné predstaviť študentom štvoricu stratégií, ktoré im môžu pomôcť v začiatkoch riešenia problému.</p>
+<p>(Doplniť popis stratégií podľa <span class="citation" data-cites="zeitz2007"></span>.)</p>
+<ol>
+<li><p>Zorientuj sa.</p></li>
+<li><p>Vyhrň si rukávy a pusť sa do práce.</p></li>
+<li><p>Predposledný krok.</p></li>
+<li><p>Zjednodušuj.</p></li>
+</ol>
+
 <h3 id="typy-dôkazov" class="unnumbered">Typy dôkazov</h3>
+
 <ol>
 <li><p>Priamy dôkaz.</p></li>
 <li><p>Dôkaz sporom.</p></li>
