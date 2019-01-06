@@ -1,7 +1,7 @@
 \seminar{3}
 
 \subsection*{Téma}
-Prístup k riešeniu matematických úloh, typy dôkazov II
+Prístup k riešeniu matematických úloh, typy dôkazov
 
 \teachernote{
 \subsection*{Ciele}
@@ -13,13 +13,12 @@ Seminár prebehne formou štrukturovanej diskusie, v ktorej so študentami rozob
 
 \subsubsection*{Typy úloh}
 
-Pri riešení matematických problémov sa stretávame s dvoma základnými kategóriami: buď je úlohou dokázať (príp. vyvrátiť) dané tvrdenie, alebo nájsť objekty (čísla, tvary, výrazy, množiny bodov), ktoré vyhovujú zadanými podmienkam. 
+Pri riešení matematických problémov sa stretávame s dvoma základnými kategóriami: buď je úlohou dokázať (príp. vyvrátiť) dané tvrdenie, alebo nájsť objekty (čísla, tvary, výrazy, množiny bodov), ktoré vyhovujú zadanými podmienkam. Niekedy je úlohou nájsť aspoň jeden vhodný príklad, niekedy sa musia riešitelia popasovať s nájdením všetkých objektov majúcich vhodné vlastnosti.
 
 \subsubsection*{Fázy riešenia}
 
-Podľa \todo{Holton} má riešenie problémov nasledujúce fázy.
+Podľa \cite{holton2010} má riešenie problémov nasledujúce fázy.
 \begin{enumerate}[a)]
-\item 
 \item Prečítanie a porozumenie.
 \item Kľúčové slová.
 \item Panika.
@@ -31,16 +30,140 @@ Podľa \todo{Holton} má riešenie problémov nasledujúce fázy.
 \item Zovšeobecnenie.
 \end{enumerate}
 
+V prípade úloh MO sa častokrát k poslednému kroku nedostaneme, považujeme však za vhodné ho zmieniť, keďže sa dotýka všeobecnejšieho matematického myslenia, ku ktorému sa študentov pravdepodobne snažíme viesť.
+
+\subsubsection*{Správne riešenie má$\ldots$}
+
+V tejto časti seminára so študentmi prečítame zopár odsekov o riešení úloh z \cite{kms} a pozrieme na sa dve nesprávne riešenia úlohy o lodiach. \\
+\\
+Nasledujúci text vo zvyšku tejto časti je (takmer) doslovným výťahom z rozsiahlejšieho textu \uv{Ako riešiť}, dostupnom na \cite{kms}.
+
+Vyriešiť úlohu neznamená len nájsť výsledok. Treba taktiež dokázať, že nájdený výsledok je správny. ($\ldots$) Pri riešení úloh je dôležité vedieť, kedy mám už úlohu dokončenú so všetkým, čo treba, a kedy mi k nej ešte niečo chýba. 
+
+Opisuj svoje úvahy všeobecne. Veľa úloh ($\ldots$) je formulovaných všeobecne. Treba v nich napríklad niečo dokázať pre všetky prirodzené čísla $n$ (alebo niečo obdobné). Bežným postupom, ako prísť na riešenie takýchto úloh, je skúšať ich vyriešiť postupne pre $n$ rovné $1, 2, 3, \ldots$ objaviť pri tom spoločné princípy a zovšeobecniť ich. Avšak nestačí do riešenia napísať, ako sa úloha rieši pre niekoľko malých hodnôt a zvyšok odbiť slovami a tak ďalej. Trénuj si pri riešení úloh všeobecné vyjadrenie, príde ti vhod počas strednej školy a neskôr aj počas vysokej.
+
+Dokazuj veci poriadne, nie intuitívne. Častým nedostatkom riešení býva nedostatočné zdôvodnenie tvrdení, resp. zdôvodnenie len na intuitívnej úrovni. Veľmi častými pojmami, ktoré signalizujú intuitívne dokazovanie, sú tvrdenia: \uv{Robíme to optimálne a preto to je najlepšie, ako sa dá.} \uv{Zoberieme si najhorší možný prípad\ldots} \ldots{Ak to spravíme inak, tak si len pohoršíme.} Aby takéto pojmy mali význam v dôkazoch, musia byť riadne podložené matematickými pojmami. Väčšinou nám však len pomôžu na odhalenie správneho výsledku, ktorý potom už riadne bez nich dokážeme.
+
+Príklad dôkazu, ktorý je založený na intuícii a nie je formálne správny, nasleduje.\\
+\\
+\problem{Lode}{
+Na pláne $7\times 7$ hráme hru lode. Nachádza sa na ňom jedna loď $2\times3$. Môžeme vystreliť na ľubovoľné políčko plánu, a ak loď zasiahneme, hra končí. Ak nie, strieľame znova. Určte najmenší počet výstrelov, ktoré potrebujeme, aby sme s istotou loď zasiahli.}
+{\textbf{Pokus o riešenie 1*.}
+Naším cieľom je strieľať čo najoptimálnejšie, aby sme použili čo najmenej výstrelov. Neoplatí sa nám preto strieľať na políčka pri sebe, lebo výstrely pri sebe pokryjú menej políčok ako výstrely ďalej od seba. Nesmieme však strieľať moc ďaleko od seba. Ak medzi dvoma výstrelmi sú aspoň dve políčka už sa tam môže zmestiť loď. Najlepšie teda bude, keď medzi susednými výstrelmi bude jedno voľné políčko. To vieme dosiahnuť vystrelením na políčka ako je znázornené na obrázku.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.35\textwidth]{images/lode1\imagesuffix}
+    \caption{}
+    \label{fig:lode1}
+\end{figure}
+Na to, aby s istotou zasiahli loď, potrebujeme najmenej 9 výstrelov. Na menej výstrelov to nie je možné, pretože sme strieľali najoptimálnejšie.\\
+\\
+\textit{Rozbor riešenia*.} Na prvý pohľad toto riešenie môže vyzerať výborne, avšak riešenie má vážny nedostatok - chýba mu zdôvodnenie, prečo nestačí menej ako 9 výstrelov. Ale prečo? Veď sa v riešení spomína, že menej výstrelov nestačí. Objavuje sa tu aj ďalší problém. Uvedené zdôvodnenia sú len veľmi vágne a len na intuitívnej úrovni. Poďme si to postupne rozobrať.
+
+\uv{Neoplatí sa nám preto strieľať na políčka pri seba...} Slovíčko \uv{neoplatí} je znamením intuitívnych dôkazov. Aby malo v dôkaze význam, musí byť matematicky podložené. Ako je podložené tu? Riešiteľ síce opisuje, že výstrely pri sebe pokryjú menej políčok ako výstrely ďalej od seba, ale tu už matematické podklady končia. Riešiteľ nepíše, čo to znamená pokryť políčko. Znamená to, že doňho nesme zasahovať loď, nesmie byť v ňom ľavý horný roh lode alebo niečo iné? Taktiež nezdôvodňuje, prečo počet pokrytých políčok bude menší. Patrilo by sa sem uviesť nejaký výpočet, že naozaj ten počet (tak ako ho máme definovaný) vyjde menší.
+
+Ďalším problémom je, že riešiteľ sa pozerá na polohu iba dvoch políčok. Vo všeobecnosti neplatí, že lokálne najoptimálnejšie riešenie je najoptimálnejšie aj globálne. Môže sa nám stať (zatiaľ teoreticky), že dva výstrely nebudú umiestnené optimálne, ale to, čo pri nich stratíme, môžeme získať pri iných dvojiciach a môže nás to doviesť k ostro lepšiemu rozloženiu výstrelov ako keby sme sa snažili všetko spraviť \uv{najoptimálnejšie} na úrovni susedných výstrelov.
+
+Uvedené riešenie teda iba intuitívne vysvetľuje, prečo je 9 najmenší počet výstrelov. Použitý postup je pre nás dobrý, keď sa snažíme nájsť políčka kam strieľať. Avšak z formálnej stránky to hodnote riešenia nepridáva a riešenie má rovnakú hodnotu, ako keby sme len v ňom uviedli obrázok s vetou, že 9 výstrelov stačí.
+
+Z hľadiska formulácie riešenia je problém, že riešenie v sebe mieša dve časti: konštrukciu, že 9 výstrelov stačí a dôkaz, že menej nestačí. Síce toto nie je chyba, ktorá by sama o sebe zapríčinila stratu bodov. Ale rozčlenenie riešenia na dve časti vám pomôže si ujasniť, že každá z týchto častí je vyriešená úplne a nie len intuitívne.\\
+
+Čo v tejto fáze riešenia? Rozhodne nie sme spokojní s tým, že úlohu máme. Keď máme pocit, že lepšie to už nejde, pustíme sa do dokazovania, že je to naozaj tak. Častokrát si táto fáza vyžaduje pozerať sa na úlohu z inej strany. To bude zrejme potrebné aj v našom prípade. Jednou našou možnosťou síce je matematicky podložiť naše úvahy, ale čaká nás niekoľko problémov. Ide hlavne o to, že sa chceme pozerať na to, ako musia byť umiestnené dva výstrely, čo nemusí stačiť, ako sme spomenuli vyššie.\\
+\\
+\textbf{Pokus o riešenie 2*.} Na nasledujúcom obrázku vidíme 8 obdĺžnikov $2\times3$ rozmiestnených na plániku, ktoré sa neprekrývajú.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.35\textwidth]{images/lode2\imagesuffix}
+    \caption{}
+    \label{fig:lode2}
+\end{figure}
+
+Ak by mali menej ako 8 výstrelov, tak jeden z ôsmich obdĺžnikov nezasiahneme a zrovna tam sa môže nachádzať loďka. Potrebujeme teda do každého obdĺžnika vystreliť jeden výstrel. Musíme ich umiestniť zároveň tak, aby sa medzi ne nezmestila žiadna iná loď. Na to, aby sme s istotou zasiahli loď, potrebujeme najmenej 8 výstrelov.\\
+\\
+\textit{Rozbor riešenia*.} Toto riešenie taktiež nie je úplné. Riešiteľ v ňom ukázal len, že potrebuje aspoň 8 výstrelov. Neukázal, že 8 výstrelov stačí. Hovorí iba v teoretickej rovine, že ak sa mu podarí tých 8 výstrelov vhodne umiestniť, tak budú stačiť. Ale je to naozaj možné? Čo ak z nejakého iného dôvodu 8 výstrelov stačiť nebude.\\
+\\
+\textit{Spoločný rozbor*.} Vidíme, že riešenia 1 a 2 majú rôzne výsledky, jedno tvrdí, že najmenej výstrelov je 9 a druhé 8. Jedno riešenie je teda nesprávne, ale ktoré? Ak sme pri riešení tejto úlohy v stave, že máme všetko, čo tieto dve riešenia spolu, tak vieme, že správnym riešením úlohy je 8 alebo 9 výstrelov. Pre dokončenie úlohy potrebujeme buď nájsť 8 políčok, na ktoré nám stačí vystreliť, alebo dokázať, že 8 výstrelov nestačí.
+
+Na prekvapenie (možno nie pre všetkých je to prekvapenie) naozaj stačí 8 výstrelov. Všetky intuitívne argumenty v riešení 1 sú teda nesprávne. Na riešení uvedenom nižšie si môžete všimnúť, že nie je pravda, že sa neoplatí strieľať blízko seba. Stalo sa tu, pred čím sme varovali. Tým, že sme na niektorých miestach strieľali „neoptimálne“ zlepšilo situáciu inde a v konečnom dôsledku sme dosiahli lepšie riešenie.\\
+\\
+\textbf{Vzorové riešenie*.} Ukážeme, že 8 je najmenší počet výstrelov, ktorý potrebujeme, aby sme s istotou zasiahli loď.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/lode3\imagesuffix}
+    \caption{}
+    \label{fig:lode3}
+\end{figure}
+
+
+Na obrázku \ref{lode3} vľavo vidíme, že môžeme na plán umiestniť 8 neprekrývajúcich sa obdĺžnikov $2\times 3$ (stredné políčko ostane prázdne). Aby sme s istotou zasiahli loď, musíme zasiahnuť aspoň jedno políčko v každom z ôsmich vyznačených obdĺžnikov, preto potrebujeme aspoň 8 výstrelov.
+
+Na obrázku vpravo je uvedený príklad výberu ôsmych políčok, na ktoré stačí vystreliť, aby sa už mimo nich nedala na plán umiestniť žiadne loď $2\times3$. Preto týchto 8 výstrelov k zasiahnutiu lode vždy stačí.\\
+\\
+\textit{Rozbor vzorového riešenia*.} Táto úloha je pekným príkladom toho, ako sa to, čo je napísané v riešení, líši od toho, čím sme prechádzali pri riešení úlohy. Hoci je samotné riešenie úlohy krátke, úlohu sme veru krátko neriešili. Väčšina riešiteľov začne s deviatimi výstrelmi ako v pokuse 1 a potom sa postupne cez rôzne vylepšenia strieľania, rôzne pokusy o 8 výstrelov a ďalšie iné úvahy dostane k riešeniu s ôsmimi výstrelmi.
+
+Všimnime si ďalej členenie riešenia. Najprv uvedieme, čo chceme ukázať (táto časť môže byť aj na konci) a vo zvyšku riešenia dokážeme, že naše riešenie je správne. Riešenie je pekne rozčlenené na dve časti podľa dvoch bodov, čo potrebujeme pri takejto úlohe ukázať (môžu byť aj vymenené). V prvej časti ukážeme, že potrebujeme aspoň 8 výstrelov. V druhej ukážeme, že 8 výstrelov nám naozaj stačí. Nie je tu žiadne premiešavanie týchto dvoch častí.\\
+\\
+\kom V tejto časti seminára je možné so študentmi text vyššie spoločne prečítať a analyzovať. Zaujímavejšou a prínosnejšou sa však zdá byť možnosť, kedy študentom predostrieme vyššie spomenuté nesprávne pokusy o riešenie a spoločne budeme hľadať problematické miesta a diskutovať, ako ich vylepšiť.
+}
+
+%Stačí ukázať správnosť riešenia
+%Pri spisovaní svojich riešení môžeš byť zvyknutý písať všetky svoje myšlienkové pochody, ktoré Ťa priviedli k riešeniu. To, čo v KMS hodnotíme, je správnosť riešení. Pri niektorých úlohách je to len malá časť zo všetkých úvah, ktoré pri riešení urobíš (napr. pri úlohe Lode).
+
+%Keď vyriešiš úlohu, tak predtým, ako sa spustíš do jej spisovania, premysli si, čo všetko potrebuješ na to, aby si zdôvodnil správnosť svojho riešenia. Stačí, keď napíšeš len to. Takéto premyslenie ti pomôže skontrolovať, či si nezabudol na dôležitú úvahu. Taktiež, keď riešenie okrešeš o zbytočné veci, ušetríš si čas, narobíš menej chýb a môžeš sústrediť svoju pozornosť na to podstatné. (Ako bonus ešte spravíš radosť nám opravovateľom.)
+
+%Naučiť sa správne spisovať riešenia chce veľa cviku. Ak si nie si istý, čo všetko treba v riešení a čo nie, tým, že toho do riešenia napíšeš viac, body nestratíš.
+
+%Úlohy, kde hľadáme výsledky
+%Cieľom mnohých úloh je nájsť čísla, ktoré vyhovujú nejakým podmienkam. Výsledkom tejto úlohy je nejaká množina čísel, či už jedno, dve, kľudne aj nekonečne veľa.% Príkladom úlohy tohto typu je úloha Mince. 
+%Aby sme ukázali, že náš výsledok je správny, potrebujeme ukázať dve veci:
+
+%Každé číslo z nášho výsledku vyhovuje podmienkam zo zadania (hovorí sa tomu aj skúška správnosti).
+%Žiadne iné čísla podmienkam zo zadania nevyhovujú.
+%V niektorých úlohách je možné tieto dve veci ukázať naraz, napr. pomocou ekvivalentných úprav pri riešení rovníc. %Avšak ak si nie si istý/-á, napíš do svojho riešenia každú časť zvlášť.
+
+%V takýchto úlohách nemusíme hľadať vždy čísla, ale aj funkcie, tabuľky, body a iné veci. To však nič nemení na spomenutých dvoch veciach, ktoré musia byť obsiahnuté v úplnom riešení.
+
+%Úlohy, kde hľadáme niečo najmenšie / najväčšie
+%Ďalšiu skupinu úloh tvoria tie, kde je potrebné nájsť najmenšie číslo, najmenší rozmer tabuľky, počet ľudí v skupine, pre ktorý je niečo možné. Príkladom úlohy tohto typu je úloha Lode.
+
+%Rovnako ako v predchádzajúcom type úloh, aj tu treba ukázať rovnaké dve veci. Ak chceme ukázať, že najmenšie číslo n, ktoré vyhovuje zadaniu je k, potrebujeme ukázať:
+
+%Pre $n=k$ je možné splniť zadanie (tzv. konštrukcia).
+%Pre $n<k$ nie je možné splniť zadanie (tzv. dolný odhad).
+%Vo väčšine úloh tohto typu nejdú tieto dve veci zlúčiť do jednej. Treba si dať pozor, že ukázať druhý bod vo všeobecnosti neznamená ukázať, že zadanie nemožno splniť $n=k-1$.
+
+%Ukázať iba jeden zo spomenutých bodov nestačí:
+
+%Ukážeme iba, že pre nejaké $n=a$ zadanie ide splniť (konštrukciu). To znamená, že hľadané najmenšie n môže byť najviac a. Aby sme úlohu doriešili, potrebujeme nájsť dôkaz, prečo zadanie nemožno splniť pre $n<a$ (pomocou dolného odhadu dokázať, že neexistuje lepšia konštrukcia).
+%Ukážeme iba, že pre $n<a$ zadanie nemožno splniť (dolný odhad). Vtedy vieme, že hľadané najmenšie n je aspoň a. Pre dokončenie úlohy potrebujeme nájsť konštrukciu splnenia zadania pre $n=a$ (pomocou konštrukcie dokázať, že neexistuje lepší dolný odhad).
+%V praxi to vyzerá tak, že postupne hľadáme lepšie konštrukcie a lepšie dolné odhady až sa nám naraz stretnú na jednej hodnote a riešenie je hotové.
+
+%Pre úlohy, kde hľadáme niečo najväčšie, platia obdobné zásady.
+
+
 \subsubsection*{Strátegie na začiatok}
 
-\subsubsection*{Typy dôkazov}
+Častokrát sa stane, že úloha, pred ktorú sú študenti postavení, je náročná a nie je zrejmé, akým spôsobom sa pustiť do jej riešenia. Preto považujeme za vhodné predstaviť študentom štvoricu stratégií, ktoré im môžu pomôcť v začiatkoch riešenia problému.
+
+\color{red} (Doplniť popis stratégií podľa \cite{zeitz2007}.)
 
 \begin{enumerate}
-\item Priamy dôkaz.
-\item Dôkaz sporom.
-\item Dôkaz použitím matematickej indukcie.
+\item Zorientuj sa.
+\item Vyhrň si rukávy a pusť sa do práce.
+\item Predposledný krok.
+\item Zjednodušuj.
 \end{enumerate}
 
-\todo{DOPLNIŤ.} %Spoločne so študentami prečítame preriešime prvú kapitolu z~\cite{holton2010}
+\color{black}
+\subsubsection*{Typy dôkazov}
+\todo{Doplniť prehľad dôkazov podľa \cite{polak2014}.}
+
+\begin{enumerate}
+\item Priamy dôkaz. \todo{Úloha \cite{zeitz2007}: Ktoré prirodzené čísla majú nepárny počet deliteľov? Komentár o použitých stratégiách.}
+\item Dôkaz sporom. \todo{$\sqrt{2}$ je iracionálne číslo.}
+\item Dôkaz použitím matematickej indukcie.
+\end{enumerate}
 }
 
