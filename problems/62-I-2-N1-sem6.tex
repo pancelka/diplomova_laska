@@ -5,4 +5,13 @@ Dokážte nerovnosť
 $$\frac{1}{ab}+\frac{1}{cd} \geq \frac{8}{(a+b)(c+d)}$$
 pre ľubovoľné kladné čísla $a$, $b$, $c$, $d$.
 }{
+\rie Celú nerovnosť vynásobíme kladným výrazom $(a+b)(c+d)$ a použitím ekvivalentných úprav upravíme nasledovne.
+\begin{align*}
+\frac{(a+b)(c+d)}{ab}+ \frac{(a+b)(c+d)}{cd} & \geq 8, \\
+\frac{ac+ad+bc+bd}{ab}+\frac{ac+ad+bc+bd}{cd} & \geq 8, \\
+\frac{c}{b}+\frac{d}{b}+\frac{c}{a}+\frac{d}{a}+\frac{a}{d}+\frac{a}{c}+\frac{b}{d}+\frac{b}{c} & \geq 8.
+\end{align*}
+Všimneme si, že ľavá strana obsahuje štyri páry súčtov navzájom obrátených zlomkov:
+$$\bigg(\frac{a}{c}+\frac{c}{a} \bigg)+\bigg(\frac{a}{d}+\frac{d}{a} \bigg)+\bigg(\frac{b}{c}+\frac{c}{b} \bigg)+\bigg(\frac{b}{d}+\frac{d}{b} \bigg)\geq 8. $$
+Sčítaním štyroch nerovností v tvare $u+\frac{1}{u}\geq2$, ktoré platia pre každé kladné reálne $u$, kde v našom prípade je $u$ postupne $\frac{a}{c}$, $\frac{a}{d}$, $\frac{b}{c}$, $\frac{b}{d}$ potom dostaneme tvrdenie, ktoré sme chceli dokázať. 
 }

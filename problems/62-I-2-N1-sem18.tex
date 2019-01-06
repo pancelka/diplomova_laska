@@ -1,0 +1,40 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{62-I-2-N1}{
+Dokážte, že pre ľubovoľné kladné čísla $a, b, c$ platí nerovnosť
+$$\bigg(a +\frac{1}{b}\bigg)\bigg(b+\frac{1}{c}\bigg)\bigg(c+\frac{1}{a}\bigg)\geq 8$$
+a zistite, kedy prechádza v~rovnosť.
+}{
+\rieh Ľavú stranu $L$ dokazovanej nerovnosti najskôr upravíme roznásobením a vzniknuté členy zoskupíme do súčtov dvojíc navzájom prevrátených výrazov:
+\begin{multline*} L = \bigg(a +\frac{1}{b}\bigg)\bigg(b+\frac{1}{c}\bigg)\bigg(c+\frac{1}{a}\bigg) = \bigg(ab+ \frac{a}{c} + 1 +\frac{1}{bc}\bigg) \bigg(c +\frac{1}{a}\bigg)=\\ =\bigg( abc + \frac{1}{abc}\bigg)+\bigg( a+\frac{1}{a}\bigg)+ \bigg(b+\frac{1}{b}\bigg)+\bigg(c+\frac{1}{c}\bigg).\end{multline*}
+Pretože pre $u > 0$ je $u+\frac{1}{u}\geq 2$, pričom rovnosť nastane práve vtedy, keď $u = 1$, pre výraz~$L$ platí $L \geq 2 + 2 + 2 + 2 = 8$, čo sme mali dokázať. Rovnosť $L = 8$ nastane práve vtedy, keď platí
+$$ abc+\frac{1}{abc}=a+\frac{1}{a}=b+\frac{1}{b}=c+\frac{1}{c}=2$$
+teda, ako sme už spomenuli, práve vtedy, keď $abc = a = b = c = 1$,  t.\,j. práve vtedy, keď $a = b = c = 1$.
+
+\textit{Poznámka.} Dodajme, že upravená nerovnosť
+$$abc + a + b + c +\frac{1}{a}+\frac{1}{b}+\frac{1}{c}+\frac{1}{abc}\geq8$$
+vyplýva okamžite aj z nerovnosti medzi aritmetickým a geometrickým priemerom ôsmich čísel
+$$abc, \ \ \ \ a, \ \ \ \  b, \ \ \ \  c, \ \ \ \  \frac{1}{a}, \ \ \ \  \frac{1}{b}, \ \ \ \  \frac{1}{c},  \ \ \ \ \frac{1}{abc},$$
+lebo ich súčin (a teda aj geometrický priemer) je rovný číslu 1, takže ich aritmetický priemer má hodnotu aspoň 1.\\
+\\
+\textbf{Iné riešenie*.} V dokazovanej nerovnosti sa najskôr zbavíme zlomkov, a to tak, že obe jej strany vynásobíme kladným číslom $abc$. Dostaneme tak ekvivalentnú nerovnosť
+$$(ab + 1)(bc + 1)(ac + 1) = 8abc,$$
+ktorá má po roznásobení ľavej strany tvar
+$$a^2b^2c^2 + a^2bc + ab^2c + abc^2 + ab + ac + bc + 1 \geq 8abc.$$
+Poslednú nerovnosť možno upraviť na tvar
+$$(abc -1)^2 + ab(c - 1)^2 + ac(b - 1)^2 + bc(a - 1)^2 \geq 0.$$
+Táto nerovnosť už zrejme platí, lebo na ľavej strane máme súčet štyroch nezáporných výrazov. Pritom rovnosť nastane práve vtedy, keď má každý z týchto štyroch výrazov nulovú hodnotu, teda práve vtedy, keď
+$$abc - 1 = c -1 = b - 1 = a - 1 = 0,$$
+čiže $$a = b = c = 1.$$
+\\
+\textbf{Iné riešenie*.} Danú nerovnosť možno dokázať aj bez roznásobenia jej ľavej strany. Stačí napísať tri AG-nerovnosti
+$$\frac{1}{2}\bigg(a+\frac{1}{b} \bigg)\geq \sqrt{\frac{a}{b}}, \ \ \ \ \frac{1}{2}\bigg(b+\frac{1}{c} \bigg)\geq \sqrt{\frac{b}{c}}, \ \ \ \frac{1}{2}\bigg(c+\frac{1}{a} \bigg)\geq \sqrt{\frac{c}{a}},  $$
+Ich vynásobením dostaneme
+$$\frac{1}{2}\bigg(a+\frac{1}{b} \bigg)\cdot\frac{1}{2}\bigg(b+\frac{1}{c} \bigg)\cdot \frac{1}{2}\bigg(c+\frac{1}{a} \bigg)\geq \sqrt{\frac{a}{b}} \cdot \sqrt{\frac{b}{c}}\cdot \sqrt{\frac{c}{a}} =1, $$
+odkiaľ po násobení ôsmimi obdržíme dokazovanú nerovnosť. Rovnosť v nej nastane práve vtedy, keď nastane rovnosť v každej z troch použitých AG-nerovností, teda práve vtedy, keď sa čísla v každej \uv{priemerovanej} dvojici rovnajú:
+$$a =\frac{1}{b}, \ \ \ \  b =\frac{1}{c}, \ \ \ \  c =\frac{1}{a}.$$
+Z prvých dvoch rovností vyplýva $a = c$, po dosadení do tretej rovnosti potom vychádza $a = c = 1$, teda aj $b = 1$.
+\\
+\kom Úloha sa dá riešiť využitím AG nerovnosti, tá však bude obsahom jedného z~ďalších seminárov, v~ktorom sa (okrem iného) k~tejto úlohe vrátime.\\
+\\
+}
