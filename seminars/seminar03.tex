@@ -42,7 +42,7 @@ Vyriešiť úlohu neznamená len nájsť výsledok. Treba taktiež dokázať, ž
 
 Opisuj svoje úvahy všeobecne. Veľa úloh ($\ldots$) je formulovaných všeobecne. Treba v nich napríklad niečo dokázať pre všetky prirodzené čísla $n$ (alebo niečo obdobné). Bežným postupom, ako prísť na riešenie takýchto úloh, je skúšať ich vyriešiť postupne pre $n$ rovné $1, 2, 3, \ldots$ objaviť pri tom spoločné princípy a zovšeobecniť ich. Avšak nestačí do riešenia napísať, ako sa úloha rieši pre niekoľko malých hodnôt a zvyšok odbiť slovami a tak ďalej. Trénuj si pri riešení úloh všeobecné vyjadrenie, príde ti vhod počas strednej školy a neskôr aj počas vysokej.
 
-Dokazuj veci poriadne, nie intuitívne. Častým nedostatkom riešení býva nedostatočné zdôvodnenie tvrdení, resp. zdôvodnenie len na intuitívnej úrovni. Veľmi častými pojmami, ktoré signalizujú intuitívne dokazovanie, sú tvrdenia: \uv{Robíme to optimálne a preto to je najlepšie, ako sa dá.} \uv{Zoberieme si najhorší možný prípad\ldots} \ldots{Ak to spravíme inak, tak si len pohoršíme.} Aby takéto pojmy mali význam v dôkazoch, musia byť riadne podložené matematickými pojmami. Väčšinou nám však len pomôžu na odhalenie správneho výsledku, ktorý potom už riadne bez nich dokážeme.
+Dokazuj veci poriadne, nie intuitívne. Častým nedostatkom riešení býva nedostatočné zdôvodnenie tvrdení, resp. zdôvodnenie len na intuitívnej úrovni. Veľmi častými pojmami, ktoré signalizujú intuitívne dokazovanie, sú tvrdenia: \uv{Robíme to optimálne a preto to je najlepšie, ako sa dá.} \uv{Zoberieme si najhorší možný prípad\ldots} \uv{Ak to spravíme inak, tak si len pohoršíme.} Aby takéto pojmy mali význam v dôkazoch, musia byť riadne podložené matematickými pojmami. Väčšinou nám však len pomôžu na odhalenie správneho výsledku, ktorý potom už riadne bez nich dokážeme.
 
 Príklad dôkazu, ktorý je založený na intuícii a nie je formálne správny, nasleduje.\\
 \\
@@ -56,11 +56,11 @@ Naším cieľom je strieľať čo najoptimálnejšie, aby sme použili čo najme
     \caption{}
     \label{fig:lode1}
 \end{figure}
-Na to, aby s istotou zasiahli loď, potrebujeme najmenej 9 výstrelov. Na menej výstrelov to nie je možné, pretože sme strieľali najoptimálnejšie.\\
+Na to, aby sme s istotou zasiahli loď, potrebujeme najmenej 9 výstrelov. Na menej výstrelov to nie je možné, pretože sme strieľali najoptimálnejšie.\\
 \\
-\textit{Rozbor riešenia*.} Na prvý pohľad toto riešenie môže vyzerať výborne, avšak riešenie má vážny nedostatok - chýba mu zdôvodnenie, prečo nestačí menej ako 9 výstrelov. Ale prečo? Veď sa v riešení spomína, že menej výstrelov nestačí. Objavuje sa tu aj ďalší problém. Uvedené zdôvodnenia sú len veľmi vágne a len na intuitívnej úrovni. Poďme si to postupne rozobrať.
+\textit{Rozbor riešenia*.} Na prvý pohľad toto riešenie môže vyzerať výborne, avšak riešenie má vážny nedostatok - chýba mu zdôvodnenie, prečo nestačí menej ako 9 výstrelov. Ale prečo? Veď sa v riešení spomína, že menej výstrelov nestačí. Objavuje sa tu aj ďalší problém. Uvedené zdôvodnenia sú len veľmi vágne a len na intuitívnej úrovni. Poďme si to postupne rozobrať. 
 
-\uv{Neoplatí sa nám preto strieľať na políčka pri seba...} Slovíčko \uv{neoplatí} je znamením intuitívnych dôkazov. Aby malo v dôkaze význam, musí byť matematicky podložené. Ako je podložené tu? Riešiteľ síce opisuje, že výstrely pri sebe pokryjú menej políčok ako výstrely ďalej od seba, ale tu už matematické podklady končia. Riešiteľ nepíše, čo to znamená pokryť políčko. Znamená to, že doňho nesme zasahovať loď, nesmie byť v ňom ľavý horný roh lode alebo niečo iné? Taktiež nezdôvodňuje, prečo počet pokrytých políčok bude menší. Patrilo by sa sem uviesť nejaký výpočet, že naozaj ten počet (tak ako ho máme definovaný) vyjde menší.
+\uv{Neoplatí sa nám preto strieľať na políčka pri seba...} Slovíčko \uv{neoplatí} je znamením intuitívnych dôkazov. Aby malo v dôkaze význam, musí byť matematicky podložené. Ako je podložené tu? Riešiteľ síce opisuje, že výstrely pri sebe pokryjú menej políčok ako výstrely ďalej od seba, ale tu už matematické podklady končia. Riešiteľ nepíše, čo to znamená pokryť políčko. Znamená to, že doňho nesmie zasahovať loď, nesmie byť v ňom ľavý horný roh lode alebo niečo iné? Taktiež nezdôvodňuje, prečo počet pokrytých políčok bude menší. Patrilo by sa sem uviesť nejaký výpočet, že naozaj ten počet (tak ako ho máme definovaný) vyjde menší.
 
 Ďalším problémom je, že riešiteľ sa pozerá na polohu iba dvoch políčok. Vo všeobecnosti neplatí, že lokálne najoptimálnejšie riešenie je najoptimálnejšie aj globálne. Môže sa nám stať (zatiaľ teoreticky), že dva výstrely nebudú umiestnené optimálne, ale to, čo pri nich stratíme, môžeme získať pri iných dvojiciach a môže nás to doviesť k ostro lepšiemu rozloženiu výstrelov ako keby sme sa snažili všetko spraviť \uv{najoptimálnejšie} na úrovni susedných výstrelov.
 
@@ -79,7 +79,7 @@ Z hľadiska formulácie riešenia je problém, že riešenie v sebe mieša dve �
     \label{fig:lode2}
 \end{figure}
 
-Ak by mali menej ako 8 výstrelov, tak jeden z ôsmich obdĺžnikov nezasiahneme a zrovna tam sa môže nachádzať loďka. Potrebujeme teda do každého obdĺžnika vystreliť jeden výstrel. Musíme ich umiestniť zároveň tak, aby sa medzi ne nezmestila žiadna iná loď. Na to, aby sme s istotou zasiahli loď, potrebujeme najmenej 8 výstrelov.\\
+Ak by sme mali menej ako 8 výstrelov, tak jeden z ôsmich obdĺžnikov nezasiahneme a zrovna tam sa môže nachádzať loďka. Potrebujeme teda do každého obdĺžnika vystreliť jeden výstrel. Musíme ich umiestniť zároveň tak, aby sa medzi ne nezmestila žiadna iná loď. Na to, aby sme s istotou zasiahli loď, potrebujeme najmenej 8 výstrelov.\\
 \\
 \textit{Rozbor riešenia*.} Toto riešenie taktiež nie je úplné. Riešiteľ v ňom ukázal len, že potrebuje aspoň 8 výstrelov. Neukázal, že 8 výstrelov stačí. Hovorí iba v teoretickej rovine, že ak sa mu podarí tých 8 výstrelov vhodne umiestniť, tak budú stačiť. Ale je to naozaj možné? Čo ak z nejakého iného dôvodu 8 výstrelov stačiť nebude.\\
 \\
