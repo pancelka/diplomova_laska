@@ -1,0 +1,129 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage[T1]{fontenc}
+\usepackage[slovak]{babel}
+
+
+\usepackage{mathptmx}  %% volne dostupny font Adobe Times Roman
+
+\usepackage{longtable,lipsum}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{colortbl}
+\usepackage{graphicx}
+\usepackage[shortlabels]{enumitem}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+
+\tcbuselibrary{breakable}
+\definecolor{light-gray}{gray}{0.95}
+
+\newcounter{seminar}
+\newcounter{problem}
+\newcommand{\seminar}[2]{
+  \clearpage
+  \setcounter{seminar}{#1}
+  \setcounter{problem}{0}
+  \section*{Seminár #1}
+}
+
+\newcommand{\teachernote}[1]{}
+\newcommand{\imagesuffix}[0]{}
+
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\kom}{\textbf{Komentár.} }
+\newcommand{\ul}[1]{\textbf{Úloha #1.} }
+\newcommand{\rie}{\textbf{Riešenie.} }
+\newcommand{\rieh}{\textbf{Riešenie*.} }
+\newcommand{\ma}{\measuredangle}
+\newcommand\todo[1]{\noindent\textcolor{red}{(#1)}}
+
+\newcommand{\problem}[3]{
+  \stepcounter{problem}
+  \noindent\textbf{Úloha \theseminar .\theproblem.}
+    [#1] #2
+  \bigskip
+}
+
+\begin{document}
+
+\input{seminars/seminar01.tex}
+
+\input{seminars/seminar02.tex}
+
+\input{seminars/seminar03.tex}
+
+\input{seminars/seminar04.tex}
+
+\input{seminars/seminar05.tex}
+
+\input{seminars/seminar06.tex}
+
+\input{seminars/seminar07.tex}
+
+\input{seminars/seminar08.tex}
+
+\input{seminars/seminar09.tex}
+
+\input{seminars/seminar10.tex}
+
+\input{seminars/seminar11.tex}
+
+\input{seminars/seminar12.tex}
+
+\input{seminars/seminar13.tex}
+
+\input{seminars/seminar14.tex}
+
+\input{seminars/seminar15.tex}
+
+\input{seminars/seminar16.tex}
+
+\input{seminars/seminar17.tex}
+
+\input{seminars/seminar18.tex}
+
+\input{seminars/seminar19.tex}
+
+\input{seminars/seminar20.tex}
+
+\input{seminars/seminar21.tex}
+
+\input{seminars/seminar22.tex}
+
+\input{seminars/seminar23.tex}
+
+\input{seminars/seminar24.tex}
+
+\input{seminars/seminar25.tex}
+
+\input{seminars/seminar26.tex}
+
+\input{seminars/seminar27.tex}
+
+\input{seminars/seminar28.tex}
+
+\input{seminars/seminar29.tex}
+
+% \input{seminars/seminar30.tex}
+
+% \input{seminars/seminar31.tex}
+
+% \input{seminars/seminar32.tex}
+
+% \input{seminars/seminar33.tex}
+
+% \input{seminars/seminar34.tex}
+
+
+\end{document}
