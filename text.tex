@@ -373,6 +373,7 @@ Záverom prvej kapitoly ešte poznamenajme, že veľkú väčšinu úloh v semin
 \input{seminars/seminar34.tex}
 
 \chapter*{Záver} \label{chap:zaver}
+\addcontentsline{toc}{chapter}{\nameref{chap:zaver}}
 
 V diplomovej práci sme sa venovali tvorbe prezenčného seminára pre študentov prvého ročníka strednej školy so záujmom o matematiku, konkrétnejšie príprave podrobných osnov vrátane riešených príkladov. Seminár má za cieľ podporovať študentov pri príprave na matematické súťaže, najmä matematickú olympiádu. Po tom, čo sme seminár zasadili do kontextu matematického vzdelávania stredoškolákov a preskúmali sme úlohy matematickej olympiády kategórie C v posledných desiatich rokoch, sme jednotlivé stretnutia tematicky rozdelili a doplnili o semináre konzultačné a zamerané aj na inú súťaž než olympiáda, konkrétne \textit{Náboj}.
 
@@ -385,15 +386,6 @@ Na záver už len dodám, že čas strávený vypracovaním diplomovej práce bo
 
 \renewcommand{\bibname}{Zoznam použitej literatúry}
 \HlavickaLiteratura
-\label{chap:bib}
-\addcontentsline{toc}{chapter}{\nameref{chap:bib}}
-                           \nocite{*}
-\printbibliography
+\printbibliography[heading=bibintoc]
 
 
-\chapter*{Prílohy}
-\label{chap:pril}
-\addcontentsline{toc}{chapter}{\nameref{chap:pril}}
-
-\section*{Príloha A}
-\todo{Kartičky hry SET.}
