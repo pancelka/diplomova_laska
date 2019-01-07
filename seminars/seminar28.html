@@ -34,71 +34,66 @@
 <body>
 <div class="main">
     <div class="backlink"><a href="index.html">&larrhk;&nbsp;späť na zoznam cvičení</a></div>
-<h1 id="seminár-28-algebraické-výrazy-a-rovnice-vi-sústavy-rovníc-rovnice-s-parametrom" class="unnumbered">Seminár 28: Algebraické výrazy a rovnice VI – sústavy rovníc, rovnice s parametrom</h1>
+<h1 id="seminár-28-hra-set" class="unnumbered">Seminár 28: Hra SET</h1>
 <p><div class="pdflinks">PDF na stiahnutie: <a href="pdf/seminar28-teacher.pdf">učiteľská verzia</a>, <a href="pdf/seminar28-student.pdf">študentská verzia</a></div></p>
 <h2 id="ciele" class="unnumbered">Ciele</h2>
-<p>Precvičiť so študentmi riešenie rovníc obsahujúcich parameter, zoznámiť študentov s niektorými metódami riešenia sústav rovníc</p>
-<h2 id="úlohy-a-riešenia" class="unnumbered">Úlohy a riešenia</h2>
-<h3 id="úloha-b-66-ii-1">Úloha B-66-II-1</h3>
-<p><div class="problem"> Nájdite všetky dvojice prirodzených čísel <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, pre ktoré platí <span class="math display">\[a +\frac{66}{a}= b +\frac{66}{b}.\]</span> </div> <h4 class="solution-button">Riešenie</h4> <div class="solution"> Anulovaním pravej strany upravíme danú rovnicu na tvar <span class="math display">\[a - b + 66\bigg(\frac{1}{a}-\frac{1}{b}\bigg)= (a - b)\bigg(1-\frac{66}{ab}\bigg)=\frac{1}{ab}(a - b)(ab - 66) = 0.\]</span> Z toho vyplýva, že hľadané dvojice <span class="math inline">\((a, b)\)</span> prirodzených čísel sú práve tie, pre ktoré platí <span class="math inline">\(a = b\)</span> alebo <span class="math inline">\(ab = 66\)</span>.</p>
-<p>Úlohe teda vyhovuje nekonečne veľa dvojíc prirodzených čísel tvaru <span class="math inline">\((a, b) = (k, k)\)</span>, pričom <span class="math inline">\(k\)</span> je ľubovoľné prirodzené číslo, a keďže číslo <span class="math inline">\(66 = 2\cdot 3\cdot 11\)</span> má osem deliteľov, tak aj osem dvojíc <span class="math inline">\((a, b) \in \{\)</span><span class="math inline">\((1, 66)\)</span>, <span class="math inline">\((2, 33)\)</span>, <span class="math inline">\((3, 22)\)</span>, <span class="math inline">\((6, 11)\)</span>, <span class="math inline">\((11, 6)\)</span>, <span class="math inline">\((22, 3)\)</span>, <span class="math inline">\((33,2)\)</span>, <span class="math inline">\((66,1)\)</span><span class="math inline">\(\}\)</span>.<br />
-<br />
-Úloha je relatívne jednoduchá a vhodná ako rozcvička na začiatok seminára. Pripomenie študentom metódu riešenia rovníc rozkladom na súčin výrazov, ktorý je rovný nule. Zároveň v záverečnej diskusii zľahka využijú vedomosti o deliteľnosti prirodzených čísel.<br />
-<br />
-</div></p>
-<h3 id="úloha-b-58-ii-1">Úloha B-58-II-1</h3>
-<p><div class="problem"> V obore reálnych čísel riešte sústavu rovníc <span class="math display">\[\begin{aligned}
-    x + y &amp; = 1,\\
-    x - y &amp; = a,\\
-    -4ax + 4y &amp; = z^2 + 4\end{aligned}\]</span> s neznámymi <span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span>, <span class="math inline">\(z\)</span> a reálnym parametrom <span class="math inline">\(a\)</span>. </div> <h4 class="solution-button">Riešenie</h4> <div class="solution"> Sčítaním prvej a druhej rovnice danej sústavy dostaneme <span class="math inline">\(2x = 1 + a\)</span>, odčítaním druhej rovnice od prvej <span class="math inline">\(2y = 1 - a\)</span>. Odtiaľ <span class="math display">\[\label{eq:B58II1_1}
-    x =\frac{1}{2}(1 + a), \ \ \ \  y =\frac{1}{2}(1 - a).\]</span> Keď dosadíme za <span class="math inline">\(x\)</span> a <span class="math inline">\(y\)</span> do tretej rovnice pôvodnej sústavy, dostaneme rovnicu <span class="math display">\[-2a(1 + a) + 2(1 - a) = z^2 + 4,\ \ \ \ \text{čiže} \ \ \ \ z^2 + 2a^2 + 4a + 2 = 0,\]</span> ktorú upravíme na tvar <span class="math display">\[z^2 + 2(a + 1)^2 = 0.\]</span> Oba sčítance na ľavej strane poslednej rovnice sú nezáporné čísla. Ich súčet je 0 práve vtedy, keď <span class="math inline">\(z = 0\)</span>, <span class="math inline">\(a = -1\)</span>. Dosadením týchto hodnôt do <a href="#eq:B58II1_1" data-reference-type="ref" data-reference="eq:B58II1_1">[eq:B58II1_1]</a> dostaneme <span class="math inline">\(x = 0, y = 1\)</span>.</p>
-<p><em>Záver.</em> Daná sústava rovníc má riešenie iba pre <span class="math inline">\(a = -1\)</span>, a to <span class="math inline">\(x = 0\)</span>, <span class="math inline">\(y = 1\)</span>, <span class="math inline">\(z = 0\)</span>. Skúška pri tomto postupe nie je nutná.<br />
-<br />
-Úloha vyžaduje umné narábanie so sústavou troch rovníc tak, aby bolo možné uskutočniť záverečnú diskusiu o existencii riešenia pre rôzne hodnoty parametra <span class="math inline">\(a\)</span>. Je tiež vhodné so študentami prediskutovať, prečo v tomto prípade nie je nutné robiť skúšku správnosti.<br />
-<br />
-</div></p>
-<h3 id="úloha-b-60-s-1">Úloha B-60-S-1</h3>
-<p><div class="problem"> V obore reálnych čísel vyriešte rovnicu <span class="math display">\[\sqrt{x + 3} +\sqrt{x} = p\]</span> s neznámou <span class="math inline">\(x\)</span> a reálnym parametrom <span class="math inline">\(p\)</span>. </div> <h4 class="solution-button">Riešenie</h4> <div class="solution"> Aby bola ľavá strana rovnice definovaná, musia byť oba výrazy pod odmocninami nezáporné, čo je splnené práve pre všetky <span class="math inline">\(x \geq 0\)</span>. Pre nezáporné <span class="math inline">\(x\)</span> potom <span class="math inline">\(p =\sqrt{x + 3}+\sqrt{x} \geq \sqrt{3}\)</span>, rovnica môže teda mať riešenie iba pre <span class="math inline">\(p \geq \sqrt{3}\)</span>.</p>
-<p>Upravujme danú rovnicu: <span class="math display">\[\begin{aligned}
-\sqrt{3} +\sqrt{x + 3} &amp; = p, \nonumber\\
-2x + 3 + 2\sqrt{x(x + 3)} &amp; = p^2,\nonumber \\
-2\sqrt{x(x + 3)} &amp; = p^2- 2x - 3,\nonumber \\
-4x(x + 3) &amp; = (p^2 -2x - 3)^2,\nonumber \\
-4x^2+ 12x &amp; = p^4+ 4x^2+ 9 - 4p^2x - 6p^2+ 12x, \nonumber\\
-x &amp; = \frac{(p^2 - 3)^2}{4p^2}. \label{eq:B60S1}\end{aligned}\]</span> Keďže sme danú rovnicu umocňovali na druhú, je nutné sa presvedčiť skúškou, že vypočítané <span class="math inline">\(x\)</span> je pre hodnotu parametra <span class="math inline">\(p \geq \sqrt{3}\)</span> riešením pôvodnej rovnice: <span class="math display">\[\begin{aligned}
-    \sqrt{\frac{(p^2 - 3)^2}{4p^2}+ 3} +\sqrt{\frac{(p^2 - 3)^2}{4p^2}} &amp; = \sqrt{\frac{p^4 - 6p^2 + 9 + 12p^2}{4p^2}}+\sqrt{\frac{(p^2 - 3)^2}{4p^2}} =\\
- &amp; = \sqrt{\frac{(p^2 + 3)^2}{4p^2}}+\sqrt{\frac{(p^2 -3)^2}{4p^2}}=\frac{p^2 + 3}{2p}+\frac{p^2 - 3}{2p}= p.\end{aligned}\]</span> Pri predposlednej úprave sme využili podmienku <span class="math inline">\(p \geq \sqrt{3}\)</span> (a teda aj <span class="math inline">\(p^2 -3 \geq 0\)</span> a <span class="math inline">\(p &gt; 0\)</span>), takže <span class="math inline">\(\sqrt{(p^2 - 3)^2} = p^2 - 3\)</span> a <span class="math inline">\(\sqrt{4p^2} = 2p\)</span>.</p>
-<p><em>Poznámka.</em> Namiesto skúšky stačí overiť, že pre nájdené <span class="math inline">\(x\)</span> sú všetky umocňované výrazy nezáporné, teda vlastne stačí overiť, že <span class="math display">\[p^2 - 2x - 3 =\frac{(p^2 - 3)(p^2 + 3)}{2p^2}\geq 0.\]</span> Pre <span class="math inline">\(p \geq \sqrt{3}\)</span> to tak naozaj je.</p>
-<p>Vynechať skúšku možno aj takouto úvahou: Funkcia <span class="math inline">\(\sqrt{x + 3}+\sqrt{x}\)</span> je zrejme rastúca, v bode 0 (ktorý je krajným bodom jej definičného oboru) nadobúda hodnotu <span class="math inline">\(\sqrt{3}\)</span> a zhora je neohraničená. Preto každú hodnotu <span class="math inline">\(p \geq \sqrt{3}\)</span> nadobúda pre práve jedno <span class="math inline">\(x \geq 0\)</span>. Z toho vyplýva, že pre <span class="math inline">\(p \geq \sqrt{3}\)</span> má zadaná rovnica práve jedno riešenie, a teda (jediné) nájdené riešenie <a href="#eq:B60S1" data-reference-type="ref" data-reference="eq:B60S1">[eq:B60S1]</a> musí vyhovovať.<br />
-<br />
-Úloha nie je algebraicky náročná, vyžaduje však starostlivú diskusiu definičného oboru, ktorý potom vyústi v obmedzenie hodnôt parametra <span class="math inline">\(p\)</span>. Dôležitou súčasťou riešenia je v tomto prípade aj skúška správnosti, prípadne diskusia, ktorá je uvedená v závere prezentovaného riešenia ̇<br />
-</div></p>
-<h3 id="úloha-b-58-i-2">Úloha B-58-I-2</h3>
-<p><div class="problem"> Určte všetky trojice <span class="math inline">\((x, y, z)\)</span> reálnych čísel, pre ktoré platí <span class="math display">\[\begin{aligned}
-    x^2 + xy &amp; = y^2 + z^2,\\
-    z^2 + zy &amp; = y^2 + x^2 .\end{aligned}\]</span> </div> <h4 class="solution-button">Riešenie</h4> <div class="solution"> Odčítaním prvej rovnice od druhej dostaneme po úprave <span class="math display">\[(z - x)(2z + 2x + y) = 0.\]</span> Sú preto možné dva prípady, ktoré rozoberieme samostatne.</p>
-<ol type="a">
-<li><p>Prípad <span class="math inline">\(z - x = 0\)</span>. Dosadením <span class="math inline">\(z = x\)</span> do prvej rovnice sústavy dostaneme <span class="math inline">\(x^2+ xy = y^2 + x^2\)</span>, čiže <span class="math inline">\(y(x - y) = 0\)</span>. To znamená, že platí <span class="math inline">\(y = 0\)</span> alebo <span class="math inline">\(x = y\)</span>. V prvom prípade dostávame trojice <span class="math inline">\((x, y, z) = (x, 0, x)\)</span>, v druhom <span class="math inline">\((x, y, z) = (x, x, x)\)</span>; také trojice sú riešeniami danej sústavy pre ľubovoľné reálne číslo <span class="math inline">\(x\)</span>, ako ľahko overíme dosadením (aj keď taká skúška pri našom postupe vlastne nie je nutná). <span id="part:a" label="part:a">[part:a]</span></p></li>
-<li><p>Prípad <span class="math inline">\(2z + 2x + y = 0\)</span>. Dosadením <span class="math inline">\(y = -2x - 2z\)</span> do prvej rovnice sústavy dostaneme <span class="math display">\[x^2 + x(-2x - 2z) = (-2x - 2z)^2 + z^2,\ \ \ \ \text{čiže} \ \ \ \  5(x + z)^2 = 0.\]</span> Posledná rovnica je splnená práve vtedy, keď <span class="math inline">\(z = -x\)</span>, vtedy však <span class="math inline">\(y = -2x - 2z = 0\)</span>.Dostávame trojice <span class="math inline">\((x, y, z) = (x, 0, -x)\)</span>, ktoré sú riešeniami danej sústavy pre každé reálne <span class="math inline">\(x\)</span>, ako overíme dosadením. (O takej skúške platí to isté čo v prípade <a href="#part:a" data-reference-type="ref" data-reference="part:a">[part:a]</a>.</p></li>
+<p>Zoznámenie sa s hrou SET a riešenie jednoduchších aj zložitejších úloh využívajúcich vlastnosti herných kartičiek.</p>
+<h3 id="úvodný-komentár" class="unnumbered">Úvodný komentár</h3>
+<p>Seminár má trochu odlišnú štruktúru, než na akú boli študenti v seminároch doteraz navyknutí, no nepovažujeme to za žiadny problém. Taktiež je tento a nasledujúci seminár zaradený ako odľahčenie po tom, čo matematická olympiáda kategórie C vyvrcholila v uplynulom týždni.</p>
+<h2 id="priebeh-seminára" class="unnumbered">Priebeh seminára</h2>
+<h3 id="kartičky-v-hre-set" class="unnumbered">Kartičky v hre SET</h3>
+<p>Hra SET je kartovou hrou pre dvoch a viac hráčov. Každá kartička zobrazuje sadu symbolov, ktorá má 4 charakteristiky, pričom každá sa vyskytuje v troch variantoch:</p>
+<ol>
+<li><p><em>farba</em>: červená, modrá, zelená;</p></li>
+<li><p><em>tvar</em>: obdĺžnik, ovál, trojuholník;</p></li>
+<li><p><em>výplň</em>: plná, polovičná, úplne biela;</p></li>
+<li><p><em>počet symbolov</em>: jeden, dva, tri.</p></li>
 </ol>
-<p><em>Odpoveď.</em> Všetky riešenia <span class="math inline">\((x, y, z)\)</span> danej sústavy sú trojice troch typov: <span class="math display">\[(x, x, x), \ \  (x, 0, x), \ \  (x, 0, -x),\]</span> kde <span class="math inline">\(x\)</span> je ľubovoľné reálne číslo.</p>
-<p><strong>Iné riešenie*.</strong> Obe rovnice sústavy sčítame. Po úprave dostaneme rovnicu <span class="math display">\[y(x + z - 2y) = 0\]</span> a opäť rozlíšime dve možnosti.</p>
-<ol type="a">
-<li><p>Prípad <span class="math inline">\(y = 0\)</span>. Z prvej rovnice sústavy ihneď vidíme, že <span class="math inline">\(x^2 = z^2\)</span>, čiže <span class="math inline">\(z =\pm x\)</span>. Skúškou overíme, že každá z trojíc <span class="math inline">\((x, 0, x)\)</span> a <span class="math inline">\((x, 0, -x)\)</span> je pre ľubovoľné reálne <span class="math inline">\(x\)</span> riešením. <span id="part:a2" label="part:a2">[part:a2]</span></p></li>
-<li><p>Prípad <span class="math inline">\(x + z - 2y = 0\)</span>. Dosadením <span class="math inline">\(y = \frac{1}{2}(x + z)\)</span> do prvej rovnice sústavy dostaneme <span class="math display">\[x^2 + x(x + z)^2=\frac{(x + z)^2}{4}+ z^2, \ \ \ \ \text{po úprave} \ \ \ \  x^2 = z^2.\]</span> Platí teda <span class="math inline">\(z = -x\)</span> alebo <span class="math inline">\(z = x\)</span>. Dosadením do rovnosti <span class="math inline">\(x + z - 2y = 0\)</span> v prvom prípade dostaneme <span class="math inline">\(y = 0\)</span>, v druhom prípade <span class="math inline">\(y = x\)</span>. Zodpovedajúce trojice <span class="math inline">\((x, 0, -x)\)</span> a <span class="math inline">\((x, x, x)\)</span> sú riešeniami pre každé reálne <span class="math inline">\(x\)</span> (prvé z nich sme však našli už v časti <a href="#part:a2" data-reference-type="ref" data-reference="part:a2">[part:a2]</a>.</p></li>
-</ol>
-<p></div></p>
-<h3 id="úloha-b-60-i-1">Úloha B-60-I-1</h3>
-<p><div class="problem"> V obore reálnych čísel vyriešte sústavu <span class="math display">\[\begin{aligned}
-    \sqrt{x^2 + y^2} &amp; = z + 1,\\
-    \sqrt{y^2 + z^2} &amp; = x + 1,\\
-    \sqrt{z^2 + x^2} &amp; = y + 1.\end{aligned}\]</span> </div> <h4 class="solution-button">Riešenie</h4> <div class="solution"> Umocnením a odčítaním prvých dvoch rovností dostaneme <span class="math inline">\(x^2 - z^2= (z + 1)^2 - (x + 1)^2\)</span>, čo upravíme na <span class="math inline">\(2(x^2 - z^2 ) + 2(x - z) = 0\)</span>, čiže <span class="math display">\[\label{eq:B60I1}
-    (x - z)(x + z + 1) = 0.\]</span> Analogicky by sme dostali ďalšie dve rovnice, ktoré vzniknú z <a href="#eq:B60I1" data-reference-type="ref" data-reference="eq:B60I1">[eq:B60I1]</a> cyklickou zámenou neznámych <span class="math inline">\(x \rightarrow y \rightarrow z\)</span>. Vzhľadom na túto symetriu (daná sústava sa nezmení dokonca pri ľubovoľnej permutácii neznámych) stačí rozobrať len nasledovné dve možnosti:</p>
-<p>Ak <span class="math inline">\(x = y = z\)</span>, prejde pôvodná sústava na jedinú rovnicu <span class="math inline">\(\sqrt{2x^2} = x + 1\)</span>, ktorá má dve riešenia <span class="math inline">\(x_{1,2} = 1 \pm \sqrt{2}\)</span>. Každá z trojíc <span class="math inline">\((1 \pm \sqrt{2}, 1 \pm \sqrt{2}, 1 \pm{2})\)</span> je zrejme riešením pôvodnej sústavy.</p>
-<p>Ak sú niektoré dve z čísel <span class="math inline">\(x, y, z\)</span> rôzne, napríklad <span class="math inline">\(x \neq z\)</span>, vyplýva z <a href="#eq:B60I1" data-reference-type="ref" data-reference="eq:B60I1">[eq:B60I1]</a> rovnosť <span class="math inline">\(x+z = - 1\)</span>. Dosadením <span class="math inline">\(x+1 = - z\)</span> do druhej rovnice sústavy dostávame <span class="math inline">\(y = 0\)</span> a potom z tretej rovnice máme <span class="math inline">\(x^2 + (x + 1)^2 = 1\)</span>, čiže <span class="math inline">\(x(x + 1) = 0\)</span>. Posledná rovnica má dve riešenia <span class="math inline">\(x = 0\)</span> a <span class="math inline">\(x = - 1\)</span>, ktorým zodpovedajú <span class="math inline">\(z = - 1\)</span> a <span class="math inline">\(z = 0\)</span>. Ľahko overíme, že obe nájdené trojice <span class="math inline">\((0, 0, - 1)\)</span> a <span class="math inline">\((- 1, 0, 0)\)</span> sú riešeniami danej sústavy, rovnako aj trojica <span class="math inline">\((0, - 1, 0)\)</span>, ktorú dostaneme ich permutáciou.</p>
-<p>Daná sústava má päť riešení: <span class="math inline">\((0, 0, - 1), (0, - 1, 0), ( - 1, 0, 0), (1 +\sqrt{2}, 1 +\sqrt{2}, 1 +\sqrt{2})\)</span> a <span class="math inline">\((1 -\sqrt{2}, 1 -\sqrt{2}, 1 -\sqrt{2})\)</span>.<br />
+<p>Koľko kariet obsahuje hrací balíček?</p>
+<p>Keďže každá zo 4 charakteristík sa môže vyskytnúť v troch rôznych variantoch, v balíčku je celkom <span class="math inline">\(3^4=81\)</span> rôznych kartičiek.<br />
 <br />
-Posledné dve úlohy seminára kombinujú princípy z prvých dvoch úloh: vhodné sčítanie a odčítanie rovníc medzi sebou a úpravu na súčin členov, ktorý je rovný nule. Dôležité však je, aby boli študenti pozorní pri vyvodzovaní záverov a pokryli v ich riešení všetky možnosti. Zároveň je posledná úloha pekným príkladom symetrie, je vhodné so študentami prediskutovať, ako táto úlohu zjednodušuje. </div></p>
+Na seminár je vhodné mať kartičky nastrihané a zalaminované, aby sa s nimi študentom lepšie manipulovalo. Príklad kartičiek je v prílohe.</p>
+<h3 id="zoznámenie-sa-shrou-set" class="unnumbered">Zoznámenie sa s hrou SET</h3>
+<p>SET je trojica kartičiek, pre ktorú platí: každá z charakteristík je buď pre všetky tri kartičky rovnaká, alebo je na každej kartičke odlišná. Ak sa napríklad pozrieme na charakteristiku <em>tvar</em>, tak sú na všetkých troch kartičkách buď len samé ovály (alebo len samé obdĺžniky, alebo len samé trojuholníky), alebo sú na jednej kartičke ovály, na druhej obdĺžniky a na tretej trojuholníky. Podobne pre ďalšie charakteristiky.<br />
+<br />
+</p>
+<p><img src="images/set_ano.png" alt="image" style="width:80.0%" /><br />
+Táto trojica kartičiek tvorí SET: farba je rovnaká, tvar je na každej kartičke iný, podobne výplň a všetky majú rovnaký počet symbolov.<br />
+<br />
+</p>
+
+<p><img src="images/set_nie.png" alt="image" style="width:80.0%" /><br />
+Táto trojica nie je SET. Síce majú všetky tri kartičky rovnaký počet symbolov, symboly sú rovnakého tvaru a každá kartička je inej farby, výplň na dvoch kartičkách je prázdna zatiaľ čo tretia je vyplnená polovične.</p>
+<p>Po zamiešaní sa z balíčka vyloží na stôl 12 kartičiek. Hráči medzi nimi hľadajú SETy. Ak sa to niekomu podarí, vykríkne a ukáže ho spoluhráčom. Ak je SET správny, hráč si ho vezme zo stola, namiesto neho sa vyložia nové tri kartičky a pokračuje sa v hre. V prípade, že sú hráči presvedčení, že sa medzi vyloženými kartičkami žiadny SET nenachádza, doložia na stôl ďalšie tri kartičky. Hra končí v momente, kedy hráči vyčerpajú všetky kartičky. Cieľom hry je, samozrejme, pozbierať čo najviac SETov. Hra sa dá hrať v takmer ľubovoľne veľkej skupine, z praktických dôvodov sa najviac osvedčili trojice a štvorice.<br />
+<br />
+Predtým, než sa pustíme do hrania, je vhodné so študentmi prejsť niekoľko trojíc kartičiek a pobaviť sa o tom, ktoré trojice SETmi sú, ktoré nie a prečo, prípadne premietnuť rozloženie 12 kartičiek a hľadať v nich SETy spoločne.<br />
+<br />
+Po zahraní niekoľkých kôl sa so študentmi pobavíme o tom, akým spôsobom SETy hľadali, ktoré SETy sú na nájdenie jednoduchšie, prípadne iné ďalšie zaujímavosti, ktoré počas hry vypozorovali. K tejto diskusii sa môžeme vrátiť neskôr v priebehu seminára, keď sa budeme zaoberať kategorizovaním rôznych typov SETov.</p>
+<h3 id="úlohy-obalíčku-kariet" class="unnumbered">Úlohy o balíčku kariet</h3>
+<p>Ak vyberiem dve ľubovoľné kartičky z balíčka, koľko kartičiek existuje takých, aby s pôvodnými dvoma tvorili SET a prečo?</p>
+<p>Taká kartička je práve jedna, keďže charakteristiky prvých dvoch priamo určujú, aká variácia každej charakteristiky musí byť na poslednej kartičke (ak sa prvé dve kartičky v charakteristike zhodujú, musí sa s nimi zhodovať aj tretia, ak sú odlišné, aj tretia kartička sa musí odlišovať).<br />
+<br />
+</p>
+<p>Koľko rôznych SETov (kartičky sa v rámci jednotlivých SETov môžu opakovať) sa nachádza v celom balíčku?</p>
+<p>Na vytvorenie SETu potrebujeme tri kartičky. Prvú z nich môžem bez akéhokoľvek obmedzenia vybrať spomedzi všetkých 81 kartičiek, druhá kartička sa dá vybrať 80 spôsobmi a z predchádzajúceho vieme, že tretia kartička tvoriaca SET s už dvoma zvolenými je práve jedna. Keďže však nezáleží na poradí, v ktorom sme kartičky vyberali, vydelíme počet možností <span class="math inline">\(81\cdot 80\)</span> počtom všetkých možných usporiadaní troch kartičiek, teda <span class="math inline">\(6\)</span>. Celkom dostávame <span class="math inline">\(\frac{81\cdot 80}{6}=1080\)</span> rozličných SETov.<br />
+<br />
+</p>
+<p>Z balíčka vyberieme jednu kartičku. Koľkých rôznych SETov môže byť táto kartička súčasťou?</p>
+<p>Z predchádzajúceho plynie, že zvyšných 80 kartičiek v balíčku vieme rozdeliť na 40 neprelínajúcich sa dvojíc, pričom každá táto dvojica bude tvoriť s pôvodnou kartičkou SET.<br />
+<br />
+Menej zdatným študentom môže s pochopením vysvetlenia pomôcť vyložiť si na stôl konkrétne dvojice – teda hľadať konkrétne SETy, ktorých je vybraná kartička súčasťou.<br />
+<br />
+</p>
+<p>Ako je možné ukázať, že v danom rozložení kartičiek na stole sa nenachádza žiadny SET?</p>
+<p>K tomuto problému je možné pristupovať rôznymi spôsobmi, no všetky spája potreba skontrolovať všetky možné kombinácie a vylúčiť prítomnosť SETu. Zaujímavé je pozorovať, akú stratégiu študenti zvolia (v porovnaní s tým, ako postupovali pri hraní hry). Nástavbou na túto úlohu môže byť otázka, ako dané rozloženie 12 kartičiek skontrolovať čo najefektívnejšie.<br />
+<br />
+</p>
+<p>Je možné SETy nejako kategorizovať? Ako? Koľko SETov v jednotlivých kategóriách je možné vytvoriť? Vieme správnosť našich výpočtov overiť pomocou nejakých predchádzajúcich úvah?</p>
+<p>Táto úloha sa dá opäť uchopiť mnohými spôsobmi. Jedným z nich môže byť roztriedenie SETov pomocou počtu charakteristík, ktoré majú kartičky spoločné. Každé rozdelenie, ktoré žiaci vymyslia, by ich však v konečnom dôsledku malo priviesť k rovnakému počtu SETov ako v úlohe 2.<br />
+<br />
+<strong>Záverečný komentár.</strong> Hra SET je pre študentov (a nielen nich) veľmi atraktívna a majú tendencie sa odhodlane púšťať aj do predkladaných problémov. Stretnutie je tak príjemnou zmenou tempa a obsahu doterajšieho priebehu seminára</p>
+<h3 id="doplňujúce-zdroje-a-materiály" class="unnumbered">Doplňujúce zdroje a materiály</h3>
+<p>Výborným sprievodcom plným zaujímavých úloh spolu s komentovanými študentskými riešeniami je možné nájsť na <span class="citation" data-cites="SET"></span>.</p>
         </div>
     <div class="footer">
         Semináre zostavila Alexandra Porembová. Technické spracovanie Martin Ukrop, Jan Mrázek.<br/>
