@@ -13,7 +13,7 @@
 \@ifundefined{NeedsTeXFormat}{
 \typeout{*******************************************************************************}
 \ProvidesClass{sci.muni.thesis}[\filedate\space v\fileversion]
-\typeout{This package provides the basic style for bachelor, master, and rigorous theses written by students of 
+\typeout{This package provides the basic style for bachelor, master, and rigorous theses written by students of
 the Faculty of Science (Masaryk University) with repect to the Provision of Dean No. 5/2014}
 \typeout{Author: Petr Zemanek (zemanekp@math.muni.cz)}
 \typeout{For bachelor and master theses see http://www.sci.muni.cz/en/BcMgrStudium/}
@@ -29,7 +29,7 @@ Prirodovedecke fakulty Masarykovy univerzity dle Opatreni dekana c. 5/2014}
 \NeedsTeXFormat{LaTeX2e}
 \typeout{*******************************************************************************}
 \ProvidesClass{sci.muni.thesis}[\filedate\space v\fileversion]
-\typeout{This package provides the basic style for bachelor, master, and rigorous theses written by students of 
+\typeout{This package provides the basic style for bachelor, master, and rigorous theses written by students of
 the Faculty of Science (Masaryk University) with repect to the Provision of Dean No. 5/2014}
 \typeout{Author: Petr Zemanek (zemanekp@math.muni.cz)}
 \typeout{For bachelor and master theses see http://www.sci.muni.cz/en/BcMgrStudium/}
@@ -50,11 +50,15 @@ Prirodovedecke fakulty Masarykovy univerzity dle Opatreni dekana c. 5/2014}
 \DeclareOption{Mgr}{\newcommand{\TypPrace}{Diplomov{\'{a}} pr{\'{a}}ce}}
 \DeclareOption{RNDr}{\newcommand{\TypPrace}{Rigorózn{\'{i}} pr{\'{a}}ce}}
 
+\definecolor{dark-red}{rgb}{0.6,0.15,0.15}
+\definecolor{dark-green}{rgb}{0.15,0.4,0.15}
+\definecolor{medium-blue}{rgb}{0,0,0.5}
+
 \DeclareOption{Barevne}{\hypersetup{
-linkcolor=red,
-citecolor=blue,
-filecolor=magenta,
-urlcolor=cyan,
+linkcolor=dark-red,
+citecolor=dark-green,
+filecolor=medium-blue,
+urlcolor=medium-blue,
 }}
 
 \DeclareOption{Tisk}{\hypersetup{
@@ -196,7 +200,7 @@ fakulta}}}}
 \end{raggedright}
 
 \end{titlepage}
- 
+
 \cleardoublepage
 }
 
@@ -229,10 +233,10 @@ fakulta}}}}
     {\fontsize{21pt}{28pt}\selectfont{\textbf{\textsc{P{\v{r}}{\'{i}}rodov{\v{e}}deck{\'{a}} fakulta}}}}\\[1mm]
 %
     \settowidth{\sirkaustavorig}{\fontsize{16pt}{28pt}\selectfont{\textbf{\textsc{\Ustav}}}}
-   
+
 \settowidth{\sirkafakultaorig}{\fontsize{21pt}{28pt}\selectfont{\textbf{\textsc{P{\v{r}}{\'{i}}rodov{\v{e}}deck{\'{a}}
 fakulta}}}}
-%    
+%
     \ifthenelse{\lengthtest{\sirkaustavorig > 0.95\sirkafakultaorig}}%
         {\vspace*{-0.5mm}\textbf{\textsc{\scaletowidth{0.95\sirkafakultaorig}{\Ustav}}}\\[-1mm]}%
         {\vspace*{-4mm}\fontsize{16pt}{28pt}\selectfont{\textbf{\textsc{\Ustav}}}\\[-6mm]}
@@ -315,10 +319,10 @@ fakulta}}}}
     {\fontsize{21pt}{28pt}\selectfont{\textbf{\textsc{P{\v{r}}{\'{i}}rodov{\v{e}}deck{\'{a}} fakulta}}}}\\[1mm]
 %
     \settowidth{\sirkaustavorig}{\fontsize{16pt}{28pt}\selectfont{\textbf{\textsc{\Ustav}}}}
-   
+
 \settowidth{\sirkafakultaorig}{\fontsize{21pt}{28pt}\selectfont{\textbf{\textsc{P{\v{r}}{\'{i}}rodov{\v{e}}deck{\'{a}}
 fakulta}}}}
-%    
+%
     \ifthenelse{\lengthtest{\sirkaustavorig > 0.95\sirkafakultaorig}}%
         {\vspace*{-0.5mm}\textbf{\textsc{\scaletowidth{0.95\sirkafakultaorig}{\Ustav}}}\\[-1mm]}%
         {\vspace*{-4mm}\fontsize{16pt}{28pt}\selectfont{\textbf{\textsc{\Ustav}}}\\[-6mm]}
@@ -368,7 +372,7 @@ fakulta}}}}
 \thispagestyle{empty}
 
 \newlength{\LevySloupecCZ}
-\settowidth{\LevySloupecCZ}{{\bf Studijn{\'{i}} program:} } %% urcit potrebnou sirku leveho sloupce 
+\settowidth{\LevySloupecCZ}{{\bf Studijn{\'{i}} program:} } %% urcit potrebnou sirku leveho sloupce
 
 \newlength{\PravySloupecCZ}
 \setlength{\PravySloupecCZ}{\textwidth - \LevySloupecCZ - 24 pt} %% dopocitat pravy sloupec
@@ -400,7 +404,7 @@ fakulta}}}}
 \thispagestyle{empty}
 
 \newlength{\LevySloupecCZ}
-\settowidth{\LevySloupecCZ}{{\bf Studijn{\'{i}} program:} } %% urcit potrebnou sirku leveho sloupce 
+\settowidth{\LevySloupecCZ}{{\bf Studijn{\'{i}} program:} } %% urcit potrebnou sirku leveho sloupce
 
 \newlength{\PravySloupecCZ}
 \setlength{\PravySloupecCZ}{\textwidth - \LevySloupecCZ - 24 pt} %% dopocitat pravy sloupec
@@ -431,7 +435,7 @@ fakulta}}}}
 \thispagestyle{empty}
 
 \newlength{\LevySloupecSVK}
-\settowidth{\LevySloupecSVK}{{\bf {\v{S}}tudijn{\'{y}} program:} } %% urcit potrebnou sirku leveho sloupce 
+\settowidth{\LevySloupecSVK}{{\bf {\v{S}}tudijn{\'{y}} program:} } %% urcit potrebnou sirku leveho sloupce
 
 \newlength{\PravySloupecSVK}
 \setlength{\PravySloupecSVK}{\textwidth - \LevySloupecSVK - 24 pt} %% dopocitat pravy sloupec
@@ -463,7 +467,7 @@ fakulta}}}}
 \thispagestyle{empty}
 
 \newlength{\LevySloupecSVK}
-\settowidth{\LevySloupecSVK}{{\bf {\v{S}}tudijn{\'{y}} program:} } %% urcit potrebnou sirku leveho sloupce 
+\settowidth{\LevySloupecSVK}{{\bf {\v{S}}tudijn{\'{y}} program:} } %% urcit potrebnou sirku leveho sloupce
 
 \newlength{\PravySloupecSVK}
 \setlength{\PravySloupecSVK}{\textwidth - \LevySloupecSVK - 24 pt} %% dopocitat pravy sloupec
@@ -494,7 +498,7 @@ fakulta}}}}
 \thispagestyle{empty}
 
 \newlength{\LevySloupecENG}
-\settowidth{\LevySloupecENG}{{\bf Degree Programme:} } %% urcit potrebnou sirku leveho sloupce 
+\settowidth{\LevySloupecENG}{{\bf Degree Programme:} } %% urcit potrebnou sirku leveho sloupce
 
 \newlength{\PravySloupecENG}
 \setlength{\PravySloupecENG}{\textwidth - \LevySloupecENG - 24 pt} %% dopocitat pravy sloupec
@@ -526,7 +530,7 @@ fakulta}}}}
 \thispagestyle{empty}
 
 \newlength{\LevySloupecENG}
-\settowidth{\LevySloupecENG}{{\bf Degree Programme:} } %% urcit potrebnou sirku leveho sloupce 
+\settowidth{\LevySloupecENG}{{\bf Degree Programme:} } %% urcit potrebnou sirku leveho sloupce
 
 \newlength{\PravySloupecENG}
 \setlength{\PravySloupecENG}{\textwidth - \LevySloupecENG - 24 pt} %% dopocitat pravy sloupec
@@ -672,7 +676,7 @@ fakulta}}}}
 \setlength\fboxrule{1.5pt}
 \setlength\fboxsep{8pt}
 \fbox{\textcolor{blue}{\bf M{\'{i}}sto tohoto listu vlo{\v{z}}te kopii ofici{\'{a}}ln{\'{i}}ho (podepsan{\'{e}}ho)
-zad{\'{a}}n{\'{i}} pr{\'{a}}ce.}} 
+zad{\'{a}}n{\'{i}} pr{\'{a}}ce.}}
 \end{center}
 \cleardoublepage
 }
@@ -701,7 +705,7 @@ zad{\'{a}}n{\'{i}} pr{\'{a}}ce.}}
 \NazevPovinneCasti{Prohl{\'{a}}{\v{s}}en{\'{i}}}
 
 \Prohlaseni
- 
+
 \vspace*{15mm}
 
 \noindent Brno \DatumProhl \hfill \makebox[50mm]{\dotfill}\\
@@ -725,7 +729,7 @@ zad{\'{a}}n{\'{i}} pr{\'{a}}ce.}}
 \NazevPovinneCasti{Prohl{\'{a}}{\v{s}}en{\'{i}}}
 
 \Prohlaseni
- 
+
 \vspace*{15mm}
 
 \noindent Brno \DatumProhl \hfill \makebox[50mm]{\dotfill}\\
