@@ -23,6 +23,17 @@
 \usepackage[shortlabels]{enumitem}
 \usepackage{xcolor}
 \usepackage{tcolorbox}
+\usepackage[
+    backend=biber,      % use biber as backend instead of BiBTeX
+    style=alphabetic,   % citation style
+    url=true,           % display urls in bibliography
+    hyperref=auto,      % detect hyperref and create links
+    giveninits=true,    % abbreviate first names to initials
+    maxbibnames=5,      % maxiumim number of authors before making 'et al.'
+    alldates=iso,   % set date format to ISO 8601
+    seconds=true
+]{biblatex}
+\addbibresource{bibliografia.bib}
 
 \tcbuselibrary{breakable}
 \definecolor{light-gray}{gray}{0.95}
@@ -49,7 +60,6 @@
 \newcommand{\rie}{\textbf{Riešenie.} }
 \newcommand{\rieh}{\textbf{Riešenie*.} }
 \newcommand{\ma}{\measuredangle}
-\newcommand\todo[1]{\noindent\textcolor{red}{(#1)}}
 
 \newcommand{\source}[1]{
   \def\temp{#1}\ifx\temp\empty
