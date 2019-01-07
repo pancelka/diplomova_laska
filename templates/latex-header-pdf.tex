@@ -3,12 +3,20 @@
 % Use PDF images
 \newcommand{\imagesuffix}{}
 
+% Show source only if not empty
+\newcommand{\source}[1]{
+  \def\temp{#1}\ifx\temp\empty
+  \else
+    [#1]
+  \fi
+}
+
 % Display problems + solutions
 \newcommand{\problem}[3]{
   \stepcounter{problem}
   \begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]
     \textbf{Úloha \theseminar .\theproblem.}
-    [#1] #2
+    \source{#1} #2
   \end{tcolorbox}
   \noindent#3
 }

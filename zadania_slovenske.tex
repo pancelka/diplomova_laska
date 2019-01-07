@@ -48,10 +48,17 @@
 \newcommand{\ma}{\measuredangle}
 \newcommand\todo[1]{\noindent\textcolor{red}{(#1)}}
 
+\newcommand{\source}[1]{
+  \def\temp{#1}\ifx\temp\empty
+  \else
+    [#1]
+  \fi
+}
+
 \newcommand{\problem}[3]{
   \stepcounter{problem}
   \noindent\textbf{Úloha \theseminar .\theproblem.}
-    [#1] #2
+    \source{#1} #2
   \bigskip
 }
 
