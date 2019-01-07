@@ -35,11 +35,11 @@
 
 \newcounter{seminar}
 \newcounter{problem}
-\newcommand{\seminar}[1]{
+\newcommand{\seminar}[2]{
   \clearpage
   \setcounter{seminar}{#1}
   \setcounter{problem}{0}
-  \section*{Seminár #1}
+  \section*{Seminář #1: #2}
 }
 
 
@@ -72,25 +72,19 @@
 
 
 
-\seminar{1}
+\seminar{1}{Úvod do semináře, očekávání, \textit{Matematico}}
 
-\seminar{2}
+\seminar{2}{Měnová reforma v Tramtárii -- samostatné objevování matematického problému}
 
 \problem{}{
 V Tramtárii chtějí zavést novou základní peněžní jednotku: groš. Ve spojitosti s reformou se vynořila otázka: jaké mají mít hodnoty mince, které připraví mincovna? Staří obyvatelé Tramtárie považovali 3 a 5 za šťastná čísla. Proto přední historik navrhl, aby se omezili na ražení tří- a pětigrošových mincí. Svůj návrh zdůvodňoval takhle: tří- a pětigrošovými mincemi je možné vyplatit jakoukoliv celočíselnou sumu, a to téměř vždy přesně, bez vrácení. Ten, kdo peníze dostává, musí něco vrátit jenom tehdy, když je vyplácená suma 1, 2, 4 nebo 7 grošů. Byla by to pravda?
-
 }{
-
 }
-
-
 
 \problem{}{
 K návrhu z předchozí úlohy přišel upravující návrh. Jistý občan píše: Uznávám, že tří- a pětigrošovými mincemi je možné popsaným způsobem skutečně zaplatit každou sumu, ale jsou to příliš malé hodnoty. Navrhuji, aby se razily raději pěti- a osmigrošové mince. Je zřejmé -- zdůvodňoval dále --, že všechno, co je možné vyplatit 3 a 5 groši, je možné vyplatit i 5 a 8 groši, vezmeme-li v úvahu možnost vracení peněz. Je taky zřejmé, že od jistého čísla -- tedy v případě větších sum grošů -- ani tady není potřeba mince vracet. Je to skutečně takhle zřejmé?
 }{
 }
-
-
 
 \problem{}{
 Diskuse, o které jsme v předchozích dvou úlohách referovali, pokračovala i dál. Byli i tací, kteří pěti- a osmigrošové mince považovali za příliš malé hodnoty a navrhovali větší. Návrhy na dvojice hodnot grošů byly tyto:
@@ -102,8 +96,6 @@ Diskuse, o které jsme v předchozích dvou úlohách referovali, pokračovala i
 Autoři všech tří návrhů tvrdili, že těmito dvojicemi hodnot je možné vyplatit jakékoliv (celočíselné) sumy grošů a když je vyplácená suma dostatečně velká, tak není potřeba ani vracet peníze. Tvrzení kterého z těchto autorů je správné a kterého není?
 }{
 }
-
-
 
 \problem{}{
 Tři návrhy, které jsme uvedli v předchozí úloze, nebyly náhodné. Staří obyvatelé uctívali nejen čísla 3 a 5, ale všechna čísla Fibonacciho posloupnosti. Pravděpodobně dospěli až k variacím těchto čísel, protože se objevily i takové návrhy, aby hodnoty dvou mincí byly:
@@ -120,19 +112,17 @@ Který z těchto tří návrhů je vhodný na zaplacení jakékoliv (celočísel
 Diskuse o peněžní reformě v Tramtárii nabývala čím dál větších rozměrů. Mnozí její účastníci tvrdili, že návrhy z úlohy 45 se ukazují býti správnými, protože respektují i pořadí magických čísel, zatímco v úloze 46 jsou neúspěšné, protože toto pořadí nerespektovaly. Jako skutečná bomba proto zapůsobil návrh, aby se vydaly mince v hodnotě 4 a 11 grošů. Ani jedna hodnota se nenacházela mezi \uv{magickými} čísly!  Navzdory tomu autor tvrdil, že i tyto hodnoty splňují potřebné dva požadavky: je možno jimi vyplatit libovolné celočíselné množství grošů a když je tato suma dostatečně velká, ani není potřebné nic vracet. Měl pravdu?}{
 }
 
-
-
 \problem{}{
 Velká diskuse ovšem náhle skončila (právě tehdy, když byla nejživější), protože Národní banka Tramtárie k velkému překvapení oznámila, že zavede dvě platidla: tří- a pětigrošové mince. Kolika různými způsoby je možné jimi vyplatit 49 grošů bez vracení peněz?
 }{
 }
 
-\seminar{3}
+\seminar{3}{Přístup k řešení matematických úloh, typy důkazů}
 \problem{Lodě}{
 Na plánku $7\times 7$ hrajeme hru lodě. Nachází se na něm jedna loď $2\cdot$3. Můžeme vystřelit na libovolné políčko plánku, a když loď zasáhneme, hra končí. Když ne, střílíme znova. Určete nejmenší počet výstřelů, které potřebujeme na to, abychom loď s jistotou zasáhli.
 }{}
 
-\seminar{4}
+\seminar{4}{Algebraické výrazy, rovnice a nerovnosti I -- úprava výrazů} 
 
 \problem{65-I-3-N1}{
 Pro libovolná reálná čísla $x$, $y$ a $z$ dokažte nezápornost hodnoty každého z výrazů
@@ -192,7 +182,7 @@ ve kterém $x$ a $y$ jsou libovolná celá nezáporná čísla.
  }
 
 
-\seminar{5}
+\seminar{5}{Algebraické výrazy, rovnice a nerovnosti II -- nerovnosti}
 
 \problem{58-S-1, resp. 65-I-3-D3}{
 Dokažte, že pro libovolná nezáporná čísla $a$, $b$, $c$ platí $$(a + bc)(b + ac) \geq ab(c + 1)^2.$$
@@ -254,7 +244,7 @@ Dokažte, že pro libovolná různá kladná čísla $a$, $b$ platí
 $$\frac{a + b}{2}<\frac{2(a^2+ ab + b^2)}{3(a +b)}<\sqrt{\frac{a^2 + b^2}{2}}.$$
 }{}
 
-\seminar{6}
+\seminar{6}{Algebraické výrazy, rovnice a nerovnosti III --- lineární rovnice a soustavy lineárních rovnic}
 
 \problem{60-I-1-N1}{
 Máme tři čísla se součtem $2 010$, přičemž každé z nich je aritmetickým průměrem zbylých dvou. Jaká jsou to čísla?
@@ -322,9 +312,9 @@ Nechť $n$ je přirozené číslo větší než 2. Máme $n$ čísel se součtem
 }{
 }
 
-\seminar{7}
+\seminar{7}{Teorie čísel I -- úlohy o dělitelnosti}
 
-\problem{Hol10}{
+\problem{[Hol10], úloha }{
 Nechť je $N$ pěticiferné kladné číslo takové, že $N=\overline{a679b}$. Pokud je $N$ dělitelné 72, určete první cifru $a$ a poslední cifru $b$.
 }{
 }
@@ -392,7 +382,7 @@ Dokažte, že výrazy $23x + y$, $19x + 3y$ jsou dělitelné číslem $50$ pro s
 }
 
 
-\seminar{8}
+\seminar{8}{Teorie čísel II -- úlohy o nejmenším společném násobku a největším společném děliteli}
 
 \problem{61-I-3-N1}{
  Určete, pro která přirozená čísla $a$, $b$ platí $(a, b) = 10$ a zároveň $[a, b] = 150$.
@@ -463,9 +453,9 @@ kde $(x, y)$ a $[x, y]$ značí po řadě největší společný dělitel a nejm
 }{
 }
 
-\seminar{9}
+\seminar{9}{Teorie čísel III -- úlohy o ciferních zápisech}
 
-\problem{59-I-6-N1}{%, \todo{Sed61, str. 7}}{
+\problem{59-I-6-N1}{
 Trojciferné číslo je zakončeno číslicí $4$. Přesuneme-li tuto číslici na první místo (a ostatní dvě číslice ponecháme beze změny), dostaneme číslo, které je o $81$ menší než číslo
 původní. Určete původní číslo.
 }{
@@ -511,7 +501,7 @@ Klárka měla na papíru napsáno trojmístné číslo. Když ho správně vyná
 }{
 }
 
-\seminar{10}
+\seminar{10}{Geometrie I -- základní poznatky}
 
 \problem{}{
 Součet velikostí vnitřních úhlů trojúhelníku je roven 180$^\circ$. Dokažte.
@@ -567,7 +557,7 @@ Užitím vět o podobnosti trojúhelníků a Pythagorovy věty odvoďte Euklidov
 }{
 }
 
-\seminar{11}
+\seminar{11}{Geometrie II -- podobné trojúhelníky a Pythagorova věta}
 
 \problem{66-S-3}{
 Pata $P$ výšky z vrcholu $C$ v trojúhelníku $ABC$ dělí stranu $AB$ v poměru $|AP| : |PB| = 1 : 3$. Ve stejném poměru jsou i obsahy čtverců nad jeho stranami $AC$ a $BC$. Dokažte, že trojúhelník $ABC$ je pravoúhlý.
@@ -617,7 +607,7 @@ V pravoúhlém trojúhelníku $ABC$ označíme $P$ patu výšky z vrcholu $C$ na
 }
 
 
-\seminar{12}
+\seminar{12}{Geometrie III -- obsahy trojúhelníků a čtyřúhelníků}
 
 \problem{57-S-2, resp. 62-I-6-N1}{
 V daném rovnoběžníku $ABCD$ je bod $E$ střed strany $BC$ a bod $F$ leží uvnitř strany $AB$. Obsah trojúhelníku $AFD$ je 15\,cm$^2$ a obsah trojúhelníku $FBE$ je 14\,cm$^2$. Určete obsah čtyřúhelníku $FECD$.
@@ -659,7 +649,7 @@ $$p = |ED| : |DF| = |BE| : |EA|.$$
 }
 
 
-\seminar{13}
+\seminar{13}{Geometrie IV -- kružnice vepsaná a opsaná trojúhelníku}
 
 \problem{57-II-1}{
 Trojúhelník $ABC$ splňuje při obvyklém značení délek stran podmínku $a \leq b \leq c$. Vepsaná kružnice se dotýká stran $AB$, $BC$ a $AC$ po řadě v bodech $K$, $L$ a $M$. Dokažte, že z úseček $AK$, $BL$ a $CM$ lze sestrojit trojúhelník, právě když platí $b + c < 3a.$
@@ -697,15 +687,15 @@ Délky stran trojúhelníku jsou v metrech vyjádřeny celými čísly. Určete 
 }
 
 
-\seminar{14}
+\seminar{14}{Matematická soutěž v řešení úloh \textit{Náboj}}
 
-\seminar{15}
+\seminar{15}{Domácí kolo MO -- analýza úloh}
 
-\seminar{16}
+\seminar{16}{Konzultační setkání v režii studentů}
 
-\seminar{17}
+\seminar{17}{Školní kolo MO -- analýza úloh}
 
-\seminar{18}
+\seminar{18}{Algebraické výrazy, rovnice a nerovnosti IV -- složitější nerovnosti}
 
 \problem{60-II-4}{
 Nechť $x$, $y$, $z$ jsou kladná reálná čísla. Ukažte, že čísla $x + y + z - xyz$ a $xy + yz + zx - 3$ nemohou být záporná současně.
@@ -750,7 +740,7 @@ Zjistěte, kdy nastane rovnost
 }{}
 
 
-\seminar{19}
+\seminar{19}{Algebraické výrazy a rovnice -- složitější rovnice a jejich systémy}
 
 \problem{59-S-1}{
 Zvětšíme-li čitatel i jmenovatel jistého zlomku o 1, dostaneme zlomek o hodnotu 1/20 větší. Provedeme-li s větším zlomkem stejnou operaci, dostaneme zlomek o hodnotu 1/12 větší, než byla hodnota zlomku na počátku. Určete všechny tři zlomky.
@@ -813,7 +803,7 @@ V oboru reálných čísel řešte soustavu rovnic
 \end{align*}}{}
 
 
-\seminar{20}
+\seminar{20}{Teorie čísel IV -- prvočísla}
 
 \problem{63-I-3-N2}{
 Číslo $n$ je součinem dvou různých prvočísel. Zvětšíme-li menší z nich o 1 a druhé ponecháme, jejich součin se zvětší o 7. Určete číslo $n$.
@@ -850,12 +840,12 @@ Určete všechna celá čísla $n$, pro něž $2n^3 - 3n^2+ n + 3$ je prvočísl
 }{
 }
 
-\problem{\todo{MŘMUI, 2.3, str, 174}}{
+\problem{[HKŠ04], príklad 2.3, str, 174}{
 Nalezněte všechna prvočísla, která jsou současně součtem i rozdílem dvou vhodných prvočísel.
 }{
 }
 
-\problem{Thiele, str. 95}{
+\problem{[Thi86], str. 95}{
 Najděte celočíselná řešení rovnice $$\frac{1}{x}+\frac{1}{y}=\frac{1}{p},$$
 kde $p$ je pevně dané prvočíslo.}{
 }
@@ -866,7 +856,7 @@ $$p^2 - (q + r)^2= 637.$$
 }{
 }
 
-\seminar{21}
+\seminar{21}{Teorie čísel V -- miš-maš}
 
 \problem{65-II-4}{
 Adam s Bárou hrají se zlomkem
@@ -915,7 +905,7 @@ Z množiny $\{1, 2, 3, \ldots , 99\}$ vyberte co největší počet čísel tak,
 Najděte nejmenší přirozené číslo $n$ takové, že v zápise čísla $\sqrt{n}$ následují bezprostředně za desetinnou čárkou dvě devítky.}{}
 
 
-\seminar{22}
+\seminar{22}{Geometrie V -- čtyřúhelníky}
 
 \problem{57-I-2}{
 Čtyřúhelníku $ABCD$ je vepsána kružnice se středem $S$. Určete rozdíl $|\ma ASD | - |\ma CSD |$, jestliže $|\ma ASB | - |\ma BSC | = 40^\circ$.
@@ -932,8 +922,8 @@ Je dána kružnice $k$ se středem $S$. Kružnice $l$ má větší poloměr než
 }{
 }
 
-\problem{60-I-3, \todo{fixnúť obrázok v slovenskom zadaní}}{
-Máme čtverec $ABCD$ se stranou délky 1\,cm. Body $K$ a $L$ jsou středy stran $DA$ a $DC$. Bod $P$ leží na straně $AB$ tak, že $|BP| = 2|AP |$. Bod $Q$ leží na straně $BC$ tak, že $|CQ| = 2|BQ|$. Úsečky $KQ$ a $PL$ se protínají v bodě $X$. Obsahy čtyřúhelníků $APXK$, $BQXP$, $QCLX$ a $LDKX$ označíme postupně $S_A$, $S_ B$, $S_C$, $S_D$ \todo{(obr. 1)}.
+\problem{60-I-3}{
+Máme čtverec $ABCD$ se stranou délky 1\,cm. Body $K$ a $L$ jsou středy stran $DA$ a $DC$. Bod $P$ leží na straně $AB$ tak, že $|BP| = 2|AP |$. Bod $Q$ leží na straně $BC$ tak, že $|CQ| = 2|BQ|$. Úsečky $KQ$ a $PL$ se protínají v bodě $X$. Obsahy čtyřúhelníků $APXK$, $BQXP$, $QCLX$ a $LDKX$ označíme postupně $S_A$, $S_ B$, $S_C$, $S_D$.
 \begin{enumerate}[a)]
 \item Dokažte, že $S_B = S_D$.
 \item Vypočtěte rozdíl S$_C - S_A$.
@@ -958,7 +948,7 @@ Dále označme $E$ průsečík úhlopříček lichoběžníku $ABLK$, $F$ průse
 }
 
 
-\seminar{23}
+\seminar{23}{Geometrie VI -- miš-maš}
 
 \problem{66-II-3}{
 Dokažte, že obdélník o rozměrech $32 \times 120$ lze zakrýt sedmi shodnými čtverci o straně 30.
@@ -986,10 +976,10 @@ Je dán konvexní čtyřúhelník $ABCD$ s bodem $E$ uvnitř strany $AB$ tak, ž
 }
 
 
-\seminar{24}
+\seminar{24}{Náboj}
 
 
-\seminar{25}
+\seminar{25}{Kombinatorika I -- úlohy na mřížce a šachovnici}
 
 \problem{66-II-2}{
 Čtvercovou tabulku $6 \times 6$ zaplníme všemi celými čísly od 1 do 36.
@@ -1005,7 +995,7 @@ Kobylka skáče po úsečce délky 10\,cm a to skoky o 1\,cm nebo o 2\,cm (vždy
 }{
 }
 
-\problem{62-I-1-N2 \todo{fixnúť číslovanie slovenskej verzie, je tam teraz I-2}}{
+\problem{62-I-1-N2}{
 Skřítek se pohybuje v tabulce $10 \times 15$ skoky o jedno políčko nahoru nebo o jedno políčko doprava. Kolika různými cestami se může dostat z levého dolního do pravého horního políčka?
 }{
 }
@@ -1016,7 +1006,7 @@ V jednom poli šachovnice $8\times 8$ je napsáno \uv{$-$} a v ostatních políc
 }
 
 \problem{64-I-3-N3}{
-Simona a Lenka hrají hru. Pro dané celé číslo $k$ takové, že $0 \leq k \leq 9$, vybere Simona $k$ políček šachovnice $3 \times 3$ a na každé z nich napíše číslo 1, na ostatní políčka napíše číslo 0. Lenka pak šachovnici nějakým způsobem pokryje třemi triminovými kostkami, \todo{tj.} kostkami tvaru $3 \times 1$, a čísla pod jejími políčky vynásobí. Je-li počet kostek se součinem 0 lichý, vyhrává Simona, jinak vyhrává Lenka. V závislosti na $k$ určete, kolikaprocentní vítěznou strategii má Simona.
+Simona a Lenka hrají hru. Pro dané celé číslo $k$ takové, že $0 \leq k \leq 9$, vybere Simona $k$ políček šachovnice $3 \times 3$ a na každé z nich napíše číslo 1, na ostatní políčka napíše číslo 0. Lenka pak šachovnici nějakým způsobem pokryje třemi triminovými kostkami, tj. kostkami tvaru $3 \times 1$, a čísla pod jejími políčky vynásobí. Je-li počet kostek se součinem 0 lichý, vyhrává Simona, jinak vyhrává Lenka. V závislosti na $k$ určete, kolikaprocentní vítěznou strategii má Simona.
 }{
 }
 
@@ -1036,7 +1026,7 @@ Na hrací desce $n \times n$ tvořené bílými čtvercovými poli se Markéta a
 }
 
 
-\seminar{26}
+\seminar{26}{Kombinatorika II --hry s hledáním vítězné strategie a logické úkoly}
 
 \problem{61-I-6-N2}{
 Na tabuli jsou napsána všechna prvočísla menší než 100. Markéta a Tereza se střídají v tazích při následující hře. Nejprve Markéta smaže jedno z prvočísel. Dále vždy hráčka, která je na tahu, smaže jedno z prvočísel, které má s předchozím smazaným prvočíslem jednu shodnou číslici (tak po prvočíslu 3 lze smazat třeba 13 nebo 37). Hráčka, která je na tahu a nemůže již žádné prvočíslo smazat, prohrává. Která z obou hráček může hrát
@@ -1054,8 +1044,7 @@ Dvě hráčky mají k dispozici pro hru, kterou popíšeme, neomezený počet p�
 }{
 }
 
-\problem{59-I-1}{
-\todo{pozisťovať, ako je to tu s kurzívou} Erika a Klárka hrály hru \uv{slovní logik} s těmito pravidly: Hráč $A$ si myslí slovo složené z pěti různých písmen. Hráč $B$ vysloví libovolné slovo složené z pěti různých písmen a hráč $A$ mu prozradí, kolik písmen uhodl na správné pozici a kolik na nesprávné. Písmena považujeme za různá, i když se liší jen háčkem nebo čárkou (například písmena A, Á jsou různá). Kdyby si hráč $A$ myslel například slovo \textit{LOĎKA} a $B$ by vyslovil slovo \textit{KOLÁČ}, odpoví hráč $A$, že jedno písmeno uhodl hráč $B$ na správné pozici a dvě na nesprávné. Zkráceně sdělí \uv{1 + 2}, neboť se opravdu obě slova shodují pouze v písmenu O včetně pozice (druhé zleva) a v písmenech K a L, jejichž pozice jsou odlišné. Erika si myslela slovo z pěti různých písmen a Klárka vyslovila slova \textit{KABÁT}, \textit{STRUK}, \textit{SKOBA}, \textit{CESTA} a \textit{ZÁPAL}. Erika na tato slova v daném pořadí odpověděla $0 + 3$, $0 + 2$, $1 + 2$, $2 + 0$ a $1 + 2$. Zjistěte, jaké slovo si Erika mohla myslet.
+\problem{59-I-1}{Erika a Klárka hrály hru \uv{slovní logik} s těmito pravidly: Hráč $A$ si myslí slovo složené z pěti různých písmen. Hráč $B$ vysloví libovolné slovo složené z pěti různých písmen a hráč $A$ mu prozradí, kolik písmen uhodl na správné pozici a kolik na nesprávné. Písmena považujeme za různá, i když se liší jen háčkem nebo čárkou (například písmena A, Á jsou různá). Kdyby si hráč $A$ myslel například slovo \textit{LOĎKA} a $B$ by vyslovil slovo \textit{KOLÁČ}, odpoví hráč $A$, že jedno písmeno uhodl hráč $B$ na správné pozici a dvě na nesprávné. Zkráceně sdělí \uv{1 + 2}, neboť se opravdu obě slova shodují pouze v písmenu O včetně pozice (druhé zleva) a v písmenech K a L, jejichž pozice jsou odlišné. Erika si myslela slovo z pěti různých písmen a Klárka vyslovila slova \textit{KABÁT}, \textit{STRUK}, \textit{SKOBA}, \textit{CESTA} a \textit{ZÁPAL}. Erika na tato slova v daném pořadí odpověděla $0 + 3$, $0 + 2$, $1 + 2$, $2 + 0$ a $1 + 2$. Zjistěte, jaké slovo si Erika mohla myslet.
 }{
 }
 
@@ -1074,9 +1063,9 @@ Simona a Lenka hrají hru. Pro dané celé číslo $k$ takové, že $0 \leq k \l
 }{
 }
 
-\seminar{27}
+\seminar{27}{Krajské kolo MO}
 
-\seminar{28}
+\seminar{28}{Hra SET}
 
 \problem{}{Kolik karet obsahuje hrací balíček?}{}
 
@@ -1090,7 +1079,7 @@ Simona a Lenka hrají hru. Pro dané celé číslo $k$ takové, že $0 \leq k \l
 
 \problem{}{Je možné SETy nějak kategorizovat? Jak? Kolik různých SETů můžeme v různých kategoriích vytvořit? Umíme správnost našich výpočtů ověřit pomocí předchozích úvah?}{}
 
-\seminar{29}
+\seminar{29}{Algebraické výrazy a rovnice VI -- sústavy rovnic, rovnice s parametrem}
 
 \problem{B-66-II-1}{
 Najděte všechny dvojice přirozených čísel $a$, $b$, pro něž platí
@@ -1133,7 +1122,7 @@ V oboru reálných čísel vyřešte soustavu
 }{
 }
 
-\seminar{30}
+\seminar{30}{Algebraické výrazy a rovnice VII -- kvadratické rovnice}
 
 \problem{B-57-I-5-N3}{
 Najděte všechny dvojice $(a, b)$ reálných čísel, pro něž má každá z rovnic
@@ -1198,7 +1187,7 @@ v oboru reálných čísel dva různé kořeny, jejichž aritmetický průměr j
 
 
 
-\seminar{31}
+\seminar{31}{Geometrie VII -- středové, obvodové, úsekové úhly, tětivové čtyřúhelníky}
 
 \problem{B-65-I-5-N3}{
 Je dána tětiva $AB$ kružnice $k$ se středem v bodě $S$. Na úsečce $AB$ zvolme bod $M$ a průsečík kružnice opsané trojúhelníku $AMS$ s kružnicí $k$ označme $C$. Dokažte, že úhly $MCS$ a $MBS$ jsou shodné.
@@ -1225,7 +1214,7 @@ Trojúhelníku $ABC$ je opsána kružnice $k$. Osa strany $AB$ protne kružnici 
 }{
 }
 
-\seminar{32}
+\seminar{32}{Geometrie VIII - výpočtové úlohy}
 
 \problem{B-59-II-1}{
 Kružnice $l(T; s)$ prochází středem kružnice $k(S; 2 cm)$. Kružnice $m(U; t)$ se vně dotýká kružnic $k$ a $l$, přičemž $US \perp ST$. Poloměry $s$ a $t$ vyjádřené v centimetrech jsou celá čísla. Určete je.
@@ -1259,9 +1248,9 @@ Kdy nastane rovnost?
 }{
 }
 
-\seminar{33}
+\seminar{33}{Opakování I -- pohled zpět na všechno, co jsme se naučili}
 
-\seminar{34}
+\seminar{34}{Opakování II -- samostatné řešení úloh }
 
 \problem{B-51-S-1}{
 Určete reálné číslo $p$ tak, aby rovnice
