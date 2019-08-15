@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>Matematický seminár pre talentovaných študentov</title>
-  <style type="text/css">
+  <style>
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
       span.underline{text-decoration: underline;}
@@ -59,52 +59,60 @@
 <li><p><em>počet symbolov</em>: jeden, dva, tri.</p></li>
 </ol>
 <h3 id="úloha">Úloha </h3>
-<p><div class="problem"> Koľko kariet obsahuje hrací balíček? </div> <h4 class="solution-button">Riešenie</h4> <div class="solution"> Keďže každá zo 4 charakteristík sa môže vyskytnúť v troch rôznych variantoch, v balíčku je celkom <span class="math inline">\(3^4=81\)</span> rôznych kartičiek.<br />
+<p><div class="problem"> Koľko kariet obsahuje hrací balíček? </div> <h4 class="solution-button">Riešenie</h4><div class="solution">Keďže každá zo 4 charakteristík sa môže vyskytnúť v troch rôznych variantoch, v balíčku je celkom <span class="math inline">\(3^4=81\)</span> rôznych kartičiek.<br />
 <br />
-Na seminár je vhodné mať kartičky nastrihané a zalaminované, aby sa s nimi študentom lepšie manipulovalo. Príklad kartičiek je v prílohe.</p>
-<h3 id="zoznámenie-sa-shrou-set" class="unnumbered">Zoznámenie sa s hrou SET</h3>
+<h4>Komentár</h4>Na seminár je vhodné mať kartičky nastrihané a zalaminované, aby sa s nimi študentom lepšie manipulovalo. Príklad kartičiek je v prílohe.</p>
+<h3 id="zoznámenie-sa-s-hrou-set" class="unnumbered">Zoznámenie sa s hrou SET</h3>
 <p>SET je trojica kartičiek, pre ktorú platí: každá z charakteristík je buď pre všetky tri kartičky rovnaká, alebo je na každej kartičke odlišná. Ak sa napríklad pozrieme na charakteristiku <em>tvar</em>, tak sú na všetkých troch kartičkách buď len samé ovály (alebo len samé obdĺžniky, alebo len samé trojuholníky), alebo sú na jednej kartičke ovály, na druhej obdĺžniky a na tretej trojuholníky. Podobne pre ďalšie charakteristiky.<br />
 <br />
 </p>
-<p><img src="images/set_ano.png" alt="image" style="width:80.0%" /><br />
+<p><img src="images/set_ano.png" style="width:80.0%" alt="image" /><br />
 Táto trojica kartičiek tvorí SET: farba je rovnaká, tvar je na každej kartičke iný, podobne výplň a všetky majú rovnaký počet symbolov.<br />
 <br />
 </p>
-
-<p><img src="images/set_nie.png" alt="image" style="width:80.0%" /><br />
+<p><img src="images/set_nie.png" style="width:80.0%" alt="image" /><br />
 Táto trojica nie je SET. Síce majú všetky tri kartičky rovnaký počet symbolov, symboly sú rovnakého tvaru a každá kartička je inej farby, výplň na dvoch kartičkách je prázdna zatiaľ čo tretia je vyplnená polovične.</p>
 <p>Po zamiešaní sa z balíčka vyloží na stôl 12 kartičiek. Hráči medzi nimi hľadajú SETy. Ak sa to niekomu podarí, vykríkne a ukáže ho spoluhráčom. Ak je SET správny, hráč si ho vezme zo stola, namiesto neho sa vyložia nové tri kartičky a pokračuje sa v hre. V prípade, že sú hráči presvedčení, že sa medzi vyloženými kartičkami žiadny SET nenachádza, doložia na stôl ďalšie tri kartičky. Hra končí v momente, kedy hráči vyčerpajú všetky kartičky. Cieľom hry je, samozrejme, pozbierať čo najviac SETov. Hra sa dá hrať v takmer ľubovoľne veľkej skupine, z praktických dôvodov sa najviac osvedčili trojice a štvorice.<br />
 <br />
-Predtým, než sa pustíme do hrania, je vhodné so študentmi prejsť niekoľko trojíc kartičiek a pobaviť sa o tom, ktoré trojice SETmi sú, ktoré nie a prečo, prípadne premietnuť rozloženie 12 kartičiek a hľadať v nich SETy spoločne.<br />
+<h4>Komentár</h4>Predtým, než sa pustíme do hrania, je vhodné so študentmi prejsť niekoľko trojíc kartičiek a pobaviť sa o tom, ktoré trojice SETmi sú, ktoré nie a prečo, prípadne premietnuť rozloženie 12 kartičiek a hľadať v nich SETy spoločne.<br />
 <br />
 Po zahraní niekoľkých kôl sa so študentmi pobavíme o tom, akým spôsobom SETy hľadali, ktoré SETy sú na nájdenie jednoduchšie, prípadne iné ďalšie zaujímavosti, ktoré počas hry vypozorovali. K tejto diskusii sa môžeme vrátiť neskôr v priebehu seminára, keď sa budeme zaoberať kategorizovaním rôznych typov SETov.</p>
-<h3 id="úlohy-obalíčku-kariet" class="unnumbered">Úlohy o balíčku kariet</h3>
+<h3 id="úlohy-o-balíčku-kariet" class="unnumbered">Úlohy o balíčku kariet</h3>
 <p></div></p>
 <h3 id="úloha-1">Úloha </h3>
-<p><div class="problem"> Ak vyberiem dve ľubovoľné kartičky z balíčka, koľko kartičiek existuje takých, aby s pôvodnými dvoma tvorili SET a prečo? </div> <h4 class="solution-button">Riešenie</h4> <div class="solution"></p>
-<p>Taká kartička je práve jedna, keďže charakteristiky prvých dvoch priamo určujú, aká variácia každej charakteristiky musí byť na poslednej kartičke (ak sa prvé dve kartičky v charakteristike zhodujú, musí sa s nimi zhodovať aj tretia, ak sú odlišné, aj tretia kartička sa musí odlišovať).<br />
+<p><div class="problem"> Ak vyberiem dve ľubovoľné kartičky z balíčka, koľko kartičiek existuje takých, aby s pôvodnými dvoma tvorili SET a prečo? </div></p>
+<p><h4 class="solution-button">Riešenie</h4><div class="solution">Taká kartička je práve jedna, keďže charakteristiky prvých dvoch priamo určujú, aká variácia každej charakteristiky musí byť na poslednej kartičke (ak sa prvé dve kartičky v charakteristike zhodujú, musí sa s nimi zhodovať aj tretia, ak sú odlišné, aj tretia kartička sa musí odlišovať).<br />
 <br />
 </div></p>
 <h3 id="úloha-2">Úloha </h3>
-<p><div class="problem"> Koľko rôznych SETov (kartičky sa v rámci jednotlivých SETov môžu opakovať) sa nachádza v celom balíčku? </div> <h4 class="solution-button">Riešenie</h4> <div class="solution"> Na vytvorenie SETu potrebujeme tri kartičky. Prvú z nich môžem bez akéhokoľvek obmedzenia vybrať spomedzi všetkých 81 kartičiek, druhá kartička sa dá vybrať 80 spôsobmi a z predchádzajúceho vieme, že tretia kartička tvoriaca SET s už dvoma zvolenými je práve jedna. Keďže však nezáleží na poradí, v ktorom sme kartičky vyberali, vydelíme počet možností <span class="math inline">\(81\cdot 80\)</span> počtom všetkých možných usporiadaní troch kartičiek, teda <span class="math inline">\(6\)</span>. Celkom dostávame <span class="math inline">\(\frac{81\cdot 80}{6}=1080\)</span> rozličných SETov.<br />
+<p><div class="problem"> Koľko rôznych SETov (kartičky sa v rámci jednotlivých SETov môžu opakovať) sa nachádza v celom balíčku? </div></p>
+<p><h4 class="solution-button">Riešenie</h4><div class="solution">Na vytvorenie SETu potrebujeme tri kartičky. Prvú z nich môžem bez akéhokoľvek obmedzenia vybrať spomedzi všetkých 81 kartičiek, druhá kartička sa dá vybrať 80 spôsobmi a z predchádzajúceho vieme, že tretia kartička tvoriaca SET s už dvoma zvolenými je práve jedna. Keďže však nezáleží na poradí, v ktorom sme kartičky vyberali, vydelíme počet možností <span class="math inline">\(81\cdot 80\)</span> počtom všetkých možných usporiadaní troch kartičiek, teda <span class="math inline">\(6\)</span>. Celkom dostávame <span class="math inline">\(\frac{81\cdot 80}{6}=1080\)</span> rozličných SETov.<br />
 <br />
 </div></p>
 <h3 id="úloha-3">Úloha </h3>
-<p><div class="problem"> Z balíčka vyberieme jednu kartičku. Koľkých rôznych SETov môže byť táto kartička súčasťou? </div> <h4 class="solution-button">Riešenie</h4> <div class="solution"> Z predchádzajúceho plynie, že zvyšných 80 kartičiek v balíčku vieme rozdeliť na 40 neprelínajúcich sa dvojíc, pričom každá táto dvojica bude tvoriť s pôvodnou kartičkou SET.<br />
+<p><div class="problem"> Z balíčka vyberieme jednu kartičku. Koľkých rôznych SETov môže byť táto kartička súčasťou? </div></p>
+<p><h4 class="solution-button">Riešenie</h4><div class="solution">Z predchádzajúceho plynie, že zvyšných 80 kartičiek v balíčku vieme rozdeliť na 40 neprelínajúcich sa dvojíc, pričom každá táto dvojica bude tvoriť s pôvodnou kartičkou SET.<br />
 <br />
-Menej zdatným študentom môže s pochopením vysvetlenia pomôcť vyložiť si na stôl konkrétne dvojice – teda hľadať konkrétne SETy, ktorých je vybraná kartička súčasťou.<br />
+<h4>Komentár</h4>Menej zdatným študentom môže s pochopením vysvetlenia pomôcť vyložiť si na stôl konkrétne dvojice – teda hľadať konkrétne SETy, ktorých je vybraná kartička súčasťou.<br />
 <br />
 </div></p>
 <h3 id="úloha-4">Úloha </h3>
-<p><div class="problem"> Ako je možné ukázať, že v danom rozložení kartičiek na stole sa nenachádza žiadny SET? </div> <h4 class="solution-button">Riešenie</h4> <div class="solution"> K tomuto problému je možné pristupovať rôznymi spôsobmi, no všetky spája potreba skontrolovať všetky možné kombinácie a vylúčiť prítomnosť SETu. Zaujímavé je pozorovať, akú stratégiu študenti zvolia (v porovnaní s tým, ako postupovali pri hraní hry). Nástavbou na túto úlohu môže byť otázka, ako dané rozloženie 12 kartičiek skontrolovať čo najefektívnejšie.<br />
+<p><div class="problem"> Ako je možné ukázať, že v danom rozložení kartičiek na stole sa nenachádza žiadny SET? </div></p>
+<p><h4 class="solution-button">Riešenie</h4><div class="solution">K tomuto problému je možné pristupovať rôznymi spôsobmi, no všetky spája potreba skontrolovať všetky možné kombinácie a vylúčiť prítomnosť SETu. Zaujímavé je pozorovať, akú stratégiu študenti zvolia (v porovnaní s tým, ako postupovali pri hraní hry). Nástavbou na túto úlohu môže byť otázka, ako dané rozloženie 12 kartičiek skontrolovať čo najefektívnejšie.<br />
 <br />
 </div></p>
 <h3 id="úloha-5">Úloha </h3>
-<p><div class="problem"> Je možné SETy nejako kategorizovať? Ako? Koľko SETov v jednotlivých kategóriách je možné vytvoriť? Vieme správnosť našich výpočtov overiť pomocou nejakých predchádzajúcich úvah? </div> <h4 class="solution-button">Riešenie</h4> <div class="solution"> Táto úloha sa dá opäť uchopiť mnohými spôsobmi. Jedným z nich môže byť roztriedenie SETov pomocou počtu charakteristík, ktoré majú kartičky spoločné. Každé rozdelenie, ktoré žiaci vymyslia, by ich však v konečnom dôsledku malo priviesť k rovnakému počtu SETov ako v úlohe 2.<br />
+<p><div class="problem"> Je možné SETy nejako kategorizovať? Ako? Koľko SETov v jednotlivých kategóriách je možné vytvoriť? Vieme správnosť našich výpočtov overiť pomocou nejakých predchádzajúcich úvah? </div></p>
+<p><h4 class="solution-button">Riešenie</h4><div class="solution">Táto úloha sa dá opäť uchopiť mnohými spôsobmi. Jedným z nich môže byť roztriedenie SETov pomocou počtu charakteristík, ktoré majú kartičky spoločné. Každé rozdelenie, ktoré žiaci vymyslia, by ich však v konečnom dôsledku malo priviesť k rovnakému počtu SETov ako v úlohe 2.<br />
 <br />
 <strong>Záverečný komentár.</strong> Hra SET je pre študentov (a nielen nich) veľmi atraktívna a majú tendencie sa odhodlane púšťať aj do predkladaných problémov. Stretnutie je tak príjemnou zmenou tempa a obsahu doterajšieho priebehu seminára</p>
 <h3 id="doplňujúce-zdroje-a-materiály" class="unnumbered">Doplňujúce zdroje a materiály</h3>
-<p>Výborným sprievodcom plným zaujímavých úloh spolu s komentovanými študentskými riešeniami je možné nájsť na <span class="citation" data-cites="SET"></span>. </div></p>
+<p>Výborným sprievodcom plným zaujímavých úloh spolu s komentovanými študentskými riešeniami je možné nájsť na <span class="citation" data-cites="SET">(Set Enterprises <a href="#ref-SET" role="doc-biblioref">n.d.</a>)</span>. </div></p>
+<div id="refs" class="references" role="doc-bibliography">
+<div id="ref-SET">
+<p>Set Enterprises. n.d. “Mathematics Workbook: How to Use Set<span class="math inline">\(^\circledR\)</span> in the Classroom.” Accessed May 16, 2018. <a href="https://www.setgame.com/math-workbook">https://www.setgame.com/math-workbook</a>.</p>
+</div>
+</div>
         </div>
     <div class="footer">
         Semináre zostavila Alexandra Porembová. Technické spracovanie Martin Ukrop, Jan Mrázek.<br/>

@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>Matematický seminár pre talentovaných študentov</title>
-  <style type="text/css">
+  <style>
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
       span.underline{text-decoration: underline;}
@@ -50,8 +50,9 @@
 <h3 id="úvodný-komentár" class="unnumbered">Úvodný komentár</h3>
 <p>Cieľom tohto seminára nie je študentom predať isté konkrétne znalosti, ale dať im príležitosť zažiť si objavný riešiteľský proces. Sada úloh, ktoré sú na seminár pripravené, nie je typickým reprezentantom úloh MO, považujeme však za dôležité so študentmi precvičovať rozličné typy úloh. Zároveň tento seminár slúži na otvorenie diskusie o tom, čo obsahuje úplné a dôkladné riešenie matematickej úlohy.</p>
 <h2 id="úlohy-a-riešenia" class="unnumbered">Úlohy a riešenia</h2>
-<h3 id="úloha-úloha-43">Úloha <span class="citation" data-cites="ZM"></span>, úloha 43</h3>
-<p><div class="problem"> V Tramtárii chcú zaviesť novú základnú peňažnú jednotku: toliar. V spojitosti s reformou sa vynorila otázka: aké majú mať hodnoty mince, ktoré pripraví mincovňa? Starí obyvatelia Tramtárie považovali 3 a 5 za šťastné čísla. Preto popredný historik navrhol, aby sa obmedzili na razenie troj- a päťtoliarových mincí. Svoj návrh zdôvodňoval takto: troj- a päťtoliarovými mincami možno vyplatiť hociktorú celočíselnú sumu a to skoro vždy presne, bez vrátenia. Ten, kto peniaze dostáva, musí niečo vrátiť iba vtedy, ak je vyplácaná suma 1, 2, 4 alebo 7 toliarov. Bola by to pravda? </div> <h4 class="solution-button">Riešenie</h4> <div class="solution"> Úloha nie je ľahká: ak je tvrdenie pravdivé, tak naraz treba pre všetky celé čísla dokázať, že toľko toliarov možno vyplatiť troj- a päťtoliarovými mincami (v prípade 1, 2, 4 a 7 s vydaním, inak bez neho) – a ak to nie je pravda, tak o nejakom celom čísle treba dokázať, že toľko toliarov nemožno nijakým spôsobom vyplatiť (v prípade 1, 2, 4 a 7 ani s vydaním, inak bez vydania).</p>
+<h3 id="úloha-úloha-43">Úloha <span class="citation" data-cites="ZM">(Bizám and Herczeg <a href="#ref-ZM" role="doc-biblioref">1982</a>)</span>, úloha 43</h3>
+<p><div class="problem"> V Tramtárii chcú zaviesť novú základnú peňažnú jednotku: toliar. V spojitosti s reformou sa vynorila otázka: aké majú mať hodnoty mince, ktoré pripraví mincovňa? Starí obyvatelia Tramtárie považovali 3 a 5 za šťastné čísla. Preto popredný historik navrhol, aby sa obmedzili na razenie troj- a päťtoliarových mincí. Svoj návrh zdôvodňoval takto: troj- a päťtoliarovými mincami možno vyplatiť hociktorú celočíselnú sumu a to skoro vždy presne, bez vrátenia. Ten, kto peniaze dostáva, musí niečo vrátiť iba vtedy, ak je vyplácaná suma 1, 2, 4 alebo 7 toliarov. Bola by to pravda? </div></p>
+<p><h4 class="solution-button">Riešenie*</h4><div class="solution">Úloha nie je ľahká: ak je tvrdenie pravdivé, tak naraz treba pre všetky celé čísla dokázať, že toľko toliarov možno vyplatiť troj- a päťtoliarovými mincami (v prípade 1, 2, 4 a 7 s vydaním, inak bez neho) – a ak to nie je pravda, tak o nejakom celom čísle treba dokázať, že toľko toliarov nemožno nijakým spôsobom vyplatiť (v prípade 1, 2, 4 a 7 ani s vydaním, inak bez vydania).</p>
 <p>O to posledné sa márne pokúšame: naopak, ak vezmeme hocijaké celé číslo, po väčšom alebo menšom počte pokusov vždy nájdeme nejaký spôsob výplaty. To poukazuje na to, že tvrdenie je asi pravdivé.</p>
 <p>Ale v tom prípade bude najúčelnejšie, ak celé čísla berieme radom a s každým jednotlivo sa o to pokúsime.</p>
 <p>Napríklad 1 toliar možno vyplatiť tak, že z dvoch kusov trojtoliarnikových mincí vydáme päťtoliarnikovú. Stručne: <span class="math display">\[1=2\cdot 3 -5.\]</span> Podobne <span class="math display">\[2=5-3.\]</span> 3 toliare možno vyplatiť jednou mincou. 4 toliare môžeme vyplatiť tak, že 2 toliare: <span class="math display">\[4=2\cdot 5 - 2\cdot 3.\]</span> 5 toliarov možno vyplatiť jednou mincou, 6 toliarov dvoma trojtoliarnikovými mincami. <span class="math inline">\(7=3+4\)</span>, preto 7 toliarov vyplatíme ako 4 toliare, ale pridáme navyše jednu trojtoliarovú mincu, teda vydáme o 1 menej: <span class="math display">\[7=2\cdot 5 - 3.\]</span> 8 toliarov zase môžeme vyplatiť zdvojnásobením 4, čiže <span class="math inline">\(8=4\cdot 5- 4\cdot 3\)</span>, to sa ale neoplatí, lebo existuje aj jednoduchší spôsob bez vydania: <span class="math display">\[8=5+3.\]</span> Tým sme sa dostali k najdôležitejšej hranici: podľa tvrdenia totiž, začínajúc od hodnoty 8, výplatu možno vyplatiť aj bez vydania.</p>
@@ -122,11 +123,12 @@ je to kladný celočíselný násobok troch, preto spôsob výplaty <span class=
 <p>v prípade (III) 8 toliarov,<br />
 pridáme potrebný počet trojtoliarov.<br />
 <br />
-Je pravdepodobné, že väčšina študentov bude zo začiatku skúšať jednotlivé možnosti, ako zaplatiť malé sumy a až potom sa bude snažiť svoje úvahy zovšeobecniť. Je vhodné študentom klásť otázky, ktoré budú študentov stimulovať k premýšľaniu, či sú ich závery skutočne správne. Ak by sa stalo, že študenti neprídu na druhé riešenie úlohy, bude určite zaujímavé im ho ukázať, keďže ide o veľmi elegantný spôsob, ako sa s úlohou vysporiadať.<br />
+<h4>Komentár</h4>Je pravdepodobné, že väčšina študentov bude zo začiatku skúšať jednotlivé možnosti, ako zaplatiť malé sumy a až potom sa bude snažiť svoje úvahy zovšeobecniť. Je vhodné študentom klásť otázky, ktoré budú študentov stimulovať k premýšľaniu, či sú ich závery skutočne správne. Ak by sa stalo, že študenti neprídu na druhé riešenie úlohy, bude určite zaujímavé im ho ukázať, keďže ide o veľmi elegantný spôsob, ako sa s úlohou vysporiadať.<br />
 <br />
 </div></p>
-<h3 id="úloha-úloha-44">Úloha <span class="citation" data-cites="ZM"></span>, úloha 44</h3>
-<p><div class="problem"> K návrhu z predchádzajúcej úlohy došiel upravujúci návrh. Istý občan píše: Uznávam síce, že troj- a päťtoliarovými mincami možno opísaným spôsobom naozaj zaplatiť každú sumu, ale sú to primalé hodnoty. Navrhujem, aby sa razili radšej päť- a osemtoliarové mince. Je zrejmé – zdôvodňoval ďalej –, že berúc do úvahy aj výdavok z peňazí, všetko, čo možno vyplatiť 3 a 5 toliarmi, možno vyplatiť aj 5 a 8 toliarmi. Tiež je zrejmé, že od istého čísla – vlastne v prípade väčších súm toliarov – ani tu netreba vrátiť mince. Je to skutočne také zrejmé? </div> <h4 class="solution-button">Riešenie</h4> <div class="solution"> Všimnime si, že päťtoliar zostal bez zmeny, len trojtoliar nahradil osemtoliar.</p>
+<h3 id="úloha-úloha-44">Úloha <span class="citation" data-cites="ZM">(Bizám and Herczeg <a href="#ref-ZM" role="doc-biblioref">1982</a>)</span>, úloha 44</h3>
+<p><div class="problem"> K návrhu z predchádzajúcej úlohy došiel upravujúci návrh. Istý občan píše: Uznávam síce, že troj- a päťtoliarovými mincami možno opísaným spôsobom naozaj zaplatiť každú sumu, ale sú to primalé hodnoty. Navrhujem, aby sa razili radšej päť- a osemtoliarové mince. Je zrejmé – zdôvodňoval ďalej –, že berúc do úvahy aj výdavok z peňazí, všetko, čo možno vyplatiť 3 a 5 toliarmi, možno vyplatiť aj 5 a 8 toliarmi. Tiež je zrejmé, že od istého čísla – vlastne v prípade väčších súm toliarov – ani tu netreba vrátiť mince. Je to skutočne také zrejmé? </div></p>
+<p><h4 class="solution-button">Riešenie*</h4><div class="solution">Všimnime si, že päťtoliar zostal bez zmeny, len trojtoliar nahradil osemtoliar.</p>
 <p>Prvá časť tvrdenia je skutočne zrejmá. Pretože <span class="math display">\[3=8-5\]</span> a ak je aj vydanie povolené, tak vlastne nemáme nijaký problém: postupujeme ako pri troj- a päťtoliarových minciach.</p>
 <p>Pravdivá je aj druhá časť – hoci to už nie je také samozrejmé. Na základe predošlého môžeme aj teraz použiť na pridanie 1 toliara z predchádzajúcej úlohy. <span class="math display">\[\begin{aligned}
 1 &amp; = 2\cdot 3- 5 = 2 (8-5) - 5 = 2\cdot  8 - 2\cdot 5 - 5 = 2\cdot 8 - 3\cdot 5,\\
@@ -137,17 +139,18 @@ Je pravdepodobné, že väčšina študentov bude zo začiatku skúšať jednotl
 <p>Požiadavku 2 suma <span class="math display">\[26=2\cdot 5 + 2\cdot 8\]</span> a od toho väčšia určite spĺňa, ale požiadavku 1 nie. To platí aj o 27 toliaroch, avšak 28 už vyhovuje: <span class="math display">\[28=4\cdot 5 + 8.\]</span></p>
 <p>Teda 28 toliarov možno vyplatiť aj bez vydania päťtoliarmi a osemtoliarmi. Vychádzajúc z toho platí, že ak istú (celočíselnú) sumu môžeme takto vyplatiť, potom môžeme vyplatiť aj sumu o 1 toliar väčšiu. Buď tak, že 3 paťtoliare nahradíme 2 osemtoliarmi alebo tak, že 3 osemtoliare nahradíme 5 päťtoliarmi.<br />
 <br />
-Úloha pravdepodobne nebude pre študentov veľmi náročná, zaujímavá však bude diskusia o tom, aká najväčšia suma sa ešte bez vydávania vyplatiť nedá.<br />
+<h4>Komentár</h4>Úloha pravdepodobne nebude pre študentov veľmi náročná, zaujímavá však bude diskusia o tom, aká najväčšia suma sa ešte bez vydávania vyplatiť nedá.<br />
 <br />
 </div></p>
-<h3 id="úloha-úloha-45-problem45">Úloha <span class="citation" data-cites="ZM"></span>, úloha 45 <span id="problem:45" label="problem:45">[problem:45]</span></h3>
+<h3 id="úloha-úloha-45-problem45">Úloha <span class="citation" data-cites="ZM">(Bizám and Herczeg <a href="#ref-ZM" role="doc-biblioref">1982</a>)</span>, úloha 45 <span id="problem:45" label="problem:45">[problem:45]</span></h3>
 <p><div class="problem"> Diskusia, o ktorej sme v predchádzajúcich dvoch úlohách referovali, pokračovala aj ďalej. Boli aj takí, ktorí päť- a osemtoliarové mince považovali za primalé hodnoty a navrhovali väčšie. Návrhy na dve hodnoty toliarov boli napokon tieto:</p>
 <ol type="a">
 <li><p>8 a 13,</p></li>
 <li><p>21 a 34,</p></li>
 <li><p>144 a 233.</p></li>
 </ol>
-<p>Autori všetkých troch návrhov tvrdili, že týmito dvojicami hodnôt možno vyplatiť hocikoľko (celočíselných) súm toliarov a keď vyplácaná suma je dosť veľká, tak netreba ani vrátiť peniaze. Tvrdenie ktorého z týchto autorov je správne a ktorého nie? </div> <h4 class="solution-button">Riešenie</h4> <div class="solution"> Čo zabezpečovalo v predchádzajúcej úlohe to, že môžeme aj naďalej súhlasne odpovedať?</p>
+<p>Autori všetkých troch návrhov tvrdili, že týmito dvojicami hodnôt možno vyplatiť hocikoľko (celočíselných) súm toliarov a keď vyplácaná suma je dosť veľká, tak netreba ani vrátiť peniaze. Tvrdenie ktorého z týchto autorov je správne a ktorého nie? </div></p>
+<p><h4 class="solution-button">Riešenie*</h4><div class="solution">Čo zabezpečovalo v predchádzajúcej úlohe to, že môžeme aj naďalej súhlasne odpovedať?</p>
 <p>To, že hodnota novej mince sa rovnala súčtu dvoch predošlých: <span class="math inline">\(8=3+5\)</span>. Vynechanú hodnotu (trojtoliar) preto môžeme nahradiť rozdielom teraz používaných <span class="math inline">\(3=8-5\)</span>.</p>
 <p>Všetky tri tvrdenia sú pravdivé.</p>
 <p>I. Práve tak, ako sme v predošlej úlohe prešli od trojtoliarov a päťtoliarov na paťtoliarové a osemtoliarové platidlá, tak môžeme z týchto prejsť na 8- a <span class="math inline">\(8+5=13\)</span>-toliarové. Príslušný vzťah je <span class="math inline">\(5=13-8\)</span>. S jeho pomocou z riešenia predošlej úlohy môžeme odvodiť nové a na ich základe môžeme napísať aj nové podmienky 1 a 2. Práve tak možno dokázať, že od istého čísla ďalej budú splnené.</p>
@@ -155,14 +158,15 @@ Je pravdepodobné, že väčšina študentov bude zo začiatku skúšať jednotl
 <p>V konečnom dôsledku dôjdeme k tomu, že uvažované dve hodnoty môžu byť hociktoré dve po sebe idúce čísla Fibonacciho postupnosti: <span class="math display">\[1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, \ldots\]</span> Môžu to teda byť 8 a 13, 21 a 34 alebo 144 a 233 – tvrdenia uvedené v úlohe sú vo všetkých prípadoch splnené.<br />
 <br />
 </div></p>
-<h3 id="úloha-úloha-46-problem46">Úloha <span class="citation" data-cites="ZM"></span>, úloha 46 <span id="problem:46" label="problem:46">[problem:46]</span></h3>
+<h3 id="úloha-úloha-46-problem46">Úloha <span class="citation" data-cites="ZM">(Bizám and Herczeg <a href="#ref-ZM" role="doc-biblioref">1982</a>)</span>, úloha 46 <span id="problem:46" label="problem:46">[problem:46]</span></h3>
 <p><div class="problem"> Tri návrhy, ktoré sme uviedli v predchádzajúcej úlohe, neboli náhodné. Starí obyvatelia uctievali nielen čísla 3 a 5, ale aj všetky čísla Fibonacciho postupnosti. Pravdepodobne dospeli až k variáciám týchto čísel, pretože sa objavili aj také návrhy, aby hodnoty dvoch mincí boli</p>
 <ol type="a">
 <li><p>2 a 8,</p></li>
 <li><p>3 a 21,</p></li>
 <li><p>21 a 144 toliarov.</p></li>
 </ol>
-<p>Ktorý z týchto troch návrhov je vhodný na zaplatenie hocijakej (celočíselnej) sumy toliarov, dokonca tak, aby sa pri dostatočne veľkej sume nemuselo nič vrátiť? </div> <h4 class="solution-button">Riešenie</h4> <div class="solution"> <em>Ani jedno.</em></p>
+<p>Ktorý z týchto troch návrhov je vhodný na zaplatenie hocijakej (celočíselnej) sumy toliarov, dokonca tak, aby sa pri dostatočne veľkej sume nemuselo nič vrátiť? </div></p>
+<p><h4 class="solution-button">Riešenie*</h4><div class="solution"><em>Ani jedno.</em></p>
 <p>V prípade a) to môžeme hneď zbadať: totiž osemtoliar môžeme premeniť na 4 dvojtoliare. Ak by teda týmito dvoma hodnotami bolo možné vyplatiť hocijakú (celočíselnú) sumu, tak by sme ju mohli vyplatiť v samých dvojtoliaroch. To ale nie je pravda: dvojtoliarmi môžeme vyplatiť len párnu sumu toliarov. Vydanie v tomto prípade zrejme nemá význam.</p>
 <p>Situácia je taká istá aj v prípade b): týmito dvoma hodnotami možno vyplatiť len takú sumu toliarov, ktorá je celočíselným násobkom troch (deliteľná troma bezo zvyšku).</p>
 <p>Prípad c) je len zdanlivo zložitejší. Nakoľko totiž <span class="math display">\[\begin{aligned}
@@ -171,30 +175,37 @@ Je pravdepodobné, že väčšina študentov bude zo začiatku skúšať jednotl
 <br />
 <em>Poznámka.</em> Vhodnosť vymenovaných dvojíc hodnôt viditeľne prekazilo to, že 2 a 8 sú súčasne deliteľné 2, 3 a 21 zase 3. Nie je teda ťažké rozpoznať spoločnú matematickú podstatu všetkých troch prípadov: ak dve celé čísla majú spoločného deliteľa väčšieho ako 1, tak mince v príslušných hodnotách nie sú vhodné na výplatu hocijakej sumy (ani s vydaním).<br />
 <br />
-Prvá časť tejto úlohy je relatívne jednoduchá a mala by študentom pomôcť vyvodiť závery v častiach b) a c), kde najmä pre poslednú dvojicu nemusí byť na prvý pohľad zrejmé, že na vyplácanie ľubovoľnej sumy vhodná nie je.<br />
+<h4>Komentár</h4>Prvá časť tejto úlohy je relatívne jednoduchá a mala by študentom pomôcť vyvodiť závery v častiach b) a c), kde najmä pre poslednú dvojicu nemusí byť na prvý pohľad zrejmé, že na vyplácanie ľubovoľnej sumy vhodná nie je.<br />
 <br />
 </div></p>
-<h3 id="úloha-úloha-47">Úloha <span class="citation" data-cites="ZM"></span>, úloha 47</h3>
-<p><div class="problem"> Diskusia o peňažnej reforme v Tramtárii nadobúdala čoraz väčšie rozmery. Mnohí jej účastníci tvrdili, že návrhy z úlohy <a href="#problem:45" data-reference-type="ref" data-reference="problem:45">[problem:45]</a> sa ukazujú byť správne, lebo rešpektujú aj poradie magických čísel, zatiaľ čo v úlohe <a href="#problem:46" data-reference-type="ref" data-reference="problem:46">[problem:46]</a> sú neúspešné, pretože toto pradie nerešpektovali. Ako skutočná bomba preto zapôsobil návrh, aby sa vydali mince v hodnote 4 a 11 toliarov. Ani jedna hodnota sa nenachádza medzi číslami! Napriek tomu autor tvrdil, že aj tieto hodnoty spĺňajú potrebné dve požiadavky: možno nimi vyplatiť hocijaké celočíselné množstvo toliarov a keď je táto suma dostatočne veľká, tak netreba ani nič vrátiť. Mal pravdu? </div> <h4 class="solution-button">Riešenie</h4> <div class="solution"> <em>Áno.</em></p>
+<h3 id="úloha-úloha-47">Úloha <span class="citation" data-cites="ZM">(Bizám and Herczeg <a href="#ref-ZM" role="doc-biblioref">1982</a>)</span>, úloha 47</h3>
+<p><div class="problem"> Diskusia o peňažnej reforme v Tramtárii nadobúdala čoraz väčšie rozmery. Mnohí jej účastníci tvrdili, že návrhy z úlohy <a href="#problem:45" data-reference-type="ref" data-reference="problem:45">[problem:45]</a> sa ukazujú byť správne, lebo rešpektujú aj poradie magických čísel, zatiaľ čo v úlohe <a href="#problem:46" data-reference-type="ref" data-reference="problem:46">[problem:46]</a> sú neúspešné, pretože toto pradie nerešpektovali. Ako skutočná bomba preto zapôsobil návrh, aby sa vydali mince v hodnote 4 a 11 toliarov. Ani jedna hodnota sa nenachádza medzi číslami! Napriek tomu autor tvrdil, že aj tieto hodnoty spĺňajú potrebné dve požiadavky: možno nimi vyplatiť hocijaké celočíselné množstvo toliarov a keď je táto suma dostatočne veľká, tak netreba ani nič vrátiť. Mal pravdu? </div></p>
+<p><h4 class="solution-button">Riešenie*</h4><div class="solution"><em>Áno.</em></p>
 <p>Nápad riešenia vyplýva z prvých dvoch úloh. Po krátkom skúšaní nie je ťažké prísť na to, že z 3 kusov štvortoliarov vydaním jedného jedenásťtoliara zvýši práve jeden toliar. Rovnaká je situácia, keď z 3 kusov jedenásťtoliarov vydáme 8 štvortoliarov.</p>
 <p>Keďže <span class="math display">\[\label{eq:ZM47} 3\cdot 4 - 1\cdot 11 = 1 \ \ \ \ \text{a} \ \ \ \ 3\cdot 11 - 8 \cdot 4 = 1,\]</span> po násobení oboch rovností číslom <span class="math inline">\(k\)</span> dostaneme <span class="math display">\[3k\cdot 4 - k\cdot 11=k \ \ \ \ \text{a} \ \ \ \ 3k\cdot 11 - 8k\cdot 4=k.\]</span> Teda hocijaké (t.j. <span class="math inline">\(k\)</span>) celočíselné množstvo toliarov môžeme vyplatiť hoci aj tak, že z trikrát takého počtu štvrotoliarov si vyberieme práve toľko jedenásťtoliarov, alebo aj tak, že z trikrát takého počtu jedenásťtoliarov vyberieme osemkrát toľko štvortoliarov.</p>
 <p>Z rovnosti <a href="#eq:ZM47" data-reference-type="ref" data-reference="eq:ZM47">[eq:ZM47]</a> vyplýva aj to, že 30 a viac toliarov môžeme vyplatiť aj bez vydania. Veď <span class="math display">\[30=2\cdot 11 +2\cdot 4 \ \ \ \ \text{a} \ \ \ \ 31=11+5\cdot 4\]</span> a odtiaľ začínajúc už vždy môžeme zvyšovať počet toliarov buď tak, že jeden jedenásťtoliar zameníme za 3 štvortoliare alebo tak, že 8 štvortoliarov zameníme za 3 jedenásťtoliare. Totiž sumu 32 a viac toliarov môžeme vyplatiť len tak, ak buď je v nej jedenásťtoliar alebo aspoň 8 štvortoliarov.<br />
 <br />
-Úloha je náročnejšia v tom, že je otvorená a zo zadania nie je jasné, či máme tvrdenie vyvrátiť alebo dokázať. Bude tak zaujímavé sledovať, akými cestami a akými spôsobmi sa budú študentské riešenia odoberať. Ak sa v triede vyskytnú dva protikladné názory, je to výborná príležitosť nechať študentov argumentovať a hľadať chyby vo vlastných riešeniach.<br />
+<h4>Komentár</h4>Úloha je náročnejšia v tom, že je otvorená a zo zadania nie je jasné, či máme tvrdenie vyvrátiť alebo dokázať. Bude tak zaujímavé sledovať, akými cestami a akými spôsobmi sa budú študentské riešenia odoberať. Ak sa v triede vyskytnú dva protikladné názory, je to výborná príležitosť nechať študentov argumentovať a hľadať chyby vo vlastných riešeniach.<br />
 <br />
 </div></p>
-<h3 id="úloha-úloha-48">Úloha <span class="citation" data-cites="ZM"></span>, úloha 48</h3>
-<p><div class="problem"> Veľká diskusia však odrazu skončila (práve vtedy, keď bola najživšia), pretože Národná banka Tramtárie na veľké prekvapenie oznámila, že zavedie dve platidlá: troj- a päťtoliarové mince. Koľkými spôsobmi možno nimi vyplatiť 49 toliarov bez vrátenia peňazí? </div> <h4 class="solution-button">Riešenie</h4> <div class="solution"> Násobky piatich končia na 0 alebo 5. Teda ako od 49 odčítame číslo končiace na 0 alebo 5, vždy dostaneme číslo končiace na 9 alebo 4. Potom suma trojtoliarov bude také číslo, ktoré je menšie ako 49, končí sa na 4 alebo 9 a je (prirodzene) násobkom 3.</p>
+<h3 id="úloha-úloha-48">Úloha <span class="citation" data-cites="ZM">(Bizám and Herczeg <a href="#ref-ZM" role="doc-biblioref">1982</a>)</span>, úloha 48</h3>
+<p><div class="problem"> Veľká diskusia však odrazu skončila (práve vtedy, keď bola najživšia), pretože Národná banka Tramtárie na veľké prekvapenie oznámila, že zavedie dve platidlá: troj- a päťtoliarové mince. Koľkými spôsobmi možno nimi vyplatiť 49 toliarov bez vrátenia peňazí? </div></p>
+<p><h4 class="solution-button">Riešenie*</h4><div class="solution">Násobky piatich končia na 0 alebo 5. Teda ako od 49 odčítame číslo končiace na 0 alebo 5, vždy dostaneme číslo končiace na 9 alebo 4. Potom suma trojtoliarov bude také číslo, ktoré je menšie ako 49, končí sa na 4 alebo 9 a je (prirodzene) násobkom 3.</p>
 <p>Takéto čísla sú len tri: 9, 24 a 39. Pri výplate 49 toliarov celková suma vyplatená trojtoliarmi môže byť len 9, 24 alebo 39 toliarov. Preto sú možné len tri spôsoby výplaty: <span class="math display">\[\begin{aligned}
 3\cdot 3 + 8\cdot 5 &amp; =49,\\
 8\cdot 3 + 5\cdot 5 &amp; = 49,\\
 13\cdot 3 + 2\cdot 5 &amp; = 49.\end{aligned}\]</span><br />
-Záverečná úloha seminára je relatívne jednoduchou bodkou, avšak trénuje systematický prístup k práci, preto jej zaradenie považujeme za vhodné.<br />
+<h4>Komentár</h4>Záverečná úloha seminára je relatívne jednoduchou bodkou, avšak trénuje systematický prístup k práci, preto jej zaradenie považujeme za vhodné.<br />
 <br />
 </div></p>
-<p>Na záver seminára je vhodné nechať si niekoľko (desiatok) minút času na otvorenie diskusie so študentmi. Mali by sme sa pobaviť o tom, čo správne riešenie úlohy obsahuje, aké typy poznáme a podobne. Nie je nutné prísť ku konkrétnym a špecifickým záverom, keďže téme sa budeme venovať ešte aj v nasledujúcom seminári.</p>
+<p><h4>Komentár</h4>Na záver seminára je vhodné nechať si niekoľko (desiatok) minút času na otvorenie diskusie so študentmi. Mali by sme sa pobaviť o tom, čo správne riešenie úlohy obsahuje, aké typy poznáme a podobne. Nie je nutné prísť ku konkrétnym a špecifickým záverom, keďže téme sa budeme venovať ešte aj v nasledujúcom seminári.</p>
 <h2 id="doplňujúce-úlohy-a-materiály" class="unnumbered">Doplňujúce úlohy a materiály</h2>
-<p>V prípade, že študentov úlohy seminára zaujali, je možné ich odkázať na publikáciu <span class="citation" data-cites="ZM"></span>, ktorá obsahuje ďalšie zovšeobecnenie riešených úloh a komentár o riešení diofantických rovníc.</p>
+<p>V prípade, že študentov úlohy seminára zaujali, je možné ich odkázať na publikáciu <span class="citation" data-cites="ZM">(Bizám and Herczeg <a href="#ref-ZM" role="doc-biblioref">1982</a>)</span>, ktorá obsahuje ďalšie zovšeobecnenie riešených úloh a komentár o riešení diofantických rovníc.</p>
+<div id="refs" class="references" role="doc-bibliography">
+<div id="ref-ZM">
+<p>Bizám, Gyorgy, and János Herczeg. 1982. <em>Zajímavá Logika</em>. Bratislava: ALFA.</p>
+</div>
+</div>
         </div>
     <div class="footer">
         Semináre zostavila Alexandra Porembová. Technické spracovanie Martin Ukrop, Jan Mrázek.<br/>
