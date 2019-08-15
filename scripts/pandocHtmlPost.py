@@ -18,6 +18,7 @@ if len(sys.argv) != 2:
 document = open(sys.argv[1]).read()
 document = re.sub(r"<code>(.*?)</code>", freeHtml, document)
 document = re.sub(r"seminar(\d+)-(teacher|student).pdf", leadingZeroes, document)
+document = re.sub(r"(<img.*style=\")(width:.*%)(.*\")", r"\1\3", document)
 
 with open(sys.argv[1], "w") as f:
     f.write(document)
