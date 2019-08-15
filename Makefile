@@ -51,7 +51,7 @@ build-web/images/%.png: images/%.pdf
 	convert -verbose -density 500 -resize '1200' $< $@
 
 build-web/seminars/%.html: seminars/%.tex $(TEMPLATES_HTML) $(PROBLEMS)
-	pandoc -s --mathjax=$(MATHJAX_URL) --metadata-file=templates/metadata.yaml -H templates/header.html -B templates/before-body.html -A templates/after-body.html -f latex -t html -o $@ templates/latex-header-web.tex $<
+	pandoc -s --mathjax=$(MATHJAX_URL) --metadata-file=templates/metadata.yaml -H templates/header.html -B templates/before-body.html -A templates/after-body.html -f latex -V biblio-title=Reference --bibliography=bibliografia.bib -t html -o $@ templates/latex-header-web.tex $<
 	./scripts/pandocHtmlPost.py $@
 
 build-web/pdf/%-teacher.pdf: seminars/%.tex $(TEMPLATES_PDF)
