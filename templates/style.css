@@ -54,7 +54,7 @@ img {
 }
 
 h1 {
-    color: 	rgba(54, 97, 162, 1);
+    color: rgba(54, 97, 162, 1);
     margin-top: 0px;
     text-align: left;
 }
@@ -73,23 +73,29 @@ a:hover {
     text-decoration: underline;
 }
 
-.index { 
-    text-align: center;
-}
-
-.index>a {
-    display: block;
-    float: left;
-    width: 122px;
-    padding: 20px;
-    background: rgba(54, 97, 162, 0.1);
+.index table {
+    width: 100%;
+    table-layout: auto;
+    padding: 5px;
     margin: 10px;
+    font-size: inherit;
 }
 
-.index>a:hover {
-    background: rgba(54, 97, 162, 0.3);
-    text-decoration: none;
+.index td {
+    padding-right: 0.7em;
+    padding-bottom: 0.5em;
 }
+
+.index td:nth-child(1) {
+    text-align: right;
+}
+
+.index td:nth-child(2) {
+    min-width: 150px;
+    padding-right: 1em;
+    font-weight: bold;
+}
+
 
 .cleaner {
     clear: both;
@@ -104,8 +110,8 @@ a:hover {
     cursor: pointer;
     padding: 15px;
     margin: 20px 0 0 0;
-  }
-  
+}
+
 .solution-button:before {
     content: "\002B";
     margin-right: 10px;
@@ -115,7 +121,8 @@ a:hover {
     content: "\2212";
 }
 
-.active, .solution-button:hover {
+.active,
+.solution-button:hover {
     background-color: rgba(54, 97, 162, 0.3);
 }
 
