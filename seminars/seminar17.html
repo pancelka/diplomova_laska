@@ -22,6 +22,21 @@
       gtag('js', new Date());
   
       gtag('config', 'UA-134264779-2');
+  
+      document.addEventListener("click", function(event) {
+          var element = event.target;
+          if (element.tagName.toLowerCase() == "a" &&
+              element.getAttribute("href").indexOf("#") === 0)
+          {
+              var loc = location.href;
+              if (loc.indexOf("#") != -1) {
+                  loc = loc.substr(0, loc.indexOf("#"));
+              }
+              my_href = loc + element.getAttribute("href");
+              my_href = my_href.replace(/#+/g, '#');
+              element.href = my_href;
+          }
+      });
   </script>
   <base href="https://pancelka.github.io/diplomova_laska/">
   <link rel="stylesheet" href="style.css" media="screen">
