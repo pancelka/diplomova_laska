@@ -7,8 +7,7 @@
 \newcommand{\problem}[3]{
     \subsubsection{Úloha #1}
     \texttt{<div class="problem">} #2 \texttt{</div>}
-    \texttt{<h4 class="solution-button">Riešenie</h4>}
-    \texttt{<div class="solution">} #3 \texttt{</div>}
+    #3 \texttt{</div>}
 }
 
 % Seminar title
@@ -25,3 +24,7 @@
   #1
 }
 \newcommand{\teachernote}[1]{#1}
+
+\newcommand{\rie}{\texttt{<h4 class="solution-button">Riešenie</h4><div class="solution">}}
+\newcommand{\rieh}{\texttt{<h4 class="solution-button">Riešenie*</h4><div class="solution">}}
+\newcommand{\kom}{\texttt{<h4>Komentár</h4>}}
