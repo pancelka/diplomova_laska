@@ -79,7 +79,7 @@ Nasledujúci text vo zvyšku tejto časti je (takmer) doslovným výťahom z roz
 <h3 id="úloha-lode">Úloha Lode</h3>
 <p><div class="problem"> Na pláne <span class="math inline">\(7\times 7\)</span> hráme hru lode. Nachádza sa na ňom jedna loď <span class="math inline">\(2\times 3\)</span>. Môžeme vystreliť na ľubovoľné políčko plánu, a ak loď zasiahneme, hra končí. Ak nie, strieľame znova. Určte najmenší počet výstrelov, ktoré potrebujeme, aby sme s istotou loď zasiahli. </div> <strong>Pokus o riešenie 1*.</strong> Naším cieľom je strieľať čo najoptimálnejšie, aby sme použili čo najmenej výstrelov. Neoplatí sa nám preto strieľať na políčka pri sebe, lebo výstrely pri sebe pokryjú menej políčok ako výstrely ďalej od seba. Nesmieme však strieľať moc ďaleko od seba. Ak medzi dvoma výstrelmi sú aspoň dve políčka už sa tam môže zmestiť loď. Najlepšie teda bude, keď medzi susednými výstrelmi bude jedno voľné políčko. To vieme dosiahnuť vystrelením na políčka ako je znázornené na obrázku.</p>
 <figure>
-<img src="images/lode1.png" id="fig:lode1" style="width:35.0%" alt="" /><figcaption><span label="fig:lode1"></span></figcaption>
+<img src="images/lode1.png" id="fig:lode1" style="" alt="" /><figcaption><span label="fig:lode1"></span></figcaption>
 </figure>
 <p>Na to, aby sme s istotou zasiahli loď, potrebujeme najmenej 9 výstrelov. Na menej výstrelov to nie je možné, pretože sme strieľali najoptimálnejšie.<br />
 <br />
@@ -92,7 +92,7 @@ Nasledujúci text vo zvyšku tejto časti je (takmer) doslovným výťahom z roz
 <br />
 <strong>Pokus o riešenie 2*.</strong> Na nasledujúcom obrázku vidíme 8 obdĺžnikov <span class="math inline">\(2\times 3\)</span> rozmiestnených na plániku, ktoré sa neprekrývajú.</p>
 <figure>
-<img src="images/lode2.png" id="fig:lode2" style="width:35.0%" alt="" /><figcaption><span label="fig:lode2"></span></figcaption>
+<img src="images/lode2.png" id="fig:lode2" style="" alt="" /><figcaption><span label="fig:lode2"></span></figcaption>
 </figure>
 <p>Ak by sme mali menej ako 8 výstrelov, tak jeden z ôsmich obdĺžnikov nezasiahneme a zrovna tam sa môže nachádzať loďka. Potrebujeme teda do každého obdĺžnika vystreliť jeden výstrel. Musíme ich umiestniť zároveň tak, aby sa medzi ne nezmestila žiadna iná loď. Na to, aby sme s istotou zasiahli loď, potrebujeme najmenej 8 výstrelov.<br />
 <br />
@@ -103,7 +103,7 @@ Nasledujúci text vo zvyšku tejto časti je (takmer) doslovným výťahom z roz
 <br />
 <strong>Vzorové riešenie*.</strong> Ukážeme, že 8 je najmenší počet výstrelov, ktorý potrebujeme, aby sme s istotou zasiahli loď.</p>
 <figure>
-<img src="images/lode3.png" id="fig:lode3" style="width:60.0%" alt="" /><figcaption><span label="fig:lode3"></span></figcaption>
+<img src="images/lode3.png" id="fig:lode3" style="" alt="" /><figcaption><span label="fig:lode3"></span></figcaption>
 </figure>
 <p>Na obrázku <a href="#fig:lode3" data-reference-type="ref" data-reference="fig:lode3">3</a> vľavo vidíme, že môžeme na plán umiestniť 8 neprekrývajúcich sa obdĺžnikov <span class="math inline">\(2\times 3\)</span> (stredné políčko ostane prázdne). Aby sme s istotou zasiahli loď, musíme zasiahnuť aspoň jedno políčko v každom z ôsmich vyznačených obdĺžnikov, preto potrebujeme aspoň 8 výstrelov.</p>
 <p>Na obrázku vpravo je uvedený príklad výberu ôsmych políčok, na ktoré stačí vystreliť, aby sa už mimo nich nedala na plán umiestniť žiadne loď <span class="math inline">\(2\times 3\)</span>. Preto týchto 8 výstrelov k zasiahnutiu lode vždy stačí.<br />
