@@ -133,3 +133,44 @@ a:hover {
     transition: max-height 0.2s ease-out;
     background-color: rgba(255, 255, 255, 0.9);
 }
+
+div.references:before {
+    content: "Reference";
+    display: block;
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+table {
+    margin: 0 0 40px 0;
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    display: table;
+    border-radius: 5px;
+}
+
+tr {
+    display: table-row;
+    background: #f6f6f6;
+}
+
+tr:nth-of-type(odd) {
+    background: #e9e9e9;
+}
+
+tr.header {
+    font-weight: 800;
+    color: #ffffff;
+    background: rgba(54, 97, 162, 1);
+    border-radius: 5px;
+}
+
+th {
+    padding: 6px 12px;
+    display: table-cell;
+}
