@@ -1,6 +1,6 @@
 % Do not delete this line (pandoc magic!)
 
-\problem{61-I-6-N2}{
+\problem{61-I-6-N2}{}{
 Na tabuli sú napísané všetky prvočísla menšie ako 100. Gitka a Terka sa striedajú v~ťahoch pri nasledujúcej hre. Najprv Gitka zmaže jedno z~prvočísel. Ďalej vždy hráčka, ktorá je na ťahu, zmaže jedno z~prvočísel, ktoré má s~predchádzajúcim zmazaným prvočíslom jednu zhodnú číslicu (tak po prvočísle 3 je možné zmazať trebárs 13 alebo 37). Hráčka, ktorá je na ťahu a nemôže už žiadne prvočíslo zmazať, prehráva. Ktorá z~oboch hráčok môže hrať tak, že vyhrá nezávisle od ťahov súperky?
 }{
 \rieh Pretože prvočísel menších ako 100 je nepárny počet (25), ponúka sa hypotéza, že víťaznú stratégiu bude mať prvá hráčka. Ukážme, že to tak naozaj je. Táto hráčka si vopred v~duchu spáruje (podľa spoločnej číslice) napísané prvočísla (dá sa to urobiť viacerými spôsobmi, uvedieme ten, pri ktorom v~každom kroku párujeme najmenšie doposiaľ nespárované prvočíslo s~najmenším ďalším doposiaľ nespárovaným prvočíslom so spoločnou číslicou): (2, 23), (3, 13), (5, 53), (7, 17), (11, 19), (29, 59), (31, 37), (41, 43), (47, 67), (61, 71), (73, 79), (83, 89); jediné zostávajúce nespárované prvočíslo 97 preto Gitka zmaže ako prvé a ďalej pri hre bude mazať vždy prvočíslo, ktoré je v~páre s~predchádzajúcim zmazaným prvočíslom. Týmto postupom musí vyhrať.\\

@@ -1,6 +1,6 @@
 % Do not delete this line (pandoc magic!)
 
-\problem{63-I-3}{
+\problem{63-I-3}{}{
 Číslo $n$ je súčinom troch rôznych prvočísel. Ak zväčšíme dve menšie z~nich o~1 a najväčšie ponecháme nezmenené, zväčší sa ich súčin o~915. Určte číslo $n$.
 }{
 \rieh Nech $n = pqr, p < q < r$. Rovnosť $(p + 1)(q + 1)r = pqr + 915$ ekvivalentne upravíme na tvar $(p + q + 1) \cdot r = 915 = 3 \cdot 5 \cdot 61$, z~ktorého vyplýva, že prvočíslo $r$ môže nadobudnúť len niektorú z~hodnôt 3, 5 a 61. Pre $r = 3$ ale z~poslednej rovnice dostávame $(p + q + 1) \cdot 3 = 3 \cdot 5 \cdot 61$, čiže $p + q = 304$. To je spor s~tým, že $r$ je najväčšie. Analogicky zistíme, že nemôže byť ani $r = 5$. Je teda $r = 61$ a $p + q = 14$. Vyskúšaním všetkých možností pre $p$ a $q$ vyjde $p = 3$, $q = 11$, $r = 61$ a $n = 3 \cdot 11 \cdot 61 = 2 013$.\\

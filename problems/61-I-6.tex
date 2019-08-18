@@ -1,6 +1,6 @@
 % Do not delete this line (pandoc magic!)
 
-\problem{61-I-6}{
+\problem{61-I-6}{}{
 Na hracej ploche $n \times n$ tvorenej bielymi štvorcovými políčkami sa Monika a Tamara striedajú v~ťahoch jednou figúrkou pri nasledujúcej hre. Najskôr Monika položí figúrku na ľubovoľné políčko a toto políčko zafarbí namodro. Ďalej vždy hráčka, ktorá je na ťahu, urobí s~figúrkou skok na políčko, ktoré je doposiaľ biele, a toto políčko zafarbí namodro. Pritom pod skokom rozumieme bežný ťah šachovým jazdcom,  t.\,j. presun figúrky o~dve políčka zvislo alebo vodorovne a súčasne o~jedno políčko v~druhom smere. Hráčka, ktorá je na rade a už nemôže urobiť ťah, prehráva. Postupne pre $n = 4, 5, 6$ rozhodnite, ktorá z~hráčok môže hrať tak, že vyhrá nezávisle na ťahoch druhej hráčky.
 }{
 \rieh Ak je celkový počet políčok hracej plochy párny (v~zadaní pre $n = 4$ a $n = 6$), môže v~poradí druhá hráčka pomýšľať na túto víťaznú stratégiu: spárovať všetky políčka hracej dosky do dvojíc tak, aby v~každom páre boli políčka navzájom dosiahnuteľné jedným skokom. Pokiaľ také spárovanie políčok druhá hráčka nájde, má víťaznú stratégiu: v~každom ťahu urobí skok na druhé políčko toho páru, na ktorého prvom políčku figúrka práve leží.
@@ -11,7 +11,7 @@ Ak je celkový počet políčok hracej plochy nepárny (v~zadaní pre $n = 5$), 
 Nájsť požadované spárovania políčok je pre zadané príklady ľahké a je to možné urobiť viacerými spôsobmi. Ukážme tie z~nich, ktoré majú určité črty pravidelnosti. Na obr.~\ref{fig:61I6} zľava je vidno, ako je možné spárovať políčka časti hracej plochy o~rozmeroch $4\times2$; celú hraciu plochu $4 \times 4$ rozdelíme na dva také bloky a urobíme spárovanie v~každom z~nich. I~na spárovanie políčok hracej plochy $6\times 6$ môžeme využiť spárovanie v~dvoch blokoch $4 \times 2$; na obr.~\ref{fig:61I6} uprostred je znázornené možné stredovo súmerné spárovanie všetkých políčok. Nakoniec na obr.~\ref{fig:61I6} vpravo je príklad spárovania políčok hracej plochy $5 \times 5$ s~nespárovaným políčkom v~ľavom hornom rohu (nespárované políčko nemusí byť nutne rohové); opäť je pritom využitý jeden blok $4 \times 2$.
 \begin{figure}[h]
     \centering
-    \includegraphics{images/61D6\imagesuffix} 
+    \includegraphics{images/61D6\imagesuffix}
     \caption{}
     \label{fig:61I6}
 \end{figure}
