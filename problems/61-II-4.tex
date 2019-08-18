@@ -1,6 +1,6 @@
 % Do not delete this line (pandoc magic!)
 
-\problem{61-II-4}{}{
+\problem{61-II-4}{seminar26}{
 Na tabuli je napísaných prvých $n$ celých kladných čísel. Marína a Tamara sa striedajú v~ťahoch pri nasledujúcej hre. Najskôr Marína zotrie jedno z~čísel na tabuli. Ďalej vždy hráčka, ktorá je na ťahu, zotrie jedno z~čísel, ktoré sa od predchádzajúceho zotretého čísla ani nelíši o~1, ani s~ním nie je súdeliteľné. Hráčka, ktorá je na ťahu a nemôže už žiadne číslo zotrieť, prehrá. Pre $n = 6$ a pre $n = 12$ rozhodnite, ktorá z~hráčok môže hrať tak, že vyhrá nezávisle na ťahoch druhej hráčky.
 }{
 \rieh Úloha dvoch po sebe zotieraných čísel je v~zadanej hre symetrická: ak je po čísle $x$ možné zotrieť číslo $y$, je (pri inom priebehu hry) po čísle $y$ možné zotrieť číslo $x$. Preto si môžeme celú hru (so zadaným číslom $n$) \uv{sprehľadniť} tak, že najskôr vypíšeme všetky takéto (nazývajme ich prípustné) dvojice $(x, y)$. Keďže na poradí čísel v~prípustnej dvojici nezáleží, stačí vypisovať len tie dvojice $(x, y)$, v~ktorých $x < y$.
