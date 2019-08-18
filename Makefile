@@ -31,7 +31,7 @@ thesis:
 
 web: web-init $(IMAGES_PNG) $(WEB_PDF_STUDENT) $(WEB_PDF_TEACHER) $(SEMINARS_HTML)
 
-web-init: build-web/index.html templates/style.css templates/background.png templates/collapsible.js
+web-init: build-web/index.html build-web/problems.html templates/style.css templates/background.png templates/collapsible.js
 	mkdir -p build-web/seminars build-web/images build-web/pdf build-web/images/
 	echo "seminar-mo.sk" > build-web/CNAME
 	cp -v templates/style.css templates/background.png templates/collapsible.js build-web/
@@ -52,6 +52,12 @@ build-web/images/%.png: images/%.pdf
 
 build-web/seminars/%.html: seminars/%.tex $(TEMPLATES_HTML) $(PROBLEMS)
 	pandoc -s --mathjax=$(MATHJAX_URL) --metadata-file=templates/metadata.yaml -H templates/header.html -B templates/before-body.html -A templates/after-body.html -f latex -V biblio-title=Reference --bibliography=bibliografia.bib -t html -o $@ templates/latex-header-web.tex $<
+	./scripts/pandocHtmlPost.py $@
+
+build-web/problems.html: templates/problems.html $(TEMPLATES_HTML) $(PROBLEMS)
+	echo "" > build-web/problems.tex
+	find problems -type f -name "*.tex" -exec printf "\input{{}}\n\n" >> build-web/problems.tex \;
+	pandoc -s --mathjax=$(MATHJAX_URL) --metadata-file=templates/metadata.yaml -H templates/header.html -B templates/before-body.html -B templates/problems.html -A templates/after-body.html -f latex -V biblio-title=Reference --bibliography=bibliografia.bib -t html -o $@ templates/latex-header-web.tex build-web/problems.tex
 	./scripts/pandocHtmlPost.py $@
 
 build-web/pdf/%-teacher.pdf: seminars/%.tex $(TEMPLATES_PDF)

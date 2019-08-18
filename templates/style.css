@@ -191,3 +191,13 @@ ol > li:before {
     position: absolute;
     left: -1.4em;
 }
+
+ul.tags {
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+}
+
+ul.tags li {
+    list-style: none;
+}
