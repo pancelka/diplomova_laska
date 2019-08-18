@@ -5,9 +5,10 @@
 
 % Display problems (in gray box) + solutions
 \newcommand{\problem}[4]{
+    \texttt{<div class="problemContainer" data-tag="#2">}
     \subsubsection{Úloha #1}
     \texttt{<div class="problem">} #3 \texttt{</div>}
-    #4 \texttt{</div>}
+    #4 \texttt{</div></div>}
 }
 
 % Seminar title

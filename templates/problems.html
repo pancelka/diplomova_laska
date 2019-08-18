@@ -1,7 +1,5 @@
 <h1>Seznam všech úloh v tomto semináři</h1>
 
-<script>
-</script>
 <p>Zvolte kategorii úloh:</p>
 
 <ul class="tags">
@@ -14,3 +12,36 @@
     <li><label><input type="checkbox" value="g" checked></label> Geometrická 7</li>
     <li><label><input type="checkbox" value="h" checked></label> Geometrická 8</li>
 </ul>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+function parseTags(object) {
+    return $(object).data("tag").split(",").map(function(item) {
+        return item.trim();
+    });
+}
+
+function show() {
+    var currentTags = new Set();
+    $(".tags input:checked").each(function(index, checkbox) {
+        currentTags.add($(checkbox).val());
+    });
+    $(".problemContainer").each(function(index, problem) {
+        tags = parseTags(problem);
+        var i;
+        for (i = 0; i < tags.length; i++) {
+            if (currentTags.has(tags[i])) {
+                $(problem).show();
+                return;
+            }
+            $(problem).hide();
+        }
+    });
+}
+
+$('.tags input').change(show);
+
+$(document).ready(function() {
+    show();
+});
+</script>
