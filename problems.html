@@ -118,6 +118,9 @@
     <li><label><input type="checkbox" value="vyrazy" checked></label>vyrazy</li>
 </ul>
 
+<input type="button" class="button" id="selectAll" value="Vybrat všetko">
+<input type="button" class="button" id="deselectAll" value="Nevybrať nič">
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
 function parseTags(object) {
@@ -145,6 +148,14 @@ function show() {
 }
 
 $('.tags input').change(show);
+
+$('#selectAll').click(function() {
+    $('.tags input').prop("checked", true);
+});
+
+$('#deselectAll').click(function() {
+    $('.tags input').prop("checked", false);
+});
 
 $(document).ready(function() {
     show();
