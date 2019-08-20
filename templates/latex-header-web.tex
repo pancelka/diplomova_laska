@@ -4,10 +4,11 @@
 \newcommand{\imagesuffix}{.png}
 
 % Display problems (in gray box) + solutions
-\newcommand{\problem}[3]{
+\newcommand{\problem}[4]{
+    \texttt{<div class="problemContainer" data-tag="#2">}
     \subsubsection{Úloha #1}
-    \texttt{<div class="problem">} #2 \texttt{</div>}
-    #3 \texttt{</div>}
+    \texttt{<div class="problem">} #3 \texttt{</div>}
+    #4 \texttt{</div></div>}
 }
 
 % Seminar title
@@ -28,3 +29,5 @@
 \newcommand{\rie}{\texttt{<h4 class="solution-button">Riešenie</h4><div class="solution">}}
 \newcommand{\rieh}{\texttt{<h4 class="solution-button">Riešenie*</h4><div class="solution">}}
 \newcommand{\kom}{\texttt{<h4>Komentár</h4>}}
+
+\newcommand{\detokenize}[1]{#1}

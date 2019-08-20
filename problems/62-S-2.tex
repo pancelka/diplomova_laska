@@ -1,9 +1,9 @@
 % Do not delete this line (pandoc magic!)
 
-\problem{62-S-2}{
+\problem{62-S-2}{}{
 Určte všetky dvojice $a$, $b$ celých kladných čísel, pre ktoré platí
 $$a \cdot [a, b] = 4 \cdot (a, b),$$
-pričom symbol $[a, b]$ označuje najmenší spoločný násobok a $(a, b)$ najväčší spoločný deliteľ celých kladných čísel a, b. 
+pričom symbol $[a, b]$ označuje najmenší spoločný násobok a $(a, b)$ najväčší spoločný deliteľ celých kladných čísel a, b.
 }{
 \rieh Ak označíme $d$ najväčšieho spoločného deliteľa čísel $a$ a $b$, môžeme písať $a = kd$ a $b = ld$, pričom $(k, l) = 1$, takže $[a, b] = kld$. Po dosadení do danej rovnice tak dostaneme
 $$kd \cdot kld = 4 \cdot d \ \ \ \text{a po úprave} \ \ \ k^2ld = 4.$$
@@ -24,7 +24,7 @@ Pre $k = 1$ dostávame rovnicu $ld = 4$, ktorá má v obore kladných celých č
 \textbf{Iné riešenie*.} Využijeme známu rovnosť $[a, b] \cdot (a, b) = a \cdot b$, ktorá platí pre všetky celé kladné $a$, $b$. Vynásobením oboch strán danej rovnice číslom [a, b] tak dostaneme
 $$a[a, b]^2= 4ab, \ \ \ \text{čiže} \ \ \ [a, b]^2= 4b. \ \ \ \todo{ (1)}$$
 
-Vzhľadom na to, že $[a, b] \geq b$, a teda 
+Vzhľadom na to, že $[a, b] \geq b$, a teda
 $$4b = [a, b]^2 \geq b^2,$$
 je $b^2\leq  4b$, takže $b \leq 4$. Navyše z upravenej rovnice \todo{(1)} vyplýva, že $4b$, a teda aj $b$ je druhou mocninou celého čísla. Preskúmaním oboch prípadov $b \in \{1, 4\}$ (dosadíme do pôvodnej rovnice postupne všetky možné hodnoty $(a, b)$, ktorých je konečne veľa, alebo dosadíme do \todo{(1)} a využijeme to, že $a$ je deliteľom najmenšieho spoločného násobku $[a, b]$) dôjdeme k rovnakému záveru ako v prvom riešení.
 

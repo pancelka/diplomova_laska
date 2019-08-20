@@ -12,13 +12,13 @@
 }
 
 % Display problems + solutions
-\newcommand{\problem}[3]{
+\newcommand{\problem}[4]{
   \stepcounter{problem}
   \begin{tcolorbox}[breakable,notitle,boxrule=0pt,colback=light-gray,colframe=light-gray]
     \textbf{Úloha \theseminar .\theproblem.}
-    \source{#1} #2
+    \source{#1} #3
   \end{tcolorbox}
-  \noindent#3
+  \noindent#4
 }
 
 \newcommand{\home}[1]{

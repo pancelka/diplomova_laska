@@ -174,3 +174,30 @@ th {
     padding: 6px 12px;
     display: table-cell;
 }
+
+ol {
+    counter-reset: list;
+    margin: 0;
+}
+
+ol > li {
+    list-style: none;
+    position: relative;
+}
+
+ol > li:before {
+    counter-increment: list;
+    content: counter(list, lower-alpha) ") ";
+    position: absolute;
+    left: -1.4em;
+}
+
+ul.tags {
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+}
+
+ul.tags li {
+    list-style: none;
+}
