@@ -3,15 +3,63 @@
 <p>Zvolte kategorii úloh:</p>
 
 <ul class="tags">
-    <li><label><input type="checkbox" value="a" checked></label> Geometrická 1</li>
-    <li><label><input type="checkbox" value="b" checked></label> Geometrická 2</li>
-    <li><label><input type="checkbox" value="c" checked></label> Geometrická 3</li>
-    <li><label><input type="checkbox" value="d" checked></label> Geometrická 4</li>
-    <li><label><input type="checkbox" value="e" checked></label> Geometrická 5</li>
-    <li><label><input type="checkbox" value="f" checked></label> Geometrická 6</li>
-    <li><label><input type="checkbox" value="g" checked></label> Geometrická 7</li>
-    <li><label><input type="checkbox" value="h" checked></label> Geometrická 8</li>
+    <li><label><input type="checkbox" value="TODO" checked></label>TODO</li>
+    <li><label><input type="checkbox" value="agner" checked></label>AG nerovnosť</li>
+    <li><label><input type="checkbox" value="anglechas" checked></label>anglechas</li>
+    <li><label><input type="checkbox" value="cifry" checked></label>cifry</li>
+    <li><label><input type="checkbox" value="delitelnost" checked></label>delitelnost</li>
+    <li><label><input type="checkbox" value="geomlah" checked></label>geomlah</li>
+    <li><label><input type="checkbox" value="geompoc" checked></label>geompoc</li>
+    <li><label><input type="checkbox" value="konstrukcia" checked></label>konstrukcia</li>
+    <li><label><input type="checkbox" value="kvadr" checked></label>kvadr</li>
+    <li><label><input type="checkbox" value="mismas" checked></label>mismas</li>
+    <li><label><input type="checkbox" value="mnohocleny" checked></label>mnohocleny</li>
+    <li><label><input type="checkbox" value="mriezsach" checked></label>mriezsach</li>
+    <li><label><input type="checkbox" value="nerovnosti" checked></label>nerovnosti</li>
+    <li><label><input type="checkbox" value="nerovnosti2" checked></label>nerovnosti2</li>
+    <li><label><input type="checkbox" value="netrgeo" checked></label>netrgeo</li>
+    <li><label><input type="checkbox" value="nsdnsn" checked></label>nsdnsn</li>
+    <li><label><input type="checkbox" value="obsahy" checked></label>obsahy</li>
+    <li><label><input type="checkbox" value="odhady" checked></label>odhady</li>
+    <li><label><input type="checkbox" value="opiskca" checked></label>opiskca</li>
+    <li><label><input type="checkbox" value="podtroj" checked></label>podtroj</li>
+    <li><label><input type="checkbox" value="prvocisla" checked></label>prvocisla</li>
+    <li><label><input type="checkbox" value="pytveta" checked></label>pytveta</li>
+    <li><label><input type="checkbox" value="rovnice" checked></label>rovnice</li>
+    <li><label><input type="checkbox" value="seminar04" checked></label>seminar04</li>
+    <li><label><input type="checkbox" value="seminar05" checked></label>seminar05</li>
+    <li><label><input type="checkbox" value="seminar06" checked></label>seminar06</li>
+    <li><label><input type="checkbox" value="seminar07" checked></label>seminar07</li>
+    <li><label><input type="checkbox" value="seminar08" checked></label>seminar08</li>
+    <li><label><input type="checkbox" value="seminar09" checked></label>seminar09</li>
+    <li><label><input type="checkbox" value="seminar10" checked></label>seminar10</li>
+    <li><label><input type="checkbox" value="seminar11" checked></label>seminar11</li>
+    <li><label><input type="checkbox" value="seminar12" checked></label>seminar12</li>
+    <li><label><input type="checkbox" value="seminar13" checked></label>seminar13</li>
+    <li><label><input type="checkbox" value="seminar18" checked></label>seminar18</li>
+    <li><label><input type="checkbox" value="seminar19" checked></label>seminar19</li>
+    <li><label><input type="checkbox" value="seminar20" checked></label>seminar20</li>
+    <li><label><input type="checkbox" value="seminar21" checked></label>seminar21</li>
+    <li><label><input type="checkbox" value="seminar22" checked></label>seminar22</li>
+    <li><label><input type="checkbox" value="seminar23" checked></label>seminar23</li>
+    <li><label><input type="checkbox" value="seminar25" checked></label>seminar25</li>
+    <li><label><input type="checkbox" value="seminar26" checked></label>seminar26</li>
+    <li><label><input type="checkbox" value="seminar29" checked></label>seminar29</li>
+    <li><label><input type="checkbox" value="seminar30" checked></label>seminar30</li>
+    <li><label><input type="checkbox" value="seminar31" checked></label>seminar31</li>
+    <li><label><input type="checkbox" value="seminar32" checked></label>seminar32</li>
+    <li><label><input type="checkbox" value="seminar34" checked></label>seminar34</li>
+    <li><label><input type="checkbox" value="spor" checked></label>spor</li>
+    <li><label><input type="checkbox" value="stvoruholniky" checked></label>stvoruholniky</li>
+    <li><label><input type="checkbox" value="sustavy" checked></label>sustavy</li>
+    <li><label><input type="checkbox" value="trojuholniky" checked></label>trojuholniky</li>
+    <li><label><input type="checkbox" value="uhly" checked></label>uhly</li>
+    <li><label><input type="checkbox" value="vpiskca" checked></label>vpiskca</li>
+    <li><label><input type="checkbox" value="vyrazy" checked></label>vyrazy</li>
 </ul>
+
+<input type="button" class="button" id="selectAll" value="Vybrat všetko">
+<input type="button" class="button" id="deselectAll" value="Nevybrať nič">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
@@ -40,6 +88,14 @@ function show() {
 }
 
 $('.tags input').change(show);
+
+$('#selectAll').click(function() {
+    $('.tags input').prop("checked", true);
+});
+
+$('#deselectAll').click(function() {
+    $('.tags input').prop("checked", false);
+});
 
 $(document).ready(function() {
     show();
