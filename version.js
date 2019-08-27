@@ -1,1 +1,1 @@
-document.write('Verze: 2019-08-20 (commit <a target="_blank" href="https://github.com/pancelka/diplomova_laska/commit/6257c9fd6831f159843c48dfccbbd6f4e5f9336b">6257c9f</a>)');
+document.write('Verze: 2019-08-27 (commit <a target="_blank" href="https://github.com/pancelka/diplomova_laska/commit/6d458623343e7959042f2d5b9d1e5c35c6781e26">6d45862</a>)');
