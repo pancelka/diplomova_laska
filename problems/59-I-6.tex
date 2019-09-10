@@ -1,0 +1,19 @@
+% Do not delete this line (pandoc magic!)
+
+\problem{59-I-6}{}{
+Nájdite všetky prirodzené čísla, ktoré nie sú deliteľné desiatimi a ktoré vo svojom dekadickom zápise majú niekde vedľa seba dve nuly, po ktorých vyškrtnutí sa pôvodné číslo 89-krát zmenší.
+}{
+\rieh Rozoberieme niekoľko prípadov.
+
+a) Predpokladajme najskôr, že nuly sú na treťom a druhom mieste sprava. Hľadané číslo $x$ má potom tvar $x = 1 000a + b$, pričom $a$ je prirodzené číslo (rovnako to bude aj v ďalších prípadoch, keď už to nebudeme pripomínať) a $b$ nenulová cifra. Podmienku
+zo zadania $1 000a + b = 89(10a + b)$ upravíme na tvar $5a = 4b$, z ktorého vyplýva, že $b$ je násobok piatich. Vyhovuje tak iba $b = 5$ a $a = 4$, teda $x = 4 005$.
+
+b) Ak hľadané číslo $x$ má nuly na štvrtom a treťom mieste sprava, je $x = 10 000a+b$, pričom $b$ je dvojciferné číslo. Podmienku zo zadania $10 000a+b = 89(100a+b)$ upravíme na tvar $25a = 2b$, z ktorého vyplýva, že $b$ je nepárny násobok čísla 25 (pripomíname, že $x$, a teda ani $b$, nie je deliteľné desiatimi). Odtiaľ $b = 25$, $a = 2$ alebo $b = 75$, $a = 6$, teda $x \in \{20 025, 60 075\}$.
+
+c) Ak hľadané číslo $x$ má nuly na piatom a štvrtom mieste sprava, je $x = 100 000a+ b$, pričom $b$ je trojciferné číslo. Podmienku zo zadania $100 000a + b = 89(1 000a + b)$ upravíme na tvar $125a = b$, z ktorého vyplýva, že $b$ je nepárny násobok čísla 125.
+Vyhovuje iba $b = 125$ a $a = 1$, $b = 375$ a $a = 3$, $b = 625$ a $a = 5$, $b = 875$ a $a = 7$, teda $x \in \{100 125, 300 375, 500 625, 700 875\}$.
+
+d) Z predošlých prípadov vidíme, že pre hľadané číslo $x$ tvaru $x = 10^{n+2} a + b$, pričom $b$ je $n$-ciferné číslo, dostávame podmienku $10^{n+2} a + b = 89(10^n a + b)$, čiže $11 \cdot 10^n a = 88b$, odkiaľ pre $n \geq 4$ dostávame podmienku $125 \cdot 10^{n-3} a = b$, podľa ktorej je $b$ násobkom desiatich. Žiadne ďalšie $x$, ktoré by vyhovovalo zadaniu, teda neexistuje.
+
+\textit{Záver.} Hľadané čísla sú $4 005, 20 025, 60 075, 100 125, 300 375, 500 625$, a $700 875$.
+}
