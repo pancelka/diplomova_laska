@@ -49,7 +49,7 @@ def save_assignment(asgn):
     code = code.replace("}", "")
     filename = "problems/" + code + ".tex"
     with open(filename, "w") as f:
-        f.write("\\problem{" + asgn["code"] + "}{\n")
+        f.write("\\problem{" + asgn["code"] + "}{}{\n")
         f.write(asgn["text"] + "\n}{\n")
         f.write(asgn["solution"] + "\n}\n")
     return filename

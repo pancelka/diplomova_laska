@@ -32,6 +32,9 @@ body {
 
 .backlink {
     float: right;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 20px;
 }
 
 img {
@@ -193,9 +196,10 @@ ol > li:before {
 }
 
 ul.tags {
-    columns: 3;
-    -webkit-columns: 3;
-    -moz-columns: 3;
+    width: 20%;
+    margin-left: 0;
+    margin-right: 0;
+    display: table-cell;
 }
 
 ul.tags li {
