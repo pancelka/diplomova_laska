@@ -15,11 +15,12 @@ body {
     margin: 30px auto 0 auto;
     max-width: 910px;
     padding: 30px;
+    padding-top: 0px;
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 0px 50px black;
     border-color: rgba(54, 97, 162, 1);
     border-style: solid;
-    border-width: 15px 0 15px 0;
+    border-width: 0px 0 15px 0;
 }
 
 .footer {
@@ -248,4 +249,33 @@ ul.tags li {
 
 .quote:after {
     content: '\201D';
+}
+
+.menu {
+    width: calc(100%);
+    padding: 10px 30px;
+    display: table;
+    margin-left: -30px;
+    margin-right: -30px;
+    margin-bottom: 30px;
+    background-color: rgba(54, 97, 162, 1);
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    float: left;
+    padding: 0px 30px;
+    background-color: rgba(54, 97, 162, 1);
+    margin: 0;
+    border-left: white solid 3px;
+}
+
+.menu li a {
+    display: block;
+    color: white;
 }
