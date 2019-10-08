@@ -1,6 +1,6 @@
 body {
     background-image: url("background.png");
-    font-size: 1.3em;
+    font-size: 1.15em;
     text-align: left;
     margin: 15px;
 }
@@ -234,4 +234,18 @@ ul.tags li {
     left: 0;
     top: 200px;
     border-radius: 3px;
+}
+
+.quote {
+    position: relative;
+    padding-left: 1em;
+    border-left: 0.2em solid rgba(54, 97, 162, 1);
+}
+
+.quote:before {
+    content: '\201C';
+}
+
+.quote:after {
+    content: '\201D';
 }
