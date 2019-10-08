@@ -31,7 +31,7 @@ thesis:
 
 web: web-init $(IMAGES_PNG) $(WEB_PDF_STUDENT) $(WEB_PDF_TEACHER) $(SEMINARS_HTML)
 
-web-init: build-web/index.html build-web/problems.html templates/style.css templates/background.png templates/collapsible.js
+web-init: build-web/index.html build-web/problems.html build-web/seminars.html templates/style.css templates/background.png templates/collapsible.js
 	mkdir -p build-web/seminars build-web/images build-web/pdf build-web/images/
 	echo "seminar-mo.sk" > build-web/CNAME
 	cp -v templates/style.css templates/background.png templates/collapsible.js build-web/
@@ -42,8 +42,19 @@ build-web/index.html: $(TEMPLATES_HTML) templates/index.html
 	mkdir -p build-web
 	printf "<html>\n<head>\n<title>Matematický seminár pre talentovaných študentov</title>" > $@
 	cat templates/header.html >> $@
-	printf "</head>\n<body>\n<div class="main">" >> $@
+	printf "</head>\n<body>\n" >> $@
+	cat templates/before-body.html >> $@
 	cat templates/index.html >> $@
+	cat templates/after-body.html >> $@
+	printf "</body>\n</html>" >> $@
+
+build-web/seminars.html: $(TEMPLATES_HTML) templates/seminars.html
+	mkdir -p build-web
+	printf "<html>\n<head>\n<title>Matematický seminár pre talentovaných študentov</title>" > $@
+	cat templates/header.html >> $@
+	printf "</head>\n<body>\n" >> $@
+	cat templates/before-body.html >> $@
+	cat templates/seminars.html >> $@
 	cat templates/after-body.html >> $@
 	printf "</body>\n</html>" >> $@
 
