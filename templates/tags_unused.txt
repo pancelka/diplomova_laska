@@ -1,0 +1,23 @@
+<li><label><input type="checkbox" value="seminar04" checked></label>seminar04</li>
+        <li><label><input type="checkbox" value="seminar05" checked></label>seminar05</li>
+        <li><label><input type="checkbox" value="seminar06" checked></label>seminar06</li>
+        <li><label><input type="checkbox" value="seminar07" checked></label>seminar07</li>
+        <li><label><input type="checkbox" value="seminar08" checked></label>seminar08</li>
+        <li><label><input type="checkbox" value="seminar09" checked></label>seminar09</li>
+        <li><label><input type="checkbox" value="seminar10" checked></label>seminar10</li>
+        <li><label><input type="checkbox" value="seminar11" checked></label>seminar11</li>
+        <li><label><input type="checkbox" value="seminar12" checked></label>seminar12</li>
+        <li><label><input type="checkbox" value="seminar13" checked></label>seminar13</li>
+        <li><label><input type="checkbox" value="seminar18" checked></label>seminar18</li>
+        <li><label><input type="checkbox" value="seminar19" checked></label>seminar19</li>
+        <li><label><input type="checkbox" value="seminar20" checked></label>seminar20</li>
+        <li><label><input type="checkbox" value="seminar21" checked></label>seminar21</li>
+        <li><label><input type="checkbox" value="seminar22" checked></label>seminar22</li>
+        <li><label><input type="checkbox" value="seminar23" checked></label>seminar23</li>
+        <li><label><input type="checkbox" value="seminar25" checked></label>seminar25</li>
+        <li><label><input type="checkbox" value="seminar26" checked></label>seminar26</li>
+        <li><label><input type="checkbox" value="seminar29" checked></label>seminar29</li>
+        <li><label><input type="checkbox" value="seminar30" checked></label>seminar30</li>
+        <li><label><input type="checkbox" value="seminar31" checked></label>seminar31</li>
+        <li><label><input type="checkbox" value="seminar32" checked></label>seminar32</li>
+        <li><label><input type="checkbox" value="seminar34" checked></label>seminar34</li>
