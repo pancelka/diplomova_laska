@@ -99,7 +99,6 @@ a:hover {
     font-weight: bold;
 }
 
-
 .cleaner {
     clear: both;
 }
@@ -124,8 +123,7 @@ a:hover {
     content: "\2212";
 }
 
-.active,
-.solution-button:hover {
+.active, .solution-button:hover {
     background-color: rgba(54, 97, 162, 0.3);
 }
 
@@ -183,12 +181,12 @@ ol {
     margin: 0;
 }
 
-ol > li {
+ol>li {
     list-style: none;
     position: relative;
 }
 
-ol > li:before {
+ol>li:before {
     counter-increment: list;
     content: counter(list, lower-alpha) ") ";
     position: absolute;
@@ -217,4 +215,23 @@ ul.tags li {
     font-size: 16px;
     width: 49%;
     margin: 0;
-  }
+}
+
+#btn-feedback {
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+    width: 300px;
+    height: 80px;
+    z-index: 15;
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform-origin: bottom left;
+    position: fixed;
+    border-radius: 0;
+    left: 0;
+    top: 200px;
+    border-radius: 3px;
+}
