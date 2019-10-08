@@ -205,6 +205,16 @@ ul.tags li {
     list-style: none;
 }
 
+ul.levelTags {
+    columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+}
+
+ul.levelTags li {
+    list-style: none;
+}
+
 .button {
     background-color: rgba(54, 97, 162, 1);
     border: none;
