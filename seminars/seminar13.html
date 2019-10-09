@@ -24,8 +24,11 @@
   
       gtag('config', 'UA-134264779-2');
   
-      document.addEventListener("click", function(event) {
+      function followRefLink(event) {
           var element = event.target;
+          if (element.tagName.toLowerCase() == "sup") {
+              element = element.parentNode;
+          }
           if (element.tagName.toLowerCase() == "a" &&
               element.getAttribute("href").indexOf("#") === 0)
           {
@@ -37,8 +40,14 @@
               my_href = my_href.replace(/#+/g, '#');
               element.href = my_href;
           }
-      });
+      }
+  
+      document.addEventListener("click", followRefLink);
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
   <base href="https://pancelka.github.io/diplomova_laska/">
   <link rel="stylesheet" href="style.css" media="screen">
   <script src="collapsible.js" type="text/javascript"></script>
