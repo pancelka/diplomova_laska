@@ -117,10 +117,10 @@
         $(".problemContainer").each(function (index, problem) {
             tags = parseTags(problem);
             if (hasTagIn(tags, currentTags) && hasTagIn(tags, currentLevelTags)) {
-                $(problem).show();
+                $(problem).closest(".topProblemContainer").show();
             }
             else {
-                $(problem).hide();
+                $(problem).closest(".topProblemContainer").hide();
             }
         });
     }
@@ -141,4 +141,6 @@
     $(document).ready(function () {
         show();
     });
+
+    document.addEventListener("click", followRefLink); // Fix ref links
 </script>

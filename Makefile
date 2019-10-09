@@ -66,9 +66,14 @@ build-web/seminars/%.html: seminars/%.tex $(TEMPLATES_HTML) $(PROBLEMS)
 	./scripts/pandocHtmlPost.py $@
 
 build-web/problems.html: templates/problems.html $(TEMPLATES_HTML) $(PROBLEMS)
-	echo "" > build-web/problems.tex
-	find problems -type f -name "*.tex" -exec printf "\input{{}}\n\n" >> build-web/problems.tex \;
-	pandoc -s --mathjax=$(MATHJAX_URL) --metadata-file=templates/metadata.yaml -H templates/header.html -B templates/before-body.html -B templates/problems.html -A templates/after-body.html -f latex -V biblio-title=Reference --bibliography=bibliografia.bib -t html -o $@ templates/latex-header-web.tex build-web/problems.tex
+	printf "<html>\n<head>\n<title>Matematický seminár pre talentovaných študentov</title>" > $@
+	cat templates/header.html >> $@
+	printf "</head>\n<body>\n" >> $@
+	cat templates/before-body.html >> $@
+	cat templates/problems.html >> $@
+	find problems -type f -name "*.tex" -exec scripts/printProblem.sh {} >> $@ \;
+	cat templates/after-body.html >> $@
+	printf "</body>\n</html>" >> $@
 	./scripts/pandocHtmlPost.py $@
 
 build-web/pdf/%-teacher.pdf: seminars/%.tex $(TEMPLATES_PDF)
