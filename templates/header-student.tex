@@ -1,11 +1,11 @@
 \input{templates/header-teacher.tex}
 
 % Display problems (no gray box) but not solutions
-\renewcommand{\problem}[3]{
+\renewcommand{\problem}[4]{
     \stepcounter{problem}
     \bigskip\noindent
     \textbf{Úloha \theseminar .\theproblem.}
-    \source{#1} #2
+    \source{#1} #3
 }
 
 \renewcommand{\home}[1]{#1}
