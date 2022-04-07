@@ -1,0 +1,24 @@
+name: "Build web"
+on:
+  push:
+jobs:
+  build:
+    name: "Build suite desktop"
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build
+        uses: addnab/docker-run-action@v2
+        with:
+          image: yaqwsx/pandoc
+          shell: bash
+          options: -v ${{ github.workspace }}:/work -w /work
+          run: |
+            make web
+      - name: Deploy to GH Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          branch: gh-pages
+          folder: build-web
+          single-commit: false
